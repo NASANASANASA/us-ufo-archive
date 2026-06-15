@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美国 UAP 公开档案 · 中文镜像</title>
+  <meta name="description" content="美国政府公开 UFO/UAP 档案中文翻译镜像。内容引用自美国政府官方网站。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css?v=20260616">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="./">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span><b data-i18n="brand_title">UAP 公开档案</b><small data-i18n="brand_subtitle">美国政府档案中文镜像</small></span>
+    </a>
+    <nav>
+      <a href="#archive" data-i18n="nav_archive">档案库</a>
+      <a href="#releases" data-i18n="nav_releases">公布批次</a>
+      <a href="#about" data-i18n="nav_about">关于镜像</a>
+      <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="nav_source">美国官网 ↗</a>
+      <div class="lang-switch" role="group" aria-label="语言切换">
+        <button data-lang="cn" onclick="setLang('cn')" data-i18n="lang_cn">简体</button>
+        <button data-lang="tw" onclick="setLang('tw')" data-i18n="lang_tw">繁體</button>
+      </div>
+    </nav>
+    <button class="menu-button" aria-label="打开菜单" onclick="toggleMobile()">☰</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#archive" onclick="closeMobile()" data-i18n="nav_archive">档案库</a>
+    <a href="#releases" onclick="closeMobile()" data-i18n="nav_releases">公布批次</a>
+    <a href="#about" onclick="closeMobile()" data-i18n="nav_about">关于镜像</a>
+    <div class="lang-switch" role="group" aria-label="语言切换">
+      <button data-lang="cn" onclick="setLang('cn')" data-i18n="lang_cn">简体</button>
+      <button data-lang="tw" onclick="setLang('tw')" data-i18n="lang_tw">繁體</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="system-line"><span></span><span data-i18n="hero_systemline"> PUBLIC ACCESS TERMINAL / 中文镜像</span></p>
+        <h1 data-i18n-html="hero_title_html">美国政府<br><em>UFO / UAP</em><br>公开档案库</h1>
+        <p class="hero-intro" data-i18n="hero_intro">检索美国政府公开发布的不明异常现象文件、影像与历史记录。本站只提供中文翻译与索引，所有原始内容均引用自美国政府官方网站。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#archive" data-i18n-html="hero_cta1_html">进入档案库 <span>→</span></a>
+          <a class="button" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="hero_cta2">访问原始来源 ↗</a>
+        </div>
+        <div class="hero-status">
+          <span><b id="hero-record-count">同步中</b> <span data-i18n="hero_status1">官方档案</span></span>
+          <span><b>03</b> <span data-i18n="hero_status2">公布批次</span></span>
+          <span><b id="hero-date-range">—</b> <span data-i18n="hero_status3">记录跨度</span></span>
+        </div>
+      </div>
+
+      <div class="radar-shell" aria-label="抽象雷达资料可视化">
+        <div class="radar-meta top"><span>TRACKING / UAP-01</span><span>36°17' N 115°48' W</span></div>
+        <div class="radar">
+          <div class="radar-ring r1"></div><div class="radar-ring r2"></div><div class="radar-ring r3"></div>
+          <div class="cross x"></div><div class="cross y"></div><div class="sweep"></div>
+          <span class="blip b1"></span><span class="blip b2"></span><span class="blip b3"></span>
+          <div class="target"><i></i><i></i><i></i><i></i><b>UNRESOLVED</b></div>
+        </div>
+        <div class="radar-meta bottom"><span>AZ 284.2°</span><span>RANGE 12.8 NM</span><span>ALT UNKNOWN</span></div>
+      </div>
+    </section>
+
+    <section class="notice" id="about">
+      <div class="notice-tag" data-i18n="notice_tag">镜像说明 / NOTICE</div>
+      <p data-i18n-html="notice_text_html"><strong>本站并非美国政府官方网站。</strong>所有文字、文件与影像均源自美国政府公开渠道；中文内容仅作翻译与信息整理。每条记录均保留原始来源链接，遇到翻译差异时以英文原文为准。</p>
+      <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="notice_verify">核验来源 ↗</a>
+    </section>
+
+    <section class="archive-section" id="archive">
+      <div class="section-heading" id="releases">
+        <div>
+          <p class="system-line"><span></span> RELEASE DATABASE</p>
+          <h2 data-i18n="section_title">公开档案检索</h2>
+        </div>
+        <p data-i18n="section_subtitle">直接同步美国政府 PURSUE 数据库 · 最近批次：2026.06.12</p>
+      </div>
+
+      <div class="release-tabs">
+        <button class="db-tab active" onclick="dbSetRelease('all', this)"><span data-i18n="tab_all">全部记录</span> <small id="count-all">—</small></button>
+        <button class="db-tab" onclick="dbSetRelease('RELEASE 01', this)"><span data-i18n="tab_r1">公布批次 01</span> <small id="count-01">—</small></button>
+        <button class="db-tab" onclick="dbSetRelease('RELEASE 02', this)"><span data-i18n="tab_r2">公布批次 02</span> <small id="count-02">—</small></button>
+        <button class="db-tab" onclick="dbSetRelease('RELEASE 03', this)"><span data-i18n="tab_r3">公布批次 03</span> <small id="count-03">—</small></button>
+      </div>
+
+      <div class="release-banner" data-release-banner="all">
+        <div>
+          <span class="prompt">&gt;</span>
+          <div><b data-i18n="banner_all_title">检索全部公开档案</b><small>SEARCH ALL CLEARED PURSUE RECORDS</small></div>
+        </div>
+        <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="banner_all_link">前往官网 ↗</a>
+      </div>
+
+      <div class="release-banner" data-release-banner="RELEASE 01" hidden>
+        <div>
+          <span class="prompt">&gt;</span>
+          <div><b data-i18n="banner_r1_title">第一批档案已获准公开</b><small>CLEARED FOR RELEASE — MAY 8, 2026</small></div>
+        </div>
+        <div class="release-downloads">
+          <a class="download-bundle" href="https://www.war.gov/medialink/ufo/bundle/Release_1.zip" target="_blank" rel="noopener">&gt; DOWNLOAD RELEASE 01 DOCUMENTS [1.2GB]</a>
+          <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/uapvideos.zip" target="_blank" rel="noopener">&gt; DOWNLOAD RELEASE 01 VIDEOS [1.3GB]</a>
+        </div>
+      </div>
+
+      <div class="release-banner" data-release-banner="RELEASE 02" hidden>
+        <div>
+          <span class="prompt">&gt;</span>
+          <div><b data-i18n="banner_r2_title">第二批档案已获准公开</b><small>CLEARED FOR RELEASE — MAY 22, 2026</small></div>
+        </div>
+        <div class="release-downloads">
+          <a class="download-bundle" href="https://www.war.gov/medialink/ufo/052226/release_02/release_02_document_bundle.zip" target="_blank" rel="noopener">&gt; DOWNLOAD RELEASE 02 DOCUMENTS [70.1MB]</a>
+          <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/uap052226.zip" target="_blank" rel="noopener">&gt; DOWNLOAD RELEASE 02 VIDEOS [5.6GB]</a>
+        </div>
+      </div>
+
+      <div class="release-banner" data-release-banner="RELEASE 03" hidden>
+        <div>
+          <span class="prompt">&gt;</span>
+          <div><b data-i18n="banner_r3_title">第三批档案已获准公开</b><small>CLEARED FOR RELEASE — JUNE 12, 2026</small></div>
+        </div>
+        <div class="release-downloads">
+          <a class="download-bundle" href="https://www.war.gov/medialink/ufo/061226/release_03/release_03_documents.zip" target="_blank" rel="noopener">&gt; DOWNLOAD RELEASE 03 DOCUMENTS [826MB]</a>
+          <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/release_03/uap_videos_061226.zip" target="_blank" rel="noopener">&gt; DOWNLOAD RELEASE 03 VIDEOS [4.6GB]</a>
+        </div>
+      </div>
+
+      <div class="db-controls">
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="db-search" type="search" placeholder="搜索档案名称、机构或中文摘要..." data-i18n-placeholder="search_placeholder">
+          <kbd>⌘ K</kbd>
+        </label>
+        <select id="db-agency"><option value="all" data-i18n="opt_all_agency">全部机构</option></select>
+        <select id="db-release"><option value="all" data-i18n="opt_all_release">全部批次</option><option value="RELEASE 01" data-i18n="release_01">第一批</option><option value="RELEASE 02" data-i18n="release_02">第二批</option><option value="RELEASE 03" data-i18n="release_03">第三批</option></select>
+        <select id="db-type"><option value="all" data-i18n="opt_all_type">全部类型</option><option value="PDF" data-i18n="opt_pdf">PDF 文件</option><option value="VID" data-i18n="opt_vid">视频影像</option><option value="IMG" data-i18n="opt_img">图片影像</option><option value="AUD" data-i18n="opt_aud">音频档案</option></select>
+      </div>
+
+      <div class="db-table-wrap">
+        <div class="db-table-head"><span id="db-count" data-i18n="table_loading">档案加载中...</span><span data-i18n="table_head_hint">点击记录查看中文详情与原始来源</span></div>
+        <table class="db-table">
+          <thead><tr>
+            <th onclick="dbSort('id')"><span data-i18n="th_id">档案名称</span> ↕</th>
+            <th onclick="dbSort('agency')"><span data-i18n="th_agency">发布机构</span> ↕</th>
+            <th onclick="dbSort('release')"><span data-i18n="th_release">公布批次</span> ↕</th>
+            <th onclick="dbSort('incidentDate')"><span data-i18n="th_incidentdate">事件日期</span> ↕</th>
+            <th onclick="dbSort('incidentLocation')"><span data-i18n="th_incidentlocation">事件地点</span> ↕</th>
+            <th onclick="dbSort('type')"><span data-i18n="th_type">类型</span> ↕</th>
+          </tr></thead>
+          <tbody id="db-tbody"></tbody>
+        </table>
+      </div>
+      <nav class="db-pagination" id="db-pagination" aria-label="档案分页"></nav>
+    </section>
+  </main>
+
+  <footer>
+    <div><b data-i18n="footer_brand">UAP 公开档案 / 中文镜像</b><span>PUBLIC ACCESS TERMINAL · CN</span></div>
+    <p data-i18n="footer_disclaimer">非官方民间翻译项目 · 内容版权归原发布机构所有</p>
+    <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener">SOURCE: WAR.GOV/UFO ↗</a>
+  </footer>
+
+  <div class="db-modal-backdrop" id="db-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="db-modal-title" aria-describedby="db-modal-desc">
+    <article class="db-modal">
+      <header class="db-modal-head">
+        <div><h3 id="db-modal-title"></h3></div>
+        <button class="db-modal-close" onclick="closeDocModal()" aria-label="关闭">×</button>
+      </header>
+      <div class="db-modal-body">
+        <div class="modal-copy">
+          <div id="db-modal-desc"></div>
+          <p class="redaction-notice" id="db-redaction-notice" data-i18n="redaction_notice">为保护目击者身份、政府设施位置，或与不明异常现象（UAP）无关的军事场所敏感信息，本文件已作涂黑处理。根据特朗普总统关于任何被报告为UAP或相关现象的事件之性质或存在信息的指令所发布的文件，均未作任何涂黑处理。</p>
+          <a class="download-asset" id="db-download-asset" href="#" target="_blank" rel="noopener">&gt; DOWNLOAD FILE</a>
+          <div class="db-modal-meta" id="db-modal-meta"></div>
+          <a class="db-modal-source" id="db-modal-source" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="modal_source_link">查看美国官网档案 ↗</a>
+        </div>
+        <div class="asset-preview" id="asset-preview"></div>
+      </div>
+    </article>
+  </div>
+
+  <script src="./assets/db-data.js"></script>
+  <script src="./assets/dvids-map.js"></script>
+  <script src="./assets/i18n-ui.js"></script>
+  <script src="./assets/site.js"></script>
+</body>
+</html>
