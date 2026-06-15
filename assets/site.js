@@ -4,7 +4,9 @@ function closeMobile(){document.getElementById('mobileMenu')?.classList.remove('
   const tbody=document.getElementById('db-tbody');if(!tbody)return;
   let activeRelease='all',sortKey='incidentDate',sortDir=-1,currentPage=1;
   let modalToken=0,currentModalIndex=-1;
-  let lang=localStorage.getItem('uap-lang')==='tw'?'tw':'cn';
+  const requestedLang=new URLSearchParams(location.search).get('lang');
+  let lang=requestedLang==='tw'||requestedLang==='cn'?requestedLang:(localStorage.getItem('uap-lang')==='tw'?'tw':'cn');
+  if(requestedLang==='tw'||requestedLang==='cn')localStorage.setItem('uap-lang',lang);
   let I18N_CN=[],I18N_TW=[];
   let DVIDS_META={};
   const pageSize=20;
