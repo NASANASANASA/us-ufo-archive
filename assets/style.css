@@ -40,7 +40,7 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .db-table{font-size:14px;line-height:1.55}
 .db-table th{font-size:13px;font-weight:500;letter-spacing:.04em}
 .db-table td{padding-block:16px}
-.db-table .fname{color:#cbd3d5;font-weight:400;line-height:1.6}
+.db-table .fname{color:#939fa3;font-weight:400;line-height:1.6}
 .db-table .pill{font-family:var(--sans)}
 .type-tag,.db-pagination button,.db-pagination span{font-family:var(--mono)}
 
