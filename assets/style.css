@@ -64,3 +64,40 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .paired-media button{font-family:var(--sans);font-size:13px;line-height:1.5}
 
 @media(max-width:650px){.db-modal{width:calc(100vw - 16px);max-width:calc(100vw - 16px);height:calc(100dvh - 16px)}.db-modal-body{width:100%;max-width:100%}.db-modal-head{position:relative;padding:14px 62px 14px 16px;gap:12px}.db-modal-head h3{font-size:16px;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.db-modal-close{position:absolute;right:12px;top:50%;transform:translateY(-50%);width:38px;height:38px}.modal-copy>p,.modal-copy>#db-modal-desc p,.redaction-notice{font-size:14px}.db-modal-meta .row{grid-template-columns:1fr;gap:4px}.db-modal-meta b{text-align:left}}
+
+.static-page{--sans:'Noto Sans','Noto Sans SC','Noto Sans JP',Arial,sans-serif}
+.static-page:lang(zh-CN){--sans:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif}
+.static-page:lang(zh-TW){--sans:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif}
+.static-page:lang(ja){--sans:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif}
+.static-main{position:relative;z-index:2;width:min(1500px,calc(100% - 48px));margin:0 auto;padding:58px 0 90px}
+.static-hero,.static-record-head{border:1px solid var(--line);background:rgba(8,16,22,.72);padding:34px 38px;margin-bottom:22px}
+.static-hero h1,.static-record-head h1{margin:14px 0 14px;color:var(--white);font-family:var(--sans);font-size:clamp(32px,4vw,58px);font-weight:600;line-height:1.18;letter-spacing:-.04em}
+.static-hero p,.static-record-head p{max-width:1050px;color:#93a0a5;font-size:15px;line-height:1.9;margin:0}
+.static-panel{border:1px solid var(--line);background:rgba(8,16,22,.72);padding:30px;margin-bottom:22px}
+.static-panel h2{margin:0 0 18px;color:var(--cyan);font-family:var(--sans);font-size:18px;font-weight:600;letter-spacing:.04em}
+.static-panel p{color:#aeb7ba;font-size:15px;line-height:1.9;margin:0 0 18px}
+.static-index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.static-index-card,.static-row{border:1px solid var(--line);background:#050a0e;color:#aeb8bb;text-decoration:none;transition:.15s border-color,.15s color,.15s background}
+.static-index-card{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:18px}
+.static-index-card b{color:var(--white);font-size:15px;font-weight:500}
+.static-index-card span{color:var(--muted);font-size:12px}
+.static-index-card:hover,.static-row:hover{border-color:var(--cyan);color:var(--cyan);background:#0a151b}
+.static-list{display:flex;flex-direction:column}
+.static-row{display:grid;grid-template-columns:minmax(260px,2.2fr) minmax(150px,.9fr) minmax(120px,.7fr) minmax(160px,1fr) 70px;gap:18px;align-items:center;padding:15px 18px;border-bottom:0}
+.static-row+.static-row{border-top:0}
+.static-row strong{font-weight:400;color:#c5cdd0;line-height:1.5}
+.static-row span{color:#8e9aa0;font-size:13px}
+.static-row em{font-style:normal;color:#8e9aa0;border:1px solid var(--line2);padding:4px 7px;text-align:center;font-family:var(--mono)}
+.static-record-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(340px,.7fr);gap:22px;align-items:start}
+.static-preview{background:#030609;min-height:280px;display:grid;place-items:center;margin-bottom:24px}
+.static-preview img{max-width:100%;max-height:460px;object-fit:contain}
+.static-button{display:inline-block;margin-top:10px;border:1px solid var(--line2);padding:13px 17px;color:var(--cyan);text-decoration:none;font-size:14px;font-weight:500}
+.static-button:hover{border-color:var(--cyan);background:rgba(110,215,223,.08)}
+.static-meta{margin:0}
+.static-meta div{display:grid}
+.static-meta dt,.static-meta dd{border-top:1px solid var(--line);padding:11px 0;margin:0;font-size:14px;line-height:1.5}
+.static-meta dt{float:left;clear:left;width:150px;color:#6f7d83;font-weight:600}
+.static-meta dd{margin-left:165px;color:#c5cdd0;text-align:right}
+.static-muted{color:var(--muted)!important}
+@media(max-width:900px){.static-record-grid{grid-template-columns:1fr}.static-row{grid-template-columns:1fr}.static-row em{width:max-content}.static-page .site-header nav{display:none}}
+@media(max-width:650px){.static-main{width:calc(100% - 28px);padding-top:30px}.static-hero,.static-record-head,.static-panel{padding:22px}.static-meta dt{float:none;width:auto;padding-bottom:3px}.static-meta dd{margin-left:0;text-align:left;padding-top:3px}}

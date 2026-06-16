@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nasanasanasa.github.io/us-ufo-archive/sitemap.xml
