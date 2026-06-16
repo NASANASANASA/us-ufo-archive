@@ -6,7 +6,7 @@
   <script>
     (function(){
       // 1. 优先使用上次访问的语言目录
-      var dirs={en:1,'zh-Hans':1,'zh-Hant':1,ja:1,es:1};
+      var dirs={en:1,'zh-Hans':1,'zh-Hant':1,ja:1,es:1,pt:1,ru:1,fr:1,de:1,ko:1,ar:1};
       var stored=localStorage.getItem('uap-dir');
       if(stored&&dirs[stored]){
         location.replace(location.href.split('?')[0].replace(/\/?$/,'/')+stored+'/');
@@ -17,6 +17,12 @@
       var dir=/^zh-(tw|hk|mo|hant)/.test(l)?'zh-Hant':
                /^zh/.test(l)?'zh-Hans':
                /^ja/.test(l)?'ja':
+               /^ko/.test(l)?'ko':
+               /^pt/.test(l)?'pt':
+               /^ru/.test(l)?'ru':
+               /^fr/.test(l)?'fr':
+               /^de/.test(l)?'de':
+               /^ar/.test(l)?'ar':
                /^es/.test(l)?'es':'en';
       location.replace(location.href.split('?')[0].replace(/\/?$/,'/')+dir+'/');
     })();
