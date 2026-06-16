@@ -124,6 +124,7 @@ const text = {
     lang: 'en',
     name: 'English',
     home: 'UAP Public Archive',
+    language: 'Language',
     archive: 'Archive',
     notice: 'This is an unofficial public mirror and research index. Official record text and media are sourced from public U.S. government releases.',
     summary: 'Structured Summary',
@@ -149,6 +150,7 @@ const text = {
     lang: 'ja',
     name: '日本語',
     home: 'UAP公開アーカイブ',
+    language: '言語',
     archive: 'アーカイブ',
     notice: 'このサイトは非公式の公開ミラーおよび調査用インデックスです。公式記録の本文とメディアは、米国政府の公開資料に基づいています。',
     summary: '構造化要約',
@@ -174,6 +176,7 @@ const text = {
     lang: 'es',
     name: 'Español',
     home: 'Archivo público UAP',
+    language: 'Idioma',
     archive: 'Archivo',
     notice: 'Este sitio es un espejo público no oficial y un índice de investigación. El texto oficial y los medios proceden de publicaciones públicas del Gobierno de Estados Unidos.',
     summary: 'Resumen estructurado',
@@ -199,6 +202,7 @@ const text = {
     lang: 'zh-CN',
     name: '简体中文',
     home: 'UAP 公开档案',
+    language: '语言',
     archive: '档案库',
     notice: '本站为非官方公开镜像与研究索引。官方记录文字和媒体均来自美国政府公开发布资料，中文内容仅作翻译与信息整理。',
     summary: '结构化摘要',
@@ -224,6 +228,7 @@ const text = {
     lang: 'zh-TW',
     name: '繁體中文',
     home: 'UAP 公開檔案',
+    language: '語言',
     archive: '檔案庫',
     notice: '本站為非官方公開鏡像與研究索引。官方記錄文字和媒體均來自美國政府公開發布資料，中文內容僅作翻譯與資訊整理。',
     summary: '結構化摘要',
@@ -367,13 +372,13 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   const canonical = `${siteUrl}${canonicalPath}`;
   const localPath = canonicalPath.replace(/^\/(en|ja|es|zh-Hans|zh-Hant)/, '');
   const langMenu = `<details class="lang-menu">
-        <summary>语言 / Language</summary>
+        <summary>${esc(text[lang].language || 'Language')}</summary>
         <div>
-          <a href="${prefix}en${localPath}">EN</a>
-          <a href="${prefix}ja${localPath}">日本語</a>
-          <a href="${prefix}es${localPath}">ES</a>
-          <a href="${prefix}zh-Hans${localPath}">简体</a>
-          <a href="${prefix}zh-Hant${localPath}">繁體</a>
+          <a data-dir="en" data-lang="en" href="${prefix}en${localPath}">English</a>
+          <a data-dir="ja" data-lang="ja" href="${prefix}ja${localPath}">日本語</a>
+          <a data-dir="es" data-lang="es" href="${prefix}es${localPath}">Español</a>
+          <a data-dir="zh-Hans" data-lang="cn" href="${prefix}zh-Hans${localPath}">简体中文</a>
+          <a data-dir="zh-Hant" data-lang="tw" href="${prefix}zh-Hant${localPath}">繁體中文</a>
         </div>
       </details>`;
   const alternates = Object.keys(text).map(code => {
