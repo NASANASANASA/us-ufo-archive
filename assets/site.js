@@ -9,7 +9,7 @@ document.addEventListener('click',e=>{if(!e.target.closest('.lang-menu'))documen
   let lang=validLangs.includes(requestedLang)?requestedLang:(pathLangMap[pathLang]||'tw');
   if(validLangs.includes(requestedLang))localStorage.setItem('uap-lang',lang);
   if(pathLang)localStorage.setItem('uap-dir',pathLang);
-  let I18N_CN=[],I18N_TW=[],I18N_JA=[],I18N_ES=[];
+  let I18N_CN=[],I18N_TW=[],I18N_JA=[],I18N_ES=[],I18N_PT=[],I18N_RU=[],I18N_FR=[],I18N_DE=[],I18N_KO=[],I18N_AR=[];
   let DVIDS_META={};
   const pageSize=20;
   const search=document.getElementById('db-search'),agency=document.getElementById('db-agency'),release=document.getElementById('db-release'),type=document.getElementById('db-type');
@@ -18,7 +18,7 @@ document.addEventListener('click',e=>{if(!e.target.closest('.lang-menu'))documen
   const urls=v=>clean(v).split('|').map(clean).filter(Boolean),field=(r,ns)=>{for(const n of ns){if(r[key(n)])return clean(r[key(n)])}return''};
   const absolute=v=>{v=clean(v);if(!v)return'';if(/^https?:\/\//i.test(v))return v;if(/^\/\//.test(v))return`https:${v}`;if(v.startsWith('/'))return`https://www.war.gov${v}`;return v};
   const t=k=>(UI_TEXT[k]&&UI_TEXT[k][lang])||k;
-  const tr=(d,f)=>{const o=lang==='tw'?d.i18nTw:(lang==='cn'?d.i18nCn:(lang==='ja'?d.i18nJa:(lang==='es'?d.i18nEs:null)));return(o&&o[f])||''};
+  const tr=(d,f)=>{const o=lang==='tw'?d.i18nTw:(lang==='cn'?d.i18nCn:(lang==='ja'?d.i18nJa:(lang==='es'?d.i18nEs:(lang==='pt'?d.i18nPt:(lang==='ru'?d.i18nRu:(lang==='fr'?d.i18nFr:(lang==='de'?d.i18nDe:(lang==='ko'?d.i18nKo:(lang==='ar'?d.i18nAr:null)))))))));return(o&&o[f])||''};
   const trTitle=d=>tr(d,'titleZh')||d.id;
   const trLoc=d=>tr(d,'locZh')||d.incidentLocation||t('t_unspecified');
   const trDesc=d=>tr(d,'descZh')||d.description||t('t_no_desc');
@@ -33,8 +33,8 @@ document.addEventListener('click',e=>{if(!e.target.closest('.lang-menu'))documen
     const imageRaw=(officialType==='IMG'?assetLink:'')||field(r,['modal image','image url','imageUrl','image link','thumbnail url','poster url','image','thumbnail','poster']),image=(imageRaw?urls(imageRaw).map(absolute):pick(/\.(jpg|jpeg|png|gif|webp)$/i)).join('|');
     const dvidsId=field(r,['dvids video id']),dvidsPage=dvidsId?`https://www.dvidshub.net/video/${dvidsId}`:'',dvidsEmbed=dvidsId?`https://www.dvidshub.net/video/embed/${dvidsId}`:'';
     const ext=(doc.split('?')[0].match(/\.([a-z0-9]+)$/i)?.[1]||officialType||'PDF').replace('.','').toUpperCase();
-    const i18nCn=I18N_CN[idx]||{},i18nTw=I18N_TW[idx]||{},i18nJa=I18N_JA[idx]||{},i18nEs=I18N_ES[idx]||{};
-    return{id:field(r,['asset file name','title','assetFileName']),agency:field(r,['agency']),release:field(r,['release'])||map[date]||date,releaseDate:date,incidentDate:field(r,['incident date','incidentDate']),incidentLocation:field(r,['incident location','incidentLocation']),type:officialType||(dvidsId?'VID':video?'MP4':(image&&!doc?'IMG':ext)),virin:field(r,['image virin','virin']),description:field(r,['description blurb','description','video description','record description','caption']),sourceUrl:doc||dvidsPage||(officialType==='IMG'?assetLink:'')||image||video||found[0]||UAP_SOURCE_URL,documentUrl:doc,videoUrl:video,imageUrl:image,altText:field(r,['image alt text','alt text','altText']),dvidsId,dvidsEmbed,dvidsMeta:DVIDS_META[dvidsId]||null,videoTitle:field(r,['video title']),videoPairing:field(r,['video pairing']),pdfPairing:field(r,['pdf pairing']),redaction:/^(true|yes)$/i.test(field(r,['redaction'])),featured:/^(true|yes)$/i.test(field(r,['featured'])),rawUrls:found,raw:r,i18nCn,i18nTw,i18nJa,i18nEs,videoLengthRaw:i18nCn.videoLengthRaw||''}}
+    const i18nCn=I18N_CN[idx]||{},i18nTw=I18N_TW[idx]||{},i18nJa=I18N_JA[idx]||{},i18nEs=I18N_ES[idx]||{},i18nPt=I18N_PT[idx]||{},i18nRu=I18N_RU[idx]||{},i18nFr=I18N_FR[idx]||{},i18nDe=I18N_DE[idx]||{},i18nKo=I18N_KO[idx]||{},i18nAr=I18N_AR[idx]||{};
+    return{id:field(r,['asset file name','title','assetFileName']),agency:field(r,['agency']),release:field(r,['release'])||map[date]||date,releaseDate:date,incidentDate:field(r,['incident date','incidentDate']),incidentLocation:field(r,['incident location','incidentLocation']),type:officialType||(dvidsId?'VID':video?'MP4':(image&&!doc?'IMG':ext)),virin:field(r,['image virin','virin']),description:field(r,['description blurb','description','video description','record description','caption']),sourceUrl:doc||dvidsPage||(officialType==='IMG'?assetLink:'')||image||video||found[0]||UAP_SOURCE_URL,documentUrl:doc,videoUrl:video,imageUrl:image,altText:field(r,['image alt text','alt text','altText']),dvidsId,dvidsEmbed,dvidsMeta:DVIDS_META[dvidsId]||null,videoTitle:field(r,['video title']),videoPairing:field(r,['video pairing']),pdfPairing:field(r,['pdf pairing']),redaction:/^(true|yes)$/i.test(field(r,['redaction'])),featured:/^(true|yes)$/i.test(field(r,['featured'])),rawUrls:found,raw:r,i18nCn,i18nTw,i18nJa,i18nEs,i18nPt,i18nRu,i18nFr,i18nDe,i18nKo,i18nAr,videoLengthRaw:i18nCn.videoLengthRaw||''}}
   function populate(){agency.querySelectorAll('option:not(:first-child)').forEach(o=>o.remove());[...new Set(UAP_DOCS.map(d=>d.agency))].sort().forEach(a=>agency.add(new Option(trAgency(a),a)));document.getElementById('count-all').textContent=UAP_DOCS.length;['01','02','03'].forEach(n=>document.getElementById(`count-${n}`).textContent=UAP_DOCS.filter(d=>d.release.endsWith(n)).length);document.getElementById('hero-record-count').textContent=UAP_DOCS.length;const years=UAP_DOCS.map(d=>d.incidentDate.match(/\d{4}/)?.[0]).filter(Boolean).sort();document.getElementById('hero-date-range').textContent=years.length?`${years[0]}—${years.at(-1)}`:t('t_unspecified')}
   function selected(){const q=search.value.trim().toLowerCase();return UAP_DOCS.filter(d=>(activeRelease==='all'||d.release===activeRelease)&&(release.value==='all'||d.release===release.value)&&(agency.value==='all'||d.agency===agency.value)&&(type.value==='all'||d.type===type.value)&&(!q||[d.id,trTitle(d),d.agency,d.description,trDesc(d),d.incidentLocation,trLoc(d)].join(' ').toLowerCase().includes(q))).sort((a,b)=>(a[sortKey]||'').localeCompare(b[sortKey]||'','zh-CN')*sortDir)}
   function pageItems(totalPages){if(totalPages<=7)return Array.from({length:totalPages},(_,i)=>i+1);const out=[1];if(currentPage>4)out.push('…');for(let p=Math.max(2,currentPage-1);p<=Math.min(totalPages-1,currentPage+1);p++)out.push(p);if(currentPage<totalPages-3)out.push('…');out.push(totalPages);return out}
@@ -80,9 +80,15 @@ document.addEventListener('click',e=>{if(!e.target.closest('.lang-menu'))documen
     fetch(`${UAP_ASSET_BASE}i18n-zh-tw.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
     fetch(`${UAP_ASSET_BASE}i18n-ja.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
     fetch(`${UAP_ASSET_BASE}i18n-es.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch(`${UAP_ASSET_BASE}i18n-pt.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch(`${UAP_ASSET_BASE}i18n-ru.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch(`${UAP_ASSET_BASE}i18n-fr.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch(`${UAP_ASSET_BASE}i18n-de.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch(`${UAP_ASSET_BASE}i18n-ko.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch(`${UAP_ASSET_BASE}i18n-ar.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
     fetch(`${UAP_ASSET_BASE}dvids-meta.json`).then(r=>r.ok?r.json():{}).catch(()=>({}))
-  ]).then(([csvText,cn,tw,ja,es,dvidsMeta])=>{
-    I18N_CN=cn;I18N_TW=tw;I18N_JA=ja;I18N_ES=es;DVIDS_META=dvidsMeta;
+  ]).then(([csvText,cn,tw,ja,es,pt,ru,fr,de,ko,ar,dvidsMeta])=>{
+    I18N_CN=cn;I18N_TW=tw;I18N_JA=ja;I18N_ES=es;I18N_PT=pt;I18N_RU=ru;I18N_FR=fr;I18N_DE=de;I18N_KO=ko;I18N_AR=ar;DVIDS_META=dvidsMeta;
     UAP_DOCS=parseCSV(csvText).map((r,idx)=>normalize(r,idx)).filter(d=>d.id);
     populate();applyUIText();render();
     const requested=new URLSearchParams(location.search).get('open');
