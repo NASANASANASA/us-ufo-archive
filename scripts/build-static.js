@@ -252,6 +252,87 @@ const text = {
   }
 };
 
+const legalPages = {
+  privacy: {
+    en: {
+      title: 'Privacy Policy',
+      description: 'Privacy policy for the unofficial UAP Public Archive mirror.',
+      body: [
+        ['Overview', 'This site is an unofficial public mirror and research index for UAP-related records released through public U.S. government channels. We do not require user accounts and we do not ask visitors to submit personal information in order to browse the archive.'],
+        ['Advertising and Cookies', 'This site may use Google AdSense or other third-party advertising services. Google and its partners may use cookies or similar technologies to serve ads, measure ad performance, limit repeated ads, and personalize advertising where permitted by law. Visitors can manage ad personalization through Google Ads Settings and browser cookie controls.'],
+        ['Analytics and Logs', 'Hosting providers, content delivery networks, browsers, and security services may automatically process standard technical information such as IP address, browser type, device information, referring pages, requested URLs, and timestamps. This information is used for security, reliability, diagnostics, and aggregate traffic analysis.'],
+        ['External Links', 'Archive records link to original U.S. government sources and other media hosts. Those external websites are governed by their own privacy policies and are not controlled by this site.'],
+        ['Contact', 'For privacy questions, correction requests, or source-related issues, use the contact page linked in the footer.']
+      ]
+    },
+    ja: {
+      title: 'プライバシーポリシー',
+      description: '非公式UAP公開アーカイブミラーのプライバシーポリシーです。',
+      body: [
+        ['概要', 'このサイトは、米国政府の公開資料に基づくUAP関連記録の非公式ミラーおよび調査用インデックスです。閲覧にユーザー登録は不要で、個人情報の入力も求めません。'],
+        ['広告とCookie', 'このサイトではGoogle AdSenseなどの第三者広告サービスを使用する場合があります。Googleおよびそのパートナーは、広告配信、効果測定、表示回数制御、法令で認められる範囲でのパーソナライズのためにCookie等を使用することがあります。'],
+        ['ログと解析', 'ホスティング事業者や配信ネットワークは、IPアドレス、ブラウザ、端末情報、参照元、URL、時刻などの技術情報を処理する場合があります。'],
+        ['外部リンク', '記録ページは米国政府の原資料や外部メディアにリンクします。外部サイトにはそれぞれのプライバシーポリシーが適用されます。'],
+        ['連絡', 'プライバシー、訂正、出典に関する連絡は、フッターの連絡ページをご利用ください。']
+      ]
+    },
+    es: {
+      title: 'Política de privacidad',
+      description: 'Política de privacidad del espejo no oficial del Archivo público UAP.',
+      body: [
+        ['Resumen', 'Este sitio es un espejo público no oficial y un índice de investigación de registros relacionados con UAP publicados por canales públicos del Gobierno de Estados Unidos. No requiere cuentas de usuario ni solicita datos personales para navegar.'],
+        ['Publicidad y cookies', 'Este sitio puede usar Google AdSense u otros servicios publicitarios de terceros. Google y sus socios pueden usar cookies o tecnologías similares para mostrar anuncios, medir rendimiento, limitar repeticiones y personalizar publicidad cuando la ley lo permita.'],
+        ['Registros y análisis', 'Los proveedores de alojamiento y distribución pueden procesar información técnica estándar como dirección IP, navegador, dispositivo, páginas de referencia, URL solicitadas y hora de acceso.'],
+        ['Enlaces externos', 'Los registros enlazan a fuentes oficiales del Gobierno de EE. UU. y otros sitios de medios. Esos sitios se rigen por sus propias políticas de privacidad.'],
+        ['Contacto', 'Para preguntas de privacidad, correcciones o asuntos de fuentes, use la página de contacto enlazada en el pie de página.']
+      ]
+    },
+    'zh-Hans': {
+      title: '隐私政策',
+      description: 'UAP 公开档案非官方镜像网站的隐私政策。',
+      body: [
+        ['概述', '本站是基于美国政府公开渠道资料建立的非官方 UAP 档案镜像与研究索引。浏览档案无需注册账号，本站也不会要求访问者提交个人信息。'],
+        ['广告与 Cookie', '本站可能使用 Google AdSense 或其他第三方广告服务。Google 及其合作伙伴可能使用 Cookie 或类似技术用于广告投放、效果衡量、限制重复展示，以及在法律允许范围内进行个性化广告。访问者可通过 Google 广告设置和浏览器 Cookie 设置进行管理。'],
+        ['日志与技术信息', '托管服务、内容分发网络、浏览器和安全服务可能自动处理标准技术信息，例如 IP 地址、浏览器类型、设备信息、来源页面、请求 URL 和访问时间。这些信息用于安全、稳定性、诊断和汇总流量分析。'],
+        ['外部链接', '档案记录会链接到美国政府原始来源和外部媒体网站。外部网站由其自身隐私政策约束，本站无法控制。'],
+        ['联系方式', '如有隐私、纠错或来源相关问题，请使用页脚中的联系方式页面。']
+      ]
+    },
+    'zh-Hant': {
+      title: '隱私政策',
+      description: 'UAP 公開檔案非官方鏡像網站的隱私政策。',
+      body: [
+        ['概述', '本站是基於美國政府公開渠道資料建立的非官方 UAP 檔案鏡像與研究索引。瀏覽檔案無需註冊帳號，本站也不會要求訪問者提交個人資訊。'],
+        ['廣告與 Cookie', '本站可能使用 Google AdSense 或其他第三方廣告服務。Google 及其合作夥伴可能使用 Cookie 或類似技術用於廣告投放、效果衡量、限制重複展示，以及在法律允許範圍內進行個人化廣告。訪問者可透過 Google 廣告設定和瀏覽器 Cookie 設定進行管理。'],
+        ['日誌與技術資訊', '託管服務、內容分發網路、瀏覽器和安全服務可能自動處理標準技術資訊，例如 IP 位址、瀏覽器類型、裝置資訊、來源頁面、請求 URL 和訪問時間。這些資訊用於安全、穩定性、診斷和匯總流量分析。'],
+        ['外部連結', '檔案記錄會連結到美國政府原始來源和外部媒體網站。外部網站由其自身隱私政策約束，本站無法控制。'],
+        ['聯絡方式', '如有隱私、訂正或來源相關問題，請使用頁腳中的聯絡方式頁面。']
+      ]
+    }
+  },
+  about: {
+    en: {title: 'About This Archive', description: 'About the unofficial UAP Public Archive mirror.', body: [['Purpose', 'This site organizes public U.S. government UAP-related records into searchable, multilingual archive pages. It is intended for research, reference, and source verification.'], ['Source Basis', 'Record titles, descriptions, metadata, files, images, and videos are based on public government releases. Each record keeps a link to the original source when available.'], ['Unofficial Status', 'This site is not operated by the U.S. government and does not represent any government agency. When translation or formatting differs from the official source, the English official source prevails.']]},
+    ja: {title: 'このサイトについて', description: '非公式UAP公開アーカイブミラーについて。', body: [['目的', 'このサイトは、米国政府が公開したUAP関連記録を検索可能な多言語アーカイブとして整理するものです。'], ['出典', '記録名、説明、メタデータ、ファイル、画像、動画は公開された政府資料に基づきます。可能な限り各記録に原典リンクを残しています。'], ['非公式サイト', 'このサイトは米国政府によって運営されておらず、政府機関を代表しません。翻訳や整形に差異がある場合は英語の公式原文を優先します。']]},
+    es: {title: 'Acerca del archivo', description: 'Acerca del espejo no oficial del Archivo público UAP.', body: [['Propósito', 'Este sitio organiza registros públicos del Gobierno de Estados Unidos relacionados con UAP en páginas de archivo buscables y multilingües.'], ['Base de fuentes', 'Los títulos, descripciones, metadatos, archivos, imágenes y videos se basan en publicaciones gubernamentales públicas. Cada registro conserva un enlace a la fuente original cuando está disponible.'], ['Estado no oficial', 'Este sitio no es operado por el Gobierno de EE. UU. ni representa a ninguna agencia gubernamental. Si existe discrepancia, prevalece la fuente oficial en inglés.']]},
+    'zh-Hans': {title: '关于本站', description: '关于 UAP 公开档案非官方镜像。', body: [['网站目的', '本站将美国政府公开发布的 UAP 相关档案整理为可检索、多语言的档案页面，供研究、查阅和来源核验使用。'], ['资料来源', '档案标题、说明、元数据、文件、图片和视频均基于美国政府公开发布资料。每条记录在可用情况下保留原始来源链接。'], ['非官方声明', '本站并非美国政府运营，也不代表任何政府机构。翻译或排版与官方来源存在差异时，以英文官方原文为准。']]},
+    'zh-Hant': {title: '關於本站', description: '關於 UAP 公開檔案非官方鏡像。', body: [['網站目的', '本站將美國政府公開發布的 UAP 相關檔案整理為可檢索、多語言的檔案頁面，供研究、查閱和來源核驗使用。'], ['資料來源', '檔案標題、說明、元資料、文件、圖片和影片均基於美國政府公開發布資料。每條記錄在可用情況下保留原始來源連結。'], ['非官方聲明', '本站並非美國政府營運，也不代表任何政府機構。翻譯或排版與官方來源存在差異時，以英文官方原文為準。']]}
+  },
+  contact: {
+    en: {title: 'Contact', description: 'Contact information for corrections, source issues, and privacy questions.', body: [['Contact Method', 'For corrections, broken links, privacy questions, or source concerns, open a public issue on the project repository.'], ['Repository', 'GitHub: https://github.com/NASANASANASA/us-ufo-archive'], ['What to Include', 'Please include the page URL, record title, original source URL if relevant, and a concise explanation of the issue.']]},
+    ja: {title: '連絡先', description: '訂正、出典、プライバシーに関する連絡先。', body: [['連絡方法', '訂正、リンク切れ、プライバシー、出典に関する連絡は、プロジェクトのGitHubリポジトリで公開Issueを作成してください。'], ['リポジトリ', 'GitHub: https://github.com/NASANASANASA/us-ufo-archive'], ['記載事項', 'ページURL、記録名、関連する原典URL、問題の簡潔な説明を含めてください。']]},
+    es: {title: 'Contacto', description: 'Información de contacto para correcciones, fuentes y privacidad.', body: [['Método de contacto', 'Para correcciones, enlaces rotos, privacidad o asuntos de fuentes, abra un issue público en el repositorio del proyecto.'], ['Repositorio', 'GitHub: https://github.com/NASANASANASA/us-ufo-archive'], ['Qué incluir', 'Incluya la URL de la página, el título del registro, la fuente original si corresponde y una explicación breve del problema.']]},
+    'zh-Hans': {title: '联系方式', description: '用于纠错、来源问题和隐私问题的联系方式。', body: [['联系渠道', '如需提交纠错、失效链接、隐私问题或来源问题，请在项目 GitHub 仓库创建公开 issue。'], ['项目仓库', 'GitHub: https://github.com/NASANASANASA/us-ufo-archive'], ['建议提供的信息', '请提供页面 URL、档案标题、相关原始来源链接，以及对问题的简明说明。']]},
+    'zh-Hant': {title: '聯絡方式', description: '用於訂正、來源問題和隱私問題的聯絡方式。', body: [['聯絡渠道', '如需提交訂正、失效連結、隱私問題或來源問題，請在專案 GitHub 倉庫建立公開 issue。'], ['專案倉庫', 'GitHub: https://github.com/NASANASANASA/us-ufo-archive'], ['建議提供的資訊', '請提供頁面 URL、檔案標題、相關原始來源連結，以及對問題的簡明說明。']]}
+  },
+  disclaimer: {
+    en: {title: 'Disclaimer', description: 'Disclaimer for the unofficial UAP Public Archive mirror.', body: [['No Government Affiliation', 'This site is not an official U.S. government website and is not affiliated with, endorsed by, or operated by any U.S. government agency.'], ['Informational Use', 'The archive is provided for informational, research, and reference purposes. It does not make analytical judgments, investigative conclusions, or factual determinations about the nature of any reported UAP event.'], ['Source Priority', 'All records should be verified against the original official source. If site text, translation, formatting, or metadata differs from the official source, the official English source controls.']]},
+    ja: {title: '免責事項', description: '非公式UAP公開アーカイブミラーの免責事項。', body: [['政府との関係なし', 'このサイトは米国政府の公式サイトではなく、米国政府機関による運営、承認、提携を受けていません。'], ['情報提供目的', 'このアーカイブは情報提供、調査、参照目的で提供されます。報告されたUAP事象の性質について分析判断、調査結論、事実認定を行うものではありません。'], ['原典優先', 'すべての記録は公式原典で確認してください。翻訳、表示、メタデータに差異がある場合は英語の公式原文を優先します。']]},
+    es: {title: 'Aviso legal', description: 'Aviso legal del espejo no oficial del Archivo público UAP.', body: [['Sin afiliación gubernamental', 'Este sitio no es un sitio oficial del Gobierno de Estados Unidos y no está afiliado, respaldado ni operado por ninguna agencia gubernamental estadounidense.'], ['Uso informativo', 'El archivo se ofrece con fines informativos, de investigación y referencia. No realiza juicios analíticos, conclusiones investigativas ni determinaciones fácticas sobre la naturaleza de eventos UAP reportados.'], ['Prioridad de la fuente', 'Todos los registros deben verificarse con la fuente oficial original. Si hay diferencias de texto, traducción, formato o metadatos, prevalece la fuente oficial en inglés.']]},
+    'zh-Hans': {title: '免责声明', description: 'UAP 公开档案非官方镜像网站的免责声明。', body: [['非政府隶属', '本站不是美国政府官方网站，也不隶属于、代表或受任何美国政府机构运营或认可。'], ['信息用途', '本站档案仅供信息、研究和参考使用。本站不对任何被报告为 UAP 的事件性质作分析判断、调查结论或事实认定。'], ['来源优先', '所有记录均应以官方原始来源进行核验。如本站文字、翻译、格式或元数据与官方来源存在差异，以英文官方来源为准。']]},
+    'zh-Hant': {title: '免責聲明', description: 'UAP 公開檔案非官方鏡像網站的免責聲明。', body: [['非政府隸屬', '本站不是美國政府官方網站，也不隸屬於、代表或受任何美國政府機構營運或認可。'], ['資訊用途', '本站檔案僅供資訊、研究和參考使用。本站不對任何被報告為 UAP 的事件性質作分析判斷、調查結論或事實認定。'], ['來源優先', '所有記錄均應以官方原始來源進行核驗。如本站文字、翻譯、格式或元資料與官方來源存在差異，以英文官方來源為準。']]}
+  }
+};
+
 const agencyNames = {
   ja: {
     'Department of War': '戦争省',
@@ -367,6 +448,20 @@ function rel(fromLang, target) {
   return '../'.repeat(fromDepth) + target;
 }
 
+function footerHtml(prefix, lang) {
+  const labels = Object.fromEntries(Object.entries(legalPages).map(([slug, pages]) => [slug, pages[lang].title]));
+  return `<footer>
+    <div><b>${esc(text[lang].home)}</b><span>${esc(text[lang].notice)}</span></div>
+    <nav class="footer-links" aria-label="Site policies">
+      <a href="${prefix}${lang}/about/">${esc(labels.about)}</a>
+      <a href="${prefix}${lang}/privacy/">${esc(labels.privacy)}</a>
+      <a href="${prefix}${lang}/contact/">${esc(labels.contact)}</a>
+      <a href="${prefix}${lang}/disclaimer/">${esc(labels.disclaimer)}</a>
+      <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener">SOURCE ↗</a>
+    </nav>
+  </footer>`;
+}
+
 function pageShell({lang, title, description, canonicalPath, body, depth = 0, schema}) {
   const prefix = '../'.repeat(depth);
   const canonical = `${siteUrl}${canonicalPath}`;
@@ -397,7 +492,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260616-seo3">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260616-adsense1">
   ${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ''}
 </head>
 <body class="static-page">
@@ -411,6 +506,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
     </nav>
   </header>
   ${body}
+  ${footerHtml(prefix, lang)}
 </body>
 </html>
 `;
@@ -471,17 +567,41 @@ function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth
   return pageShell({lang, title: `${l.home} · ${l.archive}`, description: l.generated, canonicalPath, body, depth});
 }
 
-function buildInteractiveHome(lang) {
-  return read('index.html')
-    .replace('<html lang="zh-CN">', `<html lang="${text[lang].lang}">`)
-    .replace('<title>美国 UAP 公开档案 · 中文镜像</title>', `<title>${esc(text[lang].home)} · ${esc(text[lang].name)}</title>`)
-    .replace('content="美国政府公开 UFO/UAP 档案中文翻译镜像。内容引用自美国政府官方网站。"', `content="${esc(text[lang].notice)}"`)
+function buildLegalPage(lang, slugName) {
+  const page = legalPages[slugName][lang];
+  const body = `<main class="static-main">
+    <section class="static-hero">
+      <p class="system-line"><span></span> SITE POLICY</p>
+      <h1>${esc(page.title)}</h1>
+      <p>${esc(page.description)}</p>
+    </section>
+    <section class="static-panel legal-panel">
+      ${page.body.map(([heading, paragraph]) => `<h2>${esc(heading)}</h2><p>${linkifyText(paragraph)}</p>`).join('\n      ')}
+      <p class="static-muted">Last updated: June 16, 2026</p>
+    </section>
+  </main>`;
+  return pageShell({lang, title: `${page.title} · ${text[lang].home}`, description: page.description, canonicalPath: `/${lang}/${slugName}/`, body, depth: 2});
+}
+
+function linkifyText(value) {
+  return esc(value).replace(/https:\/\/github\.com\/NASANASANASA\/us-ufo-archive/g, '<a href="https://github.com/NASANASANASA/us-ufo-archive" target="_blank" rel="noopener">https://github.com/NASANASANASA/us-ufo-archive</a>');
+}
+
+function buildInteractiveHome(lang, template) {
+  const footer = footerHtml('../', lang)
+    .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
+    .replace(/href="\.\.\/"/g, 'href="../"');
+  return template
+    .replace(/<html[^>]*>/, `<html lang="${text[lang].lang}">`)
+    .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(text[lang].home)} · ${esc(text[lang].name)}</title>`)
+    .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
     .replace(/href="\.\/es\/"/g, 'href="../es/"')
-    .replace(/href="\.\/"/g, 'href="../"');
+    .replace(/href="\.\/"/g, 'href="../"')
+    .replace(/<footer>[\s\S]*?<\/footer>/, footer);
 }
 
 function buildRecordPage(doc, lang) {
@@ -570,6 +690,7 @@ function buildGroupPage(docs, lang, kind, groupSlug, label) {
 }
 
 function build() {
+  const interactiveTemplate = read('zh-Hant/index.html');
   const csv = parseCSV(read('assets/uap-data.csv'));
   const zhCn = JSON.parse(read('assets/i18n-zh-cn.json'));
   const zhTw = JSON.parse(read('assets/i18n-zh-tw.json'));
@@ -581,8 +702,12 @@ function build() {
   for (const dir of generatedDirs) fs.rmSync(path.join(root, dir), {recursive: true, force: true});
 
   for (const lang of Object.keys(text)) {
-    writeFile(`${lang}/index.html`, buildInteractiveHome(lang));
+    writeFile(`${lang}/index.html`, buildInteractiveHome(lang, interactiveTemplate));
     urlsForSitemap.push(`/${lang}/`);
+    for (const slugName of Object.keys(legalPages)) {
+      writeFile(`${lang}/${slugName}/index.html`, buildLegalPage(lang, slugName));
+      urlsForSitemap.push(`/${lang}/${slugName}/`);
+    }
     writeFile(`${lang}/archive/index.html`, buildArchivePage(docs, lang));
     urlsForSitemap.push(`/${lang}/archive/`);
     for (const doc of docs) {
