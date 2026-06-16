@@ -3,18 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>US UAP Archive</title>
-  <script>
-    (function(){
-      var map={cn:'zh-Hans',tw:'zh-Hant',en:'en',ja:'ja',es:'es'};
-      var stored=localStorage.getItem('uap-lang');
-      var dir=map[stored]||'en';
-      var base=location.href.replace(/\/[^\/]*$/,'/').replace(/\/$/,'')+'/';
-      location.replace(base+dir+'/');
-    })();
-  </script>
-  <noscript>
-    <meta http-equiv="refresh" content="0;url=en/">
-  </noscript>
+  <script>location.replace(location.href.replace(/\/?(\?.*)?$/,'/en/$1')||'en/');</script>
+  <noscript><meta http-equiv="refresh" content="0;url=en/"></noscript>
 </head>
 <body></body>
 </html>
