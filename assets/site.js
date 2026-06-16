@@ -1,5 +1,6 @@
 function toggleMobile(){document.getElementById('mobileMenu')?.classList.toggle('open')}
 function closeMobile(){document.getElementById('mobileMenu')?.classList.remove('open')}
+document.addEventListener('click',e=>{if(!e.target.closest('.lang-menu'))document.querySelectorAll('details.lang-menu[open]').forEach(d=>d.removeAttribute('open'))});
 (function(){
   const tbody=document.getElementById('db-tbody');if(!tbody)return;
   let activeRelease='all',sortKey='incidentDate',sortDir=-1,currentPage=1;
