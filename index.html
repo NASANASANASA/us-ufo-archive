@@ -5,6 +5,14 @@
   <title>US UAP Archive</title>
   <script>
     (function(){
+      // 1. 优先使用上次访问的语言目录
+      var dirs={en:1,'zh-Hans':1,'zh-Hant':1,ja:1,es:1};
+      var stored=localStorage.getItem('uap-dir');
+      if(stored&&dirs[stored]){
+        location.replace(location.href.split('?')[0].replace(/\/?$/,'/')+stored+'/');
+        return;
+      }
+      // 2. 首次访问：按浏览器主语言自动检测
       var l=(navigator.language||'en').toLowerCase();
       var dir=/^zh-(tw|hk|mo|hant)/.test(l)?'zh-Hant':
                /^zh/.test(l)?'zh-Hans':

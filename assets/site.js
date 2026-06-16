@@ -8,6 +8,7 @@ document.addEventListener('click',e=>{if(!e.target.closest('.lang-menu'))documen
   const requestedLang=new URLSearchParams(location.search).get('lang'),pathLang=(location.pathname.match(/\/(en|ja|es|zh-Hans|zh-Hant)(?:\/|$)/)||[])[1],validLangs=['cn','tw','en','ja','es'],pathLangMap={'zh-Hans':'cn','zh-Hant':'tw',en:'en',ja:'ja',es:'es'};
   let lang=validLangs.includes(requestedLang)?requestedLang:(pathLangMap[pathLang]||'tw');
   if(validLangs.includes(requestedLang))localStorage.setItem('uap-lang',lang);
+  if(pathLang)localStorage.setItem('uap-dir',pathLang);
   let I18N_CN=[],I18N_TW=[],I18N_JA=[],I18N_ES=[];
   let DVIDS_META={};
   const pageSize=20;
