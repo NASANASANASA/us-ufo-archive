@@ -373,7 +373,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260616">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260616-seo2">
   ${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ''}
 </head>
 <body class="static-page">
@@ -422,7 +422,7 @@ function indexGroups(docs, lang, kind, labeler) {
   ).join('');
 }
 
-function buildArchivePage(docs, lang) {
+function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth = 2) {
   const l = text[lang];
   const body = `<main class="static-main">
     <section class="static-hero">
@@ -444,7 +444,7 @@ function buildArchivePage(docs, lang) {
       <div class="static-list">${cardList(docs, lang, '../records/')}</div>
     </section>
   </main>`;
-  return pageShell({lang, title: `${l.home} · ${l.archive}`, description: l.generated, canonicalPath: `/${lang}/archive/`, body, depth: 2});
+  return pageShell({lang, title: `${l.home} · ${l.archive}`, description: l.generated, canonicalPath, body, depth});
 }
 
 function buildRecordPage(doc, lang) {
@@ -537,7 +537,7 @@ function build() {
   for (const dir of generatedDirs) fs.rmSync(path.join(root, dir), {recursive: true, force: true});
 
   for (const lang of Object.keys(text)) {
-    writeFile(`${lang}/index.html`, buildArchivePage(docs, lang));
+    writeFile(`${lang}/index.html`, buildArchivePage(docs, lang, `/${lang}/`, 1));
     urlsForSitemap.push(`/${lang}/`);
     writeFile(`${lang}/archive/index.html`, buildArchivePage(docs, lang));
     urlsForSitemap.push(`/${lang}/archive/`);
