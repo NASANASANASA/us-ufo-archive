@@ -65,7 +65,7 @@ function absolute(value) {
   return value;
 }
 
-function normalize(row, index, zhCn, zhTw) {
+function normalize(row, index, zhCn, zhTw, ja, es) {
   const releaseDate = field(row, ['release date', 'releaseDate']);
   const releaseMap = {
     '5/8/26': 'RELEASE 01',
@@ -112,7 +112,9 @@ function normalize(row, index, zhCn, zhTw) {
     redaction: /^(true|yes)$/i.test(field(row, ['redaction'])),
     i18n: {
       'zh-Hans': zhCn[index] || {},
-      'zh-Hant': zhTw[index] || {}
+      'zh-Hant': zhTw[index] || {},
+      ja: ja[index] || {},
+      es: es[index] || {}
     }
   };
 }
@@ -150,7 +152,7 @@ const text = {
     archive: 'アーカイブ',
     notice: 'このサイトは非公式の公開ミラーおよび調査用インデックスです。公式記録の本文とメディアは、米国政府の公開資料に基づいています。',
     summary: '構造化要約',
-    official: '公式英語原文',
+    official: '公式説明',
     records: '記録',
     agency: '公開機関',
     release: '公開回',
@@ -175,7 +177,7 @@ const text = {
     archive: 'Archivo',
     notice: 'Este sitio es un espejo público no oficial y un índice de investigación. El texto oficial y los medios proceden de publicaciones públicas del Gobierno de Estados Unidos.',
     summary: 'Resumen estructurado',
-    official: 'Descripción oficial en inglés',
+    official: 'Descripción oficial',
     records: 'registros',
     agency: 'Agencia',
     release: 'Publicación',
@@ -269,18 +271,24 @@ const agencyNames = {
 function langTitle(doc, lang) {
   if (lang === 'zh-Hans') return doc.i18n['zh-Hans'].titleZh || doc.id;
   if (lang === 'zh-Hant') return doc.i18n['zh-Hant'].titleZh || doc.id;
+  if (lang === 'ja') return doc.i18n.ja.titleZh || doc.id;
+  if (lang === 'es') return doc.i18n.es.titleZh || doc.id;
   return doc.id;
 }
 
 function langLocation(doc, lang) {
   if (lang === 'zh-Hans') return doc.i18n['zh-Hans'].locZh || doc.incidentLocation || '未标示';
   if (lang === 'zh-Hant') return doc.i18n['zh-Hant'].locZh || doc.incidentLocation || '未標示';
+  if (lang === 'ja') return doc.i18n.ja.locZh || doc.incidentLocation || 'N/A';
+  if (lang === 'es') return doc.i18n.es.locZh || doc.incidentLocation || 'N/A';
   return doc.incidentLocation || 'N/A';
 }
 
 function langDescription(doc, lang) {
   if (lang === 'zh-Hans') return doc.i18n['zh-Hans'].descZh || doc.description;
   if (lang === 'zh-Hant') return doc.i18n['zh-Hant'].descZh || doc.description;
+  if (lang === 'ja') return doc.i18n.ja.descZh || doc.description;
+  if (lang === 'es') return doc.i18n.es.descZh || doc.description;
   return doc.description;
 }
 
@@ -467,6 +475,12 @@ function buildRecordPage(doc, lang) {
   const canonicalPath = `/${lang}/records/${doc.slug}/`;
   const officialDescription = doc.description || '';
   const languageDescription = langDescription(doc, lang);
+  const descriptionBlocks = [
+    (lang === 'zh-Hans' || lang === 'zh-Hant' || lang === 'ja' || lang === 'es') && languageDescription
+      ? `<h2>${esc(l.official)}</h2>${paragraphs(languageDescription)}`
+      : '',
+    lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription)}` : ''
+  ].filter(Boolean).join('\n        ');
   const preview = doc.imageUrl ? `<img src="${esc(urls(doc.imageUrl)[0])}" alt="">` : `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span></div>`;
   const schema = {
     '@context': 'https://schema.org',
@@ -489,8 +503,7 @@ function buildRecordPage(doc, lang) {
       <article class="static-panel">
         <h2>${esc(l.summary)}</h2>
         <p>${esc(structuredSummary(doc, lang))}</p>
-        ${(lang === 'zh-Hans' || lang === 'zh-Hant') && languageDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(languageDescription)}` : ''}
-        ${(lang === 'en' || lang === 'ja' || lang === 'es') && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription)}` : ''}
+        ${descriptionBlocks}
         <a class="static-button" href="${esc(doc.sourceUrl)}" target="_blank" rel="noopener">${esc(l.source)} ↗</a>
       </article>
       <aside class="static-panel">
@@ -544,7 +557,9 @@ function build() {
   const csv = parseCSV(read('assets/uap-data.csv'));
   const zhCn = JSON.parse(read('assets/i18n-zh-cn.json'));
   const zhTw = JSON.parse(read('assets/i18n-zh-tw.json'));
-  const docs = csv.map((row, index) => normalize(row, index, zhCn, zhTw)).filter(doc => doc.id);
+  const ja = fs.existsSync(path.join(root, 'assets/i18n-ja.json')) ? JSON.parse(read('assets/i18n-ja.json')) : [];
+  const es = fs.existsSync(path.join(root, 'assets/i18n-es.json')) ? JSON.parse(read('assets/i18n-es.json')) : [];
+  const docs = csv.map((row, index) => normalize(row, index, zhCn, zhTw, ja, es)).filter(doc => doc.id);
   const urlsForSitemap = [];
 
   for (const dir of generatedDirs) fs.rmSync(path.join(root, dir), {recursive: true, force: true});
