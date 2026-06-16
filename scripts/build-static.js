@@ -453,19 +453,44 @@ function footerHtml(prefix, lang) {
   return `<footer>
     <div><b>${esc(text[lang].home)}</b><span>${esc(text[lang].notice)}</span></div>
     <nav class="footer-links" aria-label="Site policies">
-      <a href="${prefix}${lang}/about/">${esc(labels.about)}</a>
-      <a href="${prefix}${lang}/privacy/">${esc(labels.privacy)}</a>
-      <a href="${prefix}${lang}/contact/">${esc(labels.contact)}</a>
-      <a href="${prefix}${lang}/disclaimer/">${esc(labels.disclaimer)}</a>
+      <a href="${prefix}${lang}/about/" data-legal-open="about">${esc(labels.about)}</a>
+      <a href="${prefix}${lang}/privacy/" data-legal-open="privacy">${esc(labels.privacy)}</a>
+      <a href="${prefix}${lang}/contact/" data-legal-open="contact">${esc(labels.contact)}</a>
+      <a href="${prefix}${lang}/disclaimer/" data-legal-open="disclaimer">${esc(labels.disclaimer)}</a>
       <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener">SOURCE ↗</a>
     </nav>
-  </footer>`;
+  </footer>
+  ${legalModalHtml(lang)}`;
+}
+
+function legalModalHtml(lang) {
+  const pages = Object.entries(legalPages).map(([slugName, pagesByLang]) => {
+    const page = pagesByLang[lang];
+    return `<article class="legal-modal-page" data-legal-page="${esc(slugName)}" hidden>
+        <h2>${esc(page.title)}</h2>
+        <p class="legal-modal-desc">${esc(page.description)}</p>
+        ${page.body.map(([heading, paragraph]) => `<h3>${esc(heading)}</h3><p>${linkifyText(paragraph)}</p>`).join('\n        ')}
+        <p class="legal-modal-updated">Last updated: June 16, 2026</p>
+      </article>`;
+  }).join('\n      ');
+  return `<div class="legal-modal-backdrop" id="legal-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title" hidden>
+    <section class="legal-modal">
+      <header class="legal-modal-head">
+        <span id="legal-modal-title">SITE POLICY</span>
+        <button class="legal-modal-close" type="button" onclick="closeLegalModal()" aria-label="Close">×</button>
+      </header>
+      <div class="legal-modal-body">
+      ${pages}
+      </div>
+    </section>
+  </div>`;
 }
 
 function pageShell({lang, title, description, canonicalPath, body, depth = 0, schema}) {
   const prefix = '../'.repeat(depth);
   const canonical = `${siteUrl}${canonicalPath}`;
   const localPath = canonicalPath.replace(/^\/(en|ja|es|zh-Hans|zh-Hant)/, '');
+  const schemaHtml = schema ? `  <script type="application/ld+json">${JSON.stringify(schema)}</script>\n` : '';
   const langMenu = `<details class="lang-menu">
         <summary>${esc(text[lang].language || 'Language')}</summary>
         <div>
@@ -492,8 +517,8 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260616-adsense1">
-  ${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ''}
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260616-legalmodal1">
+${schemaHtml}
 </head>
 <body class="static-page">
   <div class="scanlines" aria-hidden="true"></div>
@@ -507,6 +532,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
+  <script src="${prefix}assets/site.js?v=20260616-legalmodal1"></script>
 </body>
 </html>
 `;
@@ -592,11 +618,14 @@ function buildInteractiveHome(lang, template) {
     .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
     .replace(/href="\.\.\/"/g, 'href="../"');
   return template
+    .replace(/\s*<div class="legal-modal-backdrop"[\s\S]*?<\/section>\s*<\/div>\s*/g, '\n')
     .replace(/<html[^>]*>/, `<html lang="${text[lang].lang}">`)
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(text[lang].home)} · ${esc(text[lang].name)}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260616-legalmodal1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260616-legalmodal1')
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
     .replace(/href="\.\/es\/"/g, 'href="../es/"')
@@ -618,6 +647,7 @@ function buildRecordPage(doc, lang) {
     lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription)}` : ''
   ].filter(Boolean).join('\n        ');
   const preview = doc.imageUrl ? `<img src="${esc(urls(doc.imageUrl)[0])}" alt="">` : `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span></div>`;
+  const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'DigitalDocument',
@@ -649,8 +679,7 @@ function buildRecordPage(doc, lang) {
           <dt>${esc(l.release)}</dt><dd>${esc(releaseLabel(doc.release, lang))}</dd>
           <dt>${esc(l.date)}</dt><dd>${esc(doc.incidentDate || 'N/A')}</dd>
           <dt>${esc(l.location)}</dt><dd>${esc(langLocation(doc, lang))}</dd>
-          <dt>${esc(l.type)}</dt><dd>.${esc(doc.type)}</dd>
-          ${doc.virin ? `<dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : ''}
+          <dt>${esc(l.type)}</dt><dd>.${esc(doc.type)}</dd>${virinMeta}
         </dl>
       </aside>
     </section>

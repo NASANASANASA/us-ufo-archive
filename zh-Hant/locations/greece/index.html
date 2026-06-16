@@ -14,7 +14,7 @@
   <link rel="alternate" hreflang="x-default" href="https://nasanasanasa.github.io/us-ufo-archive/en/locations/greece/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../../assets/style.css?v=20260616-adsense1">
+  <link rel="stylesheet" href="../../../assets/style.css?v=20260616-legalmodal1">
 
 </head>
 <body class="static-page">
@@ -65,12 +65,57 @@
   <footer>
     <div><b>UAP 公開檔案</b><span>本站為非官方公開鏡像與研究索引。官方記錄文字和媒體均來自美國政府公開發布資料，中文內容僅作翻譯與資訊整理。</span></div>
     <nav class="footer-links" aria-label="Site policies">
-      <a href="../../../zh-Hant/about/">關於本站</a>
-      <a href="../../../zh-Hant/privacy/">隱私政策</a>
-      <a href="../../../zh-Hant/contact/">聯絡方式</a>
-      <a href="../../../zh-Hant/disclaimer/">免責聲明</a>
+      <a href="../../../zh-Hant/about/" data-legal-open="about">關於本站</a>
+      <a href="../../../zh-Hant/privacy/" data-legal-open="privacy">隱私政策</a>
+      <a href="../../../zh-Hant/contact/" data-legal-open="contact">聯絡方式</a>
+      <a href="../../../zh-Hant/disclaimer/" data-legal-open="disclaimer">免責聲明</a>
       <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener">SOURCE ↗</a>
     </nav>
   </footer>
+  <div class="legal-modal-backdrop" id="legal-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title" hidden>
+    <section class="legal-modal">
+      <header class="legal-modal-head">
+        <span id="legal-modal-title">SITE POLICY</span>
+        <button class="legal-modal-close" type="button" onclick="closeLegalModal()" aria-label="Close">×</button>
+      </header>
+      <div class="legal-modal-body">
+      <article class="legal-modal-page" data-legal-page="privacy" hidden>
+        <h2>隱私政策</h2>
+        <p class="legal-modal-desc">UAP 公開檔案非官方鏡像網站的隱私政策。</p>
+        <h3>概述</h3><p>本站是基於美國政府公開渠道資料建立的非官方 UAP 檔案鏡像與研究索引。瀏覽檔案無需註冊帳號，本站也不會要求訪問者提交個人資訊。</p>
+        <h3>廣告與 Cookie</h3><p>本站可能使用 Google AdSense 或其他第三方廣告服務。Google 及其合作夥伴可能使用 Cookie 或類似技術用於廣告投放、效果衡量、限制重複展示，以及在法律允許範圍內進行個人化廣告。訪問者可透過 Google 廣告設定和瀏覽器 Cookie 設定進行管理。</p>
+        <h3>日誌與技術資訊</h3><p>託管服務、內容分發網路、瀏覽器和安全服務可能自動處理標準技術資訊，例如 IP 位址、瀏覽器類型、裝置資訊、來源頁面、請求 URL 和訪問時間。這些資訊用於安全、穩定性、診斷和匯總流量分析。</p>
+        <h3>外部連結</h3><p>檔案記錄會連結到美國政府原始來源和外部媒體網站。外部網站由其自身隱私政策約束，本站無法控制。</p>
+        <h3>聯絡方式</h3><p>如有隱私、訂正或來源相關問題，請使用頁腳中的聯絡方式頁面。</p>
+        <p class="legal-modal-updated">Last updated: June 16, 2026</p>
+      </article>
+      <article class="legal-modal-page" data-legal-page="about" hidden>
+        <h2>關於本站</h2>
+        <p class="legal-modal-desc">關於 UAP 公開檔案非官方鏡像。</p>
+        <h3>網站目的</h3><p>本站將美國政府公開發布的 UAP 相關檔案整理為可檢索、多語言的檔案頁面，供研究、查閱和來源核驗使用。</p>
+        <h3>資料來源</h3><p>檔案標題、說明、元資料、文件、圖片和影片均基於美國政府公開發布資料。每條記錄在可用情況下保留原始來源連結。</p>
+        <h3>非官方聲明</h3><p>本站並非美國政府營運，也不代表任何政府機構。翻譯或排版與官方來源存在差異時，以英文官方原文為準。</p>
+        <p class="legal-modal-updated">Last updated: June 16, 2026</p>
+      </article>
+      <article class="legal-modal-page" data-legal-page="contact" hidden>
+        <h2>聯絡方式</h2>
+        <p class="legal-modal-desc">用於訂正、來源問題和隱私問題的聯絡方式。</p>
+        <h3>聯絡渠道</h3><p>如需提交訂正、失效連結、隱私問題或來源問題，請在專案 GitHub 倉庫建立公開 issue。</p>
+        <h3>專案倉庫</h3><p>GitHub: <a href="https://github.com/NASANASANASA/us-ufo-archive" target="_blank" rel="noopener">https://github.com/NASANASANASA/us-ufo-archive</a></p>
+        <h3>建議提供的資訊</h3><p>請提供頁面 URL、檔案標題、相關原始來源連結，以及對問題的簡明說明。</p>
+        <p class="legal-modal-updated">Last updated: June 16, 2026</p>
+      </article>
+      <article class="legal-modal-page" data-legal-page="disclaimer" hidden>
+        <h2>免責聲明</h2>
+        <p class="legal-modal-desc">UAP 公開檔案非官方鏡像網站的免責聲明。</p>
+        <h3>非政府隸屬</h3><p>本站不是美國政府官方網站，也不隸屬於、代表或受任何美國政府機構營運或認可。</p>
+        <h3>資訊用途</h3><p>本站檔案僅供資訊、研究和參考使用。本站不對任何被報告為 UAP 的事件性質作分析判斷、調查結論或事實認定。</p>
+        <h3>來源優先</h3><p>所有記錄均應以官方原始來源進行核驗。如本站文字、翻譯、格式或元資料與官方來源存在差異，以英文官方來源為準。</p>
+        <p class="legal-modal-updated">Last updated: June 16, 2026</p>
+      </article>
+      </div>
+    </section>
+  </div>
+  <script src="../../../assets/site.js?v=20260616-legalmodal1"></script>
 </body>
 </html>

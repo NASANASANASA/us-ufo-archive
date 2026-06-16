@@ -1,6 +1,10 @@
 function toggleMobile(){document.getElementById('mobileMenu')?.classList.toggle('open')}
 function closeMobile(){document.getElementById('mobileMenu')?.classList.remove('open')}
 document.addEventListener('click',e=>{if(!e.target.closest('.lang-menu'))document.querySelectorAll('details.lang-menu[open]').forEach(d=>d.removeAttribute('open'))});
+function openLegalModal(slug,event){if(event)event.preventDefault();const backdrop=document.getElementById('legal-modal-backdrop');if(!backdrop)return;const pages=[...backdrop.querySelectorAll('[data-legal-page]')];let active=backdrop.querySelector(`[data-legal-page="${slug}"]`)||pages[0];pages.forEach(page=>page.hidden=page!==active);backdrop.hidden=false;backdrop.classList.add('open');document.body.dataset.legalOverflow=document.body.style.overflow||'';document.body.style.overflow='hidden'}
+function closeLegalModal(){const backdrop=document.getElementById('legal-modal-backdrop');if(!backdrop)return;backdrop.classList.remove('open');backdrop.hidden=true;document.body.style.overflow=document.body.dataset.legalOverflow||'';delete document.body.dataset.legalOverflow}
+document.addEventListener('click',e=>{const trigger=e.target.closest('[data-legal-open]');if(trigger){openLegalModal(trigger.dataset.legalOpen,e);return}if(e.target.id==='legal-modal-backdrop')closeLegalModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLegalModal()});
 const UAP_LANG_DIRS={cn:'zh-Hans',tw:'zh-Hant',en:'en',ja:'ja',es:'es',pt:'pt',ru:'ru',fr:'fr',de:'de',ko:'ko',ar:'ar'};
 function uapBasePath(){return(location.pathname.replace(/\/(zh-Hans|zh-Hant|en|ja|es|pt|ru|fr|de|ko|ar)(\/.*)?$/,'/')||'/').replace(/\/+$/,'/')||'/'}
 function switchLangDir(dir,event){if(event)event.preventDefault();localStorage.setItem('uap-dir',dir);document.querySelectorAll('details.lang-menu').forEach(d=>d.removeAttribute('open'));location.href=uapBasePath()+dir+'/'+location.search+location.hash}
