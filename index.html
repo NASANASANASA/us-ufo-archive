@@ -3,7 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>US UAP Archive</title>
-  <script>location.replace(location.href.replace(/\/?(\?.*)?$/,'/en/$1')||'en/');</script>
+  <script>
+    (function(){
+      var langs=navigator.languages||[navigator.language||'en'];
+      var dir='en';
+      for(var i=0;i<langs.length;i++){
+        var l=langs[i].toLowerCase();
+        if(/^zh-(tw|hk|mo|hant)/i.test(l)){dir='zh-Hant';break;}
+        if(/^zh/i.test(l)){dir='zh-Hans';break;}
+        if(/^ja/i.test(l)){dir='ja';break;}
+        if(/^es/i.test(l)){dir='es';break;}
+        if(/^en/i.test(l)){dir='en';break;}
+      }
+      var base=location.href.split('?')[0].replace(/\/?$/,'/');
+      location.replace(base+dir+'/');
+    })();
+  </script>
   <noscript><meta http-equiv="refresh" content="0;url=en/"></noscript>
 </head>
 <body></body>
