@@ -365,6 +365,17 @@ function rel(fromLang, target) {
 function pageShell({lang, title, description, canonicalPath, body, depth = 0, schema}) {
   const prefix = '../'.repeat(depth);
   const canonical = `${siteUrl}${canonicalPath}`;
+  const localPath = canonicalPath.replace(/^\/(en|ja|es|zh-Hans|zh-Hant)/, '');
+  const langMenu = `<details class="lang-menu">
+        <summary>语言 / Language</summary>
+        <div>
+          <a href="${prefix}en${localPath}">EN</a>
+          <a href="${prefix}ja${localPath}">日本語</a>
+          <a href="${prefix}es${localPath}">ES</a>
+          <a href="${prefix}zh-Hans${localPath}">简体</a>
+          <a href="${prefix}zh-Hant${localPath}">繁體</a>
+        </div>
+      </details>`;
   const alternates = Object.keys(text).map(code => {
     const pathName = canonicalPath.replace(/^\/(en|ja|es|zh-Hans|zh-Hant)\//, `/${code}/`);
     return `<link rel="alternate" hreflang="${code}" href="${siteUrl}${pathName}">`;
@@ -391,7 +402,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
     <nav>
       <a href="${prefix}${lang}/archive/">${esc(text[lang].archive)}</a>
       <a href="${prefix}index.html#archive">Interactive</a>
-      ${Object.keys(text).map(code => `<a href="${prefix}${code}${canonicalPath.replace(/^\/(en|ja|es|zh-Hans|zh-Hant)/, '')}">${esc(text[code].name)}</a>`).join('')}
+      ${langMenu}
     </nav>
   </header>
   ${body}

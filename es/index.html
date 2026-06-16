@@ -7,7 +7,7 @@
   <meta name="description" content="Este sitio es un espejo público no oficial y un índice de investigación. El texto oficial y los medios proceden de publicaciones públicas del Gobierno de Estados Unidos.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css?v=20260616-seo3">
+  <link rel="stylesheet" href="../assets/style.css?v=20260616-langmenu">
 </head>
 <body>
   <div class="scanlines" aria-hidden="true"></div>
@@ -22,13 +22,16 @@
       <a href="#releases" data-i18n="nav_releases">公布批次</a>
       <a href="#about" data-i18n="nav_about">关于镜像</a>
       <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="nav_source">美国官网 ↗</a>
-      <a href="../en/">EN</a>
-      <a href="../ja/">日本語</a>
-      <a href="../es/">ES</a>
-      <div class="lang-switch" role="group" aria-label="语言切换">
-        <button data-lang="cn" onclick="setLang('cn')" data-i18n="lang_cn">简体</button>
-        <button data-lang="tw" onclick="setLang('tw')" data-i18n="lang_tw">繁體</button>
-      </div>
+      <details class="lang-menu">
+        <summary>语言 / Language</summary>
+        <div>
+          <a href="../en/">EN</a>
+          <a href="../ja/">日本語</a>
+          <a href="../es/">ES</a>
+          <button data-lang="cn" onclick="setLang('cn')" data-i18n="lang_cn">简体</button>
+          <button data-lang="tw" onclick="setLang('tw')" data-i18n="lang_tw">繁體</button>
+        </div>
+      </details>
     </nav>
     <button class="menu-button" aria-label="打开菜单" onclick="toggleMobile()">☰</button>
   </header>
@@ -37,13 +40,16 @@
     <a href="#archive" onclick="closeMobile()" data-i18n="nav_archive">档案库</a>
     <a href="#releases" onclick="closeMobile()" data-i18n="nav_releases">公布批次</a>
     <a href="#about" onclick="closeMobile()" data-i18n="nav_about">关于镜像</a>
-    <a href="../en/">EN</a>
-    <a href="../ja/">日本語</a>
-    <a href="../es/">ES</a>
-    <div class="lang-switch" role="group" aria-label="语言切换">
-      <button data-lang="cn" onclick="setLang('cn')" data-i18n="lang_cn">简体</button>
-      <button data-lang="tw" onclick="setLang('tw')" data-i18n="lang_tw">繁體</button>
-    </div>
+    <details class="lang-menu mobile-lang-menu" open>
+      <summary>语言 / Language</summary>
+      <div>
+        <a href="../en/">EN</a>
+        <a href="../ja/">日本語</a>
+        <a href="../es/">ES</a>
+        <button data-lang="cn" onclick="setLang('cn')" data-i18n="lang_cn">简体</button>
+        <button data-lang="tw" onclick="setLang('tw')" data-i18n="lang_tw">繁體</button>
+      </div>
+    </details>
   </div>
 
   <main>
@@ -190,9 +196,9 @@
     </article>
   </div>
 
-  <script src="../assets/db-data.js?v=20260616-jaes"></script>
-  <script src="../assets/dvids-map.js?v=20260616-jaes"></script>
-  <script src="../assets/i18n-ui.js?v=20260616-jaes"></script>
-  <script src="../assets/site.js?v=20260616-jaes"></script>
+  <script src="../assets/db-data.js?v=20260616-langmenu"></script>
+  <script src="../assets/dvids-map.js?v=20260616-langmenu"></script>
+  <script src="../assets/i18n-ui.js?v=20260616-langmenu"></script>
+  <script src="../assets/site.js?v=20260616-langmenu"></script>
 </body>
 </html>
