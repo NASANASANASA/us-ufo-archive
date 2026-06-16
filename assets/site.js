@@ -4,9 +4,9 @@ function closeMobile(){document.getElementById('mobileMenu')?.classList.remove('
   const tbody=document.getElementById('db-tbody');if(!tbody)return;
   let activeRelease='all',sortKey='incidentDate',sortDir=-1,currentPage=1;
   let modalToken=0,currentModalIndex=-1;
-  const requestedLang=new URLSearchParams(location.search).get('lang');
-  let lang=requestedLang==='tw'||requestedLang==='cn'?requestedLang:(localStorage.getItem('uap-lang')==='tw'?'tw':'cn');
-  if(requestedLang==='tw'||requestedLang==='cn')localStorage.setItem('uap-lang',lang);
+  const requestedLang=new URLSearchParams(location.search).get('lang'),pathLang=(location.pathname.match(/\/(en|ja|es|zh-Hans|zh-Hant)(?:\/|$)/)||[])[1],validLangs=['cn','tw','en','ja','es'],pathLangMap={'zh-Hans':'cn','zh-Hant':'tw',en:'en',ja:'ja',es:'es'};
+  let lang=validLangs.includes(requestedLang)?requestedLang:(pathLangMap[pathLang]||'tw');
+  if(validLangs.includes(requestedLang))localStorage.setItem('uap-lang',lang);
   let I18N_CN=[],I18N_TW=[];
   let DVIDS_META={};
   const pageSize=20;
@@ -16,7 +16,7 @@ function closeMobile(){document.getElementById('mobileMenu')?.classList.remove('
   const urls=v=>clean(v).split('|').map(clean).filter(Boolean),field=(r,ns)=>{for(const n of ns){if(r[key(n)])return clean(r[key(n)])}return''};
   const absolute=v=>{v=clean(v);if(!v)return'';if(/^https?:\/\//i.test(v))return v;if(/^\/\//.test(v))return`https:${v}`;if(v.startsWith('/'))return`https://www.war.gov${v}`;return v};
   const t=k=>(UI_TEXT[k]&&UI_TEXT[k][lang])||k;
-  const tr=(d,f)=>{const o=lang==='tw'?d.i18nTw:d.i18nCn;return(o&&o[f])||''};
+  const tr=(d,f)=>{const o=lang==='tw'?d.i18nTw:(lang==='cn'?d.i18nCn:null);return(o&&o[f])||''};
   const trTitle=d=>tr(d,'titleZh')||d.id;
   const trLoc=d=>tr(d,'locZh')||d.incidentLocation||t('t_unspecified');
   const trDesc=d=>tr(d,'descZh')||d.description||t('t_no_desc');
@@ -61,7 +61,7 @@ function closeMobile(){document.getElementById('mobileMenu')?.classList.remove('
   function related(d){const codes=[...urls(d.videoPairing),...urls(d.pdfPairing)].map(assetCode);return UAP_DOCS.filter(x=>x!==d&&codes.some(c=>assetCode(x.id)===c||assetCode(x.id).endsWith(c)))}
   function officialRecordPage(d){const n=d.release.match(/(\d{2})$/)?.[1]||'03',hash=clean(d.id).replace(/\s+/g,'-').replace(/[^A-Za-z0-9\-_]/g,'').replace(/-+/g,'-');return`https://www.war.gov/UFO/release/${n}/?releaseDate=Release+${n}#${hash}`}
   function media(d){const paired=related(d);return `<div class="media-stack">${primaryMedia(d)}${paired.length?`<div class="paired-media"><b>${t('t_related_media')}</b><div class="paired-media-list">${paired.map(x=>`<button onclick="openDocModal(${UAP_DOCS.indexOf(x)})"><span>${esc(x.type)}</span>${esc(trTitle(x))}</button>`).join('')}</div></div>`:''}</div>`}
-  function applyUIText(){document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=t(el.dataset.i18n));document.querySelectorAll('[data-i18n-html]').forEach(el=>el.innerHTML=t(el.dataset.i18nHtml));document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>el.placeholder=t(el.dataset.i18nPlaceholder));document.querySelectorAll('.lang-switch button').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));document.documentElement.lang=lang==='tw'?'zh-TW':'zh-CN'}
+  function applyUIText(){document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=t(el.dataset.i18n));document.querySelectorAll('[data-i18n-html]').forEach(el=>el.innerHTML=t(el.dataset.i18nHtml));document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>el.placeholder=t(el.dataset.i18nPlaceholder));document.querySelectorAll('.lang-switch button').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));document.documentElement.lang={tw:'zh-TW',cn:'zh-CN',en:'en',ja:'ja',es:'es'}[lang]||'zh-TW'}
   window.setLang=l=>{lang=l==='tw'?'tw':'cn';localStorage.setItem('uap-lang',lang);applyUIText();if(UAP_DOCS.length){populate();render()}if(currentModalIndex>=0&&document.getElementById('db-modal-backdrop').classList.contains('open'))openDocModal(currentModalIndex)};
   window.dbSetRelease=(v,b)=>{activeRelease=v;currentPage=1;document.querySelectorAll('.db-tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');release.value=v;document.querySelectorAll('[data-release-banner]').forEach(x=>x.hidden=x.dataset.releaseBanner!==v);render()};window.dbSort=k=>{sortDir=sortKey===k?-sortDir:1;sortKey=k;currentPage=1;render()};window.dbPage=p=>{const max=Math.max(1,Math.ceil(selected().length/pageSize));currentPage=Math.max(1,Math.min(p,max));render();document.querySelector('.db-table-wrap').scrollIntoView({behavior:'smooth',block:'start'})};
   async function loadDvidsVideo(d,token){if(!d.dvidsId)return;const host=document.getElementById(`dvids-video-${d.dvidsId}`);if(!host||token!==modalToken)return;const mp4=typeof DVIDS_MP4!=='undefined'?DVIDS_MP4[d.dvidsId]:'';if(!mp4){host.textContent=t('t_no_video_src');return}if(token!==modalToken||!document.body.contains(host))return;d.directVideoUrl=mp4;host.outerHTML=`<video controls playsinline><source src="${esc(mp4)}" type="video/mp4"></video>`;const download=document.getElementById('db-download-asset');if(token!==modalToken)return;download.href=mp4;download.onclick=e=>downloadVideo(e,d)}
@@ -73,9 +73,9 @@ function closeMobile(){document.getElementById('mobileMenu')?.classList.remove('
   tbody.innerHTML=`<tr><td colspan="6" class="empty-row">${t('t_db_loading')}</td></tr>`;
   Promise.all([
     fetch(UAP_LOCAL_CSV).then(r=>{if(!r.ok)throw Error(r.status);return r.text()}),
-    fetch('./assets/i18n-zh-cn.json').then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch('./assets/i18n-zh-tw.json').then(r=>r.ok?r.json():[]).catch(()=>[]),
-    fetch('./assets/dvids-meta.json').then(r=>r.ok?r.json():{}).catch(()=>({}))
+    fetch(`${UAP_ASSET_BASE}i18n-zh-cn.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch(`${UAP_ASSET_BASE}i18n-zh-tw.json`).then(r=>r.ok?r.json():[]).catch(()=>[]),
+    fetch(`${UAP_ASSET_BASE}dvids-meta.json`).then(r=>r.ok?r.json():{}).catch(()=>({}))
   ]).then(([csvText,cn,tw,dvidsMeta])=>{
     I18N_CN=cn;I18N_TW=tw;DVIDS_META=dvidsMeta;
     UAP_DOCS=parseCSV(csvText).map((r,idx)=>normalize(r,idx)).filter(d=>d.id);

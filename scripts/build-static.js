@@ -373,7 +373,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260616-seo2">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260616-seo3">
   ${schema ? `<script type="application/ld+json">${JSON.stringify(schema)}</script>` : ''}
 </head>
 <body class="static-page">
@@ -445,6 +445,19 @@ function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth
     </section>
   </main>`;
   return pageShell({lang, title: `${l.home} · ${l.archive}`, description: l.generated, canonicalPath, body, depth});
+}
+
+function buildInteractiveHome(lang) {
+  return read('index.html')
+    .replace('<html lang="zh-CN">', `<html lang="${text[lang].lang}">`)
+    .replace('<title>美国 UAP 公开档案 · 中文镜像</title>', `<title>${esc(text[lang].home)} · ${esc(text[lang].name)}</title>`)
+    .replace('content="美国政府公开 UFO/UAP 档案中文翻译镜像。内容引用自美国政府官方网站。"', `content="${esc(text[lang].notice)}"`)
+    .replace(/href="\.\/assets\//g, 'href="../assets/')
+    .replace(/src="\.\/assets\//g, 'src="../assets/')
+    .replace(/href="\.\/en\/"/g, 'href="../en/"')
+    .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
+    .replace(/href="\.\/es\/"/g, 'href="../es/"')
+    .replace(/href="\.\/"/g, 'href="../"');
 }
 
 function buildRecordPage(doc, lang) {
@@ -537,7 +550,7 @@ function build() {
   for (const dir of generatedDirs) fs.rmSync(path.join(root, dir), {recursive: true, force: true});
 
   for (const lang of Object.keys(text)) {
-    writeFile(`${lang}/index.html`, buildArchivePage(docs, lang, `/${lang}/`, 1));
+    writeFile(`${lang}/index.html`, buildInteractiveHome(lang));
     urlsForSitemap.push(`/${lang}/`);
     writeFile(`${lang}/archive/index.html`, buildArchivePage(docs, lang));
     urlsForSitemap.push(`/${lang}/archive/`);
