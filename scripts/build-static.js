@@ -2,8 +2,9 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
-const siteUrl = (process.env.SITE_URL || 'https://nasanasanasa.github.io/us-ufo-archive').replace(/\/$/, '');
+const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const generatedDirs = ['en', 'ja', 'es', 'zh-Hans', 'zh-Hant'];
+const extraStaticDirs = ['pt', 'ru', 'fr', 'de', 'ko', 'ar'];
 
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const clean = value => String(value || '').replace(/\u00a0/g, ' ').trim();
@@ -767,6 +768,16 @@ function build() {
       for (const [raw, entry] of map.entries()) {
         writeFile(`${lang}/${group.kind}/${slug(raw)}/index.html`, buildGroupPage(entry.docs, lang, group.kind, slug(raw), entry.label));
         urlsForSitemap.push(`/${lang}/${group.kind}/${slug(raw)}/`);
+      }
+    }
+  }
+
+  for (const lang of extraStaticDirs) {
+    if (!fs.existsSync(path.join(root, lang, 'index.html'))) continue;
+    urlsForSitemap.push(`/${lang}/`);
+    for (const slugName of Object.keys(legalPages)) {
+      if (fs.existsSync(path.join(root, lang, slugName, 'index.html'))) {
+        urlsForSitemap.push(`/${lang}/${slugName}/`);
       }
     }
   }
