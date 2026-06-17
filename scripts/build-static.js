@@ -3,6 +3,8 @@ const path = require('path');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
+const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
+     crossorigin="anonymous"></script>`;
 const generatedDirs = ['en', 'ja', 'es', 'zh-Hans', 'zh-Hant'];
 const extraStaticDirs = ['pt', 'ru', 'fr', 'de', 'ko', 'ar'];
 
@@ -519,6 +521,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${prefix}assets/style.css?v=20260616-legalmodal1">
+  ${adsenseScript}
 ${schemaHtml}
 </head>
 <body class="static-page">
@@ -620,6 +623,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\.\/"/g, 'href="../"');
   return template
     .replace(/\s*<div class="legal-modal-backdrop"[\s\S]*?<\/section>\s*<\/div>\s*/g, '\n')
+    .replace(/\s*<script async src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-2222469808721720"[\s\S]*?<\/script>\s*/g, '\n')
     .replace(/<html[^>]*>/, `<html lang="${text[lang].lang}">`)
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(text[lang].home)} · ${esc(text[lang].name)}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
@@ -627,6 +631,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/src="\.\/assets\//g, 'src="../assets/')
     .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260616-legalmodal1')
     .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260617-recordurl1')
+    .replace('</head>', `  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
     .replace(/href="\.\/es\/"/g, 'href="../es/"')
