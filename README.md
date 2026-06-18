@@ -6,14 +6,14 @@
 
 <p align="center">
   <a href="https://uap-archives.org/en/">English</a> |
-  <a href="https://uap-archives.org/ja/">日本語</a> |
   <a href="https://uap-archives.org/es/">Español</a> |
-  <a href="https://uap-archives.org/zh-Hans/">简体中文</a> |
-  <a href="https://uap-archives.org/zh-Hant/">繁體中文</a> |
-  <a href="https://uap-archives.org/pt/">Português</a> |
-  <a href="https://uap-archives.org/ru/">Русский</a> |
   <a href="https://uap-archives.org/fr/">Français</a> |
   <a href="https://uap-archives.org/de/">Deutsch</a> |
+  <a href="https://uap-archives.org/pt/">Português</a> |
+  <a href="https://uap-archives.org/ru/">Русский</a> |
+  <a href="https://uap-archives.org/ja/">日本語</a> |
+  <a href="https://uap-archives.org/zh-Hans/">简体中文</a> |
+  <a href="https://uap-archives.org/zh-Hant/">繁體中文</a> |
   <a href="https://uap-archives.org/ko/">한국어</a> |
   <a href="https://uap-archives.org/ar/">العربية</a>
 </p>
@@ -61,20 +61,17 @@ This repository contains a public archive mirror for U.S. government UFO / UAP r
 
 ## Languages
 
-Core archive pages are available in:
+The site provides multilingual archive and interface pages in:
 
 - English
-- 日本語
 - Español
-- 简体中文
-- 繁體中文
-
-Additional interface pages are also available in:
-
-- Português
-- Русский
 - Français
 - Deutsch
+- Português
+- Русский
+- 日本語
+- 简体中文
+- 繁體中文
 - 한국어
 - العربية
 
