@@ -86,7 +86,10 @@ function normalize(row, index, zhCn, zhTw, ja, es) {
     '05/22/2026': 'RELEASE 02',
     '6/12/26': 'RELEASE 03',
     '6/12/2026': 'RELEASE 03',
-    '06/12/2026': 'RELEASE 03'
+    '06/12/2026': 'RELEASE 03',
+    '7/10/26': 'RELEASE 04',
+    '7/10/2026': 'RELEASE 04',
+    '07/10/2026': 'RELEASE 04'
   };
   const officialType = field(row, ['type']).trim().toUpperCase();
   const assetLink = absolute(field(row, ['pdf | image link', 'pdf image link']));
