@@ -530,7 +530,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260616-legalmodal1">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260713-media1">
   ${analyticsScript}
   ${adsenseScript}
 ${schemaHtml}
@@ -641,7 +641,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
-    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260616-legalmodal1')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260713-media1')
     .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260712-r4full1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
@@ -664,7 +664,7 @@ function buildRecordPage(doc, lang) {
       : '',
     lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription)}` : ''
   ].filter(Boolean).join('\n        ');
-  const preview = doc.imageUrl ? `<img src="${esc(urls(doc.imageUrl)[0])}" alt="">` : `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span></div>`;
+  const mediaPreview = staticMediaPreview(doc, lang, title);
   const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
   const schema = {
     '@context': 'https://schema.org',
@@ -691,7 +691,7 @@ function buildRecordPage(doc, lang) {
         <a class="static-button" href="${esc(doc.sourceUrl)}" target="_blank" rel="noopener">${esc(l.source)} ↗</a>
       </article>
       <aside class="static-panel">
-        <div class="static-preview">${preview}</div>
+        ${mediaPreview}
         <dl class="static-meta">
           <dt>${esc(l.agency)}</dt><dd>${esc(agencyLabel(doc.agency, lang))}</dd>
           <dt>${esc(l.release)}</dt><dd>${esc(releaseLabel(doc.release, lang))}</dd>
@@ -703,6 +703,73 @@ function buildRecordPage(doc, lang) {
     </section>
   </main>`;
   return pageShell({lang, title: `${title} · ${l.home}`, description, canonicalPath, body, depth: 3, schema});
+}
+
+function releaseDownloadLinks(doc, lang) {
+  const n = clean(doc.release).match(/(\d{2})$/)?.[1];
+  const labels = {
+    en: {docs: 'Download release documents', videos: 'Download release videos'},
+    ja: {docs: '公開文書をダウンロード', videos: '公開動画をダウンロード'},
+    es: {docs: 'Descargar documentos de la publicación', videos: 'Descargar videos de la publicación'},
+    'zh-Hans': {docs: '下载本批文件', videos: '下载本批视频'},
+    'zh-Hant': {docs: '下載本批檔案', videos: '下載本批影片'}
+  }[lang] || {docs: 'Download release documents', videos: 'Download release videos'};
+  const bundles = {
+    '01': [
+      ['PDF', labels.docs, 'https://www.war.gov/medialink/ufo/bundle/Release_1.zip'],
+      ['VID', labels.videos, 'https://d34w7g4gy10iej.cloudfront.net/uapvideos.zip']
+    ],
+    '02': [
+      ['PDF', labels.docs, 'https://www.war.gov/medialink/ufo/052226/release_02/release_02_document_bundle.zip'],
+      ['VID', labels.videos, 'https://d34w7g4gy10iej.cloudfront.net/uap052226.zip']
+    ],
+    '03': [
+      ['PDF', labels.docs, 'https://www.war.gov/medialink/ufo/061226/release_03/release_03_documents.zip'],
+      ['VID', labels.videos, 'https://d34w7g4gy10iej.cloudfront.net/release_03/uap_videos_061226.zip']
+    ],
+    '04': [
+      ['PDF', labels.docs, 'https://www.war.gov/medialink/ufo/071026/release_04/release_04_documents_071026.zip'],
+      ['VID', labels.videos, 'https://d34w7g4gy10iej.cloudfront.net/release_04/uap_release04_videos_071026.zip']
+    ]
+  };
+  return bundles[n] || [];
+}
+
+function staticMediaPreview(doc, lang, title) {
+  const image = urls(doc.imageUrl)[0] || '';
+  const video = urls(doc.videoUrl || '')[0] || '';
+  const isAV = doc.type === 'VID' || doc.type === 'AUD';
+  const labels = {
+    en: {openPdf: 'Open PDF', openImage: 'Open image'},
+    ja: {openPdf: 'PDFを開く', openImage: '画像を開く'},
+    es: {openPdf: 'Abrir PDF', openImage: 'Abrir imagen'},
+    'zh-Hans': {openPdf: '打开 PDF', openImage: '打开图片'},
+    'zh-Hant': {openPdf: '開啟 PDF', openImage: '開啟圖片'}
+  }[lang] || {openPdf: 'Open PDF', openImage: 'Open image'};
+  const openOfficial = `<a class="static-media-button" href="${esc(doc.sourceUrl)}" target="_blank" rel="noopener">${esc(text[lang].source)} ↗</a>`;
+  const openFile = doc.documentUrl ? `<a class="static-media-button" href="${esc(doc.documentUrl)}" target="_blank" rel="noopener">${esc(labels.openPdf)} ↗</a>` : '';
+  const openImage = image && doc.type === 'IMG' ? `<a class="static-media-button" href="${esc(image)}" target="_blank" rel="noopener">${esc(labels.openImage)} ↗</a>` : '';
+  const releaseLinks = releaseDownloadLinks(doc, lang)
+    .filter(([type]) => (isAV ? type === 'VID' : doc.type === 'PDF' && type === 'PDF'))
+    .map(([type, textLabel, url]) => `<a class="static-media-button" href="${esc(url)}" target="_blank" rel="noopener"><span>${esc(type)}</span>${esc(textLabel)}</a>`)
+    .join('\n          ');
+  let preview = '';
+  if (doc.type === 'PDF' && doc.documentUrl) {
+    preview = `<object class="static-pdf-preview" data="${esc(doc.documentUrl)}" type="application/pdf"><div class="real-file"><b>.PDF</b><span>${esc(title)}</span></div></object>`;
+  } else if (video) {
+    preview = `<video class="static-video-preview" controls playsinline${image ? ` poster="${esc(image)}"` : ''}><source src="${esc(video)}"></video>`;
+  } else if (image) {
+    preview = `<img src="${esc(image)}" alt="${esc(doc.i18n?.[lang]?.altZh || title)}">`;
+  } else {
+    preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span></div>`;
+  }
+  const actions = [openFile, openImage, releaseLinks, openOfficial].filter(Boolean).join('\n          ');
+  return `<div class="static-preview static-preview-${esc(doc.type.toLowerCase())}">
+          ${preview}
+        </div>
+        <div class="static-media-actions">
+          ${actions}
+        </div>`;
 }
 
 function paragraphs(value) {

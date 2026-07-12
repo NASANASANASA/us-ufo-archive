@@ -93,8 +93,14 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .static-row span{color:#8e9aa0;font-size:13px}
 .static-row em{font-style:normal;color:#8e9aa0;border:1px solid var(--line2);padding:4px 7px;text-align:center;font-family:var(--mono)}
 .static-record-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(340px,.7fr);gap:22px;align-items:start}
-.static-preview{background:#030609;min-height:280px;display:grid;place-items:center;margin-bottom:24px}
-.static-preview img{max-width:100%;max-height:460px;object-fit:contain}
+.static-preview{background:#030609;min-height:360px;display:grid;place-items:center;margin-bottom:14px;border:1px solid var(--line);overflow:hidden}
+.static-preview img{width:100%;max-width:100%;max-height:560px;object-fit:contain}
+.static-pdf-preview{width:100%;min-height:560px;border:0;background:#030609}
+.static-video-preview{width:100%;max-height:620px;background:#030609;object-fit:contain}
+.static-media-actions{display:grid;gap:10px;margin-bottom:24px}
+.static-media-button{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line2);padding:12px 14px;color:var(--cyan);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.02em}
+.static-media-button span{font-family:var(--mono);font-size:11px;color:#8e9aa0}
+.static-media-button:hover{border-color:var(--cyan);background:rgba(110,215,223,.08)}
 .static-button{display:inline-block;margin-top:10px;border:1px solid var(--line2);padding:13px 17px;color:var(--cyan);text-decoration:none;font-size:14px;font-weight:500}
 .static-button:hover{border-color:var(--cyan);background:rgba(110,215,223,.08)}
 .static-meta{margin:0}
