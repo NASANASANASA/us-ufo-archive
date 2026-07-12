@@ -547,7 +547,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260711-r4links1"></script>
+  <script src="${prefix}assets/site.js?v=20260712-r4full1"></script>
 </body>
 </html>
 `;
@@ -642,7 +642,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
     .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260616-legalmodal1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260711-r4links1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260712-r4full1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
