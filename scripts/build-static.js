@@ -547,7 +547,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260712-r4full1"></script>
+  <script src="${prefix}assets/site.js?v=20260713-media2"></script>
 </body>
 </html>
 `;
@@ -642,7 +642,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
     .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260713-media1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260712-r4full1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260713-media2')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -665,6 +665,7 @@ function buildRecordPage(doc, lang) {
     lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription)}` : ''
   ].filter(Boolean).join('\n        ');
   const mediaPreview = staticMediaPreview(doc, lang, title);
+  const recordSourceUrl = (doc.type === 'VID' || doc.type === 'AUD' || doc.type === 'IMG') ? staticOfficialRecordPage(doc) : doc.sourceUrl;
   const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
   const schema = {
     '@context': 'https://schema.org',
@@ -688,7 +689,7 @@ function buildRecordPage(doc, lang) {
         <h2>${esc(l.summary)}</h2>
         <p>${esc(structuredSummary(doc, lang))}</p>
         ${descriptionBlocks}
-        <a class="static-button" href="${esc(doc.sourceUrl)}" target="_blank" rel="noopener">${esc(l.source)} ↗</a>
+        <a class="static-button" href="${esc(recordSourceUrl)}" target="_blank" rel="noopener">${esc(l.source)} ↗</a>
       </article>
       <aside class="static-panel">
         ${mediaPreview}
@@ -735,6 +736,15 @@ function releaseDownloadLinks(doc, lang) {
   return bundles[n] || [];
 }
 
+function staticOfficialRecordPage(doc) {
+  const n = clean(doc.release).match(/(\d{2})$/)?.[1] || '04';
+  const hash = clean(doc.id || '')
+    .replace(/\s+/g, '-')
+    .replace(/[^A-Za-z0-9\-_]/g, '')
+    .replace(/-+/g, '-');
+  return `https://www.war.gov/UFO/release/${n}/?releaseDate=Release+${n}#${hash}`;
+}
+
 function staticMediaPreview(doc, lang, title) {
   const image = urls(doc.imageUrl)[0] || '';
   const video = urls(doc.videoUrl || '')[0] || '';
@@ -746,22 +756,29 @@ function staticMediaPreview(doc, lang, title) {
     'zh-Hans': {openPdf: '打开 PDF', openImage: '打开图片'},
     'zh-Hant': {openPdf: '開啟 PDF', openImage: '開啟圖片'}
   }[lang] || {openPdf: 'Open PDF', openImage: 'Open image'};
-  const openOfficial = `<a class="static-media-button" href="${esc(doc.sourceUrl)}" target="_blank" rel="noopener">${esc(text[lang].source)} ↗</a>`;
+  const blocked = {
+    en: 'The official source blocks external previews. Open the official source or download the release bundle.',
+    ja: '公式ソースが外部サイトでのプレビュー表示をブロックしています。公式ソースを開くか、リリースのファイルをダウンロードしてください。',
+    es: 'La fuente oficial bloquea la vista previa externa. Abre la fuente oficial o descarga el paquete de la publicación.',
+    'zh-Hans': '官方源站阻止外链预览。请打开官方来源或下载本批文件。',
+    'zh-Hant': '官方來源網站阻止外連預覽。請開啟官方來源或下載本批檔案。'
+  }[lang] || 'The official source blocks external previews. Open the official source or download the release bundle.';
+  const fallback = `<div class="real-file media-fallback"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
+  const officialUrl = (doc.type === 'VID' || doc.type === 'AUD' || doc.type === 'IMG') ? staticOfficialRecordPage(doc) : doc.sourceUrl;
+  const openOfficial = `<a class="static-media-button" href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(text[lang].source)} ↗</a>`;
   const openFile = doc.documentUrl ? `<a class="static-media-button" href="${esc(doc.documentUrl)}" target="_blank" rel="noopener">${esc(labels.openPdf)} ↗</a>` : '';
-  const openImage = image && doc.type === 'IMG' ? `<a class="static-media-button" href="${esc(image)}" target="_blank" rel="noopener">${esc(labels.openImage)} ↗</a>` : '';
+  const openImage = image && doc.type === 'IMG' ? `<a class="static-media-button" href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(labels.openImage)} ↗</a>` : '';
   const releaseLinks = releaseDownloadLinks(doc, lang)
     .filter(([type]) => (isAV ? type === 'VID' : doc.type === 'PDF' && type === 'PDF'))
     .map(([type, textLabel, url]) => `<a class="static-media-button" href="${esc(url)}" target="_blank" rel="noopener"><span>${esc(type)}</span>${esc(textLabel)}</a>`)
     .join('\n          ');
   let preview = '';
-  if (doc.type === 'PDF' && doc.documentUrl) {
-    preview = `<object class="static-pdf-preview" data="${esc(doc.documentUrl)}" type="application/pdf"><div class="real-file"><b>.PDF</b><span>${esc(title)}</span></div></object>`;
-  } else if (video) {
+  if (video) {
     preview = `<video class="static-video-preview" controls playsinline${image ? ` poster="${esc(image)}"` : ''}><source src="${esc(video)}"></video>`;
   } else if (image) {
-    preview = `<img src="${esc(image)}" alt="${esc(doc.i18n?.[lang]?.altZh || title)}">`;
+    preview = `<img src="${esc(image)}" alt="${esc(doc.i18n?.[lang]?.altZh || title)}" onerror="this.parentNode.classList.add('broken')">${fallback}`;
   } else {
-    preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span></div>`;
+    preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   }
   const actions = [openFile, openImage, releaseLinks, openOfficial].filter(Boolean).join('\n          ');
   return `<div class="static-preview static-preview-${esc(doc.type.toLowerCase())}">
