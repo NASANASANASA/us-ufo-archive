@@ -21,6 +21,11 @@ const key = value => clean(value).toLowerCase().replace(/[^a-z0-9]/g, '');
 const esc = value => clean(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const slug = value => clean(value).toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'unspecified';
 const assetCode = value => clean(value).split(',')[0].toUpperCase().replace(/[^A-Z0-9]/g, '');
+const mirroredAsset = value => {
+  const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)$/i);
+  return m ? `assets/mirror/release-04/${m[1]}` : clean(value);
+};
+const relativePath = (value, depth) => /^https?:\/\//i.test(clean(value)) ? clean(value) : `${'../'.repeat(depth)}${clean(value)}`;
 
 function parseCSV(text) {
   const rows = [];
@@ -547,7 +552,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260713-media2"></script>
+  <script src="${prefix}assets/site.js?v=20260713-mirror1"></script>
 </body>
 </html>
 `;
@@ -642,7 +647,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
     .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260713-media1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260713-media2')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260713-mirror1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -747,6 +752,7 @@ function staticOfficialRecordPage(doc) {
 
 function staticMediaPreview(doc, lang, title) {
   const image = urls(doc.imageUrl)[0] || '';
+  const localImage = image ? mirroredAsset(image) : '';
   const video = urls(doc.videoUrl || '')[0] || '';
   const isAV = doc.type === 'VID' || doc.type === 'AUD';
   const labels = {
@@ -774,9 +780,10 @@ function staticMediaPreview(doc, lang, title) {
     .join('\n          ');
   let preview = '';
   if (video) {
-    preview = `<video class="static-video-preview" controls playsinline${image ? ` poster="${esc(image)}"` : ''}><source src="${esc(video)}"></video>`;
+    preview = `<video class="static-video-preview" controls playsinline${localImage ? ` poster="${esc(relativePath(localImage, 3))}"` : ''}><source src="${esc(video)}"></video>`;
   } else if (image) {
-    preview = `<img src="${esc(image)}" alt="${esc(doc.i18n?.[lang]?.altZh || title)}" onerror="this.parentNode.classList.add('broken')">${fallback}`;
+    const localSrc = relativePath(localImage, 3);
+    preview = `<img src="${esc(localSrc)}" data-fallback-src="${esc(image)}" alt="${esc(doc.i18n?.[lang]?.altZh || title)}" onerror="if(this.dataset.fallbackSrc&&this.src!==this.dataset.fallbackSrc){this.src=this.dataset.fallbackSrc;delete this.dataset.fallbackSrc}else{this.parentNode.classList.add('broken')}">${fallback}`;
   } else {
     preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   }
