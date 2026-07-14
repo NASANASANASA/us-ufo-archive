@@ -3,6 +3,7 @@ const path = require('path');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
+const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
 const analyticsScript = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZND85JXQ6M"></script>
@@ -24,6 +25,10 @@ const assetCode = value => clean(value).split(',')[0].toUpperCase().replace(/[^A
 const mirroredAsset = value => {
   const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)$/i);
   return m ? `assets/mirror/release-04/${m[1]}` : clean(value);
+};
+const r2Asset = value => {
+  const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)$/i);
+  return m ? `${mediaBase}release-04/${m[1]}` : clean(value);
 };
 const relativePath = (value, depth) => /^https?:\/\//i.test(clean(value)) ? clean(value) : `${'../'.repeat(depth)}${clean(value)}`;
 
@@ -552,7 +557,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260713-mirror1"></script>
+  <script src="${prefix}assets/site.js?v=20260714-r2media1"></script>
 </body>
 </html>
 `;
@@ -647,7 +652,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
     .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260713-media1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260713-mirror1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260714-r2media1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -752,6 +757,7 @@ function staticOfficialRecordPage(doc) {
 
 function staticMediaPreview(doc, lang, title) {
   const image = urls(doc.imageUrl)[0] || '';
+  const r2Image = image ? r2Asset(image) : '';
   const localImage = image ? mirroredAsset(image) : '';
   const video = urls(doc.videoUrl || '')[0] || '';
   const isAV = doc.type === 'VID' || doc.type === 'AUD';
@@ -780,10 +786,10 @@ function staticMediaPreview(doc, lang, title) {
     .join('\n          ');
   let preview = '';
   if (video) {
-    preview = `<video class="static-video-preview" controls playsinline${localImage ? ` poster="${esc(relativePath(localImage, 3))}"` : ''}><source src="${esc(video)}"></video>`;
+    preview = `<video class="static-video-preview" controls playsinline${r2Image ? ` poster="${esc(r2Image)}"` : ''}><source src="${esc(video)}"></video>`;
   } else if (image) {
-    const localSrc = relativePath(localImage, 3);
-    preview = `<img src="${esc(localSrc)}" data-fallback-src="${esc(image)}" alt="${esc(doc.i18n?.[lang]?.altZh || title)}" onerror="if(this.dataset.fallbackSrc&&this.src!==this.dataset.fallbackSrc){this.src=this.dataset.fallbackSrc;delete this.dataset.fallbackSrc}else{this.parentNode.classList.add('broken')}">${fallback}`;
+    const fallbackSrcs = [relativePath(localImage, 3), image].join('|');
+    preview = `<img src="${esc(r2Image)}" data-fallback-srcs="${esc(fallbackSrcs)}" alt="${esc(doc.i18n?.[lang]?.altZh || title)}" onerror="const q=(this.dataset.fallbackSrcs||'').split('|').filter(Boolean);if(q.length){this.src=q.shift();this.dataset.fallbackSrcs=q.join('|')}else{this.parentNode.classList.add('broken')}">${fallback}`;
   } else {
     preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   }
