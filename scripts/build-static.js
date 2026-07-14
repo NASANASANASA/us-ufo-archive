@@ -4,6 +4,7 @@ const path = require('path');
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
+const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260714-r2upload1';
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
 const analyticsScript = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZND85JXQ6M"></script>
@@ -28,7 +29,7 @@ const mirroredAsset = value => {
 };
 const r2Asset = value => {
   const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)$/i);
-  return m ? `${mediaBase}release-04/${m[1]}` : clean(value);
+  return m ? `${mediaBase}release-04/${m[1]}?v=${encodeURIComponent(mediaVersion)}` : clean(value);
 };
 const relativePath = (value, depth) => /^https?:\/\//i.test(clean(value)) ? clean(value) : `${'../'.repeat(depth)}${clean(value)}`;
 

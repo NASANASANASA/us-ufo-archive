@@ -26,7 +26,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('.lang-menu a[dat
   const esc=v=>clean(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const urls=v=>clean(v).split('|').map(clean).filter(Boolean),field=(r,ns)=>{for(const n of ns){if(r[key(n)])return clean(r[key(n)])}return''};
   const absolute=v=>{v=clean(v);if(!v)return'';if(/^https?:\/\//i.test(v))return v;if(/^\/\//.test(v))return`https:${v}`;if(v.startsWith('/'))return`https://www.war.gov${v}`;return v};
-  const mediaCandidates=v=>{v=clean(v);const m=v.match(/\/071026\/Slideshow\/([^/?#]+)$/i);if(!m)return[v];const base=typeof UAP_MEDIA_BASE==='string'?UAP_MEDIA_BASE:'https://media.uap-archives.org/';return[`${base.replace(/\/?$/,'/')}release-04/${m[1]}`,`${UAP_ASSET_BASE}mirror/release-04/${m[1]}`,v]};
+  const mediaCandidates=v=>{v=clean(v);const m=v.match(/\/071026\/Slideshow\/([^/?#]+)$/i);if(!m)return[v];const base=typeof UAP_MEDIA_BASE==='string'?UAP_MEDIA_BASE:'https://media.uap-archives.org/';const ver=typeof UAP_MEDIA_VERSION==='string'&&UAP_MEDIA_VERSION?`?v=${encodeURIComponent(UAP_MEDIA_VERSION)}`:'';return[`${base.replace(/\/?$/,'/')}release-04/${m[1]}${ver}`,`${UAP_ASSET_BASE}mirror/release-04/${m[1]}`,v]};
   const mirrorAsset=v=>mediaCandidates(v)[0]||v;
   const t=k=>(UI_TEXT[k]&&UI_TEXT[k][lang])||k;
   const tr=(d,f)=>{const o=lang==='tw'?d.i18nTw:(lang==='cn'?d.i18nCn:(lang==='ja'?d.i18nJa:(lang==='es'?d.i18nEs:(lang==='pt'?d.i18nPt:(lang==='ru'?d.i18nRu:(lang==='fr'?d.i18nFr:(lang==='de'?d.i18nDe:(lang==='ko'?d.i18nKo:(lang==='ar'?d.i18nAr:null)))))))));return(o&&o[f])||''};

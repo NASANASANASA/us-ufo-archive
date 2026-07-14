@@ -5,6 +5,7 @@ const path = require('path');
 const root = path.resolve(__dirname, '..');
 const manifestPath = process.argv[2] || path.join(root, 'assets/release-04-r2-manifest.tsv');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
+const mediaVersion = process.env.UAP_MEDIA_VERSION || '';
 
 const rows = fs.readFileSync(manifestPath, 'utf8').trim().split(/\r?\n/).slice(1)
   .map(line => {
@@ -31,7 +32,7 @@ function head(url) {
   let ok = 0;
   const missing = [];
   for (const row of rows) {
-    const url = `${mediaBase}${row.r2Key}`;
+    const url = `${mediaBase}${row.r2Key}${mediaVersion ? `?v=${encodeURIComponent(mediaVersion)}` : ''}`;
     const res = await head(url);
     const good = Number(res.status) >= 200 && Number(res.status) < 400;
     if (good) ok++;

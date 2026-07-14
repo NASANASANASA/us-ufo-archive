@@ -43,7 +43,7 @@ if (dryRun || missing.length) {
 for (const row of present) {
   const dest = `${bucket}/${row.r2Key}`;
   console.log(`Uploading ${row.source} -> ${dest}`);
-  const result = spawnSync('npx', ['wrangler', 'r2', 'object', 'put', dest, '--file', row.source], {
+  const result = spawnSync('npx', ['wrangler', 'r2', 'object', 'put', dest, '--file', row.source, '--remote'], {
     stdio: 'inherit'
   });
   if (result.status !== 0) process.exit(result.status || 1);
