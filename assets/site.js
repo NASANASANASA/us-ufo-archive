@@ -26,7 +26,10 @@ document.addEventListener('click',e=>{const a=e.target.closest('.lang-menu a[dat
   const esc=v=>clean(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const urls=v=>clean(v).split('|').map(clean).filter(Boolean),field=(r,ns)=>{for(const n of ns){if(r[key(n)])return clean(r[key(n)])}return''};
   const absolute=v=>{v=clean(v);if(!v)return'';if(/^https?:\/\//i.test(v))return v;if(/^\/\//.test(v))return`https:${v}`;if(v.startsWith('/'))return`https://www.war.gov${v}`;return v};
-  const mediaCandidates=v=>{v=clean(v);const m=v.match(/\/071026\/Slideshow\/([^/?#]+)$/i);if(!m)return[v];const base=typeof UAP_MEDIA_BASE==='string'?UAP_MEDIA_BASE:'https://media.uap-archives.org/';const ver=typeof UAP_MEDIA_VERSION==='string'&&UAP_MEDIA_VERSION?`?v=${encodeURIComponent(UAP_MEDIA_VERSION)}`:'';return[`${base.replace(/\/?$/,'/')}release-04/${m[1]}${ver}`,`${UAP_ASSET_BASE}mirror/release-04/${m[1]}`,v]};
+  const mediaVersion=()=>typeof UAP_MEDIA_VERSION==='string'&&UAP_MEDIA_VERSION?`?v=${encodeURIComponent(UAP_MEDIA_VERSION)}`:'';
+  const r2MediaBase=()=>{const base=typeof UAP_MEDIA_BASE==='string'?UAP_MEDIA_BASE:'https://media.uap-archives.org/';return base.replace(/\/?$/,'/')};
+  const mediaCandidates=v=>{v=clean(v);const m=v.match(/\/071026\/Slideshow\/([^/?#]+)$/i);if(!m)return[v];return[`${r2MediaBase()}release-04/${m[1]}${mediaVersion()}`,`${UAP_ASSET_BASE}mirror/release-04/${m[1]}`,v]};
+  const mediaVideo=v=>{v=clean(v);const m=v.match(/\/071026\/Slideshow\/([^/?#]+)\.jpg$/i);return m?`${r2MediaBase()}release-04/videos/${m[1]}.mp4${mediaVersion()}`:''};
   const mirrorAsset=v=>mediaCandidates(v)[0]||v;
   const t=k=>(UI_TEXT[k]&&UI_TEXT[k][lang])||k;
   const tr=(d,f)=>{const o=lang==='tw'?d.i18nTw:(lang==='cn'?d.i18nCn:(lang==='ja'?d.i18nJa:(lang==='es'?d.i18nEs:(lang==='pt'?d.i18nPt:(lang==='ru'?d.i18nRu:(lang==='fr'?d.i18nFr:(lang==='de'?d.i18nDe:(lang==='ko'?d.i18nKo:(lang==='ar'?d.i18nAr:null)))))))));return(o&&o[f])||''};
@@ -40,8 +43,9 @@ document.addEventListener('click',e=>{const a=e.target.closest('.lang-menu a[dat
     const found=Object.values(r).flatMap(urls).filter(v=>/^https?:\/\//i.test(v)||/^\/|^Portals\//i.test(v)||/\.(pdf|mp4|webm|mov|m4v|ogg|jpg|jpeg|png|gif|webp)(\?|$)/i.test(v)).map(v=>absolute(v.startsWith('Portals/')?`/${v}`:v));
     const pick=re=>found.filter(v=>re.test(v.split('?')[0]));
     const doc=(officialType==='PDF'?assetLink:'')||absolute(field(r,['document url','documentUrl','document link','download url','file url','document','download','file']))||pick(/\.pdf$/i)[0]||'';
-    const videoRaw=field(r,['video url','videoUrl','video link','media url','video','media']),video=(videoRaw?urls(videoRaw).map(absolute):pick(/\.(mp4|webm|mov|m4v|ogg)$/i)).join('|');
     const imageRaw=(officialType==='IMG'?assetLink:'')||field(r,['modal image','image url','imageUrl','image link','thumbnail url','poster url','image','thumbnail','poster']),image=(imageRaw?urls(imageRaw).map(absolute):pick(/\.(jpg|jpeg|png|gif|webp)$/i)).join('|');
+    const derivedVideo=(officialType==='VID'||officialType==='AUD')&&image?mediaVideo(urls(image)[0]):'';
+    const videoRaw=field(r,['video url','videoUrl','video link','media url','video','media']),video=(videoRaw?urls(videoRaw).map(absolute):pick(/\.(mp4|webm|mov|m4v|ogg)$/i)).concat(derivedVideo?[derivedVideo]:[]).filter(Boolean).join('|');
     const dvidsId=field(r,['dvids video id']),dvidsPage=dvidsId?`https://www.dvidshub.net/video/${dvidsId}`:'',dvidsEmbed=dvidsId?`https://www.dvidshub.net/video/embed/${dvidsId}`:'';
     const ext=(doc.split('?')[0].match(/\.([a-z0-9]+)$/i)?.[1]||officialType||'PDF').replace('.','').toUpperCase();
     const i18nCn=I18N_CN[idx]||{},i18nTw=I18N_TW[idx]||{},i18nJa=I18N_JA[idx]||{},i18nEs=I18N_ES[idx]||{},i18nPt=I18N_PT[idx]||{},i18nRu=I18N_RU[idx]||{},i18nFr=I18N_FR[idx]||{},i18nDe=I18N_DE[idx]||{},i18nKo=I18N_KO[idx]||{},i18nAr=I18N_AR[idx]||{};

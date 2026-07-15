@@ -4,7 +4,7 @@ const path = require('path');
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
-const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260714-r2upload1';
+const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260715-r2video1';
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
 const analyticsScript = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZND85JXQ6M"></script>
@@ -30,6 +30,10 @@ const mirroredAsset = value => {
 const r2Asset = value => {
   const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)$/i);
   return m ? `${mediaBase}release-04/${m[1]}?v=${encodeURIComponent(mediaVersion)}` : clean(value);
+};
+const r2VideoAsset = value => {
+  const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)\.jpg$/i);
+  return m ? `${mediaBase}release-04/videos/${m[1]}.mp4?v=${encodeURIComponent(mediaVersion)}` : '';
 };
 const relativePath = (value, depth) => /^https?:\/\//i.test(clean(value)) ? clean(value) : `${'../'.repeat(depth)}${clean(value)}`;
 
@@ -116,6 +120,12 @@ function normalize(row, index, zhCn, zhTw, ja, es) {
   const dvidsPage = dvidsId ? `https://www.dvidshub.net/video/${dvidsId}` : '';
   const imageRaw = (officialType === 'IMG' ? assetLink : '') || field(row, ['modal image', 'image url', 'imageUrl', 'image link', 'thumbnail url', 'poster url', 'image', 'thumbnail', 'poster']);
   const imageUrl = imageRaw ? urls(imageRaw).map(absolute).join('|') : pick(/\.(jpg|jpeg|png|gif|webp)$/i).join('|');
+  const videoRaw = field(row, ['video url', 'videoUrl', 'video link', 'media url', 'video', 'media']);
+  const derivedVideo = (officialType === 'VID' || officialType === 'AUD') && imageUrl ? r2VideoAsset(urls(imageUrl)[0]) : '';
+  const videoUrl = [
+    ...(videoRaw ? urls(videoRaw).map(absolute) : pick(/\.(mp4|webm|mov|m4v|ogg)$/i)),
+    ...(derivedVideo ? [derivedVideo] : [])
+  ].filter(Boolean).join('|');
   const ext = (doc.split('?')[0].match(/\.([a-z0-9]+)$/i)?.[1] || officialType || 'PDF').replace('.', '').toUpperCase();
   return {
     index,
@@ -128,8 +138,9 @@ function normalize(row, index, zhCn, zhTw, ja, es) {
     incidentLocation: field(row, ['incident location', 'incidentLocation']) || 'N/A',
     type: officialType || (dvidsId ? 'VID' : (imageUrl && !doc ? 'IMG' : ext)),
     description: field(row, ['description blurb', 'description', 'video description', 'record description', 'caption']),
-    sourceUrl: doc || dvidsPage || (officialType === 'IMG' ? assetLink : '') || imageUrl || found[0] || 'https://www.war.gov/UFO/',
+    sourceUrl: doc || dvidsPage || (officialType === 'IMG' ? assetLink : '') || imageUrl || videoUrl || found[0] || 'https://www.war.gov/UFO/',
     documentUrl: doc,
+    videoUrl,
     imageUrl,
     dvidsId,
     virin: field(row, ['image virin', 'virin']),
