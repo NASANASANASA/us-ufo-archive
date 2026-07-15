@@ -4,7 +4,7 @@ const path = require('path');
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
-const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260715-r2video1';
+const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260715-r2fix1';
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
 const analyticsScript = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZND85JXQ6M"></script>
