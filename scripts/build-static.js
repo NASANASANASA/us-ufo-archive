@@ -142,6 +142,8 @@ function normalize(row, index, zhCn, zhTw, ja, es) {
     documentUrl: doc,
     videoUrl,
     imageUrl,
+    videoPairing: field(row, ['video pairing']),
+    pdfPairing: field(row, ['pdf pairing']),
     dvidsId,
     virin: field(row, ['image virin', 'virin']),
     redaction: /^(true|yes)$/i.test(field(row, ['redaction'])),
@@ -178,6 +180,7 @@ const text = {
     byType: 'Records by type',
     indexes: 'Indexes',
     related: 'Related archive indexes',
+    relatedMedia: 'Related records',
     generated: 'Static SEO index generated from official U.S. government UAP release data.',
     descriptionPrefix: 'Official U.S. government UAP archive record'
   },
@@ -204,6 +207,7 @@ const text = {
     byType: '種類別記録',
     indexes: '索引',
     related: '関連アーカイブ索引',
+    relatedMedia: '関連記録',
     generated: '米国政府のUAP公開データから生成した静的SEO索引です。',
     descriptionPrefix: '米国政府UAP公開アーカイブ記録'
   },
@@ -230,6 +234,7 @@ const text = {
     byType: 'Registros por tipo',
     indexes: 'Índices',
     related: 'Índices relacionados',
+    relatedMedia: 'Registros relacionados',
     generated: 'Índice SEO estático generado a partir de datos oficiales de publicaciones UAP del Gobierno de Estados Unidos.',
     descriptionPrefix: 'Registro del archivo público UAP del Gobierno de Estados Unidos'
   },
@@ -256,6 +261,7 @@ const text = {
     byType: '按类型浏览',
     indexes: '索引',
     related: '相关索引',
+    relatedMedia: '相关档案',
     generated: '根据美国政府 UAP 公开数据生成的静态 SEO 索引。',
     descriptionPrefix: '美国政府 UAP 公开档案记录'
   },
@@ -282,6 +288,7 @@ const text = {
     byType: '按類型瀏覽',
     indexes: '索引',
     related: '相關索引',
+    relatedMedia: '相關檔案',
     generated: '根據美國政府 UAP 公開資料生成的靜態 SEO 索引。',
     descriptionPrefix: '美國政府 UAP 公開檔案記錄'
   }
@@ -552,7 +559,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260713-media1">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260715-related1">
   ${analyticsScript}
   ${adsenseScript}
 ${schemaHtml}
@@ -569,7 +576,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260714-r2media1"></script>
+  <script src="${prefix}assets/site.js?v=20260715-related1"></script>
 </body>
 </html>
 `;
@@ -663,8 +670,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
-    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260713-media1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260714-r2media1')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260715-related1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260715-related1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -673,7 +680,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/<footer>[\s\S]*?<\/footer>/, footer);
 }
 
-function buildRecordPage(doc, lang) {
+function buildRecordPage(doc, lang, docs) {
   const l = text[lang];
   const title = langTitle(doc, lang);
   const description = metaDescription(doc, lang);
@@ -686,7 +693,7 @@ function buildRecordPage(doc, lang) {
       : '',
     lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription)}` : ''
   ].filter(Boolean).join('\n        ');
-  const mediaPreview = staticMediaPreview(doc, lang, title);
+  const mediaPreview = staticMediaPreview(doc, lang, title, docs);
   const recordSourceUrl = (doc.type === 'VID' || doc.type === 'AUD' || doc.type === 'IMG') ? staticOfficialRecordPage(doc) : doc.sourceUrl;
   const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
   const schema = {
@@ -767,7 +774,50 @@ function staticOfficialRecordPage(doc) {
   return `https://www.war.gov/UFO/release/${n}/?releaseDate=Release+${n}#${hash}`;
 }
 
-function staticMediaPreview(doc, lang, title) {
+function relatedRecords(doc, docs) {
+  const explicitCodes = [
+    ...urls(doc.videoPairing || ''),
+    ...urls(doc.pdfPairing || '')
+  ].map(assetCode).filter(Boolean);
+  const seen = new Set();
+  const out = [];
+  const add = candidate => {
+    if (!candidate || candidate === doc || seen.has(candidate.slug)) return;
+    seen.add(candidate.slug);
+    out.push(candidate);
+  };
+
+  for (const code of explicitCodes) {
+    for (const candidate of docs) {
+      const candidateCode = assetCode(candidate.id);
+      if (candidateCode === code || candidateCode.endsWith(code) || code.endsWith(candidateCode)) add(candidate);
+    }
+  }
+
+  const year = yearOf(doc);
+  const location = clean(doc.incidentLocation).toLowerCase();
+  const release = clean(doc.release);
+  if (release !== 'RELEASE 04' || !year || !location || location === 'n/a') return out.slice(0, 6);
+  docs
+    .filter(candidate => candidate !== doc &&
+      clean(candidate.release) === release &&
+      clean(candidate.incidentLocation).toLowerCase() === location &&
+      yearOf(candidate) === year)
+    .sort((a, b) => {
+      if (a.type !== b.type) {
+        if (a.type === 'PDF') return -1;
+        if (b.type === 'PDF') return 1;
+        if (a.type === 'IMG') return -1;
+        if (b.type === 'IMG') return 1;
+      }
+      return assetCode(a.id).localeCompare(assetCode(b.id));
+    })
+    .forEach(add);
+
+  return out.slice(0, 6);
+}
+
+function staticMediaPreview(doc, lang, title, docs) {
   const image = urls(doc.imageUrl)[0] || '';
   const r2Image = image ? r2Asset(image) : '';
   const localImage = image ? mirroredAsset(image) : '';
@@ -796,6 +846,13 @@ function staticMediaPreview(doc, lang, title) {
     .filter(([type]) => (isAV ? type === 'VID' : doc.type === 'PDF' && type === 'PDF'))
     .map(([type, textLabel, url]) => `<a class="static-media-button" href="${esc(url)}" target="_blank" rel="noopener"><span>${esc(type)}</span>${esc(textLabel)}</a>`)
     .join('\n          ');
+  const relatedLinks = relatedRecords(doc, docs)
+    .map(related => `<a class="static-related-link" href="../${esc(related.slug)}/"><span>.${esc(related.type)}</span>${esc(langTitle(related, lang))}</a>`)
+    .join('\n            ');
+  const relatedBlock = relatedLinks ? `<div class="static-related-records">
+            <b>${esc(text[lang].relatedMedia)}</b>
+            ${relatedLinks}
+          </div>` : '';
   let preview = '';
   if (video) {
     preview = `<video class="static-video-preview" controls playsinline${r2Image ? ` poster="${esc(r2Image)}"` : ''}><source src="${esc(video)}"></video>`;
@@ -805,7 +862,7 @@ function staticMediaPreview(doc, lang, title) {
   } else {
     preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   }
-  const actions = [openFile, openImage, releaseLinks, openOfficial].filter(Boolean).join('\n          ');
+  const actions = [relatedBlock, openFile, openImage, releaseLinks, openOfficial].filter(Boolean).join('\n          ');
   return `<div class="static-preview static-preview-${esc(doc.type.toLowerCase())}">
           ${preview}
         </div>
@@ -867,7 +924,7 @@ function build() {
     writeFile(`${lang}/archive/index.html`, buildArchivePage(docs, lang));
     urlsForSitemap.push(`/${lang}/archive/`);
     for (const doc of docs) {
-      writeFile(`${lang}/records/${doc.slug}/index.html`, buildRecordPage(doc, lang));
+      writeFile(`${lang}/records/${doc.slug}/index.html`, buildRecordPage(doc, lang, docs));
       urlsForSitemap.push(`/${lang}/records/${doc.slug}/`);
     }
 
