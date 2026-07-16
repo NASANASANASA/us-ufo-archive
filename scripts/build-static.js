@@ -7,6 +7,8 @@ const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260715-r2fix1';
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
+const adsenseClient = 'ca-pub-2222469808721720';
+const adsenseSlot = '8548356239';
 const analyticsScript = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZND85JXQ6M"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -36,6 +38,18 @@ const r2VideoAsset = value => {
   return m ? `${mediaBase}release-04/videos/${m[1]}.mp4?v=${encodeURIComponent(mediaVersion)}` : '';
 };
 const relativePath = (value, depth) => /^https?:\/\//i.test(clean(value)) ? clean(value) : `${'../'.repeat(depth)}${clean(value)}`;
+
+function manualAdSlot(name = 'inline') {
+  return `<section class="uap-ad-slot uap-ad-slot-${name}" aria-label="Advertisement">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="${adsenseClient}"
+           data-ad-slot="${adsenseSlot}"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </section>`;
+}
 
 function parseCSV(text) {
   const rows = [];
@@ -567,7 +581,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-redaction1">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-manualads1">
   ${analyticsScript}
   ${adsenseScript}
 ${schemaHtml}
@@ -584,7 +598,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260716-redaction1"></script>
+  <script src="${prefix}assets/site.js?v=20260716-manualads1"></script>
 </body>
 </html>
 `;
@@ -641,6 +655,7 @@ function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth
       <h2>${esc(l.all)}</h2>
       <div class="static-list">${cardList(docs, lang, '../records/')}</div>
     </section>
+    ${manualAdSlot('archive-bottom')}
   </main>`;
   return pageShell({lang, title: `${l.home} · ${l.archive}`, description: l.generated, canonicalPath, body, depth});
 }
@@ -678,8 +693,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
-    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-redaction1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-redaction1')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-manualads1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-manualads1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -739,6 +754,7 @@ function buildRecordPage(doc, lang, docs) {
         </dl>
       </aside>
     </section>
+    ${manualAdSlot('record-bottom')}
   </main>`;
   return pageShell({lang, title: `${title} · ${l.home}`, description, canonicalPath, body, depth: 3, schema});
 }
@@ -907,6 +923,7 @@ function buildGroupLanding(docs, lang, kind, title, cards) {
       <p>${esc(l.generated)}</p>
     </section>
     <section class="static-panel"><div class="static-index-grid">${cards}</div></section>
+    ${manualAdSlot(`${kind}-index-bottom`)}
   </main>`;
   return pageShell({lang, title: `${title} · ${l.home}`, description: l.generated, canonicalPath: `/${lang}/${kind}/`, body, depth: 2});
 }
@@ -920,6 +937,7 @@ function buildGroupPage(docs, lang, kind, groupSlug, label) {
       <p>${docs.length} ${esc(l.records)} · ${esc(l.generated)}</p>
     </section>
     <section class="static-panel"><div class="static-list">${cardList(docs, lang, '../../records/')}</div></section>
+    ${manualAdSlot(`${kind}-group-bottom`)}
   </main>`;
   return pageShell({lang, title: `${label} · ${l.home}`, description: `${label}: ${docs.length} ${l.records}. ${l.generated}`, canonicalPath: `/${lang}/${kind}/${groupSlug}/`, body, depth: 3});
 }
