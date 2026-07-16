@@ -581,7 +581,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-recordlinks1">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-detailgrid1">
   ${analyticsScript}
   ${adsenseScript}
 ${schemaHtml}
@@ -598,7 +598,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260716-recordlinks1"></script>
+  <script src="${prefix}assets/site.js?v=20260716-detailgrid1"></script>
 </body>
 </html>
 `;
@@ -693,8 +693,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
-    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-recordlinks1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-recordlinks1')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-detailgrid1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-detailgrid1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -738,14 +738,11 @@ function buildRecordPage(doc, lang, docs) {
     </section>
     ${manualAdSlot('record-before-content')}
     <section class="static-record-grid">
-      <article class="static-panel">
+      <article class="static-panel static-record-copy">
         <h2>${esc(l.summary)}</h2>
         <p>${esc(structuredSummary(doc, lang))}</p>
         ${descriptionBlocks}
         <a class="static-button" href="${esc(recordSourceUrl)}" target="_blank" rel="noopener">${esc(l.source)} ↗</a>
-      </article>
-      <aside class="static-panel">
-        ${mediaPreview}
         <dl class="static-meta">
           <dt>${esc(l.agency)}</dt><dd>${esc(agencyLabel(doc.agency, lang))}</dd>
           <dt>${esc(l.release)}</dt><dd>${esc(releaseLabel(doc.release, lang))}</dd>
@@ -753,6 +750,9 @@ function buildRecordPage(doc, lang, docs) {
           <dt>${esc(l.location)}</dt><dd>${esc(langLocation(doc, lang))}</dd>
           <dt>${esc(l.type)}</dt><dd>.${esc(doc.type)}</dd>${virinMeta}
         </dl>
+      </article>
+      <aside class="static-panel static-record-media">
+        ${mediaPreview}
       </aside>
     </section>
   </main>`;
