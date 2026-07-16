@@ -182,7 +182,8 @@ const text = {
     related: 'Related archive indexes',
     relatedMedia: 'Related records',
     generated: 'Static SEO index generated from official U.S. government UAP release data.',
-    descriptionPrefix: 'Official U.S. government UAP archive record'
+    descriptionPrefix: 'Official U.S. government UAP archive record',
+    redactionNotice: "Redactions have been made to protect the identity of eyewitnesses, the location of government facilities, or potentially sensitive information about military sites not related to UAP. No redactions have been made to any files released under President Trump's directive concerning information about the nature or existence of any encounter reported as a UAP or related phenomena."
   },
   ja: {
     lang: 'ja',
@@ -209,7 +210,8 @@ const text = {
     related: '関連アーカイブ索引',
     relatedMedia: '関連記録',
     generated: '米国政府のUAP公開データから生成した静的SEO索引です。',
-    descriptionPrefix: '米国政府UAP公開アーカイブ記録'
+    descriptionPrefix: '米国政府UAP公開アーカイブ記録',
+    redactionNotice: '目撃者の身元、政府施設の位置、またはUAPと無関係な軍事施設に関する機微情報を保護するため、黒塗り処理が行われています。UAPまたは関連現象として報告された遭遇の性質や存在に関する情報について、トランプ大統領の指令に基づき公開されたファイルには黒塗り処理は行われていません。'
   },
   es: {
     lang: 'es',
@@ -236,7 +238,8 @@ const text = {
     related: 'Índices relacionados',
     relatedMedia: 'Registros relacionados',
     generated: 'Índice SEO estático generado a partir de datos oficiales de publicaciones UAP del Gobierno de Estados Unidos.',
-    descriptionPrefix: 'Registro del archivo público UAP del Gobierno de Estados Unidos'
+    descriptionPrefix: 'Registro del archivo público UAP del Gobierno de Estados Unidos',
+    redactionNotice: 'Se han realizado censuras para proteger la identidad de testigos, la ubicación de instalaciones gubernamentales o información potencialmente sensible sobre sitios militares no relacionados con UAP. No se han realizado censuras en archivos publicados bajo la directiva del presidente Trump sobre información relativa a la naturaleza o existencia de cualquier encuentro reportado como UAP o fenómenos relacionados.'
   },
   'zh-Hans': {
     lang: 'zh-CN',
@@ -263,7 +266,8 @@ const text = {
     related: '相关索引',
     relatedMedia: '相关档案',
     generated: '根据美国政府 UAP 公开数据生成的静态 SEO 索引。',
-    descriptionPrefix: '美国政府 UAP 公开档案记录'
+    descriptionPrefix: '美国政府 UAP 公开档案记录',
+    redactionNotice: '为保护目击者身份、政府设施位置，或与不明异常现象（UAP）无关的军事场所敏感信息，本文件已作涂黑处理。根据特朗普总统关于任何被报告为UAP或相关现象的事件之性质或存在信息的指令所发布的文件，均未作任何涂黑处理。'
   },
   'zh-Hant': {
     lang: 'zh-TW',
@@ -290,7 +294,8 @@ const text = {
     related: '相關索引',
     relatedMedia: '相關檔案',
     generated: '根據美國政府 UAP 公開資料生成的靜態 SEO 索引。',
-    descriptionPrefix: '美國政府 UAP 公開檔案記錄'
+    descriptionPrefix: '美國政府 UAP 公開檔案記錄',
+    redactionNotice: '為保護目擊者身分、政府設施位置，或與不明異常現象（UAP）無關的軍事場所敏感資訊，本檔案已作塗黑處理。依據川普總統關於任何被報告為UAP或相關現象之事件性質或存在資訊之指令所發布的檔案，均未作任何塗黑處理。'
   }
 };
 
@@ -562,7 +567,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-timecode2">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-redaction1">
   ${analyticsScript}
   ${adsenseScript}
 ${schemaHtml}
@@ -579,7 +584,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260716-timecode2"></script>
+  <script src="${prefix}assets/site.js?v=20260716-redaction1"></script>
 </body>
 </html>
 `;
@@ -673,8 +678,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
-    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-timecode2')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-timecode2')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-redaction1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-redaction1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -692,9 +697,9 @@ function buildRecordPage(doc, lang, docs) {
   const languageDescription = langDescription(doc, lang);
   const descriptionBlocks = [
     (lang === 'zh-Hans' || lang === 'zh-Hant' || lang === 'ja' || lang === 'es') && languageDescription
-      ? `<h2>${esc(l.official)}</h2>${paragraphs(languageDescription)}`
+      ? `<h2>${esc(l.official)}</h2>${paragraphs(languageDescription, lang)}`
       : '',
-    lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription)}` : ''
+    lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription, lang)}` : ''
   ].filter(Boolean).join('\n        ');
   const mediaPreview = staticMediaPreview(doc, lang, title, docs);
   const recordSourceUrl = (doc.type === 'VID' || doc.type === 'AUD' || doc.type === 'IMG') ? staticOfficialRecordPage(doc) : doc.sourceUrl;
@@ -863,9 +868,17 @@ function normalizeDescriptionBreaks(value) {
     .replace(/\n{3,}/g, '\n\n');
 }
 
-function paragraphs(value) {
+function paragraphs(value, lang = 'en') {
   const parts = normalizeDescriptionBreaks(value).split(/\n{2,}/).map(clean).filter(Boolean);
-  return parts.map(p => `<p${isRedactionParagraph(p) ? ' class="record-redaction-text"' : ''}>${descriptionHtml(p)}</p>`).join('');
+  return parts.map(p => {
+    const redaction = isRedactionParagraph(p);
+    const rendered = redaction ? redactionTemplate(lang) : p;
+    return `<p${redaction ? ' class="record-redaction-text"' : ''}>${descriptionHtml(rendered)}</p>`;
+  }).join('');
+}
+
+function redactionTemplate(lang = 'en') {
+  return (text[lang] && text[lang].redactionNotice) || text.en.redactionNotice;
 }
 
 function descriptionHtml(value) {
@@ -877,6 +890,8 @@ function isRedactionParagraph(value) {
   return text.startsWith('redactions have been made') ||
     text.startsWith('為了保護') ||
     text.startsWith('为了保护') ||
+    text.startsWith('為保護') ||
+    text.startsWith('为保护') ||
     text.startsWith('se han realizado censuras') ||
     text.startsWith('se han hecho redacciones') ||
     text.includes('黒塗り処理') ||
