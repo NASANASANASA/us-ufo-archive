@@ -651,11 +651,11 @@ function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth
         <a class="static-index-card" href="../types/"><b>${esc(l.byType)}</b><span>${docs.length} ${esc(l.records)}</span></a>
       </div>
     </section>
+    ${manualAdSlot('archive-before-list')}
     <section class="static-panel">
       <h2>${esc(l.all)}</h2>
       <div class="static-list">${cardList(docs, lang, '../records/')}</div>
     </section>
-    ${manualAdSlot('archive-bottom')}
   </main>`;
   return pageShell({lang, title: `${l.home} · ${l.archive}`, description: l.generated, canonicalPath, body, depth});
 }
@@ -736,6 +736,7 @@ function buildRecordPage(doc, lang, docs) {
       <h1>${esc(title)}</h1>
       <p>${esc(description)}</p>
     </section>
+    ${manualAdSlot('record-before-content')}
     <section class="static-record-grid">
       <article class="static-panel">
         <h2>${esc(l.summary)}</h2>
@@ -754,7 +755,6 @@ function buildRecordPage(doc, lang, docs) {
         </dl>
       </aside>
     </section>
-    ${manualAdSlot('record-bottom')}
   </main>`;
   return pageShell({lang, title: `${title} · ${l.home}`, description, canonicalPath, body, depth: 3, schema});
 }
