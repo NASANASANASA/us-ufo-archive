@@ -794,26 +794,6 @@ function relatedRecords(doc, docs) {
     }
   }
 
-  const year = yearOf(doc);
-  const location = clean(doc.incidentLocation).toLowerCase();
-  const release = clean(doc.release);
-  if (release !== 'RELEASE 04' || !year || !location || location === 'n/a') return out.slice(0, 6);
-  docs
-    .filter(candidate => candidate !== doc &&
-      clean(candidate.release) === release &&
-      clean(candidate.incidentLocation).toLowerCase() === location &&
-      yearOf(candidate) === year)
-    .sort((a, b) => {
-      if (a.type !== b.type) {
-        if (a.type === 'PDF') return -1;
-        if (b.type === 'PDF') return 1;
-        if (a.type === 'IMG') return -1;
-        if (b.type === 'IMG') return 1;
-      }
-      return assetCode(a.id).localeCompare(assetCode(b.id));
-    })
-    .forEach(add);
-
   return out.slice(0, 6);
 }
 
