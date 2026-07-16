@@ -482,7 +482,10 @@ function structuredSummary(doc, lang) {
   if (lang === 'en') {
     return `This record is a ${type} UAP-related asset released by ${agency} in ${release}. The incident date is listed as ${date}, and the incident location is listed as ${location}. This page preserves the official source link, original description, and structured metadata.`;
   }
-  return langDescription(doc, lang) || `${agency}在${release}公开的${type}类型 UAP 相关档案。事件日期：${date}；事件地点：${location}。`;
+  if (lang === 'zh-Hant') {
+    return `${agency}在${release}公開的 ${type} 類型 UAP 相關檔案。事件日期：${date}；事件地點：${location}。本頁保留官方來源連結、翻譯說明與主要元資料。`;
+  }
+  return `${agency}在${release}公开的 ${type} 类型 UAP 相关档案。事件日期：${date}；事件地点：${location}。本页保留官方来源链接、翻译说明与主要元数据。`;
 }
 
 function rel(fromLang, target) {
@@ -559,7 +562,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260715-related1">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-r4style1">
   ${analyticsScript}
   ${adsenseScript}
 ${schemaHtml}
@@ -576,7 +579,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260715-related1"></script>
+  <script src="${prefix}assets/site.js?v=20260716-r4style1"></script>
 </body>
 </html>
 `;
@@ -670,8 +673,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
-    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260715-related1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260715-related1')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-r4style1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-r4style1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -853,7 +856,18 @@ function staticMediaPreview(doc, lang, title, docs) {
 
 function paragraphs(value) {
   const parts = clean(value).replace(/\r\n?/g, '\n').split(/\n+/).map(clean).filter(Boolean);
-  return parts.map(p => `<p>${esc(p)}</p>`).join('');
+  return parts.map(p => `<p${isRedactionParagraph(p) ? ' class="record-redaction-text"' : ''}>${esc(p)}</p>`).join('');
+}
+
+function isRedactionParagraph(value) {
+  const text = clean(value).toLowerCase();
+  return text.startsWith('redactions have been made') ||
+    text.startsWith('為了保護') ||
+    text.startsWith('为了保护') ||
+    text.startsWith('se han realizado censuras') ||
+    text.startsWith('se han hecho redacciones') ||
+    text.includes('黒塗り処理') ||
+    text.includes('編集が行われ');
 }
 
 function buildGroupLanding(docs, lang, kind, title, cards) {
