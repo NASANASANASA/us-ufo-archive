@@ -562,7 +562,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-descwrap1">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-timecode1">
   ${analyticsScript}
   ${adsenseScript}
 ${schemaHtml}
@@ -579,7 +579,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260716-descwrap1"></script>
+  <script src="${prefix}assets/site.js?v=20260716-timecode1"></script>
 </body>
 </html>
 `;
@@ -673,8 +673,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
-    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-descwrap1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-descwrap1')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-timecode1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-timecode1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -864,7 +864,11 @@ function normalizeDescriptionBreaks(value) {
 
 function paragraphs(value) {
   const parts = normalizeDescriptionBreaks(value).split(/\n{2,}/).map(clean).filter(Boolean);
-  return parts.map(p => `<p${isRedactionParagraph(p) ? ' class="record-redaction-text"' : ''}>${esc(p)}</p>`).join('');
+  return parts.map(p => `<p${isRedactionParagraph(p) ? ' class="record-redaction-text"' : ''}>${descriptionHtml(p)}</p>`).join('');
+}
+
+function descriptionHtml(value) {
+  return esc(value).replace(/\b\d{1,2}:\d{2}(?:-\d{1,2}:\d{2})?[:：]?/g, match => `<span class="record-timecode">${match}</span>`);
 }
 
 function isRedactionParagraph(value) {
