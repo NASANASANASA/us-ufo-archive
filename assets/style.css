@@ -56,7 +56,7 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .modal-copy{font-family:var(--sans);overflow-x:hidden}
 .modal-copy>p,.modal-copy>#db-modal-desc p{font-family:var(--sans);font-size:15px;line-height:1.95}
 .modal-copy>#db-modal-desc p{margin-bottom:24px}
-.modal-copy>#db-modal-desc p,.redaction-notice{word-break:normal;overflow-wrap:anywhere}
+.modal-copy>#db-modal-desc p,.redaction-notice{word-break:normal;overflow-wrap:break-word;hyphens:none}
 .redaction-notice{font-family:var(--sans);font-size:15px;line-height:1.95}
 .db-modal-meta .row{grid-template-columns:minmax(130px,190px) minmax(0,1fr);font-family:var(--sans);font-size:13px;line-height:1.55}
 .db-modal-meta .row span{font-weight:500;letter-spacing:.02em}
@@ -109,6 +109,7 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .static-related-link:hover{color:#e7fbff}
 .static-button{display:inline-block;margin-top:10px;border:1px solid var(--line2);padding:13px 17px;color:var(--cyan);text-decoration:none;font-size:14px;font-weight:500}
 .static-button:hover{border-color:var(--cyan);background:rgba(110,215,223,.08)}
+.static-card p{white-space:pre-line;word-break:normal;overflow-wrap:break-word;hyphens:none}
 .record-redaction-text{color:#ff5e59!important}
 .static-meta{margin:0}
 .static-meta div{display:grid}
