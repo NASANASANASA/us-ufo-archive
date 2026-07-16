@@ -57,6 +57,11 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .db-modal-head{padding-block:20px}
 .db-modal,.db-modal-head,.db-modal-body,.modal-copy,.asset-preview,.media-stack,.paired-media{min-width:0}
 .db-modal{max-width:100%;overflow:hidden}
+.db-modal-backdrop{overflow:auto;align-items:start}
+.db-modal-backdrop.open{display:block}
+.db-modal-backdrop.open .db-modal{margin:20px auto;height:auto;min-height:min(94vh,900px);max-height:none}
+.db-modal-body{overflow:visible}
+.modal-copy,.asset-preview{overflow:visible}
 .db-modal-head>div{min-width:0;flex:1}
 .db-modal-head h3{font-family:var(--sans);font-size:20px;font-weight:500;line-height:1.5;letter-spacing:.005em;word-break:normal;overflow-wrap:anywhere}
 .db-modal-close{flex:none}
@@ -74,6 +79,7 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .paired-media button{font-family:var(--sans);font-size:13px;line-height:1.5}
 
 @media(max-width:650px){.db-modal{width:calc(100vw - 16px);max-width:calc(100vw - 16px);height:calc(100dvh - 16px)}.db-modal-body{width:100%;max-width:100%}.db-modal-head{position:relative;padding:14px 62px 14px 16px;gap:12px}.db-modal-head h3{font-size:16px;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.db-modal-close{position:absolute;right:12px;top:50%;transform:translateY(-50%);width:38px;height:38px}.modal-copy>p,.modal-copy>#db-modal-desc p,.redaction-notice{font-size:14px}.db-modal-meta .row{grid-template-columns:1fr;gap:4px}.db-modal-meta b{text-align:left}}
+@media(max-width:650px){.db-modal-backdrop.open .db-modal{height:auto;min-height:calc(100dvh - 16px);margin:8px auto}}
 
 .static-page{--sans:'Noto Sans','Noto Sans SC','Noto Sans JP',Arial,sans-serif}
 .static-page:lang(zh-CN){--sans:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif}
