@@ -90,6 +90,8 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .static-page:lang(ja){--sans:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif}
 .static-main{position:relative;z-index:2;width:min(1500px,calc(100% - 48px));margin:0 auto;padding:58px 0 90px}
 .static-hero,.static-record-head{border:1px solid var(--line);background:rgba(8,16,22,.72);padding:34px 38px;margin-bottom:22px}
+.static-back-link{display:inline-flex;align-items:center;width:max-content;margin-bottom:18px;color:var(--cyan);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.02em}
+.static-back-link:hover{text-decoration:underline;text-underline-offset:4px}
 .static-hero h1,.static-record-head h1{margin:14px 0 14px;color:var(--white);font-family:var(--sans);font-size:clamp(32px,4vw,58px);font-weight:600;line-height:1.18;letter-spacing:-.04em}
 .static-hero p,.static-record-head p{max-width:1050px;color:#93a0a5;font-size:15px;line-height:1.9;margin:0}
 .static-panel{border:1px solid var(--line);background:rgba(8,16,22,.72);padding:30px;margin-bottom:22px}
@@ -125,8 +127,6 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .static-related-link{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:start;color:var(--cyan);text-decoration:none;font-size:13px;line-height:1.45;padding:9px 0;border-top:1px solid rgba(91,115,124,.22)}
 .static-related-link span{font-family:var(--mono);font-size:11px;color:#8e9aa0;white-space:nowrap}
 .static-related-link:hover{color:#e7fbff}
-.static-button{display:inline-block;margin-top:10px;border:1px solid var(--line2);padding:13px 17px;color:var(--cyan);text-decoration:none;font-size:14px;font-weight:500}
-.static-button:hover{border-color:var(--cyan);background:rgba(110,215,223,.08)}
 .static-card p{white-space:pre-line;word-break:normal;overflow-wrap:break-word;hyphens:none}
 .record-timecode{white-space:nowrap;word-break:keep-all}
 .record-redaction-text{color:#ff5e59!important}

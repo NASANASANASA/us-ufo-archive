@@ -187,6 +187,7 @@ const text = {
     location: 'Incident Location',
     type: 'Type',
     source: 'Open Official Source',
+    backToList: 'Back to archive list',
     all: 'All Records',
     byAgency: 'Records by agency',
     byYear: 'Records by year',
@@ -215,6 +216,7 @@ const text = {
     location: '事件場所',
     type: '種類',
     source: '公式ソースを開く',
+    backToList: 'アーカイブ一覧へ戻る',
     all: '全記録',
     byAgency: '機関別記録',
     byYear: '年別記録',
@@ -243,6 +245,7 @@ const text = {
     location: 'Lugar del incidente',
     type: 'Tipo',
     source: 'Abrir fuente oficial',
+    backToList: 'Volver al listado',
     all: 'Todos los registros',
     byAgency: 'Registros por agencia',
     byYear: 'Registros por año',
@@ -271,6 +274,7 @@ const text = {
     location: '事件地点',
     type: '类型',
     source: '查看美国官网档案',
+    backToList: '返回档案一览',
     all: '全部记录',
     byAgency: '按机构浏览',
     byYear: '按年份浏览',
@@ -299,6 +303,7 @@ const text = {
     location: '事件地點',
     type: '類型',
     source: '檢視美國官網檔案',
+    backToList: '返回檔案一覽',
     all: '全部記錄',
     byAgency: '按機構瀏覽',
     byYear: '按年份瀏覽',
@@ -581,7 +586,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-detailgrid1">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260717-detailnav1">
   ${analyticsScript}
   ${adsenseScript}
 ${schemaHtml}
@@ -598,7 +603,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260716-detailgrid1"></script>
+  <script src="${prefix}assets/site.js?v=20260717-detailnav1"></script>
 </body>
 </html>
 `;
@@ -693,8 +698,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
-    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-detailgrid1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-detailgrid1')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260717-detailnav1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260717-detailnav1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -717,8 +722,9 @@ function buildRecordPage(doc, lang, docs) {
     lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription, lang)}` : ''
   ].filter(Boolean).join('\n        ');
   const mediaPreview = staticMediaPreview(doc, lang, title, docs);
-  const recordSourceUrl = (doc.type === 'VID' || doc.type === 'AUD' || doc.type === 'IMG') ? staticOfficialRecordPage(doc) : doc.sourceUrl;
   const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
+  const backHref = `../../../${lang}/#archive`;
+  const backHandler = "try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){history.back();return false}}catch(e){}";
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'DigitalDocument',
@@ -732,6 +738,7 @@ function buildRecordPage(doc, lang, docs) {
   };
   const body = `<main class="static-main static-record">
     <section class="static-record-head">
+      <a class="static-back-link" href="${esc(backHref)}" onclick="${backHandler}">← ${esc(l.backToList)}</a>
       <p class="system-line"><span></span> ASSET RECORD</p>
       <h1>${esc(title)}</h1>
       <p>${esc(description)}</p>
@@ -742,7 +749,6 @@ function buildRecordPage(doc, lang, docs) {
         <h2>${esc(l.summary)}</h2>
         <p>${esc(structuredSummary(doc, lang))}</p>
         ${descriptionBlocks}
-        <a class="static-button" href="${esc(recordSourceUrl)}" target="_blank" rel="noopener">${esc(l.source)} ↗</a>
         <dl class="static-meta">
           <dt>${esc(l.agency)}</dt><dd>${esc(agencyLabel(doc.agency, lang))}</dd>
           <dt>${esc(l.release)}</dt><dd>${esc(releaseLabel(doc.release, lang))}</dd>
