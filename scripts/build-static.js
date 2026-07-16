@@ -833,13 +833,6 @@ function staticMediaPreview(doc, lang, title, docs) {
   const localImage = image ? mirroredAsset(image) : '';
   const video = urls(doc.videoUrl || '')[0] || '';
   const isAV = doc.type === 'VID' || doc.type === 'AUD';
-  const labels = {
-    en: {openPdf: 'Open PDF', openImage: 'Open image'},
-    ja: {openPdf: 'PDFを開く', openImage: '画像を開く'},
-    es: {openPdf: 'Abrir PDF', openImage: 'Abrir imagen'},
-    'zh-Hans': {openPdf: '打开 PDF', openImage: '打开图片'},
-    'zh-Hant': {openPdf: '開啟 PDF', openImage: '開啟圖片'}
-  }[lang] || {openPdf: 'Open PDF', openImage: 'Open image'};
   const blocked = {
     en: 'The official source blocks external previews. Open the official source or download the release bundle.',
     ja: '公式ソースが外部サイトでのプレビュー表示をブロックしています。公式ソースを開くか、リリースのファイルをダウンロードしてください。',
@@ -850,8 +843,6 @@ function staticMediaPreview(doc, lang, title, docs) {
   const fallback = `<div class="real-file media-fallback"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   const officialUrl = (doc.type === 'VID' || doc.type === 'AUD' || doc.type === 'IMG') ? staticOfficialRecordPage(doc) : doc.sourceUrl;
   const openOfficial = `<a class="static-media-button" href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(text[lang].source)} ↗</a>`;
-  const openFile = doc.documentUrl ? `<a class="static-media-button" href="${esc(doc.documentUrl)}" target="_blank" rel="noopener">${esc(labels.openPdf)} ↗</a>` : '';
-  const openImage = image && doc.type === 'IMG' ? `<a class="static-media-button" href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(labels.openImage)} ↗</a>` : '';
   const releaseLinks = releaseDownloadLinks(doc, lang)
     .filter(([type]) => (isAV ? type === 'VID' : doc.type === 'PDF' && type === 'PDF'))
     .map(([type, textLabel, url]) => `<a class="static-media-button" href="${esc(url)}" target="_blank" rel="noopener"><span>${esc(type)}</span>${esc(textLabel)}</a>`)
@@ -872,7 +863,7 @@ function staticMediaPreview(doc, lang, title, docs) {
   } else {
     preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   }
-  const actions = [relatedBlock, openFile, openImage, releaseLinks, openOfficial].filter(Boolean).join('\n          ');
+  const actions = [relatedBlock, releaseLinks, openOfficial].filter(Boolean).join('\n          ');
   return `<div class="static-preview static-preview-${esc(doc.type.toLowerCase())}">
           ${preview}
         </div>
