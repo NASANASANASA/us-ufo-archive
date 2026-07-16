@@ -562,7 +562,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-timecode1">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260716-timecode2">
   ${analyticsScript}
   ${adsenseScript}
 ${schemaHtml}
@@ -579,7 +579,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260716-timecode1"></script>
+  <script src="${prefix}assets/site.js?v=20260716-timecode2"></script>
 </body>
 </html>
 `;
@@ -673,8 +673,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
-    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-timecode1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-timecode1')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260716-timecode2')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260716-timecode2')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -858,6 +858,7 @@ function normalizeDescriptionBreaks(value) {
   return clean(value)
     .replace(/\r\n?/g, '\n')
     .replace(/[ \t]+\n/g, '\n')
+    .replace(/(^|\n)(\d)\n+(\d{1,2}:\d{2}(?:-\d{1,2}:\d{2})?[:：])/g, '$1$2$3')
     .replace(/(\d{1,2}:\d{2})-\s*\n+\s*(\d{1,2}:\d{2})/g, '$1-$2')
     .replace(/\n{3,}/g, '\n\n');
 }
