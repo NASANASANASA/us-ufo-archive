@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260718-langpath1';
+const assetVersion = '20260718-releases1';
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
 const adsenseClient = 'ca-pub-2222469808721720';
@@ -1190,10 +1190,50 @@ function releaseNumber(doc) {
   return clean(doc.release).match(/(\d{2})$/)?.[1] || '';
 }
 
+function releaseTopicMeta(lang, n) {
+  const s = seoText[lang] || seoText.en;
+  if (n === '04') {
+    return {title: s.release04Title, intro: s.release04Intro, nav: s.browseRelease04};
+  }
+  const num = Number(n);
+  const label = releaseLabel(`Release ${n}`, lang);
+  const title = {
+    en: `Release ${n} UAP Records`,
+    es: `Registros UAP de la publicación ${n}`,
+    pt: `Registros UAP da publicação ${n}`,
+    fr: `Archives UAP de la publication ${n}`,
+    de: `UAP-Unterlagen Veröffentlichung ${n}`,
+    ru: `Материалы UAP выпуска ${n}`,
+    ar: `سجلات UAP الإصدار ${n}`,
+    ja: `第${num}回公開UAP記録`,
+    ko: `${num}차 공개 UAP 기록`,
+    'zh-Hans': `第${num}批 UAP 公开档案`,
+    'zh-Hant': `第${num}批 UAP 公開檔案`
+  }[lang] || `Release ${n} UAP Records`;
+  const intro = {
+    en: `Browse public U.S. government UAP records from ${label}, including source files, metadata, related records, and official archive links.`,
+    es: `Consulta registros UAP públicos del gobierno de EE. UU. de ${label}, incluidos archivos fuente, metadatos, registros relacionados y enlaces oficiales.`,
+    pt: `Consulte registros públicos de UAP do governo dos EUA de ${label}, incluindo arquivos-fonte, metadados, registros relacionados e links oficiais.`,
+    fr: `Parcourez les archives UAP publiques du gouvernement des États-Unis de ${label}, avec fichiers sources, métadonnées, archives liées et liens officiels.`,
+    de: `Durchsuchen Sie öffentliche UAP-Unterlagen der US-Regierung aus ${label}, einschließlich Quelldateien, Metadaten, verwandter Unterlagen und offizieller Links.`,
+    ru: `Просматривайте открытые материалы правительства США по UAP из ${label}: исходные файлы, метаданные, связанные записи и официальные ссылки.`,
+    ar: `تصفح سجلات UAP الحكومية الأميركية العامة من ${label}، بما في ذلك ملفات المصدر والبيانات الوصفية والسجلات المرتبطة والروابط الرسمية.`,
+    ja: `${label}の米国政府公開UAP記録を、原資料、メタデータ、関連記録、公式アーカイブリンクとともに閲覧できます。`,
+    ko: `${label}의 미국 정부 공개 UAP 기록을 원본 파일, 메타데이터, 관련 기록, 공식 아카이브 링크와 함께 둘러볼 수 있습니다.`,
+    'zh-Hans': `浏览${label}的美国政府公开 UAP 档案，包括源文件、元数据、相关档案和官方档案链接。`,
+    'zh-Hant': `瀏覽${label}的美國政府公開 UAP 檔案，包括來源檔案、元資料、相關檔案和官方檔案連結。`
+  }[lang] || `Browse public U.S. government UAP records from ${label}.`;
+  return {title, intro, nav: label};
+}
+
 function topicConfigs(lang) {
   const s = seoText[lang] || seoText.en;
+  const releaseTopics = ['01', '02', '03', '04'].map(n => {
+    const meta = releaseTopicMeta(lang, n);
+    return {key: `release-${n}`, path: `/${lang}/release/${n}/`, file: `${lang}/release/${n}/index.html`, depth: 3, title: meta.title, intro: meta.intro, nav: meta.nav, filter: doc => releaseNumber(doc) === n};
+  });
   return [
-    {key: 'release-04', path: `/${lang}/release/04/`, file: `${lang}/release/04/index.html`, depth: 3, title: s.release04Title, intro: s.release04Intro, nav: s.browseRelease04, filter: doc => releaseNumber(doc) === '04'},
+    ...releaseTopics,
     {key: 'videos', path: `/${lang}/uap-videos/`, file: `${lang}/uap-videos/index.html`, depth: 2, title: s.videosTitle, intro: s.videosIntro, nav: s.browseVideos, filter: doc => /^(VID|AUD)$/i.test(doc.type)},
     {key: 'pdfs', path: `/${lang}/uap-pdf-records/`, file: `${lang}/uap-pdf-records/index.html`, depth: 2, title: s.pdfsTitle, intro: s.pdfsIntro, nav: s.browsePdfs, filter: doc => /^PDF$/i.test(doc.type)},
     {key: 'images', path: `/${lang}/uap-images/`, file: `${lang}/uap-images/index.html`, depth: 2, title: s.imagesTitle, intro: s.imagesIntro, nav: s.browseImages, filter: doc => /^IMG$/i.test(doc.type)}
