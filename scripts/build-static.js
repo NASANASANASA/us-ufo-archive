@@ -4,8 +4,8 @@ const path = require('path');
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
-const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-buttonfit1';
-const assetVersion = '20260718-buttonfit1';
+const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-buttonequal1';
+const assetVersion = '20260718-buttonequal1';
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
 const adsenseClient = 'ca-pub-2222469808721720';
