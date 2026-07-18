@@ -17,7 +17,7 @@ const analyticsScript = `<script async src="https://www.googletagmanager.com/gta
   gtag('js', new Date());
   gtag('config', 'G-ZND85JXQ6M');
 </script>`;
-const generatedDirs = ['en', 'ja', 'es', 'zh-Hans', 'zh-Hant', 'pt', 'ru', 'fr', 'de', 'ko', 'ar'];
+const generatedDirs = ['en', 'es', 'pt', 'fr', 'de', 'ru', 'ar', 'ja', 'ko', 'zh-Hans', 'zh-Hant'];
 const extraStaticDirs = [];
 const langPathPattern = new RegExp(`^/(${generatedDirs.join('|')})(/|$)`);
 const langMenuCodes = {en: 'en', ja: 'ja', es: 'es', 'zh-Hans': 'cn', 'zh-Hant': 'tw', pt: 'pt', ru: 'ru', fr: 'fr', de: 'de', ko: 'ko', ar: 'ar'};

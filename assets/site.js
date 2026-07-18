@@ -15,7 +15,7 @@ document.addEventListener('click',e=>{const link=e.target.closest('a[data-downlo
   const tbody=document.getElementById('db-tbody');if(!tbody)return;
   let activeRelease='all',sortKey='incidentDate',sortDir=-1,currentPage=1;
   let modalToken=0,currentModalIndex=-1;
-  const requestedLang=new URLSearchParams(location.search).get('lang'),pathLang=(location.pathname.match(/\/(en|ja|es|pt|ru|fr|de|ko|ar|zh-Hans|zh-Hant)(?:\/|$)/)||[])[1],validLangs=['cn','tw','en','ja','es','pt','ru','fr','de','ko','ar'],pathLangMap={'zh-Hans':'cn','zh-Hant':'tw',en:'en',ja:'ja',es:'es',pt:'pt',ru:'ru',fr:'fr',de:'de',ko:'ko',ar:'ar'};
+  const requestedLang=new URLSearchParams(location.search).get('lang'),pathLang=(location.pathname.match(/\/(en|ja|es|pt|ru|fr|de|ko|ar|zh-Hans|zh-Hant)(?:\/|$)/)||[])[1],validLangs=['en','es','pt','fr','de','ru','ar','ja','ko','cn','tw'],pathLangMap={'zh-Hans':'cn','zh-Hant':'tw',en:'en',ja:'ja',es:'es',pt:'pt',ru:'ru',fr:'fr',de:'de',ko:'ko',ar:'ar'};
   let lang=validLangs.includes(requestedLang)?requestedLang:(pathLangMap[pathLang]||'tw');
   if(validLangs.includes(requestedLang))localStorage.setItem('uap-lang',lang);
   if(pathLang)localStorage.setItem('uap-dir',pathLang);
