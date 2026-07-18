@@ -37,6 +37,14 @@ const r2VideoAsset = value => {
   const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)\.jpg$/i);
   return m ? `${mediaBase}release-04/videos/${m[1]}.mp4?v=${encodeURIComponent(mediaVersion)}` : '';
 };
+const dvidsMp4 = (() => {
+  try {
+    const source = read('assets/dvids-map.js');
+    return Object.fromEntries([...source.matchAll(/"(\d+)"\s*:\s*"([^"]+)"/g)].map(m => [m[1], m[2]]));
+  } catch (error) {
+    return {};
+  }
+})();
 const relativePath = (value, depth) => /^https?:\/\//i.test(clean(value)) ? clean(value) : `${'../'.repeat(depth)}${clean(value)}`;
 
 function manualAdSlot(name = 'inline') {
@@ -136,7 +144,9 @@ function normalize(row, index, zhCn, zhTw, ja, es) {
   const imageUrl = imageRaw ? urls(imageRaw).map(absolute).join('|') : pick(/\.(jpg|jpeg|png|gif|webp)$/i).join('|');
   const videoRaw = field(row, ['video url', 'videoUrl', 'video link', 'media url', 'video', 'media']);
   const derivedVideo = (officialType === 'VID' || officialType === 'AUD') && imageUrl ? r2VideoAsset(urls(imageUrl)[0]) : '';
+  const dvidsVideo = dvidsId && dvidsMp4[dvidsId] ? dvidsMp4[dvidsId] : '';
   const videoUrl = [
+    ...(dvidsVideo ? [dvidsVideo] : []),
     ...(videoRaw ? urls(videoRaw).map(absolute) : pick(/\.(mp4|webm|mov|m4v|ogg)$/i)),
     ...(derivedVideo ? [derivedVideo] : [])
   ].filter(Boolean).join('|');
@@ -187,6 +197,7 @@ const text = {
     location: 'Incident Location',
     type: 'Type',
     source: 'Open Official Source',
+    downloadCurrent: 'Download file',
     backToList: 'Back to archive list',
     all: 'All Records',
     byAgency: 'Records by agency',
@@ -216,6 +227,7 @@ const text = {
     location: '事件場所',
     type: '種類',
     source: '公式ソースを開く',
+    downloadCurrent: 'ファイルをダウンロード',
     backToList: 'アーカイブ一覧へ戻る',
     all: '全記録',
     byAgency: '機関別記録',
@@ -245,6 +257,7 @@ const text = {
     location: 'Lugar del incidente',
     type: 'Tipo',
     source: 'Abrir fuente oficial',
+    downloadCurrent: 'Descargar archivo',
     backToList: 'Volver al listado',
     all: 'Todos los registros',
     byAgency: 'Registros por agencia',
@@ -274,6 +287,7 @@ const text = {
     location: '事件地点',
     type: '类型',
     source: '查看美国官网档案',
+    downloadCurrent: '下载本档案',
     backToList: '返回档案一览',
     all: '全部记录',
     byAgency: '按机构浏览',
@@ -303,6 +317,7 @@ const text = {
     location: '事件地點',
     type: '類型',
     source: '檢視美國官網檔案',
+    downloadCurrent: '下載本檔案',
     backToList: '返回檔案一覽',
     all: '全部記錄',
     byAgency: '按機構瀏覽',
@@ -586,7 +601,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260717-returnstate1">
+  <link rel="stylesheet" href="${prefix}assets/style.css?v=20260718-mediaactions1">
   ${analyticsScript}
   ${adsenseScript}
 ${schemaHtml}
@@ -603,7 +618,7 @@ ${schemaHtml}
   </header>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/site.js?v=20260717-returnstate1"></script>
+  <script src="${prefix}assets/site.js?v=20260718-mediaactions1"></script>
 </body>
 </html>
 `;
@@ -698,8 +713,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
-    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260717-returnstate1')
-    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260717-returnstate1')
+    .replace(/assets\/style\.css\?v=[^"]+/g, 'assets/style.css?v=20260718-mediaactions1')
+    .replace(/assets\/site\.js\?v=[^"]+/g, 'assets/site.js?v=20260718-mediaactions1')
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
@@ -765,36 +780,6 @@ function buildRecordPage(doc, lang, docs) {
   return pageShell({lang, title: `${title} · ${l.home}`, description, canonicalPath, body, depth: 3, schema});
 }
 
-function releaseDownloadLinks(doc, lang) {
-  const n = clean(doc.release).match(/(\d{2})$/)?.[1];
-  const labels = {
-    en: {docs: 'Download release documents', videos: 'Download release videos'},
-    ja: {docs: '公開文書をダウンロード', videos: '公開動画をダウンロード'},
-    es: {docs: 'Descargar documentos de la publicación', videos: 'Descargar videos de la publicación'},
-    'zh-Hans': {docs: '下载本批文件', videos: '下载本批视频'},
-    'zh-Hant': {docs: '下載本批檔案', videos: '下載本批影片'}
-  }[lang] || {docs: 'Download release documents', videos: 'Download release videos'};
-  const bundles = {
-    '01': [
-      ['PDF', labels.docs, 'https://www.war.gov/medialink/ufo/bundle/Release_1.zip'],
-      ['VID', labels.videos, 'https://d34w7g4gy10iej.cloudfront.net/uapvideos.zip']
-    ],
-    '02': [
-      ['PDF', labels.docs, 'https://www.war.gov/medialink/ufo/052226/release_02/release_02_document_bundle.zip'],
-      ['VID', labels.videos, 'https://d34w7g4gy10iej.cloudfront.net/uap052226.zip']
-    ],
-    '03': [
-      ['PDF', labels.docs, 'https://www.war.gov/medialink/ufo/061226/release_03/release_03_documents.zip'],
-      ['VID', labels.videos, 'https://d34w7g4gy10iej.cloudfront.net/release_03/uap_videos_061226.zip']
-    ],
-    '04': [
-      ['PDF', labels.docs, 'https://www.war.gov/medialink/ufo/071026/release_04/release_04_documents_071026.zip'],
-      ['VID', labels.videos, 'https://d34w7g4gy10iej.cloudfront.net/release_04/uap_release04_videos_071026.zip']
-    ]
-  };
-  return bundles[n] || [];
-}
-
 function staticOfficialRecordPage(doc) {
   const n = clean(doc.release).match(/(\d{2})$/)?.[1] || '04';
   const hash = clean(doc.id || '')
@@ -827,26 +812,31 @@ function relatedRecords(doc, docs) {
   return out.slice(0, 6);
 }
 
+function currentRecordDownloadUrl(doc, media) {
+  const type = clean(doc.type).toUpperCase();
+  if (type === 'VID' || type === 'AUD') return media.video || '';
+  if (type === 'PDF') return doc.documentUrl || '';
+  if (type === 'IMG') return media.r2Image || media.localImage || media.image || '';
+  return doc.documentUrl || media.video || media.r2Image || media.localImage || media.image || '';
+}
+
 function staticMediaPreview(doc, lang, title, docs) {
   const image = urls(doc.imageUrl)[0] || '';
   const r2Image = image ? r2Asset(image) : '';
   const localImage = image ? mirroredAsset(image) : '';
   const video = urls(doc.videoUrl || '')[0] || '';
-  const isAV = doc.type === 'VID' || doc.type === 'AUD';
   const blocked = {
-    en: 'The official source blocks external previews. Open the official source or download the release bundle.',
-    ja: '公式ソースが外部サイトでのプレビュー表示をブロックしています。公式ソースを開くか、リリースのファイルをダウンロードしてください。',
-    es: 'La fuente oficial bloquea la vista previa externa. Abre la fuente oficial o descarga el paquete de la publicación.',
-    'zh-Hans': '官方源站阻止外链预览。请打开官方来源或下载本批文件。',
-    'zh-Hant': '官方來源網站阻止外連預覽。請開啟官方來源或下載本批檔案。'
-  }[lang] || 'The official source blocks external previews. Open the official source or download the release bundle.';
+    en: 'The official source blocks external previews. Open the official source or use the record download.',
+    ja: '公式ソースが外部サイトでのプレビュー表示をブロックしています。公式ソースを開くか、この記録のファイルをダウンロードしてください。',
+    es: 'La fuente oficial bloquea la vista previa externa. Abre la fuente oficial o descarga este registro.',
+    'zh-Hans': '官方源站阻止外链预览。请打开官方来源或下载当前档案。',
+    'zh-Hant': '官方來源網站阻止外連預覽。請開啟官方來源或下載目前檔案。'
+  }[lang] || 'The official source blocks external previews. Open the official source or use the record download.';
   const fallback = `<div class="real-file media-fallback"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   const officialUrl = (doc.type === 'VID' || doc.type === 'AUD' || doc.type === 'IMG') ? staticOfficialRecordPage(doc) : doc.sourceUrl;
+  const downloadUrl = currentRecordDownloadUrl(doc, {image, r2Image, localImage, video});
+  const downloadCurrent = downloadUrl ? `<a class="static-media-button" href="${esc(downloadUrl)}" target="_blank" rel="noopener" download><span>${esc(doc.type)}</span>${esc(text[lang].downloadCurrent)}</a>` : '';
   const openOfficial = `<a class="static-media-button" href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(text[lang].source)} ↗</a>`;
-  const releaseLinks = releaseDownloadLinks(doc, lang)
-    .filter(([type]) => (isAV ? type === 'VID' : doc.type === 'PDF' && type === 'PDF'))
-    .map(([type, textLabel, url]) => `<a class="static-media-button" href="${esc(url)}" target="_blank" rel="noopener"><span>${esc(type)}</span>${esc(textLabel)}</a>`)
-    .join('\n          ');
   const relatedLinks = relatedRecords(doc, docs)
     .map(related => `<a class="static-related-link" href="../${esc(related.slug)}/"><span>.${esc(related.type)}</span>${esc(langTitle(related, lang))}</a>`)
     .join('\n            ');
@@ -863,7 +853,7 @@ function staticMediaPreview(doc, lang, title, docs) {
   } else {
     preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   }
-  const actions = [relatedBlock, releaseLinks, openOfficial].filter(Boolean).join('\n          ');
+  const actions = [downloadCurrent, openOfficial, relatedBlock].filter(Boolean).join('\n          ');
   return `<div class="static-preview static-preview-${esc(doc.type.toLowerCase())}">
           ${preview}
         </div>
