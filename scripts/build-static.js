@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260718-logo1';
+const assetVersion = '20260718-logo2';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -1072,9 +1072,9 @@ function homeSeoLinks(lang, prefix = '') {
 }
 
 function iconLinks(prefix) {
-  return `<link rel="icon" type="image/png" sizes="48x48" href="${prefix}favicon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="${prefix}assets/icons/icon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="${prefix}assets/icons/apple-touch-icon.png">
+  return `<link rel="icon" type="image/png" sizes="48x48" href="${prefix}favicon.png?v=${assetVersion}">
+  <link rel="icon" type="image/png" sizes="192x192" href="${prefix}assets/icons/icon-192.png?v=${assetVersion}">
+  <link rel="apple-touch-icon" sizes="180x180" href="${prefix}assets/icons/apple-touch-icon.png?v=${assetVersion}">
   <link rel="manifest" href="${prefix}site.webmanifest">
   <meta name="theme-color" content="#05090c">`;
 }
