@@ -7,8 +7,8 @@ document.addEventListener('click',e=>{const trigger=e.target.closest('[data-lega
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLegalModal()});
 const UAP_LANG_DIRS={cn:'zh-Hans',tw:'zh-Hant',en:'en',ja:'ja',es:'es',pt:'pt',ru:'ru',fr:'fr',de:'de',ko:'ko',ar:'ar'};
 function uapBasePath(){return(location.pathname.replace(/\/(zh-Hans|zh-Hant|en|ja|es|pt|ru|fr|de|ko|ar)(\/.*)?$/,'/')||'/').replace(/\/+$/,'/')||'/'}
-function switchLangDir(dir,event){if(event)event.preventDefault();localStorage.setItem('uap-dir',dir);document.querySelectorAll('details.lang-menu').forEach(d=>d.removeAttribute('open'));location.href=uapBasePath()+dir+'/'+location.search+location.hash}
-document.addEventListener('click',e=>{const a=e.target.closest('.lang-menu a[data-dir]');if(a)switchLangDir(a.dataset.dir,e)});
+function switchLangDir(dir,event,link){if(event)event.preventDefault();localStorage.setItem('uap-dir',dir);document.querySelectorAll('details.lang-menu').forEach(d=>d.removeAttribute('open'));location.href=(link&&link.href)||uapBasePath()+dir+'/'+location.search+location.hash}
+document.addEventListener('click',e=>{const a=e.target.closest('.lang-menu a[data-dir]');if(a)switchLangDir(a.dataset.dir,e,a)});
 async function uapForceDownload(event,link){const url=link.dataset.downloadUrl||link.href;if(!url)return;event.preventDefault();const name=link.dataset.downloadFilename||url.split('/').pop().split('?')[0]||'uap-record';const old=link.textContent;link.setAttribute('aria-busy','true');try{const response=await fetch(url,{mode:'cors'});if(!response.ok)throw Error(response.status);const blob=await response.blob(),objectUrl=URL.createObjectURL(blob),a=document.createElement('a');a.href=objectUrl;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(objectUrl),30000)}catch(error){window.open(url,'_blank','noopener')}finally{link.removeAttribute('aria-busy');link.textContent=old}}
 document.addEventListener('click',e=>{const link=e.target.closest('a[data-download-url]');if(link)uapForceDownload(e,link)});
 (function(){
