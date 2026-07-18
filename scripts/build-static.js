@@ -17,8 +17,10 @@ const analyticsScript = `<script async src="https://www.googletagmanager.com/gta
   gtag('js', new Date());
   gtag('config', 'G-ZND85JXQ6M');
 </script>`;
-const generatedDirs = ['en', 'ja', 'es', 'zh-Hans', 'zh-Hant'];
-const extraStaticDirs = ['pt', 'ru', 'fr', 'de', 'ko', 'ar'];
+const generatedDirs = ['en', 'ja', 'es', 'zh-Hans', 'zh-Hant', 'pt', 'ru', 'fr', 'de', 'ko', 'ar'];
+const extraStaticDirs = [];
+const langPathPattern = new RegExp(`^/(${generatedDirs.join('|')})(/|$)`);
+const langMenuCodes = {en: 'en', ja: 'ja', es: 'es', 'zh-Hans': 'cn', 'zh-Hant': 'tw', pt: 'pt', ru: 'ru', fr: 'fr', de: 'de', ko: 'ko', ar: 'ar'};
 
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const clean = value => String(value || '').replace(/\u00a0/g, ' ').trim();
@@ -124,7 +126,7 @@ function absolute(value) {
   return value;
 }
 
-function normalize(row, index, zhCn, zhTw, ja, es) {
+function normalize(row, index, translations) {
   const releaseDate = field(row, ['release date', 'releaseDate']);
   const releaseMap = {
     '5/8/26': 'RELEASE 01',
@@ -186,12 +188,7 @@ function normalize(row, index, zhCn, zhTw, ja, es) {
     dvidsId,
     virin: field(row, ['image virin', 'virin']),
     redaction: /^(true|yes)$/i.test(field(row, ['redaction'])),
-    i18n: {
-      'zh-Hans': zhCn[index] || {},
-      'zh-Hant': zhTw[index] || {},
-      ja: ja[index] || {},
-      es: es[index] || {}
-    }
+    i18n: Object.fromEntries(generatedDirs.filter(lang => lang !== 'en').map(lang => [lang, translations[lang]?.[index] || {}]))
   };
 }
 
@@ -345,6 +342,186 @@ const text = {
     generated: '根據美國政府 UAP 公開資料生成的靜態 SEO 索引。',
     descriptionPrefix: '美國政府 UAP 公開檔案記錄',
     redactionNotice: '為保護目擊者身分、政府設施位置，或與不明異常現象（UAP）無關的軍事場所敏感資訊，本檔案已作塗黑處理。依據川普總統關於任何被報告為UAP或相關現象之事件性質或存在資訊之指令所發布的檔案，均未作任何塗黑處理。'
+  },
+  pt: {
+    lang: 'pt',
+    name: 'Português',
+    home: 'Arquivo Público UAP',
+    language: 'Idioma',
+    archive: 'Arquivo',
+    notice: 'Este site é um espelho público não oficial e índice de pesquisa. Textos e mídias oficiais vêm de divulgações públicas do governo dos EUA.',
+    summary: 'Resumo estruturado',
+    official: 'Descrição oficial',
+    records: 'registros',
+    agency: 'Agência',
+    release: 'Lote',
+    date: 'Data do incidente',
+    location: 'Local do incidente',
+    type: 'Tipo',
+    source: 'Ver arquivo oficial dos EUA',
+    downloadCurrent: 'Baixar este arquivo↓',
+    backToList: 'Voltar à lista do arquivo',
+    all: 'Todos os registros',
+    byAgency: 'Registros por agência',
+    byYear: 'Registros por ano',
+    byLocation: 'Registros por local',
+    byType: 'Registros por tipo',
+    indexes: 'Índices',
+    related: 'Índices relacionados',
+    relatedMedia: 'Registros relacionados',
+    generated: 'Índice SEO estático gerado a partir de dados oficiais de divulgações UAP do governo dos EUA.',
+    descriptionPrefix: 'Registro do arquivo público UAP do governo dos EUA',
+    redactionNotice: 'Redações foram feitas para proteger a identidade de testemunhas, a localização de instalações governamentais ou informações sensíveis sobre locais militares não relacionados a UAP. Nenhuma redação foi feita em arquivos divulgados sob a diretiva do Presidente Trump sobre informações relativas à natureza ou existência de encontros relatados como UAP ou fenômenos relacionados.'
+  },
+  ru: {
+    lang: 'ru',
+    name: 'Русский',
+    home: 'Публичный архив UAP',
+    language: 'Язык',
+    archive: 'Архив',
+    notice: 'Этот сайт является неофициальным публичным зеркалом и исследовательским индексом. Официальные тексты и медиа взяты из публичных релизов правительства США.',
+    summary: 'Структурированное резюме',
+    official: 'Официальное описание',
+    records: 'записей',
+    agency: 'Ведомство',
+    release: 'Пакет',
+    date: 'Дата события',
+    location: 'Место события',
+    type: 'Тип',
+    source: 'Открыть официальный архив США',
+    downloadCurrent: 'Скачать этот файл↓',
+    backToList: 'Вернуться к списку архива',
+    all: 'Все записи',
+    byAgency: 'Записи по ведомствам',
+    byYear: 'Записи по годам',
+    byLocation: 'Записи по месту',
+    byType: 'Записи по типу',
+    indexes: 'Индексы',
+    related: 'Связанные индексы',
+    relatedMedia: 'Связанные записи',
+    generated: 'Статический SEO-индекс, созданный по официальным данным релизов UAP правительства США.',
+    descriptionPrefix: 'Запись публичного архива UAP правительства США',
+    redactionNotice: 'Редактирование было выполнено для защиты личности очевидцев, местоположения государственных объектов или чувствительной информации о военных объектах, не связанных с UAP. В файлах, опубликованных в соответствии с директивой президента Трампа о сведениях, касающихся природы или существования встреч, заявленных как UAP или связанные явления, редактирование не выполнялось.'
+  },
+  fr: {
+    lang: 'fr',
+    name: 'Français',
+    home: 'Archive publique UAP',
+    language: 'Langue',
+    archive: 'Archive',
+    notice: 'Ce site est un miroir public non officiel et un index de recherche. Les textes et médias officiels proviennent de publications publiques du gouvernement des États-Unis.',
+    summary: 'Résumé structuré',
+    official: 'Description officielle',
+    records: 'enregistrements',
+    agency: 'Agence',
+    release: 'Publication',
+    date: "Date de l'incident",
+    location: "Lieu de l'incident",
+    type: 'Type',
+    source: "Voir l'archive officielle des États-Unis",
+    downloadCurrent: 'Télécharger ce fichier↓',
+    backToList: "Retour à la liste d'archives",
+    all: 'Tous les enregistrements',
+    byAgency: 'Enregistrements par agence',
+    byYear: 'Enregistrements par année',
+    byLocation: 'Enregistrements par lieu',
+    byType: 'Enregistrements par type',
+    indexes: 'Index',
+    related: 'Index connexes',
+    relatedMedia: 'Enregistrements connexes',
+    generated: 'Index SEO statique généré à partir des données officielles de publication UAP du gouvernement des États-Unis.',
+    descriptionPrefix: "Enregistrement de l'archive publique UAP du gouvernement des États-Unis",
+    redactionNotice: "Des occultations ont été effectuées pour protéger l'identité des témoins, l'emplacement des installations gouvernementales ou des informations sensibles sur des sites militaires sans rapport avec les UAP. Aucune occultation n'a été faite dans les fichiers publiés en vertu de la directive du président Trump concernant les informations relatives à la nature ou à l'existence de toute rencontre signalée comme UAP ou phénomène connexe."
+  },
+  de: {
+    lang: 'de',
+    name: 'Deutsch',
+    home: 'Öffentliches UAP-Archiv',
+    language: 'Sprache',
+    archive: 'Archiv',
+    notice: 'Diese Website ist ein inoffizieller öffentlicher Spiegel und Forschungsindex. Offizielle Texte und Medien stammen aus öffentlichen Veröffentlichungen der US-Regierung.',
+    summary: 'Strukturierte Zusammenfassung',
+    official: 'Offizielle Beschreibung',
+    records: 'Einträge',
+    agency: 'Behörde',
+    release: 'Veröffentlichung',
+    date: 'Ereignisdatum',
+    location: 'Ereignisort',
+    type: 'Typ',
+    source: 'Offizielles US-Archiv ansehen',
+    downloadCurrent: 'Diese Datei herunterladen↓',
+    backToList: 'Zur Archivliste zurück',
+    all: 'Alle Einträge',
+    byAgency: 'Einträge nach Behörde',
+    byYear: 'Einträge nach Jahr',
+    byLocation: 'Einträge nach Ort',
+    byType: 'Einträge nach Typ',
+    indexes: 'Indexe',
+    related: 'Verwandte Indexe',
+    relatedMedia: 'Verwandte Einträge',
+    generated: 'Statischer SEO-Index aus offiziellen UAP-Veröffentlichungsdaten der US-Regierung.',
+    descriptionPrefix: 'Eintrag im öffentlichen UAP-Archiv der US-Regierung',
+    redactionNotice: 'Schwärzungen wurden vorgenommen, um die Identität von Augenzeugen, den Standort von Regierungseinrichtungen oder potenziell sensible Informationen über nicht mit UAP verbundene Militärstandorte zu schützen. An Dateien, die gemäß der Anweisung von Präsident Trump zu Informationen über Art oder Existenz von als UAP oder verwandte Phänomene gemeldeten Begegnungen veröffentlicht wurden, wurden keine Schwärzungen vorgenommen.'
+  },
+  ko: {
+    lang: 'ko',
+    name: '한국어',
+    home: 'UAP 공개 아카이브',
+    language: '언어',
+    archive: '아카이브',
+    notice: '이 사이트는 비공식 공개 미러 및 연구 색인입니다. 공식 기록 텍스트와 미디어는 미국 정부의 공개 자료를 기반으로 합니다.',
+    summary: '구조화 요약',
+    official: '공식 설명',
+    records: '개 기록',
+    agency: '기관',
+    release: '공개 배치',
+    date: '사건 날짜',
+    location: '사건 장소',
+    type: '유형',
+    source: '미국 공식 아카이브 보기',
+    downloadCurrent: '이 파일 다운로드↓',
+    backToList: '아카이브 목록으로 돌아가기',
+    all: '전체 기록',
+    byAgency: '기관별 기록',
+    byYear: '연도별 기록',
+    byLocation: '장소별 기록',
+    byType: '유형별 기록',
+    indexes: '색인',
+    related: '관련 색인',
+    relatedMedia: '관련 기록',
+    generated: '미국 정부 UAP 공개 데이터로 생성한 정적 SEO 색인입니다.',
+    descriptionPrefix: '미국 정부 UAP 공개 아카이브 기록',
+    redactionNotice: '목격자의 신원, 정부 시설 위치 또는 UAP와 관련 없는 군사 시설에 대한 민감한 정보를 보호하기 위해 삭제 처리가 이루어졌습니다. UAP 또는 관련 현상으로 보고된 조우의 성격이나 존재에 관한 트럼프 대통령의 지시에 따라 공개된 파일에는 삭제 처리가 이루어지지 않았습니다.'
+  },
+  ar: {
+    lang: 'ar',
+    name: 'العربية',
+    home: 'أرشيف UAP العام',
+    language: 'اللغة',
+    archive: 'الأرشيف',
+    notice: 'هذا الموقع مرآة عامة غير رسمية وفهرس بحثي. النصوص والوسائط الرسمية مأخوذة من إصدارات عامة للحكومة الأمريكية.',
+    summary: 'ملخص منظم',
+    official: 'الوصف الرسمي',
+    records: 'سجلات',
+    agency: 'الجهة',
+    release: 'دفعة الإصدار',
+    date: 'تاريخ الحادثة',
+    location: 'موقع الحادثة',
+    type: 'النوع',
+    source: 'عرض الأرشيف الرسمي الأمريكي',
+    downloadCurrent: 'تنزيل هذا الملف↓',
+    backToList: 'العودة إلى قائمة الأرشيف',
+    all: 'جميع السجلات',
+    byAgency: 'السجلات حسب الجهة',
+    byYear: 'السجلات حسب السنة',
+    byLocation: 'السجلات حسب الموقع',
+    byType: 'السجلات حسب النوع',
+    indexes: 'الفهارس',
+    related: 'فهارس ذات صلة',
+    relatedMedia: 'سجلات ذات صلة',
+    generated: 'فهرس SEO ثابت تم إنشاؤه من بيانات إصدارات UAP الرسمية للحكومة الأمريكية.',
+    descriptionPrefix: 'سجل من أرشيف UAP العام للحكومة الأمريكية',
+    redactionNotice: 'تمت عمليات الحجب لحماية هوية شهود العيان وموقع المرافق الحكومية والمعلومات الحساسة المتعلقة بالمواقع العسكرية غير المرتبطة بـ UAP. لم تُجرَ أي عمليات حجب على الملفات الصادرة بموجب توجيه الرئيس ترامب بشأن المعلومات المتعلقة بطبيعة أو وجود لقاءات مُبلغ عنها كـ UAP أو ظواهر ذات صلة.'
   }
 };
 
@@ -451,26 +628,19 @@ const agencyNames = {
 };
 
 function langTitle(doc, lang) {
-  if (lang === 'zh-Hans') return doc.i18n['zh-Hans'].titleZh || doc.id;
-  if (lang === 'zh-Hant') return doc.i18n['zh-Hant'].titleZh || doc.id;
-  if (lang === 'ja') return doc.i18n.ja.titleZh || doc.id;
-  if (lang === 'es') return doc.i18n.es.titleZh || doc.id;
+  if (lang !== 'en') return doc.i18n?.[lang]?.titleZh || doc.id;
   return doc.id;
 }
 
 function langLocation(doc, lang) {
-  if (lang === 'zh-Hans') return doc.i18n['zh-Hans'].locZh || doc.incidentLocation || '未标示';
-  if (lang === 'zh-Hant') return doc.i18n['zh-Hant'].locZh || doc.incidentLocation || '未標示';
-  if (lang === 'ja') return doc.i18n.ja.locZh || doc.incidentLocation || 'N/A';
-  if (lang === 'es') return doc.i18n.es.locZh || doc.incidentLocation || 'N/A';
+  if (lang === 'zh-Hans') return doc.i18n?.[lang]?.locZh || doc.incidentLocation || '未标示';
+  if (lang === 'zh-Hant') return doc.i18n?.[lang]?.locZh || doc.incidentLocation || '未標示';
+  if (lang !== 'en') return doc.i18n?.[lang]?.locZh || doc.incidentLocation || 'N/A';
   return doc.incidentLocation || 'N/A';
 }
 
 function langDescription(doc, lang) {
-  if (lang === 'zh-Hans') return doc.i18n['zh-Hans'].descZh || doc.description;
-  if (lang === 'zh-Hant') return doc.i18n['zh-Hant'].descZh || doc.description;
-  if (lang === 'ja') return doc.i18n.ja.descZh || doc.description;
-  if (lang === 'es') return doc.i18n.es.descZh || doc.description;
+  if (lang !== 'en') return doc.i18n?.[lang]?.descZh || doc.description;
   return doc.description;
 }
 
@@ -507,6 +677,12 @@ function releaseLabel(value, lang) {
   if (lang === 'zh-Hant') return `第${Number(n)}批`;
   if (lang === 'ja') return `第${Number(n)}回公開`;
   if (lang === 'es') return `Publicación ${n}`;
+  if (lang === 'pt') return `Lote ${n}`;
+  if (lang === 'ru') return `Пакет ${n}`;
+  if (lang === 'fr') return `Publication ${n}`;
+  if (lang === 'de') return `Veröffentlichung ${n}`;
+  if (lang === 'ko') return `배치 ${n}`;
+  if (lang === 'ar') return `الدفعة ${n}`;
   return `Release ${n}`;
 }
 
@@ -548,7 +724,7 @@ function rel(fromLang, target) {
 }
 
 function footerHtml(prefix, lang) {
-  const labels = Object.fromEntries(Object.entries(legalPages).map(([slug, pages]) => [slug, pages[lang].title]));
+  const labels = Object.fromEntries(Object.entries(legalPages).map(([slug, pages]) => [slug, (pages[lang] || pages.en).title]));
   return `<footer>
     <div><b>${esc(text[lang].home)}</b><span>${esc(text[lang].notice)}</span></div>
     <nav class="footer-links" aria-label="Site policies">
@@ -564,7 +740,7 @@ function footerHtml(prefix, lang) {
 
 function legalModalHtml(lang) {
   const pages = Object.entries(legalPages).map(([slugName, pagesByLang]) => {
-    const page = pagesByLang[lang];
+    const page = pagesByLang[lang] || pagesByLang.en;
     return `<article class="legal-modal-page" data-legal-page="${esc(slugName)}" hidden>
         <h2>${esc(page.title)}</h2>
         <p class="legal-modal-desc">${esc(page.description)}</p>
@@ -588,20 +764,16 @@ function legalModalHtml(lang) {
 function pageShell({lang, title, description, canonicalPath, body, depth = 0, schema}) {
   const prefix = '../'.repeat(depth);
   const canonical = `${siteUrl}${canonicalPath}`;
-  const localPath = canonicalPath.replace(/^\/(en|ja|es|zh-Hans|zh-Hant)/, '');
+  const localPath = canonicalPath.replace(langPathPattern, '/');
   const schemaHtml = schema ? `  <script type="application/ld+json">${JSON.stringify(schema)}</script>\n` : '';
   const langMenu = `<details class="lang-menu">
         <summary>${esc(text[lang].language || 'Language')}</summary>
         <div>
-          <a data-dir="en" data-lang="en" href="${prefix}en${localPath}">English</a>
-          <a data-dir="ja" data-lang="ja" href="${prefix}ja${localPath}">日本語</a>
-          <a data-dir="es" data-lang="es" href="${prefix}es${localPath}">Español</a>
-          <a data-dir="zh-Hans" data-lang="cn" href="${prefix}zh-Hans${localPath}">简体中文</a>
-          <a data-dir="zh-Hant" data-lang="tw" href="${prefix}zh-Hant${localPath}">繁體中文</a>
+          ${generatedDirs.map(code => `<a data-dir="${esc(code)}" data-lang="${esc(langMenuCodes[code] || code)}" href="${prefix}${code}${localPath}">${esc(text[code].name)}</a>`).join('\n          ')}
         </div>
       </details>`;
   const alternates = Object.keys(text).map(code => {
-    const pathName = canonicalPath.replace(/^\/(en|ja|es|zh-Hans|zh-Hant)\//, `/${code}/`);
+    const pathName = canonicalPath.replace(langPathPattern, `/${code}/`);
     return `<link rel="alternate" hreflang="${code}" href="${siteUrl}${pathName}">`;
   }).join('\n  ');
   return `<!DOCTYPE html>
@@ -613,7 +785,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${canonical}">
   ${alternates}
-  <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(/^\/(ja|es|zh-Hans|zh-Hant)\//, '/en/')}">
+  <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(langPathPattern, '/en/')}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${prefix}assets/style.css?v=${assetVersion}">
@@ -697,7 +869,7 @@ function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth
 }
 
 function buildLegalPage(lang, slugName) {
-  const page = legalPages[slugName][lang];
+  const page = legalPages[slugName][lang] || legalPages[slugName].en;
   const body = `<main class="static-main">
     <section class="static-hero">
       <p class="system-line"><span></span> SITE POLICY</p>
@@ -758,7 +930,7 @@ function buildRecordPage(doc, lang, docs) {
   const officialDescription = doc.description || '';
   const languageDescription = langDescription(doc, lang);
   const descriptionBlocks = [
-    (lang === 'zh-Hans' || lang === 'zh-Hant' || lang === 'ja' || lang === 'es') && languageDescription
+    lang !== 'en' && languageDescription
       ? `<h2>${esc(l.official)}</h2>${paragraphs(languageDescription, lang)}`
       : '',
     lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription, lang)}` : ''
@@ -966,11 +1138,23 @@ function buildGroupPage(docs, lang, kind, groupSlug, label) {
 function build() {
   const interactiveTemplate = read('zh-Hant/index.html');
   const csv = parseCSV(read('assets/uap-data.csv'));
-  const zhCn = JSON.parse(read('assets/i18n-zh-cn.json'));
-  const zhTw = JSON.parse(read('assets/i18n-zh-tw.json'));
-  const ja = fs.existsSync(path.join(root, 'assets/i18n-ja.json')) ? JSON.parse(read('assets/i18n-ja.json')) : [];
-  const es = fs.existsSync(path.join(root, 'assets/i18n-es.json')) ? JSON.parse(read('assets/i18n-es.json')) : [];
-  const docs = csv.map((row, index) => normalize(row, index, zhCn, zhTw, ja, es)).filter(doc => doc.id);
+  const translationFiles = {
+    'zh-Hans': 'assets/i18n-zh-cn.json',
+    'zh-Hant': 'assets/i18n-zh-tw.json',
+    ja: 'assets/i18n-ja.json',
+    es: 'assets/i18n-es.json',
+    pt: 'assets/i18n-pt.json',
+    ru: 'assets/i18n-ru.json',
+    fr: 'assets/i18n-fr.json',
+    de: 'assets/i18n-de.json',
+    ko: 'assets/i18n-ko.json',
+    ar: 'assets/i18n-ar.json'
+  };
+  const translations = Object.fromEntries(Object.entries(translationFiles).map(([lang, file]) => [
+    lang,
+    fs.existsSync(path.join(root, file)) ? JSON.parse(read(file)) : []
+  ]));
+  const docs = csv.map((row, index) => normalize(row, index, translations)).filter(doc => doc.id);
   const urlsForSitemap = [];
 
   for (const dir of generatedDirs) fs.rmSync(path.join(root, dir), {recursive: true, force: true});
