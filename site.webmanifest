@@ -1,0 +1,24 @@
+{
+  "name": "UAP Public Archive",
+  "short_name": "UAP Archive",
+  "description": "Unofficial multilingual mirror and research index for public U.S. government UAP records.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#05090c",
+  "theme_color": "#05090c",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

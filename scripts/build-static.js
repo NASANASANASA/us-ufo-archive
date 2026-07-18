@@ -5,7 +5,8 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260718-releasecopy1';
+const assetVersion = '20260718-logo1';
+const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
 const adsenseClient = 'ca-pub-2222469808721720';
@@ -1050,20 +1051,48 @@ function recordSchemas(doc, lang, title, description, canonicalPath) {
   return schemas;
 }
 
-function homeSeoLinks(lang) {
+function homeSeoLinks(lang, prefix = '') {
   const alternates = generatedDirs.map(code => `<link rel="alternate" hreflang="${code}" href="${siteUrl}/${code}/">`).join('\n  ');
+  const organization = organizationSchema(lang);
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: text[lang].home,
     description: (seoText[lang] || seoText.en).homeDescription,
     inLanguage: text[lang].lang,
-    url: `${siteUrl}/${lang}/`
+    url: `${siteUrl}/${lang}/`,
+    publisher: {'@id': `${siteUrl}/#organization`}
   };
-  return `<link rel="canonical" href="${siteUrl}/${lang}/">
+  return `${iconLinks(prefix)}
+  <link rel="canonical" href="${siteUrl}/${lang}/">
   ${alternates}
   <link rel="alternate" hreflang="x-default" href="${siteUrl}/en/">
+  <script type="application/ld+json">${JSON.stringify(organization)}</script>
   <script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+}
+
+function iconLinks(prefix) {
+  return `<link rel="icon" type="image/png" sizes="48x48" href="${prefix}favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="${prefix}assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="${prefix}assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="${prefix}site.webmanifest">
+  <meta name="theme-color" content="#05090c">`;
+}
+
+function organizationSchema(lang = 'en') {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${siteUrl}/#organization`,
+    name: text[lang]?.home || text.en.home,
+    url: siteUrl,
+    logo: {
+      '@type': 'ImageObject',
+      url: siteLogoUrl,
+      width: 512,
+      height: 512
+    }
+  };
 }
 
 function footerHtml(prefix, lang) {
@@ -1108,7 +1137,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   const prefix = '../'.repeat(depth);
   const canonical = `${siteUrl}${canonicalPath}`;
   const localPath = canonicalPath.replace(langPathPattern, '/');
-  const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+  const schemas = [organizationSchema(lang), ...(schema ? (Array.isArray(schema) ? schema : [schema]) : [])];
   const schemaHtml = schemas.map(item => `  <script type="application/ld+json">${JSON.stringify(item)}</script>\n`).join('');
   const langMenu = `<details class="lang-menu">
         <summary>${esc(text[lang].language || 'Language')}</summary>
@@ -1130,6 +1159,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="canonical" href="${canonical}">
   ${alternates}
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(langPathPattern, '/en/')}">
+  ${iconLinks(prefix)}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${prefix}assets/style.css?v=${assetVersion}">
@@ -1388,7 +1418,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
     .replace(/href="\.\/es\/"/g, 'href="../es/"')
-    .replace('</head>', `  ${homeSeoLinks(lang)}\n</head>`)
+    .replace('</head>', `  ${homeSeoLinks(lang, '../')}\n</head>`)
     .replace(/href="\.\/"/g, 'href="../"')
     .replace(/<footer>[\s\S]*?<\/footer>/, footer);
 }
