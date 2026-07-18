@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260718-releases1';
+const assetVersion = '20260718-releasecopy1';
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
 const adsenseClient = 'ca-pub-2222469808721720';
@@ -1190,13 +1190,13 @@ function releaseNumber(doc) {
   return clean(doc.release).match(/(\d{2})$/)?.[1] || '';
 }
 
-function releaseTopicMeta(lang, n) {
+function releaseTopicMeta(lang, n, count) {
   const s = seoText[lang] || seoText.en;
   if (n === '04') {
     return {title: s.release04Title, intro: s.release04Intro, nav: s.browseRelease04};
   }
   const num = Number(n);
-  const label = releaseLabel(`Release ${n}`, lang);
+  const zhNum = {1: '一', 2: '二', 3: '三', 4: '四'}[num] || String(num);
   const title = {
     en: `Release ${n} UAP Records`,
     es: `Registros UAP de la publicación ${n}`,
@@ -1207,29 +1207,43 @@ function releaseTopicMeta(lang, n) {
     ar: `سجلات UAP الإصدار ${n}`,
     ja: `第${num}回公開UAP記録`,
     ko: `${num}차 공개 UAP 기록`,
-    'zh-Hans': `第${num}批 UAP 公开档案`,
-    'zh-Hant': `第${num}批 UAP 公開檔案`
+    'zh-Hans': `第${zhNum}批 UAP 公开档案`,
+    'zh-Hant': `第${zhNum}批 UAP 公開檔案`
   }[lang] || `Release ${n} UAP Records`;
   const intro = {
-    en: `Browse public U.S. government UAP records from ${label}, including source files, metadata, related records, and official archive links.`,
-    es: `Consulta registros UAP públicos del gobierno de EE. UU. de ${label}, incluidos archivos fuente, metadatos, registros relacionados y enlaces oficiales.`,
-    pt: `Consulte registros públicos de UAP do governo dos EUA de ${label}, incluindo arquivos-fonte, metadados, registros relacionados e links oficiais.`,
-    fr: `Parcourez les archives UAP publiques du gouvernement des États-Unis de ${label}, avec fichiers sources, métadonnées, archives liées et liens officiels.`,
-    de: `Durchsuchen Sie öffentliche UAP-Unterlagen der US-Regierung aus ${label}, einschließlich Quelldateien, Metadaten, verwandter Unterlagen und offizieller Links.`,
-    ru: `Просматривайте открытые материалы правительства США по UAP из ${label}: исходные файлы, метаданные, связанные записи и официальные ссылки.`,
-    ar: `تصفح سجلات UAP الحكومية الأميركية العامة من ${label}، بما في ذلك ملفات المصدر والبيانات الوصفية والسجلات المرتبطة والروابط الرسمية.`,
-    ja: `${label}の米国政府公開UAP記録を、原資料、メタデータ、関連記録、公式アーカイブリンクとともに閲覧できます。`,
-    ko: `${label}의 미국 정부 공개 UAP 기록을 원본 파일, 메타데이터, 관련 기록, 공식 아카이브 링크와 함께 둘러볼 수 있습니다.`,
-    'zh-Hans': `浏览${label}的美国政府公开 UAP 档案，包括源文件、元数据、相关档案和官方档案链接。`,
-    'zh-Hant': `瀏覽${label}的美國政府公開 UAP 檔案，包括來源檔案、元資料、相關檔案和官方檔案連結。`
-  }[lang] || `Browse public U.S. government UAP records from ${label}.`;
-  return {title, intro, nav: label};
+    en: `Browse all ${count} public UAP records from the Release ${n} official release, including videos, images, PDFs, incident metadata, and official source links.`,
+    es: `Consulta los ${count} registros UAP públicos de la publicación oficial ${n}, con videos, imágenes, PDF, metadatos del incidente y enlaces a la fuente oficial.`,
+    pt: `Explore os ${count} registros UAP públicos da publicação oficial ${n}, incluindo vídeos, imagens, PDFs, metadados do incidente e links oficiais.`,
+    fr: `Parcourez les ${count} archives UAP publiques de la publication officielle ${n}, avec vidéos, images, PDF, métadonnées et liens officiels.`,
+    de: `Durchsuchen Sie alle ${count} öffentlichen UAP-Unterlagen der offiziellen Veröffentlichung ${n} mit Videos, Bildern, PDFs, Metadaten und Quellenlinks.`,
+    ru: `Просмотрите все ${count} публичных материалов UAP из официального выпуска ${n}: видео, изображения, PDF, метаданные и официальные ссылки.`,
+    ar: `تصفح جميع سجلات UAP العامة البالغ عددها ${count} من الإصدار الرسمي ${n}، بما في ذلك الفيديو والصور وملفات PDF والبيانات وروابط المصدر الرسمي.`,
+    ja: `第${num}回公式公開に含まれる${count}件のUAP記録を、動画、画像、PDF、事件メタデータ、公式リンクとともに閲覧できます。`,
+    ko: `${num}차 공식 공개의 ${count}개 UAP 기록을 영상, 이미지, PDF, 사건 메타데이터, 공식 출처 링크와 함께 볼 수 있습니다.`,
+    'zh-Hans': `浏览第${zhNum}批官方公开的 ${count} 条 UAP 档案，包括视频、图片、PDF、事件元数据和美国官方来源链接。`,
+    'zh-Hant': `瀏覽第${zhNum}批官方公開的 ${count} 筆 UAP 檔案，包括影片、圖片、PDF、事件元資料和美國官方來源連結。`
+  }[lang] || `Browse all ${count} public UAP records from the Release ${n} official release.`;
+  const nav = {
+    en: `Release ${n} records`,
+    es: `Registros de publicación ${n}`,
+    pt: `Registros da publicação ${n}`,
+    fr: `Archives publication ${n}`,
+    de: `Veröffentlichung ${n}`,
+    ru: `Материалы выпуска ${n}`,
+    ar: `سجلات الإصدار ${n}`,
+    ja: `第${num}回公開記録`,
+    ko: `${num}차 공개 기록`,
+    'zh-Hans': `第${zhNum}批档案`,
+    'zh-Hant': `第${zhNum}批檔案`
+  }[lang] || `Release ${n} records`;
+  return {title, intro, nav};
 }
 
-function topicConfigs(lang) {
+function topicConfigs(lang, allDocs = []) {
   const s = seoText[lang] || seoText.en;
   const releaseTopics = ['01', '02', '03', '04'].map(n => {
-    const meta = releaseTopicMeta(lang, n);
+    const count = allDocs.filter(doc => releaseNumber(doc) === n).length;
+    const meta = releaseTopicMeta(lang, n, count);
     return {key: `release-${n}`, path: `/${lang}/release/${n}/`, file: `${lang}/release/${n}/index.html`, depth: 3, title: meta.title, intro: meta.intro, nav: meta.nav, filter: doc => releaseNumber(doc) === n};
   });
   return [
@@ -1252,7 +1266,7 @@ function buildTopicPage(allDocs, lang, topic) {
     <section class="static-panel static-topic-nav">
       <h2>${esc(text[lang].related)}</h2>
       <div class="static-topic-links">
-        ${topicConfigs(lang).map(item => `<a href="${topic.depth === 3 ? '../../' : '../'}${item.path.replace(`/${lang}/`, '')}">${esc(item.nav)}</a>`).join('\n        ')}
+        ${topicConfigs(lang, allDocs).map(item => `<a href="${topic.depth === 3 ? '../../' : '../'}${item.path.replace(`/${lang}/`, '')}">${esc(item.nav)}</a>`).join('\n        ')}
       </div>
     </section>
     ${manualAdSlot(`${topic.key}-before-list`)}
@@ -1281,7 +1295,7 @@ function buildTopicPage(allDocs, lang, topic) {
 
 function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth = 2) {
   const l = text[lang];
-  const topics = topicConfigs(lang);
+  const topics = topicConfigs(lang, docs);
   const body = `<main class="static-main">
     <section class="static-hero">
       <p class="system-line"><span></span> STATIC SEO ARCHIVE</p>
@@ -1617,7 +1631,7 @@ function build() {
     }
     writeFile(`${lang}/archive/index.html`, buildArchivePage(docs, lang));
     urlsForSitemap.push(`/${lang}/archive/`);
-    for (const topic of topicConfigs(lang)) {
+    for (const topic of topicConfigs(lang, docs)) {
       writeFile(topic.file, buildTopicPage(docs, lang, topic));
       urlsForSitemap.push(topic.path);
     }
