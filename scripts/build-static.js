@@ -4,8 +4,8 @@ const path = require('path');
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
-const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-buttonequal1';
-const assetVersion = '20260718-buttonequal1';
+const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-relatedwidth1';
+const assetVersion = '20260718-relatedwidth1';
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
 const adsenseClient = 'ca-pub-2222469808721720';
@@ -887,13 +887,13 @@ function staticMediaPreview(doc, lang, title, docs) {
   } else {
     preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   }
-  const actions = [downloadCurrent, openOfficial, relatedBlock].filter(Boolean).join('\n          ');
+  const actions = [downloadCurrent, openOfficial].filter(Boolean).join('\n          ');
   return `<div class="static-preview static-preview-${esc(doc.type.toLowerCase())}">
           ${preview}
         </div>
         <div class="static-media-actions">
           ${actions}
-        </div>`;
+        </div>${relatedBlock ? `\n        ${relatedBlock}` : ''}`;
 }
 
 function normalizeDescriptionBreaks(value) {
