@@ -7,8 +7,14 @@
   <meta name="description" content="Unofficial multilingual mirror and research index for public U.S. government UAP records, source documents, images, and videos.">
   <link rel="canonical" href="https://uap-archives.org/">
   <link rel="alternate" hreflang="en" href="https://uap-archives.org/en/">
-  <link rel="alternate" hreflang="ja" href="https://uap-archives.org/ja/">
   <link rel="alternate" hreflang="es" href="https://uap-archives.org/es/">
+  <link rel="alternate" hreflang="pt" href="https://uap-archives.org/pt/">
+  <link rel="alternate" hreflang="fr" href="https://uap-archives.org/fr/">
+  <link rel="alternate" hreflang="de" href="https://uap-archives.org/de/">
+  <link rel="alternate" hreflang="ru" href="https://uap-archives.org/ru/">
+  <link rel="alternate" hreflang="ar" href="https://uap-archives.org/ar/">
+  <link rel="alternate" hreflang="ja" href="https://uap-archives.org/ja/">
+  <link rel="alternate" hreflang="ko" href="https://uap-archives.org/ko/">
   <link rel="alternate" hreflang="zh-Hans" href="https://uap-archives.org/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://uap-archives.org/zh-Hant/">
   <link rel="alternate" hreflang="x-default" href="https://uap-archives.org/en/">
@@ -25,6 +31,7 @@
 </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"UAP Public Archive","description":"Search public U.S. government UAP records across official releases, agencies, years, locations, videos, images, and PDF source documents.","url":"https://uap-archives.org/","inLanguage":"en"}</script>
   <style>
     :root {
       color-scheme: dark;
@@ -107,33 +114,13 @@
       color: #66737c;
     }
   </style>
-  <script>
-    (function(){
-      var dirs={en:1,'zh-Hans':1,'zh-Hant':1,ja:1,es:1,pt:1,ru:1,fr:1,de:1,ko:1,ar:1};
-      var stored=localStorage.getItem('uap-dir');
-      var l=(navigator.language||'en').toLowerCase();
-      var dir=stored&&dirs[stored]?stored:
-        /^zh-(tw|hk|mo|hant)/.test(l)?'zh-Hant':
-        /^zh/.test(l)?'zh-Hans':
-        /^ja/.test(l)?'ja':
-        /^ko/.test(l)?'ko':
-        /^pt/.test(l)?'pt':
-        /^ru/.test(l)?'ru':
-        /^fr/.test(l)?'fr':
-        /^de/.test(l)?'de':
-        /^ar/.test(l)?'ar':
-        /^es/.test(l)?'es':'en';
-      window.setTimeout(function(){ location.replace('/'+dir+'/'); }, 600);
-    })();
-  </script>
-  <noscript><style>.auto-note{display:none}</style></noscript>
 </head>
 <body>
   <main>
     <p class="kicker">Public UAP Records Mirror</p>
     <h1>UAP Public Archive</h1>
     <p>This site is an unofficial multilingual mirror and research index for public U.S. government UAP records. Official text, files, images, and videos are based on public government release sources.</p>
-    <p class="auto-note">Redirecting to the language version that best matches your browser settings.</p>
+    <p>Browse 334 public records from four release batches, including UAP videos, images, PDF source documents, incident dates, agencies, locations, related records, and official source links.</p>
     <nav class="langs" aria-label="Language selection">
       <a href="/en/">English</a>
       <a href="/es/">Español</a>
@@ -146,6 +133,13 @@
       <a href="/ko/">한국어</a>
       <a href="/zh-Hans/">简体中文</a>
       <a href="/zh-Hant/">繁體中文</a>
+    </nav>
+    <nav class="langs" aria-label="Archive shortcuts">
+      <a href="/en/archive/">Archive index</a>
+      <a href="/en/release/04/">Release 04</a>
+      <a href="/en/uap-videos/">UAP videos</a>
+      <a href="/en/uap-pdf-records/">PDF records</a>
+      <a href="/en/uap-images/">Image records</a>
     </nav>
     <small>Not an official U.S. government website. If translation or formatting differs from an official source, the official English source controls.</small>
   </main>

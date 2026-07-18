@@ -99,6 +99,9 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .static-panel p{color:#aeb7ba;font-size:15px;line-height:1.9;margin:0 0 18px}
 .legal-panel h2{margin-top:28px}.legal-panel h2:first-child{margin-top:0}.legal-panel a{color:var(--cyan)}
 .static-index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.static-topic-links{display:flex;flex-wrap:wrap;gap:10px}
+.static-topic-links a{display:inline-flex;align-items:center;border:1px solid var(--line2);padding:10px 13px;color:var(--cyan);text-decoration:none;font-size:13px;font-weight:600}
+.static-topic-links a:hover{border-color:var(--cyan);background:rgba(110,215,223,.08)}
 .static-index-card,.static-row{border:1px solid var(--line);background:#050a0e;color:#aeb8bb;text-decoration:none;transition:.15s border-color,.15s color,.15s background}
 .static-index-card{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:18px}
 .static-index-card b{color:var(--white);font-size:15px;font-weight:500}

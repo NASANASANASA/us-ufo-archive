@@ -4,8 +4,8 @@ const path = require('path');
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
-const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-relatedwidth1';
-const assetVersion = '20260718-relatedwidth1';
+const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
+const assetVersion = '20260718-seo1';
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
 const adsenseClient = 'ca-pub-2222469808721720';
@@ -60,6 +60,196 @@ const dvidsMp4 = (() => {
   }
 })();
 const relativePath = (value, depth) => /^https?:\/\//i.test(clean(value)) ? clean(value) : `${'../'.repeat(depth)}${clean(value)}`;
+
+const seoText = {
+  en: {
+    release04Title: 'Release 04 UAP Records',
+    release04Intro: 'Browse all 40 public UAP records from the fourth official release, including videos, images, PDFs, incident metadata, and official source links.',
+    videosTitle: 'UAP Videos',
+    videosIntro: 'Browse public U.S. government UAP video records with local playback when available, official descriptions, related records, and source downloads.',
+    pdfsTitle: 'UAP PDF Records',
+    pdfsIntro: 'Browse public U.S. government UAP PDF records, source documents, record metadata, related files, and official archive links.',
+    imagesTitle: 'UAP Images',
+    imagesIntro: 'Browse public U.S. government UAP image records, still frames, digital renderings, supporting metadata, and official archive links.',
+    browseRelease04: 'Release 04 records',
+    browseVideos: 'UAP videos',
+    browsePdfs: 'PDF records',
+    browseImages: 'Image records',
+    mediaDetails: 'Media details',
+    mediaDetailsIntro: 'This page indexes the record type, source agency, release batch, incident date, incident location, official source, and available public media for search and reference.',
+    homeDescription: 'Search public U.S. government UAP records across official releases, agencies, years, locations, videos, images, and PDF source documents.'
+  },
+  es: {
+    release04Title: 'Registros UAP de la publicación 04',
+    release04Intro: 'Consulta los 40 registros UAP públicos de la cuarta publicación oficial, con videos, imágenes, PDF, metadatos del incidente y enlaces a la fuente oficial.',
+    videosTitle: 'Videos UAP',
+    videosIntro: 'Consulta videos UAP públicos del Gobierno de EE. UU. con reproducción local cuando está disponible, descripciones oficiales, registros relacionados y descargas de origen.',
+    pdfsTitle: 'Registros PDF UAP',
+    pdfsIntro: 'Consulta documentos PDF UAP públicos del Gobierno de EE. UU., metadatos, archivos relacionados y enlaces al archivo oficial.',
+    imagesTitle: 'Imágenes UAP',
+    imagesIntro: 'Consulta imágenes UAP públicas, fotogramas, recreaciones digitales, metadatos y enlaces al archivo oficial.',
+    browseRelease04: 'Registros de publicación 04',
+    browseVideos: 'Videos UAP',
+    browsePdfs: 'Registros PDF',
+    browseImages: 'Registros de imagen',
+    mediaDetails: 'Detalles multimedia',
+    mediaDetailsIntro: 'Esta página indexa el tipo de registro, agencia fuente, publicación, fecha, lugar, fuente oficial y medios públicos disponibles para búsqueda y referencia.',
+    homeDescription: 'Busca registros UAP públicos del Gobierno de EE. UU. por publicaciones, agencias, años, lugares, videos, imágenes y documentos PDF.'
+  },
+  pt: {
+    release04Title: 'Registros UAP da publicação 04',
+    release04Intro: 'Explore os 40 registros UAP públicos da quarta publicação oficial, incluindo vídeos, imagens, PDFs, metadados do incidente e links oficiais.',
+    videosTitle: 'Vídeos UAP',
+    videosIntro: 'Explore vídeos UAP públicos do governo dos EUA com reprodução local quando disponível, descrições oficiais, registros relacionados e downloads.',
+    pdfsTitle: 'Registros PDF UAP',
+    pdfsIntro: 'Explore documentos PDF UAP públicos do governo dos EUA, metadados, arquivos relacionados e links oficiais.',
+    imagesTitle: 'Imagens UAP',
+    imagesIntro: 'Explore imagens UAP públicas, quadros de vídeo, renderizações digitais, metadados e links oficiais.',
+    browseRelease04: 'Registros da publicação 04',
+    browseVideos: 'Vídeos UAP',
+    browsePdfs: 'Registros PDF',
+    browseImages: 'Registros de imagem',
+    mediaDetails: 'Detalhes da mídia',
+    mediaDetailsIntro: 'Esta página indexa tipo de registro, agência, lote, data, local, fonte oficial e mídia pública disponível para pesquisa e referência.',
+    homeDescription: 'Pesquise registros UAP públicos do governo dos EUA por publicações, agências, anos, locais, vídeos, imagens e PDFs.'
+  },
+  fr: {
+    release04Title: 'Archives UAP de la publication 04',
+    release04Intro: 'Parcourez les 40 archives UAP publiques de la quatrième publication officielle, avec vidéos, images, PDF, métadonnées et liens officiels.',
+    videosTitle: 'Vidéos UAP',
+    videosIntro: 'Parcourez les vidéos UAP publiques du gouvernement des États-Unis avec lecture locale lorsque disponible, descriptions officielles, archives liées et téléchargements.',
+    pdfsTitle: 'Archives PDF UAP',
+    pdfsIntro: 'Parcourez les documents PDF UAP publics du gouvernement des États-Unis, leurs métadonnées, fichiers liés et liens officiels.',
+    imagesTitle: 'Images UAP',
+    imagesIntro: 'Parcourez les images UAP publiques, captures, rendus numériques, métadonnées et liens officiels.',
+    browseRelease04: 'Archives publication 04',
+    browseVideos: 'Vidéos UAP',
+    browsePdfs: 'Archives PDF',
+    browseImages: 'Archives image',
+    mediaDetails: 'Détails du média',
+    mediaDetailsIntro: 'Cette page indexe le type, l’agence, la publication, la date, le lieu, la source officielle et les médias publics disponibles.',
+    homeDescription: 'Rechercher les archives UAP publiques du gouvernement des États-Unis par publication, agence, année, lieu, vidéo, image et PDF.'
+  },
+  de: {
+    release04Title: 'UAP-Unterlagen Veröffentlichung 04',
+    release04Intro: 'Durchsuchen Sie alle 40 öffentlichen UAP-Unterlagen der vierten offiziellen Veröffentlichung mit Videos, Bildern, PDFs, Metadaten und Quellenlinks.',
+    videosTitle: 'UAP-Videos',
+    videosIntro: 'Durchsuchen Sie öffentliche UAP-Videos der US-Regierung mit lokaler Wiedergabe, offiziellen Beschreibungen, verwandten Unterlagen und Downloads.',
+    pdfsTitle: 'UAP-PDF-Unterlagen',
+    pdfsIntro: 'Durchsuchen Sie öffentliche UAP-PDF-Dokumente der US-Regierung, Metadaten, verwandte Dateien und offizielle Archivlinks.',
+    imagesTitle: 'UAP-Bilder',
+    imagesIntro: 'Durchsuchen Sie öffentliche UAP-Bilder, Standbilder, digitale Darstellungen, Metadaten und offizielle Archivlinks.',
+    browseRelease04: 'Veröffentlichung 04',
+    browseVideos: 'UAP-Videos',
+    browsePdfs: 'PDF-Unterlagen',
+    browseImages: 'Bildunterlagen',
+    mediaDetails: 'Mediendetails',
+    mediaDetailsIntro: 'Diese Seite indexiert Typ, Behörde, Veröffentlichung, Datum, Ort, offizielle Quelle und verfügbare öffentliche Medien.',
+    homeDescription: 'Öffentliche UAP-Unterlagen der US-Regierung nach Veröffentlichung, Behörde, Jahr, Ort, Video, Bild und PDF durchsuchen.'
+  },
+  ru: {
+    release04Title: 'Материалы UAP выпуска 04',
+    release04Intro: 'Просмотрите все 40 публичных материалов UAP из четвертого официального выпуска: видео, изображения, PDF, метаданные и официальные ссылки.',
+    videosTitle: 'Видео UAP',
+    videosIntro: 'Просмотрите публичные видео UAP правительства США с локальным воспроизведением, официальными описаниями, связанными материалами и загрузками.',
+    pdfsTitle: 'PDF-материалы UAP',
+    pdfsIntro: 'Просмотрите публичные PDF-документы UAP правительства США, метаданные, связанные файлы и официальные ссылки.',
+    imagesTitle: 'Изображения UAP',
+    imagesIntro: 'Просмотрите публичные изображения UAP, кадры, цифровые реконструкции, метаданные и официальные ссылки.',
+    browseRelease04: 'Материалы выпуска 04',
+    browseVideos: 'Видео UAP',
+    browsePdfs: 'PDF-материалы',
+    browseImages: 'Изображения',
+    mediaDetails: 'Сведения о медиа',
+    mediaDetailsIntro: 'Страница индексирует тип записи, ведомство, выпуск, дату, место, официальный источник и доступные публичные медиа.',
+    homeDescription: 'Поиск публичных материалов UAP правительства США по выпускам, ведомствам, годам, местам, видео, изображениям и PDF.'
+  },
+  ar: {
+    release04Title: 'سجلات UAP الإصدار 04',
+    release04Intro: 'تصفح جميع سجلات UAP العامة الأربعين من الإصدار الرسمي الرابع، بما في ذلك الفيديو والصور وملفات PDF والبيانات وروابط المصدر الرسمي.',
+    videosTitle: 'فيديوهات UAP',
+    videosIntro: 'تصفح فيديوهات UAP العامة من حكومة الولايات المتحدة مع تشغيل محلي عند توفره، وأوصاف رسمية وسجلات مرتبطة وتنزيلات.',
+    pdfsTitle: 'سجلات PDF الخاصة بـ UAP',
+    pdfsIntro: 'تصفح وثائق PDF العامة الخاصة بـ UAP من حكومة الولايات المتحدة مع البيانات والملفات المرتبطة والروابط الرسمية.',
+    imagesTitle: 'صور UAP',
+    imagesIntro: 'تصفح صور UAP العامة واللقطات والعروض الرقمية والبيانات والروابط الرسمية.',
+    browseRelease04: 'سجلات الإصدار 04',
+    browseVideos: 'فيديوهات UAP',
+    browsePdfs: 'سجلات PDF',
+    browseImages: 'سجلات الصور',
+    mediaDetails: 'تفاصيل الوسائط',
+    mediaDetailsIntro: 'تفهرس هذه الصفحة نوع السجل والجهة والإصدار والتاريخ والموقع والمصدر الرسمي والوسائط العامة المتاحة.',
+    homeDescription: 'ابحث في سجلات UAP العامة للحكومة الأمريكية حسب الإصدار والجهة والسنة والموقع والفيديو والصورة وPDF.'
+  },
+  ja: {
+    release04Title: '第4回公開UAP記録',
+    release04Intro: '第4回公式公開に含まれる40件のUAP記録を、動画、画像、PDF、事件メタデータ、公式リンクとともに閲覧できます。',
+    videosTitle: 'UAP動画',
+    videosIntro: '米国政府が公開したUAP動画を、利用可能なローカル再生、公式説明、関連記録、ダウンロードとともに閲覧できます。',
+    pdfsTitle: 'UAP PDF記録',
+    pdfsIntro: '米国政府のUAP PDF資料、メタデータ、関連ファイル、公式アーカイブリンクを閲覧できます。',
+    imagesTitle: 'UAP画像',
+    imagesIntro: '公開UAP画像、静止画、デジタル再現、メタデータ、公式リンクを閲覧できます。',
+    browseRelease04: '第4回公開記録',
+    browseVideos: 'UAP動画',
+    browsePdfs: 'PDF記録',
+    browseImages: '画像記録',
+    mediaDetails: 'メディア詳細',
+    mediaDetailsIntro: 'このページは記録種別、機関、公開回、事件日、場所、公式ソース、利用可能な公開メディアを検索と参照のために整理しています。',
+    homeDescription: '米国政府の公開UAP記録を公開回、機関、年、場所、動画、画像、PDF資料から検索できます。'
+  },
+  ko: {
+    release04Title: '4차 공개 UAP 기록',
+    release04Intro: '네 번째 공식 공개의 40개 UAP 기록을 영상, 이미지, PDF, 사건 메타데이터, 공식 출처 링크와 함께 볼 수 있습니다.',
+    videosTitle: 'UAP 영상',
+    videosIntro: '미국 정부 공개 UAP 영상을 가능한 경우 로컬 재생, 공식 설명, 관련 기록, 다운로드와 함께 볼 수 있습니다.',
+    pdfsTitle: 'UAP PDF 기록',
+    pdfsIntro: '미국 정부의 공개 UAP PDF 문서, 메타데이터, 관련 파일, 공식 아카이브 링크를 볼 수 있습니다.',
+    imagesTitle: 'UAP 이미지',
+    imagesIntro: '공개 UAP 이미지, 정지 프레임, 디지털 렌더링, 메타데이터, 공식 링크를 볼 수 있습니다.',
+    browseRelease04: '4차 공개 기록',
+    browseVideos: 'UAP 영상',
+    browsePdfs: 'PDF 기록',
+    browseImages: '이미지 기록',
+    mediaDetails: '미디어 세부정보',
+    mediaDetailsIntro: '이 페이지는 검색과 참조를 위해 기록 유형, 기관, 공개 회차, 날짜, 위치, 공식 출처, 사용 가능한 공개 미디어를 색인합니다.',
+    homeDescription: '미국 정부 공개 UAP 기록을 공개 회차, 기관, 연도, 위치, 영상, 이미지, PDF 문서별로 검색합니다.'
+  },
+  'zh-Hans': {
+    release04Title: '第四批 UAP 公开档案',
+    release04Intro: '浏览第四批官方公开的 40 条 UAP 档案，包括视频、图片、PDF、事件元数据和美国官方来源链接。',
+    videosTitle: 'UAP 视频档案',
+    videosIntro: '浏览美国政府公开的 UAP 视频档案；可用时支持本地播放，并保留官方说明、相关档案和下载链接。',
+    pdfsTitle: 'UAP PDF 档案',
+    pdfsIntro: '浏览美国政府公开的 UAP PDF 原始文件、档案元数据、相关文件和官方来源链接。',
+    imagesTitle: 'UAP 图片档案',
+    imagesIntro: '浏览美国政府公开的 UAP 图片、视频截图、数字重绘、元数据和官方来源链接。',
+    browseRelease04: '第四批档案',
+    browseVideos: 'UAP 视频',
+    browsePdfs: 'PDF 档案',
+    browseImages: '图片档案',
+    mediaDetails: '媒体信息',
+    mediaDetailsIntro: '本页为搜索和查阅整理档案类型、发布机构、公开批次、事件日期、事件地点、官方来源以及可用的公开媒体。',
+    homeDescription: '按公开批次、机构、年份、地点、视频、图片和 PDF 文件检索美国政府公开 UAP 档案。'
+  },
+  'zh-Hant': {
+    release04Title: '第四批 UAP 公開檔案',
+    release04Intro: '瀏覽第四批官方公開的 40 筆 UAP 檔案，包括影片、圖片、PDF、事件元資料和美國官方來源連結。',
+    videosTitle: 'UAP 影片檔案',
+    videosIntro: '瀏覽美國政府公開的 UAP 影片檔案；可用時支援本地播放，並保留官方說明、相關檔案和下載連結。',
+    pdfsTitle: 'UAP PDF 檔案',
+    pdfsIntro: '瀏覽美國政府公開的 UAP PDF 原始文件、檔案元資料、相關文件和官方來源連結。',
+    imagesTitle: 'UAP 圖片檔案',
+    imagesIntro: '瀏覽美國政府公開的 UAP 圖片、影片截圖、數位重繪、元資料和官方來源連結。',
+    browseRelease04: '第四批檔案',
+    browseVideos: 'UAP 影片',
+    browsePdfs: 'PDF 檔案',
+    browseImages: '圖片檔案',
+    mediaDetails: '媒體資訊',
+    mediaDetailsIntro: '本頁為搜尋和查閱整理檔案類型、發布機構、公開批次、事件日期、事件地點、官方來源以及可用的公開媒體。',
+    homeDescription: '按公開批次、機構、年份、地點、影片、圖片和 PDF 文件檢索美國政府公開 UAP 檔案。'
+  }
+};
 
 function manualAdSlot(name = 'inline') {
   return `<section class="uap-ad-slot uap-ad-slot-${name}" aria-label="Advertisement">
@@ -175,7 +365,7 @@ function normalize(row, index, translations) {
     release: field(row, ['release']) || releaseMap[releaseDate] || releaseDate,
     releaseDate,
     incidentDate: field(row, ['incident date', 'incidentDate']) || 'N/A',
-    incidentLocation: field(row, ['incident location', 'incidentLocation']) || 'N/A',
+    incidentLocation: (field(row, ['incident location', 'incidentLocation']) || 'N/A').replace(/\bWesten United States\b/g, 'Western United States'),
     type: officialType || (dvidsId ? 'VID' : (imageUrl && !doc ? 'IMG' : ext)),
     description: field(row, ['description blurb', 'description', 'video description', 'record description', 'caption']),
     sourceUrl: doc || dvidsPage || (officialType === 'IMG' ? assetLink : '') || imageUrl || videoUrl || found[0] || 'https://www.war.gov/UFO/',
@@ -718,9 +908,162 @@ function structuredSummary(doc, lang) {
   return `${agency}在${release}公开的 ${type} 类型 UAP 相关档案。事件日期：${date}；事件地点：${location}。本页保留官方来源链接、翻译说明与主要元数据。`;
 }
 
+function seoRecordTitle(doc, lang, title) {
+  const type = clean(doc.type) || 'PDF';
+  if (lang === 'zh-Hans') return `${title} | ${type} UAP 档案`;
+  if (lang === 'zh-Hant') return `${title} | ${type} UAP 檔案`;
+  if (lang === 'ja') return `${title} | ${type} UAP記録`;
+  if (lang === 'es') return `${title} | Registro UAP ${type}`;
+  if (lang === 'pt') return `${title} | Registro UAP ${type}`;
+  if (lang === 'fr') return `${title} | Archive UAP ${type}`;
+  if (lang === 'de') return `${title} | UAP-Unterlage ${type}`;
+  if (lang === 'ru') return `${title} | Материал UAP ${type}`;
+  if (lang === 'ko') return `${title} | ${type} UAP 기록`;
+  if (lang === 'ar') return `${title} | سجل UAP ${type}`;
+  return `${title} | ${type} UAP record`;
+}
+
+function mediaDetailsText(doc, lang) {
+  const s = seoText[lang] || seoText.en;
+  const details = [
+    s.mediaDetailsIntro,
+    `${text[lang].agency}: ${agencyLabel(doc.agency, lang)}.`,
+    `${text[lang].release}: ${releaseLabel(doc.release, lang)}.`,
+    `${text[lang].date}: ${doc.incidentDate || 'N/A'}.`,
+    `${text[lang].location}: ${langLocation(doc, lang)}.`,
+    `${text[lang].type}: .${doc.type}.`
+  ];
+  return details.join(' ');
+}
+
 function rel(fromLang, target) {
   const fromDepth = fromLang.split('/').filter(Boolean).length;
   return '../'.repeat(fromDepth) + target;
+}
+
+function absoluteSitePath(pathName) {
+  return `${siteUrl}${pathName}`;
+}
+
+function isoDate(value) {
+  const raw = clean(value);
+  if (!raw || /^N\/A$/i.test(raw)) return '';
+  const yearOnly = raw.match(/^(19|20)\d{2}$/)?.[0];
+  if (yearOnly) return yearOnly;
+  const mdY = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})$/);
+  if (mdY) {
+    const year = mdY[3].length === 2 ? `20${mdY[3]}` : mdY[3];
+    return `${year}-${mdY[1].padStart(2, '0')}-${mdY[2].padStart(2, '0')}`;
+  }
+  const year = raw.match(/(19|20)\d{2}/)?.[0];
+  return year || '';
+}
+
+function breadcrumbSchema(lang, items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: absoluteSitePath(item.path)
+    }))
+  };
+}
+
+function collectionSchema(lang, title, description, canonicalPath, docs = []) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: title,
+    description,
+    inLanguage: text[lang].lang,
+    url: absoluteSitePath(canonicalPath),
+    about: 'Unidentified Anomalous Phenomena',
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: docs.length,
+      itemListElement: docs.slice(0, 50).map((doc, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        url: absoluteSitePath(`/${lang}/records/${doc.slug}/`),
+        name: langTitle(doc, lang)
+      }))
+    }
+  };
+}
+
+function mediaUrls(doc) {
+  const image = urls(doc.imageUrl)[0] || '';
+  const r2Image = image ? r2Asset(image) : '';
+  const video = urls(doc.videoUrl || '')[0] || '';
+  const download = currentRecordDownloadUrl(doc, {image, r2Image, localImage: image ? mirroredAsset(image) : '', video});
+  return {image, r2Image, video, download};
+}
+
+function recordSchemas(doc, lang, title, description, canonicalPath) {
+  const m = mediaUrls(doc);
+  const base = {
+    '@context': 'https://schema.org',
+    '@type': 'DigitalDocument',
+    name: title,
+    description,
+    inLanguage: text[lang].lang,
+    url: absoluteSitePath(canonicalPath),
+    isBasedOn: staticOfficialRecordPage(doc),
+    datePublished: isoDate(doc.releaseDate) || doc.releaseDate,
+    about: 'Unidentified Anomalous Phenomena',
+    publisher: {'@type': 'Organization', name: agencyLabel(doc.agency, lang)}
+  };
+  const schemas = [base, breadcrumbSchema(lang, [
+    {name: text[lang].home, path: `/${lang}/`},
+    {name: text[lang].archive, path: `/${lang}/archive/`},
+    {name: title, path: canonicalPath}
+  ])];
+  if (m.video) {
+    const videoSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: title,
+      description,
+      inLanguage: text[lang].lang,
+      uploadDate: isoDate(doc.releaseDate) || '2026-01-01',
+      contentUrl: m.video,
+      embedUrl: absoluteSitePath(canonicalPath),
+      thumbnailUrl: m.r2Image || m.image || undefined,
+      publisher: {'@type': 'Organization', name: agencyLabel(doc.agency, lang)}
+    };
+    schemas.push(Object.fromEntries(Object.entries(videoSchema).filter(([, value]) => value !== undefined && value !== '')));
+  } else if (m.r2Image || m.image) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'ImageObject',
+      name: title,
+      description,
+      inLanguage: text[lang].lang,
+      contentUrl: m.r2Image || m.image,
+      thumbnailUrl: m.r2Image || m.image,
+      publisher: {'@type': 'Organization', name: agencyLabel(doc.agency, lang)}
+    });
+  }
+  return schemas;
+}
+
+function homeSeoLinks(lang) {
+  const alternates = generatedDirs.map(code => `<link rel="alternate" hreflang="${code}" href="${siteUrl}/${code}/">`).join('\n  ');
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: text[lang].home,
+    description: (seoText[lang] || seoText.en).homeDescription,
+    inLanguage: text[lang].lang,
+    url: `${siteUrl}/${lang}/`
+  };
+  return `<link rel="canonical" href="${siteUrl}/${lang}/">
+  ${alternates}
+  <link rel="alternate" hreflang="x-default" href="${siteUrl}/en/">
+  <script type="application/ld+json">${JSON.stringify(schema)}</script>`;
 }
 
 function footerHtml(prefix, lang) {
@@ -765,14 +1108,15 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   const prefix = '../'.repeat(depth);
   const canonical = `${siteUrl}${canonicalPath}`;
   const localPath = canonicalPath.replace(langPathPattern, '/');
-  const schemaHtml = schema ? `  <script type="application/ld+json">${JSON.stringify(schema)}</script>\n` : '';
+  const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+  const schemaHtml = schemas.map(item => `  <script type="application/ld+json">${JSON.stringify(item)}</script>\n`).join('');
   const langMenu = `<details class="lang-menu">
         <summary>${esc(text[lang].language || 'Language')}</summary>
         <div>
           ${generatedDirs.map(code => `<a data-dir="${esc(code)}" data-lang="${esc(langMenuCodes[code] || code)}" href="${prefix}${code}${localPath}">${esc(text[code].name)}</a>`).join('\n          ')}
         </div>
       </details>`;
-  const alternates = Object.keys(text).map(code => {
+  const alternates = generatedDirs.map(code => {
     const pathName = canonicalPath.replace(langPathPattern, `/${code}/`);
     return `<link rel="alternate" hreflang="${code}" href="${siteUrl}${pathName}">`;
   }).join('\n  ');
@@ -842,8 +1186,62 @@ function indexGroups(docs, lang, kind, labeler) {
   ).join('');
 }
 
+function releaseNumber(doc) {
+  return clean(doc.release).match(/(\d{2})$/)?.[1] || '';
+}
+
+function topicConfigs(lang) {
+  const s = seoText[lang] || seoText.en;
+  return [
+    {key: 'release-04', path: `/${lang}/release/04/`, file: `${lang}/release/04/index.html`, depth: 3, title: s.release04Title, intro: s.release04Intro, nav: s.browseRelease04, filter: doc => releaseNumber(doc) === '04'},
+    {key: 'videos', path: `/${lang}/uap-videos/`, file: `${lang}/uap-videos/index.html`, depth: 2, title: s.videosTitle, intro: s.videosIntro, nav: s.browseVideos, filter: doc => /^(VID|AUD)$/i.test(doc.type)},
+    {key: 'pdfs', path: `/${lang}/uap-pdf-records/`, file: `${lang}/uap-pdf-records/index.html`, depth: 2, title: s.pdfsTitle, intro: s.pdfsIntro, nav: s.browsePdfs, filter: doc => /^PDF$/i.test(doc.type)},
+    {key: 'images', path: `/${lang}/uap-images/`, file: `${lang}/uap-images/index.html`, depth: 2, title: s.imagesTitle, intro: s.imagesIntro, nav: s.browseImages, filter: doc => /^IMG$/i.test(doc.type)}
+  ];
+}
+
+function buildTopicPage(allDocs, lang, topic) {
+  const docs = allDocs.filter(topic.filter);
+  const recordPrefix = topic.depth === 3 ? '../../records/' : '../records/';
+  const body = `<main class="static-main">
+    <section class="static-hero">
+      <p class="system-line"><span></span> UAP TOPIC INDEX</p>
+      <h1>${esc(topic.title)}</h1>
+      <p>${esc(topic.intro)}</p>
+    </section>
+    <section class="static-panel static-topic-nav">
+      <h2>${esc(text[lang].related)}</h2>
+      <div class="static-topic-links">
+        ${topicConfigs(lang).map(item => `<a href="${topic.depth === 3 ? '../../' : '../'}${item.path.replace(`/${lang}/`, '')}">${esc(item.nav)}</a>`).join('\n        ')}
+      </div>
+    </section>
+    ${manualAdSlot(`${topic.key}-before-list`)}
+    <section class="static-panel">
+      <h2>${docs.length} ${esc(text[lang].records)}</h2>
+      <div class="static-list">${cardList(docs, lang, recordPrefix)}</div>
+    </section>
+  </main>`;
+  return pageShell({
+    lang,
+    title: `${topic.title} · ${text[lang].home}`,
+    description: topic.intro,
+    canonicalPath: topic.path,
+    body,
+    depth: topic.depth,
+    schema: [
+      collectionSchema(lang, topic.title, topic.intro, topic.path, docs),
+      breadcrumbSchema(lang, [
+        {name: text[lang].home, path: `/${lang}/`},
+        {name: text[lang].archive, path: `/${lang}/archive/`},
+        {name: topic.title, path: topic.path}
+      ])
+    ]
+  });
+}
+
 function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth = 2) {
   const l = text[lang];
+  const topics = topicConfigs(lang);
   const body = `<main class="static-main">
     <section class="static-hero">
       <p class="system-line"><span></span> STATIC SEO ARCHIVE</p>
@@ -857,6 +1255,7 @@ function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth
         <a class="static-index-card" href="../years/"><b>${esc(l.byYear)}</b><span>${docs.length} ${esc(l.records)}</span></a>
         <a class="static-index-card" href="../locations/"><b>${esc(l.byLocation)}</b><span>${docs.length} ${esc(l.records)}</span></a>
         <a class="static-index-card" href="../types/"><b>${esc(l.byType)}</b><span>${docs.length} ${esc(l.records)}</span></a>
+        ${topics.map(topic => `<a class="static-index-card" href="..${topic.path.replace(`/${lang}`, '')}"><b>${esc(topic.nav)}</b><span>${docs.filter(topic.filter).length} ${esc(l.records)}</span></a>`).join('\n        ')}
       </div>
     </section>
     ${manualAdSlot('archive-before-list')}
@@ -865,7 +1264,21 @@ function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth
       <div class="static-list">${cardList(docs, lang, '../records/')}</div>
     </section>
   </main>`;
-  return pageShell({lang, title: `${l.home} · ${l.archive}`, description: l.generated, canonicalPath, body, depth});
+  return pageShell({
+    lang,
+    title: `${l.home} · ${l.archive}`,
+    description: (seoText[lang] || seoText.en).homeDescription,
+    canonicalPath,
+    body,
+    depth,
+    schema: [
+      collectionSchema(lang, `${l.home} · ${l.archive}`, (seoText[lang] || seoText.en).homeDescription, canonicalPath, docs),
+      breadcrumbSchema(lang, [
+        {name: l.home, path: `/${lang}/`},
+        {name: l.archive, path: canonicalPath}
+      ])
+    ]
+  });
 }
 
 function buildLegalPage(lang, slugName) {
@@ -894,11 +1307,14 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\.\/"/g, 'href="../"');
   return template
     .replace(/\s*<div class="legal-modal-backdrop"[\s\S]*?<\/section>\s*<\/div>\s*/g, '\n')
+    .replace(/\s*<link rel="canonical" href="[^"]+">\s*/g, '\n')
+    .replace(/\s*<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*/g, '\n')
+    .replace(/\s*<script type="application\/ld\+json">[\s\S]*?<\/script>\s*/g, '\n')
     .replace(/\s*<script async src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-2222469808721720"[\s\S]*?<\/script>\s*/g, '\n')
     .replace(/\s*<script async src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-ZND85JXQ6M"><\/script>\s*<script>[\s\S]*?gtag\('config', 'G-ZND85JXQ6M'\);[\s\S]*?<\/script>\s*/g, '\n')
     .replace(/<html[^>]*>/, `<html lang="${text[lang].lang}">`)
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(text[lang].home)} · ${esc(text[lang].name)}</title>`)
-    .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(text[lang].notice)}">`)
+    .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc((seoText[lang] || seoText.en).homeDescription)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
     .replace(/assets\/style\.css\?v=[^"]+/g, `assets/style.css?v=${assetVersion}`)
@@ -918,6 +1334,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
     .replace(/href="\.\/es\/"/g, 'href="../es/"')
+    .replace('</head>', `  ${homeSeoLinks(lang)}\n</head>`)
     .replace(/href="\.\/"/g, 'href="../"')
     .replace(/<footer>[\s\S]*?<\/footer>/, footer);
 }
@@ -939,17 +1356,7 @@ function buildRecordPage(doc, lang, docs) {
   const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
   const backHref = `../../../${lang}/#archive`;
   const backHandler = "try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){history.back();return false}}catch(e){}";
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'DigitalDocument',
-    name: title,
-    description,
-    inLanguage: text[lang].lang,
-    isBasedOn: staticOfficialRecordPage(doc),
-    datePublished: doc.releaseDate,
-    about: 'Unidentified Anomalous Phenomena',
-    publisher: {'@type': 'Organization', name: agencyLabel(doc.agency, lang)}
-  };
+  const schema = recordSchemas(doc, lang, title, description, canonicalPath);
   const body = `<main class="static-main static-record">
     <section class="static-record-head">
       <a class="static-back-link" href="${esc(backHref)}" onclick="${backHandler}">← ${esc(l.backToList)}</a>
@@ -963,6 +1370,8 @@ function buildRecordPage(doc, lang, docs) {
         <h2>${esc(l.summary)}</h2>
         <p>${esc(structuredSummary(doc, lang))}</p>
         ${descriptionBlocks}
+        <h2>${esc((seoText[lang] || seoText.en).mediaDetails)}</h2>
+        <p>${esc(mediaDetailsText(doc, lang))}</p>
         <dl class="static-meta">
           <dt>${esc(l.agency)}</dt><dd>${esc(agencyLabel(doc.agency, lang))}</dd>
           <dt>${esc(l.release)}</dt><dd>${esc(releaseLabel(doc.release, lang))}</dd>
@@ -976,7 +1385,7 @@ function buildRecordPage(doc, lang, docs) {
       </aside>
     </section>
   </main>`;
-  return pageShell({lang, title: `${title} · ${l.home}`, description, canonicalPath, body, depth: 3, schema});
+  return pageShell({lang, title: `${seoRecordTitle(doc, lang, title)} · ${l.home}`, description, canonicalPath, body, depth: 3, schema});
 }
 
 function staticOfficialRecordPage(doc) {
@@ -1159,7 +1568,7 @@ function build() {
 
   for (const dir of generatedDirs) fs.rmSync(path.join(root, dir), {recursive: true, force: true});
 
-  for (const lang of Object.keys(text)) {
+  for (const lang of generatedDirs) {
     writeFile(`${lang}/index.html`, buildInteractiveHome(lang, interactiveTemplate));
     urlsForSitemap.push(`/${lang}/`);
     for (const slugName of Object.keys(legalPages)) {
@@ -1168,6 +1577,10 @@ function build() {
     }
     writeFile(`${lang}/archive/index.html`, buildArchivePage(docs, lang));
     urlsForSitemap.push(`/${lang}/archive/`);
+    for (const topic of topicConfigs(lang)) {
+      writeFile(topic.file, buildTopicPage(docs, lang, topic));
+      urlsForSitemap.push(topic.path);
+    }
     for (const doc of docs) {
       writeFile(`${lang}/records/${doc.slug}/index.html`, buildRecordPage(doc, lang, docs));
       urlsForSitemap.push(`/${lang}/records/${doc.slug}/`);
@@ -1210,10 +1623,11 @@ function build() {
     }
   }
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${['/', ...urlsForSitemap].map(u => `  <url><loc>${siteUrl}${u}</loc></url>`).join('\n')}\n</urlset>\n`;
+  const sitemapLastmod = process.env.SITEMAP_LASTMOD || '2026-07-18';
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${['/', ...urlsForSitemap].map(u => `  <url><loc>${siteUrl}${u}</loc><lastmod>${sitemapLastmod}</lastmod></url>`).join('\n')}\n</urlset>\n`;
   writeFile('sitemap.xml', sitemap);
   writeFile('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`);
-  console.log(`Generated ${docs.length} records across ${Object.keys(text).length} languages.`);
+  console.log(`Generated ${docs.length} records across ${generatedDirs.length} languages.`);
 }
 
 build();
