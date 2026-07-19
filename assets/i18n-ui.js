@@ -41,6 +41,8 @@ t_pdf_records:{cn:"PDF 档案",tw:"PDF 檔案",en:"PDF records",ja:"PDF記録",e
 t_image_records:{cn:"图片档案",tw:"圖片檔案",en:"Image records",ja:"画像記録",es:"Registros de imagen",pt:"Registros de imagem",ru:"Изображения",fr:"Images",de:"Bildeinträge",ko:"이미지 기록",ar:"سجلات الصور"}
 }).forEach(([k,v])=>{if(!UI_TEXT[k])UI_TEXT[k]={};Object.assign(UI_TEXT[k],v);});
 Object.entries({
-filter_all_years:{cn:"全部年份",tw:"全部年份",en:"All years",ja:"すべての年",es:"Todos los años",pt:"Todos os anos",ru:"Все годы",fr:"Toutes les années",de:"Alle Jahre",ko:"전체 연도",ar:"كل السنوات"},
-filter_all_locations:{cn:"全部地点",tw:"全部地點",en:"All locations",ja:"すべての場所",es:"Todas las ubicaciones",pt:"Todos os locais",ru:"Все места",fr:"Tous les lieux",de:"Alle Orte",ko:"전체 장소",ar:"كل المواقع"}
+filter_all_years:{cn:"全部年代",tw:"全部年代",en:"All decades",ja:"すべての年代",es:"Todas las décadas",pt:"Todas as décadas",ru:"Все десятилетия",fr:"Toutes les décennies",de:"Alle Jahrzehnte",ko:"전체 연대",ar:"كل العقود"},
+filter_all_locations:{cn:"全部地点",tw:"全部地點",en:"All locations",ja:"すべての場所",es:"Todas las ubicaciones",pt:"Todos os locais",ru:"Все места",fr:"Tous les lieux",de:"Alle Orte",ko:"전체 장소",ar:"كل المواقع"},
+filter_show_more:{cn:"展开全部地点",tw:"展開全部地點",en:"Show all locations",ja:"すべての場所を表示",es:"Mostrar todas las ubicaciones",pt:"Mostrar todos os locais",ru:"Показать все места",fr:"Afficher tous les lieux",de:"Alle Orte anzeigen",ko:"전체 장소 표시",ar:"عرض كل المواقع"},
+filter_show_less:{cn:"收起地点",tw:"收起地點",en:"Collapse locations",ja:"場所を折りたたむ",es:"Contraer ubicaciones",pt:"Recolher locais",ru:"Свернуть места",fr:"Réduire les lieux",de:"Orte einklappen",ko:"장소 접기",ar:"طي المواقع"}
 }).forEach(([k,v])=>{if(!UI_TEXT[k])UI_TEXT[k]={};Object.assign(UI_TEXT[k],v);});
