@@ -40,3 +40,7 @@ t_uap_videos:{cn:"UAP 视频",tw:"UAP 影片",en:"UAP videos",ja:"UAP動画",es:
 t_pdf_records:{cn:"PDF 档案",tw:"PDF 檔案",en:"PDF records",ja:"PDF記録",es:"Registros PDF",pt:"Registros PDF",ru:"PDF-записи",fr:"Documents PDF",de:"PDF-Einträge",ko:"PDF 기록",ar:"سجلات PDF"},
 t_image_records:{cn:"图片档案",tw:"圖片檔案",en:"Image records",ja:"画像記録",es:"Registros de imagen",pt:"Registros de imagem",ru:"Изображения",fr:"Images",de:"Bildeinträge",ko:"이미지 기록",ar:"سجلات الصور"}
 }).forEach(([k,v])=>{if(!UI_TEXT[k])UI_TEXT[k]={};Object.assign(UI_TEXT[k],v);});
+Object.entries({
+filter_all_years:{cn:"全部年份",tw:"全部年份",en:"All years",ja:"すべての年",es:"Todos los años",pt:"Todos os anos",ru:"Все годы",fr:"Toutes les années",de:"Alle Jahre",ko:"전체 연도",ar:"كل السنوات"},
+filter_all_locations:{cn:"全部地点",tw:"全部地點",en:"All locations",ja:"すべての場所",es:"Todas las ubicaciones",pt:"Todos os locais",ru:"Все места",fr:"Tous les lieux",de:"Alle Orte",ko:"전체 장소",ar:"كل المواقع"}
+}).forEach(([k,v])=>{if(!UI_TEXT[k])UI_TEXT[k]={};Object.assign(UI_TEXT[k],v);});

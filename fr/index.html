@@ -7,7 +7,7 @@
   <meta name="description" content="Rechercher les archives UAP publiques du gouvernement des États-Unis par publication, agence, année, lieu, vidéo, image et PDF.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css?v=20260719-homeindexes1">
+  <link rel="stylesheet" href="../assets/style.css?v=20260719-filtermatrix1">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZND85JXQ6M"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,9 +17,9 @@
 </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20260719-homeindexes1">
-  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20260719-homeindexes1">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20260719-homeindexes1">
+  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20260719-filtermatrix1">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20260719-filtermatrix1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20260719-filtermatrix1">
   <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#05090c">
   <link rel="canonical" href="https://uap-archives.org/fr/">
@@ -136,19 +136,27 @@
 
       <section class="interactive-index-panel" aria-labelledby="interactive-index-title">
         <h3 id="interactive-index-title" data-i18n="t_indexes">索引</h3>
-        <div class="interactive-index-grid">
-          <button class="interactive-index-card active" type="button" data-index-filter="all" onclick="dbSetIndex('all')"><b data-i18n="tab_all">全部记录</b><span><small id="count-all">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="agency" onclick="dbSetIndex('agency')"><b data-i18n="t_by_agency">Records by agency</b><span><small id="count-index-agency">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="year" onclick="dbSetIndex('year')"><b data-i18n="t_by_year">Records by year</b><span><small id="count-index-year">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="location" onclick="dbSetIndex('location')"><b data-i18n="t_by_location">Records by location</b><span><small id="count-index-location">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="record-type" onclick="dbSetIndex('record-type')"><b data-i18n="t_by_type">Records by type</b><span><small id="count-index-record-type">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="release-01" onclick="dbSetIndex('release-01')"><b data-i18n="tab_r1">公布批次 01</b><span><small id="count-01">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="release-02" onclick="dbSetIndex('release-02')"><b data-i18n="tab_r2">公布批次 02</b><span><small id="count-02">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="release-03" onclick="dbSetIndex('release-03')"><b data-i18n="tab_r3">公布批次 03</b><span><small id="count-03">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="release-04" onclick="dbSetIndex('release-04')"><b data-i18n="tab_r4">公布批次 04</b><span><small id="count-04">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="videos" onclick="dbSetIndex('videos')"><b data-i18n="t_uap_videos">UAP videos</b><span><small id="count-index-videos">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="pdfs" onclick="dbSetIndex('pdfs')"><b data-i18n="t_pdf_records">PDF records</b><span><small id="count-index-pdfs">—</small> <span data-i18n="t_records_short">Records</span></span></button>
-          <button class="interactive-index-card" type="button" data-index-filter="images" onclick="dbSetIndex('images')"><b data-i18n="t_image_records">Image records</b><span><small id="count-index-images">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+        <div class="interactive-filter-matrix" id="interactive-filter-matrix">
+          <div class="interactive-filter-row" data-filter-row="release">
+            <button class="interactive-filter-all active" type="button" data-filter-group="release" data-filter-value="all" onclick="dbSetFilter('release','all')" data-i18n="opt_all_release">全部批次</button>
+            <div class="interactive-filter-options" id="filter-options-release"></div>
+          </div>
+          <div class="interactive-filter-row" data-filter-row="agency">
+            <button class="interactive-filter-all active" type="button" data-filter-group="agency" data-filter-value="all" onclick="dbSetFilter('agency','all')" data-i18n="opt_all_agency">全部机构</button>
+            <div class="interactive-filter-options" id="filter-options-agency"></div>
+          </div>
+          <div class="interactive-filter-row" data-filter-row="year">
+            <button class="interactive-filter-all active" type="button" data-filter-group="year" data-filter-value="all" onclick="dbSetFilter('year','all')" data-i18n="filter_all_years">全部年份</button>
+            <div class="interactive-filter-options" id="filter-options-year"></div>
+          </div>
+          <div class="interactive-filter-row" data-filter-row="location">
+            <button class="interactive-filter-all active" type="button" data-filter-group="location" data-filter-value="all" onclick="dbSetFilter('location','all')" data-i18n="filter_all_locations">全部地点</button>
+            <div class="interactive-filter-options" id="filter-options-location"></div>
+          </div>
+          <div class="interactive-filter-row" data-filter-row="type">
+            <button class="interactive-filter-all active" type="button" data-filter-group="type" data-filter-value="all" onclick="dbSetFilter('type','all')" data-i18n="opt_all_type">全部类型</button>
+            <div class="interactive-filter-options" id="filter-options-type"></div>
+          </div>
         </div>
       </section>
 
@@ -305,7 +313,7 @@
   <script src="../assets/db-data.js?v=20260712-r4full1"></script>
   <script src="../assets/dvids-map.js?v=20260712-r4full1"></script>
   <script src="../assets/i18n-ui.js?v=20260712-r4full1"></script>
-  <script src="../assets/release-04-r2-documents.js?v=20260719-homeindexes1"></script>
-  <script src="../assets/site.js?v=20260719-homeindexes1"></script>
+  <script src="../assets/release-04-r2-documents.js?v=20260719-filtermatrix1"></script>
+  <script src="../assets/site.js?v=20260719-filtermatrix1"></script>
 </body>
 </html>
