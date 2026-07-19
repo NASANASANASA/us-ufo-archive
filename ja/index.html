@@ -7,7 +7,7 @@
   <meta name="description" content="米国政府の公開UAP記録を公開回、機関、年、場所、動画、画像、PDF資料から検索できます。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css?v=20260719-fixedheader1">
+  <link rel="stylesheet" href="../assets/style.css?v=20260719-homeindexes1">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZND85JXQ6M"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,9 +17,9 @@
 </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20260719-fixedheader1">
-  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20260719-fixedheader1">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20260719-fixedheader1">
+  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20260719-homeindexes1">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20260719-homeindexes1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20260719-homeindexes1">
   <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#05090c">
   <link rel="canonical" href="https://uap-archives.org/ja/">
@@ -134,64 +134,61 @@
         <p data-i18n="section_subtitle">直接同步美国政府 PURSUE 数据库 · 最近批次：2026.07.10</p>
       </div>
 
-      <div class="release-tabs">
-        <button class="db-tab active" onclick="dbSetRelease('all', this)"><span data-i18n="tab_all">全部记录</span> <small id="count-all">—</small></button>
-        <button class="db-tab" onclick="dbSetRelease('RELEASE 01', this)"><span data-i18n="tab_r1">公布批次 01</span> <small id="count-01">—</small></button>
-        <button class="db-tab" onclick="dbSetRelease('RELEASE 02', this)"><span data-i18n="tab_r2">公布批次 02</span> <small id="count-02">—</small></button>
-        <button class="db-tab" onclick="dbSetRelease('RELEASE 03', this)"><span data-i18n="tab_r3">公布批次 03</span> <small id="count-03">—</small></button>
-        <button class="db-tab" onclick="dbSetRelease('RELEASE 04', this)"><span data-i18n="tab_r4">公布批次 04</span> <small id="count-04">—</small></button>
-      </div>
+      <section class="interactive-index-panel" aria-labelledby="interactive-index-title">
+        <h3 id="interactive-index-title" data-i18n="t_indexes">索引</h3>
+        <div class="interactive-index-grid">
+          <button class="interactive-index-card active" type="button" data-index-filter="all" onclick="dbSetIndex('all')"><b data-i18n="tab_all">全部记录</b><span><small id="count-all">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="agency" onclick="dbSetIndex('agency')"><b data-i18n="t_by_agency">Records by agency</b><span><small id="count-index-agency">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="year" onclick="dbSetIndex('year')"><b data-i18n="t_by_year">Records by year</b><span><small id="count-index-year">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="location" onclick="dbSetIndex('location')"><b data-i18n="t_by_location">Records by location</b><span><small id="count-index-location">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="record-type" onclick="dbSetIndex('record-type')"><b data-i18n="t_by_type">Records by type</b><span><small id="count-index-record-type">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="release-01" onclick="dbSetIndex('release-01')"><b data-i18n="tab_r1">公布批次 01</b><span><small id="count-01">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="release-02" onclick="dbSetIndex('release-02')"><b data-i18n="tab_r2">公布批次 02</b><span><small id="count-02">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="release-03" onclick="dbSetIndex('release-03')"><b data-i18n="tab_r3">公布批次 03</b><span><small id="count-03">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="release-04" onclick="dbSetIndex('release-04')"><b data-i18n="tab_r4">公布批次 04</b><span><small id="count-04">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="videos" onclick="dbSetIndex('videos')"><b data-i18n="t_uap_videos">UAP videos</b><span><small id="count-index-videos">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="pdfs" onclick="dbSetIndex('pdfs')"><b data-i18n="t_pdf_records">PDF records</b><span><small id="count-index-pdfs">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+          <button class="interactive-index-card" type="button" data-index-filter="images" onclick="dbSetIndex('images')"><b data-i18n="t_image_records">Image records</b><span><small id="count-index-images">—</small> <span data-i18n="t_records_short">Records</span></span></button>
+        </div>
+      </section>
 
-      <div class="release-banner" data-release-banner="all">
-        <div>
-          <span class="prompt">&gt;</span>
-          <div><b data-i18n="banner_all_title">检索全部公开档案</b><small data-i18n="banner_all_date">收录四个公开批次</small></div>
+      <section class="release-download-panel" aria-labelledby="release-download-title">
+        <h3 id="release-download-title" data-i18n="t_release_downloads">批次下载</h3>
+        <div class="release-download-grid">
+          <div class="release-download-card">
+            <b data-i18n="banner_r1_title">第一批档案已获准公开</b>
+            <small data-i18n="banner_r1_date">公开日期：2026年5月8日</small>
+            <div class="release-downloads">
+              <a class="download-bundle" href="https://www.war.gov/medialink/ufo/bundle/Release_1.zip" target="_blank" rel="noopener" data-i18n="download_r1_docs">&gt; 下载第一批文件 [1.2GB]</a>
+              <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/uapvideos.zip" target="_blank" rel="noopener" data-i18n="download_r1_videos">&gt; 下载第一批视频 [1.3GB]</a>
+            </div>
+          </div>
+          <div class="release-download-card">
+            <b data-i18n="banner_r2_title">第二批档案已获准公开</b>
+            <small data-i18n="banner_r2_date">公开日期：2026年5月22日</small>
+            <div class="release-downloads">
+              <a class="download-bundle" href="https://www.war.gov/medialink/ufo/052226/release_02/release_02_document_bundle.zip" target="_blank" rel="noopener" data-i18n="download_r2_docs">&gt; 下载第二批文件 [70.1MB]</a>
+              <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/uap052226.zip" target="_blank" rel="noopener" data-i18n="download_r2_videos">&gt; 下载第二批视频 [5.6GB]</a>
+            </div>
+          </div>
+          <div class="release-download-card">
+            <b data-i18n="banner_r3_title">第三批档案已获准公开</b>
+            <small data-i18n="banner_r3_date">公开日期：2026年6月12日</small>
+            <div class="release-downloads">
+              <a class="download-bundle" href="https://www.war.gov/medialink/ufo/061226/release_03/release_03_documents.zip" target="_blank" rel="noopener" data-i18n="download_r3_docs">&gt; 下载第三批文件 [826MB]</a>
+              <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/release_03/uap_videos_061226.zip" target="_blank" rel="noopener" data-i18n="download_r3_videos">&gt; 下载第三批视频 [4.6GB]</a>
+            </div>
+          </div>
+          <div class="release-download-card">
+            <b data-i18n="banner_r4_title">第四批档案已获准公开</b>
+            <small data-i18n="banner_r4_date">公开日期：2026年7月10日</small>
+            <div class="release-downloads">
+              <a class="download-bundle" href="https://www.war.gov/medialink/ufo/071026/release_04/release_04_documents_071026.zip" target="_blank" rel="noopener" data-i18n="download_r4_docs">&gt; 下载第四批文件 [227MB]</a>
+              <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/release_04/uap_release04_videos_071026.zip" target="_blank" rel="noopener" data-i18n="download_r4_videos">&gt; 下载第四批视频 [1.4GB]</a>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="release-banner" data-release-banner="RELEASE 01" hidden>
-        <div>
-          <span class="prompt">&gt;</span>
-          <div><b data-i18n="banner_r1_title">第一批档案已获准公开</b><small data-i18n="banner_r1_date">公开日期：2026年5月8日</small></div>
-        </div>
-        <div class="release-downloads">
-          <a class="download-bundle" href="https://www.war.gov/medialink/ufo/bundle/Release_1.zip" target="_blank" rel="noopener" data-i18n="download_r1_docs">&gt; 下载第一批文件 [1.2GB]</a>
-          <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/uapvideos.zip" target="_blank" rel="noopener" data-i18n="download_r1_videos">&gt; 下载第一批视频 [1.3GB]</a>
-        </div>
-      </div>
-
-      <div class="release-banner" data-release-banner="RELEASE 02" hidden>
-        <div>
-          <span class="prompt">&gt;</span>
-          <div><b data-i18n="banner_r2_title">第二批档案已获准公开</b><small data-i18n="banner_r2_date">公开日期：2026年5月22日</small></div>
-        </div>
-        <div class="release-downloads">
-          <a class="download-bundle" href="https://www.war.gov/medialink/ufo/052226/release_02/release_02_document_bundle.zip" target="_blank" rel="noopener" data-i18n="download_r2_docs">&gt; 下载第二批文件 [70.1MB]</a>
-          <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/uap052226.zip" target="_blank" rel="noopener" data-i18n="download_r2_videos">&gt; 下载第二批视频 [5.6GB]</a>
-        </div>
-      </div>
-
-      <div class="release-banner" data-release-banner="RELEASE 03" hidden>
-        <div>
-          <span class="prompt">&gt;</span>
-          <div><b data-i18n="banner_r3_title">第三批档案已获准公开</b><small data-i18n="banner_r3_date">公开日期：2026年6月12日</small></div>
-        </div>
-        <div class="release-downloads">
-          <a class="download-bundle" href="https://www.war.gov/medialink/ufo/061226/release_03/release_03_documents.zip" target="_blank" rel="noopener" data-i18n="download_r3_docs">&gt; 下载第三批文件 [826MB]</a>
-          <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/release_03/uap_videos_061226.zip" target="_blank" rel="noopener" data-i18n="download_r3_videos">&gt; 下载第三批视频 [4.6GB]</a>
-        </div>
-      </div>
-
-      <div class="release-banner" data-release-banner="RELEASE 04" hidden>
-        <div>
-          <span class="prompt">&gt;</span>
-          <div><b data-i18n="banner_r4_title">第四批档案已获准公开</b><small data-i18n="banner_r4_date">公开日期：2026年7月10日</small></div>
-        </div>
-        <div class="release-downloads">
-          <a class="download-bundle" href="https://www.war.gov/medialink/ufo/071026/release_04/release_04_documents_071026.zip" target="_blank" rel="noopener" data-i18n="download_r4_docs">&gt; 下载第四批文件 [227MB]</a>
-          <a class="download-bundle" href="https://d34w7g4gy10iej.cloudfront.net/release_04/uap_release04_videos_071026.zip" target="_blank" rel="noopener" data-i18n="download_r4_videos">&gt; 下载第四批视频 [1.4GB]</a>
-        </div>
-      </div>
+      </section>
 
       <section class="uap-ad-slot uap-ad-slot-archive" aria-label="Advertisement">
         <ins class="adsbygoogle"
@@ -308,7 +305,7 @@
   <script src="../assets/db-data.js?v=20260712-r4full1"></script>
   <script src="../assets/dvids-map.js?v=20260712-r4full1"></script>
   <script src="../assets/i18n-ui.js?v=20260712-r4full1"></script>
-  <script src="../assets/release-04-r2-documents.js?v=20260719-fixedheader1"></script>
-  <script src="../assets/site.js?v=20260719-fixedheader1"></script>
+  <script src="../assets/release-04-r2-documents.js?v=20260719-homeindexes1"></script>
+  <script src="../assets/site.js?v=20260719-homeindexes1"></script>
 </body>
 </html>
