@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260726-header1';
+const assetVersion = '20260726-archive-anchor1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -1311,7 +1311,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   const prefix = '../'.repeat(depth);
   const canonical = `${siteUrl}${canonicalPath}`;
   const localPath = canonicalPath.replace(langPathPattern, '/');
-  const archiveHref = `${prefix}${lang}/#archive`;
+  const archiveHref = `${prefix}${lang}/#releases`;
   const downloadsHref = `${prefix}${lang}/downloads/`;
   const aboutHref = `${prefix}${lang}/about/`;
   const schemas = [organizationSchema(lang), ...(schema ? (Array.isArray(schema) ? schema : [schema]) : [])];
@@ -1612,6 +1612,7 @@ function buildInteractiveHome(lang, template) {
     .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
     .replace(/href="\.\.\/"/g, 'href="../"');
   return template
+    .replace(/href="#archive"/g, 'href="#releases"')
     .replace(/href="#about" data-i18n="nav_about"/g, 'href="./about/" data-i18n="nav_about"')
     .replace(/href="#about" onclick="closeMobile\(\)" data-i18n="nav_about"/g, 'href="./about/" onclick="closeMobile()" data-i18n="nav_about"')
     .replace(/(<a href="\.\/about\/" data-i18n="nav_about">)[^<]*(<\/a>)/g, (_, open, close) => `${open}${esc(navAboutLabel(lang))}${close}`)
@@ -1647,8 +1648,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script src="\.\.\/assets\/release-04-r2-documents\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
-    .replace(/(<a href="#archive" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
-    .replace(/(<a href="#archive" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
+    .replace(/(<a href="#releases" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
+    .replace(/(<a href="#releases" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
     .replace(/href="\.\/es\/"/g, 'href="../es/"')
@@ -1672,7 +1673,7 @@ function buildRecordPage(doc, lang, docs) {
   ].filter(Boolean).join('\n        ');
   const mediaPreview = staticMediaPreview(doc, lang, title, docs);
   const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
-  const backHref = `../../../${lang}/#archive`;
+  const backHref = `../../../${lang}/#releases`;
   const backHandler = "try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){history.back();return false}}catch(e){}";
   const schema = recordSchemas(doc, lang, title, description, canonicalPath);
   const body = `<main class="static-main static-record">
