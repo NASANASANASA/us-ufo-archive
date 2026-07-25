@@ -113,6 +113,38 @@ function downloadsLabel(lang) {
   })[lang] || 'Downloads';
 }
 
+function navAboutLabel(lang) {
+  return ({
+    en: 'About',
+    es: 'Acerca del espejo',
+    pt: 'Sobre',
+    fr: 'À propos',
+    de: 'Über',
+    ru: 'О проекте',
+    ar: 'حول',
+    ja: 'ミラーについて',
+    ko: '소개',
+    'zh-Hans': '关于镜像',
+    'zh-Hant': '關於鏡像'
+  })[lang] || 'About';
+}
+
+function navSourceLabel(lang) {
+  return ({
+    en: 'Official UFO Archive ↗',
+    es: 'Archivo UFO Oficial ↗',
+    pt: 'Arquivo UFO Oficial ↗',
+    fr: 'Archives UFO officielles ↗',
+    de: 'Offizielles UFO-Archiv ↗',
+    ru: 'Официальный архив НЛО ↗',
+    ar: 'أرشيف UFO الرسمي ↗',
+    ja: '公式UFO記録 ↗',
+    ko: '공식 UFO 아카이브 ↗',
+    'zh-Hans': '官方UFO档案 ↗',
+    'zh-Hant': '官方UFO檔案 ↗'
+  })[lang] || 'Official UFO Archive ↗';
+}
+
 function downloadsCopy(lang) {
   return ({
     en: {
@@ -1320,11 +1352,12 @@ ${schemaHtml}
 <body class="static-page">
   <div class="scanlines" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="${prefix}index.html"><span class="brand-mark"><i></i><i></i><i></i></span><span><b>${esc(text[lang].home)}</b><small>${esc(text[lang].name)}</small></span></a>
+    <a class="brand" href="${prefix}${lang}/"><span class="brand-mark"><i></i><i></i><i></i></span><span><b>${esc(text[lang].home)}</b><small>${esc(text[lang].name)}</small></span></a>
     <nav>
       <a href="${prefix}${lang}/">${esc(text[lang].archive)}</a>
       <a href="${prefix}${lang}/downloads/">${esc(downloadsLabel(lang))}</a>
-      <a href="${prefix}index.html#archive">Interactive</a>
+      <a href="${prefix}${lang}/about/">${esc(navAboutLabel(lang))}</a>
+      <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener">${esc(navSourceLabel(lang))}</a>
       ${langMenu}
     </nav>
   </header>
