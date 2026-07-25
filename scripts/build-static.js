@@ -1170,7 +1170,6 @@ function recordSchemas(doc, lang, title, description, canonicalPath) {
   };
   const schemas = [base, breadcrumbSchema(lang, [
     {name: text[lang].home, path: `/${lang}/`},
-    {name: text[lang].archive, path: `/${lang}/archive/`},
     {name: title, path: canonicalPath}
   ])];
   if (m.video) {
@@ -1323,7 +1322,7 @@ ${schemaHtml}
   <header class="site-header">
     <a class="brand" href="${prefix}index.html"><span class="brand-mark"><i></i><i></i><i></i></span><span><b>${esc(text[lang].home)}</b><small>${esc(text[lang].name)}</small></span></a>
     <nav>
-      <a href="${prefix}${lang}/archive/">${esc(text[lang].archive)}</a>
+      <a href="${prefix}${lang}/">${esc(text[lang].archive)}</a>
       <a href="${prefix}${lang}/downloads/">${esc(downloadsLabel(lang))}</a>
       <a href="${prefix}index.html#archive">Interactive</a>
       ${langMenu}
@@ -1468,7 +1467,6 @@ function buildTopicPage(allDocs, lang, topic) {
       collectionSchema(lang, topic.title, topic.intro, topic.path, docs),
       breadcrumbSchema(lang, [
         {name: text[lang].home, path: `/${lang}/`},
-        {name: text[lang].archive, path: `/${lang}/archive/`},
         {name: topic.title, path: topic.path}
       ])
     ]
@@ -1855,8 +1853,6 @@ function build() {
       writeFile(`${lang}/${slugName}/index.html`, buildLegalPage(lang, slugName));
       urlsForSitemap.push(`/${lang}/${slugName}/`);
     }
-    writeFile(`${lang}/archive/index.html`, buildArchivePage(docs, lang));
-    urlsForSitemap.push(`/${lang}/archive/`);
     writeFile(`${lang}/downloads/index.html`, buildDownloadsPage(lang));
     urlsForSitemap.push(`/${lang}/downloads/`);
     for (const topic of topicConfigs(lang, docs)) {
