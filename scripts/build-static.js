@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260725-downloads1';
+const assetVersion = '20260725-about1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -1282,37 +1282,13 @@ function footerHtml(prefix, lang) {
   return `<footer>
     <div><b>${esc(text[lang].home)}</b><span>${esc(text[lang].notice)}</span></div>
     <nav class="footer-links" aria-label="Site policies">
-      <a href="${prefix}${lang}/about/" data-legal-open="about">${esc(labels.about)}</a>
-      <a href="${prefix}${lang}/privacy/" data-legal-open="privacy">${esc(labels.privacy)}</a>
-      <a href="${prefix}${lang}/contact/" data-legal-open="contact">${esc(labels.contact)}</a>
-      <a href="${prefix}${lang}/disclaimer/" data-legal-open="disclaimer">${esc(labels.disclaimer)}</a>
+      <a href="${prefix}${lang}/about/">${esc(labels.about)}</a>
+      <a href="${prefix}${lang}/privacy/">${esc(labels.privacy)}</a>
+      <a href="${prefix}${lang}/contact/">${esc(labels.contact)}</a>
+      <a href="${prefix}${lang}/disclaimer/">${esc(labels.disclaimer)}</a>
       <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener">SOURCE ↗</a>
     </nav>
-  </footer>
-  ${legalModalHtml(lang)}`;
-}
-
-function legalModalHtml(lang) {
-  const pages = Object.entries(legalPages).map(([slugName, pagesByLang]) => {
-    const page = pagesByLang[lang] || pagesByLang.en;
-    return `<article class="legal-modal-page" data-legal-page="${esc(slugName)}" hidden>
-        <h2>${esc(page.title)}</h2>
-        <p class="legal-modal-desc">${esc(page.description)}</p>
-        ${page.body.map(([heading, paragraph]) => `<h3>${esc(heading)}</h3><p>${linkifyText(paragraph)}</p>`).join('\n        ')}
-        <p class="legal-modal-updated">Last updated: June 16, 2026</p>
-      </article>`;
-  }).join('\n      ');
-  return `<div class="legal-modal-backdrop" id="legal-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title" hidden>
-    <section class="legal-modal">
-      <header class="legal-modal-head">
-        <span id="legal-modal-title">SITE POLICY</span>
-        <button class="legal-modal-close" type="button" onclick="closeLegalModal()" aria-label="Close">×</button>
-      </header>
-      <div class="legal-modal-body">
-      ${pages}
-      </div>
-    </section>
-  </div>`;
+  </footer>`;
 }
 
 function pageShell({lang, title, description, canonicalPath, body, depth = 0, schema}) {
@@ -1604,13 +1580,24 @@ function linkifyText(value) {
   return esc(value).replace(/https:\/\/github\.com\/NASANASANASA\/us-ufo-archive/g, '<a href="https://github.com/NASANASANASA/us-ufo-archive" target="_blank" rel="noopener">https://github.com/NASANASANASA/us-ufo-archive</a>');
 }
 
+function aboutNoticeHtml(lang) {
+  const page = legalPages.about[lang] || legalPages.about.en;
+  return `<section class="notice about-notice" id="about">
+      <div class="notice-tag">${esc(page.title)}</div>
+      <div class="about-notice-body">
+        <p class="about-notice-desc">${esc(page.description)}</p>
+        ${page.body.map(([heading, paragraph]) => `<h3>${esc(heading)}</h3><p>${linkifyText(paragraph)}</p>`).join('\n        ')}
+      </div>
+    </section>`;
+}
+
 function buildInteractiveHome(lang, template) {
   const footer = footerHtml('../', lang)
     .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
     .replace(/href="\.\.\/"/g, 'href="../"');
   return template
     .replace(/\s*<a href="\.\/downloads\/"[^>]*>[\s\S]*?<\/a>/g, '')
-    .replace(/\s*<div class="legal-modal-backdrop"[\s\S]*?<\/section>\s*<\/div>\s*/g, '\n')
+    .replace(/\s*<section class="notice(?: about-notice)?" id="about">[\s\S]*?<\/section>\s*/g, `\n    ${aboutNoticeHtml(lang)}\n`)
     .replace(/\s*<section class="release-download-panel"[\s\S]*?<\/section>\s*/g, '\n')
     .replace(/\s*<link rel="canonical" href="[^"]+">\s*/g, '\n')
     .replace(/\s*<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*/g, '\n')
