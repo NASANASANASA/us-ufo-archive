@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260725-about1';
+const assetVersion = '20260725-about2';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -116,16 +116,16 @@ function downloadsLabel(lang) {
 function navAboutLabel(lang) {
   return ({
     en: 'About',
-    es: 'Acerca del espejo',
+    es: 'Acerca del sitio',
     pt: 'Sobre',
     fr: 'À propos',
     de: 'Über',
     ru: 'О проекте',
     ar: 'حول',
-    ja: 'ミラーについて',
+    ja: 'このサイトについて',
     ko: '소개',
-    'zh-Hans': '关于镜像',
-    'zh-Hant': '關於鏡像'
+    'zh-Hans': '关于本站',
+    'zh-Hant': '關於本站'
   })[lang] || 'About';
 }
 
@@ -1580,24 +1580,17 @@ function linkifyText(value) {
   return esc(value).replace(/https:\/\/github\.com\/NASANASANASA\/us-ufo-archive/g, '<a href="https://github.com/NASANASANASA/us-ufo-archive" target="_blank" rel="noopener">https://github.com/NASANASANASA/us-ufo-archive</a>');
 }
 
-function aboutNoticeHtml(lang) {
-  const page = legalPages.about[lang] || legalPages.about.en;
-  return `<section class="notice about-notice" id="about">
-      <div class="notice-tag">${esc(page.title)}</div>
-      <div class="about-notice-body">
-        <p class="about-notice-desc">${esc(page.description)}</p>
-        ${page.body.map(([heading, paragraph]) => `<h3>${esc(heading)}</h3><p>${linkifyText(paragraph)}</p>`).join('\n        ')}
-      </div>
-    </section>`;
-}
-
 function buildInteractiveHome(lang, template) {
   const footer = footerHtml('../', lang)
     .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
     .replace(/href="\.\.\/"/g, 'href="../"');
   return template
+    .replace(/href="#about" data-i18n="nav_about"/g, 'href="./about/" data-i18n="nav_about"')
+    .replace(/href="#about" onclick="closeMobile\(\)" data-i18n="nav_about"/g, 'href="./about/" onclick="closeMobile()" data-i18n="nav_about"')
+    .replace(/(<a href="\.\/about\/" data-i18n="nav_about">)[^<]*(<\/a>)/g, (_, open, close) => `${open}${esc(navAboutLabel(lang))}${close}`)
+    .replace(/(<a href="\.\/about\/" onclick="closeMobile\(\)" data-i18n="nav_about">)[^<]*(<\/a>)/g, (_, open, close) => `${open}${esc(navAboutLabel(lang))}${close}`)
     .replace(/\s*<a href="\.\/downloads\/"[^>]*>[\s\S]*?<\/a>/g, '')
-    .replace(/\s*<section class="notice(?: about-notice)?" id="about">[\s\S]*?<\/section>\s*/g, `\n    ${aboutNoticeHtml(lang)}\n`)
+    .replace(/\s*<section class="notice(?: about-notice)?" id="about">[\s\S]*?<\/section>\s*/g, '\n')
     .replace(/\s*<section class="release-download-panel"[\s\S]*?<\/section>\s*/g, '\n')
     .replace(/\s*<link rel="canonical" href="[^"]+">\s*/g, '\n')
     .replace(/\s*<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*/g, '\n')
