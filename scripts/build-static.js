@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260725-about2';
+const assetVersion = '20260726-header1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -127,6 +127,22 @@ function navAboutLabel(lang) {
     'zh-Hans': '关于本站',
     'zh-Hant': '關於本站'
   })[lang] || 'About';
+}
+
+function brandSubtitleLabel(lang) {
+  return ({
+    en: 'U.S. government record mirror',
+    es: 'Espejo de registros del Gobierno de EE. UU.',
+    pt: 'Espelho do Arquivo do Governo dos EUA',
+    fr: 'Miroir des archives du gouvernement des États-Unis',
+    de: 'Spiegel des US-Regierungsarchivs',
+    ru: 'Зеркало архива правительства США',
+    ar: 'مرآة أرشيف الحكومة الأمريكية',
+    ja: '米国政府記録ミラー',
+    ko: '미국 정부 아카이브 미러',
+    'zh-Hans': '美国政府档案中文镜像',
+    'zh-Hant': '美國政府檔案中文鏡像'
+  })[lang] || 'U.S. government record mirror';
 }
 
 function navSourceLabel(lang) {
@@ -1295,6 +1311,9 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   const prefix = '../'.repeat(depth);
   const canonical = `${siteUrl}${canonicalPath}`;
   const localPath = canonicalPath.replace(langPathPattern, '/');
+  const archiveHref = `${prefix}${lang}/#archive`;
+  const downloadsHref = `${prefix}${lang}/downloads/`;
+  const aboutHref = `${prefix}${lang}/about/`;
   const schemas = [organizationSchema(lang), ...(schema ? (Array.isArray(schema) ? schema : [schema]) : [])];
   const schemaHtml = schemas.map(item => `  <script type="application/ld+json">${JSON.stringify(item)}</script>\n`).join('');
   const langMenu = `<details class="lang-menu">
@@ -1328,15 +1347,23 @@ ${schemaHtml}
 <body class="static-page">
   <div class="scanlines" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="${prefix}${lang}/"><span class="brand-mark"><i></i><i></i><i></i></span><span><b>${esc(text[lang].home)}</b><small>${esc(text[lang].name)}</small></span></a>
+    <a class="brand" href="${prefix}${lang}/"><span class="brand-mark"><i></i><i></i><i></i></span><span><b>${esc(text[lang].home)}</b><small>${esc(brandSubtitleLabel(lang))}</small></span></a>
     <nav>
-      <a href="${prefix}${lang}/">${esc(text[lang].archive)}</a>
-      <a href="${prefix}${lang}/downloads/">${esc(downloadsLabel(lang))}</a>
-      <a href="${prefix}${lang}/about/">${esc(navAboutLabel(lang))}</a>
+      <a href="${archiveHref}">${esc(text[lang].archive)}</a>
+      <a href="${downloadsHref}">${esc(downloadsLabel(lang))}</a>
+      <a href="${aboutHref}">${esc(navAboutLabel(lang))}</a>
       <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener">${esc(navSourceLabel(lang))}</a>
       ${langMenu}
     </nav>
+    <button class="menu-button" aria-label="Open menu" onclick="toggleMobile()">☰</button>
   </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="${archiveHref}" onclick="closeMobile()">${esc(text[lang].archive)}</a>
+    <a href="${downloadsHref}" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>
+    <a href="${aboutHref}" onclick="closeMobile()">${esc(navAboutLabel(lang))}</a>
+    <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" onclick="closeMobile()">${esc(navSourceLabel(lang))}</a>
+    ${langMenu}
+  </div>
   ${body}
   ${footerHtml(prefix, lang)}
   <script src="${prefix}assets/release-04-r2-documents.js?v=${assetVersion}"></script>
