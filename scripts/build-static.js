@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260725-compacthero1';
+const assetVersion = '20260725-downloads1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -61,6 +61,157 @@ const dvidsMp4 = (() => {
   }
 })();
 const relativePath = (value, depth) => /^https?:\/\//i.test(clean(value)) ? clean(value) : `${'../'.repeat(depth)}${clean(value)}`;
+
+const releaseDownloadBundles = [
+  {
+    release: '01',
+    date: '2026-05-08',
+    documentsUrl: 'https://www.war.gov/medialink/ufo/bundle/Release_1.zip',
+    documentsSize: '1.2GB',
+    videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/uapvideos.zip',
+    videosSize: '1.3GB'
+  },
+  {
+    release: '02',
+    date: '2026-05-22',
+    documentsUrl: 'https://www.war.gov/medialink/ufo/052226/release_02/release_02_document_bundle.zip',
+    documentsSize: '70.1MB',
+    videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/uap052226.zip',
+    videosSize: '5.6GB'
+  },
+  {
+    release: '03',
+    date: '2026-06-12',
+    documentsUrl: 'https://www.war.gov/medialink/ufo/061226/release_03/release_03_documents.zip',
+    documentsSize: '826MB',
+    videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/release_03/uap_videos_061226.zip',
+    videosSize: '4.6GB'
+  },
+  {
+    release: '04',
+    date: '2026-07-10',
+    documentsUrl: 'https://www.war.gov/medialink/ufo/071026/release_04/release_04_documents_071026.zip',
+    documentsSize: '227MB',
+    videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/release_04/uap_release04_videos_071026.zip',
+    videosSize: '1.4GB'
+  }
+];
+
+function downloadsLabel(lang) {
+  return ({
+    en: 'Downloads',
+    es: 'Descargas',
+    pt: 'Downloads',
+    fr: 'Téléchargements',
+    de: 'Downloads',
+    ru: 'Загрузки',
+    ar: 'التنزيلات',
+    ja: 'ダウンロード',
+    ko: '다운로드',
+    'zh-Hans': '下载',
+    'zh-Hant': '下載'
+  })[lang] || 'Downloads';
+}
+
+function downloadsCopy(lang) {
+  return ({
+    en: {
+      title: 'Release Downloads',
+      intro: 'Download official full release bundles for public U.S. government UAP records. Files are hosted by the official source or its release CDN.',
+      documents: 'documents',
+      videos: 'videos',
+      release: 'Release',
+      date: 'Release date'
+    },
+    es: {
+      title: 'Descargas por publicación',
+      intro: 'Descarga los paquetes oficiales completos de las publicaciones UAP del Gobierno de EE. UU. Los archivos están alojados por la fuente oficial o su CDN.',
+      documents: 'documentos',
+      videos: 'videos',
+      release: 'Publicación',
+      date: 'Fecha de publicación'
+    },
+    pt: {
+      title: 'Downloads por publicação',
+      intro: 'Baixe os pacotes oficiais completos das publicações UAP do governo dos EUA. Os arquivos são hospedados pela fonte oficial ou pela CDN de lançamento.',
+      documents: 'documentos',
+      videos: 'vídeos',
+      release: 'Publicação',
+      date: 'Data de publicação'
+    },
+    fr: {
+      title: 'Téléchargements par publication',
+      intro: 'Téléchargez les lots officiels complets des publications UAP du gouvernement des États-Unis. Les fichiers sont hébergés par la source officielle ou son CDN.',
+      documents: 'documents',
+      videos: 'vidéos',
+      release: 'Publication',
+      date: 'Date de publication'
+    },
+    de: {
+      title: 'Downloads nach Veröffentlichung',
+      intro: 'Laden Sie die offiziellen vollständigen Pakete der öffentlichen UAP-Veröffentlichungen der US-Regierung herunter. Die Dateien liegen bei der offiziellen Quelle oder deren CDN.',
+      documents: 'Dokumente',
+      videos: 'Videos',
+      release: 'Veröffentlichung',
+      date: 'Veröffentlichungsdatum'
+    },
+    ru: {
+      title: 'Загрузки по выпускам',
+      intro: 'Скачайте официальные полные пакеты публичных материалов UAP правительства США. Файлы размещены официальным источником или его CDN.',
+      documents: 'документы',
+      videos: 'видео',
+      release: 'Выпуск',
+      date: 'Дата выпуска'
+    },
+    ar: {
+      title: 'تنزيلات الإصدارات',
+      intro: 'نزّل الحزم الرسمية الكاملة لإصدارات UAP العامة من الحكومة الأمريكية. تستضيف الملفات الجهة الرسمية أو شبكة CDN الخاصة بالإصدار.',
+      documents: 'الوثائق',
+      videos: 'الفيديوهات',
+      release: 'الإصدار',
+      date: 'تاريخ الإصدار'
+    },
+    ja: {
+      title: '公開回別ダウンロード',
+      intro: '米国政府が公開したUAP記録の公式一括ファイルをダウンロードできます。ファイルは公式ソースまたは公開用CDNで提供されています。',
+      documents: '文書',
+      videos: '動画',
+      release: '公開回',
+      date: '公開日'
+    },
+    ko: {
+      title: '공개 배치 다운로드',
+      intro: '미국 정부가 공개한 UAP 기록의 공식 전체 배치 파일을 다운로드합니다. 파일은 공식 출처 또는 공개 CDN에서 제공됩니다.',
+      documents: '문서',
+      videos: '동영상',
+      release: '공개 배치',
+      date: '공개일'
+    },
+    'zh-Hans': {
+      title: '批次下载',
+      intro: '下载美国政府公开 UAP 档案的官方完整批次压缩包。文件由官方来源或其发布 CDN 托管。',
+      documents: '文件',
+      videos: '视频',
+      release: '公开批次',
+      date: '公开日期'
+    },
+    'zh-Hant': {
+      title: '批次下載',
+      intro: '下載美國政府公開 UAP 檔案的官方完整批次壓縮包。檔案由官方來源或其發布 CDN 託管。',
+      documents: '檔案',
+      videos: '影片',
+      release: '公開批次',
+      date: '公開日期'
+    }
+  })[lang] || ({
+    title: 'Release Downloads',
+    intro: 'Download official full release bundles for public U.S. government UAP records.',
+    documents: 'documents',
+    videos: 'videos',
+    release: 'Release',
+    date: 'Release date'
+  });
+}
 
 const seoText = {
   en: {
@@ -1173,6 +1324,7 @@ ${schemaHtml}
     <a class="brand" href="${prefix}index.html"><span class="brand-mark"><i></i><i></i><i></i></span><span><b>${esc(text[lang].home)}</b><small>${esc(text[lang].name)}</small></span></a>
     <nav>
       <a href="${prefix}${lang}/archive/">${esc(text[lang].archive)}</a>
+      <a href="${prefix}${lang}/downloads/">${esc(downloadsLabel(lang))}</a>
       <a href="${prefix}index.html#archive">Interactive</a>
       ${langMenu}
     </nav>
@@ -1365,6 +1517,42 @@ function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth
   });
 }
 
+function buildDownloadsPage(lang) {
+  const copy = downloadsCopy(lang);
+  const body = `<main class="static-main">
+    <section class="static-hero">
+      <p class="system-line"><span></span> RELEASE BUNDLES</p>
+      <h1>${esc(copy.title)}</h1>
+      <p>${esc(copy.intro)}</p>
+    </section>
+    <section class="release-download-panel" aria-labelledby="release-download-title">
+      <h2 id="release-download-title">${esc(copy.title)}</h2>
+      <div class="release-download-grid">
+        ${releaseDownloadBundles.map(bundle => `<article class="release-download-card">
+          <b>${esc(copy.release)} ${esc(bundle.release)}</b>
+          <small>${esc(copy.date)}: ${esc(bundle.date)}</small>
+          <div class="release-downloads">
+            <a class="download-bundle" href="${esc(bundle.documentsUrl)}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.documents)} [${esc(bundle.documentsSize)}]</a>
+            <a class="download-bundle" href="${esc(bundle.videosUrl)}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.videos)} [${esc(bundle.videosSize)}]</a>
+          </div>
+        </article>`).join('\n        ')}
+      </div>
+    </section>
+  </main>`;
+  return pageShell({
+    lang,
+    title: `${copy.title} · ${text[lang].home}`,
+    description: copy.intro,
+    canonicalPath: `/${lang}/downloads/`,
+    body,
+    depth: 2,
+    schema: breadcrumbSchema(lang, [
+      {name: text[lang].home, path: `/${lang}/`},
+      {name: copy.title, path: `/${lang}/downloads/`}
+    ])
+  });
+}
+
 function buildLegalPage(lang, slugName) {
   const page = legalPages[slugName][lang] || legalPages[slugName].en;
   const body = `<main class="static-main">
@@ -1390,7 +1578,9 @@ function buildInteractiveHome(lang, template) {
     .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
     .replace(/href="\.\.\/"/g, 'href="../"');
   return template
+    .replace(/\s*<a href="\.\/downloads\/"[^>]*>[\s\S]*?<\/a>/g, '')
     .replace(/\s*<div class="legal-modal-backdrop"[\s\S]*?<\/section>\s*<\/div>\s*/g, '\n')
+    .replace(/\s*<section class="release-download-panel"[\s\S]*?<\/section>\s*/g, '\n')
     .replace(/\s*<link rel="canonical" href="[^"]+">\s*/g, '\n')
     .replace(/\s*<link rel="alternate" hreflang="[^"]+" href="[^"]+">\s*/g, '\n')
     .replace(/\s*<link rel="icon"[^>]+>\s*/g, '\n')
@@ -1419,6 +1609,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script src="\.\.\/assets\/release-04-r2-documents\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
+    .replace(/(<a href="#archive" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
+    .replace(/(<a href="#archive" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
     .replace(/href="\.\/es\/"/g, 'href="../es/"')
@@ -1665,6 +1857,8 @@ function build() {
     }
     writeFile(`${lang}/archive/index.html`, buildArchivePage(docs, lang));
     urlsForSitemap.push(`/${lang}/archive/`);
+    writeFile(`${lang}/downloads/index.html`, buildDownloadsPage(lang));
+    urlsForSitemap.push(`/${lang}/downloads/`);
     for (const topic of topicConfigs(lang, docs)) {
       writeFile(topic.file, buildTopicPage(docs, lang, topic));
       urlsForSitemap.push(topic.path);
