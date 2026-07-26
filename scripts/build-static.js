@@ -277,7 +277,7 @@ const seoText = {
     browseImages: 'Image records',
     mediaDetails: 'Media details',
     mediaDetailsIntro: 'This page indexes the record type, source agency, release batch, incident date, incident location, official source, and available public media for search and reference.',
-    homeDescription: 'Search 334 public U.S. government UFO/UAP records, videos, images, and PDF source documents from four official release batches, with agencies, dates, locations, related records, and official source links.'
+    homeDescription: 'Search the UAP archive for 334 public U.S. government UFO/UAP records, including UAP release records, videos, images, PDF source documents, incident metadata, agencies, locations, related records, and official source links.'
   },
   es: {
     release04Title: 'Registros UAP de la publicación 04',
@@ -430,7 +430,7 @@ const seoText = {
     browseImages: '图片档案',
     mediaDetails: '媒体信息',
     mediaDetailsIntro: '本页为搜索和查阅整理档案类型、发布机构、公开批次、事件日期、事件地点、官方来源以及可用的公开媒体。',
-    homeDescription: '检索 334 条美国政府 UFO/UAP 公开档案，包括 UAP 视频、图片、PDF 原始文件、事件日期、地点、机构、相关记录和官方来源链接。本站提供中文镜像与多语言索引。'
+    homeDescription: 'UAP 档案库是一个检索美国政府 UFO/UAP 公开档案的 UAP 网站，收录 334 条 UAP 档案，包括视频、图片、PDF 原始文件、公开批次、事件日期、地点、机构、相关记录和官方来源链接。'
   },
   'zh-Hant': {
     release04Title: '第四批 UAP 公開檔案',
@@ -447,7 +447,7 @@ const seoText = {
     browseImages: '圖片檔案',
     mediaDetails: '媒體資訊',
     mediaDetailsIntro: '本頁為搜尋和查閱整理檔案類型、發布機構、公開批次、事件日期、事件地點、官方來源以及可用的公開媒體。',
-    homeDescription: '檢索 334 筆美國政府 UFO/UAP 公開檔案，包括 UAP 影片、圖片、PDF 原始文件、事件日期、地點、機構、相關記錄和官方來源連結。本站提供中文鏡像與多語言索引。'
+    homeDescription: 'UAP 檔案庫是一個檢索美國政府 UFO/UAP 公開檔案的 UAP 網站，收錄 334 筆 UAP 檔案，包括影片、圖片、PDF 原始文件、公開批次、事件日期、地點、機構、相關記錄和官方來源連結。'
   }
 };
 
@@ -1292,14 +1292,21 @@ function homeSeoLinks(lang, prefix = '') {
     description: (seoText[lang] || seoText.en).homeDescription,
     inLanguage: text[lang].lang,
     url: `${siteUrl}/${lang}/`,
-    publisher: {'@id': `${siteUrl}/#organization`}
+    publisher: {'@id': `${siteUrl}/#organization`},
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${siteUrl}/${lang}/?q={search_term_string}`,
+      'query-input': 'required name=search_term_string'
+    }
   };
+  const faqSchema = homeFaqSchema(lang);
   return `${iconLinks(prefix)}
   <link rel="canonical" href="${siteUrl}/${lang}/">
   ${alternates}
   <link rel="alternate" hreflang="x-default" href="${siteUrl}/en/">
   <script type="application/ld+json">${JSON.stringify(organization)}</script>
-  <script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+  <script type="application/ld+json">${JSON.stringify(schema)}</script>
+  <script type="application/ld+json">${JSON.stringify(faqSchema)}</script>`;
 }
 
 function iconLinks(prefix) {
@@ -1323,6 +1330,85 @@ function organizationSchema(lang = 'en') {
       width: 512,
       height: 512
     }
+  };
+}
+
+function homeFaqSchema(lang = 'en') {
+  const entries = ({
+    en: [
+      ['What is UAP Public Archive?', 'UAP Public Archive is an unofficial multilingual mirror and research index for public U.S. government UFO/UAP records, including videos, images, PDF documents, release batches, agencies, dates, locations, related records, and official source links.'],
+      ['How can I search UAP records?', 'Use the archive search and filters by release batch, agency, decade, location, and file type to find UAP videos, PDF records, image records, and official source pages.'],
+      ['Are these official U.S. government UAP records?', 'This site is not official, but record text, files, images, videos, and source links are based on public U.S. government releases. The official English source pages remain the authority.']
+    ],
+    es: [
+      ['¿Qué es UAP Public Archive?', 'UAP Public Archive es un espejo e índice multilingüe no oficial de registros públicos UFO/UAP del Gobierno de EE. UU., con videos, imágenes, PDF, publicaciones, agencias, fechas, lugares y enlaces oficiales.'],
+      ['¿Cómo puedo buscar registros UAP?', 'Use la búsqueda y los filtros por publicación, agencia, década, lugar y tipo de archivo para encontrar videos UAP, PDF, imágenes y fuentes oficiales.'],
+      ['¿Son registros oficiales del Gobierno de EE. UU.?', 'El sitio no es oficial, pero el texto, archivos, imágenes, videos y enlaces se basan en publicaciones públicas del Gobierno de EE. UU. La fuente oficial en inglés prevalece.']
+    ],
+    pt: [
+      ['O que é o UAP Public Archive?', 'O UAP Public Archive é um espelho e índice multilíngue não oficial de registros públicos UFO/UAP do governo dos EUA, incluindo vídeos, imagens, PDFs, publicações, agências, datas, locais e links oficiais.'],
+      ['Como pesquisar registros UAP?', 'Use a busca e os filtros por publicação, agência, década, local e tipo de arquivo para encontrar vídeos UAP, PDFs, imagens e fontes oficiais.'],
+      ['Estes são registros oficiais do governo dos EUA?', 'O site não é oficial, mas textos, arquivos, imagens, vídeos e links se baseiam em publicações públicas do governo dos EUA. A fonte oficial em inglês prevalece.']
+    ],
+    fr: [
+      ['Qu’est-ce que UAP Public Archive ?', 'UAP Public Archive est un miroir et index multilingue non officiel des archives publiques UFO/UAP du gouvernement des États-Unis, avec vidéos, images, PDF, publications, agences, dates, lieux et liens officiels.'],
+      ['Comment rechercher des archives UAP ?', 'Utilisez la recherche et les filtres par publication, agence, décennie, lieu et type de fichier pour trouver vidéos UAP, PDF, images et sources officielles.'],
+      ['Ces archives sont-elles officielles ?', 'Le site n’est pas officiel, mais les textes, fichiers, images, vidéos et liens reposent sur des publications publiques du gouvernement des États-Unis. La source officielle anglaise fait foi.']
+    ],
+    de: [
+      ['Was ist UAP Public Archive?', 'UAP Public Archive ist ein inoffizieller mehrsprachiger Spiegel und Suchindex für öffentliche UFO/UAP-Unterlagen der US-Regierung mit Videos, Bildern, PDFs, Veröffentlichungen, Behörden, Daten, Orten und Quellenlinks.'],
+      ['Wie suche ich UAP-Unterlagen?', 'Nutzen Sie Suche und Filter nach Veröffentlichung, Behörde, Jahrzehnt, Ort und Dateityp, um UAP-Videos, PDFs, Bilder und offizielle Quellen zu finden.'],
+      ['Sind dies offizielle US-Regierungsunterlagen?', 'Die Website ist nicht offiziell, aber Texte, Dateien, Bilder, Videos und Links basieren auf öffentlichen US-Regierungsveröffentlichungen. Die offizielle englische Quelle ist maßgeblich.']
+    ],
+    ru: [
+      ['Что такое UAP Public Archive?', 'UAP Public Archive — неофициальное многоязычное зеркало и поисковый индекс публичных материалов правительства США по UFO/UAP, включая видео, изображения, PDF, выпуски, ведомства, даты, места и официальные ссылки.'],
+      ['Как искать материалы UAP?', 'Используйте поиск и фильтры по выпуску, ведомству, десятилетию, месту и типу файла, чтобы найти видео UAP, PDF, изображения и официальные источники.'],
+      ['Это официальные материалы правительства США?', 'Сайт не является официальным, но тексты, файлы, изображения, видео и ссылки основаны на публичных публикациях правительства США. Официальный английский источник имеет приоритет.']
+    ],
+    ar: [
+      ['ما هو UAP Public Archive؟', 'UAP Public Archive هو مرآة وفهرس بحث متعدد اللغات غير رسمي لسجلات UFO/UAP العامة الصادرة عن حكومة الولايات المتحدة، بما في ذلك الفيديو والصور وملفات PDF والإصدارات والجهات والتواريخ والمواقع والروابط الرسمية.'],
+      ['كيف أبحث في سجلات UAP؟', 'استخدم البحث والفلاتر حسب الإصدار والجهة والعقد والموقع ونوع الملف للعثور على فيديوهات UAP وملفات PDF والصور والمصادر الرسمية.'],
+      ['هل هذه سجلات رسمية؟', 'الموقع غير رسمي، لكن النصوص والملفات والصور والفيديوهات والروابط تستند إلى إصدارات عامة من حكومة الولايات المتحدة. المصدر الرسمي باللغة الإنجليزية هو المرجع.']
+    ],
+    ja: [
+      ['UAP公開アーカイブとは何ですか？', 'UAP公開アーカイブは、米国政府が公開したUFO/UAP記録を多言語で検索できる非公式ミラー兼研究索引です。動画、画像、PDF、公開回、機関、日付、場所、関連記録、公式リンクを整理しています。'],
+      ['UAP記録をどう検索できますか？', '検索欄と、公開回、機関、年代、場所、ファイル種別のフィルターで、UAP動画、PDF記録、画像記録、公式ソースを探せます。'],
+      ['これは公式サイトですか？', '本サイトは公式ではありませんが、記録本文、ファイル、画像、動画、リンクは米国政府の公開資料に基づいています。公式英語ページが基準です。']
+    ],
+    ko: [
+      ['UAP Public Archive란 무엇인가요?', 'UAP Public Archive는 미국 정부가 공개한 UFO/UAP 기록을 다국어로 검색할 수 있는 비공식 미러 및 연구 색인입니다. 영상, 이미지, PDF, 공개 회차, 기관, 날짜, 위치, 관련 기록, 공식 링크를 정리합니다.'],
+      ['UAP 기록은 어떻게 검색하나요?', '검색과 공개 회차, 기관, 연대, 위치, 파일 유형 필터를 사용해 UAP 영상, PDF 기록, 이미지 기록, 공식 출처를 찾을 수 있습니다.'],
+      ['공식 미국 정부 사이트인가요?', '이 사이트는 공식 사이트가 아니지만 기록 텍스트, 파일, 이미지, 영상, 링크는 미국 정부 공개 자료를 기반으로 합니다. 공식 영어 원문이 기준입니다.']
+    ],
+    'zh-Hans': [
+      ['UAP 档案库是什么？', 'UAP 档案库是一个非官方的多语言 UAP 网站，用于检索美国政府 UFO/UAP 公开档案，收录视频、图片、PDF 原始文件、公开批次、机构、日期、地点、相关记录和官方来源链接。'],
+      ['怎么搜索 UAP 档案？', '进入档案库后，可以使用搜索框，并按公开批次、机构、年代、地点和文件类型筛选 UAP 视频、PDF 档案、图片档案和官方来源页面。'],
+      ['这些是美国政府官方 UAP 档案吗？', '本站不是美国政府官方网站，但档案文字、文件、图片、视频和来源链接均基于美国政府公开发布资料。翻译或整理有差异时，以英文官方来源为准。']
+    ],
+    'zh-Hant': [
+      ['UAP 檔案庫是什麼？', 'UAP 檔案庫是一個非官方的多語言 UAP 網站，用於檢索美國政府 UFO/UAP 公開檔案，收錄影片、圖片、PDF 原始文件、公開批次、機構、日期、地點、相關記錄和官方來源連結。'],
+      ['怎麼搜尋 UAP 檔案？', '進入檔案庫後，可以使用搜尋框，並按公開批次、機構、年代、地點和檔案類型篩選 UAP 影片、PDF 檔案、圖片檔案和官方來源頁面。'],
+      ['這些是美國政府官方 UAP 檔案嗎？', '本站不是美國政府官方網站，但檔案文字、文件、圖片、影片和來源連結均基於美國政府公開發布資料。翻譯或整理有差異時，以英文官方來源為準。']
+    ]
+  })[lang] || ({
+    en: [
+      ['What is UAP Public Archive?', 'UAP Public Archive is an unofficial multilingual mirror and research index for public U.S. government UFO/UAP records.'],
+      ['How can I search UAP records?', 'Use the archive search and filters to find UAP videos, PDF records, images, and official source pages.'],
+      ['Are these official records?', 'The site is not official, but the records are based on public U.S. government releases.']
+    ]
+  }).en;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    inLanguage: text[lang].lang,
+    mainEntity: entries.map(([question, answer]) => ({
+      '@type': 'Question',
+      name: question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: answer
+      }
+    }))
   };
 }
 
