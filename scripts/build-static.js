@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260726-archive-anchor2';
+const assetVersion = '20260726-brand-home1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -1655,6 +1655,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\/es\/"/g, 'href="../es/"')
     .replace('</head>', `  ${homeSeoLinks(lang, '../')}\n</head>`)
     .replace(/href="\.\/"/g, 'href="../"')
+    .replace(/<a class="brand" href="\.\.\/">/, '<a class="brand" href="./">')
     .replace(/<footer>[\s\S]*?<\/footer>/, footer);
 }
 
