@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260726-radar-height1';
+const assetVersion = '20260726-ad-layout1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -1486,7 +1486,6 @@ function buildTopicPage(allDocs, lang, topic) {
         ${topicConfigs(lang, allDocs).map(item => `<a href="${topic.depth === 3 ? '../../' : '../'}${item.path.replace(`/${lang}/`, '')}">${esc(item.nav)}</a>`).join('\n        ')}
       </div>
     </section>
-    ${manualAdSlot(`${topic.key}-before-list`)}
     <section class="static-panel">
       <h2>${docs.length} ${esc(text[lang].records)}</h2>
       <div class="static-list">${cardList(docs, lang, recordPrefix)}</div>
@@ -1528,7 +1527,6 @@ function buildArchivePage(docs, lang, canonicalPath = `/${lang}/archive/`, depth
         ${topics.map(topic => `<a class="static-index-card" href="..${topic.path.replace(`/${lang}`, '')}"><b>${esc(topic.nav)}</b><span>${docs.filter(topic.filter).length} ${esc(l.records)}</span></a>`).join('\n        ')}
       </div>
     </section>
-    ${manualAdSlot('archive-before-list')}
     <section class="static-panel">
       <h2>${esc(l.all)}</h2>
       <div class="static-list">${cardList(docs, lang, '../records/')}</div>
@@ -1684,7 +1682,6 @@ function buildRecordPage(doc, lang, docs) {
       <h1>${esc(title)}</h1>
       <p>${esc(description)}</p>
     </section>
-    ${manualAdSlot('record-before-content')}
     <section class="static-record-grid">
       <article class="static-panel static-record-copy">
         <h2>${esc(l.summary)}</h2>
@@ -1704,6 +1701,7 @@ function buildRecordPage(doc, lang, docs) {
         ${mediaPreview}
       </aside>
     </section>
+    ${manualAdSlot('record-after-content')}
   </main>`;
   return pageShell({lang, title: `${seoRecordTitle(doc, lang, title)} · ${l.home}`, description, canonicalPath, body, depth: 3, schema});
 }
@@ -1845,7 +1843,6 @@ function buildGroupLanding(docs, lang, kind, title, cards) {
       <p>${esc(l.generated)}</p>
     </section>
     <section class="static-panel"><div class="static-index-grid">${cards}</div></section>
-    ${manualAdSlot(`${kind}-index-bottom`)}
   </main>`;
   return pageShell({lang, title: `${title} · ${l.home}`, description: l.generated, canonicalPath: `/${lang}/${kind}/`, body, depth: 2});
 }
@@ -1859,7 +1856,6 @@ function buildGroupPage(docs, lang, kind, groupSlug, label) {
       <p>${docs.length} ${esc(l.records)} · ${esc(l.generated)}</p>
     </section>
     <section class="static-panel"><div class="static-list">${cardList(docs, lang, '../../records/')}</div></section>
-    ${manualAdSlot(`${kind}-group-bottom`)}
   </main>`;
   return pageShell({lang, title: `${label} · ${l.home}`, description: `${label}: ${docs.length} ${l.records}. ${l.generated}`, canonicalPath: `/${lang}/${kind}/${groupSlug}/`, body, depth: 3});
 }
