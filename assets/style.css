@@ -14,6 +14,7 @@ main{position:relative;z-index:2}.hero{min-height:430px;display:grid;grid-templa
 .uap-ad-slot ins{display:block;min-height:90px}
 .archive-section>.uap-ad-slot{margin:24px 0 28px}
 .static-main>.uap-ad-slot{margin:28px 0 0}
+.static-main>.uap-ad-slot.uap-ad-slot-downloads-before-bundles{margin:28px 0}
 .static-record>.uap-ad-slot{margin-top:28px;min-height:132px}
 .asset-preview .uap-ad-slot,.media-stack>.uap-ad-slot{display:none}
 .db-controls{display:grid;grid-template-columns:1fr;gap:9px;margin:18px 0}.search-box{grid-column:1/-1;border:1px solid var(--line);background:#070d13;display:flex;align-items:center;padding:0 14px;gap:10px;color:var(--cyan)}.search-box input{width:100%;border:0;background:transparent;outline:0;color:var(--white);font:13px var(--mono);padding:14px 0}.search-box kbd{color:#4f5c62;border:1px solid var(--line);padding:2px 5px;font:10px var(--mono);white-space:nowrap}.db-controls select{display:none;appearance:none;border:1px solid var(--line);background:#070d13;color:#8d999e;padding:0 14px;font:13px var(--mono);outline:none}.db-controls select:focus{border-color:var(--cyan2)}

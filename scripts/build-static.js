@@ -1557,6 +1557,7 @@ function buildDownloadsPage(lang) {
       <h1>${esc(copy.title)}</h1>
       <p>${esc(copy.intro)}</p>
     </section>
+    ${manualAdSlot('downloads-before-bundles')}
     <section class="release-download-panel" aria-labelledby="release-download-title">
       <h2 id="release-download-title">${esc(copy.title)}</h2>
       <div class="release-download-grid">
