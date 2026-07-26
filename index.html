@@ -24,7 +24,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#05090c">
   <meta property="og:title" content="UAP Public Archive">
-  <meta property="og:description" content="Choose a language to enter the unofficial multilingual mirror for public U.S. government UAP records.">
+  <meta property="og:description" content="Choose a language to enter the unofficial multilingual mirror and searchable research index for public U.S. government UAP records.">
   <meta property="og:url" content="https://uap-archives.org/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://uap-archives.org/assets/icons/icon-512.png">
@@ -38,7 +38,7 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://uap-archives.org/#organization","name":"UAP Public Archive","url":"https://uap-archives.org","logo":{"@type":"ImageObject","url":"https://uap-archives.org/assets/icons/icon-512.png","width":512,"height":512}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"UAP Public Archive","description":"Choose a language to enter the unofficial multilingual mirror for public U.S. government UAP records.","url":"https://uap-archives.org/","inLanguage":"en","publisher":{"@id":"https://uap-archives.org/#organization"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"UAP Public Archive","description":"Choose a language to enter the unofficial multilingual mirror and searchable research index for public U.S. government UAP records.","url":"https://uap-archives.org/","inLanguage":"en","publisher":{"@id":"https://uap-archives.org/#organization"}}</script>
   <style>
     :root {
       color-scheme: dark;
@@ -48,6 +48,7 @@
       --text: #c4ccd2;
       --muted: #8b969d;
       --cyan: #8ee8f2;
+      --white: #f0f4f5;
     }
     * { box-sizing: border-box; }
     body {
@@ -66,11 +67,42 @@
       line-height: 1.7;
     }
     main {
-      width: min(920px, calc(100vw - 32px));
-      padding: 44px;
+      width: min(1180px, calc(100vw - 32px));
+      padding: 42px;
       border: 1px solid var(--line);
       background: rgba(11,20,26,.88);
       box-shadow: 0 0 40px rgba(0,0,0,.35);
+    }
+    .entry-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .75fr);
+      gap: 36px;
+      align-items: stretch;
+    }
+    .brand-row {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .entry-logo {
+      width: 74px;
+      height: 74px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 16px rgba(142,232,242,.15));
+    }
+    .brand-title {
+      color: var(--white);
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+    .brand-subtitle {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
     }
     p.kicker {
       margin: 0 0 14px;
@@ -81,8 +113,8 @@
     }
     h1 {
       margin: 0 0 16px;
-      color: #f0f4f5;
-      font-size: clamp(32px, 6vw, 58px);
+      color: var(--white);
+      font-size: 58px;
       line-height: 1.08;
     }
     p {
@@ -90,6 +122,29 @@
       margin: 0 0 24px;
       color: var(--muted);
       font-size: 17px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 30px 0 0;
+      padding: 0;
+    }
+    .stats div {
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+    .stats dt {
+      color: var(--white);
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .stats dd {
+      margin: 7px 0 0;
+      color: #718089;
+      font-size: 13px;
+      text-transform: uppercase;
     }
     .langs {
       display: flex;
@@ -115,32 +170,252 @@
       border-color: var(--cyan);
       color: var(--cyan);
     }
+    .signal-panel {
+      position: relative;
+      display: flex;
+      min-height: 430px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(rgba(142,232,242,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(142,232,242,.04) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(10,22,28,.85), rgba(5,9,12,.65));
+      background-size: 32px 32px, 32px 32px, auto;
+      overflow: hidden;
+    }
+    .signal-panel::before {
+      content: "";
+      position: absolute;
+      inset: 24px;
+      border: 1px solid rgba(142,232,242,.15);
+    }
+    .radar {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1;
+      margin: auto;
+      max-width: 360px;
+      border: 1px solid rgba(142,232,242,.24);
+      border-radius: 50%;
+    }
+    .radar::before,
+    .radar::after {
+      content: "";
+      position: absolute;
+      inset: 22%;
+      border: 1px solid rgba(142,232,242,.18);
+      border-radius: 50%;
+    }
+    .radar::after {
+      inset: 39%;
+    }
+    .axis-h,
+    .axis-v {
+      position: absolute;
+      background: rgba(142,232,242,.22);
+    }
+    .axis-h {
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 1px;
+    }
+    .axis-v {
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 1px;
+    }
+    .sweep {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 42%;
+      height: 42%;
+      transform-origin: 0 0;
+      transform: rotate(-24deg);
+      background: linear-gradient(45deg, rgba(142,232,242,.3), rgba(142,232,242,0) 72%);
+      clip-path: polygon(0 0, 100% 18%, 100% 100%);
+    }
+    .reticle {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 64px;
+      height: 64px;
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(142,232,242,.55);
+    }
+    .reticle::before,
+    .reticle::after {
+      content: "";
+      position: absolute;
+      background: rgba(142,232,242,.55);
+    }
+    .reticle::before {
+      left: 50%;
+      top: -16px;
+      width: 1px;
+      height: 96px;
+    }
+    .reticle::after {
+      left: -16px;
+      top: 50%;
+      width: 96px;
+      height: 1px;
+    }
+    .blip {
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 15px rgba(142,232,242,.95);
+    }
+    .b1 { left: 28%; top: 33%; }
+    .b2 { left: 65%; top: 70%; }
+    .b3 { left: 72%; top: 44%; }
+    .signal-label {
+      position: absolute;
+      left: 26px;
+      top: 24px;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .signal-code {
+      position: absolute;
+      right: 26px;
+      top: 24px;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .signal-caption {
+      position: absolute;
+      left: 26px;
+      right: 26px;
+      bottom: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      border-top: 1px solid rgba(142,232,242,.18);
+      padding-top: 16px;
+      color: #728087;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
     small {
       display: block;
       margin-top: 30px;
       color: #66737c;
     }
+    @media (max-width: 900px) {
+      body {
+        display: block;
+        padding: 16px;
+      }
+      main {
+        width: 100%;
+        padding: 28px;
+      }
+      .entry-grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 42px;
+      }
+      .signal-panel {
+        min-height: 320px;
+      }
+    }
+    @media (max-width: 560px) {
+      main {
+        padding: 22px;
+      }
+      .brand-row {
+        align-items: flex-start;
+      }
+      .entry-logo {
+        width: 58px;
+        height: 58px;
+      }
+      h1 {
+        font-size: 34px;
+      }
+      .stats {
+        grid-template-columns: 1fr;
+      }
+      .langs a {
+        width: 100%;
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
-    <p class="kicker">Public UAP Records Mirror</p>
-    <h1>UAP Public Archive</h1>
-    <p>Choose a language to enter the searchable multilingual mirror for public U.S. government UAP records.</p>
-    <nav class="langs" aria-label="Language selection">
-      <a href="/en/">English</a>
-      <a href="/es/">Español</a>
-      <a href="/pt/">Português</a>
-      <a href="/fr/">Français</a>
-      <a href="/de/">Deutsch</a>
-      <a href="/ru/">Русский</a>
-      <a href="/ar/">العربية</a>
-      <a href="/ja/">日本語</a>
-      <a href="/ko/">한국어</a>
-      <a href="/zh-Hans/">简体中文</a>
-      <a href="/zh-Hant/">繁體中文</a>
-    </nav>
-    <small>Not an official U.S. government website. If translation or formatting differs from an official source, the official English source controls.</small>
+    <div class="entry-grid">
+      <section>
+        <div class="brand-row">
+          <img class="entry-logo" src="/assets/icons/icon-192.png?v=20260719-fixedheader1" alt="UAP Public Archive logo" width="74" height="74">
+          <div>
+            <div class="brand-title">UAP Public Archive</div>
+            <div class="brand-subtitle">Multilingual records mirror</div>
+          </div>
+        </div>
+        <p class="kicker">Public UAP Records Mirror</p>
+        <h1>UAP Public Archive</h1>
+        <p>Choose a language to enter the searchable multilingual mirror for public U.S. government UAP records, source documents, images, videos, and official source links.</p>
+        <nav class="langs" aria-label="Language selection">
+          <a href="/en/">English</a>
+          <a href="/es/">Español</a>
+          <a href="/pt/">Português</a>
+          <a href="/fr/">Français</a>
+          <a href="/de/">Deutsch</a>
+          <a href="/ru/">Русский</a>
+          <a href="/ar/">العربية</a>
+          <a href="/ja/">日本語</a>
+          <a href="/ko/">한국어</a>
+          <a href="/zh-Hans/">简体中文</a>
+          <a href="/zh-Hant/">繁體中文</a>
+        </nav>
+        <dl class="stats" aria-label="Archive summary">
+          <div>
+            <dt>334</dt>
+            <dd>Public records</dd>
+          </div>
+          <div>
+            <dt>04</dt>
+            <dd>Release batches</dd>
+          </div>
+          <div>
+            <dt>11</dt>
+            <dd>Languages</dd>
+          </div>
+        </dl>
+        <small>Not an official U.S. government website. If translation or formatting differs from an official source, the official English source controls.</small>
+      </section>
+      <aside class="signal-panel" aria-label="Archive signal visual">
+        <div class="signal-label">Tracking / UAP-01</div>
+        <div class="signal-code">1948-2026</div>
+        <div class="radar" aria-hidden="true">
+          <span class="axis-h"></span>
+          <span class="axis-v"></span>
+          <span class="sweep"></span>
+          <span class="reticle"></span>
+          <span class="blip b1"></span>
+          <span class="blip b2"></span>
+          <span class="blip b3"></span>
+        </div>
+        <div class="signal-caption">
+          <span>Records indexed</span>
+          <span>Official sources linked</span>
+        </div>
+      </aside>
+    </div>
   </main>
 </body>
 </html>
