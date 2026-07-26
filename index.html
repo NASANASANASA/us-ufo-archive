@@ -45,10 +45,12 @@
       --bg: #05090c;
       --panel: #0b141a;
       --line: #223744;
+      --line2: #29404a;
       --text: #c4ccd2;
       --muted: #8b969d;
       --cyan: #8ee8f2;
       --white: #f0f4f5;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Noto Sans", "Noto Sans SC", "Noto Sans TC", monospace;
     }
     * { box-sizing: border-box; }
     body {
@@ -63,7 +65,7 @@
         var(--bg);
       background-size: 52px 52px, 52px 52px, auto, auto;
       color: var(--text);
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Noto Sans", "Noto Sans SC", "Noto Sans TC", monospace;
+      font-family: var(--mono);
       line-height: 1.7;
     }
     main {
@@ -170,142 +172,119 @@
       border-color: var(--cyan);
       color: var(--cyan);
     }
+    .lang-select-wrap {
+      display: none;
+    }
+    .lang-select-wrap span {
+      display: block;
+      margin: 28px 0 8px;
+      color: var(--cyan);
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .lang-select-wrap select {
+      width: 100%;
+      min-height: 50px;
+      border: 1px solid var(--line);
+      border-radius: 0;
+      padding: 0 42px 0 14px;
+      appearance: none;
+      background:
+        linear-gradient(45deg, transparent 50%, var(--cyan) 50%) calc(100% - 22px) 22px / 7px 7px no-repeat,
+        linear-gradient(135deg, var(--cyan) 50%, transparent 50%) calc(100% - 17px) 22px / 7px 7px no-repeat,
+        rgba(5,9,12,.55);
+      color: var(--white);
+      font: 700 16px var(--mono);
+    }
+    .lang-select-wrap select:focus {
+      outline: 2px solid var(--cyan);
+      outline-offset: 2px;
+    }
     .signal-panel {
       position: relative;
-      display: flex;
+      display: grid;
+      place-items: center;
       min-height: 430px;
       padding: 26px;
       border: 1px solid var(--line);
       background:
-        linear-gradient(rgba(142,232,242,.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(142,232,242,.04) 1px, transparent 1px),
+        radial-gradient(circle, rgba(32,108,117,.11), transparent 55%),
         linear-gradient(180deg, rgba(10,22,28,.85), rgba(5,9,12,.65));
-      background-size: 32px 32px, 32px 32px, auto;
       overflow: hidden;
+      box-shadow: inset 0 0 80px rgba(0,0,0,.8);
     }
     .signal-panel::before {
       content: "";
-      position: absolute;
-      inset: 24px;
-      border: 1px solid rgba(142,232,242,.15);
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(rgba(110,215,223,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(110,215,223,.04) 1px, transparent 1px);
+      background-size:32px 32px;
     }
     .radar {
       position: relative;
-      width: 100%;
-      aspect-ratio: 1;
-      margin: auto;
-      max-width: 360px;
-      border: 1px solid rgba(142,232,242,.24);
+      width: min(360px, 84%);
+      aspect-ratio: 1 / 1;
+      border: 1px solid var(--line2);
       border-radius: 50%;
     }
-    .radar::before,
-    .radar::after {
-      content: "";
-      position: absolute;
-      inset: 22%;
-      border: 1px solid rgba(142,232,242,.18);
-      border-radius: 50%;
-    }
-    .radar::after {
-      inset: 39%;
-    }
-    .axis-h,
-    .axis-v {
-      position: absolute;
-      background: rgba(142,232,242,.22);
-    }
-    .axis-h {
-      left: 0;
-      right: 0;
-      top: 50%;
-      height: 1px;
-    }
-    .axis-v {
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      width: 1px;
-    }
+    .radar-ring { position: absolute; border: 1px solid var(--line2); border-radius: 50%; inset: 12%; }
+    .radar-ring.r2 { inset: 27%; }
+    .radar-ring.r3 { inset: 42%; }
+    .cross { position: absolute; background: var(--line2); }
+    .cross.x { height: 1px; width: 100%; top: 50%; }
+    .cross.y { width: 1px; height: 100%; left: 50%; }
     .sweep {
       position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 42%;
-      height: 42%;
-      transform-origin: 0 0;
-      transform: rotate(-24deg);
-      background: linear-gradient(45deg, rgba(142,232,242,.3), rgba(142,232,242,0) 72%);
-      clip-path: polygon(0 0, 100% 18%, 100% 100%);
-    }
-    .reticle {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 64px;
-      height: 64px;
-      transform: translate(-50%, -50%);
-      border: 1px solid rgba(142,232,242,.55);
-    }
-    .reticle::before,
-    .reticle::after {
-      content: "";
-      position: absolute;
-      background: rgba(142,232,242,.55);
-    }
-    .reticle::before {
-      left: 50%;
-      top: -16px;
-      width: 1px;
-      height: 96px;
-    }
-    .reticle::after {
-      left: -16px;
-      top: 50%;
-      width: 96px;
-      height: 1px;
+      inset: 0;
+      border-radius: 50%;
+      background: conic-gradient(from 30deg, rgba(110,215,223,.26), transparent 20%, transparent);
+      animation: spin 6s linear infinite;
     }
     .blip {
       position: absolute;
-      width: 7px;
-      height: 7px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background: var(--cyan);
-      box-shadow: 0 0 15px rgba(142,232,242,.95);
+      box-shadow: 0 0 15px 4px rgba(142,232,242,.75);
     }
-    .b1 { left: 28%; top: 33%; }
-    .b2 { left: 65%; top: 70%; }
-    .b3 { left: 72%; top: 44%; }
-    .signal-label {
+    .b1 { left: 21%; top: 33%; }
+    .b2 { right: 17%; top: 57%; }
+    .b3 { left: 39%; bottom: 14%; }
+    .target { position: absolute; left: 50%; top: 50%; width: 68px; height: 68px; transform: translate(-50%, -50%); }
+    .target i { position: absolute; width: 15px; height: 15px; border-color: var(--cyan); border-style: solid; }
+    .target i:nth-child(1) { left: 0; top: 0; border-width: 1px 0 0 1px; }
+    .target i:nth-child(2) { right: 0; top: 0; border-width: 1px 1px 0 0; }
+    .target i:nth-child(3) { left: 0; bottom: 0; border-width: 0 0 1px 1px; }
+    .target i:nth-child(4) { right: 0; bottom: 0; border-width: 0 1px 1px 0; }
+    .target b {
       position: absolute;
-      left: 26px;
-      top: 24px;
-      color: var(--muted);
-      font-size: 12px;
-      letter-spacing: .16em;
-      text-transform: uppercase;
+      top: 76px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--cyan);
+      font: 10px var(--mono);
+      letter-spacing: .12em;
     }
-    .signal-code {
+    .radar-meta {
       position: absolute;
-      right: 26px;
-      top: 24px;
-      color: var(--muted);
-      font-size: 12px;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-    }
-    .signal-caption {
-      position: absolute;
-      left: 26px;
-      right: 26px;
-      bottom: 22px;
+      left: 18px;
+      right: 18px;
       display: flex;
       justify-content: space-between;
-      gap: 18px;
-      border-top: 1px solid rgba(142,232,242,.18);
-      padding-top: 16px;
-      color: #728087;
-      font-size: 12px;
+      color: var(--muted);
+      font: 10px var(--mono);
+      letter-spacing: .1em;
       text-transform: uppercase;
+    }
+    .radar-meta.top { top: 16px; }
+    .radar-meta.bottom { bottom: 16px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      .sweep { animation: none; }
     }
     small {
       display: block;
@@ -352,6 +331,12 @@
         width: 100%;
         justify-content: center;
       }
+      .langs {
+        display: none;
+      }
+      .lang-select-wrap {
+        display: block;
+      }
     }
   </style>
 </head>
@@ -382,6 +367,23 @@
           <a href="/zh-Hans/">简体中文</a>
           <a href="/zh-Hant/">繁體中文</a>
         </nav>
+        <label class="lang-select-wrap" for="root-language-select">
+          <span>Language</span>
+          <select id="root-language-select" aria-label="Choose language" onchange="if (this.value) window.location.href = this.value">
+            <option value="">Choose language</option>
+            <option value="/en/">English</option>
+            <option value="/es/">Español</option>
+            <option value="/pt/">Português</option>
+            <option value="/fr/">Français</option>
+            <option value="/de/">Deutsch</option>
+            <option value="/ru/">Русский</option>
+            <option value="/ar/">العربية</option>
+            <option value="/ja/">日本語</option>
+            <option value="/ko/">한국어</option>
+            <option value="/zh-Hans/">简体中文</option>
+            <option value="/zh-Hant/">繁體中文</option>
+          </select>
+        </label>
         <dl class="stats" aria-label="Archive summary">
           <div>
             <dt>334</dt>
@@ -399,21 +401,20 @@
         <small>Not an official U.S. government website. If translation or formatting differs from an official source, the official English source controls.</small>
       </section>
       <aside class="signal-panel" aria-label="Archive signal visual">
-        <div class="signal-label">Tracking / UAP-01</div>
-        <div class="signal-code">1948-2026</div>
+        <div class="radar-meta top"><span>TRACKING / UAP-01</span><span>36°17' N 115°48' W</span></div>
         <div class="radar" aria-hidden="true">
-          <span class="axis-h"></span>
-          <span class="axis-v"></span>
+          <div class="radar-ring r1"></div>
+          <div class="radar-ring r2"></div>
+          <div class="radar-ring r3"></div>
+          <span class="cross x"></span>
+          <span class="cross y"></span>
           <span class="sweep"></span>
-          <span class="reticle"></span>
           <span class="blip b1"></span>
           <span class="blip b2"></span>
           <span class="blip b3"></span>
+          <span class="target"><i></i><i></i><i></i><i></i><b>UNRESOLVED</b></span>
         </div>
-        <div class="signal-caption">
-          <span>Records indexed</span>
-          <span>Official sources linked</span>
-        </div>
+        <div class="radar-meta bottom"><span>AZ 284.2°</span><span>RANGE 12.8 NM</span><span>ALT UNKNOWN</span></div>
       </aside>
     </div>
   </main>
