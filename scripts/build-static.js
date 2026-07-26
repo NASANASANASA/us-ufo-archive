@@ -277,7 +277,7 @@ const seoText = {
     browseImages: 'Image records',
     mediaDetails: 'Media details',
     mediaDetailsIntro: 'This page indexes the record type, source agency, release batch, incident date, incident location, official source, and available public media for search and reference.',
-    homeDescription: 'Search public U.S. government UAP records across official releases, agencies, years, locations, videos, images, and PDF source documents.'
+    homeDescription: 'Search 334 public U.S. government UFO/UAP records, videos, images, and PDF source documents from four official release batches, with agencies, dates, locations, related records, and official source links.'
   },
   es: {
     release04Title: 'Registros UAP de la publicación 04',
@@ -294,7 +294,7 @@ const seoText = {
     browseImages: 'Registros de imagen',
     mediaDetails: 'Detalles multimedia',
     mediaDetailsIntro: 'Esta página indexa el tipo de registro, agencia fuente, publicación, fecha, lugar, fuente oficial y medios públicos disponibles para búsqueda y referencia.',
-    homeDescription: 'Busca registros UAP públicos del Gobierno de EE. UU. por publicaciones, agencias, años, lugares, videos, imágenes y documentos PDF.'
+    homeDescription: 'Busca 334 registros públicos UFO/UAP del Gobierno de EE. UU., videos, imágenes y PDF de cuatro publicaciones oficiales, con agencias, fechas, lugares, registros relacionados y enlaces oficiales.'
   },
   pt: {
     release04Title: 'Registros UAP da publicação 04',
@@ -311,7 +311,7 @@ const seoText = {
     browseImages: 'Registros de imagem',
     mediaDetails: 'Detalhes da mídia',
     mediaDetailsIntro: 'Esta página indexa tipo de registro, agência, lote, data, local, fonte oficial e mídia pública disponível para pesquisa e referência.',
-    homeDescription: 'Pesquise registros UAP públicos do governo dos EUA por publicações, agências, anos, locais, vídeos, imagens e PDFs.'
+    homeDescription: 'Pesquise 334 registros públicos UFO/UAP do governo dos EUA, vídeos, imagens e PDFs de quatro publicações oficiais, com agências, datas, locais, registros relacionados e links oficiais.'
   },
   fr: {
     release04Title: 'Archives UAP de la publication 04',
@@ -328,7 +328,7 @@ const seoText = {
     browseImages: 'Archives image',
     mediaDetails: 'Détails du média',
     mediaDetailsIntro: 'Cette page indexe le type, l’agence, la publication, la date, le lieu, la source officielle et les médias publics disponibles.',
-    homeDescription: 'Rechercher les archives UAP publiques du gouvernement des États-Unis par publication, agence, année, lieu, vidéo, image et PDF.'
+    homeDescription: 'Recherchez 334 archives publiques UFO/UAP du gouvernement des États-Unis, vidéos, images et PDF issus de quatre publications officielles, avec agences, dates, lieux, archives liées et sources officielles.'
   },
   de: {
     release04Title: 'UAP-Unterlagen Veröffentlichung 04',
@@ -345,7 +345,7 @@ const seoText = {
     browseImages: 'Bildunterlagen',
     mediaDetails: 'Mediendetails',
     mediaDetailsIntro: 'Diese Seite indexiert Typ, Behörde, Veröffentlichung, Datum, Ort, offizielle Quelle und verfügbare öffentliche Medien.',
-    homeDescription: 'Öffentliche UAP-Unterlagen der US-Regierung nach Veröffentlichung, Behörde, Jahr, Ort, Video, Bild und PDF durchsuchen.'
+    homeDescription: 'Durchsuchen Sie 334 öffentliche UFO/UAP-Unterlagen der US-Regierung mit Videos, Bildern und PDFs aus vier offiziellen Veröffentlichungen, inklusive Behörden, Daten, Orte, verwandter Einträge und Quellenlinks.'
   },
   ru: {
     release04Title: 'Материалы UAP выпуска 04',
@@ -362,7 +362,7 @@ const seoText = {
     browseImages: 'Изображения',
     mediaDetails: 'Сведения о медиа',
     mediaDetailsIntro: 'Страница индексирует тип записи, ведомство, выпуск, дату, место, официальный источник и доступные публичные медиа.',
-    homeDescription: 'Поиск публичных материалов UAP правительства США по выпускам, ведомствам, годам, местам, видео, изображениям и PDF.'
+    homeDescription: 'Поиск по 334 публичным материалам UFO/UAP правительства США: видео, изображения и PDF из четырех официальных выпусков, ведомства, даты, места, связанные записи и официальные ссылки.'
   },
   ar: {
     release04Title: 'سجلات UAP الإصدار 04',
@@ -379,7 +379,7 @@ const seoText = {
     browseImages: 'سجلات الصور',
     mediaDetails: 'تفاصيل الوسائط',
     mediaDetailsIntro: 'تفهرس هذه الصفحة نوع السجل والجهة والإصدار والتاريخ والموقع والمصدر الرسمي والوسائط العامة المتاحة.',
-    homeDescription: 'ابحث في سجلات UAP العامة للحكومة الأمريكية حسب الإصدار والجهة والسنة والموقع والفيديو والصورة وPDF.'
+    homeDescription: 'ابحث في 334 سجلا عاما عن UFO/UAP من الحكومة الأمريكية، تشمل فيديوهات وصورا وملفات PDF من أربعة إصدارات رسمية، مع الجهات والتواريخ والمواقع والسجلات المرتبطة وروابط المصادر الرسمية.'
   },
   ja: {
     release04Title: '第4回公開UAP記録',
@@ -396,7 +396,7 @@ const seoText = {
     browseImages: '画像記録',
     mediaDetails: 'メディア詳細',
     mediaDetailsIntro: 'このページは記録種別、機関、公開回、事件日、場所、公式ソース、利用可能な公開メディアを検索と参照のために整理しています。',
-    homeDescription: '米国政府の公開UAP記録を公開回、機関、年、場所、動画、画像、PDF資料から検索できます。'
+    homeDescription: '米国政府が公開した334件のUFO/UAP記録、動画、画像、PDF資料を4回の公式公開、機関、日付、場所、関連記録、公式ソースリンクから検索できます。'
   },
   ko: {
     release04Title: '4차 공개 UAP 기록',
@@ -413,7 +413,7 @@ const seoText = {
     browseImages: '이미지 기록',
     mediaDetails: '미디어 세부정보',
     mediaDetailsIntro: '이 페이지는 검색과 참조를 위해 기록 유형, 기관, 공개 회차, 날짜, 위치, 공식 출처, 사용 가능한 공개 미디어를 색인합니다.',
-    homeDescription: '미국 정부 공개 UAP 기록을 공개 회차, 기관, 연도, 위치, 영상, 이미지, PDF 문서별로 검색합니다.'
+    homeDescription: '미국 정부가 공개한 334개 UFO/UAP 기록, 영상, 이미지, PDF 문서를 네 차례 공식 공개, 기관, 날짜, 위치, 관련 기록, 공식 출처 링크별로 검색합니다.'
   },
   'zh-Hans': {
     release04Title: '第四批 UAP 公开档案',
@@ -430,7 +430,7 @@ const seoText = {
     browseImages: '图片档案',
     mediaDetails: '媒体信息',
     mediaDetailsIntro: '本页为搜索和查阅整理档案类型、发布机构、公开批次、事件日期、事件地点、官方来源以及可用的公开媒体。',
-    homeDescription: '按公开批次、机构、年份、地点、视频、图片和 PDF 文件检索美国政府公开 UAP 档案。'
+    homeDescription: '检索 334 条美国政府 UFO/UAP 公开档案，包括 UAP 视频、图片、PDF 原始文件、事件日期、地点、机构、相关记录和官方来源链接。本站提供中文镜像与多语言索引。'
   },
   'zh-Hant': {
     release04Title: '第四批 UAP 公開檔案',
@@ -447,7 +447,7 @@ const seoText = {
     browseImages: '圖片檔案',
     mediaDetails: '媒體資訊',
     mediaDetailsIntro: '本頁為搜尋和查閱整理檔案類型、發布機構、公開批次、事件日期、事件地點、官方來源以及可用的公開媒體。',
-    homeDescription: '按公開批次、機構、年份、地點、影片、圖片和 PDF 文件檢索美國政府公開 UAP 檔案。'
+    homeDescription: '檢索 334 筆美國政府 UFO/UAP 公開檔案，包括 UAP 影片、圖片、PDF 原始文件、事件日期、地點、機構、相關記錄和官方來源連結。本站提供中文鏡像與多語言索引。'
   }
 };
 
@@ -974,11 +974,17 @@ const legalPages = {
     }
   },
   about: {
-    en: {title: 'About This Archive', description: 'About the unofficial UAP Public Archive mirror.', body: [['Purpose', 'This site organizes public U.S. government UAP-related records into searchable, multilingual archive pages. It is intended for research, reference, and source verification.'], ['Source Basis', 'Record titles, descriptions, metadata, files, images, and videos are based on public government releases. Each record keeps a link to the original source when available.'], ['Unofficial Status', 'This site is not operated by the U.S. government and does not represent any government agency. When translation or formatting differs from the official source, the English official source prevails.']]},
-    ja: {title: 'このサイトについて', description: '非公式UAP公開アーカイブミラーについて。', body: [['目的', 'このサイトは、米国政府が公開したUAP関連記録を検索可能な多言語アーカイブとして整理するものです。'], ['出典', '記録名、説明、メタデータ、ファイル、画像、動画は公開された政府資料に基づきます。可能な限り各記録に原典リンクを残しています。'], ['非公式サイト', 'このサイトは米国政府によって運営されておらず、政府機関を代表しません。翻訳や整形に差異がある場合は英語の公式原文を優先します。']]},
-    es: {title: 'Acerca del archivo', description: 'Acerca del espejo no oficial del Archivo público UAP.', body: [['Propósito', 'Este sitio organiza registros públicos del Gobierno de Estados Unidos relacionados con UAP en páginas de archivo buscables y multilingües.'], ['Base de fuentes', 'Los títulos, descripciones, metadatos, archivos, imágenes y videos se basan en publicaciones gubernamentales públicas. Cada registro conserva un enlace a la fuente original cuando está disponible.'], ['Estado no oficial', 'Este sitio no es operado por el Gobierno de EE. UU. ni representa a ninguna agencia gubernamental. Si existe discrepancia, prevalece la fuente oficial en inglés.']]},
-    'zh-Hans': {title: '关于本站', description: '关于 UAP 公开档案非官方镜像。', body: [['网站目的', '本站将美国政府公开发布的 UAP 相关档案整理为可检索、多语言的档案页面，供研究、查阅和来源核验使用。'], ['资料来源', '档案标题、说明、元数据、文件、图片和视频均基于美国政府公开发布资料。每条记录在可用情况下保留原始来源链接。'], ['非官方声明', '本站并非美国政府运营，也不代表任何政府机构。翻译或排版与官方来源存在差异时，以英文官方原文为准。']]},
-    'zh-Hant': {title: '關於本站', description: '關於 UAP 公開檔案非官方鏡像。', body: [['網站目的', '本站將美國政府公開發布的 UAP 相關檔案整理為可檢索、多語言的檔案頁面，供研究、查閱和來源核驗使用。'], ['資料來源', '檔案標題、說明、元資料、文件、圖片和影片均基於美國政府公開發布資料。每條記錄在可用情況下保留原始來源連結。'], ['非官方聲明', '本站並非美國政府營運，也不代表任何政府機構。翻譯或排版與官方來源存在差異時，以英文官方原文為準。']]}
+    en: {title: 'About This Archive', description: 'About the unofficial multilingual UAP Public Archive mirror for U.S. government UFO/UAP records.', body: [['Purpose', 'This site organizes public U.S. government UFO/UAP records into searchable, multilingual archive pages for research, reference, and source verification.'], ['Source Basis', 'Record titles, descriptions, metadata, files, images, and videos are based on public government releases. Each record keeps a link to the original official source when available.'], ['Unofficial Status', 'This site is not operated by the U.S. government and does not represent any government agency. When translation or formatting differs from the official source, the English official source prevails.']]},
+    ja: {title: 'このサイトについて', description: '米国政府UFO/UAP記録の非公式多言語UAP公開アーカイブミラーについて。', body: [['目的', 'このサイトは、米国政府が公開したUFO/UAP関連記録を検索可能な多言語アーカイブとして整理し、調査、参照、出典確認に利用できるようにするものです。'], ['出典', '記録名、説明、メタデータ、ファイル、画像、動画は公開された政府資料に基づきます。可能な限り各記録に公式原典リンクを残しています。'], ['非公式サイト', 'このサイトは米国政府によって運営されておらず、政府機関を代表しません。翻訳や整形に差異がある場合は英語の公式原文を優先します。']]},
+    es: {title: 'Acerca del archivo', description: 'Acerca del espejo multilingüe no oficial de registros UFO/UAP del Gobierno de EE. UU.', body: [['Propósito', 'Este sitio organiza registros públicos UFO/UAP del Gobierno de Estados Unidos en páginas de archivo buscables y multilingües para investigación, consulta y verificación de fuentes.'], ['Base de fuentes', 'Los títulos, descripciones, metadatos, archivos, imágenes y videos se basan en publicaciones gubernamentales públicas. Cada registro conserva un enlace a la fuente oficial original cuando está disponible.'], ['Estado no oficial', 'Este sitio no es operado por el Gobierno de EE. UU. ni representa a ninguna agencia gubernamental. Si existe discrepancia, prevalece la fuente oficial en inglés.']]},
+    pt: {title: 'Sobre este arquivo', description: 'Sobre o espelho multilíngue não oficial de registros UFO/UAP do governo dos EUA.', body: [['Objetivo', 'Este site organiza registros públicos UFO/UAP do governo dos Estados Unidos em páginas pesquisáveis e multilíngues para pesquisa, consulta e verificação de fontes.'], ['Base das fontes', 'Títulos, descrições, metadados, arquivos, imagens e vídeos são baseados em publicações governamentais públicas. Cada registro mantém um link para a fonte oficial original quando disponível.'], ['Status não oficial', 'Este site não é operado pelo governo dos EUA e não representa nenhuma agência governamental. Quando houver diferença de tradução ou formatação, a fonte oficial em inglês prevalece.']]},
+    fr: {title: 'À propos du site', description: 'À propos du miroir multilingue non officiel des archives UFO/UAP du gouvernement des États-Unis.', body: [['Objectif', 'Ce site organise les archives publiques UFO/UAP du gouvernement des États-Unis en pages consultables et multilingues pour la recherche, la référence et la vérification des sources.'], ['Sources', 'Les titres, descriptions, métadonnées, fichiers, images et vidéos reposent sur des publications gouvernementales publiques. Chaque fiche conserve un lien vers la source officielle originale lorsqu’il est disponible.'], ['Statut non officiel', 'Ce site n’est pas exploité par le gouvernement des États-Unis et ne représente aucune agence gouvernementale. En cas de différence de traduction ou de mise en forme, la source officielle en anglais prévaut.']]},
+    de: {title: 'Über dieses Archiv', description: 'Über den inoffiziellen mehrsprachigen Spiegel für UFO/UAP-Unterlagen der US-Regierung.', body: [['Zweck', 'Diese Website organisiert öffentliche UFO/UAP-Unterlagen der US-Regierung als durchsuchbare, mehrsprachige Archivseiten für Recherche, Nachschlagezwecke und Quellenprüfung.'], ['Quellenbasis', 'Titel, Beschreibungen, Metadaten, Dateien, Bilder und Videos beruhen auf öffentlichen Regierungsveröffentlichungen. Jeder Eintrag behält nach Möglichkeit einen Link zur ursprünglichen offiziellen Quelle.'], ['Inoffizieller Status', 'Diese Website wird nicht von der US-Regierung betrieben und vertritt keine Regierungsbehörde. Bei Unterschieden in Übersetzung oder Formatierung gilt die offizielle englische Quelle.']]},
+    ru: {title: 'О сайте', description: 'О неофициальном многоязычном зеркале материалов UFO/UAP правительства США.', body: [['Назначение', 'Сайт организует публичные материалы UFO/UAP правительства США в доступные для поиска многоязычные архивные страницы для исследования, справки и проверки источников.'], ['Источники', 'Названия, описания, метаданные, файлы, изображения и видео основаны на публичных правительственных публикациях. Для каждой записи по возможности сохраняется ссылка на официальный первоисточник.'], ['Неофициальный статус', 'Сайт не управляется правительством США и не представляет какое-либо государственное ведомство. При расхождениях в переводе или оформлении приоритет имеет официальный английский источник.']]},
+    ko: {title: '사이트 소개', description: '미국 정부 UFO/UAP 기록의 비공식 다국어 UAP 공개 아카이브 미러에 대한 설명.', body: [['목적', '이 사이트는 미국 정부가 공개한 UFO/UAP 관련 기록을 검색 가능한 다국어 아카이브 페이지로 정리하여 연구, 참고, 출처 확인에 사용할 수 있게 합니다.'], ['자료 출처', '기록 제목, 설명, 메타데이터, 파일, 이미지, 동영상은 공개된 정부 자료를 기반으로 합니다. 가능한 경우 각 기록은 원본 공식 출처 링크를 유지합니다.'], ['비공식 상태', '이 사이트는 미국 정부가 운영하지 않으며 어떤 정부 기관도 대표하지 않습니다. 번역이나 형식이 공식 출처와 다를 경우 영어 공식 원문이 우선합니다.']]},
+    ar: {title: 'حول هذا الأرشيف', description: 'حول المرآة متعددة اللغات غير الرسمية لسجلات UFO/UAP الحكومية الأمريكية.', body: [['الغرض', 'ينظم هذا الموقع سجلات UFO/UAP العامة الصادرة عن الحكومة الأمريكية في صفحات أرشيف قابلة للبحث ومتعددة اللغات لأغراض البحث والرجوع والتحقق من المصادر.'], ['أساس المصادر', 'تستند العناوين والأوصاف والبيانات الوصفية والملفات والصور ومقاطع الفيديو إلى إصدارات حكومية عامة. يحتفظ كل سجل برابط إلى المصدر الرسمي الأصلي عندما يكون متاحا.'], ['حالة غير رسمية', 'لا تدير الحكومة الأمريكية هذا الموقع ولا يمثل أي وكالة حكومية. عند وجود اختلاف في الترجمة أو التنسيق، تكون الأولوية للمصدر الرسمي باللغة الإنجليزية.']]},
+    'zh-Hans': {title: '关于本站', description: '关于美国政府 UFO/UAP 公开档案中文镜像与多语言 UAP 档案库。', body: [['网站目的', '本站将美国政府公开发布的 UFO/UAP 相关档案整理为可检索、多语言的档案页面，供研究、查阅和来源核验使用。'], ['资料来源', '档案标题、说明、元数据、文件、图片和视频均基于美国政府公开发布资料。每条记录在可用情况下保留美国官方原始来源链接。'], ['非官方声明', '本站并非美国政府运营，也不代表任何政府机构。翻译或排版与官方来源存在差异时，以英文官方原文为准。']]},
+    'zh-Hant': {title: '關於本站', description: '關於美國政府 UFO/UAP 公開檔案中文鏡像與多語言 UAP 檔案庫。', body: [['網站目的', '本站將美國政府公開發布的 UFO/UAP 相關檔案整理為可檢索、多語言的檔案頁面，供研究、查閱和來源核驗使用。'], ['資料來源', '檔案標題、說明、元資料、文件、圖片和影片均基於美國政府公開發布資料。每條記錄在可用情況下保留美國官方原始來源連結。'], ['非官方聲明', '本站並非美國政府營運，也不代表任何政府機構。翻譯或排版與官方來源存在差異時，以英文官方原文為準。']]}
   },
   contact: {
     en: {title: 'Contact', description: 'Contact information for corrections, source issues, and privacy questions.', body: [['Contact Method', 'For corrections, broken links, privacy questions, or source concerns, open a public issue on the project repository.'], ['Repository', 'GitHub: https://github.com/NASANASANASA/us-ufo-archive'], ['What to Include', 'Please include the page URL, record title, original source URL if relevant, and a concise explanation of the issue.']]},
@@ -1080,11 +1086,38 @@ function yearOf(doc) {
   return clean(doc.incidentDate).match(/(19|20)\d{2}/)?.[0] || 'undated';
 }
 
+function homeSeoTitle(lang) {
+  if (lang === 'zh-Hans') return 'UAP 档案库｜美国政府 UFO/UAP 公开档案中文镜像';
+  if (lang === 'zh-Hant') return 'UAP 檔案庫｜美國政府 UFO/UAP 公開檔案中文鏡像';
+  if (lang === 'ja') return 'UAP公開アーカイブ｜米国政府 UFO/UAP 記録ミラー';
+  if (lang === 'es') return 'Archivo UAP público | Espejo de registros UFO/UAP del Gobierno de EE. UU.';
+  if (lang === 'pt') return 'Arquivo Público UAP | Espelho de registros UFO/UAP do governo dos EUA';
+  if (lang === 'fr') return 'Archive publique UAP | Miroir des archives UFO/UAP du gouvernement des États-Unis';
+  if (lang === 'de') return 'Öffentliches UAP-Archiv | Spiegel der UFO/UAP-Unterlagen der US-Regierung';
+  if (lang === 'ru') return 'Публичный архив UAP | Зеркало материалов UFO/UAP правительства США';
+  if (lang === 'ko') return 'UAP 공개 아카이브 | 미국 정부 UFO/UAP 기록 미러';
+  if (lang === 'ar') return 'أرشيف UAP العام | مرآة سجلات UFO/UAP للحكومة الأمريكية';
+  return 'UAP Public Archive | U.S. Government UFO/UAP Records Mirror';
+}
+
 function metaDescription(doc, lang) {
   const l = text[lang];
   const title = langTitle(doc, lang);
   const location = langLocation(doc, lang);
-  return `${l.descriptionPrefix}: ${title}. ${l.agency}: ${agencyLabel(doc.agency, lang)}. ${l.date}: ${doc.incidentDate || 'N/A'}. ${l.location}: ${location}.`;
+  const type = `.${clean(doc.type) || 'PDF'}`;
+  const agency = agencyLabel(doc.agency, lang);
+  const date = doc.incidentDate || 'N/A';
+  if (lang === 'zh-Hans') return `美国政府 UFO/UAP 公开档案：${title}。类型：${type}。发布机构：${agency}。事件日期：${date}。事件地点：${location}。页面保留官方来源链接、媒体预览和相关档案。`;
+  if (lang === 'zh-Hant') return `美國政府 UFO/UAP 公開檔案：${title}。類型：${type}。發布機構：${agency}。事件日期：${date}。事件地點：${location}。頁面保留官方來源連結、媒體預覽和相關檔案。`;
+  if (lang === 'ja') return `米国政府UFO/UAP公開アーカイブ記録：${title}。種類：${type}。公開機関：${agency}。事件日：${date}。場所：${location}。公式ソース、メディア、関連記録を掲載。`;
+  if (lang === 'es') return `Registro público UFO/UAP del Gobierno de EE. UU.: ${title}. Tipo: ${type}. Agencia: ${agency}. Fecha: ${date}. Lugar: ${location}. Incluye fuente oficial, vista multimedia y registros relacionados.`;
+  if (lang === 'pt') return `Registro público UFO/UAP do governo dos EUA: ${title}. Tipo: ${type}. Agência: ${agency}. Data: ${date}. Local: ${location}. Inclui fonte oficial, mídia e registros relacionados.`;
+  if (lang === 'fr') return `Archive publique UFO/UAP du gouvernement des États-Unis : ${title}. Type : ${type}. Agence : ${agency}. Date : ${date}. Lieu : ${location}. Source officielle, média et archives liées.`;
+  if (lang === 'de') return `Öffentliche UFO/UAP-Unterlage der US-Regierung: ${title}. Typ: ${type}. Behörde: ${agency}. Datum: ${date}. Ort: ${location}. Mit offizieller Quelle, Medienansicht und verwandten Einträgen.`;
+  if (lang === 'ru') return `Публичная запись UFO/UAP правительства США: ${title}. Тип: ${type}. Ведомство: ${agency}. Дата: ${date}. Место: ${location}. Есть официальный источник, медиа и связанные записи.`;
+  if (lang === 'ko') return `미국 정부 UFO/UAP 공개 기록: ${title}. 유형: ${type}. 기관: ${agency}. 날짜: ${date}. 위치: ${location}. 공식 출처, 미디어 보기, 관련 기록 포함.`;
+  if (lang === 'ar') return `سجل UFO/UAP عام من الحكومة الأمريكية: ${title}. النوع: ${type}. الجهة: ${agency}. التاريخ: ${date}. الموقع: ${location}. يتضمن المصدر الرسمي والوسائط والسجلات المرتبطة.`;
+  return `U.S. government UFO/UAP public archive record: ${title}. Type: ${type}. Agency: ${agency}. Incident date: ${date}. Location: ${location}. Includes official source link, media preview, and related records.`;
 }
 
 function structuredSummary(doc, lang) {
@@ -1110,17 +1143,17 @@ function structuredSummary(doc, lang) {
 
 function seoRecordTitle(doc, lang, title) {
   const type = clean(doc.type) || 'PDF';
-  if (lang === 'zh-Hans') return `${title} | ${type} UAP 档案`;
-  if (lang === 'zh-Hant') return `${title} | ${type} UAP 檔案`;
-  if (lang === 'ja') return `${title} | ${type} UAP記録`;
-  if (lang === 'es') return `${title} | Registro UAP ${type}`;
-  if (lang === 'pt') return `${title} | Registro UAP ${type}`;
-  if (lang === 'fr') return `${title} | Archive UAP ${type}`;
-  if (lang === 'de') return `${title} | UAP-Unterlage ${type}`;
-  if (lang === 'ru') return `${title} | Материал UAP ${type}`;
-  if (lang === 'ko') return `${title} | ${type} UAP 기록`;
-  if (lang === 'ar') return `${title} | سجل UAP ${type}`;
-  return `${title} | ${type} UAP record`;
+  if (lang === 'zh-Hans') return `${title} | 美国政府 ${type} UAP/UFO 档案`;
+  if (lang === 'zh-Hant') return `${title} | 美國政府 ${type} UAP/UFO 檔案`;
+  if (lang === 'ja') return `${title} | 米国政府 ${type} UFO/UAP記録`;
+  if (lang === 'es') return `${title} | Registro ${type} UFO/UAP del Gobierno de EE. UU.`;
+  if (lang === 'pt') return `${title} | Registro ${type} UFO/UAP do governo dos EUA`;
+  if (lang === 'fr') return `${title} | Archive ${type} UFO/UAP du gouvernement des États-Unis`;
+  if (lang === 'de') return `${title} | ${type} UFO/UAP-Unterlage der US-Regierung`;
+  if (lang === 'ru') return `${title} | ${type} материал UFO/UAP правительства США`;
+  if (lang === 'ko') return `${title} | 미국 정부 ${type} UFO/UAP 기록`;
+  if (lang === 'ar') return `${title} | سجل ${type} UFO/UAP للحكومة الأمريكية`;
+  return `${title} | U.S. Government ${type} UFO/UAP Record`;
 }
 
 function mediaDetailsText(doc, lang) {
@@ -1629,7 +1662,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script async src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-2222469808721720"[\s\S]*?<\/script>\s*/g, '\n')
     .replace(/\s*<script async src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-ZND85JXQ6M"><\/script>\s*<script>[\s\S]*?gtag\('config', 'G-ZND85JXQ6M'\);[\s\S]*?<\/script>\s*/g, '\n')
     .replace(/<html[^>]*>/, `<html lang="${text[lang].lang}">`)
-    .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(text[lang].home)} · ${esc(text[lang].name)}</title>`)
+    .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(homeSeoTitle(lang))}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc((seoText[lang] || seoText.en).homeDescription)}">`)
     .replace(/href="\.\/assets\//g, 'href="../assets/')
     .replace(/src="\.\/assets\//g, 'src="../assets/')
