@@ -1897,39 +1897,9 @@ function build() {
     }
     writeFile(`${lang}/downloads/index.html`, buildDownloadsPage(lang));
     urlsForSitemap.push(`/${lang}/downloads/`);
-    for (const topic of topicConfigs(lang, docs)) {
-      writeFile(topic.file, buildTopicPage(docs, lang, topic));
-      urlsForSitemap.push(topic.path);
-    }
     for (const doc of docs) {
       writeFile(`${lang}/records/${doc.slug}/index.html`, buildRecordPage(doc, lang, docs));
       urlsForSitemap.push(`/${lang}/records/${doc.slug}/`);
-    }
-
-    const groups = [
-      {kind: 'agencies', title: text[lang].byAgency, raw: doc => doc.agency, label: doc => agencyLabel(doc.agency, lang)},
-      {kind: 'years', title: text[lang].byYear, raw: doc => yearOf(doc), label: doc => yearOf(doc)},
-      {kind: 'locations', title: text[lang].byLocation, raw: doc => doc.incidentLocation || 'N/A', label: doc => langLocation(doc, lang)},
-      {kind: 'types', title: text[lang].byType, raw: doc => doc.type, label: doc => `.${doc.type}`}
-    ];
-
-    for (const group of groups) {
-      const map = new Map();
-      for (const doc of docs) {
-        const raw = group.raw(doc);
-        const label = group.label(doc);
-        if (!map.has(raw)) map.set(raw, {label, docs: []});
-        map.get(raw).docs.push(doc);
-      }
-      const cards = [...map.entries()].sort((a, b) => a[1].label.localeCompare(b[1].label)).map(([raw, entry]) =>
-        `<a class="static-index-card" href="./${slug(raw)}/"><b>${esc(entry.label)}</b><span>${entry.docs.length} ${esc(text[lang].records)}</span></a>`
-      ).join('');
-      writeFile(`${lang}/${group.kind}/index.html`, buildGroupLanding(docs, lang, group.kind, group.title, cards));
-      urlsForSitemap.push(`/${lang}/${group.kind}/`);
-      for (const [raw, entry] of map.entries()) {
-        writeFile(`${lang}/${group.kind}/${slug(raw)}/index.html`, buildGroupPage(entry.docs, lang, group.kind, slug(raw), entry.label));
-        urlsForSitemap.push(`/${lang}/${group.kind}/${slug(raw)}/`);
-      }
     }
   }
 
