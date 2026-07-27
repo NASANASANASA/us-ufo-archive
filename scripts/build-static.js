@@ -1802,6 +1802,7 @@ function buildRecordPage(doc, lang, docs) {
       <h1>${esc(title)}</h1>
       <p>${esc(description)}</p>
     </section>
+    ${manualAdSlot('record-after-head')}
     <section class="static-record-grid">
       <article class="static-panel static-record-copy">
         <h2>${esc(l.summary)}</h2>
@@ -1821,7 +1822,6 @@ function buildRecordPage(doc, lang, docs) {
         ${mediaPreview}
       </aside>
     </section>
-    ${manualAdSlot('record-after-content')}
   </main>`;
   return pageShell({lang, title: `${seoRecordTitle(doc, lang, title)} · ${l.home}`, description, canonicalPath, body, depth: 3, schema});
 }
