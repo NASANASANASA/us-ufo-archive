@@ -1433,6 +1433,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   const archiveHref = `${prefix}${lang}/#releases`;
   const downloadsHref = `${prefix}${lang}/downloads/`;
   const aboutHref = `${prefix}${lang}/about/`;
+  const resetArchiveReturn = "try{sessionStorage.removeItem('uapArchiveReturnState')}catch(e){}";
   const schemas = [organizationSchema(lang), ...(schema ? (Array.isArray(schema) ? schema : [schema]) : [])];
   const schemaHtml = schemas.map(item => `  <script type="application/ld+json">${JSON.stringify(item)}</script>\n`).join('');
   const langMenu = `<details class="lang-menu">
@@ -1466,7 +1467,7 @@ ${schemaHtml}
 <body class="static-page">
   <div class="scanlines" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="${prefix}${lang}/"><span class="brand-mark"><i></i><i></i><i></i></span><span><b>${esc(text[lang].home)}</b><small>${esc(brandSubtitleLabel(lang))}</small></span></a>
+    <a class="brand" href="${prefix}${lang}/" onclick="${resetArchiveReturn}"><span class="brand-mark"><i></i><i></i><i></i></span><span><b>${esc(text[lang].home)}</b><small>${esc(brandSubtitleLabel(lang))}</small></span></a>
     <nav>
       <a href="${archiveHref}">${esc(text[lang].archive)}</a>
       <a href="${downloadsHref}">${esc(downloadsLabel(lang))}</a>
