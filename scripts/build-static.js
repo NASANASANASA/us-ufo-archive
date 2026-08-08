@@ -2030,7 +2030,7 @@ function build() {
     }
   }
 
-  const sitemapLastmod = process.env.SITEMAP_LASTMOD || '2026-07-18';
+  const sitemapLastmod = process.env.SITEMAP_LASTMOD || new Date().toISOString().slice(0, 10);
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${['/', ...urlsForSitemap].map(u => `  <url><loc>${siteUrl}${u}</loc><lastmod>${sitemapLastmod}</lastmod></url>`).join('\n')}\n</urlset>\n`;
   writeFile('sitemap.xml', sitemap);
   writeFile('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`);
