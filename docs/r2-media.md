@@ -4,6 +4,7 @@ This site expects mirrored media at:
 
 ```text
 https://media.uap-archives.org/release-04/<official-preview-filename>.jpg
+https://media.uap-archives.org/release-05/videos/<official-video-filename>.mp4
 ```
 
 Recommended Cloudflare setup:
@@ -11,7 +12,8 @@ Recommended Cloudflare setup:
 1. Create an R2 bucket, for example `uap-archives-media`.
 2. Attach the custom domain `media.uap-archives.org` to the bucket.
 3. Upload Release 04 preview images using the keys listed in `assets/release-04-r2-manifest.tsv`.
-4. Keep large videos in R2 or another video-capable CDN, not in this GitHub repository.
+4. Upload Release 05 videos using the keys listed in `assets/release-05-r2-video-manifest.tsv`.
+5. Keep large videos in R2 or another video-capable CDN, not in this GitHub repository.
 
 The browser fallback order is:
 

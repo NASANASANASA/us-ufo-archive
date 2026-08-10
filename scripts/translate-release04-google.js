@@ -4,12 +4,28 @@ const https = require('https');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
-const targets = [
+const allTargets = [
   ['assets/i18n-zh-cn.json', 'zh-CN'],
   ['assets/i18n-zh-tw.json', 'zh-TW'],
   ['assets/i18n-ja.json', 'ja'],
-  ['assets/i18n-es.json', 'es']
+  ['assets/i18n-es.json', 'es'],
+  ['assets/i18n-pt.json', 'pt'],
+  ['assets/i18n-ru.json', 'ru'],
+  ['assets/i18n-fr.json', 'fr'],
+  ['assets/i18n-de.json', 'de'],
+  ['assets/i18n-ko.json', 'ko'],
+  ['assets/i18n-ar.json', 'ar']
 ];
+
+const args = process.argv.slice(2);
+const releaseDate = (args.find(arg => arg.startsWith('--release-date=')) || '--release-date=7/10/26').split('=')[1];
+const targetArg = (args.find(arg => arg.startsWith('--targets=')) || '--targets=zh-cn,zh-tw,ja,es').split('=')[1];
+const onlyEnglishResidual = args.includes('--only-english-residual');
+const targetNames = targetArg === 'all' ? null : new Set(targetArg.split(',').map(value => value.trim().toLowerCase()).filter(Boolean));
+const targets = targetNames
+  ? allTargets.filter(([file, code]) => targetNames.has(code.toLowerCase()) || targetNames.has(path.basename(file, '.json').replace(/^i18n-/, '')))
+  : allTargets;
+const englishResidualPattern = /Official PURSUE Release|This file contains|This image is an artistic|The United States|Video Description|Video description|Image Description|Narrative Description|This video description|This image description|This narrative description|Readers should not interpret|A U\.S\. Government/;
 
 function clean(value) {
   return String(value || '').replace(/\u00a0/g, ' ').trim();
@@ -96,12 +112,15 @@ async function translateText(text, target) {
 
 async function main() {
   const csv = parseCSV(fs.readFileSync(path.join(root, 'assets/uap-data.csv'), 'utf8'));
-  const release04 = csv.filter(({row}) => row.releasedate === '7/10/26');
+  const release04 = releaseDate === 'all' ? csv : csv.filter(({row}) => row.releasedate === releaseDate);
   for (const [file, target] of targets) {
     const filePath = path.join(root, file);
     const i18n = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    console.log(`Translating ${release04.length} Release 04 records to ${target}`);
-    for (const {index, row} of release04) {
+    const rowsToTranslate = onlyEnglishResidual
+      ? release04.filter(({index}) => englishResidualPattern.test(i18n[index]?.descZh || ''))
+      : release04;
+    console.log(`Translating ${rowsToTranslate.length} records from ${releaseDate} to ${target}`);
+    for (const {index, row} of rowsToTranslate) {
       const entry = i18n[index] || {i: index};
       entry.i = index;
       entry.titleZh = await translateText(row.title, target);

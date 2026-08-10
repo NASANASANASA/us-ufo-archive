@@ -277,7 +277,7 @@ const seoText = {
     browseImages: 'Image records',
     mediaDetails: 'Media details',
     mediaDetailsIntro: 'This page indexes the record type, source agency, release batch, incident date, incident location, official source, and available public media for search and reference.',
-    homeDescription: 'Search the UAP archive for 334 public U.S. government UFO/UAP records, including UAP release records, videos, images, PDF source documents, incident metadata, agencies, locations, related records, and official source links.'
+    homeDescription: 'Search the UAP archive for 375 public U.S. government UFO/UAP records, including UAP release records, videos, images, PDF source documents, incident metadata, agencies, locations, related records, and official source links.'
   },
   es: {
     release04Title: 'Registros UAP de la publicación 04',
@@ -294,7 +294,7 @@ const seoText = {
     browseImages: 'Registros de imagen',
     mediaDetails: 'Detalles multimedia',
     mediaDetailsIntro: 'Esta página indexa el tipo de registro, agencia fuente, publicación, fecha, lugar, fuente oficial y medios públicos disponibles para búsqueda y referencia.',
-    homeDescription: 'Busca 334 registros públicos UFO/UAP del Gobierno de EE. UU., videos, imágenes y PDF de cuatro publicaciones oficiales, con agencias, fechas, lugares, registros relacionados y enlaces oficiales.'
+    homeDescription: 'Busca 375 registros públicos UFO/UAP del Gobierno de EE. UU., videos, imágenes y PDF de cinco publicaciones oficiales, con agencias, fechas, lugares, registros relacionados y enlaces oficiales.'
   },
   pt: {
     release04Title: 'Registros UAP da publicação 04',
@@ -311,7 +311,7 @@ const seoText = {
     browseImages: 'Registros de imagem',
     mediaDetails: 'Detalhes da mídia',
     mediaDetailsIntro: 'Esta página indexa tipo de registro, agência, lote, data, local, fonte oficial e mídia pública disponível para pesquisa e referência.',
-    homeDescription: 'Pesquise 334 registros públicos UFO/UAP do governo dos EUA, vídeos, imagens e PDFs de quatro publicações oficiais, com agências, datas, locais, registros relacionados e links oficiais.'
+    homeDescription: 'Pesquise 375 registros públicos UFO/UAP do governo dos EUA, vídeos, imagens e PDFs de cinco publicações oficiais, com agências, datas, locais, registros relacionados e links oficiais.'
   },
   fr: {
     release04Title: 'Archives UAP de la publication 04',
@@ -328,7 +328,7 @@ const seoText = {
     browseImages: 'Archives image',
     mediaDetails: 'Détails du média',
     mediaDetailsIntro: 'Cette page indexe le type, l’agence, la publication, la date, le lieu, la source officielle et les médias publics disponibles.',
-    homeDescription: 'Recherchez 334 archives publiques UFO/UAP du gouvernement des États-Unis, vidéos, images et PDF issus de quatre publications officielles, avec agences, dates, lieux, archives liées et sources officielles.'
+    homeDescription: 'Recherchez 375 archives publiques UFO/UAP du gouvernement des États-Unis, vidéos, images et PDF issus de cinq publications officielles, avec agences, dates, lieux, archives liées et sources officielles.'
   },
   de: {
     release04Title: 'UAP-Unterlagen Veröffentlichung 04',
@@ -345,7 +345,7 @@ const seoText = {
     browseImages: 'Bildunterlagen',
     mediaDetails: 'Mediendetails',
     mediaDetailsIntro: 'Diese Seite indexiert Typ, Behörde, Veröffentlichung, Datum, Ort, offizielle Quelle und verfügbare öffentliche Medien.',
-    homeDescription: 'Durchsuchen Sie 334 öffentliche UFO/UAP-Unterlagen der US-Regierung mit Videos, Bildern und PDFs aus vier offiziellen Veröffentlichungen, inklusive Behörden, Daten, Orte, verwandter Einträge und Quellenlinks.'
+    homeDescription: 'Durchsuchen Sie 375 öffentliche UFO/UAP-Unterlagen der US-Regierung mit Videos, Bildern und PDFs aus fünf offiziellen Veröffentlichungen, inklusive Behörden, Daten, Orte, verwandter Einträge und Quellenlinks.'
   },
   ru: {
     release04Title: 'Материалы UAP выпуска 04',
@@ -362,7 +362,7 @@ const seoText = {
     browseImages: 'Изображения',
     mediaDetails: 'Сведения о медиа',
     mediaDetailsIntro: 'Страница индексирует тип записи, ведомство, выпуск, дату, место, официальный источник и доступные публичные медиа.',
-    homeDescription: 'Поиск по 334 публичным материалам UFO/UAP правительства США: видео, изображения и PDF из четырех официальных выпусков, ведомства, даты, места, связанные записи и официальные ссылки.'
+    homeDescription: 'Поиск по 375 публичным материалам UFO/UAP правительства США: видео, изображения и PDF из пяти официальных выпусков, ведомства, даты, места, связанные записи и официальные ссылки.'
   },
   ar: {
     release04Title: 'سجلات UAP الإصدار 04',
@@ -379,7 +379,7 @@ const seoText = {
     browseImages: 'سجلات الصور',
     mediaDetails: 'تفاصيل الوسائط',
     mediaDetailsIntro: 'تفهرس هذه الصفحة نوع السجل والجهة والإصدار والتاريخ والموقع والمصدر الرسمي والوسائط العامة المتاحة.',
-    homeDescription: 'ابحث في 334 سجلا عاما عن UFO/UAP من الحكومة الأمريكية، تشمل فيديوهات وصورا وملفات PDF من أربعة إصدارات رسمية، مع الجهات والتواريخ والمواقع والسجلات المرتبطة وروابط المصادر الرسمية.'
+    homeDescription: 'ابحث في 375 سجلا عاما عن UFO/UAP من الحكومة الأمريكية، تشمل فيديوهات وصورا وملفات PDF من خمسة إصدارات رسمية، مع الجهات والتواريخ والمواقع والسجلات المرتبطة وروابط المصادر الرسمية.'
   },
   ja: {
     release04Title: '第4回公開UAP記録',
@@ -396,7 +396,7 @@ const seoText = {
     browseImages: '画像記録',
     mediaDetails: 'メディア詳細',
     mediaDetailsIntro: 'このページは記録種別、機関、公開回、事件日、場所、公式ソース、利用可能な公開メディアを検索と参照のために整理しています。',
-    homeDescription: '米国政府が公開した334件のUFO/UAP記録、動画、画像、PDF資料を4回の公式公開、機関、日付、場所、関連記録、公式ソースリンクから検索できます。'
+    homeDescription: '米国政府が公開した375件のUFO/UAP記録、動画、画像、PDF資料を5回の公式公開、機関、日付、場所、関連記録、公式ソースリンクから検索できます。'
   },
   ko: {
     release04Title: '4차 공개 UAP 기록',
@@ -413,7 +413,7 @@ const seoText = {
     browseImages: '이미지 기록',
     mediaDetails: '미디어 세부정보',
     mediaDetailsIntro: '이 페이지는 검색과 참조를 위해 기록 유형, 기관, 공개 회차, 날짜, 위치, 공식 출처, 사용 가능한 공개 미디어를 색인합니다.',
-    homeDescription: '미국 정부가 공개한 334개 UFO/UAP 기록, 영상, 이미지, PDF 문서를 네 차례 공식 공개, 기관, 날짜, 위치, 관련 기록, 공식 출처 링크별로 검색합니다.'
+    homeDescription: '미국 정부가 공개한 375개 UFO/UAP 기록, 영상, 이미지, PDF 문서를 다섯 차례 공식 공개, 기관, 날짜, 위치, 관련 기록, 공식 출처 링크별로 검색합니다.'
   },
   'zh-Hans': {
     release04Title: '第四批 UAP 公开档案',
@@ -430,7 +430,7 @@ const seoText = {
     browseImages: '图片档案',
     mediaDetails: '媒体信息',
     mediaDetailsIntro: '本页为搜索和查阅整理档案类型、发布机构、公开批次、事件日期、事件地点、官方来源以及可用的公开媒体。',
-    homeDescription: 'UAP 档案库是一个检索美国政府 UFO/UAP 公开档案的 UAP 网站，收录 334 条 UAP 档案，包括视频、图片、PDF 原始文件、公开批次、事件日期、地点、机构、相关记录和官方来源链接。'
+    homeDescription: 'UAP 档案库是一个检索美国政府 UFO/UAP 公开档案的 UAP 网站，收录 375 条 UAP 档案，包括视频、图片、PDF 原始文件、公开批次、事件日期、地点、机构、相关记录和官方来源链接。'
   },
   'zh-Hant': {
     release04Title: '第四批 UAP 公開檔案',
@@ -447,7 +447,7 @@ const seoText = {
     browseImages: '圖片檔案',
     mediaDetails: '媒體資訊',
     mediaDetailsIntro: '本頁為搜尋和查閱整理檔案類型、發布機構、公開批次、事件日期、事件地點、官方來源以及可用的公開媒體。',
-    homeDescription: 'UAP 檔案庫是一個檢索美國政府 UFO/UAP 公開檔案的 UAP 網站，收錄 334 筆 UAP 檔案，包括影片、圖片、PDF 原始文件、公開批次、事件日期、地點、機構、相關記錄和官方來源連結。'
+    homeDescription: 'UAP 檔案庫是一個檢索美國政府 UFO/UAP 公開檔案的 UAP 網站，收錄 375 筆 UAP 檔案，包括影片、圖片、PDF 原始文件、公開批次、事件日期、地點、機構、相關記錄和官方來源連結。'
   }
 };
 
@@ -530,7 +530,13 @@ function normalize(row, index, translations) {
     '06/12/2026': 'RELEASE 03',
     '7/10/26': 'RELEASE 04',
     '7/10/2026': 'RELEASE 04',
-    '07/10/2026': 'RELEASE 04'
+    '07/10/2026': 'RELEASE 04',
+    '8/7/26': 'RELEASE 05',
+    '8/7/2026': 'RELEASE 05',
+    '08/07/2026': 'RELEASE 05',
+    '8/8/26': 'RELEASE 05',
+    '8/8/2026': 'RELEASE 05',
+    '08/08/2026': 'RELEASE 05'
   };
   const officialType = field(row, ['type']).trim().toUpperCase();
   const assetLink = absolute(field(row, ['pdf | image link', 'pdf image link']));
@@ -681,7 +687,7 @@ const text = {
     archive: '档案库',
     notice: '本站为非官方公开镜像与研究索引。官方记录文字和媒体均来自美国政府公开发布资料，中文内容仅作翻译与信息整理。',
     summary: '结构化摘要',
-    official: '美国官网原始说明',
+    official: '美国官网说明译文',
     records: '条记录',
     agency: '发布机构',
     release: '公布批次',
@@ -711,7 +717,7 @@ const text = {
     archive: '檔案庫',
     notice: '本站為非官方公開鏡像與研究索引。官方記錄文字和媒體均來自美國政府公開發布資料，中文內容僅作翻譯與資訊整理。',
     summary: '結構化摘要',
-    official: '美國官網原始說明',
+    official: '美國官網說明譯文',
     records: '條記錄',
     agency: '發布機構',
     release: '公佈批次',
@@ -1003,11 +1009,22 @@ const legalPages = {
 };
 
 const agencyNames = {
+  en: {
+    'Department of War': 'Department of War',
+    'Department of State': 'Department of State',
+    'Department of Energy': 'Department of Energy',
+    'Central Intelligence Agency': 'Central Intelligence Agency',
+    'Executive Office of the President': 'Executive Office of the President',
+    'Office of the Director of National Intelligence': 'Office of the Director of National Intelligence',
+    'Intelligence Community Agency': 'Intelligence Community Agency',
+    'U.S. Government': 'U.S. Government'
+  },
   ja: {
     'Department of War': '戦争省',
     'Department of State': '国務省',
     'Department of Energy': 'エネルギー省',
     'Central Intelligence Agency': '中央情報局',
+    'Executive Office of the President': '大統領府',
     'Office of the Director of National Intelligence': '国家情報長官室',
     'Intelligence Community Agency': '情報コミュニティ機関',
     'U.S. Government': '米国政府'
@@ -1017,9 +1034,90 @@ const agencyNames = {
     'Department of State': 'Departamento de Estado',
     'Department of Energy': 'Departamento de Energía',
     'Central Intelligence Agency': 'Agencia Central de Inteligencia',
+    'Executive Office of the President': 'Oficina Ejecutiva del Presidente',
     'Office of the Director of National Intelligence': 'Oficina del Director de Inteligencia Nacional',
     'Intelligence Community Agency': 'Agencia de la Comunidad de Inteligencia',
     'U.S. Government': 'Gobierno de Estados Unidos'
+  },
+  pt: {
+    'Department of War': 'Departamento de Guerra',
+    'Department of State': 'Departamento de Estado',
+    'Department of Energy': 'Departamento de Energia',
+    'Central Intelligence Agency': 'Agência Central de Inteligência',
+    'Executive Office of the President': 'Gabinete Executivo do Presidente',
+    'Office of the Director of National Intelligence': 'Gabinete do Diretor de Inteligência Nacional',
+    'Intelligence Community Agency': 'Agência da Comunidade de Inteligência',
+    'U.S. Government': 'Governo dos EUA'
+  },
+  ru: {
+    'Department of War': 'Военное министерство',
+    'Department of State': 'Государственный департамент',
+    'Department of Energy': 'Министерство энергетики',
+    'Central Intelligence Agency': 'Центральное разведывательное управление',
+    'Executive Office of the President': 'Исполнительное управление президента',
+    'Office of the Director of National Intelligence': 'Офис директора национальной разведки',
+    'Intelligence Community Agency': 'Ведомство разведывательного сообщества',
+    'U.S. Government': 'Правительство США'
+  },
+  fr: {
+    'Department of War': 'Département de la Guerre',
+    'Department of State': 'Département d’État',
+    'Department of Energy': 'Département de l’Énergie',
+    'Central Intelligence Agency': 'Agence centrale de renseignement',
+    'Executive Office of the President': 'Bureau exécutif du président',
+    'Office of the Director of National Intelligence': 'Bureau du directeur du renseignement national',
+    'Intelligence Community Agency': 'Agence de la communauté du renseignement',
+    'U.S. Government': 'Gouvernement des États-Unis'
+  },
+  de: {
+    'Department of War': 'Kriegsministerium',
+    'Department of State': 'Außenministerium',
+    'Department of Energy': 'Energieministerium',
+    'Central Intelligence Agency': 'Central Intelligence Agency',
+    'Executive Office of the President': 'Exekutivbüro des Präsidenten',
+    'Office of the Director of National Intelligence': 'Büro des Direktors der nationalen Nachrichtendienste',
+    'Intelligence Community Agency': 'Behörde der Nachrichtendienstgemeinschaft',
+    'U.S. Government': 'US-Regierung'
+  },
+  ko: {
+    'Department of War': '전쟁부',
+    'Department of State': '국무부',
+    'Department of Energy': '에너지부',
+    'Central Intelligence Agency': '중앙정보국',
+    'Executive Office of the President': '대통령실',
+    'Office of the Director of National Intelligence': '국가정보국장실',
+    'Intelligence Community Agency': '정보공동체 기관',
+    'U.S. Government': '미국 정부'
+  },
+  ar: {
+    'Department of War': 'وزارة الحرب',
+    'Department of State': 'وزارة الخارجية',
+    'Department of Energy': 'وزارة الطاقة',
+    'Central Intelligence Agency': 'وكالة الاستخبارات المركزية',
+    'Executive Office of the President': 'المكتب التنفيذي للرئيس',
+    'Office of the Director of National Intelligence': 'مكتب مدير الاستخبارات الوطنية',
+    'Intelligence Community Agency': 'وكالة مجتمع الاستخبارات',
+    'U.S. Government': 'الحكومة الأمريكية'
+  },
+  'zh-Hans': {
+    'Department of War': '战争部',
+    'Department of State': '国务院',
+    'Department of Energy': '能源部',
+    'Central Intelligence Agency': '中央情报局',
+    'Executive Office of the President': '总统办公室',
+    'Office of the Director of National Intelligence': '国家情报总监办公室',
+    'Intelligence Community Agency': '情报界机构',
+    'U.S. Government': '美国政府'
+  },
+  'zh-Hant': {
+    'Department of War': '戰爭部',
+    'Department of State': '國務院',
+    'Department of Energy': '能源部',
+    'Central Intelligence Agency': '中央情報局',
+    'Executive Office of the President': '總統辦公室',
+    'Office of the Director of National Intelligence': '國家情報總監辦公室',
+    'Intelligence Community Agency': '情報界機構',
+    'U.S. Government': '美國政府'
   }
 };
 
@@ -1041,30 +1139,7 @@ function langDescription(doc, lang) {
 }
 
 function agencyLabel(value, lang) {
-  if (lang === 'ja' || lang === 'es') return agencyNames[lang][value] || value;
-  if (lang === 'zh-Hans') {
-    return ({
-      'Department of War': '战争部',
-      'Department of State': '国务院',
-      'Department of Energy': '能源部',
-      'Central Intelligence Agency': '中央情报局',
-      'Office of the Director of National Intelligence': '国家情报总监办公室',
-      'Intelligence Community Agency': '情报界机构',
-      'U.S. Government': '美国政府'
-    })[value] || value;
-  }
-  if (lang === 'zh-Hant') {
-    return ({
-      'Department of War': '戰爭部',
-      'Department of State': '國務院',
-      'Department of Energy': '能源部',
-      'Central Intelligence Agency': '中央情報局',
-      'Office of the Director of National Intelligence': '國家情報總監辦公室',
-      'Intelligence Community Agency': '情報界機構',
-      'U.S. Government': '美國政府'
-    })[value] || value;
-  }
-  return value;
+  return agencyNames[lang]?.[value] || agencyNames.en[value] || value;
 }
 
 function releaseLabel(value, lang) {
@@ -1533,7 +1608,7 @@ function releaseTopicMeta(lang, n, count) {
     return {title: s.release04Title, intro: s.release04Intro, nav: s.browseRelease04};
   }
   const num = Number(n);
-  const zhNum = {1: '一', 2: '二', 3: '三', 4: '四'}[num] || String(num);
+  const zhNum = {1: '一', 2: '二', 3: '三', 4: '四', 5: '五'}[num] || String(num);
   const title = {
     en: `Release ${n} UAP Records`,
     es: `Registros UAP de la publicación ${n}`,
@@ -1578,7 +1653,8 @@ function releaseTopicMeta(lang, n, count) {
 
 function topicConfigs(lang, allDocs = []) {
   const s = seoText[lang] || seoText.en;
-  const releaseTopics = ['01', '02', '03', '04'].map(n => {
+  const releaseIds = [...new Set(allDocs.map(doc => releaseNumber(doc)).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+  const releaseTopics = releaseIds.map(n => {
     const count = allDocs.filter(doc => releaseNumber(doc) === n).length;
     const meta = releaseTopicMeta(lang, n, count);
     return {key: `release-${n}`, path: `/${lang}/release/${n}/`, file: `${lang}/release/${n}/index.html`, depth: 3, title: meta.title, intro: meta.intro, nav: meta.nav, filter: doc => releaseNumber(doc) === n};
@@ -1755,15 +1831,15 @@ function buildInteractiveHome(lang, template) {
     .replace(/src="\.\/assets\//g, 'src="../assets/')
     .replace(/assets\/style\.css\?v=[^"]+/g, `assets/style.css?v=${assetVersion}`)
     .replace(/assets\/site\.js\?v=[^"]+/g, `assets/site.js?v=${assetVersion}`)
-    .replace(/最近批次：2026\.06\.12/g, '最近批次：2026.07.10')
-    .replace(/latest release: 2026\.06\.12/g, 'latest release: 2026.07.10')
-    .replace(/最新公開: 2026\.06\.12/g, '最新公開: 2026.07.10')
-    .replace(/última publicación: 2026\.06\.12/g, 'última publicación: 2026.07.10')
-    .replace(/收录三个公开批次/g, '收录四个公开批次')
-    .replace(/收錄三個公開批次/g, '收錄四個公開批次')
-    .replace(/Includes three public releases/g, 'Includes four public releases')
-    .replace(/3回分の公開資料を収録/g, '4回分の公開資料を収録')
-    .replace(/Incluye tres publicaciones públicas/g, 'Incluye cuatro publicaciones públicas')
+    .replace(/最近批次：2026\.(?:06\.12|07\.10)/g, '最近批次：2026.08.07')
+    .replace(/latest release: 2026\.(?:06\.12|07\.10)/g, 'latest release: 2026.08.07')
+    .replace(/最新公開: 2026\.(?:06\.12|07\.10)/g, '最新公開: 2026.08.07')
+    .replace(/última publicación: 2026\.(?:06\.12|07\.10)/g, 'última publicación: 2026.08.07')
+    .replace(/收录[三四]个公开批次/g, '收录五个公开批次')
+    .replace(/收錄[三四]個公開批次/g, '收錄五個公開批次')
+    .replace(/Includes (?:three|four) public releases/g, 'Includes five public releases')
+    .replace(/[34]回分の公開資料を収録/g, '5回分の公開資料を収録')
+    .replace(/Incluye (?:tres|cuatro) publicaciones públicas/g, 'Incluye cinco publicaciones públicas')
     .replace(/\s*<script src="\.\.\/assets\/release-04-r2-documents\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)

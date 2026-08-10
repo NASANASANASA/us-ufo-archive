@@ -3,7 +3,7 @@ const UAP_ASSET_BASE = new URL('.', document.currentScript.src).href;
 const UAP_LOCAL_CSV = `${UAP_ASSET_BASE}uap-data.csv`;
 const UAP_MEDIA_BASE = "https://media.uap-archives.org/";
 const UAP_MEDIA_VERSION = "20260715-r2fix1";
-const UAP_OFFICIAL_CSV = "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=4";
+const UAP_OFFICIAL_CSV = "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?ver=le5dvAyKZ5LnITy-DmKoPA%3d%3d";
 const UAP_SOURCE_URL = "https://www.war.gov/UFO/";
 const DVIDS_API_KEY = "key-68bb60d16b35e";
 let UAP_DOCS = [];
