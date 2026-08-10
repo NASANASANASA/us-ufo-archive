@@ -8,6 +8,14 @@ const uploadDir = process.env.R2_UPLOAD_DIR || '/private/tmp/uap-r2/upload';
 const bucket = process.env.R2_BUCKET || 'uap-archives-media';
 
 const dryRun = process.argv.includes('--dry-run');
+const contentTypeByExt = {
+  pdf: 'application/pdf',
+  jpg: 'image/jpeg',
+  jpeg: 'image/jpeg',
+  png: 'image/png',
+  webp: 'image/webp',
+  mp4: 'video/mp4'
+};
 
 const rows = fs.readFileSync(manifestPath, 'utf8').trim().split(/\r?\n/).slice(1)
   .map(line => {
@@ -42,8 +50,15 @@ if (dryRun || missing.length) {
 
 for (const row of present) {
   const dest = `${bucket}/${row.r2Key}`;
+  const ext = path.extname(row.r2Key).replace('.', '').toLowerCase();
+  const contentType = contentTypeByExt[ext];
+  const shouldAttach = row.r2Key.includes('/documents/') || row.type === 'IMG';
+  const filename = path.basename(row.r2Key);
+  const args = ['wrangler', 'r2', 'object', 'put', dest, '--file', row.source, '--remote'];
+  if (contentType) args.push('--content-type', contentType);
+  if (shouldAttach) args.push('--content-disposition', `attachment; filename="${filename}"`);
   console.log(`Uploading ${row.source} -> ${dest}`);
-  const result = spawnSync('npx', ['wrangler', 'r2', 'object', 'put', dest, '--file', row.source, '--remote'], {
+  const result = spawnSync('npx', args, {
     stdio: 'inherit'
   });
   if (result.status !== 0) process.exit(result.status || 1);

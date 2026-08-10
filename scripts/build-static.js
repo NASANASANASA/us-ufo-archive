@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260726-ad-layout1';
+const assetVersion = '20260810-r5-media1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -41,17 +41,27 @@ const r2VideoAsset = value => {
   const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)\.jpg$/i);
   return m ? `${mediaBase}release-04/videos/${m[1]}.mp4?v=${encodeURIComponent(mediaVersion)}` : '';
 };
-const r2Documents = (() => {
+function readR2Manifest(file) {
   try {
-    const rows = read('assets/release-04-r2-document-manifest.tsv').trim().split(/\r?\n/).slice(1);
-    return Object.fromEntries(rows.map(line => {
-      const [type, title, r2Key] = line.split('\t');
-      return [assetCode(title), {type, url: `${mediaBase}${r2Key}?v=${encodeURIComponent(mediaVersion)}`}];
-    }).filter(([code, item]) => code && item.url));
+    return read(file).trim().split(/\r?\n/).slice(1)
+      .map(line => {
+        const [type, title, r2Key] = line.split('\t');
+        return {type, title, r2Key};
+      })
+      .filter(row => row.title && row.r2Key);
   } catch (error) {
-    return {};
+    return [];
   }
-})();
+}
+const r2Url = r2Key => `${mediaBase}${r2Key}?v=${encodeURIComponent(mediaVersion)}`;
+const r2Documents = Object.fromEntries([
+  ...readR2Manifest('assets/release-04-r2-document-manifest.tsv'),
+  ...readR2Manifest('assets/release-05-r2-document-manifest.tsv')
+].map(row => [assetCode(row.title), {type: row.type, url: r2Url(row.r2Key)}]));
+const r2Media = Object.fromEntries([
+  ...readR2Manifest('assets/release-04-r2-manifest.tsv'),
+  ...readR2Manifest('assets/release-05-r2-media-manifest.tsv')
+].map(row => [assetCode(row.title), {type: row.type, url: r2Url(row.r2Key)}]));
 const dvidsMp4 = (() => {
   try {
     const source = read('assets/dvids-map.js');
@@ -94,6 +104,14 @@ const releaseDownloadBundles = [
     documentsSize: '227MB',
     videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/release_04/uap_release04_videos_071026.zip',
     videosSize: '1.4GB'
+  },
+  {
+    release: '05',
+    date: '2026-08-07',
+    documentsUrl: 'https://www.war.gov/medialink/ufo/release_05/Aug_07/release_05_documents.zip',
+    documentsSize: '130MB',
+    videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/release_05/uap_release05_videos_080726.zip',
+    videosSize: '513MB'
   }
 ];
 
@@ -562,6 +580,7 @@ function normalize(row, index, translations) {
   ].filter(Boolean).join('|');
   const recordId = field(row, ['asset file name', 'title', 'assetFileName']);
   const r2Document = r2Documents[assetCode(recordId)] || null;
+  const r2Image = r2Media[assetCode(recordId)] || null;
   const ext = (doc.split('?')[0].match(/\.([a-z0-9]+)$/i)?.[1] || r2Document?.type || officialType || 'PDF').replace('.', '').toUpperCase();
   return {
     index,
@@ -577,6 +596,7 @@ function normalize(row, index, translations) {
     sourceUrl: doc || dvidsPage || (officialType === 'IMG' ? assetLink : '') || imageUrl || videoUrl || found[0] || 'https://www.war.gov/UFO/',
     documentUrl: doc,
     r2DocumentUrl: r2Document?.url || '',
+    r2ImageUrl: r2Image?.url || '',
     videoUrl,
     imageUrl,
     videoPairing: field(row, ['video pairing']),
@@ -1304,7 +1324,7 @@ function collectionSchema(lang, title, description, canonicalPath, docs = []) {
 
 function mediaUrls(doc) {
   const image = urls(doc.imageUrl)[0] || '';
-  const r2Image = image ? r2Asset(image) : '';
+  const r2Image = doc.r2ImageUrl || (image ? r2Asset(image) : '');
   const video = urls(doc.videoUrl || '')[0] || '';
   const download = currentRecordDownloadUrl(doc, {image, r2Image, localImage: image ? mirroredAsset(image) : '', video});
   return {image, r2Image, video, download};
@@ -1562,6 +1582,7 @@ ${schemaHtml}
   ${body}
   ${footerHtml(prefix, lang)}
   <script src="${prefix}assets/release-04-r2-documents.js?v=${assetVersion}"></script>
+  <script src="${prefix}assets/release-r2-media.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/site.js?v=${assetVersion}"></script>
 </body>
 </html>
@@ -1841,7 +1862,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/[34]回分の公開資料を収録/g, '5回分の公開資料を収録')
     .replace(/Incluye (?:tres|cuatro) publicaciones públicas/g, 'Incluye cinco publicaciones públicas')
     .replace(/\s*<script src="\.\.\/assets\/release-04-r2-documents\.js\?v=[^"]+"><\/script>/g, '')
-    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
+    .replace(/\s*<script src="\.\.\/assets\/release-r2-media\.js\?v=[^"]+"><\/script>/g, '')
+    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/(<a href="#releases" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
     .replace(/(<a href="#releases" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
@@ -1863,9 +1885,9 @@ function buildRecordPage(doc, lang, docs) {
   const languageDescription = langDescription(doc, lang);
   const descriptionBlocks = [
     lang !== 'en' && languageDescription
-      ? `<h2>${esc(l.official)}</h2>${paragraphs(languageDescription, lang)}`
+      ? `<h2>${esc(l.official)}</h2>${paragraphs(languageDescription, lang, doc.redaction)}`
       : '',
-    lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription, lang)}` : ''
+    lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription, lang, doc.redaction)}` : ''
   ].filter(Boolean).join('\n        ');
   const mediaPreview = staticMediaPreview(doc, lang, title, docs);
   const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
@@ -1951,7 +1973,7 @@ function currentRecordDownloadName(doc, url) {
 
 function staticMediaPreview(doc, lang, title, docs) {
   const image = urls(doc.imageUrl)[0] || '';
-  const r2Image = image ? r2Asset(image) : '';
+  const r2Image = doc.r2ImageUrl || (image ? r2Asset(image) : '');
   const localImage = image ? mirroredAsset(image) : '';
   const video = urls(doc.videoUrl || '')[0] || '';
   const blocked = {
@@ -1965,7 +1987,7 @@ function staticMediaPreview(doc, lang, title, docs) {
   const officialUrl = staticOfficialRecordPage(doc);
   const downloadUrl = currentRecordDownloadUrl(doc, {image, r2Image, localImage, video});
   const downloadName = downloadUrl ? currentRecordDownloadName(doc, downloadUrl) : '';
-  const downloadCurrent = downloadUrl ? `<a class="static-media-button" href="${esc(downloadUrl)}" data-download-url="${esc(downloadUrl)}" data-download-filename="${esc(downloadName)}" rel="noopener">${esc(text[lang].downloadCurrent)}</a>` : '';
+  const downloadCurrent = downloadUrl ? `<a class="static-media-button" href="${esc(downloadUrl)}" download="${esc(downloadName)}" data-download-url="${esc(downloadUrl)}" data-download-filename="${esc(downloadName)}" rel="noopener">${esc(text[lang].downloadCurrent)}</a>` : '';
   const openOfficial = `<a class="static-media-button" href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(text[lang].source)} ↗</a>`;
   const relatedLinks = relatedRecords(doc, docs)
     .map(related => `<a class="static-related-link" href="../${esc(related.slug)}/"><span>.${esc(related.type)}</span>${esc(langTitle(related, lang))}</a>`)
@@ -1978,7 +2000,7 @@ function staticMediaPreview(doc, lang, title, docs) {
   if (video) {
     preview = `<video class="static-video-preview" controls playsinline${r2Image ? ` poster="${esc(r2Image)}"` : ''}><source src="${esc(video)}"></video>`;
   } else if (image) {
-    const fallbackSrcs = [relativePath(localImage, 3), image].join('|');
+    const fallbackSrcs = [relativePath(localImage, 3), image].filter(Boolean).join('|');
     preview = `<img src="${esc(r2Image)}" data-fallback-srcs="${esc(fallbackSrcs)}" alt="${esc(doc.i18n?.[lang]?.altZh || title)}" onerror="const q=(this.dataset.fallbackSrcs||'').split('|').filter(Boolean);if(q.length){this.src=q.shift();this.dataset.fallbackSrcs=q.join('|')}else{this.parentNode.classList.add('broken')}">${fallback}`;
   } else {
     preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
@@ -2001,8 +2023,9 @@ function normalizeDescriptionBreaks(value) {
     .replace(/\n{3,}/g, '\n\n');
 }
 
-function paragraphs(value, lang = 'en') {
+function paragraphs(value, lang = 'en', redactionFlag = false) {
   const parts = normalizeDescriptionBreaks(value).split(/\n{2,}/).map(clean).filter(Boolean);
+  if (redactionFlag && !parts.some(isRedactionParagraph)) parts.push(text.en.redactionNotice);
   return parts.map(p => {
     const redaction = isRedactionParagraph(p);
     const rendered = redaction ? redactionTemplate(lang) : p;
