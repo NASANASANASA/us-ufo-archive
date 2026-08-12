@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260812-showcase-title1';
+const assetVersion = '20260812-archive-title1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -1856,6 +1856,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/(<div class="showcase-heading">[\s\S]*?<\/div>\s*)<div class="showcase-side">/, `$1<div class="showcase-frame">\n        <div class="showcase-side">`)
     .replace(/<div class="showcase-main">\s*<div class="showcase-topline">/, `<div class="showcase-main">\n        <div class="showcase-topline">`)
     .replace(/(<div class="showcase-dots"[^>]*><\/div>\s*<\/div>)\s*(?=<\/section>)/, `$1\n      </div>\n    `)
+    .replace(/(<h2 data-i18n="section_title">)[\s\S]*?(<\/h2>)/, `$1${esc(text[lang].archive)}$2`)
     .replace(/href="#archive"/g, 'href="#releases"')
     .replace(/href="#about" data-i18n="nav_about"/g, 'href="./about/" data-i18n="nav_about"')
     .replace(/href="#about" onclick="closeMobile\(\)" data-i18n="nav_about"/g, 'href="./about/" onclick="closeMobile()" data-i18n="nav_about"')
