@@ -134,7 +134,7 @@ document.addEventListener('click',e=>{const link=e.target.closest('a[data-downlo
   function recordPageUrl(d){return`${uapBasePath()}${UAP_LANG_DIRS[lang]||'zh-Hant'}/records/${slug(d.id)}/`}
   function languageHomeUrl(){return`${uapBasePath()}${UAP_LANG_DIRS[lang]||'zh-Hant'}/`}
   let showcaseIndex=0;
-  const showcaseIntro=()=>({cn:'美国政府公开档案重点浏览',tw:'美國政府公開檔案重點瀏覽',ja:'米国政府公開記録の注目項目',es:'Archivo destacado de la publicación pública de EE. UU.',pt:'Destaque dos arquivos públicos dos EUA',ru:'Избранные записи открытого архива США',fr:'Archives publiques américaines mises en avant',de:'Hervorgehobene Einträge der US-Veröffentlichung',ko:'미국 정부 공개 기록 주요 항목',ar:'سجلات بارزة من الأرشيف الأمريكي العام',en:'Featured U.S. Public Release Records'}[lang]||'Featured U.S. Public Release Records');
+  const showcaseIntro=()=>({cn:'重点档案浏览',tw:'重點檔案瀏覽',ja:'注目記録の閲覧',es:'Explorar archivos destacados',pt:'Explorar arquivos em destaque',ru:'Просмотр избранных записей',fr:'Parcourir les archives en vedette',de:'Ausgewählte Akten ansehen',ko:'주요 기록 둘러보기',ar:'تصفح السجلات البارزة',en:'Browse Featured Records'}[lang]||'Browse Featured Records');
   const showcaseAnnouncement=()=>({cn:'发布公告',tw:'發布公告',ja:'公開告知',es:'Anuncio',pt:'Anuncio',ru:'Анонс',fr:'Annonce',de:'Ankündigung',ko:'공개 안내',ar:'إعلان',en:'Announcement'}[lang]||'Announcement');
   const showcaseRank=d=>Number((clean(d.release).match(/(\d{2})$/)||[])[1]||0);
   const showcaseDateCode=v=>{const m=clean(v).match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);return m?`${m[1].padStart(2,'0')} ${m[2].padStart(2,'0')} ${m[3].slice(-2)}`:formatDate(v)};

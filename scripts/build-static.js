@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260812-showcase-frame1';
+const assetVersion = '20260812-showcase-title1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -1828,18 +1828,18 @@ function linkifyText(value) {
 
 function showcaseTitleLabel(lang) {
   return ({
-    en: 'Featured U.S. Public Release Records',
-    ja: '米国政府公開記録の注目項目',
-    es: 'Archivo destacado de la publicación pública de EE. UU.',
-    'zh-Hans': '美国政府公开档案重点浏览',
-    'zh-Hant': '美國政府公開檔案重點瀏覽',
-    pt: 'Destaque dos arquivos públicos dos EUA',
-    ru: 'Избранные записи открытого архива США',
-    fr: 'Archives publiques américaines mises en avant',
-    de: 'Hervorgehobene Einträge der US-Veröffentlichung',
-    ko: '미국 정부 공개 기록 주요 항목',
-    ar: 'سجلات بارزة من الأرشيف الأمريكي العام'
-  })[lang] || 'Featured U.S. Public Release Records';
+    en: 'Browse Featured Records',
+    ja: '注目記録の閲覧',
+    es: 'Explorar archivos destacados',
+    'zh-Hans': '重点档案浏览',
+    'zh-Hant': '重點檔案瀏覽',
+    pt: 'Explorar arquivos em destaque',
+    ru: 'Просмотр избранных записей',
+    fr: 'Parcourir les archives en vedette',
+    de: 'Ausgewählte Akten ansehen',
+    ko: '주요 기록 둘러보기',
+    ar: 'تصفح السجلات البارزة'
+  })[lang] || 'Browse Featured Records';
 }
 
 function buildInteractiveHome(lang, template) {
