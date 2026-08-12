@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260810-r5-media1';
+const assetVersion = '20260812-r5-downloadfix1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -108,9 +108,9 @@ const releaseDownloadBundles = [
   {
     release: '05',
     date: '2026-08-07',
-    documentsUrl: 'https://www.war.gov/medialink/ufo/release_05/Aug_07/release_05_documents.zip',
+    documentsUrl: 'https://www.war.gov/medialink/ufo/release_05/Aug_07/release_05_Aug_07_documents.zip',
     documentsSize: '130MB',
-    videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/release_05/uap_release05_videos_080726.zip',
+    videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/release_05/uap_videos_080726.zip',
     videosSize: '513MB'
   }
 ];
