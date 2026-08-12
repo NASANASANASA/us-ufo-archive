@@ -199,4 +199,4 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 .showcase-card{width:min(700px,58vw)}
 @media(max-width:1400px){.showcase-card{width:min(620px,53vw)}}
 @media(max-width:1000px){.release-showcase{min-height:0}.showcase-stage{height:430px;padding:0 52px}.showcase-card{width:calc(100% - 4px)}}
-@media(max-width:650px){.showcase-stage{height:340px;padding:0 66px}.showcase-card{width:100%}.showcase-arrow{width:42px;height:42px}.showcase-prev{left:10px}.showcase-next{right:10px}}
+@media(max-width:650px){.showcase-stage{height:340px;padding:0 2px;touch-action:pan-y}.showcase-card{width:100%}.showcase-arrow{display:none}}
