@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260812-showcase-tabs1';
+const assetVersion = '20260812-view-mode1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -1546,6 +1546,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>try{if(localStorage.getItem('uap-view-mode')==='desktop')document.querySelector('meta[name="viewport"]').setAttribute('content','width=1280, initial-scale=1.0')}catch(e){}</script>
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${canonical}">
@@ -1568,6 +1569,7 @@ ${schemaHtml}
       <a href="${downloadsHref}">${esc(downloadsLabel(lang))}</a>
       <a href="${aboutHref}">${esc(navAboutLabel(lang))}</a>
       <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener">${esc(navSourceLabel(lang))}</a>
+      <button class="view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>
       ${langMenu}
     </nav>
     <button class="menu-button" aria-label="Open menu" onclick="toggleMobile()">☰</button>
@@ -1577,6 +1579,7 @@ ${schemaHtml}
     <a href="${downloadsHref}" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>
     <a href="${aboutHref}" onclick="closeMobile()">${esc(navAboutLabel(lang))}</a>
     <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" onclick="closeMobile()">${esc(navSourceLabel(lang))}</a>
+    <button class="view-mode-toggle mobile-view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>
     ${langMenu}
   </div>
   ${body}
@@ -1828,6 +1831,8 @@ function buildInteractiveHome(lang, template) {
     .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
     .replace(/href="\.\.\/"/g, 'href="../"');
   return template
+    .replace(/<meta name="viewport" content="width=device-width, initial-scale=1.0">\s*(?:<script>try\{if\(localStorage\.getItem\('uap-view-mode'\)==='desktop'\)document\.querySelector\('meta\[name="viewport"\]'\)\.setAttribute\('content','width=1280, initial-scale=1\.0'\)\}catch\(e\)\{\}<\/script>\s*)?/, `<meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <script>try{if(localStorage.getItem('uap-view-mode')==='desktop')document.querySelector('meta[name="viewport"]').setAttribute('content','width=1280, initial-scale=1.0')}catch(e){}</script>\n  `)
+    .replace(/\s*<button class="view-mode-toggle[^>]*data-view-mode-toggle[\s\S]*?<\/button>/g, '')
     .replace(/href="#archive"/g, 'href="#releases"')
     .replace(/href="#about" data-i18n="nav_about"/g, 'href="./about/" data-i18n="nav_about"')
     .replace(/href="#about" onclick="closeMobile\(\)" data-i18n="nav_about"/g, 'href="./about/" onclick="closeMobile()" data-i18n="nav_about"')
@@ -1867,6 +1872,8 @@ function buildInteractiveHome(lang, template) {
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/(<a href="#releases" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
     .replace(/(<a href="#releases" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
+    .replace(/(<a class="source-link" href="https:\/\/www\.war\.gov\/UFO\/" target="_blank" rel="noopener" data-i18n="nav_source">[\s\S]*?<\/a>)/, `$1\n      <button class="view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>`)
+    .replace(/(<a href="\.\/about\/" onclick="closeMobile\(\)" data-i18n="nav_about">[\s\S]*?<\/a>)/, `$1\n    <button class="view-mode-toggle mobile-view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>`)
     .replace(/href="\.\/en\/"/g, 'href="../en/"')
     .replace(/href="\.\/ja\/"/g, 'href="../ja/"')
     .replace(/href="\.\/es\/"/g, 'href="../es/"')
