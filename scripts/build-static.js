@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260812-archive-title1';
+const assetVersion = '20260915-youtube1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -534,6 +534,20 @@ function absolute(value) {
   return value;
 }
 
+function youtubeId(value) {
+  value = clean(value);
+  if (!value) return '';
+  const direct = value.match(/^[A-Za-z0-9_-]{11}$/);
+  if (direct) return direct[0];
+  const match = value.match(/(?:youtube\.com\/(?:watch\?[^#]*v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/i);
+  return match ? match[1] : '';
+}
+
+function youtubeEmbedUrl(value) {
+  const id = youtubeId(value);
+  return id ? `https://www.youtube-nocookie.com/embed/${id}` : '';
+}
+
 function normalize(row, index, translations) {
   const releaseDate = field(row, ['release date', 'releaseDate']);
   const releaseMap = {
@@ -571,6 +585,11 @@ function normalize(row, index, translations) {
   const imageRaw = (officialType === 'IMG' ? assetLink : '') || field(row, ['modal image', 'image url', 'imageUrl', 'image link', 'thumbnail url', 'poster url', 'image', 'thumbnail', 'poster']);
   const imageUrl = imageRaw ? urls(imageRaw).map(absolute).join('|') : pick(/\.(jpg|jpeg|png|gif|webp)$/i).join('|');
   const videoRaw = field(row, ['video url', 'videoUrl', 'video link', 'media url', 'video', 'media']);
+  const youtubeRaw = field(row, ['youtube url', 'youtubeUrl', 'youtube link', 'youtube video', 'youtube id', 'youtubeId', 'youtube']) ||
+    youtubeId(videoRaw) ||
+    found.find(youtubeId) ||
+    '';
+  const youtubeUrl = youtubeEmbedUrl(youtubeRaw);
   const derivedVideo = (officialType === 'VID' || officialType === 'AUD') && imageUrl ? r2VideoAsset(urls(imageUrl)[0]) : '';
   const dvidsVideo = dvidsId && dvidsMp4[dvidsId] ? dvidsMp4[dvidsId] : '';
   const videoUrl = [
@@ -593,11 +612,12 @@ function normalize(row, index, translations) {
     incidentLocation: (field(row, ['incident location', 'incidentLocation']) || 'N/A').replace(/\bWesten United States\b/g, 'Western United States'),
     type: officialType || (dvidsId ? 'VID' : (imageUrl && !doc ? 'IMG' : ext)),
     description: field(row, ['description blurb', 'description', 'video description', 'record description', 'caption']),
-    sourceUrl: doc || dvidsPage || (officialType === 'IMG' ? assetLink : '') || imageUrl || videoUrl || found[0] || 'https://www.war.gov/UFO/',
+    sourceUrl: doc || dvidsPage || (officialType === 'IMG' ? assetLink : '') || imageUrl || videoUrl || youtubeUrl || found[0] || 'https://www.war.gov/UFO/',
     documentUrl: doc,
     r2DocumentUrl: r2Document?.url || '',
     r2ImageUrl: r2Image?.url || '',
     videoUrl,
+    youtubeUrl,
     imageUrl,
     videoPairing: field(row, ['video pairing']),
     pdfPairing: field(row, ['pdf pairing']),
@@ -1326,8 +1346,9 @@ function mediaUrls(doc) {
   const image = urls(doc.imageUrl)[0] || '';
   const r2Image = doc.r2ImageUrl || (image ? r2Asset(image) : '');
   const video = urls(doc.videoUrl || '')[0] || '';
+  const youtube = doc.youtubeUrl || '';
   const download = currentRecordDownloadUrl(doc, {image, r2Image, localImage: image ? mirroredAsset(image) : '', video});
-  return {image, r2Image, video, download};
+  return {image, r2Image, video, youtube, download};
 }
 
 function recordSchemas(doc, lang, title, description, canonicalPath) {
@@ -1348,7 +1369,7 @@ function recordSchemas(doc, lang, title, description, canonicalPath) {
     {name: text[lang].home, path: `/${lang}/`},
     {name: title, path: canonicalPath}
   ])];
-  if (m.video) {
+  if (m.video || m.youtube) {
     const videoSchema = {
       '@context': 'https://schema.org',
       '@type': 'VideoObject',
@@ -1356,8 +1377,8 @@ function recordSchemas(doc, lang, title, description, canonicalPath) {
       description,
       inLanguage: text[lang].lang,
       uploadDate: isoDate(doc.releaseDate) || '2026-01-01',
-      contentUrl: m.video,
-      embedUrl: absoluteSitePath(canonicalPath),
+      contentUrl: m.video || undefined,
+      embedUrl: m.youtube || absoluteSitePath(canonicalPath),
       thumbnailUrl: m.r2Image || m.image || undefined,
       publisher: {'@type': 'Organization', name: agencyLabel(doc.agency, lang)}
     };
@@ -2007,6 +2028,7 @@ function staticMediaPreview(doc, lang, title, docs) {
   const r2Image = doc.r2ImageUrl || (image ? r2Asset(image) : '');
   const localImage = image ? mirroredAsset(image) : '';
   const video = urls(doc.videoUrl || '')[0] || '';
+  const youtube = doc.youtubeUrl || '';
   const blocked = {
     en: 'The official source blocks external previews. Open the official source or use the record download.',
     ja: '公式ソースが外部サイトでのプレビュー表示をブロックしています。公式ソースを開くか、この記録のファイルをダウンロードしてください。',
@@ -2028,7 +2050,9 @@ function staticMediaPreview(doc, lang, title, docs) {
             ${relatedLinks}
           </div>` : '';
   let preview = '';
-  if (video) {
+  if (youtube) {
+    preview = `<iframe class="youtube-embed" src="${esc(youtube)}" title="${esc(title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+  } else if (video) {
     preview = `<video class="static-video-preview" controls playsinline${r2Image ? ` poster="${esc(r2Image)}"` : ''}><source src="${esc(video)}"></video>`;
   } else if (image) {
     const fallbackSrcs = [relativePath(localImage, 3), image].filter(Boolean).join('|');
