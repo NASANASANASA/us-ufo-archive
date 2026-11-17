@@ -133,6 +133,12 @@ const releaseDownloadBundles = [
   }
 ];
 
+function videoBundleFilename(bundle) {
+  const filename = new URL(bundle.documentsUrl).pathname.split('/').pop();
+  return /documents?/i.test(filename) ? filename.replace(/documents?/i, word => word === 'documents' ? 'videos' : 'video')
+    : filename.replace(/\.zip$/i, '_videos.zip');
+}
+
 function noVideosLabel(lang) {
   return ({en: 'No videos in this release', es: 'Esta publicación no incluye videos', pt: 'Este lote não inclui vídeos', fr: 'Cette publication ne contient aucune vidéo', de: 'Diese Veröffentlichung enthält keine Videos', ru: 'В этом выпуске нет видео', ar: 'لا توجد مقاطع فيديو في هذا الإصدار', ja: 'この公開分に動画はありません', ko: '이번 공개에는 동영상이 없습니다', 'zh-Hans': '本批次无视频', 'zh-Hant': '本批次無影片'})[lang];
 }
@@ -1842,12 +1848,13 @@ function buildDownloadsPage(lang) {
           <small>${esc(copy.date)}: ${esc(bundle.date)}</small>
           <div class="release-downloads">
             <a class="download-bundle" href="${esc(bundle.documentsUrl)}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.documents)} [${esc(bundle.documentsSize)}]</a>
-            ${bundle.videosUrl ? `<a class="download-bundle" href="${esc(bundle.videosUrl)}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.videos)} [${esc(bundle.videosSize)}]</a>` : `<span class="static-muted">${esc(noVideosLabel(lang))}</span>`}
+            ${bundle.videosUrl ? `<a class="download-bundle" href="${esc(bundle.videosUrl)}" data-video-bundle="${esc(videoBundleFilename(bundle))}" download="${esc(videoBundleFilename(bundle))}" title="${esc(videoBundleFilename(bundle))}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.videos)} [${esc(bundle.videosSize)}]</a>` : `<span class="static-muted">${esc(noVideosLabel(lang))}</span>`}
           </div>
         </article>`).join('\n        ')}
       </div>
     </section>
-  </main>`;
+  </main>
+  <script src="../../assets/bundle-download.js?v=20261117-bundle-names1"></script>`;
   return pageShell({
     lang,
     title: `${copy.title} · ${text[lang].home}`,
@@ -2241,3 +2248,4 @@ function build() {
 }
 
 build();
+writeFile('assets/release-video-bundles.js', `/* Generated from the release download links. */\nself.UAP_VIDEO_BUNDLES = ${JSON.stringify(Object.fromEntries(releaseDownloadBundles.filter(bundle => bundle.videosUrl).map(bundle => [videoBundleFilename(bundle), bundle.videosUrl])), null, 2)};\n`);
