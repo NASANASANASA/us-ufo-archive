@@ -7,6 +7,7 @@ import html
 import json
 import pathlib
 import re
+import subprocess
 from html.parser import HTMLParser
 from urllib.parse import unquote, urlsplit
 
@@ -36,6 +37,7 @@ class Page(HTMLParser):
         self.heading = 0
         self.description = []
         self.date_kind = None
+        self.date_raw = None
         self.date = []
         self.in_date = False
         self.links = []
@@ -53,6 +55,7 @@ class Page(HTMLParser):
             self.description.append('\n')
         if tag == 'dd' and 'data-record-date-kind' in attrs:
             self.date_kind = attrs['data-record-date-kind']
+            self.date_raw = attrs.get('data-record-date-raw')
             self.in_date = True
 
     def handle_endtag(self, tag):
@@ -80,11 +83,14 @@ def main():
     by_title = {key(row['Title']): row for row in official}
     dates = json.loads((ROOT / 'assets/record-detail-dates.json').read_text())['records']
     assert len(rows) == len(dates) == 478
+    displays = json.loads(subprocess.check_output([
+        'node', '-e', "const f=require('./assets/record-format.js');let s='';process.stdin.on('data',x=>s+=x);process.stdin.on('end',()=>{const {values,langs}=JSON.parse(s);process.stdout.write(JSON.stringify(values.map(v=>langs.map(l=>f.formatDate(v,l)))))});"
+    ], input=json.dumps({'values': [dates[key(row['Title'])]['value'] for row in rows], 'langs': list(LANGS)}), text=True, cwd=ROOT))
     checked = 0
     timeline_entries = 0
     local_links = 0
     issues = []
-    for row in rows:
+    for index, row in enumerate(rows):
         title = row['Title']
         source = by_title.get(key(title))
         if source is None:
@@ -103,7 +109,7 @@ def main():
             assert expected['kind'] == 'incidentDate'
             assert expected['value'] == (source['Incident Date'].strip() or 'N/A'), title
         slug = re.sub('[^a-z0-9]+', '-', title.lower().replace('&', ' and ')).strip('-')
-        for lang in LANGS:
+        for lang_index, lang in enumerate(LANGS):
             path = ROOT / lang / 'records' / slug / 'index.html'
             rendered = Page()
             rendered.feed(path.read_text())
@@ -115,7 +121,8 @@ def main():
                 assert target.exists(), (path, 'broken internal link', link)
                 local_links += 1
             assert rendered.date_kind == expected['kind'], (title, lang, 'date label')
-            assert ''.join(rendered.date).strip() == expected['value'], (title, lang, 'date value')
+            assert rendered.date_raw == expected['value'], (title, lang, 'source date value')
+            assert ''.join(rendered.date).strip() == displays[index][lang_index], (title, lang, 'localized date value')
             text = ''.join(rendered.description)
             assert labels(text) == labels(row['Description Blurb']), (title, lang, 'missing or altered time labels', labels(text), labels(row['Description Blurb']))
             for match in re.finditer(RANGE + r'\s*[:：]', text):
@@ -125,7 +132,7 @@ def main():
                     issues.append((title.split(',')[0], lang, 'timeline shares previous line', prefix[-60:]))
             checked += 1
     assert not issues, issues[:20]
-    print(f'PASS: {checked} detail pages; all 478 official dates preserved; '
+    print(f'PASS: {checked} detail pages; all 478 official dates preserved and localized; '
           f'{timeline_entries} range entries start on separate lines; '
           f'all timeline labels match the source; {local_links} internal links resolve.')
 

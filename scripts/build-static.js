@@ -6,7 +6,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20261117-record-dates-lines1';
+const assetVersion = '20261117-local-dates1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -1252,7 +1252,7 @@ function metaDescription(doc, lang) {
   const location = langLocation(doc, lang);
   const type = `.${clean(doc.type) || 'PDF'}`;
   const agency = agencyLabel(doc.agency, lang);
-  const date = doc.detailDate?.value || doc.incidentDate || 'N/A';
+  const date = recordFormat.formatDate(doc.detailDate?.value || doc.incidentDate || 'N/A', lang);
   const dateLabel = recordDateLabel(doc, lang);
   if (lang === 'zh-Hans') return `美国政府 UFO/UAP 公开档案：${title}。类型：${type}。发布机构：${agency}。${dateLabel}：${date}。事件地点：${location}。页面保留官方来源链接、媒体预览和相关档案。`;
   if (lang === 'zh-Hant') return `美國政府 UFO/UAP 公開檔案：${title}。類型：${type}。發布機構：${agency}。${dateLabel}：${date}。事件地點：${location}。頁面保留官方來源連結、媒體預覽和相關檔案。`;
@@ -1271,7 +1271,7 @@ function structuredSummary(doc, lang) {
   const agency = agencyLabel(doc.agency, lang);
   const release = releaseLabel(doc.release, lang);
   const location = langLocation(doc, lang);
-  const date = doc.detailDate?.value || doc.incidentDate || 'N/A';
+  const date = recordFormat.formatDate(doc.detailDate?.value || doc.incidentDate || 'N/A', lang);
   const dateLabel = recordDateLabel(doc, lang);
   const type = doc.type || 'PDF';
   if (lang === 'ja') {
@@ -1310,7 +1310,7 @@ function mediaDetailsText(doc, lang) {
     s.mediaDetailsIntro,
     `${text[lang].agency}: ${agencyLabel(doc.agency, lang)}.`,
     `${text[lang].release}: ${releaseLabel(doc.release, lang)}.`,
-    `${recordDateLabel(doc, lang)}: ${doc.detailDate?.value || doc.incidentDate || 'N/A'}.`,
+    `${recordDateLabel(doc, lang)}: ${recordFormat.formatDate(doc.detailDate?.value || doc.incidentDate || 'N/A', lang)}.`,
     `${text[lang].location}: ${langLocation(doc, lang)}.`,
     `${text[lang].type}: .${doc.type}.`
   ];
@@ -2011,7 +2011,7 @@ function buildRecordPage(doc, lang, docs) {
         <dl class="static-meta">
           <dt>${esc(l.agency)}</dt><dd>${esc(agencyLabel(doc.agency, lang))}</dd>
           <dt>${esc(l.release)}</dt><dd>${esc(releaseLabel(doc.release, lang))}</dd>
-          <dt>${esc(detailDateLabel)}</dt><dd data-record-date-kind="${esc(detailDate.kind)}">${esc(detailDate.value || 'N/A')}</dd>
+          <dt>${esc(detailDateLabel)}</dt><dd data-record-date-kind="${esc(detailDate.kind)}" data-record-date-raw="${esc(detailDate.value || 'N/A')}">${esc(recordFormat.formatDate(detailDate.value || 'N/A', lang))}</dd>
           <dt>${esc(l.location)}</dt><dd>${esc(langLocation(doc, lang))}</dd>
           <dt>${esc(l.type)}</dt><dd>.${esc(doc.type)}</dd>${virinMeta}
         </dl>

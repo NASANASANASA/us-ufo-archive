@@ -34,7 +34,36 @@ for (const [id, expected] of Object.entries(dates))
 assert.deepEqual(format.detailDate({id: 'No source', incidentDate: '2024'}, {}),
   {kind: 'incidentDate', value: '2024'});
 
+const dateExamples = {en: 'April 1, 2009', 'zh-Hans': '2009年4月1日', 'zh-Hant': '2009年4月1日',
+  ja: '2009年4月1日', ko: '2009년 4월 1일', es: '1 de abril de 2009', pt: '1 de abril de 2009',
+  ru: '1 апреля 2009 г.', fr: '1 avril 2009', de: '1. April 2009', ar: '١ أبريل ٢٠٠٩'};
+for (const [lang, expected] of Object.entries(dateExamples)) {
+  assert.equal(format.formatDate('4/1/2009', lang), expected);
+  assert.equal(format.formatDate('2009-04-01', lang), expected);
+}
+assert.equal(format.formatDate('July, 2008', 'zh-Hant'), '2008年7月');
+assert.equal(format.formatDate('1955', 'zh-Hans'), '1955年');
+assert.equal(format.formatDate('4/10/2025-4/11/2025', 'zh-Hant'), '2025年4月10日至2025年4月11日');
+assert.equal(format.formatDate('June 3-7, 1965', 'ja'), '1965年6月3日～1965年6月7日');
+assert.equal(format.formatDate('August 1952-1967', 'zh-Hant'), '1952年8月至1967年');
+assert.equal(format.formatDate('September - December 1952', 'zh-Hant'), '1952年9月至1952年12月');
+assert.equal(format.formatDate('March, April 2010', 'zh-Hant'), '2010年3月、2010年4月');
+assert.equal(format.formatDate('2002, 2023-2024', 'zh-Hant'), '2002年、2023年至2024年');
+assert.equal(format.formatDate('Late 2025', 'zh-Hant'), '2025年末');
+assert.equal(format.formatDate('1970s', 'ko'), '1970년대');
+assert.equal(format.formatDate('N/A', 'zh-Hant'), 'N/A');
+assert.equal(format.formatDate('Undated', 'zh-Hant'), '日期不詳');
+assert.equal(format.parseDate('2/30/2025'), null);
+assert.equal(format.parseDate('2025-13-01'), null);
+assert.equal(format.parseDate('2025-00-01'), null);
+assert.deepEqual(format.parseDate('July, 2008'), {kind: 'date', year: 2008, month: 7});
+assert.deepEqual(format.parseDate('1955'), {kind: 'date', year: 1955});
+for (const entry of Object.values(JSON.parse(fs.readFileSync(require.resolve('../assets/record-detail-dates.json'))).records))
+  assert(format.parseDate(entry.value), `Unsupported source date: ${entry.value}`);
+
 const browser = {};
 vm.runInNewContext(fs.readFileSync(require.resolve('../assets/record-format.js'), 'utf8'), browser);
 assert.equal(browser.UAP_RECORD_FORMAT.descriptionHtml(source), rendered);
+for (const [lang, expected] of Object.entries(dateExamples))
+  assert.equal(browser.UAP_RECORD_FORMAT.formatDate('4/1/2009', lang), expected);
 console.log('PASS: shared browser/build formatting, timeline breaks, source timecodes, escaping, and date precision.');
