@@ -1,0 +1,626 @@
+{
+  "method": "Native Chrome UI: search each record by identifier, click its archive-list link, verify the detail H1, and return to the archive. D128 was manually rechecked after a long-heading accessibility field-order difference.",
+  "language": "en",
+  "checked": 103,
+  "failed": 0,
+  "records": [
+    {
+      "code": "DOW-UAP-D155",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D174",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D176",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D177",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D178",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D179",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D181",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "FBI-UAP-D043",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D102",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D103",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D104",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D105",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D106",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D107",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D108",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D109",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D110",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D111",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D112",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D113",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D114",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D115",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D116",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D117",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D118",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D119",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D120",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D121",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D122",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D123",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D124",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D125",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D126",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D127",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D128",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D129",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D130",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D131",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D132",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D133",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D134",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D135",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D136",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D137",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D138",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D139",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D140",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D141",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D142",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D143",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D144",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D145",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D146",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D147",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D148",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D149",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D150",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D151",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D152",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D153",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D154",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D156",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D157",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D158",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D159",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D160",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D161",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D162",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D163",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D164",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D166",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D167",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D168",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D169",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D170",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D171",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D173",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D175",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-D180",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR130",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR131",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR133",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR135",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR140",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR141",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR143",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR144",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR148",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR150",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR151",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR152",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR159",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "DOW-UAP-PR160",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "EOP-UAP-D002",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "LLE-UAP-D001",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "LLE-UAP-D002",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "LLE-UAP-D003",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "LLE-UAP-D004",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "LLE-UAP-PR001",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "LLE-UAP-PR002",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "LLE-UAP-PR003",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "LLE-UAP-PR004",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    },
+    {
+      "code": "USG-UAP-D002",
+      "listToDetail": true,
+      "correctTitle": true,
+      "returnedToArchive": true
+    }
+  ]
+}

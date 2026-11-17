@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20260915-youtube1';
+const assetVersion = '20261117-release67-audit1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -62,6 +62,8 @@ const r2Media = Object.fromEntries([
   ...readR2Manifest('assets/release-04-r2-manifest.tsv'),
   ...readR2Manifest('assets/release-05-r2-media-manifest.tsv')
 ].map(row => [assetCode(row.title), {type: row.type, url: r2Url(row.r2Key)}]));
+Object.assign(r2Media, Object.fromEntries(Object.entries(JSON.parse(read('assets/release-06-07-media.json')))
+  .map(([code, entry]) => [code, {...entry, url: `/assets/${entry.url}?v=${entry.sha256.slice(0, 12)}`}])));
 const dvidsMp4 = (() => {
   try {
     const source = read('assets/dvids-map.js');
@@ -112,8 +114,26 @@ const releaseDownloadBundles = [
     documentsSize: '130MB',
     videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/release_05/uap_videos_080726.zip',
     videosSize: '513MB'
+  },
+  {
+    release: '06',
+    date: '2026-09-18',
+    documentsUrl: 'https://www.war.gov/medialink/ufo/sept-18/release-06/documents_release_06_sept_18_2026.zip',
+    documentsSize: '2.23GB',
+    videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/release_06/pursue_vids_091826.zip',
+    videosSize: '1.4GB'
+  },
+  {
+    release: '07',
+    date: '2026-10-23',
+    documentsUrl: 'https://www.war.gov/medialink/ufo/release-07/documents_release_07_oct_23_2026.zip',
+    documentsSize: '325MB'
   }
 ];
+
+function noVideosLabel(lang) {
+  return ({en: 'No videos in this release', es: 'Esta publicación no incluye videos', pt: 'Este lote não inclui vídeos', fr: 'Cette publication ne contient aucune vidéo', de: 'Diese Veröffentlichung enthält keine Videos', ru: 'В этом выпуске нет видео', ar: 'لا توجد مقاطع فيديو في هذا الإصدار', ja: 'この公開分に動画はありません', ko: '이번 공개에는 동영상이 없습니다', 'zh-Hans': '本批次无视频', 'zh-Hant': '本批次無影片'})[lang];
+}
 
 function downloadsLabel(lang) {
   return ({
@@ -295,7 +315,7 @@ const seoText = {
     browseImages: 'Image records',
     mediaDetails: 'Media details',
     mediaDetailsIntro: 'This page indexes the record type, source agency, release batch, incident date, incident location, official source, and available public media for search and reference.',
-    homeDescription: 'Search the UAP archive for 375 public U.S. government UFO/UAP records, including UAP release records, videos, images, PDF source documents, incident metadata, agencies, locations, related records, and official source links.'
+    homeDescription: 'Search the UAP archive for 478 public U.S. government UFO/UAP records, including UAP release records, videos, images, PDF source documents, incident metadata, agencies, locations, related records, and official source links.'
   },
   es: {
     release04Title: 'Registros UAP de la publicación 04',
@@ -312,7 +332,7 @@ const seoText = {
     browseImages: 'Registros de imagen',
     mediaDetails: 'Detalles multimedia',
     mediaDetailsIntro: 'Esta página indexa el tipo de registro, agencia fuente, publicación, fecha, lugar, fuente oficial y medios públicos disponibles para búsqueda y referencia.',
-    homeDescription: 'Busca 375 registros públicos UFO/UAP del Gobierno de EE. UU., videos, imágenes y PDF de cinco publicaciones oficiales, con agencias, fechas, lugares, registros relacionados y enlaces oficiales.'
+    homeDescription: 'Busca 478 registros públicos UFO/UAP del Gobierno de EE. UU., videos, imágenes y PDF de siete publicaciones oficiales, con agencias, fechas, lugares, registros relacionados y enlaces oficiales.'
   },
   pt: {
     release04Title: 'Registros UAP da publicação 04',
@@ -329,7 +349,7 @@ const seoText = {
     browseImages: 'Registros de imagem',
     mediaDetails: 'Detalhes da mídia',
     mediaDetailsIntro: 'Esta página indexa tipo de registro, agência, lote, data, local, fonte oficial e mídia pública disponível para pesquisa e referência.',
-    homeDescription: 'Pesquise 375 registros públicos UFO/UAP do governo dos EUA, vídeos, imagens e PDFs de cinco publicações oficiais, com agências, datas, locais, registros relacionados e links oficiais.'
+    homeDescription: 'Pesquise 478 registros públicos UFO/UAP do governo dos EUA, vídeos, imagens e PDFs de sete publicações oficiais, com agências, datas, locais, registros relacionados e links oficiais.'
   },
   fr: {
     release04Title: 'Archives UAP de la publication 04',
@@ -346,7 +366,7 @@ const seoText = {
     browseImages: 'Archives image',
     mediaDetails: 'Détails du média',
     mediaDetailsIntro: 'Cette page indexe le type, l’agence, la publication, la date, le lieu, la source officielle et les médias publics disponibles.',
-    homeDescription: 'Recherchez 375 archives publiques UFO/UAP du gouvernement des États-Unis, vidéos, images et PDF issus de cinq publications officielles, avec agences, dates, lieux, archives liées et sources officielles.'
+    homeDescription: 'Recherchez 478 archives publiques UFO/UAP du gouvernement des États-Unis, vidéos, images et PDF issus de sept publications officielles, avec agences, dates, lieux, archives liées et sources officielles.'
   },
   de: {
     release04Title: 'UAP-Unterlagen Veröffentlichung 04',
@@ -363,7 +383,7 @@ const seoText = {
     browseImages: 'Bildunterlagen',
     mediaDetails: 'Mediendetails',
     mediaDetailsIntro: 'Diese Seite indexiert Typ, Behörde, Veröffentlichung, Datum, Ort, offizielle Quelle und verfügbare öffentliche Medien.',
-    homeDescription: 'Durchsuchen Sie 375 öffentliche UFO/UAP-Unterlagen der US-Regierung mit Videos, Bildern und PDFs aus fünf offiziellen Veröffentlichungen, inklusive Behörden, Daten, Orte, verwandter Einträge und Quellenlinks.'
+    homeDescription: 'Durchsuchen Sie 478 öffentliche UFO/UAP-Unterlagen der US-Regierung mit Videos, Bildern und PDFs aus sieben offiziellen Veröffentlichungen, inklusive Behörden, Daten, Orte, verwandter Einträge und Quellenlinks.'
   },
   ru: {
     release04Title: 'Материалы UAP выпуска 04',
@@ -380,7 +400,7 @@ const seoText = {
     browseImages: 'Изображения',
     mediaDetails: 'Сведения о медиа',
     mediaDetailsIntro: 'Страница индексирует тип записи, ведомство, выпуск, дату, место, официальный источник и доступные публичные медиа.',
-    homeDescription: 'Поиск по 375 публичным материалам UFO/UAP правительства США: видео, изображения и PDF из пяти официальных выпусков, ведомства, даты, места, связанные записи и официальные ссылки.'
+    homeDescription: 'Поиск по 478 публичным материалам UFO/UAP правительства США: видео, изображения и PDF из семи официальных выпусков, ведомства, даты, места, связанные записи и официальные ссылки.'
   },
   ar: {
     release04Title: 'سجلات UAP الإصدار 04',
@@ -397,7 +417,7 @@ const seoText = {
     browseImages: 'سجلات الصور',
     mediaDetails: 'تفاصيل الوسائط',
     mediaDetailsIntro: 'تفهرس هذه الصفحة نوع السجل والجهة والإصدار والتاريخ والموقع والمصدر الرسمي والوسائط العامة المتاحة.',
-    homeDescription: 'ابحث في 375 سجلا عاما عن UFO/UAP من الحكومة الأمريكية، تشمل فيديوهات وصورا وملفات PDF من خمسة إصدارات رسمية، مع الجهات والتواريخ والمواقع والسجلات المرتبطة وروابط المصادر الرسمية.'
+    homeDescription: 'ابحث في 478 سجلا عاما عن UFO/UAP من الحكومة الأمريكية، تشمل فيديوهات وصورا وملفات PDF من سبعة إصدارات رسمية، مع الجهات والتواريخ والمواقع والسجلات المرتبطة وروابط المصادر الرسمية.'
   },
   ja: {
     release04Title: '第4回公開UAP記録',
@@ -414,7 +434,7 @@ const seoText = {
     browseImages: '画像記録',
     mediaDetails: 'メディア詳細',
     mediaDetailsIntro: 'このページは記録種別、機関、公開回、事件日、場所、公式ソース、利用可能な公開メディアを検索と参照のために整理しています。',
-    homeDescription: '米国政府が公開した375件のUFO/UAP記録、動画、画像、PDF資料を5回の公式公開、機関、日付、場所、関連記録、公式ソースリンクから検索できます。'
+    homeDescription: '米国政府が公開した478件のUFO/UAP記録、動画、画像、PDF資料を7回の公式公開、機関、日付、場所、関連記録、公式ソースリンクから検索できます。'
   },
   ko: {
     release04Title: '4차 공개 UAP 기록',
@@ -431,7 +451,7 @@ const seoText = {
     browseImages: '이미지 기록',
     mediaDetails: '미디어 세부정보',
     mediaDetailsIntro: '이 페이지는 검색과 참조를 위해 기록 유형, 기관, 공개 회차, 날짜, 위치, 공식 출처, 사용 가능한 공개 미디어를 색인합니다.',
-    homeDescription: '미국 정부가 공개한 375개 UFO/UAP 기록, 영상, 이미지, PDF 문서를 다섯 차례 공식 공개, 기관, 날짜, 위치, 관련 기록, 공식 출처 링크별로 검색합니다.'
+    homeDescription: '미국 정부가 공개한 478개 UFO/UAP 기록, 영상, 이미지, PDF 문서를 일곱 차례 공식 공개, 기관, 날짜, 위치, 관련 기록, 공식 출처 링크별로 검색합니다.'
   },
   'zh-Hans': {
     release04Title: '第四批 UAP 公开档案',
@@ -448,7 +468,7 @@ const seoText = {
     browseImages: '图片档案',
     mediaDetails: '媒体信息',
     mediaDetailsIntro: '本页为搜索和查阅整理档案类型、发布机构、公开批次、事件日期、事件地点、官方来源以及可用的公开媒体。',
-    homeDescription: 'UAP 档案库是一个检索美国政府 UFO/UAP 公开档案的 UAP 网站，收录 375 条 UAP 档案，包括视频、图片、PDF 原始文件、公开批次、事件日期、地点、机构、相关记录和官方来源链接。'
+    homeDescription: 'UAP 档案库是一个检索美国政府 UFO/UAP 公开档案的 UAP 网站，收录 478 条 UAP 档案，包括视频、图片、PDF 原始文件、公开批次、事件日期、地点、机构、相关记录和官方来源链接。'
   },
   'zh-Hant': {
     release04Title: '第四批 UAP 公開檔案',
@@ -465,7 +485,7 @@ const seoText = {
     browseImages: '圖片檔案',
     mediaDetails: '媒體資訊',
     mediaDetailsIntro: '本頁為搜尋和查閱整理檔案類型、發布機構、公開批次、事件日期、事件地點、官方來源以及可用的公開媒體。',
-    homeDescription: 'UAP 檔案庫是一個檢索美國政府 UFO/UAP 公開檔案的 UAP 網站，收錄 375 筆 UAP 檔案，包括影片、圖片、PDF 原始文件、公開批次、事件日期、地點、機構、相關記錄和官方來源連結。'
+    homeDescription: 'UAP 檔案庫是一個檢索美國政府 UFO/UAP 公開檔案的 UAP 網站，收錄 478 筆 UAP 檔案，包括影片、圖片、PDF 原始文件、公開批次、事件日期、地點、機構、相關記錄和官方來源連結。'
   }
 };
 
@@ -568,7 +588,12 @@ function normalize(row, index, translations) {
     '08/07/2026': 'RELEASE 05',
     '8/8/26': 'RELEASE 05',
     '8/8/2026': 'RELEASE 05',
-    '08/08/2026': 'RELEASE 05'
+    '08/08/2026': 'RELEASE 05',
+    '9/18/26': 'RELEASE 06',
+    '9/18/2026': 'RELEASE 06',
+    '09/18/2026': 'RELEASE 06',
+    '10/23/26': 'RELEASE 07',
+    '10/23/2026': 'RELEASE 07'
   };
   const officialType = field(row, ['type']).trim().toUpperCase();
   const assetLink = absolute(field(row, ['pdf | image link', 'pdf image link']));
@@ -616,6 +641,7 @@ function normalize(row, index, translations) {
     documentUrl: doc,
     r2DocumentUrl: r2Document?.url || '',
     r2ImageUrl: r2Image?.url || '',
+    previewKind: r2Image?.previewKind || '',
     videoUrl,
     youtubeUrl,
     imageUrl,
@@ -1161,6 +1187,8 @@ const agencyNames = {
   }
 };
 
+for (const [lang, label] of Object.entries({"zh-Hans": "地方执法机构", "zh-Hant": "地方執法機關", "en": "Local Law Enforcement", "ja": "地方の法執行機関", "es": "Autoridades policiales locales", "pt": "Autoridades policiais locais", "ru": "Местные правоохранительные органы", "fr": "Services de police locaux", "de": "Örtliche Strafverfolgungsbehörden", "ko": "지역 법 집행 기관", "ar": "جهات إنفاذ القانون المحلية"})) agencyNames[lang]['Local Law Enforcement'] = label;
+
 function langTitle(doc, lang) {
   if (lang !== 'en') return doc.i18n?.[lang]?.titleZh || doc.id;
   return doc.id;
@@ -1607,6 +1635,7 @@ ${schemaHtml}
   ${footerHtml(prefix, lang)}
   <script src="${prefix}assets/release-04-r2-documents.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/release-r2-media.js?v=${assetVersion}"></script>
+  <script src="${prefix}assets/release-06-07-media.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/site.js?v=${assetVersion}"></script>
 </body>
 </html>
@@ -1807,7 +1836,7 @@ function buildDownloadsPage(lang) {
           <small>${esc(copy.date)}: ${esc(bundle.date)}</small>
           <div class="release-downloads">
             <a class="download-bundle" href="${esc(bundle.documentsUrl)}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.documents)} [${esc(bundle.documentsSize)}]</a>
-            <a class="download-bundle" href="${esc(bundle.videosUrl)}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.videos)} [${esc(bundle.videosSize)}]</a>
+            ${bundle.videosUrl ? `<a class="download-bundle" href="${esc(bundle.videosUrl)}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.videos)} [${esc(bundle.videosSize)}]</a>` : `<span class="static-muted">${esc(noVideosLabel(lang))}</span>`}
           </div>
         </article>`).join('\n        ')}
       </div>
@@ -1868,6 +1897,9 @@ function buildInteractiveHome(lang, template) {
     .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
     .replace(/href="\.\.\/"/g, 'href="../"');
   return template
+    .replace(/2026\.08\.07/g, '2026.10.23')
+    .replace(/(<b id="hero-record-count">)[^<]*(<\/b>)/, (_, open, close) => `${open}478${close}`)
+    .replace(/(<span><b>)\d{2}(<\/b>)/, (_, open, close) => `${open}07${close}`)
     .replace(/<meta name="viewport" content="width=device-width, initial-scale=1.0">\s*(?:<script>try\{if\(localStorage\.getItem\('uap-view-mode'\)==='desktop'\)document\.querySelector\('meta\[name="viewport"\]'\)\.setAttribute\('content','width=1280, initial-scale=1\.0'\)\}catch\(e\)\{\}<\/script>\s*)?/, `<meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <script>try{if(localStorage.getItem('uap-view-mode')==='desktop')document.querySelector('meta[name="viewport"]').setAttribute('content','width=1280, initial-scale=1.0')}catch(e){}</script>\n  `)
     .replace(/\s*<button class="view-mode-toggle[^>]*data-view-mode-toggle[\s\S]*?<\/button>/g, '')
     .replace(/(<div class="showcase-dots"[^>]*><\/div>\s*<\/div>)\s*<\/div>\s*(?=<\/section>)/g, '$1\n    ')
@@ -1902,18 +1934,20 @@ function buildInteractiveHome(lang, template) {
     .replace(/src="\.\/assets\//g, 'src="../assets/')
     .replace(/assets\/style\.css\?v=[^"]+/g, `assets/style.css?v=${assetVersion}`)
     .replace(/assets\/site\.js\?v=[^"]+/g, `assets/site.js?v=${assetVersion}`)
-    .replace(/最近批次：2026\.(?:06\.12|07\.10)/g, '最近批次：2026.08.07')
-    .replace(/latest release: 2026\.(?:06\.12|07\.10)/g, 'latest release: 2026.08.07')
-    .replace(/最新公開: 2026\.(?:06\.12|07\.10)/g, '最新公開: 2026.08.07')
-    .replace(/última publicación: 2026\.(?:06\.12|07\.10)/g, 'última publicación: 2026.08.07')
-    .replace(/收录[三四]个公开批次/g, '收录五个公开批次')
-    .replace(/收錄[三四]個公開批次/g, '收錄五個公開批次')
-    .replace(/Includes (?:three|four) public releases/g, 'Includes five public releases')
-    .replace(/[34]回分の公開資料を収録/g, '5回分の公開資料を収録')
-    .replace(/Incluye (?:tres|cuatro) publicaciones públicas/g, 'Incluye cinco publicaciones públicas')
+    .replace(/assets\/(db-data|dvids-map|i18n-ui)\.js\?v=[^"]+/g, (_, name) => `assets/${name}.js?v=${assetVersion}`)
+    .replace(/最近批次：2026\.(?:06\.12|07\.10)/g, '最近批次：2026.10.23')
+    .replace(/latest release: 2026\.(?:06\.12|07\.10)/g, 'latest release: 2026.10.23')
+    .replace(/最新公開: 2026\.(?:06\.12|07\.10)/g, '最新公開: 2026.10.23')
+    .replace(/última publicación: 2026\.(?:06\.12|07\.10)/g, 'última publicación: 2026.10.23')
+    .replace(/收录[三四]个公开批次/g, '收录七个公开批次')
+    .replace(/收錄[三四]個公開批次/g, '收錄七個公開批次')
+    .replace(/Includes (?:three|four) public releases/g, 'Includes seven public releases')
+    .replace(/[34]回分の公開資料を収録/g, '7回分の公開資料を収録')
+    .replace(/Incluye (?:tres|cuatro) publicaciones públicas/g, 'Incluye siete publicaciones públicas')
     .replace(/\s*<script src="\.\.\/assets\/release-04-r2-documents\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/release-r2-media\.js\?v=[^"]+"><\/script>/g, '')
-    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
+    .replace(/\s*<script src="\.\.\/assets\/release-06-07-media\.js\?v=[^"]+"><\/script>/g, '')
+    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/release-06-07-media.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/(<a href="#releases" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
     .replace(/(<a href="#releases" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
@@ -1983,7 +2017,9 @@ function staticOfficialRecordPage(doc) {
     .replace(/\s+/g, '-')
     .replace(/[^A-Za-z0-9\-_]/g, '')
     .replace(/-+/g, '-');
-  return `https://www.war.gov/UFO/release/${n}/?releaseDate=Release+${n}#${hash}`;
+  return ['06', '07'].includes(n)
+    ? `https://www.war.gov/UFO/?releaseDate=Release+${n}&release=${n}#${hash}`
+    : `https://www.war.gov/UFO/release/${n}/?releaseDate=Release+${n}#${hash}`;
 }
 
 function relatedRecords(doc, docs) {
@@ -1999,6 +2035,8 @@ function relatedRecords(doc, docs) {
     out.push(candidate);
   };
 
+  const tags = (doc.pdfPairing.match(/TAG:[A-Za-z0-9_-]+/g) || []);
+  for (const tag of tags) docs.filter(candidate => urls(candidate.pdfPairing).includes(tag)).forEach(add);
   for (const code of explicitCodes) {
     for (const candidate of docs) {
       const candidateCode = assetCode(candidate.id);
@@ -2022,6 +2060,8 @@ function currentRecordDownloadName(doc, url) {
   const ext = clean(url).split('?')[0].match(/\.([a-z0-9]+)$/i)?.[1] || clean(doc.type).toLowerCase() || 'file';
   return `${base}.${ext.toLowerCase()}`;
 }
+
+function coverPreviewLabel(lang) { return ({"en": "The official thumbnail is unavailable; this preview shows the first page of the original PDF.", "zh-Hans": "官方缩略图暂不可用；当前预览为原始 PDF 的首页。", "zh-Hant": "官方縮圖暫不可用；目前預覽為原始 PDF 的首頁。", "ja": "公式サムネイルを取得できないため、元のPDFの最初のページを表示しています。", "es": "La miniatura oficial no está disponible; se muestra la primera página del PDF original.", "pt": "A miniatura oficial está indisponível; esta prévia mostra a primeira página do PDF original.", "ru": "Официальная миниатюра недоступна; показана первая страница исходного PDF.", "fr": "La miniature officielle est indisponible ; cet aperçu affiche la première page du PDF original.", "de": "Die offizielle Miniaturansicht ist nicht verfügbar; angezeigt wird die erste Seite der Original-PDF.", "ko": "공식 썸네일을 사용할 수 없어 원본 PDF의 첫 페이지를 표시합니다.", "ar": "الصورة المصغرة الرسمية غير متاحة؛ تعرض هذه المعاينة الصفحة الأولى من ملف PDF الأصلي."})[lang] || ""; }
 
 function staticMediaPreview(doc, lang, title, docs) {
   const image = urls(doc.imageUrl)[0] || '';
@@ -2056,11 +2096,12 @@ function staticMediaPreview(doc, lang, title, docs) {
     preview = `<video class="static-video-preview" controls playsinline${r2Image ? ` poster="${esc(r2Image)}"` : ''}><source src="${esc(video)}"></video>`;
   } else if (image) {
     const fallbackSrcs = [relativePath(localImage, 3), image].filter(Boolean).join('|');
-    preview = `<img src="${esc(r2Image)}" data-fallback-srcs="${esc(fallbackSrcs)}" alt="${esc(doc.i18n?.[lang]?.altZh || title)}" onerror="const q=(this.dataset.fallbackSrcs||'').split('|').filter(Boolean);if(q.length){this.src=q.shift();this.dataset.fallbackSrcs=q.join('|')}else{this.parentNode.classList.add('broken')}">${fallback}`;
+    preview = `<img src="${esc(r2Image)}" data-fallback-srcs="${esc(fallbackSrcs)}" alt="${esc((doc.previewKind === 'pdf-cover' ? title : doc.i18n?.[lang]?.altZh || title))}" onerror="const q=(this.dataset.fallbackSrcs||'').split('|').filter(Boolean);if(q.length){this.src=q.shift();this.dataset.fallbackSrcs=q.join('|')}else{this.parentNode.classList.add('broken')}">${fallback}`;
   } else {
     preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   }
-  const actions = [downloadCurrent, openOfficial].filter(Boolean).join('\n          ');
+  const coverNote = doc.previewKind === 'pdf-cover' ? `<small class="static-muted">${esc(coverPreviewLabel(lang))}</small>` : '';
+  const actions = [coverNote, downloadCurrent, openOfficial].filter(Boolean).join('\n          ');
   return `<div class="static-preview static-preview-${esc(doc.type.toLowerCase())}">
           ${preview}
         </div>

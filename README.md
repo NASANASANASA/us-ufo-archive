@@ -111,6 +111,11 @@ The archive is based on public U.S. government release material, especially the 
 
 https://www.war.gov/UFO/
 
+The local mirror includes Releases 01–07: 478 records in 11 languages.
+Release 06 contains 75 records (September 18, 2026); Release 07 contains
+28 PDF records (October 23, 2026), with no videos. Import details and
+maintenance commands are documented in [Release 06/07 notes](docs/release-06-07.md).
+
 Each record keeps the original source link when available. This project does not claim government affiliation, endorsement, or analytical authority over the records.
 
 ---

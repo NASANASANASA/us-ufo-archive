@@ -1,0 +1,597 @@
+[
+  {
+    "code": "DOW-UAP-PR133",
+    "dvidsId": "1023396",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985772/DOD_111985772.mp4",
+    "bytes": 80052070,
+    "sha256": "22bc76841b16cc872fa182f1d050c2f7ab2c19db917be59546b232c6fc523e45",
+    "duration": 298.431467,
+    "listedDuration": 298,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "bd33aa2c2cb8f66412d8807176bfd91f-10",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=c9ab0cf70ab5664aa620079a3e7f4474c689a192394a8b9b281b771e8c75eb17",
+      "1,a,SHA256=4d54b6ba5f0b2aad28968ff525db3068f092c7dc0537f6b699fe7913ccff5344"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=c9ab0cf70ab5664aa620079a3e7f4474c689a192394a8b9b281b771e8c75eb17",
+      "1,a,SHA256=4d54b6ba5f0b2aad28968ff525db3068f092c7dc0537f6b699fe7913ccff5344"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 80058970,
+    "onlineSha256": "6a77b1443c577c35cfee260aacba919ae4b98a90002b0e4afb962aeed3df7608"
+  },
+  {
+    "code": "DOW-UAP-PR135",
+    "dvidsId": "1023397",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985782/DOD_111985782.mp4",
+    "bytes": 22766393,
+    "sha256": "ba4bc92e1202ce33b27ecb86e538fd20a6efc39408bb8309b120e710718fac60",
+    "duration": 59.993267,
+    "listedDuration": 59,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "5bbad01ec47a12da9de4dfd16f71564c-3",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=4a3b9477b23a15717129b3dedd0dcd64578ba8a264fdcd0af94efe00031c7ef5",
+      "1,a,SHA256=59e4f82dd3bd04dd1b622755e5fff66e1a5dec0bb316c0b2ca1e89659177bb51"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=4a3b9477b23a15717129b3dedd0dcd64578ba8a264fdcd0af94efe00031c7ef5",
+      "1,a,SHA256=59e4f82dd3bd04dd1b622755e5fff66e1a5dec0bb316c0b2ca1e89659177bb51"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 22771452,
+    "onlineSha256": "f42e0c1d717dad9bacd1d5584a1eee0c5911aee28ca0cb2ef1d4729a0c792aca"
+  },
+  {
+    "code": "DOW-UAP-PR140",
+    "dvidsId": "1023398",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985790/DOD_111985790.mp4",
+    "bytes": 64049840,
+    "sha256": "a8aa9229a647ab152c95d09a20c00925d960efc0acf17c50d2ad198896908779",
+    "duration": 107.7,
+    "listedDuration": 107,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "90ff46399ce88fbdbb4e917362530dcb-8",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=2dba3eae8cca46106e49912737271b775664271d9a28e82e24a7baebfd8f135d",
+      "1,a,SHA256=25082375315e76e6e38f50dea01e9b2efa8176c41c2e935c530012194cf138c2"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=2dba3eae8cca46106e49912737271b775664271d9a28e82e24a7baebfd8f135d",
+      "1,a,SHA256=25082375315e76e6e38f50dea01e9b2efa8176c41c2e935c530012194cf138c2"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 64055328,
+    "onlineSha256": "a3bdbabd9014bb65c6a84c60adcf62326b6c6200388768408280edfab883f588"
+  },
+  {
+    "code": "DOW-UAP-PR141",
+    "dvidsId": "1023400",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985798/DOD_111985798.mp4",
+    "bytes": 138505272,
+    "sha256": "72d345f3cf3975cbee84280d54cb395c5cf8d00037e80ac901b889ffa5895893",
+    "duration": 156.233333,
+    "listedDuration": 156,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "ab5d3003b8d8327e880ffa19c0bd655f-17",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=c845971e0f4ebe6c675ae7f29c975022244e7d0eabb090d42605bdc040962b61",
+      "1,a,SHA256=5a8de0e96da1c2af2d4c69f931b05e5af1b32db1fb9ae79eb58cf91c98807a8f"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=c845971e0f4ebe6c675ae7f29c975022244e7d0eabb090d42605bdc040962b61",
+      "1,a,SHA256=5a8de0e96da1c2af2d4c69f931b05e5af1b32db1fb9ae79eb58cf91c98807a8f"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 138511243,
+    "onlineSha256": "04fdf723f358a3760a04739d488c0e45ac142ecb5edede5c77b1e99e4c6e5b39"
+  },
+  {
+    "code": "DOW-UAP-PR143",
+    "dvidsId": "1023403",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985818/DOD_111985818.mp4",
+    "bytes": 24071535,
+    "sha256": "b08ea1a97c3f83e8fb6bd5984c1e95dbcae37d77df6d7508cb8296ed2edf057e",
+    "duration": 19.233333,
+    "listedDuration": 19,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "11bba6a373d82918b63fc8ce415471d6-3",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=bb47d80f627f60b6ff31ab9f5988aa1325326db4702887cfd083217db560842d",
+      "1,a,SHA256=12bf86977e381b36a65fd15ae46931a0e5131f6236a4454130dd05f041a26c41"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=bb47d80f627f60b6ff31ab9f5988aa1325326db4702887cfd083217db560842d",
+      "1,a,SHA256=12bf86977e381b36a65fd15ae46931a0e5131f6236a4454130dd05f041a26c41"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 24075943,
+    "onlineSha256": "4e578f41be4fa8179126123dfe46b047a680f0ae6ddff43dfb11756bcf7e7036"
+  },
+  {
+    "code": "DOW-UAP-PR144",
+    "dvidsId": "1023404",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985820/DOD_111985820.mp4",
+    "bytes": 31383900,
+    "sha256": "68e7d5eb88f8454b820ae4f72407048cc9c2f3f478e7f49549f6e4c70aaf4b33",
+    "duration": 27.9,
+    "listedDuration": 27,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "76265d99ba1d90f4d903caade11e5aac-4",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=3b955615ad2010c0601cdac76038ff782ef988bd4d0cac59410989564352a935",
+      "1,a,SHA256=b9401a2826d92f0fc71634752fd3539ead3f759abfd64fafe3933d8b5655f5c2"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=3b955615ad2010c0601cdac76038ff782ef988bd4d0cac59410989564352a935",
+      "1,a,SHA256=b9401a2826d92f0fc71634752fd3539ead3f759abfd64fafe3933d8b5655f5c2"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 31388449,
+    "onlineSha256": "5c12a6bf1093d0bc2c2ee8cce1d64ee3b8e63d06866288e3890ca28759b18da1"
+  },
+  {
+    "code": "DOW-UAP-PR148",
+    "dvidsId": "1023405",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985821/DOD_111985821.mp4",
+    "bytes": 71519688,
+    "sha256": "785564c576978f9d9c43eba6e797e8ebbd7f287fb7ae767a77b581ab740ecc49",
+    "duration": 59.766667,
+    "listedDuration": 59,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "584e08602a187a68296eaa6edcf583fe-9",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=d0496aca7e8f20556b070313c7da0613a6989e6d32048ee85095964079a14ac4",
+      "1,a,SHA256=80604c790fd6a48a5b5d353569d8a1e977b1a4248a9a25a311f045fea6f128dc"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=d0496aca7e8f20556b070313c7da0613a6989e6d32048ee85095964079a14ac4",
+      "1,a,SHA256=80604c790fd6a48a5b5d353569d8a1e977b1a4248a9a25a311f045fea6f128dc"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 71524244,
+    "onlineSha256": "5a3507ee8b6ac2c57ef098d2669dd7e638366b0bb71267633c6506c1f33bd61f"
+  },
+  {
+    "code": "DOW-UAP-PR150",
+    "dvidsId": "1023406",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985822/DOD_111985822.mp4",
+    "bytes": 3228077,
+    "sha256": "c5312e6f6ab2f5708b052a4195117276ceb504e05629b596427b54d07475ab20",
+    "duration": 57.566667,
+    "listedDuration": 57,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "b7a636a1da435bf4bac6f7d6a0021975",
+    "remoteETagMatchesBundleMD5": false,
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=650cea82137bddb69e29f47303272f37a4cf5c0630e77c64115cff8425d17125",
+      "1,a,SHA256=31f2e7f2011407b6737e835b1d7f986f2f5e9d1b73b5e4fcba056a7d5634aaab"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=650cea82137bddb69e29f47303272f37a4cf5c0630e77c64115cff8425d17125",
+      "1,a,SHA256=31f2e7f2011407b6737e835b1d7f986f2f5e9d1b73b5e4fcba056a7d5634aaab"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 3232901,
+    "onlineSha256": "024920f7b1b5dccbc76b0b6da842242a1e621157a2fe1d83ace94e2393cded3c"
+  },
+  {
+    "code": "DOW-UAP-PR151",
+    "dvidsId": "1023408",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985832/DOD_111985832.mp4",
+    "bytes": 60826819,
+    "sha256": "15e38b37ac6325fe9c89de3993973754a7bd54aec68d97d07d35187df4fd1743",
+    "duration": 49.933333,
+    "listedDuration": 49,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "35d4793b8330c8a33d60ba8a555275f6-8",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=73e4069a94fdf568450671cca806768b9e74c4d5e3f6008e600b0b564d6f3717",
+      "1,a,SHA256=52354ad2e7714c78527d25756414fa66272fab7b71e3fea917b3e2d6bf729ea2"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=73e4069a94fdf568450671cca806768b9e74c4d5e3f6008e600b0b564d6f3717",
+      "1,a,SHA256=52354ad2e7714c78527d25756414fa66272fab7b71e3fea917b3e2d6bf729ea2"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 60831396,
+    "onlineSha256": "8e1be3e2558b9da8be5734903148cff37dfc6871f22b835f6d99fcdb42bdafe5"
+  },
+  {
+    "code": "DOW-UAP-PR152",
+    "dvidsId": "1023410",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985835/DOD_111985835.mp4",
+    "bytes": 20973165,
+    "sha256": "a3892ecdac13f7d9633ec6d8bccb0b65dae828583a6da599f34505740b1cecfa",
+    "duration": 98.533333,
+    "listedDuration": 98,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "ffad680b66057a6ddf575ff8a0c2252e-3",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=f166cf7f57614dbfa5c198fd5e007bb44f4bd1a4fc1c1f75d18675b1bb7a7801",
+      "1,a,SHA256=b76076ab09c5ff79713977afc9d57d30b25b4c639582d752fb12312cd541e46b"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=f166cf7f57614dbfa5c198fd5e007bb44f4bd1a4fc1c1f75d18675b1bb7a7801",
+      "1,a,SHA256=b76076ab09c5ff79713977afc9d57d30b25b4c639582d752fb12312cd541e46b"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 20977587,
+    "onlineSha256": "6d657bfe51e9a2c9539ebff44889311c4cd3e34cdbb0d4716c444895c80394e7"
+  },
+  {
+    "code": "DOW-UAP-PR159",
+    "dvidsId": "1023402",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985807/DOD_111985807.mp4",
+    "bytes": 79818409,
+    "sha256": "5654affbd88cf777c4c7b2b73e90d85e312f6e0a4c35fcc8be8a64c75e1b8c33",
+    "duration": 70.083333,
+    "listedDuration": 70,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "8490687ecd7d1e7234327a2228e2c4f6-10",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=9a3e065cd0656e45de1b459de67501c456d789998f0b7160d05f9eccf7d35f51",
+      "1,a,SHA256=f2e7c8eabfd827e109b5eb261e02b74a3d04938cee1c0f1826421c956db503d7"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=9a3e065cd0656e45de1b459de67501c456d789998f0b7160d05f9eccf7d35f51",
+      "1,a,SHA256=f2e7c8eabfd827e109b5eb261e02b74a3d04938cee1c0f1826421c956db503d7"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 79823577,
+    "onlineSha256": "eb01892cf7f9338617e3bb875af742ad71f894823206cbcd448ae2980677def1"
+  },
+  {
+    "code": "DOW-UAP-PR160",
+    "dvidsId": "1023407",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985823/DOD_111985823.mp4",
+    "bytes": 802522487,
+    "sha256": "ddc0e05e8202cba03b25f7be8d5807fa54aac9adfe01cdcef4918295d5d41415",
+    "duration": 3913.042467,
+    "listedDuration": 3913,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "7e14dc7eee228d44af50ee6ef06ede57-96",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=564a1ef4a7cec4f837daf1756f01091066c35bc44c7beba0ee0510a244ab31fa",
+      "1,a,SHA256=e1624dd15035997be6a669d6f173e9041317550e5fceb510122064d9198483dc"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=564a1ef4a7cec4f837daf1756f01091066c35bc44c7beba0ee0510a244ab31fa",
+      "1,a,SHA256=e1624dd15035997be6a669d6f173e9041317550e5fceb510122064d9198483dc"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 802527798,
+    "onlineSha256": "74becfe74818a9152bb874d89b18227de7e07987e05617d3e2cf53965660b7d3"
+  },
+  {
+    "code": "LLE-UAP-PR001",
+    "dvidsId": "1023409",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985834/DOD_111985834.mp4",
+    "bytes": 7383993,
+    "sha256": "9ae66a2ff29d08d22c0e440eab1b54118503cc327fa4548cf4fd7b9cbbaa198a",
+    "duration": 79.966667,
+    "listedDuration": 79,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "b16827185a6116906a2b1577a430bf8e",
+    "remoteETagMatchesBundleMD5": false,
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=01fe55af832de5567b65e171fd2f47d3870819b6e37794dc647b2dbdd0ef04cd",
+      "1,a,SHA256=39d63cdcb93cc7f370245f6c13c48d0601999c6229bcd0b109a7b6a9d0d0b763"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=01fe55af832de5567b65e171fd2f47d3870819b6e37794dc647b2dbdd0ef04cd",
+      "1,a,SHA256=39d63cdcb93cc7f370245f6c13c48d0601999c6229bcd0b109a7b6a9d0d0b763"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 7389378,
+    "onlineSha256": "78f775c8a313af62bbeb439d7c72abe4570dc0d7dd4a6133b67f019caadf2151"
+  },
+  {
+    "code": "LLE-UAP-PR002",
+    "dvidsId": "1023412",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985844/DOD_111985844.mp4",
+    "bytes": 81428767,
+    "sha256": "1280587960d361950127d8a5a42752ff3a511460cc5cd18b32920facc740b9fb",
+    "duration": 900.166667,
+    "listedDuration": 900,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "51d8d1f437fc02e8e7a87afdc8cffb85-10",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=64fff38fb0ecc70f1a9fcf319c9a9a5da30ddfdea6907382137b7ad24c3bf232",
+      "1,a,SHA256=664593e8bcaf7973dc72770197f567f11ee33d1e68cc20f5e12dabae6acec39c"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=64fff38fb0ecc70f1a9fcf319c9a9a5da30ddfdea6907382137b7ad24c3bf232",
+      "1,a,SHA256=664593e8bcaf7973dc72770197f567f11ee33d1e68cc20f5e12dabae6acec39c"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 81434116,
+    "onlineSha256": "e7e6c2421efc864955b78b90c0060ac8ddce8144756599b8556c73d00f89006f"
+  },
+  {
+    "code": "LLE-UAP-PR003",
+    "dvidsId": "1023414",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985850/DOD_111985850.mp4",
+    "bytes": 12614687,
+    "sha256": "8a6644de762f65d3fe20d628c1b9698e680535d01109acb3164f7a5f04e75f30",
+    "duration": 27.833333,
+    "listedDuration": 27,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "1f09702610ff2173ac1b709508e94490-2",
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=65f07f2d6157f0b70a7fe982eb1464dea2b0d9d333063dba1eefb770102619d4",
+      "1,a,SHA256=b9d95c76a9a14ecc89f8c4ae783da8f337f1d5e5a0280d68da803a6b2adb1c16"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=65f07f2d6157f0b70a7fe982eb1464dea2b0d9d333063dba1eefb770102619d4",
+      "1,a,SHA256=b9d95c76a9a14ecc89f8c4ae783da8f337f1d5e5a0280d68da803a6b2adb1c16"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 12620043,
+    "onlineSha256": "11eb759486a41bfe9c25c6f76620b2c406cb53f74f7fdaa8c48850e735667829"
+  },
+  {
+    "code": "LLE-UAP-PR004",
+    "dvidsId": "1023416",
+    "url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985855/DOD_111985855.mp4",
+    "bytes": 6608849,
+    "sha256": "3fa9e9fd33cef54f22d21fd5bcdfbed7601a43566c788e24247d9a7153db1f4e",
+    "duration": 102.466667,
+    "listedDuration": 102,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264"
+      },
+      {
+        "type": "audio",
+        "codec": "aac"
+      }
+    ],
+    "decodePassed": true,
+    "decodeMessage": "",
+    "remote206": true,
+    "remotePrefixMatchesOfficialBundle": true,
+    "remoteLengthMatchesOfficialBundle": false,
+    "remoteETag": "4f4bb82cc5c7fa9eb1b6ee97e162c124",
+    "remoteETagMatchesBundleMD5": false,
+    "officialBundleStreamHashes": [
+      "0,v,SHA256=a8d8cf8cdcf665a7a37d92a19b8c584ca10fb0100b2cbd8564a6109f828df056",
+      "1,a,SHA256=855a18a2c6e6d6ce8af45c36c91181d5b96004e2efdc3b05d72a8ecb37888bfa"
+    ],
+    "onlineStreamHashes": [
+      "0,v,SHA256=a8d8cf8cdcf665a7a37d92a19b8c584ca10fb0100b2cbd8564a6109f828df056",
+      "1,a,SHA256=855a18a2c6e6d6ce8af45c36c91181d5b96004e2efdc3b05d72a8ecb37888bfa"
+    ],
+    "onlineEncodedStreamsMatchBundle": true,
+    "onlineStreamPropertiesMatchBundle": true,
+    "onlineBytes": 6614603,
+    "onlineSha256": "9e552721b947e80b3ff9b5609bc0a7eb520b34ef6faa74ff55a13b9a7cec3228"
+  }
+]
