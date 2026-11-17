@@ -1,11 +1,12 @@
 const fs = require('fs');
 const path = require('path');
+const recordFormat = require('../assets/record-format.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20261117-release67-audit1';
+const assetVersion = '20261117-record-dates-lines1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -24,6 +25,7 @@ const langPathPattern = new RegExp(`^/(${generatedDirs.join('|')})(/|$)`);
 const langMenuCodes = {en: 'en', ja: 'ja', es: 'es', 'zh-Hans': 'cn', 'zh-Hant': 'tw', pt: 'pt', ru: 'ru', fr: 'fr', de: 'de', ko: 'ko', ar: 'ar'};
 
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
+const recordDates = JSON.parse(read('assets/record-detail-dates.json')).records;
 const clean = value => String(value || '').replace(/\u00a0/g, ' ').trim();
 const key = value => clean(value).toLowerCase().replace(/[^a-z0-9]/g, '');
 const esc = value => clean(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -634,6 +636,7 @@ function normalize(row, index, translations) {
     release: field(row, ['release']) || releaseMap[releaseDate] || releaseDate,
     releaseDate,
     incidentDate: field(row, ['incident date', 'incidentDate']) || 'N/A',
+    detailDate: recordFormat.detailDate({id: recordId, incidentDate: field(row, ['incident date', 'incidentDate'])}, recordDates),
     incidentLocation: (field(row, ['incident location', 'incidentLocation']) || 'N/A').replace(/\bWesten United States\b/g, 'Western United States'),
     type: officialType || (dvidsId ? 'VID' : (imageUrl && !doc ? 'IMG' : ext)),
     description: field(row, ['description blurb', 'description', 'video description', 'record description', 'caption']),
@@ -1249,10 +1252,11 @@ function metaDescription(doc, lang) {
   const location = langLocation(doc, lang);
   const type = `.${clean(doc.type) || 'PDF'}`;
   const agency = agencyLabel(doc.agency, lang);
-  const date = doc.incidentDate || 'N/A';
-  if (lang === 'zh-Hans') return `美国政府 UFO/UAP 公开档案：${title}。类型：${type}。发布机构：${agency}。事件日期：${date}。事件地点：${location}。页面保留官方来源链接、媒体预览和相关档案。`;
-  if (lang === 'zh-Hant') return `美國政府 UFO/UAP 公開檔案：${title}。類型：${type}。發布機構：${agency}。事件日期：${date}。事件地點：${location}。頁面保留官方來源連結、媒體預覽和相關檔案。`;
-  if (lang === 'ja') return `米国政府UFO/UAP公開アーカイブ記録：${title}。種類：${type}。公開機関：${agency}。事件日：${date}。場所：${location}。公式ソース、メディア、関連記録を掲載。`;
+  const date = doc.detailDate?.value || doc.incidentDate || 'N/A';
+  const dateLabel = recordDateLabel(doc, lang);
+  if (lang === 'zh-Hans') return `美国政府 UFO/UAP 公开档案：${title}。类型：${type}。发布机构：${agency}。${dateLabel}：${date}。事件地点：${location}。页面保留官方来源链接、媒体预览和相关档案。`;
+  if (lang === 'zh-Hant') return `美國政府 UFO/UAP 公開檔案：${title}。類型：${type}。發布機構：${agency}。${dateLabel}：${date}。事件地點：${location}。頁面保留官方來源連結、媒體預覽和相關檔案。`;
+  if (lang === 'ja') return `米国政府UFO/UAP公開アーカイブ記録：${title}。種類：${type}。公開機関：${agency}。${dateLabel}：${date}。場所：${location}。公式ソース、メディア、関連記録を掲載。`;
   if (lang === 'es') return `Registro público UFO/UAP del Gobierno de EE. UU.: ${title}. Tipo: ${type}. Agencia: ${agency}. Fecha: ${date}. Lugar: ${location}. Incluye fuente oficial, vista multimedia y registros relacionados.`;
   if (lang === 'pt') return `Registro público UFO/UAP do governo dos EUA: ${title}. Tipo: ${type}. Agência: ${agency}. Data: ${date}. Local: ${location}. Inclui fonte oficial, mídia e registros relacionados.`;
   if (lang === 'fr') return `Archive publique UFO/UAP du gouvernement des États-Unis : ${title}. Type : ${type}. Agence : ${agency}. Date : ${date}. Lieu : ${location}. Source officielle, média et archives liées.`;
@@ -1260,28 +1264,29 @@ function metaDescription(doc, lang) {
   if (lang === 'ru') return `Публичная запись UFO/UAP правительства США: ${title}. Тип: ${type}. Ведомство: ${agency}. Дата: ${date}. Место: ${location}. Есть официальный источник, медиа и связанные записи.`;
   if (lang === 'ko') return `미국 정부 UFO/UAP 공개 기록: ${title}. 유형: ${type}. 기관: ${agency}. 날짜: ${date}. 위치: ${location}. 공식 출처, 미디어 보기, 관련 기록 포함.`;
   if (lang === 'ar') return `سجل UFO/UAP عام من الحكومة الأمريكية: ${title}. النوع: ${type}. الجهة: ${agency}. التاريخ: ${date}. الموقع: ${location}. يتضمن المصدر الرسمي والوسائط والسجلات المرتبطة.`;
-  return `U.S. government UFO/UAP public archive record: ${title}. Type: ${type}. Agency: ${agency}. Incident date: ${date}. Location: ${location}. Includes official source link, media preview, and related records.`;
+  return `U.S. government UFO/UAP public archive record: ${title}. Type: ${type}. Agency: ${agency}. ${dateLabel}: ${date}. Location: ${location}. Includes official source link, media preview, and related records.`;
 }
 
 function structuredSummary(doc, lang) {
   const agency = agencyLabel(doc.agency, lang);
   const release = releaseLabel(doc.release, lang);
   const location = langLocation(doc, lang);
-  const date = doc.incidentDate || 'N/A';
+  const date = doc.detailDate?.value || doc.incidentDate || 'N/A';
+  const dateLabel = recordDateLabel(doc, lang);
   const type = doc.type || 'PDF';
   if (lang === 'ja') {
-    return `この記録は、${agency}が${release}で公開した${type}形式のUAP関連資料です。事件日は${date}、事件場所は${location}として記録されています。ページには公式記録へのリンク、原文説明、主要メタデータを掲載しています。`;
+    return `この記録は、${agency}が${release}で公開した${type}形式のUAP関連資料です。${dateLabel}は${date}、事件場所は${location}として記録されています。ページには公式記録へのリンク、原文説明、主要メタデータを掲載しています。`;
   }
   if (lang === 'es') {
-    return `Este registro es un material relacionado con UAP en formato ${type}, publicado por ${agency} en ${release}. La fecha del incidente figura como ${date} y el lugar como ${location}. La página conserva el enlace a la fuente oficial, la descripción original y los metadatos principales.`;
+    return `Este registro es un material relacionado con UAP en formato ${type}, publicado por ${agency} en ${release}. ${dateLabel}: ${date} y el lugar como ${location}. La página conserva el enlace a la fuente oficial, la descripción original y los metadatos principales.`;
   }
   if (lang === 'en') {
-    return `This record is a ${type} UAP-related asset released by ${agency} in ${release}. The incident date is listed as ${date}, and the incident location is listed as ${location}. This page preserves the official source link, original description, and structured metadata.`;
+    return `This record is a ${type} UAP-related asset released by ${agency} in ${release}. The ${dateLabel.toLowerCase()} is listed as ${date}, and the incident location is listed as ${location}. This page preserves the official source link, original description, and structured metadata.`;
   }
   if (lang === 'zh-Hant') {
-    return `${agency}在${release}公開的 ${type} 類型 UAP 相關檔案。事件日期：${date}；事件地點：${location}。本頁保留官方來源連結、翻譯說明與主要元資料。`;
+    return `${agency}在${release}公開的 ${type} 類型 UAP 相關檔案。${dateLabel}：${date}；事件地點：${location}。本頁保留官方來源連結、翻譯說明與主要元資料。`;
   }
-  return `${agency}在${release}公开的 ${type} 类型 UAP 相关档案。事件日期：${date}；事件地点：${location}。本页保留官方来源链接、翻译说明与主要元数据。`;
+  return `${agency}在${release}公开的 ${type} 类型 UAP 相关档案。${dateLabel}：${date}；事件地点：${location}。本页保留官方来源链接、翻译说明与主要元数据。`;
 }
 
 function seoRecordTitle(doc, lang, title) {
@@ -1305,7 +1310,7 @@ function mediaDetailsText(doc, lang) {
     s.mediaDetailsIntro,
     `${text[lang].agency}: ${agencyLabel(doc.agency, lang)}.`,
     `${text[lang].release}: ${releaseLabel(doc.release, lang)}.`,
-    `${text[lang].date}: ${doc.incidentDate || 'N/A'}.`,
+    `${recordDateLabel(doc, lang)}: ${doc.detailDate?.value || doc.incidentDate || 'N/A'}.`,
     `${text[lang].location}: ${langLocation(doc, lang)}.`,
     `${text[lang].type}: .${doc.type}.`
   ];
@@ -1636,6 +1641,7 @@ ${schemaHtml}
   <script src="${prefix}assets/release-04-r2-documents.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/release-r2-media.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/release-06-07-media.js?v=${assetVersion}"></script>
+  <script src="${prefix}assets/record-format.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/site.js?v=${assetVersion}"></script>
 </body>
 </html>
@@ -1947,7 +1953,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script src="\.\.\/assets\/release-04-r2-documents\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/release-r2-media\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/release-06-07-media\.js\?v=[^"]+"><\/script>/g, '')
-    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/release-06-07-media.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
+    .replace(/\s*<script src="\.\.\/assets\/record-format\.js\?v=[^"]+"><\/script>/g, '')
+    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/release-06-07-media.js?v=${assetVersion}"></script>$1<script src="../assets/record-format.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/(<a href="#releases" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
     .replace(/(<a href="#releases" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
@@ -1962,16 +1969,22 @@ function buildInteractiveHome(lang, template) {
     .replace(/<footer>[\s\S]*?<\/footer>/, footer);
 }
 
+function recordDateLabel(doc, lang) { return doc.detailDate?.kind === 'dateTaken' ? dateTakenLabel(lang) : text[lang].date; }
+
+function dateTakenLabel(lang) { return ({"en": "Date taken", "es": "Fecha de captura", "pt": "Data da captura", "fr": "Date de prise de vue", "de": "Aufnahmedatum", "ru": "Дата съёмки", "ar": "تاريخ التسجيل", "ja": "撮影日", "ko": "촬영일", "zh-Hans": "拍摄日期", "zh-Hant": "拍攝日期"})[lang]; }
+
 function buildRecordPage(doc, lang, docs) {
   const l = text[lang];
   const title = langTitle(doc, lang);
+  const detailDate = doc.detailDate;
+  const detailDateLabel = detailDate.kind === 'dateTaken' ? dateTakenLabel(lang) : l.date;
   const description = metaDescription(doc, lang);
   const canonicalPath = `/${lang}/records/${doc.slug}/`;
   const officialDescription = doc.description || '';
   const languageDescription = langDescription(doc, lang);
   const descriptionBlocks = [
     lang !== 'en' && languageDescription
-      ? `<h2>${esc(l.official)}</h2>${paragraphs(languageDescription, lang, doc.redaction)}`
+      ? `<h2>${esc(l.official)}</h2>${paragraphs(languageDescription, lang, doc.redaction, officialDescription)}`
       : '',
     lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription, lang, doc.redaction)}` : ''
   ].filter(Boolean).join('\n        ');
@@ -1998,7 +2011,7 @@ function buildRecordPage(doc, lang, docs) {
         <dl class="static-meta">
           <dt>${esc(l.agency)}</dt><dd>${esc(agencyLabel(doc.agency, lang))}</dd>
           <dt>${esc(l.release)}</dt><dd>${esc(releaseLabel(doc.release, lang))}</dd>
-          <dt>${esc(l.date)}</dt><dd>${esc(doc.incidentDate || 'N/A')}</dd>
+          <dt>${esc(detailDateLabel)}</dt><dd data-record-date-kind="${esc(detailDate.kind)}">${esc(detailDate.value || 'N/A')}</dd>
           <dt>${esc(l.location)}</dt><dd>${esc(langLocation(doc, lang))}</dd>
           <dt>${esc(l.type)}</dt><dd>.${esc(doc.type)}</dd>${virinMeta}
         </dl>
@@ -2111,16 +2124,11 @@ function staticMediaPreview(doc, lang, title, docs) {
 }
 
 function normalizeDescriptionBreaks(value) {
-  return clean(value)
-    .replace(/\r\n?/g, '\n')
-    .replace(/[ \t]+\n/g, '\n')
-    .replace(/(^|\n)(\d)\n+(\d{1,2}:\d{2}(?:-\d{1,2}:\d{2})?[:：])/g, '$1$2$3')
-    .replace(/(\d{1,2}:\d{2})-\s*\n+\s*(\d{1,2}:\d{2})/g, '$1-$2')
-    .replace(/\n{3,}/g, '\n\n');
+  return recordFormat.normalizeDescription(value);
 }
 
-function paragraphs(value, lang = 'en', redactionFlag = false) {
-  const parts = normalizeDescriptionBreaks(value).split(/\n{2,}/).map(clean).filter(Boolean);
+function paragraphs(value, lang = 'en', redactionFlag = false, officialDescription = value) {
+  const parts = recordFormat.normalizeDescription(value, officialDescription).split(/\n{2,}/).map(clean).filter(Boolean);
   if (redactionFlag && !parts.some(isRedactionParagraph)) parts.push(text.en.redactionNotice);
   return parts.map(p => {
     const redaction = isRedactionParagraph(p);
@@ -2134,7 +2142,7 @@ function redactionTemplate(lang = 'en') {
 }
 
 function descriptionHtml(value) {
-  return esc(value).replace(/\b\d{1,2}:\d{2}(?:-\d{1,2}:\d{2})?[:：]?/g, match => `<span class="record-timecode">${match}</span>`);
+  return recordFormat.descriptionHtml(value);
 }
 
 function isRedactionParagraph(value) {

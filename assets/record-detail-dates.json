@@ -1,0 +1,3173 @@
+{
+  "officialCsvSha256": "92b3ec7dd87286ea7092a33b476566b4416d3bb02970b02757b237d8322fe81a",
+  "records": {
+    "CIA-UAP-017, Placement on High Alert Due to Perceived Aggressive Foreign Posturing": {
+      "kind": "incidentDate",
+      "value": "July, 2008",
+      "officialTitle": "CIA-UAP-017, Placement on High Alert Due to Perceived Aggressive Foreign Posturing ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D002, FD-1057, Unresolved UAP Report, Colorado Springs, 2022": {
+      "kind": "incidentDate",
+      "value": "2022",
+      "officialTitle": "FBI-UAP-D002, FD-1057, Unresolved UAP Report, Colorado Springs, 2022 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D003, Digital Rendering, Unresolved UAP Report, Colorado Springs, 2022": {
+      "kind": "incidentDate",
+      "value": "2022",
+      "officialTitle": "FBI-UAP-D003, Digital Rendering, Unresolved UAP Report, Colorado Springs, 2022 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D009, FD-302-67, “Northeastern Orb Sighting,” 2026": {
+      "kind": "incidentDate",
+      "value": "2026",
+      "officialTitle": "FBI-UAP-D009, FD-302-67, “Northeastern Orb Sighting,” 2026 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D010, FD-302-71, “Northeastern Orb Sighting,” 2026": {
+      "kind": "incidentDate",
+      "value": "2026",
+      "officialTitle": "FBI-UAP-D010, FD-302-71, “Northeastern Orb Sighting,” 2026 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D011, D/FBI Correspondence Referral, 1949": {
+      "kind": "incidentDate",
+      "value": "1949",
+      "officialTitle": "FBI-UAP-D011, D/FBI Correspondence Referral, 1949 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-PR003, “Orbs Over the Pond,” 2024": {
+      "kind": "dateTaken",
+      "value": "2024-10-01",
+      "officialTitle": "FBI-UAP-PR003, “Orbs Over the Pond,” 2024 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1010267",
+      "dvidsId": "1010267",
+      "sourceDateText": "10.01.2024"
+    },
+    "FBI-UAP-PR004, “Northeastern Orb Sighting,” 2025": {
+      "kind": "dateTaken",
+      "value": "2025-07-01",
+      "officialTitle": "FBI-UAP-PR004, “Northeastern Orb Sighting,” 2025 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1010269",
+      "dvidsId": "1010269",
+      "sourceDateText": "07.01.2025"
+    },
+    "ICA-UAP-D001, Analysis: Colorado Springs UAP Incident, 2022": {
+      "kind": "incidentDate",
+      "value": "2022",
+      "officialTitle": "ICA-UAP-D001, Analysis: Colorado Springs UAP Incident, 2022  ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "18_100754_ General 1946-7_Vol_2": {
+      "kind": "incidentDate",
+      "value": "12/30/1947",
+      "officialTitle": "18_100754_ General 1946-7_Vol_2",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "18_6369445_General_1948_Vol_1": {
+      "kind": "incidentDate",
+      "value": "6/15/1948",
+      "officialTitle": "18_6369445_General_1948_Vol_1",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "255_413270_UFO's_and_Defense_What_Should_we_Prepare_For": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "255_413270_UFO's_and_Defense_What_Should_we_Prepare_For",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents": {
+      "kind": "incidentDate",
+      "value": "3/18/1945",
+      "officialTitle": "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_1948-1955-TS_CONT_No.2_2-5300-2-5399": {
+      "kind": "incidentDate",
+      "value": "11/8/1948",
+      "officialTitle": "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_1948-1955-TS_CONT_No.2_2-5300-2-5399",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "341_110677_Numerical_File,_5-2500": {
+      "kind": "incidentDate",
+      "value": "10/14/1955",
+      "officialTitle": "341_110677_Numerical_File,_5-2500",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "342_HS1-416511228_319.1 Flying Discs 1949": {
+      "kind": "incidentDate",
+      "value": "1/9/1950",
+      "officialTitle": "342_HS1-416511228_319.1 Flying Discs 1949",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "38_143685_box_Incident_Summaries_101-172": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "38_143685_box_Incident_Summaries_101-172",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "38_143685_box_Incident_Summaries_173-233": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "38_143685_box_Incident_Summaries_173-233",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "38_143685_box7_Incident_Summaries_1-100": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "38_143685_box7_Incident_Summaries_1-100",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "59_214434_SP 16 [7.18.1963]": {
+      "kind": "incidentDate",
+      "value": "7/18/1963",
+      "officialTitle": "59_214434_SP 16 [7.18.1963]",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "59_64634_711.5612[7-2852": {
+      "kind": "incidentDate",
+      "value": "7/28/1952",
+      "officialTitle": "59_64634_711.5612[7-2852",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-101634279_100-DE-18221_Serial_844": {
+      "kind": "incidentDate",
+      "value": "4/17/1958",
+      "officialTitle": "65_HS1-101634279_100-DE-18221_Serial_844",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-101634279_100-DE-26505": {
+      "kind": "incidentDate",
+      "value": "11/7/1957",
+      "officialTitle": "65_HS1-101634279_100-DE-26505",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Section_001": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Section_001\n",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Section_002": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Section_002",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Section_003": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Section_003",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Section_004": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Section_004",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Section_005": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Section_005",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Section_006": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Section_006",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Section_007": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Section_007",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Section_008": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Section_008",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Section_009": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Section_009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Section_010": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Section_010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Serial_130": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Serial_130",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Serial_153": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Serial_153",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Serial_164": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Serial_164",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Serial_220": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Serial_220",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Serial_403": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Serial_403",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Serial_438": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Serial_438",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_Serial_449": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_Serial_449",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "65_HS1-834228961_62-HQ-83894_SUB_A": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "65_HS1-834228961_62-HQ-83894_SUB_A",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-002, Scientific Advisory Panel on Unidentified Flying Objects, Report, 1952-1953": {
+      "kind": "incidentDate",
+      "value": "1952-1953",
+      "officialTitle": "CIA-UAP-002, Scientific Advisory Panel on Unidentified Flying Objects, Report, 1952-1953 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-003, The Central Intelligence Agency and Overhead Reconnaissance; The U-2 and OXCART Programs, 1954-1974": {
+      "kind": "incidentDate",
+      "value": "1954-1974",
+      "officialTitle": "CIA-UAP-003, The Central Intelligence Agency and Overhead Reconnaissance; The U-2 and OXCART Programs, 1954-1974 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-004, CASE 17708 (CLOSED) and DR. Leon Davidson": {
+      "kind": "incidentDate",
+      "value": "1958",
+      "officialTitle": "CIA-UAP-004, CASE 17708 (CLOSED) and DR. Leon Davidson ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-005, German Scientist's Article on 'Flying Discs'": {
+      "kind": "incidentDate",
+      "value": "1950",
+      "officialTitle": "CIA-UAP-005, German Scientist's Article on 'Flying Discs' ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-006, Sighting Of Unconventional Aircraft": {
+      "kind": "incidentDate",
+      "value": "November, 1955",
+      "officialTitle": "CIA-UAP-006, Sighting Of Unconventional Aircraft ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-007, Current Status Of Unidentified Flying Objects (UFO) Project.": {
+      "kind": "incidentDate",
+      "value": "December, 1953",
+      "officialTitle": "CIA-UAP-007, Current Status Of Unidentified Flying Objects (UFO) Project. ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-008, Speculative Paper By N Kardashev and A Sakharov on Charged Mass in Space at Conference on Origins Of Life, Armenia, 6-8 September 1971/Low Scientific Level Of Other Soviet Papers": {
+      "kind": "incidentDate",
+      "value": "1972",
+      "officialTitle": "CIA-UAP-008, Speculative Paper By N Kardashev and A Sakharov on Charged Mass in Space at Conference on Origins Of Life, Armenia, 6-8 September 1971/Low Scientific Level Of Other Soviet Papers ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-009, Unknown Flying Objects Observed Over Budapest": {
+      "kind": "incidentDate",
+      "value": "1957",
+      "officialTitle": "CIA-UAP-009, Unknown Flying Objects Observed Over Budapest ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-010, Report on Conversations with Soviet Scientists on Subject of Unidentified Flying Objects in the USSR": {
+      "kind": "incidentDate",
+      "value": "August, 1967",
+      "officialTitle": "CIA-UAP-010, Report on Conversations with Soviet Scientists on Subject of Unidentified Flying Objects in the USSR",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-011, The Sary Shagan Weapons Testing Range": {
+      "kind": "incidentDate",
+      "value": "December, 1973",
+      "officialTitle": "CIA-UAP-011, The Sary Shagan Weapons Testing Range ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-012, Combating Fatigue In Crewmembers": {
+      "kind": "incidentDate",
+      "value": "November, 1976",
+      "officialTitle": "CIA-UAP-012, Combating Fatigue In Crewmembers ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-013, Report of Unusual Flying Object Sightings and Attendant Scientific Activity": {
+      "kind": "incidentDate",
+      "value": "1956",
+      "officialTitle": "CIA-UAP-013, Report of Unusual Flying Object Sightings and Attendant Scientific Activity ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-014, British activity in the Field of \"Unidentified Flying Objects\"": {
+      "kind": "incidentDate",
+      "value": "December, 1952",
+      "officialTitle": "CIA-UAP-014, British activity in the Field of \"Unidentified Flying Objects\" ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-015, Project Blue Book Special Report No. 14 (Analysis of Reports of Unidentified Aerial Objects)": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "CIA-UAP-015, Project Blue Book Special Report No. 14 (Analysis of Reports of Unidentified Aerial Objects) ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-016, Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan": {
+      "kind": "incidentDate",
+      "value": "1968",
+      "officialTitle": "CIA-UAP-016, Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-018, Report of Unusual Flying Object Sightings and Attendant Scientific Activity": {
+      "kind": "incidentDate",
+      "value": "1955",
+      "officialTitle": "CIA-UAP-018, Report of Unusual Flying Object Sightings and Attendant Scientific Activity ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-019, Australian Dept of Defense Scientific and Intel Aspects of the UFO Problem": {
+      "kind": "incidentDate",
+      "value": "1971",
+      "officialTitle": "CIA-UAP-019, Australian Dept of Defense Scientific and Intel Aspects of the UFO Problem ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-D001, Intelligence Information Report, USSR, 1973": {
+      "kind": "incidentDate",
+      "value": "12/20/1973",
+      "officialTitle": "CIA-UAP-D001, Intelligence Information Report, USSR, 1973",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOE-UAP-D001, Enhanced PANTEX Imagery": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOE-UAP-D001, Enhanced PANTEX Imagery",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOE-UAP-D002, James Tuck Correspondence, 1970s": {
+      "kind": "incidentDate",
+      "value": "1970s",
+      "officialTitle": "DOE-UAP-D002, James Tuck Correspondence, 1970s",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOE-UAP-D003, Pajarito Astronomers Invitation, 1986": {
+      "kind": "incidentDate",
+      "value": "5/20/1986",
+      "officialTitle": "DOE-UAP-D003, Pajarito Astronomers Invitation, 1986",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D003, Mission Report, Arabian Gulf, 2020": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D003, Mission Report, Arabian Gulf, 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D004, Mission Report, Arabian Gulf, 2020": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D004, Mission Report, Arabian Gulf, 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D005, Mission Report, Arabian Gulf, 2020": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D005, Mission Report, Arabian Gulf, 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D006, Mission Report, Arabian Gulf, 2020": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D006, Mission Report, Arabian Gulf, 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D007, Mission Report, Arabian Gulf, 2020": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D007, Mission Report, Arabian Gulf, 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D008, Mission Report, Djibouti, 2025": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D008, Mission Report, Djibouti, 2025",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D010, Mission Report, Middle East, May 2022": {
+      "kind": "incidentDate",
+      "value": "5/6/2022",
+      "officialTitle": "DOW-UAP-D010, Mission Report, Middle East, May 2022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D012, Mission Report, Iraq, May 2022": {
+      "kind": "incidentDate",
+      "value": "5/20/2022",
+      "officialTitle": "DOW-UAP-D012, Mission Report, Iraq, May 2022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D014, Mission Report, Iraq, May 2022": {
+      "kind": "incidentDate",
+      "value": "5/29/2022",
+      "officialTitle": "DOW-UAP-D014, Mission Report, Iraq, May 2022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D016, Mission Report, Syria, July 2022": {
+      "kind": "incidentDate",
+      "value": "7/31/2022",
+      "officialTitle": "DOW-UAP-D016, Mission Report, Syria, July 2022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D017, UAP Reported at Sandia Base, 1948-1950": {
+      "kind": "incidentDate",
+      "value": "1948-1950",
+      "officialTitle": "DOW-UAP-D017, UAP Reported at Sandia Base, 1948-1950",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D018, Mission Report, Iraq, December 2022": {
+      "kind": "incidentDate",
+      "value": "12/1/2022",
+      "officialTitle": "DOW-UAP-D018, Mission Report, Iraq, December 2022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D019, Mission Report, Syria, February 21, 2023": {
+      "kind": "incidentDate",
+      "value": "2/21/2023",
+      "officialTitle": "DOW-UAP-D019, Mission Report, Syria, February 21, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D020, Mission Report, Iraq, 2023": {
+      "kind": "incidentDate",
+      "value": "3/31/2023",
+      "officialTitle": "DOW-UAP-D020, Mission Report, Iraq, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D023, Mission Report, United Arab Emirates, October 2023": {
+      "kind": "incidentDate",
+      "value": "10/31/2023",
+      "officialTitle": "DOW-UAP-D023, Mission Report, United Arab Emirates, October 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D025, Mission Report, Greece, January 2024": {
+      "kind": "incidentDate",
+      "value": "1/25/2024",
+      "officialTitle": "DOW-UAP-D025, Mission Report, Greece, January 2024",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D027, Mission Report, United Arab Emirates, October 2023": {
+      "kind": "incidentDate",
+      "value": "6/7/2024",
+      "officialTitle": "DOW-UAP-D027, Mission Report, United Arab Emirates, October 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D028, Mission Report, Iraq, September 2024": {
+      "kind": "incidentDate",
+      "value": "9/20/2024",
+      "officialTitle": "DOW-UAP-D028, Mission Report, Iraq, September 2024",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D032, Mission Report, Syria, October 2024": {
+      "kind": "incidentDate",
+      "value": "10/20/2024",
+      "officialTitle": "DOW-UAP-D032, Mission Report, Syria, October 2024",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D033, Mission Report, Greece, October 2023": {
+      "kind": "incidentDate",
+      "value": "10/27/2023",
+      "officialTitle": "DOW-UAP-D033, Mission Report, Greece, October 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D035, Mission Report, Greece, October 2023": {
+      "kind": "incidentDate",
+      "value": "10/29/2023",
+      "officialTitle": "DOW-UAP-D035, Mission Report, Greece, October 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D038, Range Fouler Debrief, Middle East, May 2020": {
+      "kind": "incidentDate",
+      "value": "5/14/2020",
+      "officialTitle": "DOW-UAP-D038, Range Fouler Debrief, Middle East, May 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D042, Range Fouler Debrief, Japan, 2023": {
+      "kind": "incidentDate",
+      "value": "8/31/2020",
+      "officialTitle": "DOW-UAP-D042, Range Fouler Debrief, Arabian Gulf, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D044, Range Fouler Reporting Form, Gulf of Aden, October 2020": {
+      "kind": "incidentDate",
+      "value": "10/15/2020",
+      "officialTitle": "DOW-UAP-D044, Range Fouler Reporting Form, Gulf of Aden, October 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D048, Department of the Air Force Report, 1996": {
+      "kind": "incidentDate",
+      "value": "9/10/1996",
+      "officialTitle": "DOW-UAP-D048, Department of the Air Force Report, 1996",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D049, Launch Summary, Vandenberg AFB, 2000": {
+      "kind": "incidentDate",
+      "value": "2/3/2000",
+      "officialTitle": "DOW-UAP-D049, Launch Summary, Vandenberg AFB, 2000",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D050, Email Correspondence, INDOPACOM, April 2025": {
+      "kind": "incidentDate",
+      "value": "4/10/2025-4/11/2025",
+      "officialTitle": "DOW-UAP-D050, Email Correspondence, INDOPACOM, April 2025",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D051, Email Correspondence, Pacific Time Zone, March 2023": {
+      "kind": "incidentDate",
+      "value": "3/23/2026",
+      "officialTitle": "DOW-UAP-D051, Email Correspondence, Pacific Time Zone, March 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D052, Email Correspondence, NA, August 2024": {
+      "kind": "incidentDate",
+      "value": "10/31/2024",
+      "officialTitle": "DOW-UAP-D052, Email Correspondence, NA, August 2024",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D054, Mission Report, Mediterranean Sea, NA": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D054, Mission Report, Mediterranean Sea, NA",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D055, Mission Report, Syria, November 2016": {
+      "kind": "incidentDate",
+      "value": "11/18/2016",
+      "officialTitle": "DOW-UAP-D055, Mission Report, Syria, November 2016",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D056, Range Fouler Debrief, Arabian Sea, August 2020": {
+      "kind": "incidentDate",
+      "value": "8/24/2020",
+      "officialTitle": "DOW-UAP-D056, Range Fouler Debrief, Arabian Sea, August 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D057, Range Fouler Reporting Form, Gulf of Aden, September 2020": {
+      "kind": "incidentDate",
+      "value": "9/4/2020",
+      "officialTitle": "DOW-UAP-D057, Range Fouler Reporting Form, Gulf of Aden, September 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D058, Range Fouler Debrief, NA, October 2020": {
+      "kind": "incidentDate",
+      "value": "10/27/2020",
+      "officialTitle": "DOW-UAP-D058, Range Fouler Debrief, NA, October 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D060, Mission Report, Arabian Gulf, August 2020": {
+      "kind": "incidentDate",
+      "value": "8/8/2020",
+      "officialTitle": "DOW-UAP-D060, Mission Report, Arabian Gulf, August 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D061, Mission Report, Arabian Gulf, August 2020": {
+      "kind": "incidentDate",
+      "value": "8/27/2020",
+      "officialTitle": "DOW-UAP-D061, Mission Report, Arabian Gulf, August 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D062, Mission Report, Strait of Hormuz, September 2020": {
+      "kind": "incidentDate",
+      "value": "9/16/2020",
+      "officialTitle": "DOW-UAP-D062, Mission Report, Strait of Hormuz, September 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D063, Mission Report, Strait of Hormuz, October 2020": {
+      "kind": "incidentDate",
+      "value": "10/1/2020",
+      "officialTitle": "DOW-UAP-D063, Mission Report, Strait of Hormuz, October 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D064, Mission Report, Iran, November 2020": {
+      "kind": "incidentDate",
+      "value": "11/2/2020",
+      "officialTitle": "DOW-UAP-D064, Mission Report, Iran, November 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D065, Mission Report, Arabian Gulf, July 2020": {
+      "kind": "incidentDate",
+      "value": "7/16/2020",
+      "officialTitle": "DOW-UAP-D065, Mission Report, Arabian Gulf, July 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D074, Mission Report, Syria, November 2023": {
+      "kind": "incidentDate",
+      "value": "11/9/2023",
+      "officialTitle": "DOW-UAP-D074, Mission Report, Syria, November 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D075, Mission Report, Gulf of Aden, July 2024": {
+      "kind": "incidentDate",
+      "value": "7/14/2024",
+      "officialTitle": "DOW-UAP-D075, Mission Report, Gulf of Aden, July 2024",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D077, AARO Unresolved Case Analysis Update: Western United States Event": {
+      "kind": "incidentDate",
+      "value": "2023",
+      "officialTitle": "DOW-UAP-D077, AARO Unresolved Case Analysis Update: Western United States Event ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D078, Notional Map: Western United States Event": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "DOW-UAP-D078, Notional Map: Western United States Event ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D079, Narrative Statement 1, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "DOW-UAP-D079, Narrative Statement 1, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D080, Narrative Statement 2, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "DOW-UAP-D080, Narrative Statement 2, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D081, Narrative Statement 3, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "DOW-UAP-D081, Narrative Statement 3, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D082, Narrative Statement 4, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "DOW-UAP-D082, Narrative Statement 4, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D083, Narrative Statement 5, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "DOW-UAP-D083, Narrative Statement 5, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953": {
+      "kind": "incidentDate",
+      "value": "1953",
+      "officialTitle": "DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D086, USNavy-Report-of-Flying-Discs_1948": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D086, USNavy-Report-of-Flying-Discs_1948 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D087, U.S. Air Force Analysis of Flying Objects in the United States, 1-100": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D087, U.S. Air Force Analysis of Flying Objects in the United States, 1-100  ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D088, U.S. Air Force Analysis of Flying Objects in the United States, 101-172": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-D088, U.S. Air Force Analysis of Flying Objects in the United States, 101-172 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-PR019, Unresolved UAP Report, Middle East, May 2022": {
+      "kind": "dateTaken",
+      "value": "2022-05-01",
+      "officialTitle": "DOW-UAP-PR019, Unresolved UAP Report, Middle East, May 2022",
+      "sourceUrl": "https://www.dvidshub.net/video/1006056",
+      "dvidsId": "1006056",
+      "sourceDateText": "05.01.2022"
+    },
+    "DOW-UAP-PR020, Unresolved UAP Report, Kuwait, May 2022": {
+      "kind": "incidentDate",
+      "value": "N/A",
+      "officialTitle": "DOW-UAP-PR020, Unresolved UAP Report, Kuwait, May 2022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-PR021, Unresolved UAP Report, Iraq, May 2022": {
+      "kind": "dateTaken",
+      "value": "2022-05-01",
+      "officialTitle": "DOW-UAP-PR021, Unresolved UAP Report, Iraq, May 2022",
+      "sourceUrl": "https://www.dvidshub.net/video/1006059",
+      "dvidsId": "1006059",
+      "sourceDateText": "05.01.2022"
+    },
+    "DOW-UAP-PR022, Unresolved UAP Report, Syria, July 2022": {
+      "kind": "dateTaken",
+      "value": "2022-07-01",
+      "officialTitle": "DOW-UAP-PR022, Unresolved UAP Report, Syria, July 2022",
+      "sourceUrl": "https://www.dvidshub.net/video/1006060",
+      "dvidsId": "1006060",
+      "sourceDateText": "07.01.2022"
+    },
+    "DOW-UAP-PR023, Unresolved UAP Report, Iraq, December 2022": {
+      "kind": "dateTaken",
+      "value": "2022-12-01",
+      "officialTitle": "DOW-UAP-PR023, Unresolved UAP Report, Iraq, December 2022",
+      "sourceUrl": "https://www.dvidshub.net/video/1006062",
+      "dvidsId": "1006062",
+      "sourceDateText": "12.01.2022"
+    },
+    "DOW-UAP-PR026, Unresolved UAP Report, United Arab Emirates, October 2023": {
+      "kind": "dateTaken",
+      "value": "2023-10-01",
+      "officialTitle": "DOW-UAP-PR026, Unresolved UAP Report, United Arab Emirates, October 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1006063",
+      "dvidsId": "1006063",
+      "sourceDateText": "10.01.2023"
+    },
+    "DOW-UAP-PR027, Unresolved UAP Report, United Arab Emirates, October 2023": {
+      "kind": "dateTaken",
+      "value": "2023-10-01",
+      "officialTitle": "DOW-UAP-PR027, Unresolved UAP Report, United Arab Emirates, October 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1006067",
+      "dvidsId": "1006067",
+      "sourceDateText": "10.01.2023"
+    },
+    "DOW-UAP-PR028, Unresolved UAP Report, Greece, January 2024": {
+      "kind": "dateTaken",
+      "value": "2024-01-01",
+      "officialTitle": "DOW-UAP-PR028, Unresolved UAP Report, Greece, January 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1006073",
+      "dvidsId": "1006073",
+      "sourceDateText": "01.01.2024"
+    },
+    "DOW-UAP-PR029, Unresolved UAP Report, United Arab Emirates, June 2024": {
+      "kind": "dateTaken",
+      "value": "2024-06-01",
+      "officialTitle": "DOW-UAP-PR029, Unresolved UAP Report, United Arab Emirates, June 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1006074",
+      "dvidsId": "1006074",
+      "sourceDateText": "06.01.2024"
+    },
+    "DOW-UAP-PR031, Unresolved UAP Report, Syria, October 2024": {
+      "kind": "dateTaken",
+      "value": "2024-10-01",
+      "officialTitle": "DOW-UAP-PR031, Unresolved UAP Report, Syria, October 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1006076",
+      "dvidsId": "1006076",
+      "sourceDateText": "10.01.2024"
+    },
+    "DOW-UAP-PR032, Unresolved UAP Report, Syria, October 2024": {
+      "kind": "dateTaken",
+      "value": "2024-10-01",
+      "officialTitle": "DOW-UAP-PR032, Unresolved UAP Report, Syria, October 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1006078",
+      "dvidsId": "1006078",
+      "sourceDateText": "10.01.2024"
+    },
+    "DOW-UAP-PR033, Unresolved UAP Report, Syria, October 2024": {
+      "kind": "dateTaken",
+      "value": "2024-10-01",
+      "officialTitle": "DOW-UAP-PR033, Unresolved UAP Report, Syria, October 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1006079",
+      "dvidsId": "1006079",
+      "sourceDateText": "10.01.2024"
+    },
+    "DOW-UAP-PR034, Unresolved UAP Report, Greece, October 2023": {
+      "kind": "dateTaken",
+      "value": "2023-10-01",
+      "officialTitle": "DOW-UAP-PR034, Unresolved UAP Report, Greece, October 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1006080",
+      "dvidsId": "1006080",
+      "sourceDateText": "10.01.2023"
+    },
+    "DOW-UAP-PR035, Unresolved UAP Report, Greece, October 2023": {
+      "kind": "dateTaken",
+      "value": "2023-10-01",
+      "officialTitle": "DOW-UAP-PR035, Unresolved UAP Report, Greece, October 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1006082",
+      "dvidsId": "1006082",
+      "sourceDateText": "10.01.2023"
+    },
+    "DOW-UAP-PR036, Unresolved UAP Report, Middle East, May 2020": {
+      "kind": "dateTaken",
+      "value": "2020-05-01",
+      "officialTitle": "DOW-UAP-PR036, Unresolved UAP Report, Middle East, May 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1006083",
+      "dvidsId": "1006083",
+      "sourceDateText": "05.01.2020"
+    },
+    "DOW-UAP-PR037, Unresolved UAP Report, Middle East, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR037, Unresolved UAP Report, Middle East, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1006087",
+      "dvidsId": "1006087",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR038, Unresolved UAP Report, Middle East, 2013": {
+      "kind": "dateTaken",
+      "value": "2013-01-01",
+      "officialTitle": "DOW-UAP-PR038, Unresolved UAP Report, Middle East, 2013 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1006088",
+      "dvidsId": "1006088",
+      "sourceDateText": "01.01.2013"
+    },
+    "DOW-UAP-PR039, Unresolved UAP Report, Middle East, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR039, Unresolved UAP Report, Middle East, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1006089",
+      "dvidsId": "1006089",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR040, Unresolved UAP Report, Middle East, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR040, Unresolved UAP Report, Middle East, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1006093",
+      "dvidsId": "1006093",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR041, Unresolved UAP Report, Middle East, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR041, Unresolved UAP Report, Middle East, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1006094",
+      "dvidsId": "1006094",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR042, Unresolved UAP Report, Middle East, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR042, Unresolved UAP Report, Middle East, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1006097",
+      "dvidsId": "1006097",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR043, Unresolved UAP Report, Africa, 2025": {
+      "kind": "dateTaken",
+      "value": "2025-01-01",
+      "officialTitle": "DOW-UAP-PR043, Unresolved UAP Report, Africa, 2025",
+      "sourceUrl": "https://www.dvidshub.net/video/1006159",
+      "dvidsId": "1006159",
+      "sourceDateText": "01.01.2025"
+    },
+    "DOW-UAP-PR044, Unresolved UAP Report, Middle East, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR044, Unresolved UAP Report, Middle East, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1006104",
+      "dvidsId": "1006104",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR045, Unresolved UAP Report, Middle East, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR045, Unresolved UAP Report, Middle East, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1006105",
+      "dvidsId": "1006105",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR046, Unresolved UAP Report, INDOPACOM, 2024": {
+      "kind": "dateTaken",
+      "value": "2024-01-01",
+      "officialTitle": "DOW-UAP-PR046, Unresolved UAP Report, INDOPACOM, 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1006106",
+      "dvidsId": "1006106",
+      "sourceDateText": "01.01.2024"
+    },
+    "DOW-UAP-PR047, Unresolved UAP Report, INDOPACOM, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR047, Unresolved UAP Report, INDOPACOM, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1006107",
+      "dvidsId": "1006107",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR048, Unresolved UAP Report, INDOPACOM, 2024": {
+      "kind": "dateTaken",
+      "value": "2024-01-01",
+      "officialTitle": "DOW-UAP-PR048, Unresolved UAP Report, INDOPACOM, 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1006110",
+      "dvidsId": "1006110",
+      "sourceDateText": "01.01.2024"
+    },
+    "DOW-UAP-PR049, Unresolved UAP Report, Department of the Army, 2026": {
+      "kind": "dateTaken",
+      "value": "2026-01-01",
+      "officialTitle": "DOW-UAP-PR049, Unresolved UAP Report, Department of the Army, 2026",
+      "sourceUrl": "https://www.dvidshub.net/video/1006111",
+      "dvidsId": "1006111",
+      "sourceDateText": "01.01.2026"
+    },
+    "DOW-UAP-PR050, \"4 UAP Formation Iran 26 Aug 2022 over water [CALLSIGN]\"": {
+      "kind": "dateTaken",
+      "value": "2022-08-26",
+      "officialTitle": "DOW-UAP-PR050, \"4 UAP Formation Iran 26 Aug 2022 over water [CALLSIGN]\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007706",
+      "dvidsId": "1007706",
+      "sourceDateText": "08.26.2022"
+    },
+    "DOW-UAP-PR051, \"Syrian UAP instant acceleration\"": {
+      "kind": "dateTaken",
+      "value": "2021-01-01",
+      "officialTitle": "DOW-UAP-PR051, \"Syrian UAP instant acceleration\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007707",
+      "dvidsId": "1007707",
+      "sourceDateText": "01.01.2021"
+    },
+    "DOW-UAP-PR052, \"UAP USO Formation [CALLSIGN] (Mission)\"": {
+      "kind": "dateTaken",
+      "value": "2024-06-01",
+      "officialTitle": "DOW-UAP-PR052, \"UAP USO Formation [CALLSIGN] (Mission)\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007708",
+      "dvidsId": "1007708",
+      "sourceDateText": "06.01.2024"
+    },
+    "DOW-UAP-PR053, \"Cigar Shaped or Fast Spherical UAP clip 15 OCT 22\"": {
+      "kind": "dateTaken",
+      "value": "2022-10-15",
+      "officialTitle": "DOW-UAP-PR053, \"Cigar Shaped or Fast Spherical UAP clip 15 OCT 22\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007709",
+      "dvidsId": "1007709",
+      "sourceDateText": "10.15.2022"
+    },
+    "DOW-UAP-PR054, \"Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022\"": {
+      "kind": "dateTaken",
+      "value": "2022-08-01",
+      "officialTitle": "DOW-UAP-PR054, \"Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007711",
+      "dvidsId": "1007711",
+      "sourceDateText": "08.01.2022"
+    },
+    "DOW-UAP-PR055, \"Spherical UAP over AFG in and out of clouds 23 Nov 2020\"": {
+      "kind": "dateTaken",
+      "value": "2020-11-23",
+      "officialTitle": "DOW-UAP-PR055, \"Spherical UAP over AFG in and out of clouds 23 Nov 2020\" ",
+      "sourceUrl": "https://www.dvidshub.net/video/1007713",
+      "dvidsId": "1007713",
+      "sourceDateText": "11.23.2020"
+    },
+    "DOW-UAP-PR056, \"Spherical UAP pulsing over water [CALLSIGN]\"": {
+      "kind": "dateTaken",
+      "value": "2024-06-01",
+      "officialTitle": "DOW-UAP-PR056, \"Spherical UAP pulsing over water [CALLSIGN]\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007718",
+      "dvidsId": "1007718",
+      "sourceDateText": "06.01.2024"
+    },
+    "DOW-UAP-PR057a, \"Spherical UAP in clouds\"": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR057a, \"Spherical UAP in clouds\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007720",
+      "dvidsId": "1007720",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR057b, \"[Platform] Observes UAP in East China Sea 05 JAN 2023 INDOPACOM\"": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR057b, \"[Platform] Observes UAP in East China Sea 05 JAN 2023 INDOPACOM\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007720",
+      "dvidsId": "1007720",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR058, \"[CALLSIGN] (Mission) UAP\"": {
+      "kind": "dateTaken",
+      "value": "2024-06-24",
+      "officialTitle": "DOW-UAP-PR058, \"[CALLSIGN] (Mission) UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007723",
+      "dvidsId": "1007723",
+      "sourceDateText": "06.24.2024"
+    },
+    "DOW-UAP-PR059, \"NAG UAP 1 Jun 20\"": {
+      "kind": "dateTaken",
+      "value": "2020-06-01",
+      "officialTitle": "DOW-UAP-PR059, \"NAG UAP 1 Jun 20\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007727",
+      "dvidsId": "1007727",
+      "sourceDateText": "06.01.2020"
+    },
+    "DOW-UAP-PR060, \"Spherical UAP [CALLSIGN] 2021/04/12 obj 2\"": {
+      "kind": "dateTaken",
+      "value": "2021-04-12",
+      "officialTitle": "DOW-UAP-PR060, \"Spherical UAP [CALLSIGN] 2021/04/12 obj 2\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007734",
+      "dvidsId": "1007734",
+      "sourceDateText": "04.12.2021"
+    },
+    "DOW-UAP-PR061, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 0\"": {
+      "kind": "dateTaken",
+      "value": "2021-04-12",
+      "officialTitle": "DOW-UAP-PR061, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 0\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007735",
+      "dvidsId": "1007735",
+      "sourceDateText": "04.12.2021"
+    },
+    "DOW-UAP-PR062, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 1\"": {
+      "kind": "dateTaken",
+      "value": "2021-04-12",
+      "officialTitle": "DOW-UAP-PR062, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 1\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007739",
+      "dvidsId": "1007739",
+      "sourceDateText": "04.12.2021"
+    },
+    "DOW-UAP-PR063, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 2\"": {
+      "kind": "dateTaken",
+      "value": "2021-04-12",
+      "officialTitle": "DOW-UAP-PR063, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 2\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007740",
+      "dvidsId": "1007740",
+      "sourceDateText": "04.12.2021"
+    },
+    "DOW-UAP-PR064, \"AFSOC Kabul UAP Jul 2017\"": {
+      "kind": "dateTaken",
+      "value": "2017-07-01",
+      "officialTitle": "DOW-UAP-PR064, \"AFSOC Kabul UAP Jul 2017\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007741",
+      "dvidsId": "1007741",
+      "sourceDateText": "07.01.2017"
+    },
+    "DOW-UAP-PR065, \"USCG C-144 Tyndall UAP 2 TIC TAC IR hot 24 April 2024\"": {
+      "kind": "dateTaken",
+      "value": "2024-04-24",
+      "officialTitle": "DOW-UAP-PR065, \"USCG C-144 Tyndall UAP 2 TIC TAC IR hot 24 April 2024\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007777",
+      "dvidsId": "1007777",
+      "sourceDateText": "04.24.2024"
+    },
+    "DOW-UAP-PR066, \"USCG C-144 Tyndall UAP 1 TIC TAC IR hot 24 April 2024\"": {
+      "kind": "dateTaken",
+      "value": "2024-04-24",
+      "officialTitle": "DOW-UAP-PR066, \"USCG C-144 Tyndall UAP 1 TIC TAC IR hot 24 April 2024\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007778",
+      "dvidsId": "1007778",
+      "sourceDateText": "04.24.2024"
+    },
+    "DOW-UAP-PR067, \"Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water\"": {
+      "kind": "dateTaken",
+      "value": "2022-03-25",
+      "officialTitle": "DOW-UAP-PR067, \"Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007779",
+      "dvidsId": "1007779",
+      "sourceDateText": "03.25.2022"
+    },
+    "DOW-UAP-PR068, \"IIR 1 666 S0151 23/Video Footage of Unidentified Aerial Phenomenon (UAP) captured by fifth generation aircraft on 20 Jan 23\"": {
+      "kind": "dateTaken",
+      "value": "2020-01-23",
+      "officialTitle": "DOW-UAP-PR068, \"IIR 1 666 S0151 23/Video Footage of Unidentified Aerial Phenomenon (UAP) captured by fifth generation aircraft on 20 Jan 23\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007780",
+      "dvidsId": "1007780",
+      "sourceDateText": "01.23.2020"
+    },
+    "DOW-UAP-PR069, \"F/A-18 FLIR UAP\"": {
+      "kind": "dateTaken",
+      "value": "2022-01-01",
+      "officialTitle": "DOW-UAP-PR069, \"F/A-18 FLIR UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007781",
+      "dvidsId": "1007781",
+      "sourceDateText": "01.01.2022"
+    },
+    "DOW-UAP-PR070, \"IIR 1 655 S0301 23/Eglin AFB Aircrew Observed Unidentified Aerial Phenomena (UAP) on 13 Feb 23\"": {
+      "kind": "dateTaken",
+      "value": "2023-02-13",
+      "officialTitle": "DOW-UAP-PR070, \"IIR 1 655 S0301 23/Eglin AFB Aircrew Observed Unidentified Aerial Phenomena (UAP) on 13 Feb 23\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007783",
+      "dvidsId": "1007783",
+      "sourceDateText": "02.13.2023"
+    },
+    "DOW-UAP-PR071, \"USAF ANG F-16C (callsign [CALLSIGN]) Shoots Down UAP over Lake Huron with [Weapon System], 12 Feb 2023\"": {
+      "kind": "dateTaken",
+      "value": "2023-02-12",
+      "officialTitle": "DOW-UAP-PR071, \"USAF ANG F-16C (callsign [CALLSIGN]) Shoots Down UAP over Lake Huron with [Weapon System], 12 Feb 2023\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007784",
+      "dvidsId": "1007784",
+      "sourceDateText": "02.12.2023"
+    },
+    "DOW-UAP-PR072, \"ADMINISTRATIVE REVISION: IIR 1777 J0032 22 Kazakhstan - UAP in the vicinity of Karaganda International Airport\"": {
+      "kind": "dateTaken",
+      "value": "2022-03-01",
+      "officialTitle": "DOW-UAP-PR072, \"ADMINISTRATIVE REVISION: IIR 1777 J0032 22 Kazakhstan - UAP in the vicinity of Karaganda International Airport\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007788",
+      "dvidsId": "1007788",
+      "sourceDateText": "03.01.2022"
+    },
+    "DOW-UAP-PR073, IIR 1 655 S0053 23/Several Unidentified Aerial Phenomenon Encountered In The Vicinity of Columbus OH\"": {
+      "kind": "dateTaken",
+      "value": "2022-11-01",
+      "officialTitle": "DOW-UAP-PR073, IIR 1 655 S0053 23/Several Unidentified Aerial Phenomenon Encountered In The Vicinity of Columbus OH\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007790",
+      "dvidsId": "1007790",
+      "sourceDateText": "11.01.2022"
+    },
+    "DOW-UAP-PR074, \"[CALLSIGN] (Mission)HD_20220613\"": {
+      "kind": "dateTaken",
+      "value": "2022-06-01",
+      "officialTitle": "DOW-UAP-PR074, \"[CALLSIGN] (Mission)HD_20220613\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007791",
+      "dvidsId": "1007791",
+      "sourceDateText": "06.01.2022"
+    },
+    "DOW-UAP-PR075, \"09JUN2021 [Platform] observed UAP in the ECS\"": {
+      "kind": "dateTaken",
+      "value": "2021-06-09",
+      "officialTitle": "DOW-UAP-PR075, \"09JUN2021 [Platform] observed UAP in the ECS\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007795",
+      "dvidsId": "1007795",
+      "sourceDateText": "06.09.2021"
+    },
+    "DOW-UAP-PR076, \"03 January 2021 [CALLSIGN] (Mission) observes UAP\"": {
+      "kind": "dateTaken",
+      "value": "2021-01-03",
+      "officialTitle": "DOW-UAP-PR076, \"03 January 2021 [CALLSIGN] (Mission) observes UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007804",
+      "dvidsId": "1007804",
+      "sourceDateText": "01.03.2021"
+    },
+    "DOW-UAP-PR077, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 1 of 2\"": {
+      "kind": "dateTaken",
+      "value": "2020-11-02",
+      "officialTitle": "DOW-UAP-PR077, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 1 of 2\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007809",
+      "dvidsId": "1007809",
+      "sourceDateText": "11.02.2020"
+    },
+    "DOW-UAP-PR078, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 2 of 2\"": {
+      "kind": "dateTaken",
+      "value": "2020-11-02",
+      "officialTitle": "DOW-UAP-PR078, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 2 of 2\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007812",
+      "dvidsId": "1007812",
+      "sourceDateText": "11.02.2020"
+    },
+    "DOW-UAP-PR079, \"29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP's\"": {
+      "kind": "dateTaken",
+      "value": "2020-10-29",
+      "officialTitle": "DOW-UAP-PR079, \"29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP's\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007816",
+      "dvidsId": "1007816",
+      "sourceDateText": "10.29.2020"
+    },
+    "DOW-UAP-PR080, \"20 October 2020 [CALLSIGN] [CALLSIGN] Observes UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-10-20",
+      "officialTitle": "DOW-UAP-PR080, \"20 October 2020 [CALLSIGN] [CALLSIGN] Observes UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007803",
+      "dvidsId": "1007803",
+      "sourceDateText": "10.20.2020"
+    },
+    "DOW-UAP-PR081, \"18 Oct 2020 [CALLSIGN] observes UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-10-18",
+      "officialTitle": "DOW-UAP-PR081, \"18 Oct 2020 [CALLSIGN] observes UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007805",
+      "dvidsId": "1007805",
+      "sourceDateText": "10.18.2020"
+    },
+    "DOW-UAP-PR082, \"16 OCT 2020 [CALLSIGN] views UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-10-16",
+      "officialTitle": "DOW-UAP-PR082, \"16 OCT 2020 [CALLSIGN] views UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007807",
+      "dvidsId": "1007807",
+      "sourceDateText": "10.16.2020"
+    },
+    "DOW-UAP-PR083, \"7 October 2020 [CALLSIGN] observes UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-10-07",
+      "officialTitle": "DOW-UAP-PR083, \"7 October 2020 [CALLSIGN] observes UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007808",
+      "dvidsId": "1007808",
+      "sourceDateText": "10.07.2020"
+    },
+    "DOW-UAP-PR084, \"17 Sept 2020 [CALLSIGN] observes UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-09-17",
+      "officialTitle": "DOW-UAP-PR084, \"17 Sept 2020 [CALLSIGN] observes UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007810",
+      "dvidsId": "1007810",
+      "sourceDateText": "09.17.2020"
+    },
+    "DOW-UAP-PR085, \"16 Sept 2020 [CALLSIGN] [CALLSIGN] observes UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-09-16",
+      "officialTitle": "DOW-UAP-PR085, \"16 Sept 2020 [CALLSIGN] [CALLSIGN] observes UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007796",
+      "dvidsId": "1007796",
+      "sourceDateText": "09.16.2020"
+    },
+    "DOW-UAP-PR086, \"UAP from Dec 2019 (East Coast)\"": {
+      "kind": "dateTaken",
+      "value": "2019-12-01",
+      "officialTitle": "DOW-UAP-PR086, \"UAP from Dec 2019 (East Coast)\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007797",
+      "dvidsId": "1007797",
+      "sourceDateText": "12.01.2019"
+    },
+    "DOW-UAP-PR087, \"05 September 2020 [CALLSIGN] UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-09-05",
+      "officialTitle": "DOW-UAP-PR087, \"05 September 2020 [CALLSIGN] UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007799",
+      "dvidsId": "1007799",
+      "sourceDateText": "09.05.2020"
+    },
+    "DOW-UAP-PR088, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-08-31",
+      "officialTitle": "DOW-UAP-PR088, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007800",
+      "dvidsId": "1007800",
+      "sourceDateText": "08.31.2020"
+    },
+    "DOW-UAP-PR089, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP part2\"": {
+      "kind": "dateTaken",
+      "value": "2020-08-31",
+      "officialTitle": "DOW-UAP-PR089, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP part2\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007712",
+      "dvidsId": "1007712",
+      "sourceDateText": "08.31.2020"
+    },
+    "DOW-UAP-PR090, \"24 AUG 2020 [CALLSIGN] (Mission) Observes UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-08-24",
+      "officialTitle": "DOW-UAP-PR090, \"24 AUG 2020 [CALLSIGN] (Mission) Observes UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007719",
+      "dvidsId": "1007719",
+      "sourceDateText": "08.24.2020"
+    },
+    "DOW-UAP-PR091, \"21 AUG [CALLSIGN] Observes UAP in Persian Gulf\"": {
+      "kind": "dateTaken",
+      "value": "2020-08-21",
+      "officialTitle": "DOW-UAP-PR091, \"21 AUG [CALLSIGN] Observes UAP in Persian Gulf\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007716",
+      "dvidsId": "1007716",
+      "sourceDateText": "08.21.2020"
+    },
+    "DOW-UAP-PR092, \"08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation\"": {
+      "kind": "dateTaken",
+      "value": "2020-08-08",
+      "officialTitle": "DOW-UAP-PR092, \"08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007715",
+      "dvidsId": "1007715",
+      "sourceDateText": "08.08.2020"
+    },
+    "DOW-UAP-PR093, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-05-05",
+      "officialTitle": "DOW-UAP-PR093, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007721",
+      "dvidsId": "1007721",
+      "sourceDateText": "05.05.2020"
+    },
+    "DOW-UAP-PR094, \"[CALLSIGN] (Mission) - HD 2020-02-13\"": {
+      "kind": "dateTaken",
+      "value": "2020-02-13",
+      "officialTitle": "DOW-UAP-PR094, \"[CALLSIGN] (Mission) - HD 2020-02-13\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007722",
+      "dvidsId": "1007722",
+      "sourceDateText": "02.13.2020"
+    },
+    "DOW-UAP-PR095, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"": {
+      "kind": "dateTaken",
+      "value": "2020-05-05",
+      "officialTitle": "DOW-UAP-PR095, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007725",
+      "dvidsId": "1007725",
+      "sourceDateText": "05.05.2020"
+    },
+    "DOW-UAP-PR096, \"HH11 03 July 2018 UAPs\"": {
+      "kind": "dateTaken",
+      "value": "2018-07-03",
+      "officialTitle": "DOW-UAP-PR096, \"HH11 03 July 2018 UAPs\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007726",
+      "dvidsId": "1007726",
+      "sourceDateText": "07.03.2018"
+    },
+    "DOW-UAP-PR097, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 2135Z\"": {
+      "kind": "dateTaken",
+      "value": "2019-09-25",
+      "officialTitle": "DOW-UAP-PR097, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 2135Z\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007728",
+      "dvidsId": "1007728",
+      "sourceDateText": "09.25.2019"
+    },
+    "DOW-UAP-PR098, \"UFOs in formation over Persian Gulf?\"": {
+      "kind": "dateTaken",
+      "value": "2019-01-01",
+      "officialTitle": "DOW-UAP-PR098, \"UFOs in formation over Persian Gulf?\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007737",
+      "dvidsId": "1007737",
+      "sourceDateText": "01.01.2019"
+    },
+    "DOW-UAP-PR099, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 1715Z\"": {
+      "kind": "dateTaken",
+      "value": "2019-09-23",
+      "officialTitle": "DOW-UAP-PR099, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 1715Z\"",
+      "sourceUrl": "https://www.dvidshub.net/video/1007738",
+      "dvidsId": "1007738",
+      "sourceDateText": "09.23.2019"
+    },
+    "FBI Photo A001": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo A001",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo A002": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo A002",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo A003": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo A003",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo A004": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo A004",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo A005": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo A005",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo A006": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo A006",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo A007": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo A007",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo A008": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo A008",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B001": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B001",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B002": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B002",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B003": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B003",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B004": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B004",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B005": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B005",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B006": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B006",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B007": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B007",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B008": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B008",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B009": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B010": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B011": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B011",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B012": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B012",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B013": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B013",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B014": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B014",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B015": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B015",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B016": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B016",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B017": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B017",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B018": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B018",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B019": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B019",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B020": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B021": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B021",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B022": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B023": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI Photo B024": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "FBI Photo B024",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI September 2023 Sighting - Composite Sketch": {
+      "kind": "incidentDate",
+      "value": "9/1/2023",
+      "officialTitle": "FBI September 2023 Sighting - Composite Sketch",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI September 2023 Sighting - Serial 003": {
+      "kind": "incidentDate",
+      "value": "9/1/2023",
+      "officialTitle": "FBI September 2023 Sighting - Serial 003",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI September 2023 Sighting - Serial 004": {
+      "kind": "incidentDate",
+      "value": "9/1/2023",
+      "officialTitle": "FBI September 2023 Sighting - Serial 004",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI September 2023 Sighting - Serial 005": {
+      "kind": "incidentDate",
+      "value": "9/1/2023",
+      "officialTitle": "FBI September 2023 Sighting - Serial 005",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D001, FD-302, Unresolved UAP Report, Colorado Springs, 2022": {
+      "kind": "incidentDate",
+      "value": "February, 2022",
+      "officialTitle": "FBI-UAP-D001, FD-302, Unresolved UAP Report, Colorado Springs, 2022 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D004, FD-1057-02, Northeastern United States, 2024": {
+      "kind": "incidentDate",
+      "value": "October, 2024",
+      "officialTitle": "FBI-UAP-D004, FD-1057-02, Northeastern United States, 2024  ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D005, FD-1057-04, Northeastern United States, 2024": {
+      "kind": "incidentDate",
+      "value": "October, 2024",
+      "officialTitle": "FBI-UAP-D005, FD-1057-04, Northeastern United States, 2024 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D006, FD-1057-05, Northeastern United States, 2024": {
+      "kind": "incidentDate",
+      "value": "November, 2024",
+      "officialTitle": "FBI-UAP-D006, FD-1057-05, Northeastern United States, 2024 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D007, FD-1057-06, Northeastern United States, 2024": {
+      "kind": "incidentDate",
+      "value": "November, 2024",
+      "officialTitle": "FBI-UAP-D007, FD-1057-06, Northeastern United States, 2024 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D008, FD-1057-07, Northeastern United States, 2024": {
+      "kind": "incidentDate",
+      "value": "December, 2024",
+      "officialTitle": "FBI-UAP-D008, FD-1057-07, Northeastern United States, 2024 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D012, Newark Field Office, 1952-1967": {
+      "kind": "incidentDate",
+      "value": "August 1952-1967",
+      "officialTitle": "FBI-UAP-D012, Newark Field Office, 1952-1967 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D013, Washington State ‘UFO’ Investigation, 1952-1960": {
+      "kind": "incidentDate",
+      "value": "July 1952-1960",
+      "officialTitle": "FBI-UAP-D013, Washington State ‘UFO’ Investigation, 1952-1960 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D014, Digital Rendering, Narrative Statement 1-1, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "FBI-UAP-D014, Digital Rendering, Narrative Statement 1-1, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D015, Digital Rendering, Narrative Statement 1-2, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "FBI-UAP-D015, Digital Rendering, Narrative Statement 1-2, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D016, Digital Rendering, Narrative Statement 2-1, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "FBI-UAP-D016, Digital Rendering, Narrative Statement 2-1, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D017, Digital Rendering, Narrative Statement 2-2, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "FBI-UAP-D017, Digital Rendering, Narrative Statement 2-2, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D018, Digital Rendering, Narrative Statement 2-3, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "FBI-UAP-D018, Digital Rendering, Narrative Statement 2-3, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D019, Digital Rendering, Narrative Statement 2-4, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "FBI-UAP-D019, Digital Rendering, Narrative Statement 2-4, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D020, Digital Rendering, Narrative Statement 2-5, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "FBI-UAP-D020, Digital Rendering, Narrative Statement 2-5, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D021, Digital Rendering, Narrative Statement 1-3, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "FBI-UAP-D021, Digital Rendering, Narrative Statement 1-3, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D022, Digital Rendering, Narrative Statement 2-6, Western United States Event, 2026": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "FBI-UAP-D022, Digital Rendering, Narrative Statement 2-6, Western United States Event, 2026",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D023, Digital Rendering, Narrative Statement 2-7, Western United States Event, 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "FBI-UAP-D023, Digital Rendering, Narrative Statement 2-7, Western United States Event, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021": {
+      "kind": "dateTaken",
+      "value": "2021-11-01",
+      "officialTitle": "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1010263",
+      "dvidsId": "1010263",
+      "sourceDateText": "11.01.2021"
+    },
+    "FBI-UAP-PR002, “Red Orb Rotation,” Northeastern United States, 2022": {
+      "kind": "dateTaken",
+      "value": "2022-03-01",
+      "officialTitle": "FBI-UAP-PR002, “Red Orb Rotation,” Northeastern United States, 2022  ",
+      "sourceUrl": "https://www.dvidshub.net/video/1010264",
+      "dvidsId": "1010264",
+      "sourceDateText": "03.01.2022"
+    },
+    "FBI-UAP-PR005, Digital Recreation, Narrative Statement 3-1, Western United States Event, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "FBI-UAP-PR005, Digital Recreation, Narrative Statement 3-1, Western United States Event, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1010272",
+      "dvidsId": "1010272",
+      "sourceDateText": "01.01.2023"
+    },
+    "FBI-UAP-PR006, Digital Recreation, Narrative Statement 3-2, Western United States Event, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "FBI-UAP-PR006, Digital Recreation, Narrative Statement 3-2, Western United States Event, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1010276",
+      "dvidsId": "1010276",
+      "sourceDateText": "01.01.2023"
+    },
+    "NASA-UAP-D001, Apollo 12 Transcript, 1969": {
+      "kind": "incidentDate",
+      "value": "1969",
+      "officialTitle": "NASA-UAP-D001, Apollo 12 Transcript, 1969",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D002, Apollo 17 Transcript, 1972": {
+      "kind": "incidentDate",
+      "value": "1972",
+      "officialTitle": "NASA-UAP-D002, Apollo 17 Transcript, 1972",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D003, Gemini 7 Transcript, 1965": {
+      "kind": "incidentDate",
+      "value": "12/5/1965",
+      "officialTitle": "NASA-UAP-D003, Gemini 7 Transcript, 1965",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D003A, Gemini 7 Audio Excerpt, 1965": {
+      "kind": "dateTaken",
+      "value": "1965-12-04",
+      "officialTitle": "NASA-UAP-D003A, Gemini 7 Audio Excerpt, 1965",
+      "sourceUrl": "https://www.dvidshub.net/video/1006119",
+      "dvidsId": "1006119",
+      "sourceDateText": "12.04.1965"
+    },
+    "NASA-UAP-D004, Apollo 11 Technical Crew Debriefing, 1969": {
+      "kind": "incidentDate",
+      "value": "1969",
+      "officialTitle": "NASA-UAP-D004, Apollo 11 Technical Crew Debriefing, 1969",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D005, Apollo 17 Crew Debriefing for Science, 1973": {
+      "kind": "incidentDate",
+      "value": "1973",
+      "officialTitle": "NASA-UAP-D005, Apollo 17 Crew Debriefing for Science, 1973 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D006, Apollo 17 Technical Crew Debriefing, 1973": {
+      "kind": "incidentDate",
+      "value": "1973",
+      "officialTitle": "NASA-UAP-D006, Apollo 17 Technical Crew Debriefing, 1973 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D007, Skylab Technical Crew Debriefing 1973": {
+      "kind": "incidentDate",
+      "value": "1973",
+      "officialTitle": "NASA-UAP-D007, Skylab Technical Crew Debriefing 1973",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D008, Apollo 12 Medical Debriefing - Tape 12, 1969": {
+      "kind": "dateTaken",
+      "value": "1969-12-31",
+      "officialTitle": "NASA-UAP-D008, Apollo 12 Medical Debriefing - Tape 12, 1969",
+      "sourceUrl": "https://www.dvidshub.net/video/1007870",
+      "dvidsId": "1007870",
+      "sourceDateText": "12.31.1969"
+    },
+    "NASA-UAP-D009, Apollo 17 Audio Excerpt, December 7, 1972": {
+      "kind": "dateTaken",
+      "value": "1972-12-07",
+      "officialTitle": "NASA-UAP-D009, Apollo 17 Audio Excerpt, December 7, 1972",
+      "sourceUrl": "https://www.dvidshub.net/video/1007872",
+      "dvidsId": "1007872",
+      "sourceDateText": "12.07.1972"
+    },
+    "NASA-UAP-D010, Mercury Atlas 9 Audio Excerpt, May 15, 1963": {
+      "kind": "dateTaken",
+      "value": "1963-05-15",
+      "officialTitle": "NASA-UAP-D010, Mercury Atlas 9 Audio Excerpt, May 15, 1963",
+      "sourceUrl": "https://www.dvidshub.net/video/1007874",
+      "dvidsId": "1007874",
+      "sourceDateText": "05.15.1963"
+    },
+    "NASA-UAP-D011, Mercury Atlas 9 Audio Excerpt, May 15, 1963": {
+      "kind": "dateTaken",
+      "value": "1963-05-15",
+      "officialTitle": "NASA-UAP-D011, Mercury Atlas 9 Audio Excerpt, May 15, 1963",
+      "sourceUrl": "https://www.dvidshub.net/video/1007876",
+      "dvidsId": "1007876",
+      "sourceDateText": "05.15.1963"
+    },
+    "NASA-UAP-D012, Mercury Atlas 8 Audio Excerpt, October 3, 1962": {
+      "kind": "dateTaken",
+      "value": "1962-10-03",
+      "officialTitle": "NASA-UAP-D012, Mercury Atlas 8 Audio Excerpt, October 3, 1962",
+      "sourceUrl": "https://www.dvidshub.net/video/1007877",
+      "dvidsId": "1007877",
+      "sourceDateText": "10.03.1962"
+    },
+    "NASA-UAP-D013, Mercury Atlas 7, May 24, 1962": {
+      "kind": "dateTaken",
+      "value": "1962-05-24",
+      "officialTitle": "NASA-UAP-D013, Mercury Atlas 7, May 24, 1962 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1007879",
+      "dvidsId": "1007879",
+      "sourceDateText": "05.24.1962"
+    },
+    "NASA-UAP-D014, Mercury-Redstone 4, July 21, 1961": {
+      "kind": "dateTaken",
+      "value": "1961-07-21",
+      "officialTitle": "NASA-UAP-D014, Mercury-Redstone 4, July 21, 1961 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1007878",
+      "dvidsId": "1007878",
+      "sourceDateText": "07.21.1961"
+    },
+    "NASA-UAP-D015, Astronaut Scientific Debriefings, 1962-1963": {
+      "kind": "incidentDate",
+      "value": "1962-1963",
+      "officialTitle": "NASA-UAP-D015, Astronaut Scientific Debriefings, 1962-1963 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D016, Preliminary Gemini 4 Crew Debriefing, Part I, 1965": {
+      "kind": "incidentDate",
+      "value": "6/9/1965",
+      "officialTitle": "NASA-UAP-D016, Preliminary Gemini 4 Crew Debriefing, Part I, 1965 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D017, Preliminary Gemini 4 Crew Debriefing, Part II, 1965": {
+      "kind": "incidentDate",
+      "value": "6/9/1965",
+      "officialTitle": "NASA-UAP-D017, Preliminary Gemini 4 Crew Debriefing, Part II, 1965 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D018, Gemini 4 Experiment Debriefing, 1967": {
+      "kind": "incidentDate",
+      "value": "June 3-7, 1965",
+      "officialTitle": "NASA-UAP-D018, Gemini 4 Experiment Debriefing, 1967 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D019, Gemini 5 Technical Debriefing, Part I, 1965": {
+      "kind": "incidentDate",
+      "value": "August 2 - September 2, 1965",
+      "officialTitle": "NASA-UAP-D019, Gemini 5 Technical Debriefing, Part I, 1965 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D020, Gemini 5 Technical Debriefing, Part II, 1965": {
+      "kind": "incidentDate",
+      "value": "August 30 - September 2, 1965",
+      "officialTitle": "NASA-UAP-D020, Gemini 5 Technical Debriefing, Part II, 1965 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D021, Gemini 7 Technical Debriefing, 1965": {
+      "kind": "incidentDate",
+      "value": "December 19-21, 1965",
+      "officialTitle": "NASA-UAP-D021, Gemini 7 Technical Debriefing, 1965  ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D022, Gemini 9 Debriefing, 1966": {
+      "kind": "incidentDate",
+      "value": "June 3-6, 1966",
+      "officialTitle": "NASA-UAP-D022, Gemini 9 Debriefing, 1966 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D023, Interview Excerpt with Astronaut Gordon Cooper, 1962": {
+      "kind": "dateTaken",
+      "value": "1962-11-01",
+      "officialTitle": "NASA-UAP-D023, Interview Excerpt with Astronaut Gordon Cooper, 1962 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1010337",
+      "dvidsId": "1010337",
+      "sourceDateText": "11.01.1962"
+    },
+    "NASA-UAP-D024, “Apollo 16 Scientific Debriefing”": {
+      "kind": "dateTaken",
+      "value": "1972-05-01",
+      "officialTitle": "NASA-UAP-D024, “Apollo 16 Scientific Debriefing” ",
+      "sourceUrl": "https://www.dvidshub.net/video/1010319",
+      "dvidsId": "1010319",
+      "sourceDateText": "05.01.1972"
+    },
+    "NASA-UAP-D025, “Apollo 16 Scientific Debriefing”": {
+      "kind": "dateTaken",
+      "value": "1972-05-01",
+      "officialTitle": "NASA-UAP-D025, “Apollo 16 Scientific Debriefing” ",
+      "sourceUrl": "https://www.dvidshub.net/video/1010336",
+      "dvidsId": "1010336",
+      "sourceDateText": "05.01.1972"
+    },
+    "NASA-UAP-VM001, Apollo 12, 1969": {
+      "kind": "incidentDate",
+      "value": "1969",
+      "officialTitle": "NASA-UAP-VM001, Apollo 12, 1969",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-VM002, Apollo 12, 1969": {
+      "kind": "incidentDate",
+      "value": "1969",
+      "officialTitle": "NASA-UAP-VM002, Apollo 12, 1969",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-VM003, Apollo 12, 1969": {
+      "kind": "incidentDate",
+      "value": "1969",
+      "officialTitle": "NASA-UAP-VM003, Apollo 12, 1969",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-VM004, Apollo 12, 1969": {
+      "kind": "incidentDate",
+      "value": "1969",
+      "officialTitle": "NASA-UAP-VM004, Apollo 12, 1969",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-VM005, Apollo 12, 1969": {
+      "kind": "incidentDate",
+      "value": "1969",
+      "officialTitle": "NASA-UAP-VM005, Apollo 12, 1969",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-VM006, Apollo 17, 1972": {
+      "kind": "incidentDate",
+      "value": "1972",
+      "officialTitle": "NASA-UAP-VM006, Apollo 17, 1972",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "ODNI-UAP-D001, USPER Narrative, Senior USIC Official": {
+      "kind": "incidentDate",
+      "value": "2025",
+      "officialTitle": "ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "State Department UAP Cable 001, Papua New Guinea, January 28, 1985": {
+      "kind": "incidentDate",
+      "value": "1/24/1985",
+      "officialTitle": "State Department UAP Cable 001, Papua New Guinea, January 28, 1985 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "State Department UAP Cable 002, Kazakhstan, January 31, 1994": {
+      "kind": "incidentDate",
+      "value": "1/27/1994",
+      "officialTitle": "State Department UAP Cable 002, Kazakhstan, January 31, 1994",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "State Department UAP Cable 003, Tbilisi, Georgia, October 30, 2001": {
+      "kind": "incidentDate",
+      "value": "10/28/2001-10/29/2001",
+      "officialTitle": "State Department UAP Cable 003, Tbilisi, Georgia, October 30, 2001",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "State Department UAP Cable 004, Ashgabat, Turkmenistan, November 5, 2004": {
+      "kind": "incidentDate",
+      "value": "11/5/2004",
+      "officialTitle": "State Department UAP Cable 004, Ashgabat, Turkmenistan, November 5, 2004",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "State Department UAP Cable 005, Mexico, September 16, 2003": {
+      "kind": "incidentDate",
+      "value": "9/12/2003",
+      "officialTitle": "State Department UAP Cable 005, Mexico, September 16, 2003",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "USG-UAP-D001, Congressional, White House, UFO-related Constituent Correspondence, 1998": {
+      "kind": "incidentDate",
+      "value": "1998",
+      "officialTitle": "USG-UAP-D001, Congressional, White House, UFO-related Constituent Correspondence, 1998 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "USPER Statement about UAP Sighting": {
+      "kind": "incidentDate",
+      "value": "Late 2025",
+      "officialTitle": "USPER Statement about UAP Sighting",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "Western US Event": {
+      "kind": "incidentDate",
+      "value": "2023",
+      "officialTitle": "Western US Event",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOE-UAP-D004, Los Alamos Conference on Aerial Phenomena, 1949": {
+      "kind": "incidentDate",
+      "value": "3/22/1949",
+      "officialTitle": "DOE-UAP-D004, Los Alamos Conference on Aerial Phenomena, 1949",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D094, Analysis of Flying Object Incidents in the United States, 1949": {
+      "kind": "incidentDate",
+      "value": "4/28/1949",
+      "officialTitle": "DOW-UAP-D094, Analysis of Flying Object Incidents in the United States, 1949",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D097, Project Sign Progress Report, 1948": {
+      "kind": "incidentDate",
+      "value": "1948",
+      "officialTitle": "DOW-UAP-D097, Project Sign Progress Report, 1948",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-PR104, Unresolved UAP Report, Yellow Sea, 2025": {
+      "kind": "dateTaken",
+      "value": "2025-01-01",
+      "officialTitle": "DOW-UAP-PR104, Unresolved UAP Report, Yellow Sea, 2025",
+      "sourceUrl": "https://www.dvidshub.net/video/1014101",
+      "dvidsId": "1014101",
+      "sourceDateText": "01.01.2025"
+    },
+    "DOW-UAP-PR105, Unresolved UAP Report, East China Sea, 2025": {
+      "kind": "dateTaken",
+      "value": "2025-01-01",
+      "officialTitle": "DOW-UAP-PR105, Unresolved UAP Report, East China Sea, 2025",
+      "sourceUrl": "https://www.dvidshub.net/video/1014103",
+      "dvidsId": "1014103",
+      "sourceDateText": "01.01.2025"
+    },
+    "DOW-UAP-PR113, Unresolved UAP Report, Western United States, 1996": {
+      "kind": "dateTaken",
+      "value": "1996-01-01",
+      "officialTitle": "DOW-UAP-PR113, Unresolved UAP Report, Western United States, 1996",
+      "sourceUrl": "https://www.dvidshub.net/video/1014119",
+      "dvidsId": "1014119",
+      "sourceDateText": "01.01.1996"
+    },
+    "DOW-UAP-PR115, Unresolved UAP Report, Gulf of America, 2019": {
+      "kind": "dateTaken",
+      "value": "2019-01-01",
+      "officialTitle": "DOW-UAP-PR115, Unresolved UAP Report, Gulf of America, 2019",
+      "sourceUrl": "https://www.dvidshub.net/video/1014123",
+      "dvidsId": "1014123",
+      "sourceDateText": "01.01.2019"
+    },
+    "NASA-UAP-D030, STS-80 Unidentified Object Image 1, 1996": {
+      "kind": "incidentDate",
+      "value": "1996",
+      "officialTitle": "NASA-UAP-D030, STS-80 Unidentified Object Image 1, 1996",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D031, STS-80 Unidentified Object Image 2, 1996": {
+      "kind": "incidentDate",
+      "value": "1996",
+      "officialTitle": "NASA-UAP-D031, STS-80 Unidentified Object Image 2, 1996",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D032, STS-80 Unidentified Object Image 3, 1996": {
+      "kind": "incidentDate",
+      "value": "1996",
+      "officialTitle": "NASA-UAP-D032, STS-80 Unidentified Object Image 3, 1996",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOE-UAP-D005, Pantex Unidentified Object Incident Report, 2015": {
+      "kind": "incidentDate",
+      "value": "9/1/2015",
+      "officialTitle": "DOE-UAP-D005, Pantex Unidentified Object Incident Report, 2015",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D089, Range Fouler Debrief, Eastern United States, 2020": {
+      "kind": "incidentDate",
+      "value": "2020",
+      "officialTitle": "DOW-UAP-D089, Range Fouler Debrief, Eastern United States, 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D090, Range Fouler Debrief, Eastern United States, 2019": {
+      "kind": "incidentDate",
+      "value": "2019",
+      "officialTitle": "DOW-UAP-D090, Range Fouler Debrief, Eastern United States, 2019",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D091, Range Fouler Debrief, Atlantic Ocean, 2020": {
+      "kind": "incidentDate",
+      "value": "2020",
+      "officialTitle": "DOW-UAP-D091, Range Fouler Debrief, Atlantic Ocean, 2020",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D092, Department of the Air Force Committee to Review Project Bluebook, 1966-1967": {
+      "kind": "incidentDate",
+      "value": "4/17/1967",
+      "officialTitle": "DOW-UAP-D092, Department of the Air Force Committee to Review Project Bluebook, 1966-1967",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D093, Analysis of Flying Object Incidents in the United States, 1948": {
+      "kind": "incidentDate",
+      "value": "12/10/1948",
+      "officialTitle": "DOW-UAP-D093, Analysis of Flying Object Incidents in the United States, 1948",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D095, Joint U.S.-Canadian Aviation Projects and UFO Sighting Reports, 1954-1955": {
+      "kind": "incidentDate",
+      "value": "1955",
+      "officialTitle": "DOW-UAP-D095, Joint U.S.-Canadian Aviation Projects and UFO Sighting Reports, 1954-1955",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D096, Correspondence Relating to Project Blue Book, 1955": {
+      "kind": "incidentDate",
+      "value": "1955",
+      "officialTitle": "DOW-UAP-D096, Correspondence Relating to Project Blue Book, 1955",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-PR024, Unresolved UAP Report, Middle East, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR024, Unresolved UAP Report, Middle East, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1014100",
+      "dvidsId": "1014100",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR030, Unresolved UAP Report, Middle East, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR030, Unresolved UAP Report, Middle East, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1014102",
+      "dvidsId": "1014102",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR100, Unresolved UAP Report, Yellow Sea, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR100, Unresolved UAP Report, Yellow Sea, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1014096",
+      "dvidsId": "1014096",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR101, Unresolved UAP Report, South China Sea, 2024": {
+      "kind": "dateTaken",
+      "value": "2024-01-01",
+      "officialTitle": "DOW-UAP-PR101, Unresolved UAP Report, South China Sea, 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1014097",
+      "dvidsId": "1014097",
+      "sourceDateText": "01.01.2024"
+    },
+    "DOW-UAP-PR102, Unresolved UAP Report, East China Sea, 2024": {
+      "kind": "dateTaken",
+      "value": "2024-01-01",
+      "officialTitle": "DOW-UAP-PR102, Unresolved UAP Report, East China Sea, 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1014098",
+      "dvidsId": "1014098",
+      "sourceDateText": "01.01.2024"
+    },
+    "DOW-UAP-PR103, Unresolved UAP Report, East China Sea, 2024": {
+      "kind": "dateTaken",
+      "value": "2024-01-01",
+      "officialTitle": "DOW-UAP-PR103, Unresolved UAP Report, East China Sea, 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1014099",
+      "dvidsId": "1014099",
+      "sourceDateText": "01.01.2024"
+    },
+    "DOW-UAP-PR106, Unresolved UAP Report, Eastern United States, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR106, Unresolved UAP Report, Eastern United States, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1014104",
+      "dvidsId": "1014104",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR107, Unresolved UAP Report, Eastern United States, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR107, Unresolved UAP Report, Eastern United States, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1014105",
+      "dvidsId": "1014105",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR108, Unresolved UAP Report, Western United States, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR108, Unresolved UAP Report, Western United States, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1014106",
+      "dvidsId": "1014106",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR109, Unresolved UAP Report, Eastern United States, 2015": {
+      "kind": "dateTaken",
+      "value": "2015-01-01",
+      "officialTitle": "DOW-UAP-PR109, Unresolved UAP Report, Eastern United States, 2015",
+      "sourceUrl": "https://www.dvidshub.net/video/1014108",
+      "dvidsId": "1014108",
+      "sourceDateText": "01.01.2015"
+    },
+    "DOW-UAP-PR110, Unresolved UAP Report, Eastern United States, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR110, Unresolved UAP Report, Eastern United States, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1014112",
+      "dvidsId": "1014112",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR111, Unresolved UAP Report, Eastern United States, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR111, Unresolved UAP Report, Eastern United States, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1014114",
+      "dvidsId": "1014114",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR112, Unresolved UAP Report, Eastern United States, 2019": {
+      "kind": "dateTaken",
+      "value": "2019-01-01",
+      "officialTitle": "DOW-UAP-PR112, Unresolved UAP Report, Eastern United States, 2019",
+      "sourceUrl": "https://www.dvidshub.net/video/1014128",
+      "dvidsId": "1014128",
+      "sourceDateText": "01.01.2019"
+    },
+    "DOW-UAP-PR114, Unresolved UAP Report, Atlantic Ocean, 2016": {
+      "kind": "dateTaken",
+      "value": "2016-01-01",
+      "officialTitle": "DOW-UAP-PR114, Unresolved UAP Report, Atlantic Ocean, 2016",
+      "sourceUrl": "https://www.dvidshub.net/video/1014121",
+      "dvidsId": "1014121",
+      "sourceDateText": "01.01.2016"
+    },
+    "DOW-UAP-PR116, Unresolved UAP Report, Atlantic Ocean, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR116, Unresolved UAP Report, Atlantic Ocean, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1014124",
+      "dvidsId": "1014124",
+      "sourceDateText": "01.01.2020"
+    },
+    "FBI-UAP-D014, Correspondence Relating to UFO Sightings, 1967, 1974": {
+      "kind": "incidentDate",
+      "value": "10/10/1974",
+      "officialTitle": "FBI-UAP-D014, Correspondence Relating to UFO Sightings, 1967, 1974 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-D020, Memorandum on Unconventional Aircraft Sightings, 1955": {
+      "kind": "incidentDate",
+      "value": "1955",
+      "officialTitle": "CIA-UAP-D020, Memorandum on Unconventional Aircraft Sightings, 1955",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-D021, Analysis of Unconventional Aircraft Sightings, 1955": {
+      "kind": "incidentDate",
+      "value": "1955",
+      "officialTitle": "CIA-UAP-D021, Analysis of Unconventional Aircraft Sightings, 1955",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "NASA-UAP-D026, Apollo 14 Debriefing, 1971": {
+      "kind": "dateTaken",
+      "value": "1971-02-18",
+      "officialTitle": "NASA-UAP-D026, Apollo 14 Debriefing, 1971",
+      "sourceUrl": "https://www.dvidshub.net/video/1014107",
+      "dvidsId": "1014107",
+      "sourceDateText": "02.18.1971"
+    },
+    "NASA-UAP-D027, Apollo 14 Debriefing (Continued), 1971": {
+      "kind": "dateTaken",
+      "value": "1971-02-18",
+      "officialTitle": "NASA-UAP-D027, Apollo 14 Debriefing (Continued), 1971",
+      "sourceUrl": "https://www.dvidshub.net/video/1014110",
+      "dvidsId": "1014110",
+      "sourceDateText": "02.18.1971"
+    },
+    "NASA-UAP-D028, Apollo 17 Crew Medical Debriefing, 1972": {
+      "kind": "dateTaken",
+      "value": "1972-12-21",
+      "officialTitle": "NASA-UAP-D028, Apollo 17 Crew Medical Debriefing, 1972",
+      "sourceUrl": "https://www.dvidshub.net/video/1014116",
+      "dvidsId": "1014116",
+      "sourceDateText": "12.21.1972"
+    },
+    "NASA-UAP-D029, Apollo 17 Crew Medical Debriefing (Continued), 1972": {
+      "kind": "dateTaken",
+      "value": "1972-12-21",
+      "officialTitle": "NASA-UAP-D029, Apollo 17 Crew Medical Debriefing (Continued), 1972",
+      "sourceUrl": "https://www.dvidshub.net/video/1014117",
+      "dvidsId": "1014117",
+      "sourceDateText": "12.21.1972"
+    },
+    "DOW-UAP-D098, Film Analysis of Unidentified Objects, 1953": {
+      "kind": "incidentDate",
+      "value": "1950, 1952",
+      "officialTitle": "DOW-UAP-D098, Film Analysis of Unidentified Objects, 1953",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D025, Digital Rendering, “Airborne Triangle,” 2002": {
+      "kind": "incidentDate",
+      "value": "2002",
+      "officialTitle": "FBI-UAP-D025, Digital Rendering, “Airborne Triangle,” 2002 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D027, Digital Rendering, “Dark Translucent Triangle,” 2023": {
+      "kind": "incidentDate",
+      "value": "2023",
+      "officialTitle": "FBI-UAP-D027, Digital Rendering, “Dark Translucent Triangle,” 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011": {
+      "kind": "incidentDate",
+      "value": "2011",
+      "officialTitle": "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D031, Digital Rendering, “Large Triangle with Red Lights,” 2023": {
+      "kind": "incidentDate",
+      "value": "2023",
+      "officialTitle": "FBI-UAP-D031, Digital Rendering, “Large Triangle with Red Lights,” 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D038, Digital Rendering 1, “Multiple Red Lights,” 2026": {
+      "kind": "incidentDate",
+      "value": "2026",
+      "officialTitle": "FBI-UAP-D038, Digital Rendering 1, “Multiple Red Lights,” 2026",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D039, Digital Rendering 2, “Multiple Red Lights,” 2026": {
+      "kind": "incidentDate",
+      "value": "2026",
+      "officialTitle": "FBI-UAP-D039, Digital Rendering 2, “Multiple Red Lights,” 2026",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D041, Digital Rendering 1, “Multiple Red Lights,” 2026": {
+      "kind": "incidentDate",
+      "value": "2026",
+      "officialTitle": "FBI-UAP-D041, Digital Rendering 1, “Multiple Red Lights,” 2026",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D042, Digital Rendering 2, “Multiple Red Lights,” 2026": {
+      "kind": "incidentDate",
+      "value": "2026",
+      "officialTitle": "FBI-UAP-D042, Digital Rendering 2, “Multiple Red Lights,” 2026",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-D022, Unidentified Flying Object Reported near Puerto Rico, 1965": {
+      "kind": "incidentDate",
+      "value": "2/1/1965",
+      "officialTitle": "CIA-UAP-D022, Unidentified Flying Object Reported near Puerto Rico, 1965",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-D023, Briefing Notes for Mr. Walter Elder": {
+      "kind": "incidentDate",
+      "value": "Undated",
+      "officialTitle": "CIA-UAP-D023, Briefing Notes for Mr. Walter Elder",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOS-UAP-D001, Diplomatic Cable, Brazil, November 14, 1963": {
+      "kind": "incidentDate",
+      "value": "11/14/1963",
+      "officialTitle": "DOS-UAP-D001, Diplomatic Cable, Brazil, November 14, 1963",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOS-UAP-D002, Diplomatic Cable, Brazil, November 20, 1963": {
+      "kind": "incidentDate",
+      "value": "11/20/1963",
+      "officialTitle": "DOS-UAP-D002, Diplomatic Cable, Brazil, November 20, 1963",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D099, Intelligence Review of “Ghost Rocket” Incidents, 1947": {
+      "kind": "incidentDate",
+      "value": "1/9/1947",
+      "officialTitle": "DOW-UAP-D099, Intelligence Review of “Ghost Rocket” Incidents, 1947",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D100, Air Materiel Command Report on Unidentified Flying Objects, 1947-1948": {
+      "kind": "incidentDate",
+      "value": "1947-1948",
+      "officialTitle": "DOW-UAP-D100, Air Materiel Command Report on Unidentified Flying Objects, 1947-1948 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D101, Intelligence Information Report, Unresolved UAP Report, Gulf of Oman, 2021": {
+      "kind": "incidentDate",
+      "value": "9/8/2021",
+      "officialTitle": "DOW-UAP-D101, Intelligence Information Report, Unresolved UAP Report, Gulf of Oman, 2021",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "EOP-UAP-D001, NASC Inquiry into Bahia, Brazil Incident, November 13, 1963": {
+      "kind": "incidentDate",
+      "value": "11/13/1963",
+      "officialTitle": "EOP-UAP-D001, NASC Inquiry into Bahia, Brazil Incident, November 13, 1963 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D024, FD-302, “Airborne Lights and Triangle,” 2002, 2023-2024": {
+      "kind": "incidentDate",
+      "value": "2002, 2023-2024",
+      "officialTitle": "FBI-UAP-D024, FD-302, “Airborne Lights and Triangle,” 2002, 2023-2024",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D026, FD-302, “Dark Translucent Triangle,” 2023": {
+      "kind": "incidentDate",
+      "value": "2023",
+      "officialTitle": "FBI-UAP-D026, FD-302, “Dark Translucent Triangle,” 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D028, FD-302, “Dark Triangle with Lights,” 2011": {
+      "kind": "incidentDate",
+      "value": "2011",
+      "officialTitle": "FBI-UAP-D028, FD-302, “Dark Triangle with Lights,” 2011 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D030, FD-302, “Large Triangle with Red Lights,” 2023": {
+      "kind": "incidentDate",
+      "value": "2023",
+      "officialTitle": "FBI-UAP-D030, FD-302, “Large Triangle with Red Lights,” 2023 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D032, FD-302, “Slow-moving Objects,” 2026": {
+      "kind": "incidentDate",
+      "value": "2026",
+      "officialTitle": "FBI-UAP-D032, FD-302, “Slow-moving Objects,” 2026 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D033, FD-302, “Thermally Elevated Aerial Object,” 2026": {
+      "kind": "incidentDate",
+      "value": "2026",
+      "officialTitle": "FBI-UAP-D033, FD-302, “Thermally Elevated Aerial Object,” 2026",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D037, FD-302, “Multiple Red Lights,” 2026": {
+      "kind": "incidentDate",
+      "value": "2026",
+      "officialTitle": "FBI-UAP-D037, FD-302, “Multiple Red Lights,” 2026",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D040, FD-302, “Multiple Red Lights,” 2026": {
+      "kind": "incidentDate",
+      "value": "2026",
+      "officialTitle": "FBI-UAP-D040, FD-302, “Multiple Red Lights,” 2026",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-PR117, Unresolved UAP Report, Gulf of Oman, 2021": {
+      "kind": "dateTaken",
+      "value": "2021-09-08",
+      "officialTitle": "DOW-UAP-PR117, Unresolved UAP Report, Gulf of Oman, 2021",
+      "sourceUrl": "https://www.dvidshub.net/video/1017793",
+      "dvidsId": "1017793",
+      "sourceDateText": "09.08.2021"
+    },
+    "DOW-UAP-PR118, Unresolved UAP Report, Gulf of Oman, 2021": {
+      "kind": "dateTaken",
+      "value": "2021-09-08",
+      "officialTitle": "DOW-UAP-PR118, Unresolved UAP Report, Gulf of Oman, 2021",
+      "sourceUrl": "https://www.dvidshub.net/video/1017795",
+      "dvidsId": "1017795",
+      "sourceDateText": "09.08.2021"
+    },
+    "DOW-UAP-PR119, Unresolved UAP Report, Gulf of Oman, 2021": {
+      "kind": "dateTaken",
+      "value": "2021-09-08",
+      "officialTitle": "DOW-UAP-PR119, Unresolved UAP Report, Gulf of Oman, 2021",
+      "sourceUrl": "https://www.dvidshub.net/video/1017798",
+      "dvidsId": "1017798",
+      "sourceDateText": "09.08.2021"
+    },
+    "DOW-UAP-PR120, Unresolved UAP Report, Gulf of Oman, 2021": {
+      "kind": "dateTaken",
+      "value": "2021-09-08",
+      "officialTitle": "DOW-UAP-PR120, Unresolved UAP Report, Gulf of Oman, 2021",
+      "sourceUrl": "https://www.dvidshub.net/video/1017800",
+      "dvidsId": "1017800",
+      "sourceDateText": "09.08.2021"
+    },
+    "DOW-UAP-PR121, Unresolved UAP Report, Gulf of Oman, 2021": {
+      "kind": "dateTaken",
+      "value": "2021-09-08",
+      "officialTitle": "DOW-UAP-PR121, Unresolved UAP Report, Gulf of Oman, 2021",
+      "sourceUrl": "https://www.dvidshub.net/video/1017802",
+      "dvidsId": "1017802",
+      "sourceDateText": "09.08.2021"
+    },
+    "DOW-UAP-PR122, Unresolved UAP Report, Gulf of Oman, 2021": {
+      "kind": "dateTaken",
+      "value": "2021-09-08",
+      "officialTitle": "DOW-UAP-PR122, Unresolved UAP Report, Gulf of Oman, 2021",
+      "sourceUrl": "https://www.dvidshub.net/video/1017803",
+      "dvidsId": "1017803",
+      "sourceDateText": "09.08.2021"
+    },
+    "DOW-UAP-PR123, Unresolved UAP Report, Pacific Ocean, 2019": {
+      "kind": "dateTaken",
+      "value": "2019-01-01",
+      "officialTitle": "DOW-UAP-PR123, Unresolved UAP Report, Pacific Ocean, 2019 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1017805",
+      "dvidsId": "1017805",
+      "sourceDateText": "01.01.2019"
+    },
+    "DOW-UAP-PR124, Unresolved UAP Report, Pacific Ocean, 2019": {
+      "kind": "dateTaken",
+      "value": "2019-01-01",
+      "officialTitle": "DOW-UAP-PR124, Unresolved UAP Report, Pacific Ocean, 2019 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1017806",
+      "dvidsId": "1017806",
+      "sourceDateText": "01.01.2019"
+    },
+    "DOW-UAP-PR125, Unresolved UAP Report, Pacific Ocean, 2019": {
+      "kind": "dateTaken",
+      "value": "2019-01-01",
+      "officialTitle": "DOW-UAP-PR125, Unresolved UAP Report, Pacific Ocean, 2019",
+      "sourceUrl": "https://www.dvidshub.net/video/1017788",
+      "dvidsId": "1017788",
+      "sourceDateText": "01.01.2019"
+    },
+    "DOW-UAP-PR126, Unresolved UAP Report, Pacific Ocean, 2019": {
+      "kind": "dateTaken",
+      "value": "2019-01-01",
+      "officialTitle": "DOW-UAP-PR126, Unresolved UAP Report, Pacific Ocean, 2019",
+      "sourceUrl": "https://www.dvidshub.net/video/1017790",
+      "dvidsId": "1017790",
+      "sourceDateText": "01.01.2019"
+    },
+    "DOW-UAP-PR127, Unresolved UAP Report, Pacific Ocean, 2019": {
+      "kind": "dateTaken",
+      "value": "2019-01-01",
+      "officialTitle": "DOW-UAP-PR127, Unresolved UAP Report, Pacific Ocean, 2019",
+      "sourceUrl": "https://www.dvidshub.net/video/1017791",
+      "dvidsId": "1017791",
+      "sourceDateText": "01.01.2019"
+    },
+    "DOW-UAP-PR134, Unresolved UAP Report, Middle East, 2025": {
+      "kind": "dateTaken",
+      "value": "2025-01-01",
+      "officialTitle": "DOW-UAP-PR134, Unresolved UAP Report, Middle East, 2025 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1017792",
+      "dvidsId": "1017792",
+      "sourceDateText": "01.01.2025"
+    },
+    "DOW-UAP-PR136, Unresolved UAP Report, Middle East, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR136, Unresolved UAP Report, Middle East, 2023 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1017796",
+      "dvidsId": "1017796",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR142, Unresolved UAP Report, Middle East, 2025": {
+      "kind": "dateTaken",
+      "value": "2025-01-01",
+      "officialTitle": "DOW-UAP-PR142, Unresolved UAP Report, Middle East, 2025",
+      "sourceUrl": "https://www.dvidshub.net/video/1017797",
+      "dvidsId": "1017797",
+      "sourceDateText": "01.01.2025"
+    },
+    "DOW-UAP-PR149, Unresolved UAP Report, Middle East, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR149, Unresolved UAP Report, Middle East, 2023 ",
+      "sourceUrl": "https://www.dvidshub.net/video/1017799",
+      "dvidsId": "1017799",
+      "sourceDateText": "01.01.2023"
+    },
+    "FBI-UAP-PR007, “Slow-moving Objects,” 2026": {
+      "kind": "dateTaken",
+      "value": "2026-01-01",
+      "officialTitle": "FBI-UAP-PR007, “Slow-moving Objects,” 2026",
+      "sourceUrl": "https://www.dvidshub.net/video/1017801",
+      "dvidsId": "1017801",
+      "sourceDateText": "01.01.2026"
+    },
+    "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957": {
+      "kind": "incidentDate",
+      "value": "1/18/1957",
+      "officialTitle": "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D174, Utah Ranch Investigation Report, April 2010": {
+      "kind": "incidentDate",
+      "value": "March, April 2010",
+      "officialTitle": "DOW-UAP-D174, Utah Ranch Investigation Report, April 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D176, Triangular UAP AARO Memorandum for Record, 2026": {
+      "kind": "incidentDate",
+      "value": "June, 2026",
+      "officialTitle": "DOW-UAP-D176, Triangular UAP AARO Memorandum for Record, 2026",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955": {
+      "kind": "incidentDate",
+      "value": "3/15/1955",
+      "officialTitle": "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D178, Unresolved UAP Report, Catalina Island, 1953": {
+      "kind": "incidentDate",
+      "value": "11/16/1953",
+      "officialTitle": "DOW-UAP-D178, Unresolved UAP Report, Catalina Island, 1953",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D179, Air Intelligence Information Report, Catalina Island, 1952": {
+      "kind": "incidentDate",
+      "value": "6/25/1952",
+      "officialTitle": "DOW-UAP-D179, Air Intelligence Information Report, Catalina Island, 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D181, Unresolved UAP Report, Catalina Island, 1949": {
+      "kind": "incidentDate",
+      "value": "4/28/1949",
+      "officialTitle": "DOW-UAP-D181, Unresolved UAP Report, Catalina Island, 1949",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "FBI-UAP-D043, FD-302, Unidentified Aerial Object Observation Report, 2026": {
+      "kind": "incidentDate",
+      "value": "June, 2026",
+      "officialTitle": "FBI-UAP-D043, FD-302, Unidentified Aerial Object Observation Report, 2026",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D102, Project Blue Book File on Tremonton Film, Utah, 1952": {
+      "kind": "incidentDate",
+      "value": "7/2/1952",
+      "officialTitle": "DOW-UAP-D102, Project Blue Book File on Tremonton Film, Utah, 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D103, Project Blue Book Photo File Relating to Tremonton Film, Utah, 1952": {
+      "kind": "incidentDate",
+      "value": "7/2/1952",
+      "officialTitle": "DOW-UAP-D103, Project Blue Book Photo File Relating to Tremonton Film, Utah, 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D104, Final Personnel Record for Newhouse, Delbert C., U.S. Navy, 1957": {
+      "kind": "incidentDate",
+      "value": "5/2/1957",
+      "officialTitle": "DOW-UAP-D104, Final Personnel Record for Newhouse, Delbert C., U.S. Navy, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D105, U.S. Air Force Flying Discs File, 1952": {
+      "kind": "incidentDate",
+      "value": "September - December 1952",
+      "officialTitle": "DOW-UAP-D105, U.S. Air Force Flying Discs File, 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D106, Mission Report, Iraq, 2022": {
+      "kind": "incidentDate",
+      "value": "2022",
+      "officialTitle": "DOW-UAP-D106, Mission Report, Iraq, 2022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D107, Mission Report, Middle East, 2025": {
+      "kind": "incidentDate",
+      "value": "2025",
+      "officialTitle": "DOW-UAP-D107, Mission Report, Middle East, 2025",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D108, Mission Report, Middle East, 2025": {
+      "kind": "incidentDate",
+      "value": "2025",
+      "officialTitle": "DOW-UAP-D108, Mission Report, Middle East, 2025",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D109, Mission Report, Middle East, 2022": {
+      "kind": "incidentDate",
+      "value": "2022",
+      "officialTitle": "DOW-UAP-D109, Mission Report, Middle East, 2022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D110, AAWSAP Statement of Objectives, July 2008": {
+      "kind": "incidentDate",
+      "value": "7/18/2008",
+      "officialTitle": "DOW-UAP-D110, AAWSAP Statement of Objectives, July 2008",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D111, AAWSAP Solicitation and Original Order, September 2008": {
+      "kind": "incidentDate",
+      "value": "9/22/2008",
+      "officialTitle": "DOW-UAP-D111, AAWSAP Solicitation and Original Order, September 2008",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D112, AAWSAP Contract Modification P00001, September 2009": {
+      "kind": "incidentDate",
+      "value": "9/2/2009",
+      "officialTitle": "DOW-UAP-D112, AAWSAP Contract Modification P00001, September 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D113, AAWSAP Contract Modification P00002, February 2010": {
+      "kind": "incidentDate",
+      "value": "2/2/2010",
+      "officialTitle": "DOW-UAP-D113, AAWSAP Contract Modification P00002, February 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D114, AAWSAP Contract Modification P00003, May 2010": {
+      "kind": "incidentDate",
+      "value": "5/18/2010",
+      "officialTitle": "DOW-UAP-D114, AAWSAP Contract Modification P00003, May 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D115, AAWSAP Contract Modification P00004, May 2010": {
+      "kind": "incidentDate",
+      "value": "5/18/2010",
+      "officialTitle": "DOW-UAP-D115, AAWSAP Contract Modification P00004, May 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D116, AAWSAP Contract Modification P00005, September 2010": {
+      "kind": "incidentDate",
+      "value": "9/28/2010",
+      "officialTitle": "DOW-UAP-D116, AAWSAP Contract Modification P00005, September 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D117, AAWSAP DIRD, Metallic Glasses for Aerospace Applications, December 2009": {
+      "kind": "incidentDate",
+      "value": "12/14/2009",
+      "officialTitle": "DOW-UAP-D117, AAWSAP DIRD, Metallic Glasses for Aerospace Applications, December 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D118, AAWSAP DIRD, Aerospace Applications of Programmable Matter, December 2009": {
+      "kind": "incidentDate",
+      "value": "12/14/2009",
+      "officialTitle": "DOW-UAP-D118, AAWSAP DIRD, Aerospace Applications of Programmable Matter, December 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D119, AAWSAP DIRD, Biomaterials, January 2010": {
+      "kind": "incidentDate",
+      "value": "1/7/2010",
+      "officialTitle": "DOW-UAP-D119, AAWSAP DIRD, Biomaterials, January 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D120, AAWSAP DIRD, Materials for Advanced Aerospace Platforms, January 2010": {
+      "kind": "incidentDate",
+      "value": "1/12/2010",
+      "officialTitle": "DOW-UAP-D120, AAWSAP DIRD, Materials for Advanced Aerospace Platforms, January 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D121, AAWSAP DIRD, Pulsed High-Power Microwave Source Technology, January 2010": {
+      "kind": "incidentDate",
+      "value": "1/28/2010",
+      "officialTitle": "DOW-UAP-D121, AAWSAP DIRD, Pulsed High-Power Microwave Source Technology, January 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D122, AAWSAP DIRD, Invisibility Cloaking Theory and Experiments, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/2/2010",
+      "officialTitle": "DOW-UAP-D122, AAWSAP DIRD, Invisibility Cloaking Theory and Experiments, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D123, AAWSAP DIRD, Positron Aerospace Propulsion, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/2/2010",
+      "officialTitle": "DOW-UAP-D123, AAWSAP DIRD, Positron Aerospace Propulsion, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D124, AAWSAP DIRD, Space Access: Where We’ve Been and Where We Could Go, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/8/2010",
+      "officialTitle": "DOW-UAP-D124, AAWSAP DIRD, Space Access: Where We’ve Been and Where We Could Go, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D125, AAWSAP DIRD, Inertial Electrostatic Confinement Fusion, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/10/2010",
+      "officialTitle": "DOW-UAP-D125, AAWSAP DIRD, Inertial Electrostatic Confinement Fusion, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D126, AAWSAP DIRD, Advanced Nuclear Propulsion for Manned Deep Space Missions, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/11/2010",
+      "officialTitle": "DOW-UAP-D126, AAWSAP DIRD, Advanced Nuclear Propulsion for Manned Deep Space Missions, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D127, AAWSAP DIRD, An Introduction to the Statistical Drake Equation, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/11/2010",
+      "officialTitle": "DOW-UAP-D127, AAWSAP DIRD, An Introduction to the Statistical Drake Equation, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D128, AAWSAP DIRD, Anomalous Acute and Subacute Field Effects on Human Biological Tissues, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/11/2010",
+      "officialTitle": "DOW-UAP-D128, AAWSAP DIRD, Anomalous Acute and Subacute Field Effects on Human Biological Tissues, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D129, AAWSAP DIRD, Metallic Spintronics, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/23/2010",
+      "officialTitle": "DOW-UAP-D129, AAWSAP DIRD, Metallic Spintronics, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D130, AAWSAP DIRD, Technological Approaches to Controlling External Devices, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/23/2010",
+      "officialTitle": "DOW-UAP-D130, AAWSAP DIRD, Technological Approaches to Controlling External Devices, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D131, AAWSAP DIRD, The Role of Superconductors in Gravity Research, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/23/2010",
+      "officialTitle": "DOW-UAP-D131, AAWSAP DIRD, The Role of Superconductors in Gravity Research, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D132, AAWSAP DIRD, Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/29/2010",
+      "officialTitle": "DOW-UAP-D132, AAWSAP DIRD, Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D133, AAWSAP DIRD, The Space Communication Implications of Quantum Entanglement and Nonlocality, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/30/2010",
+      "officialTitle": "DOW-UAP-D133, AAWSAP DIRD, The Space Communication Implications of Quantum Entanglement and Nonlocality, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D134, AAWSAP DIRD, Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/30/2010",
+      "officialTitle": "DOW-UAP-D134, AAWSAP DIRD, Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D135, AAWSAP DIRD, Antigravity for Aerospace Applications, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/30/2010",
+      "officialTitle": "DOW-UAP-D135, AAWSAP DIRD, Antigravity for Aerospace Applications, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D136, AAWSAP DIRD, Biosensors and BioMEMS: A Survey of the Present Field, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/31/2010",
+      "officialTitle": "DOW-UAP-D136, AAWSAP DIRD, Biosensors and BioMEMS: A Survey of the Present Field, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D137, AAWSAP DIRD, State of the Art and Evolution of High-Energy Lasers, March 2010": {
+      "kind": "incidentDate",
+      "value": "3/31/2010",
+      "officialTitle": "DOW-UAP-D137, AAWSAP DIRD, State of the Art and Evolution of High-Energy Lasers, March 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D138, AAWSAP DIRD, Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions, April 2010": {
+      "kind": "incidentDate",
+      "value": "4/2/2010",
+      "officialTitle": "DOW-UAP-D138, AAWSAP DIRD, Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions, April 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D139, AAWSAP DIRD, Traversable Wormholes, Stargates, and Negative Energy, April 2010": {
+      "kind": "incidentDate",
+      "value": "4/6/2010",
+      "officialTitle": "DOW-UAP-D139, AAWSAP DIRD, Traversable Wormholes, Stargates, and Negative Energy, April 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D140, AAWSAP DIRD, High-Frequency Gravitational Wave Communications, April 2010": {
+      "kind": "incidentDate",
+      "value": "4/6/2010",
+      "officialTitle": "DOW-UAP-D140, AAWSAP DIRD, High-Frequency Gravitational Wave Communications, April 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D141, AAWSAP DIRD, Metamaterials for Aerospace Applications, April 2010": {
+      "kind": "incidentDate",
+      "value": "4/6/2010",
+      "officialTitle": "DOW-UAP-D141, AAWSAP DIRD, Metamaterials for Aerospace Applications, April 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D142, AAWSAP DIRD, Concepts for Extracting Energy from the Quantum Vacuum, April 2010": {
+      "kind": "incidentDate",
+      "value": "4/6/2010",
+      "officialTitle": "DOW-UAP-D142, AAWSAP DIRD, Concepts for Extracting Energy from the Quantum Vacuum, April 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D143, AAWSAP DIRD, Laser Lightcraft Nanosatellites, November 2010": {
+      "kind": "incidentDate",
+      "value": "11/1/2010",
+      "officialTitle": "DOW-UAP-D143, AAWSAP DIRD, Laser Lightcraft Nanosatellites, November 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D144, AAWSAP DIRD, Cockpits in the Era of Breakthrough Flight, November 2010": {
+      "kind": "incidentDate",
+      "value": "11/1/2010",
+      "officialTitle": "DOW-UAP-D144, AAWSAP DIRD, Cockpits in the Era of Breakthrough Flight, November 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D145, AAWSAP DIRD, Aneutronic Fusion Propulsion I, November 2010": {
+      "kind": "incidentDate",
+      "value": "11/1/2010",
+      "officialTitle": "DOW-UAP-D145, AAWSAP DIRD, Aneutronic Fusion Propulsion I, November 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D146, AAWSAP DIRD, Aneutronic Fusion Propulsion II, November 2010": {
+      "kind": "incidentDate",
+      "value": "11/1/2010",
+      "officialTitle": "DOW-UAP-D146, AAWSAP DIRD, Aneutronic Fusion Propulsion II, November 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D147, AAWSAP DIRD, Ultracapacitors as Energy and Power Storage Devices, November 2010": {
+      "kind": "incidentDate",
+      "value": "11/1/2010",
+      "officialTitle": "DOW-UAP-D147, AAWSAP DIRD, Ultracapacitors as Energy and Power Storage Devices, November 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D148, AAWSAP DIRD, Detection and High-Resolution Tracking of Vehicles at Hypersonic Velocities, November 2010": {
+      "kind": "incidentDate",
+      "value": "11/20/2010",
+      "officialTitle": "DOW-UAP-D148, AAWSAP DIRD, Detection and High-Resolution Tracking of Vehicles at Hypersonic Velocities, November 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D149, AAWSAP DIRD, MHD Air Breathing Propulsion and Power for Aerospace Applications, November 2010": {
+      "kind": "incidentDate",
+      "value": "11/21/2010",
+      "officialTitle": "DOW-UAP-D149, AAWSAP DIRD, MHD Air Breathing Propulsion and Power for Aerospace Applications, November 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D150, AAWSAP DIRD, Quantum Computing and Utilizing Organic Molecules in Automation Technology, December 2010": {
+      "kind": "incidentDate",
+      "value": "12/10/2010",
+      "officialTitle": "DOW-UAP-D150, AAWSAP DIRD, Quantum Computing and Utilizing Organic Molecules in Automation Technology, December 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D151, AAWSAP DIRD, Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft, December 2010": {
+      "kind": "incidentDate",
+      "value": "12/15/2010",
+      "officialTitle": "DOW-UAP-D151, AAWSAP DIRD, Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft, December 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D152, AAWSAP DIRD, Negative Mass Propulsion, January 2011": {
+      "kind": "incidentDate",
+      "value": "1/3/2011",
+      "officialTitle": "DOW-UAP-D152, AAWSAP DIRD, Negative Mass Propulsion, January 2011",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D153, AAWSAP DIRD, Quantum Tomography of Negative Energy States in the Vacuum, January 2011": {
+      "kind": "incidentDate",
+      "value": "1/11/2011",
+      "officialTitle": "DOW-UAP-D153, AAWSAP DIRD, Quantum Tomography of Negative Energy States in the Vacuum, January 2011",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D154, Transcript of a Presentation by Captain Edward J. Ruppelt, 1952": {
+      "kind": "incidentDate",
+      "value": "3/26/1952",
+      "officialTitle": "DOW-UAP-D154, Transcript of a Presentation by Captain Edward J. Ruppelt, 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956": {
+      "kind": "incidentDate",
+      "value": "12/31/1956",
+      "officialTitle": "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D157, Air Intelligence Information Report, Italy, 1952": {
+      "kind": "incidentDate",
+      "value": "8/27/1952",
+      "officialTitle": "DOW-UAP-D157, Air Intelligence Information Report, Italy, 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D158, Flying Object Report, Canada, 1953": {
+      "kind": "incidentDate",
+      "value": "11/13/1953",
+      "officialTitle": "DOW-UAP-D158, Flying Object Report, Canada, 1953",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D159, Air Intelligence Information Report, Germany, 1953": {
+      "kind": "incidentDate",
+      "value": "8/10/1953",
+      "officialTitle": "DOW-UAP-D159, Air Intelligence Information Report, Germany, 1953",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953": {
+      "kind": "incidentDate",
+      "value": "12/16/1953",
+      "officialTitle": "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D161, Air Intelligence Information Report, Alaska, 1953": {
+      "kind": "incidentDate",
+      "value": "10/6/1953",
+      "officialTitle": "DOW-UAP-D161, Air Intelligence Information Report, Alaska, 1953",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D162, Air Intelligence Information Report, Alaska, 1953": {
+      "kind": "incidentDate",
+      "value": "12/1/1953",
+      "officialTitle": "DOW-UAP-D162, Air Intelligence Information Report, Alaska, 1953",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D163, Air Intelligence Information Report, Sweden, 1953": {
+      "kind": "incidentDate",
+      "value": "12/17/1953",
+      "officialTitle": "DOW-UAP-D163, Air Intelligence Information Report, Sweden, 1953",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D164, Flying Object Report, Indiana, 1953": {
+      "kind": "incidentDate",
+      "value": "12/1/1953",
+      "officialTitle": "DOW-UAP-D164, Flying Object Report, Indiana, 1953",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D166, MUFON Reports Prepared for BAASS, November 2008": {
+      "kind": "incidentDate",
+      "value": "11/1/2008",
+      "officialTitle": "DOW-UAP-D166, MUFON Reports Prepared for BAASS, November 2008",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D167, Project Capella, December 2008": {
+      "kind": "incidentDate",
+      "value": "12/10/2008",
+      "officialTitle": "DOW-UAP-D167, Project Capella, December 2008",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D168, BAASS Project Management Plan, December 2008": {
+      "kind": "incidentDate",
+      "value": "12/2/2008",
+      "officialTitle": "DOW-UAP-D168, BAASS Project Management Plan, December 2008",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D169, BAASS Monthly Report, March 2009": {
+      "kind": "incidentDate",
+      "value": "4/10/2009",
+      "officialTitle": "DOW-UAP-D169, BAASS Monthly Report, March 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D170, BAASS Monthly Report, April 2009": {
+      "kind": "incidentDate",
+      "value": "4/1/2009",
+      "officialTitle": "DOW-UAP-D170, BAASS Monthly Report, April 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D171, BAASS Monthly Report, June 2009": {
+      "kind": "incidentDate",
+      "value": "7/9/2009",
+      "officialTitle": "DOW-UAP-D171, BAASS Monthly Report, June 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D173, BAASS Monthly Report, November 2009": {
+      "kind": "incidentDate",
+      "value": "11/1/2009",
+      "officialTitle": "DOW-UAP-D173, BAASS Monthly Report, November 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D175, BAASS Self-Assessment of UAP Analysis Capabilities, November 2010": {
+      "kind": "incidentDate",
+      "value": "11/23/2010",
+      "officialTitle": "DOW-UAP-D175, BAASS Self-Assessment of UAP Analysis Capabilities, November 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954": {
+      "kind": "incidentDate",
+      "value": "8/31/1954",
+      "officialTitle": "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-PR130, Unresolved UAP Report, Iraq, 2022": {
+      "kind": "incidentDate",
+      "value": "2022",
+      "officialTitle": "DOW-UAP-PR130, Unresolved UAP Report, Iraq, 2022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-PR131, Unresolved UAP Report, Iraq, 2022": {
+      "kind": "incidentDate",
+      "value": "2022",
+      "officialTitle": "DOW-UAP-PR131, Unresolved UAP Report, Iraq, 2022",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "DOW-UAP-PR133, Unresolved UAP Report, Middle East, 2025": {
+      "kind": "dateTaken",
+      "value": "2025-01-01",
+      "officialTitle": "DOW-UAP-PR133, Unresolved UAP Report, Middle East, 2025",
+      "sourceUrl": "https://www.dvidshub.net/video/1023396",
+      "dvidsId": "1023396",
+      "sourceDateText": "01.01.2025"
+    },
+    "DOW-UAP-PR135, Unresolved UAP Report, Middle East, 2025": {
+      "kind": "dateTaken",
+      "value": "2025-01-01",
+      "officialTitle": "DOW-UAP-PR135, Unresolved UAP Report, Middle East, 2025",
+      "sourceUrl": "https://www.dvidshub.net/video/1023397",
+      "dvidsId": "1023397",
+      "sourceDateText": "01.01.2025"
+    },
+    "DOW-UAP-PR140, Unresolved UAP Report, Middle East, 2022": {
+      "kind": "dateTaken",
+      "value": "2022-01-01",
+      "officialTitle": "DOW-UAP-PR140, Unresolved UAP Report, Middle East, 2022",
+      "sourceUrl": "https://www.dvidshub.net/video/1023398",
+      "dvidsId": "1023398",
+      "sourceDateText": "01.01.2022"
+    },
+    "DOW-UAP-PR141, Unresolved UAP Report, Middle East, 2022": {
+      "kind": "dateTaken",
+      "value": "2022-01-01",
+      "officialTitle": "DOW-UAP-PR141, Unresolved UAP Report, Middle East, 2022",
+      "sourceUrl": "https://www.dvidshub.net/video/1023400",
+      "dvidsId": "1023400",
+      "sourceDateText": "01.01.2022"
+    },
+    "DOW-UAP-PR143, Unresolved UAP Report, Yellow Sea, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR143, Unresolved UAP Report, Yellow Sea, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1023403",
+      "dvidsId": "1023403",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR144, Unresolved UAP Report, Yellow Sea, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR144, Unresolved UAP Report, Yellow Sea, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1023404",
+      "dvidsId": "1023404",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR148, Unresolved UAP Report, East China Sea, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR148, Unresolved UAP Report, East China Sea, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1023405",
+      "dvidsId": "1023405",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR150, Unresolved UAP Report, Yellow Sea, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR150, Unresolved UAP Report, Yellow Sea, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1023406",
+      "dvidsId": "1023406",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR151, Unresolved UAP Report, Yellow Sea, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR151, Unresolved UAP Report, Yellow Sea, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1023408",
+      "dvidsId": "1023408",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR152, Unresolved UAP Report, Yellow Sea, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-01-01",
+      "officialTitle": "DOW-UAP-PR152, Unresolved UAP Report, Yellow Sea, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1023410",
+      "dvidsId": "1023410",
+      "sourceDateText": "01.01.2023"
+    },
+    "DOW-UAP-PR159, Historical Film of Reported UFOs, Utah, 1952": {
+      "kind": "dateTaken",
+      "value": "1952-07-02",
+      "officialTitle": "DOW-UAP-PR159, Historical Film of Reported UFOs, Utah, 1952",
+      "sourceUrl": "https://www.dvidshub.net/video/1023402",
+      "dvidsId": "1023402",
+      "sourceDateText": "07.02.1952"
+    },
+    "DOW-UAP-PR160, Presentation by Captain Edward J. Ruppelt, 1952": {
+      "kind": "dateTaken",
+      "value": "1952-03-26",
+      "officialTitle": "DOW-UAP-PR160, Presentation by Captain Edward J. Ruppelt, 1952",
+      "sourceUrl": "https://www.dvidshub.net/video/1023407",
+      "dvidsId": "1023407",
+      "sourceDateText": "03.26.1952"
+    },
+    "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963": {
+      "kind": "incidentDate",
+      "value": "5/29/1963",
+      "officialTitle": "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "LLE-UAP-D001, Transcript of an Unresolved UAP Report, Colorado, October 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "LLE-UAP-D001, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "LLE-UAP-D002, Transcript of an Unresolved UAP Report, Colorado, October 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "LLE-UAP-D002, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "LLE-UAP-D003, Transcript of an Unresolved UAP Report, Colorado, October 2023": {
+      "kind": "incidentDate",
+      "value": "October, 2023",
+      "officialTitle": "LLE-UAP-D003, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "LLE-UAP-D004, Transcript of an Unresolved UAP Report, Colorado, January 2024": {
+      "kind": "incidentDate",
+      "value": "January, 2024",
+      "officialTitle": "LLE-UAP-D004, Transcript of an Unresolved UAP Report, Colorado, January 2024",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "LLE-UAP-PR001, Unresolved UAP Report, Colorado, 2023": {
+      "kind": "dateTaken",
+      "value": "2023-10-01",
+      "officialTitle": "LLE-UAP-PR001, Unresolved UAP Report, Colorado, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1023409",
+      "dvidsId": "1023409",
+      "sourceDateText": "10.01.2023"
+    },
+    "LLE-UAP-PR002, Unresolved UAP Report, Colorado, October 2023": {
+      "kind": "dateTaken",
+      "value": "2023-10-01",
+      "officialTitle": "LLE-UAP-PR002, Unresolved UAP Report, Colorado, October 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1023412",
+      "dvidsId": "1023412",
+      "sourceDateText": "10.01.2023"
+    },
+    "LLE-UAP-PR003, Unresolved UAP Report, Colorado, October 2023": {
+      "kind": "dateTaken",
+      "value": "2023-10-01",
+      "officialTitle": "LLE-UAP-PR003, Unresolved UAP Report, Colorado, October 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1023414",
+      "dvidsId": "1023414",
+      "sourceDateText": "10.01.2023"
+    },
+    "LLE-UAP-PR004, Unresolved UAP Report, Colorado, January 2024": {
+      "kind": "dateTaken",
+      "value": "2023-10-01",
+      "officialTitle": "LLE-UAP-PR004, Unresolved UAP Report, Colorado, January 2024",
+      "sourceUrl": "https://www.dvidshub.net/video/1023416",
+      "dvidsId": "1023416",
+      "sourceDateText": "10.01.2023"
+    },
+    "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964": {
+      "kind": "incidentDate",
+      "value": "1962-1964",
+      "officialTitle": "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    }
+  }
+}

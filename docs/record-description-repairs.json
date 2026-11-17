@@ -1,0 +1,1106 @@
+[
+  {
+    "language": "pt",
+    "index": 130,
+    "record": "DOW-UAP-PR036",
+    "beforeSha256": "a2cb18901a00f350e50c120b4a7a63fe30491279a6641caa0c13f09cb585db12",
+    "afterSha256": "a48f4ca17d9939d13a64b69942acc51144b67b8d99a9fe25488ec5b3347cbc0e",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 140,
+    "record": "DOW-UAP-PR046",
+    "beforeSha256": "b8a540750638df40bdcd08273786304b44e68b5a3b24d6307943ec05916503f9",
+    "afterSha256": "5a820dfe207eb3159a47a9b978218f5e8f72c12d4791397c5bf2a052e6091d84",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 141,
+    "record": "DOW-UAP-PR047",
+    "beforeSha256": "b8a540750638df40bdcd08273786304b44e68b5a3b24d6307943ec05916503f9",
+    "afterSha256": "003fe0d94f59d962ca223195ed8fbaaec68bd6601eb424aef8269e80bdf09f9f",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 142,
+    "record": "DOW-UAP-PR048",
+    "beforeSha256": "b8a540750638df40bdcd08273786304b44e68b5a3b24d6307943ec05916503f9",
+    "afterSha256": "b80313731f044202f706debd6168a9072863bd594ed23899e909a7b2a58b769d",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 297,
+    "record": "DOW-UAP-PR104",
+    "beforeSha256": "01c532062f24257693b5f68b0648e203177299941e82f73d6777ad4df16f45a6",
+    "afterSha256": "a31c33cdbfa2105091bbd0abfab3ae15ee89a968e96ea1c61b75a3b2da3186b1",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 298,
+    "record": "DOW-UAP-PR105",
+    "beforeSha256": "1ac7fc7cb57e8e47a21a77085a88f0eca374cd59f7717ee404ec18465bc90419",
+    "afterSha256": "8b539672ccdd2729f75267aa3b173e7dd6f2b911e7a000ff1afa5a6258377d75",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 299,
+    "record": "DOW-UAP-PR113",
+    "beforeSha256": "75a9336a625c48966e59aaf63c935e8429b3bcd25e945ae45af27605fce55f25",
+    "afterSha256": "841f6c5c37246d7b3b995a9eebbbf5ac5b3207ef730f30c8b32d4cc373c4e8eb",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 300,
+    "record": "DOW-UAP-PR115",
+    "beforeSha256": "423265058b72fbefeb8082aa0c9ca5ef36e29419bcb265db641ca3a162fe8bf0",
+    "afterSha256": "947a1741505c1b7e9ccee44aecd7250b6ccb776434238dce69a613dbc4ef02c5",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 313,
+    "record": "DOW-UAP-PR030",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "1d31ef8f3c50953b1993902e8f1f42498b2bbf260e1888149515dfb80ab707af",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 314,
+    "record": "DOW-UAP-PR100",
+    "beforeSha256": "4f79ac1fa829b148c8f3d86b630488a7b0e169d3869a34541ab4a595715ca78a",
+    "afterSha256": "9bf531b664c2be693b848437d2e71f3e35fb08a17bc4885dc68f1cc417322c7f",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 315,
+    "record": "DOW-UAP-PR101",
+    "beforeSha256": "5ad11425a8d36f88c22f1748fbc2c72592db50189f0af2e3315504d49d31de34",
+    "afterSha256": "7da2db1c82cc812ffef669b5b907279643cfdb7a62f71563b6fe1bf737ed0e62",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 316,
+    "record": "DOW-UAP-PR102",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "e972b910348909deba48bd148e292baf5345413adf312901bda56bf6c7729368",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 317,
+    "record": "DOW-UAP-PR103",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "a152f33d9a97cdf66fd6eb8322a16a1ff69242891b2db9dd9af591c76b58985a",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 318,
+    "record": "DOW-UAP-PR106",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "ab9057a79abfd35135cc10feebd7d3e5258d5b8ae7f84a2b41f7aed178b16c02",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 319,
+    "record": "DOW-UAP-PR107",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "837f4c5ef3350791c01a446f3c667a24a554dc7971da277385da1529261e2697",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 320,
+    "record": "DOW-UAP-PR108",
+    "beforeSha256": "045039284f266a57d52bdf155e9c07585e00c216731573af21dd110a4f5eaef0",
+    "afterSha256": "a7f33fdcfc3a1268b66df38b2d5a1aefc0c045b7d192e25593031a3d18a73226",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 321,
+    "record": "DOW-UAP-PR109",
+    "beforeSha256": "73310db366a5d7a12bd74f6609f3f5296368766d82a54aa0b8c40ed89cc71c42",
+    "afterSha256": "421c481524559fb6fa585ed13d70badc1cd9ad9a002dab0c6997dc41b3aab794",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 322,
+    "record": "DOW-UAP-PR110",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "3a672a3c9e9368c1fcd0baf021553a0ddccc409277b987539791a521766dc979",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 323,
+    "record": "DOW-UAP-PR111",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "58b8854e24ad67e136613203ff07a61789cdf631fe8c569e878107f29748d6d7",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 324,
+    "record": "DOW-UAP-PR112",
+    "beforeSha256": "c499376a1a08d15368f8b4f02c63af730fa95215e154b9ee584f8aec1fdfdbf4",
+    "afterSha256": "b8a76152e5fc5bdeee6c7501f1bf09fa8b478c4c5999214c78ae13e45350cb07",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 325,
+    "record": "DOW-UAP-PR114",
+    "beforeSha256": "a8f05c17ca0fc9555f1454417393f2746db10737139113712b2580e65c567893",
+    "afterSha256": "f416ed66b3eb2d1332f8bd2b3011997a421dfb44c5dbfd64ce20570601a373c6",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 326,
+    "record": "DOW-UAP-PR116",
+    "beforeSha256": "bae17dc33317ca95070dda0798342334287bd83754323cfdae59d4cce038c0d2",
+    "afterSha256": "97dfeac00141222bfaf3c84489333f1e5d5136da7185aa952677a21f6fce070a",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 130,
+    "record": "DOW-UAP-PR036",
+    "beforeSha256": "f80199a01545f4aaf451897dadb8f51c8c69a7df06fed2ab7357506bb1ac31a0",
+    "afterSha256": "8c11b58592402bab936f1359d6d827b9a28b441f850c18ee61a0d6ab54f95f7e",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 140,
+    "record": "DOW-UAP-PR046",
+    "beforeSha256": "9616f699ccfd2b86f8de195e2e59c0f9c49ca70a07f26e599d417aef4d531b48",
+    "afterSha256": "a0333693b2227a71a938aebc4245b43770ea7e9b70eafa6d7821d42b1424aec6",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 141,
+    "record": "DOW-UAP-PR047",
+    "beforeSha256": "9616f699ccfd2b86f8de195e2e59c0f9c49ca70a07f26e599d417aef4d531b48",
+    "afterSha256": "13e186745a3ba20bc293731f981dc4116c972aa45e52a573ee507aa86e547e7c",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 142,
+    "record": "DOW-UAP-PR048",
+    "beforeSha256": "9616f699ccfd2b86f8de195e2e59c0f9c49ca70a07f26e599d417aef4d531b48",
+    "afterSha256": "fd5eab7bbae4e522b77c39096f9eb2e478faa2c5147cf07e059f6701b9a321e7",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 297,
+    "record": "DOW-UAP-PR104",
+    "beforeSha256": "d3b45d4976dbf584a756ad8aeec3ea9d7f4528c91b26943c01d9e039d7b3bd70",
+    "afterSha256": "a83eb9a071c9f05617abba204b506f59eb6d92675e409a634013c84fcae1b41c",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 298,
+    "record": "DOW-UAP-PR105",
+    "beforeSha256": "64e2903b71eb5bd37645db64a95e724e558a4872fbb9bc1639e398bbbb39a025",
+    "afterSha256": "a4d730f592ccbbc8d4fb3f468a9fafe422ee65d3088f03fd56e204a1762e9edd",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 299,
+    "record": "DOW-UAP-PR113",
+    "beforeSha256": "a3885b5452dd4036f3c25245770964d00ced1ec26863f2063e7767432b0818dc",
+    "afterSha256": "9fe5343b4a5203f279395e7ca8848177b3b162cce0c88a418d39bae61a89c520",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 300,
+    "record": "DOW-UAP-PR115",
+    "beforeSha256": "13e21e77d09ac11921b2890c2ccb26ba7504b64767662afe4393f8a5cd76ffa2",
+    "afterSha256": "5cfe4b0ec831070bc86b7b0acf1a3aae9e3936a36b8fad3d9ea2669d09c84d1c",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 313,
+    "record": "DOW-UAP-PR030",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "7579eb3b779fd4e2acdcc6cfb447b30c45348f11d9a0ff4b6606103f7c45590b",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 315,
+    "record": "DOW-UAP-PR101",
+    "beforeSha256": "5ad11425a8d36f88c22f1748fbc2c72592db50189f0af2e3315504d49d31de34",
+    "afterSha256": "21d7908446f4f0361c3716fcce8f5a99997ece7361d435e700dedd91d685d9a6",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 316,
+    "record": "DOW-UAP-PR102",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "080e93170fa6527b85733158d2494026f81d00c1f3f1a1e2a3f2e7479de07675",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 317,
+    "record": "DOW-UAP-PR103",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "c9eeeb422c648d8c0548755378ce2d59fd171ea2c0fbc59d21992a97d61d4146",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 318,
+    "record": "DOW-UAP-PR106",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "97bf6a7369d13c64e16e990ef9161badf02c14148cb16ad58846b9fbf1bedfb0",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 320,
+    "record": "DOW-UAP-PR108",
+    "beforeSha256": "045039284f266a57d52bdf155e9c07585e00c216731573af21dd110a4f5eaef0",
+    "afterSha256": "0613f8c05142bf3cd5c50237788ec7e590ae22c4bb53ef831da60d236d638c9a",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 321,
+    "record": "DOW-UAP-PR109",
+    "beforeSha256": "73310db366a5d7a12bd74f6609f3f5296368766d82a54aa0b8c40ed89cc71c42",
+    "afterSha256": "8e6e65553e1714dd501212c2021860b1104c33068095dffbaa7507b24cdeb8e6",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 322,
+    "record": "DOW-UAP-PR110",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "b7f62a9ba5862143c0dc99be1354c91a3c3b69718c228a0c59358b9188ace5c5",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 324,
+    "record": "DOW-UAP-PR112",
+    "beforeSha256": "c499376a1a08d15368f8b4f02c63af730fa95215e154b9ee584f8aec1fdfdbf4",
+    "afterSha256": "bee5f1ed823db088bc5579b8818b1e250520cfa4d8ec137ec42f0c889e7ddb0b",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 325,
+    "record": "DOW-UAP-PR114",
+    "beforeSha256": "a8f05c17ca0fc9555f1454417393f2746db10737139113712b2580e65c567893",
+    "afterSha256": "5f77f41d0a7161a9a8863a390df84ce8195b296311dc34e863dc72beb1b4d414",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 326,
+    "record": "DOW-UAP-PR116",
+    "beforeSha256": "bae17dc33317ca95070dda0798342334287bd83754323cfdae59d4cce038c0d2",
+    "afterSha256": "bec054427885b6476c0103a89953c09de7ca37fb7d56d5b9aab5fecdcc2c00ed",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 130,
+    "record": "DOW-UAP-PR036",
+    "beforeSha256": "87d71d672ca26599c49e31b179ad3012623fca1398e03f357c4ec21347789913",
+    "afterSha256": "6ac41331b5805dd18710320df1af5963b8f4108fec7c0d7d903fef262ecdc4db",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 140,
+    "record": "DOW-UAP-PR046",
+    "beforeSha256": "97ecf40707ea38b911c1552300aafc4b5e324e78d3eabeaa3caeab4facde5ec0",
+    "afterSha256": "21809a2f03009d7c2e5c281fa793fe6f7b1a9cd2276f8a4ff7b30fcb653a5fb5",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 141,
+    "record": "DOW-UAP-PR047",
+    "beforeSha256": "97ecf40707ea38b911c1552300aafc4b5e324e78d3eabeaa3caeab4facde5ec0",
+    "afterSha256": "86941f9ae42e150f04219c4e2d112439181b18e2ca4daa6e58eb42fdea449d3f",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 142,
+    "record": "DOW-UAP-PR048",
+    "beforeSha256": "97ecf40707ea38b911c1552300aafc4b5e324e78d3eabeaa3caeab4facde5ec0",
+    "afterSha256": "4e810a2657644c594655962b6292035ad24a21d1d6f5b8fe30603f7bb862829b",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 297,
+    "record": "DOW-UAP-PR104",
+    "beforeSha256": "3e67d02e749f060989e28d53d20d408416caf7a42030ddbf1741ce982fd4fbba",
+    "afterSha256": "8ae281983173788f951a228e1f72608a21bd2fbd265bed5a985f1bdc0b6f1ef8",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 298,
+    "record": "DOW-UAP-PR105",
+    "beforeSha256": "e0c4f972ff86c5a3316484d15c0bcaf39a4fd9e1683e270d32823276c308b0c8",
+    "afterSha256": "6058a346f8281df00d3aa5150a8a3ac7e4131b69b09113720b76c798aa9c934e",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 299,
+    "record": "DOW-UAP-PR113",
+    "beforeSha256": "da4da717e68ef350c01f69a4196c3d49041fe6a21e5ac8f1b3855f8cf82de821",
+    "afterSha256": "34581a9dcc8e7075101815d09c787201b35aab141dcd965598cdb6d53bd36e85",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 300,
+    "record": "DOW-UAP-PR115",
+    "beforeSha256": "092190883a4a17e329661b4c855492f91fae79dfa7456f53300ad73c18ed9c17",
+    "afterSha256": "62b34c56a8a80f4c8e1cb46b5965674fcf7b0c361b7aef4f533d6d3f0df4ca69",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 313,
+    "record": "DOW-UAP-PR030",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "dc9c1a81b63b577a258bdbddc784ae56a4c05d574dcc17c9027efb1f2bda2473",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 314,
+    "record": "DOW-UAP-PR100",
+    "beforeSha256": "4f79ac1fa829b148c8f3d86b630488a7b0e169d3869a34541ab4a595715ca78a",
+    "afterSha256": "ed336570f032780da8a859634cb2ecb3f58ace6d8fc72d81a2a0653dd9bab49a",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 315,
+    "record": "DOW-UAP-PR101",
+    "beforeSha256": "5ad11425a8d36f88c22f1748fbc2c72592db50189f0af2e3315504d49d31de34",
+    "afterSha256": "b4aa659007b967bb202976c166472bc5edaefc64078589e51f85183755fd8bfe",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 316,
+    "record": "DOW-UAP-PR102",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "7a8785cbf6f2dce6305c666ad40eac70ba86493f43f29c20d358fb2f53ffb24f",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 317,
+    "record": "DOW-UAP-PR103",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "d34100896efbdd198160425ffcee6b43656a7e9597d627eff0d89ef76c357aeb",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 318,
+    "record": "DOW-UAP-PR106",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "7fcf9a2a4e66932de1736dfb862865f512970aff12f316aefca175c9fb2210d3",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 319,
+    "record": "DOW-UAP-PR107",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "9f59e401a5cf7da949ecbcba37553792a18d4455adc487051c7d16526cefbf2a",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 320,
+    "record": "DOW-UAP-PR108",
+    "beforeSha256": "045039284f266a57d52bdf155e9c07585e00c216731573af21dd110a4f5eaef0",
+    "afterSha256": "cf85d8adf783e60342bc201b39c43546b8e351c3182068fd1388ed3fd16cdeff",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 321,
+    "record": "DOW-UAP-PR109",
+    "beforeSha256": "73310db366a5d7a12bd74f6609f3f5296368766d82a54aa0b8c40ed89cc71c42",
+    "afterSha256": "b6d7a032e70a398097ecd66c1e7587197a7d9c8c37fd3387090cfbd55c80a381",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 322,
+    "record": "DOW-UAP-PR110",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "9187ee22157d3f98d65522fd6918308b64ee186777c80f0cb0432b4ca46634f3",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 323,
+    "record": "DOW-UAP-PR111",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "b0fee3645ddea73b6cd6282a747df91b4eea2ea0487fbfc4e0400aa74c5ea805",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 324,
+    "record": "DOW-UAP-PR112",
+    "beforeSha256": "c499376a1a08d15368f8b4f02c63af730fa95215e154b9ee584f8aec1fdfdbf4",
+    "afterSha256": "19369965300b8b1379f7abe5950a9203bbf542c082bba919bfca4b8292e6618b",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 325,
+    "record": "DOW-UAP-PR114",
+    "beforeSha256": "a8f05c17ca0fc9555f1454417393f2746db10737139113712b2580e65c567893",
+    "afterSha256": "04c601cf22f778ee697bb39303525f39650063544721a1314878ddb80bed0924",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 326,
+    "record": "DOW-UAP-PR116",
+    "beforeSha256": "bae17dc33317ca95070dda0798342334287bd83754323cfdae59d4cce038c0d2",
+    "afterSha256": "6e019c943b09d8a7660520858fe000b66548de9fbabfb976c37ef93494e9c78b",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 130,
+    "record": "DOW-UAP-PR036",
+    "beforeSha256": "d1ef2d47c130d9bfea072c676ef846ec66692d4cd39edbd9d33a28f691a8a3b8",
+    "afterSha256": "ff3c02a7a8a4782dbfc2d2e79f77ed93cbd8703bd82fa834ac3cd67be2ab9d72",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 140,
+    "record": "DOW-UAP-PR046",
+    "beforeSha256": "33212624a7b480e3ff42b47306da09856dc416bb0bd2386591abc5dc9537612d",
+    "afterSha256": "5417908e90fbbaeb72c8ec643e7eba28618882fd8378afd4239a0dc883b2bcb9",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 141,
+    "record": "DOW-UAP-PR047",
+    "beforeSha256": "33212624a7b480e3ff42b47306da09856dc416bb0bd2386591abc5dc9537612d",
+    "afterSha256": "3ffef6011c44adeed57128c61b6ef2ca7913283011d4b96534bcb725374cdc70",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 142,
+    "record": "DOW-UAP-PR048",
+    "beforeSha256": "33212624a7b480e3ff42b47306da09856dc416bb0bd2386591abc5dc9537612d",
+    "afterSha256": "1a2dc9b43c2190695a4d942405941d8702a5dc2c92b72d8bce52d7a32a3da017",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 297,
+    "record": "DOW-UAP-PR104",
+    "beforeSha256": "dd5706ecc78293393b41db02354dc5868eb0e805e3dfdee0945363ac407fc0f4",
+    "afterSha256": "d67e827c778b1e7ae335d736d97612ce4f22871887853776f4b1d4aebdaf00f7",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 298,
+    "record": "DOW-UAP-PR105",
+    "beforeSha256": "d8607ee2da89847b95517e216ec957a38b34ede3f9e36539aafb4a615c7ce348",
+    "afterSha256": "82a6abf73f1c69fbdc7fb32dbb86518110d5b5a1d2651ffb7600f0e14c0314e9",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 299,
+    "record": "DOW-UAP-PR113",
+    "beforeSha256": "5c65afa61c8df235d6fa77387f335a73788e54c7c91f0d3feb802d0bc801af8f",
+    "afterSha256": "64146a64ea69257e98c440956f7a7370a838de4f9c5a1b4b7dbc36af47ef79ee",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 300,
+    "record": "DOW-UAP-PR115",
+    "beforeSha256": "a45afc5c59ccc0b47e892f0172c1ed986b513260ae39ceafeb6d46d7cc089aa4",
+    "afterSha256": "0baa2909bbcad43fc299268e19ce73ea66a2c5755ce47f098d68a3e7770b35fb",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 313,
+    "record": "DOW-UAP-PR030",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "e911876e84a033b3dfa09d07c63735ff5a8ba585f794b7895a204a37e02e197f",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 314,
+    "record": "DOW-UAP-PR100",
+    "beforeSha256": "4f79ac1fa829b148c8f3d86b630488a7b0e169d3869a34541ab4a595715ca78a",
+    "afterSha256": "7292bed8a8a6a7d30d0bc6bb1df9de0284e36fce8c64dde29588f0567346ff93",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 315,
+    "record": "DOW-UAP-PR101",
+    "beforeSha256": "5ad11425a8d36f88c22f1748fbc2c72592db50189f0af2e3315504d49d31de34",
+    "afterSha256": "7ba8bef77367a5eda0745db652e4a4191fd311844e9e7ab2c2c88c77b218a396",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 316,
+    "record": "DOW-UAP-PR102",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "c6b498f827395fbc2b4a18dc81e4ba29a1674ef575795f99b45598dadb45295c",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 317,
+    "record": "DOW-UAP-PR103",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "026419429293b2ecfc0b8b8a89ec61162d59c3f684eff0c0da8fdfa03ebc1fbb",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 318,
+    "record": "DOW-UAP-PR106",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "0261f1c6167176eab043ca08c016867f39892a7d2ad0350c6071c59f30eafbcb",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 319,
+    "record": "DOW-UAP-PR107",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "a0ff13fa50490629a77e9c165474849fbd7469ec5ef03d02152008dc0faa275d",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 320,
+    "record": "DOW-UAP-PR108",
+    "beforeSha256": "045039284f266a57d52bdf155e9c07585e00c216731573af21dd110a4f5eaef0",
+    "afterSha256": "cb819c869c257643944c910e85d60cf5c84fa6e3bd80502a39a15152dc913104",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 321,
+    "record": "DOW-UAP-PR109",
+    "beforeSha256": "73310db366a5d7a12bd74f6609f3f5296368766d82a54aa0b8c40ed89cc71c42",
+    "afterSha256": "7779833936d45a50657d07d12d994c4cdc0d9ca27a88e7a24c9cf3365fb8d8c6",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 322,
+    "record": "DOW-UAP-PR110",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "9285e0732477bb7318b3c3fd50f255d688ef46b227e663f551187398474fcb4e",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 323,
+    "record": "DOW-UAP-PR111",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "b39fd76dfc0d3453933a77cebaa99ac056511c9b532dffa6025a8068be493fe0",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 324,
+    "record": "DOW-UAP-PR112",
+    "beforeSha256": "c499376a1a08d15368f8b4f02c63af730fa95215e154b9ee584f8aec1fdfdbf4",
+    "afterSha256": "acb0e08c03c276770097532cc72900fe2ecc97bcacf8ceb22ebebd9947e82921",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 325,
+    "record": "DOW-UAP-PR114",
+    "beforeSha256": "a8f05c17ca0fc9555f1454417393f2746db10737139113712b2580e65c567893",
+    "afterSha256": "a686417febeeb555729d2e8812230a1ba0cba5f8bf2892b07e8461fdea25b5c5",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 326,
+    "record": "DOW-UAP-PR116",
+    "beforeSha256": "bae17dc33317ca95070dda0798342334287bd83754323cfdae59d4cce038c0d2",
+    "afterSha256": "99a754fb902400b5b3d1eaf271128e3c3a338cd066479aba3d0d14bfe1bc39e6",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 130,
+    "record": "DOW-UAP-PR036",
+    "beforeSha256": "ded1ed29932e98e8ab9160945e8ac976fffe3e4a2265e7619b9fad78c32d8b26",
+    "afterSha256": "c9303bc68c6766d4ed28c8ac92cdae9ff0ba1a394885bf30d9bfad0c9dd403e5",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 140,
+    "record": "DOW-UAP-PR046",
+    "beforeSha256": "631dffa4493bb3adc9751a1eaf87e43122ca88fc6d93bf8c2caa54c5b0f65d2e",
+    "afterSha256": "9b8917cbdd611dc77ae1342d04c22f783edf97339f40c6708e5426159885a765",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 141,
+    "record": "DOW-UAP-PR047",
+    "beforeSha256": "631dffa4493bb3adc9751a1eaf87e43122ca88fc6d93bf8c2caa54c5b0f65d2e",
+    "afterSha256": "95f32bd7904744332328b8ee96188dc8fc408ed73b0af5e182aac43b8a3f8d0b",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 142,
+    "record": "DOW-UAP-PR048",
+    "beforeSha256": "631dffa4493bb3adc9751a1eaf87e43122ca88fc6d93bf8c2caa54c5b0f65d2e",
+    "afterSha256": "1e7a881b227c422f7b9abf83e1b2ace480378291fa981d760735c36128b129b5",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 297,
+    "record": "DOW-UAP-PR104",
+    "beforeSha256": "bbde9e928f59441e2fa2767a6ba9f61b4e90a9e1deeb117c6565a89f152dee4d",
+    "afterSha256": "d6294fe3a55b76fe13d8164893bcf2fe25308264674c514a81a79372aeaa8c66",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 298,
+    "record": "DOW-UAP-PR105",
+    "beforeSha256": "5c248f8ca6336b3941bcc3f5f9468e2d61c207685e32683d7c000d8c145a99db",
+    "afterSha256": "c507140f127e4a170dd05a701d6a410008df055ec481296fcae1d15215ca460e",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 299,
+    "record": "DOW-UAP-PR113",
+    "beforeSha256": "a4e05f58aacbc3eec610cb97ecea7c97d7d672fa287bf7605d126f3bb2b1bb70",
+    "afterSha256": "10f9927b677a8c31c8ecc84f3012bcc0e6ec1798fb60157611016d3e6e664faf",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 300,
+    "record": "DOW-UAP-PR115",
+    "beforeSha256": "1f95bfa6ecbc431d84791bd463809ee6d30b3cbdd0bee0b4d4b61119af604540",
+    "afterSha256": "3a93459aeb7af7a7e510195cfdc4939a3c0a3f70ce2f8e5d230f9de7db75d677",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 313,
+    "record": "DOW-UAP-PR030",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "06b37f7968fee2c29db3f1fcd39bd78c40f3eab725a94591a40e37884d559675",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 314,
+    "record": "DOW-UAP-PR100",
+    "beforeSha256": "4f79ac1fa829b148c8f3d86b630488a7b0e169d3869a34541ab4a595715ca78a",
+    "afterSha256": "1a4f64fd65dddc162db067aa8564cadfb81da782de7d145987da22f684d621af",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 315,
+    "record": "DOW-UAP-PR101",
+    "beforeSha256": "5ad11425a8d36f88c22f1748fbc2c72592db50189f0af2e3315504d49d31de34",
+    "afterSha256": "9aeb27014c5f770c35f92960a0b2a2e70bc996e8b4991e7ff2aa47431fe08101",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 316,
+    "record": "DOW-UAP-PR102",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "564f6e2c6decaf8216aaff58b1205996c98e7e7579efce5f99a036ab63dd6e96",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 317,
+    "record": "DOW-UAP-PR103",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "ae933fd3cc8aa61fb8c1295ae97867caa0d834109a5394a30fca461b0f9666fa",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 318,
+    "record": "DOW-UAP-PR106",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "33500afa49aa4b053a5cd5f1ae3c3d366c84e676472da838f5a996650b484f14",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 319,
+    "record": "DOW-UAP-PR107",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "9c9e57a631307dd3aaa9ac42d1840f289c6b707466ffaa10182a8c0a66814f91",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 320,
+    "record": "DOW-UAP-PR108",
+    "beforeSha256": "045039284f266a57d52bdf155e9c07585e00c216731573af21dd110a4f5eaef0",
+    "afterSha256": "1e61b27b80c1494cd0328238bdab3286df0ce293d5c4a469f0cb8a8501b62509",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 321,
+    "record": "DOW-UAP-PR109",
+    "beforeSha256": "73310db366a5d7a12bd74f6609f3f5296368766d82a54aa0b8c40ed89cc71c42",
+    "afterSha256": "7939472fa5fcbdcae72119a31fb1f01291397fb519f284d34ffef4c56ea65e94",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 322,
+    "record": "DOW-UAP-PR110",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "02ed67caf1f9adeb283f3167ff195315ab3c121d5f88b977600c83e686d35958",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 323,
+    "record": "DOW-UAP-PR111",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "181c8d7350f50092388ae6d286e00859aba377596de740af1f8be8f7f906ff16",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 324,
+    "record": "DOW-UAP-PR112",
+    "beforeSha256": "c499376a1a08d15368f8b4f02c63af730fa95215e154b9ee584f8aec1fdfdbf4",
+    "afterSha256": "789a01c1420b773412bebfffc1c462d1cf3bd94180b5a0e7a83f2ecc77e9394a",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 325,
+    "record": "DOW-UAP-PR114",
+    "beforeSha256": "a8f05c17ca0fc9555f1454417393f2746db10737139113712b2580e65c567893",
+    "afterSha256": "2f6fb290d8d9ad443d32581f36ac58b9b037accc0f29082234a631693c221703",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 326,
+    "record": "DOW-UAP-PR116",
+    "beforeSha256": "bae17dc33317ca95070dda0798342334287bd83754323cfdae59d4cce038c0d2",
+    "afterSha256": "29de371f32b24c50670897c4cea3d548030fe179323a2911d1991007a37b2789",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 130,
+    "record": "DOW-UAP-PR036",
+    "beforeSha256": "d087989749d504b2794dd1b32e554cb65157b848ea31c0108758110925ec51c9",
+    "afterSha256": "fd0e7494aeb1f22b5216f7b1e8d9aa64f5e534de34a1c9dac4da237f4a1d89f6",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 140,
+    "record": "DOW-UAP-PR046",
+    "beforeSha256": "617325db6e69ac9d056a1b7d439161a27d43f0b3a61753349e4f76a68087a273",
+    "afterSha256": "b1f7adacf3d7f6af2290fb97012b1afb8d3d8793dc81bbf14ace0d34cab32ee0",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 141,
+    "record": "DOW-UAP-PR047",
+    "beforeSha256": "617325db6e69ac9d056a1b7d439161a27d43f0b3a61753349e4f76a68087a273",
+    "afterSha256": "6fe7187f398360f9af7d860f2626fc56d465e1c870f3cbb47672ab302247b78b",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 142,
+    "record": "DOW-UAP-PR048",
+    "beforeSha256": "617325db6e69ac9d056a1b7d439161a27d43f0b3a61753349e4f76a68087a273",
+    "afterSha256": "a4cb45f508917d1f4269c6f4adac842c5d0132ea17a77061e3df336abc236dc1",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 297,
+    "record": "DOW-UAP-PR104",
+    "beforeSha256": "607c64676274e8d49cfbbf5aec01f9e3281a4c4754acec1a5a9c5b11d8526fb6",
+    "afterSha256": "a9850e1e03c145e047225d0c0712a4ba85faa334eafa575e5e2a6c0703a80b51",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 298,
+    "record": "DOW-UAP-PR105",
+    "beforeSha256": "6ec705bcd3bc52a6f98cbd52c6d4735bfe7a5692d4307654022ca338afb92b5d",
+    "afterSha256": "22e097b78e3c438e83ac44e25cfcaeb584c7e3f6af4bc788dfd0390a55447c40",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 299,
+    "record": "DOW-UAP-PR113",
+    "beforeSha256": "4b4c369583947be3877cd91c8db4681ea6a124caf893d1a5129e5ed4f956ad02",
+    "afterSha256": "1038a4e80497eab756e9668b841bce1e2151fe5d53736bb62a1ec54f884d4125",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 300,
+    "record": "DOW-UAP-PR115",
+    "beforeSha256": "7e58124701ca93ebdd3c2b6a22d40590d51fe91cf7b0ba9706990024961826f0",
+    "afterSha256": "bfd1bccdec3b83d2e56173ffc166b0a65e4dce4e7a1e50a08701db2ccf5f54b8",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 313,
+    "record": "DOW-UAP-PR030",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "cf972458dadb137274e04daa5318bf3778ecbaea55511d87bbb9f4722f8e7085",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 314,
+    "record": "DOW-UAP-PR100",
+    "beforeSha256": "4f79ac1fa829b148c8f3d86b630488a7b0e169d3869a34541ab4a595715ca78a",
+    "afterSha256": "7ea70fada68949ef35c352ad241244a1154ece19413881d19c1da2b846d7abbc",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 315,
+    "record": "DOW-UAP-PR101",
+    "beforeSha256": "5ad11425a8d36f88c22f1748fbc2c72592db50189f0af2e3315504d49d31de34",
+    "afterSha256": "415380cc1242254441e59468292278374a00f8f145f23ca2f8f3152b06df5035",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 316,
+    "record": "DOW-UAP-PR102",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "02c70e25f5b7bcb709a3b0de9ac1e91190468041268bd1882ee4c7f2d888f90f",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 317,
+    "record": "DOW-UAP-PR103",
+    "beforeSha256": "2f7266c02a13da51ec24ef56757fa9e0f7016b4458a5aa0d7bf5adfb0076d53f",
+    "afterSha256": "50b186c5d111788b23126e6eff9f0b9a2e963b27ad72862a946f17f2b8899738",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 318,
+    "record": "DOW-UAP-PR106",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "223fa034527124593a3f9a975e10c1438d876412c871d969667be088afa89d62",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 319,
+    "record": "DOW-UAP-PR107",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "634c64e77075ecf5bea1486acd6ec4bd30c80892afe639ecde0b543b1f1a784a",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 320,
+    "record": "DOW-UAP-PR108",
+    "beforeSha256": "045039284f266a57d52bdf155e9c07585e00c216731573af21dd110a4f5eaef0",
+    "afterSha256": "9d20e79b5e11b27c18e7c91be73d144dcb5154878c07f4e750b5080e918fc11f",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 321,
+    "record": "DOW-UAP-PR109",
+    "beforeSha256": "73310db366a5d7a12bd74f6609f3f5296368766d82a54aa0b8c40ed89cc71c42",
+    "afterSha256": "41ee72f59febc41f0b80e30d0b571e87d8ff945410c65c9057bf48d521f20903",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 322,
+    "record": "DOW-UAP-PR110",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "8a7d24d77f77d88705dbafbbd4296973fb137fec8e74ba0fe2a04a437f5dc28d",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 323,
+    "record": "DOW-UAP-PR111",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "acc33ebd1f2304242f0b44e452f83caef8b9703f5b801f1583f1b8d6e0e21bfa",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 324,
+    "record": "DOW-UAP-PR112",
+    "beforeSha256": "c499376a1a08d15368f8b4f02c63af730fa95215e154b9ee584f8aec1fdfdbf4",
+    "afterSha256": "90478c7132a09c35672e82ca00a82a67b5c8ca17a4de3455d7d65869352a06d3",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 325,
+    "record": "DOW-UAP-PR114",
+    "beforeSha256": "a8f05c17ca0fc9555f1454417393f2746db10737139113712b2580e65c567893",
+    "afterSha256": "569b212b974cdd85190d4f3d559190a111ec0a057beb38ad404d4dbc93c3d63b",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 326,
+    "record": "DOW-UAP-PR116",
+    "beforeSha256": "bae17dc33317ca95070dda0798342334287bd83754323cfdae59d4cce038c0d2",
+    "afterSha256": "d1e5b6ff183b712847bc679d836b2c3ce897673b5acca344bb7a9f0d984e86c0",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 314,
+    "record": "DOW-UAP-PR100",
+    "beforeSha256": "4f79ac1fa829b148c8f3d86b630488a7b0e169d3869a34541ab4a595715ca78a",
+    "afterSha256": "5e867350d3d0d655a84e27d6fb34c6e3fb674b975b434c8c95a3b68fc1d3aab0",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 319,
+    "record": "DOW-UAP-PR107",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "8c635a03f72db8c18f4640939c5d7bba22d5d5b71dc8992f9d54d38e146615ef",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 323,
+    "record": "DOW-UAP-PR111",
+    "beforeSha256": "cdffa7c6dc61d188eceb07d211bc632a378b822f847b334caae680d6ca7d91d1",
+    "afterSha256": "6dc20ca27c3520c1e3feafe20a55a5fa1ef8704073190aa14f76b7803efe7df3",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "de",
+    "index": 312,
+    "record": "DOW-UAP-PR024",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "bb76ba99a7c2967a3c80ecccae0e72091c713827de9191d2f175457979b9aee9",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ko",
+    "index": 312,
+    "record": "DOW-UAP-PR024",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "28e6968116b0445b1fd442f0ff7bff3bc30a8ad80a58e9a276577e7b13b8ab51",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "pt",
+    "index": 312,
+    "record": "DOW-UAP-PR024",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "faeb4239f08c78a652ff9a04d46b9f5d2500e5bf5545a0ea049c3731bf159a3e",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ar",
+    "index": 312,
+    "record": "DOW-UAP-PR024",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "967fc6b811b13dcb163c865d8be929228a73a90b9ca41c32312af360d3857a12",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "fr",
+    "index": 312,
+    "record": "DOW-UAP-PR024",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "a96788039f2ca555fe2bda9b1cd801438cbbca095d66e1a2e969824b3930edd0",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  },
+  {
+    "language": "ru",
+    "index": 312,
+    "record": "DOW-UAP-PR024",
+    "beforeSha256": "8620187a645b8f5db348b639e7f9109fda278eec5669c93b9efbfe7128848ecd",
+    "afterSha256": "1d331fd96372b72f56e6dbbbf71a691c6e27c085a058eb92c0db6119a623b805",
+    "reason": "Restore omitted official narrative and timestamped video description"
+  }
+]

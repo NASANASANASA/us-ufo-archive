@@ -14,6 +14,7 @@ import hashlib
 import json
 import pathlib
 import re
+import subprocess
 import unicodedata
 import zipfile
 from html.parser import HTMLParser
@@ -56,6 +57,8 @@ class Detail(HTMLParser):
             self.active = True
         if self.active and tag == 'h2':
             self.heading += 1
+        if self.active and self.heading == 2 and tag == 'br':
+            self.description.append(' ')
         if tag == 'h1':
             self.in_h1 = True
         if tag in ('img', 'source') and attrs.get('src'):
@@ -93,6 +96,12 @@ def main():
     saved = json.loads(args.saved_previews.read_text()) if args.saved_previews else {}
     translations = {lang: json.loads((ROOT / f'assets/i18n-{short}.json').read_text())
                     for lang, short in LANGS.items() if short}
+    descriptions = [[(translations[lang][index]['descZh'] if short else row['Description Blurb']),
+                     row['Description Blurb']]
+                    for index, row in enumerate(rows[375:], 375) for lang, short in LANGS.items()]
+    normalized = json.loads(subprocess.check_output([
+        'node', '-e', "const f=require('./assets/record-format.js');let s='';process.stdin.on('data',x=>s+=x);process.stdin.on('end',()=>process.stdout.write(JSON.stringify(JSON.parse(s).map(([value,source])=>f.normalizeDescription(value,source)))));"
+    ], input=json.dumps(descriptions), text=True, cwd=ROOT))
     bundles = {}
     for release, suffix in [('06', 'sept_18'), ('07', 'oct_23')]:
         bundle = zipfile.ZipFile(args.bundle_dir / f'documents_release_{release}_{suffix}_2026.zip')
@@ -147,7 +156,7 @@ def main():
                 assert digest(fresh.read_bytes()) == digest(preview_bytes)
                 result['officialThumbnailBytesMatch'] = True
         slug = re.sub('[^a-z0-9]+', '-', row['Title'].lower().replace('&', ' and ')).strip('-')
-        for lang, short in LANGS.items():
+        for lang_index, (lang, short) in enumerate(LANGS.items()):
             file = ROOT / lang / 'records' / slug / 'index.html'
             detail = Detail()
             html = file.read_text()
@@ -156,7 +165,8 @@ def main():
             title = entry['titleZh'] if entry else row['Title']
             description = entry['descZh'] if entry else row['Description Blurb']
             assert clean(''.join(detail.h1)) == clean(title), (code, lang, 'title')
-            assert clean(description) in clean(''.join(detail.description)), (code, lang, 'description')
+            expected_description = normalized[(index - 375) * len(LANGS) + lang_index]
+            assert re.sub(r'\s+', '', expected_description) in re.sub(r'\s+', '', ''.join(detail.description)), (code, lang, 'description')
             assert timecodes(description) == timecodes(row['Description Blurb']), (code, lang, 'timecodes')
             assert any(urlsplit(src).path == '/assets/' + preview['url'] for src in detail.sources), (code, lang, 'preview')
             if row['Type'] in ('VID', 'AUD'):

@@ -4,6 +4,7 @@ import collections
 import csv
 import json
 import io
+import hashlib
 import pathlib
 import re
 import subprocess
@@ -14,6 +15,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 # Last published Release 01–05 dataset, retained as a regression baseline.
 BASELINE = '8d830f48e34c741af245ce3985a471350448c992'
+VERSION = re.search(r"const assetVersion = '([^']+)'", (ROOT / 'scripts/build-static.js').read_text()).group(1)
 LANGS = {'en': None, 'zh-Hans': 'zh-cn', 'zh-Hant': 'zh-tw', 'ja': 'ja',
          'es': 'es', 'pt': 'pt', 'ru': 'ru', 'fr': 'fr', 'de': 'de', 'ko': 'ko', 'ar': 'ar'}
 rows = list(csv.DictReader((ROOT / 'assets/uap-data.csv').open(encoding='utf-8-sig')))
@@ -30,6 +32,8 @@ assert len(media) == 103
 video_map = (ROOT / 'assets/dvids-map.js').read_text()
 video_meta = json.loads((ROOT / 'assets/dvids-meta.json').read_text())
 sitemap = {entry.text for entry in ET.parse(ROOT / 'sitemap.xml').iter() if entry.tag.endswith('}loc')}
+repairs = {(entry['language'], entry['index']): entry for entry in
+           json.loads((ROOT / 'docs/record-description-repairs.json').read_text())}
 
 
 class Links(HTMLParser):
@@ -53,7 +57,15 @@ for lang, translation in LANGS.items():
         file = f'assets/i18n-{translation}.json'
         entries = json.loads((ROOT / file).read_text())
         original = json.loads(subprocess.check_output(['git', 'show', BASELINE + ':' + file], cwd=ROOT, text=True))
-        assert entries[:375] == original, f'{lang}: existing translations changed'
+        for index, previous in enumerate(original):
+            current = entries[index]
+            repair = repairs.get((translation, index))
+            if repair:
+                assert hashlib.sha256(previous['descZh'].encode()).hexdigest() == repair['beforeSha256']
+                assert hashlib.sha256(current['descZh'].encode()).hexdigest() == repair['afterSha256']
+                assert {**current, 'descZh': previous['descZh']} == previous, (lang, index, 'unexpected field change')
+            else:
+                assert current == previous, (lang, index, 'existing translation changed')
         assert len(entries) == len(rows), (lang, len(entries))
         for index, entry in enumerate(entries[375:], 375):
             assert entry and entry['i'] == index, (lang, index)
@@ -64,7 +76,7 @@ for lang, translation in LANGS.items():
     assert len(list((ROOT / lang / 'records').glob('*/index.html'))) == 478
     home = (ROOT / lang / 'index.html').read_text()
     for asset in ('db-data', 'dvids-map', 'i18n-ui', 'site'):
-        assert f'{asset}.js?v=20261117-release67-audit1' in home, (lang, asset, 'stale cache version')
+        assert f'{asset}.js?v={VERSION}' in home, (lang, asset, 'stale cache version')
     downloads = (ROOT / lang / 'downloads/index.html').read_text()
     assert downloads.count('class="release-download-card"') == 7
     assert 'href=""' not in downloads and '[undefined]' not in downloads
@@ -95,4 +107,4 @@ for row in rows[375:]:
         assert f'"{row["DVIDS Video ID"]}"' in video_map
         assert video_meta[row['DVIDS Video ID']]['duration'] > 0
 
-print('PASS: 103 new records, 11 languages, 103 previews, 16 media URLs, generated links and sitemap; existing records preserved.')
+print('PASS: 103 new records, 11 languages, 103 previews, 16 media URLs, generated links and sitemap; legacy data preserved except logged description repairs.')
