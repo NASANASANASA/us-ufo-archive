@@ -1,6 +1,6 @@
-/* This worker handles only the six allowlisted video bundle download paths.
+/* This worker handles only the allowlisted bundle download paths.
  * It passes the official response stream through without buffering a ZIP. */
-importScripts('./assets/release-video-bundles.js?v=20261117-bundle-names1');
+importScripts('./assets/release-bundles.js?v=20261117-uniform-bundles2');
 const downloadPath = new URL('downloads/bundles/', self.location).pathname;
 self.addEventListener('install', event => event.waitUntil(self.skipWaiting()));
 self.addEventListener('fetch', event => {
@@ -11,11 +11,11 @@ self.addEventListener('fetch', event => {
 
 async function downloadBundle(request, url) {
   const filename = url.pathname.slice(downloadPath.length);
-  if (!Object.prototype.hasOwnProperty.call(self.UAP_VIDEO_BUNDLES, filename))
+  if (!Object.prototype.hasOwnProperty.call(self.UAP_BUNDLES, filename))
     return new Response('Bundle not found', {status: 404});
   if (!['GET', 'HEAD'].includes(request.method))
     return new Response('Method not allowed', {status: 405, headers: {Allow: 'GET, HEAD'}});
-  const source = self.UAP_VIDEO_BUNDLES[filename];
+  const source = self.UAP_BUNDLES[filename];
   try {
     const headers = new Headers();
     const range = request.headers.get('Range');

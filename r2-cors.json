@@ -19,7 +19,11 @@
       "exposeHeaders": [
         "Content-Length",
         "Content-Type",
-        "ETag"
+        "ETag",
+        "Content-Range",
+        "Accept-Ranges",
+        "Content-Disposition",
+        "Last-Modified"
       ],
       "maxAgeSeconds": 3600
     }

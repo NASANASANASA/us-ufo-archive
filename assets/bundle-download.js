@@ -1,11 +1,14 @@
-/* Stream large official bundles with the filename used by the matching document bundle. */
+/* Stream official bundles with uniform release_XX_documents/videos.zip filenames. */
 (function () {
-  const root = new URL('../', document.currentScript.src);
+  const script = new URL(document.currentScript.src);
+  const root = new URL('../', script);
+  const workerUrl = new URL('bundle-download-worker.js', root);
+  workerUrl.search = script.search;
   let registrationPromise;
 
   async function prepareDownload() {
     if (!('serviceWorker' in navigator)) throw new Error('Service workers unavailable');
-    const registration = await navigator.serviceWorker.register(new URL('bundle-download-worker.js', root), {
+    const registration = await navigator.serviceWorker.register(workerUrl, {
       scope: new URL('downloads/bundles/', root).pathname, updateViaCache: 'none'
     });
     const worker = registration.installing || registration.waiting || registration.active;
@@ -27,7 +30,7 @@
   }
 
   document.addEventListener('click', async event => {
-    const link = event.target.closest('a[data-video-bundle]');
+    const link = event.target.closest('a[data-bundle]');
     if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     if (link.getAttribute('aria-busy') === 'true') return;
@@ -37,7 +40,7 @@
       await registrationPromise;
       const frame = document.createElement('iframe');
       frame.hidden = true;
-      frame.src = new URL('downloads/bundles/' + encodeURIComponent(link.dataset.videoBundle), root);
+      frame.src = new URL('downloads/bundles/' + encodeURIComponent(link.dataset.bundle), root);
       document.body.appendChild(frame);
     } catch (error) {
       // Preserve the official download on browsers without streaming-worker support.

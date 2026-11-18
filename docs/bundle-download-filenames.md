@@ -1,25 +1,23 @@
-# Video bundle filenames — 2026-11-17
+# Uniform bundle filenames — 2026-11-17
 
-All six video bundle filenames now follow the filename of the corresponding official document bundle. Release 07 has no video bundle.
+All document and video packages use two-digit release numbers:
 
-| Release | Document bundle | Video bundle filename |
-| --- | --- | --- |
-| 01 | `Release_1.zip` | `Release_1_videos.zip` |
-| 02 | `release_02_document_bundle.zip` | `release_02_video_bundle.zip` |
-| 03 | `release_03_documents.zip` | `release_03_videos.zip` |
-| 04 | `release_04_documents_071026.zip` | `release_04_videos_071026.zip` |
-| 05 | `release_05_Aug_07_documents.zip` | `release_05_Aug_07_videos.zip` |
-| 06 | `documents_release_06_sept_18_2026.zip` | `videos_release_06_sept_18_2026.zip` |
+- `release_01_documents.zip` through `release_07_documents.zip`
+- `release_01_videos.zip` through `release_06_videos.zip`
 
-The builder derives the video filename from each document URL and generates `assets/release-video-bundles.js`, keeping the six source URLs and filenames together. All 11 download pages use those names.
+Release 07 contains no video bundle. All 11 language download pages use the same filenames.
 
-Cross-origin `download` attributes alone cannot enforce a filename. `assets/bundle-download.js` registers a service worker scoped exclusively to `/downloads/bundles/`, then starts a download through that path. `bundle-download-worker.js` sets the attachment filename and passes through the official CDN response body as a stream. The largest ZIP exceeds 5GB; the implementation does not read the ZIP into a Blob or ArrayBuffer, cache it, or repack it. Range requests, length and range metadata are preserved. Unlisted filenames and methods are rejected. Normal site pages remain outside the worker's scope. Unsupported browsers or upstream failures retain the original official download as a fallback.
+The builder generates `assets/release-bundles.js` from the release links and verified document mirrors. `assets/release-document-bundles.json` records each document package's original official filename, byte length, SHA-256 and R2 multipart ETag. Every uploaded part's MD5 and the completed object's multipart ETag and length are compared with the original download. The original ZIPs are copied without extracting or repacking them.
+
+Official document endpoints restrict cross-origin requests, preventing a static site from overriding their native download names. The seven original ZIP files are mirrored in the existing `uap-archives-media` R2 bucket at `bundles/release_XX_documents.zip`, with the standardized attachment filename in object metadata. Their links therefore retain the uniform filename even without the page's download helper.
+
+`assets/bundle-download.js` registers a service worker scoped only to `/downloads/bundles/`. `bundle-download-worker.js` sets the requested attachment filename and passes the response body through as a stream. Document bundles come from the verified mirror; video bundles retain the official CDN URLs. The implementation never buffers a whole ZIP, caches it or repacks it. The worker accepts only the 13 allowlisted packages and GET/HEAD methods, preserves range metadata and leaves normal website requests outside its scope. Unsupported clients retain a direct source link.
 
 Validation:
 
-- All six official video sources returned success and `Access-Control-Allow-Origin: *` when requested with the site's Origin header. The source also supports byte ranges; the tested prefix begins with the ZIP signature.
-- `node scripts/check-bundle-downloads.js` verifies the six filenames on all 11 pages, filename response headers, streamed bytes, range requests, HEAD, the restricted path and filename allowlist, and the official fallback.
-- Each of the six buttons was clicked in Chrome on the local download page. The browser's actual downloads list displayed the expected filename and an advancing download. Each test download was then canceled.
-- JavaScript syntax checks, Release 06/07 regression checks and `git diff --check` passed.
+- `node scripts/check-bundle-downloads.js`: all 13 filenames on all 11 language pages, response headers, streamed bytes, range requests, HEAD, restricted scope, allowlist and direct-source fallback.
+- R2 upload verification: original ZIP validity, source SHA-256, per-part MD5, completed-object ETag and byte length.
+- Browser download checks: actual filenames in Chrome's download list; test transfers canceled after confirming the name.
+- JavaScript syntax checks, Release 06/07 regression checks and `git diff --check`.
 
-Rebuild with `node scripts/build-static.js`. The download helper and worker import use version `20261117-bundle-names1`.
+Rebuild with `node scripts/build-static.js`. The helper and worker import use version `20261117-uniform-bundles2`.

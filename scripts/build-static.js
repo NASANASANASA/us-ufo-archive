@@ -133,11 +133,14 @@ const releaseDownloadBundles = [
   }
 ];
 
-function videoBundleFilename(bundle) {
-  const filename = new URL(bundle.documentsUrl).pathname.split('/').pop();
-  return /documents?/i.test(filename) ? filename.replace(/documents?/i, word => word === 'documents' ? 'videos' : 'video')
-    : filename.replace(/\.zip$/i, '_videos.zip');
+function bundleFilename(bundle, type) { return `release_${bundle.release}_${type}.zip`; }
+const documentBundleMirrors = JSON.parse(read('assets/release-document-bundles.json'));
+for (const bundle of releaseDownloadBundles) {
+  const mirror = documentBundleMirrors[bundle.release];
+  if (!mirror || mirror.filename !== bundleFilename(bundle, 'documents') || !mirror.multipartMd5Verified)
+    throw new Error(`Verified document bundle missing: ${bundle.release}`);
 }
+function documentBundleUrl(bundle) { return documentBundleMirrors[bundle.release].url; }
 
 function noVideosLabel(lang) {
   return ({en: 'No videos in this release', es: 'Esta publicación no incluye videos', pt: 'Este lote não inclui vídeos', fr: 'Cette publication ne contient aucune vidéo', de: 'Diese Veröffentlichung enthält keine Videos', ru: 'В этом выпуске нет видео', ar: 'لا توجد مقاطع فيديو في هذا الإصدار', ja: 'この公開分に動画はありません', ko: '이번 공개에는 동영상이 없습니다', 'zh-Hans': '本批次无视频', 'zh-Hant': '本批次無影片'})[lang];
@@ -211,7 +214,7 @@ function downloadsCopy(lang) {
   return ({
     en: {
       title: 'Release Downloads',
-      intro: 'Download official full release bundles for public U.S. government UAP records. Files are hosted by the official source or its release CDN.',
+      intro: 'Download official full release bundles for public U.S. government UAP records.',
       documents: 'documents',
       videos: 'videos',
       release: 'Release',
@@ -219,7 +222,7 @@ function downloadsCopy(lang) {
     },
     es: {
       title: 'Descargas por publicación',
-      intro: 'Descarga los paquetes oficiales completos de las publicaciones UAP del Gobierno de EE. UU. Los archivos están alojados por la fuente oficial o su CDN.',
+      intro: 'Descarga los paquetes oficiales completos de las publicaciones UAP del Gobierno de EE. UU.',
       documents: 'documentos',
       videos: 'videos',
       release: 'Publicación',
@@ -227,7 +230,7 @@ function downloadsCopy(lang) {
     },
     pt: {
       title: 'Downloads por publicação',
-      intro: 'Baixe os pacotes oficiais completos das publicações UAP do governo dos EUA. Os arquivos são hospedados pela fonte oficial ou pela CDN de lançamento.',
+      intro: 'Baixe os pacotes oficiais completos das publicações UAP do governo dos EUA.',
       documents: 'documentos',
       videos: 'vídeos',
       release: 'Publicação',
@@ -235,7 +238,7 @@ function downloadsCopy(lang) {
     },
     fr: {
       title: 'Téléchargements par publication',
-      intro: 'Téléchargez les lots officiels complets des publications UAP du gouvernement des États-Unis. Les fichiers sont hébergés par la source officielle ou son CDN.',
+      intro: 'Téléchargez les lots officiels complets des publications UAP du gouvernement des États-Unis.',
       documents: 'documents',
       videos: 'vidéos',
       release: 'Publication',
@@ -243,7 +246,7 @@ function downloadsCopy(lang) {
     },
     de: {
       title: 'Downloads nach Veröffentlichung',
-      intro: 'Laden Sie die offiziellen vollständigen Pakete der öffentlichen UAP-Veröffentlichungen der US-Regierung herunter. Die Dateien liegen bei der offiziellen Quelle oder deren CDN.',
+      intro: 'Laden Sie die offiziellen vollständigen Pakete der öffentlichen UAP-Veröffentlichungen der US-Regierung herunter.',
       documents: 'Dokumente',
       videos: 'Videos',
       release: 'Veröffentlichung',
@@ -251,7 +254,7 @@ function downloadsCopy(lang) {
     },
     ru: {
       title: 'Загрузки по выпускам',
-      intro: 'Скачайте официальные полные пакеты публичных материалов UAP правительства США. Файлы размещены официальным источником или его CDN.',
+      intro: 'Скачайте официальные полные пакеты публичных материалов UAP правительства США.',
       documents: 'документы',
       videos: 'видео',
       release: 'Выпуск',
@@ -259,7 +262,7 @@ function downloadsCopy(lang) {
     },
     ar: {
       title: 'تنزيلات الإصدارات',
-      intro: 'نزّل الحزم الرسمية الكاملة لإصدارات UAP العامة من الحكومة الأمريكية. تستضيف الملفات الجهة الرسمية أو شبكة CDN الخاصة بالإصدار.',
+      intro: 'نزّل الحزم الرسمية الكاملة لإصدارات UAP العامة من الحكومة الأمريكية.',
       documents: 'الوثائق',
       videos: 'الفيديوهات',
       release: 'الإصدار',
@@ -267,7 +270,7 @@ function downloadsCopy(lang) {
     },
     ja: {
       title: '公開回別ダウンロード',
-      intro: '米国政府が公開したUAP記録の公式一括ファイルをダウンロードできます。ファイルは公式ソースまたは公開用CDNで提供されています。',
+      intro: '米国政府が公開したUAP記録の公式一括ファイルをダウンロードできます。',
       documents: '文書',
       videos: '動画',
       release: '公開回',
@@ -275,7 +278,7 @@ function downloadsCopy(lang) {
     },
     ko: {
       title: '공개 배치 다운로드',
-      intro: '미국 정부가 공개한 UAP 기록의 공식 전체 배치 파일을 다운로드합니다. 파일은 공식 출처 또는 공개 CDN에서 제공됩니다.',
+      intro: '미국 정부가 공개한 UAP 기록의 공식 전체 배치 파일을 다운로드합니다.',
       documents: '문서',
       videos: '동영상',
       release: '공개 배치',
@@ -283,7 +286,7 @@ function downloadsCopy(lang) {
     },
     'zh-Hans': {
       title: '批次下载',
-      intro: '下载美国政府公开 UAP 档案的官方完整批次压缩包。文件由官方来源或其发布 CDN 托管。',
+      intro: '下载美国政府公开 UAP 档案的官方完整批次压缩包。',
       documents: '文件',
       videos: '视频',
       release: '公开批次',
@@ -291,7 +294,7 @@ function downloadsCopy(lang) {
     },
     'zh-Hant': {
       title: '批次下載',
-      intro: '下載美國政府公開 UAP 檔案的官方完整批次壓縮包。檔案由官方來源或其發布 CDN 託管。',
+      intro: '下載美國政府公開 UAP 檔案的官方完整批次壓縮包。',
       documents: '檔案',
       videos: '影片',
       release: '公開批次',
@@ -1847,14 +1850,14 @@ function buildDownloadsPage(lang) {
           <b>${esc(copy.release)} ${esc(bundle.release)}</b>
           <small>${esc(copy.date)}: ${esc(bundle.date)}</small>
           <div class="release-downloads">
-            <a class="download-bundle" href="${esc(bundle.documentsUrl)}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.documents)} [${esc(bundle.documentsSize)}]</a>
-            ${bundle.videosUrl ? `<a class="download-bundle" href="${esc(bundle.videosUrl)}" data-video-bundle="${esc(videoBundleFilename(bundle))}" download="${esc(videoBundleFilename(bundle))}" title="${esc(videoBundleFilename(bundle))}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.videos)} [${esc(bundle.videosSize)}]</a>` : `<span class="static-muted">${esc(noVideosLabel(lang))}</span>`}
+            <a class="download-bundle" href="${esc(documentBundleUrl(bundle))}" data-bundle="${esc(bundleFilename(bundle, 'documents'))}" download="${esc(bundleFilename(bundle, 'documents'))}" title="${esc(bundleFilename(bundle, 'documents'))}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.documents)} [${esc(bundle.documentsSize)}]</a>
+            ${bundle.videosUrl ? `<a class="download-bundle" href="${esc(bundle.videosUrl)}" data-bundle="${esc(bundleFilename(bundle, 'videos'))}" download="${esc(bundleFilename(bundle, 'videos'))}" title="${esc(bundleFilename(bundle, 'videos'))}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.videos)} [${esc(bundle.videosSize)}]</a>` : `<span class="static-muted">${esc(noVideosLabel(lang))}</span>`}
           </div>
         </article>`).join('\n        ')}
       </div>
     </section>
   </main>
-  <script src="../../assets/bundle-download.js?v=20261117-bundle-names1"></script>`;
+  <script src="../../assets/bundle-download.js?v=20261117-uniform-bundles2"></script>`;
   return pageShell({
     lang,
     title: `${copy.title} · ${text[lang].home}`,
@@ -2248,4 +2251,4 @@ function build() {
 }
 
 build();
-writeFile('assets/release-video-bundles.js', `/* Generated from the release download links. */\nself.UAP_VIDEO_BUNDLES = ${JSON.stringify(Object.fromEntries(releaseDownloadBundles.filter(bundle => bundle.videosUrl).map(bundle => [videoBundleFilename(bundle), bundle.videosUrl])), null, 2)};\n`);
+writeFile('assets/release-bundles.js', `/* Generated from the release download links. */\nself.UAP_BUNDLES = ${JSON.stringify(Object.fromEntries(releaseDownloadBundles.flatMap(bundle => [[bundleFilename(bundle, 'documents'), documentBundleUrl(bundle)], ...(bundle.videosUrl ? [[bundleFilename(bundle, 'videos'), bundle.videosUrl]] : [])])), null, 2)};\n`);
