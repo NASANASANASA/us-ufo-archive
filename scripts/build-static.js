@@ -6,7 +6,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20261117-local-dates1';
+const assetVersion = '20261119-index-repair1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
      crossorigin="anonymous"></script>`;
@@ -26,6 +26,9 @@ const langMenuCodes = {en: 'en', ja: 'ja', es: 'es', 'zh-Hans': 'cn', 'zh-Hant':
 
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const recordDates = JSON.parse(read('assets/record-detail-dates.json')).records;
+const videoSourceMetadata = JSON.parse(read('assets/video-source-metadata.json')).records;
+const videoDurations = JSON.parse(read('assets/dvids-meta.json'));
+const legacyArchiveRoutes = JSON.parse(read('assets/legacy-archive-routes.json'));
 const clean = value => String(value || '').replace(/\u00a0/g, ' ').trim();
 const key = value => clean(value).toLowerCase().replace(/[^a-z0-9]/g, '');
 const esc = value => clean(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -660,6 +663,7 @@ function normalize(row, index, translations) {
     videoPairing: field(row, ['video pairing']),
     pdfPairing: field(row, ['pdf pairing']),
     dvidsId,
+    videoMetadata: videoSourceMetadata[dvidsId || recordDates[recordFormat.titleKey(recordId)]?.dvidsId] || {},
     virin: field(row, ['image virin', 'virin']),
     redaction: /^(true|yes)$/i.test(field(row, ['redaction'])),
     i18n: Object.fromEntries(generatedDirs.filter(lang => lang !== 'en').map(lang => [lang, translations[lang]?.[index] || {}]))
@@ -1332,6 +1336,7 @@ function rel(fromLang, target) {
 }
 
 function absoluteSitePath(pathName) {
+  if (/^https?:\/\//i.test(pathName)) return pathName;
   return `${siteUrl}${pathName}`;
 }
 
@@ -1385,7 +1390,7 @@ function collectionSchema(lang, title, description, canonicalPath, docs = []) {
 }
 
 function mediaUrls(doc) {
-  const image = urls(doc.imageUrl)[0] || '';
+  const image = urls(doc.imageUrl)[0] || (doc.type === 'VID' ? doc.videoMetadata?.thumbnailUrl : '') || '';
   const r2Image = doc.r2ImageUrl || (image ? r2Asset(image) : '');
   const video = urls(doc.videoUrl || '')[0] || '';
   const youtube = doc.youtubeUrl || '';
@@ -1411,20 +1416,24 @@ function recordSchemas(doc, lang, title, description, canonicalPath) {
     {name: text[lang].home, path: `/${lang}/`},
     {name: title, path: canonicalPath}
   ])];
-  if (m.video || m.youtube) {
+  if (doc.type === 'VID' && (m.video || m.youtube)) {
     const videoSchema = {
       '@context': 'https://schema.org',
       '@type': 'VideoObject',
       name: title,
       description,
       inLanguage: text[lang].lang,
-      uploadDate: isoDate(doc.releaseDate) || '2026-01-01',
+      uploadDate: doc.videoMetadata.uploadDate || isoDate(doc.releaseDate),
+      mainEntityOfPage: absoluteSitePath(canonicalPath),
+      duration: videoDurations[doc.dvidsId || doc.detailDate?.dvidsId]?.duration ? `PT${videoDurations[doc.dvidsId || doc.detailDate?.dvidsId].duration}S` : undefined,
       contentUrl: m.video || undefined,
-      embedUrl: m.youtube || absoluteSitePath(canonicalPath),
-      thumbnailUrl: m.r2Image || m.image || undefined,
+      embedUrl: m.youtube || undefined,
+      thumbnailUrl: m.r2Image || m.image ? absoluteSitePath(m.r2Image || m.image) : undefined,
       publisher: {'@type': 'Organization', name: agencyLabel(doc.agency, lang)}
     };
     schemas.push(Object.fromEntries(Object.entries(videoSchema).filter(([, value]) => value !== undefined && value !== '')));
+  } else if (doc.type === 'AUD' && m.video) {
+    schemas.push({...base, '@type': 'AudioObject', contentUrl: m.video});
   } else if (m.r2Image || m.image) {
     schemas.push({
       '@context': 'https://schema.org',
@@ -1963,8 +1972,9 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script src="\.\.\/assets\/release-04-r2-documents\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/release-r2-media\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/release-06-07-media\.js\?v=[^"]+"><\/script>/g, '')
+    .replace(/\s*<script src="\.\.\/assets\/archive-filters\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/record-format\.js\?v=[^"]+"><\/script>/g, '')
-    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/release-06-07-media.js?v=${assetVersion}"></script>$1<script src="../assets/record-format.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
+    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/release-06-07-media.js?v=${assetVersion}"></script>$1<script src="../assets/archive-filters.js?v=${assetVersion}"></script>$1<script src="../assets/record-format.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
     .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
     .replace(/(<a href="#releases" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
     .replace(/(<a href="#releases" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
@@ -1999,17 +2009,22 @@ function buildRecordPage(doc, lang, docs) {
     lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription, lang, doc.redaction)}` : ''
   ].filter(Boolean).join('\n        ');
   const mediaPreview = staticMediaPreview(doc, lang, title, docs);
+  const watchPage = doc.type === 'VID' && !!(mediaUrls(doc).video || mediaUrls(doc).youtube);
+  const actionOffset = mediaPreview.indexOf('<div class="static-media-actions">');
+  const primaryPlayer = watchPage ? mediaPreview.slice(0, actionOffset) : '';
+  const sideMedia = watchPage ? mediaPreview.slice(actionOffset) : mediaPreview;
   const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
   const backHref = `../../../${lang}/#releases`;
   const backHandler = "try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){history.back();return false}}catch(e){}";
   const schema = recordSchemas(doc, lang, title, description, canonicalPath);
-  const body = `<main class="static-main static-record">
+  const body = `<main class="static-main static-record${watchPage ? ' static-video-record' : ''}">
     <section class="static-record-head">
       <a class="static-back-link" href="${esc(backHref)}" onclick="${backHandler}">← ${esc(l.backToList)}</a>
       <p class="system-line"><span></span> ASSET RECORD</p>
       <h1>${esc(title)}</h1>
-      <p>${esc(description)}</p>
+${watchPage ? '' : `<p>${esc(description)}</p>`}
     </section>
+${watchPage ? `<section class="static-panel static-watch-player" aria-label="${esc(title)}">${primaryPlayer}</section>` : ''}
     ${manualAdSlot('record-after-head')}
     <section class="static-record-grid">
       <article class="static-panel static-record-copy">
@@ -2027,7 +2042,7 @@ function buildRecordPage(doc, lang, docs) {
         </dl>
       </article>
       <aside class="static-panel static-record-media">
-        ${mediaPreview}
+        ${sideMedia}
       </aside>
     </section>
   </main>`;
@@ -2087,7 +2102,7 @@ function currentRecordDownloadName(doc, url) {
 function coverPreviewLabel(lang) { return ({"en": "The official thumbnail is unavailable; this preview shows the first page of the original PDF.", "zh-Hans": "官方缩略图暂不可用；当前预览为原始 PDF 的首页。", "zh-Hant": "官方縮圖暫不可用；目前預覽為原始 PDF 的首頁。", "ja": "公式サムネイルを取得できないため、元のPDFの最初のページを表示しています。", "es": "La miniatura oficial no está disponible; se muestra la primera página del PDF original.", "pt": "A miniatura oficial está indisponível; esta prévia mostra a primeira página do PDF original.", "ru": "Официальная миниатюра недоступна; показана первая страница исходного PDF.", "fr": "La miniature officielle est indisponible ; cet aperçu affiche la première page du PDF original.", "de": "Die offizielle Miniaturansicht ist nicht verfügbar; angezeigt wird die erste Seite der Original-PDF.", "ko": "공식 썸네일을 사용할 수 없어 원본 PDF의 첫 페이지를 표시합니다.", "ar": "الصورة المصغرة الرسمية غير متاحة؛ تعرض هذه المعاينة الصفحة الأولى من ملف PDF الأصلي."})[lang] || ""; }
 
 function staticMediaPreview(doc, lang, title, docs) {
-  const image = urls(doc.imageUrl)[0] || '';
+  const image = urls(doc.imageUrl)[0] || (doc.type === 'VID' ? doc.videoMetadata?.thumbnailUrl : '') || '';
   const r2Image = doc.r2ImageUrl || (image ? r2Asset(image) : '');
   const localImage = image ? mirroredAsset(image) : '';
   const video = urls(doc.videoUrl || '')[0] || '';
@@ -2114,9 +2129,9 @@ function staticMediaPreview(doc, lang, title, docs) {
           </div>` : '';
   let preview = '';
   if (youtube) {
-    preview = `<iframe class="youtube-embed" src="${esc(youtube)}" title="${esc(title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+    preview = `<iframe class="youtube-embed" src="${esc(youtube)}" title="${esc(title)}" loading="${doc.type === 'VID' ? 'eager' : 'lazy'}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
   } else if (video) {
-    preview = `<video class="static-video-preview" controls playsinline${r2Image ? ` poster="${esc(r2Image)}"` : ''}><source src="${esc(video)}"></video>`;
+    preview = `<video class="static-video-preview" controls playsinline preload="metadata"${r2Image ? ` poster="${esc(r2Image)}"` : ''}><source src="${esc(video)}"></video>`;
   } else if (image) {
     const fallbackSrcs = [relativePath(localImage, 3), image].filter(Boolean).join('|');
     preview = `<img src="${esc(r2Image)}" data-fallback-srcs="${esc(fallbackSrcs)}" alt="${esc((doc.previewKind === 'pdf-cover' ? title : doc.i18n?.[lang]?.altZh || title))}" onerror="const q=(this.dataset.fallbackSrcs||'').split('|').filter(Boolean);if(q.length){this.src=q.shift();this.dataset.fallbackSrcs=q.join('|')}else{this.parentNode.classList.add('broken')}">${fallback}`;
@@ -2194,6 +2209,37 @@ function buildGroupPage(docs, lang, kind, groupSlug, label) {
   return pageShell({lang, title: `${label} · ${l.home}`, description: `${label}: ${docs.length} ${l.records}. ${l.generated}`, canonicalPath: `/${lang}/${kind}/${groupSlug}/`, body, depth: 3});
 }
 
+function buildLegacyRedirect(legacyPath, destination) {
+  const lang = legacyPath.split('/')[1];
+  const l = text[lang];
+  const url = absoluteSitePath(destination);
+  return `<!doctype html>
+<html lang="${esc(l.lang)}"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="0; url=${esc(url)}">
+<link rel="canonical" href="${esc(url.split('#')[0])}"><title>${esc(l.home)}</title></head>
+<body><h1>${esc(l.home)}</h1><a href="${esc(url)}">${esc(l.backToList)}</a></body></html>\n`;
+}
+
+function buildVideoSitemap(docs) {
+  const entries = [];
+  for (const lang of generatedDirs) for (const doc of docs) {
+    const media = mediaUrls(doc);
+    if (doc.type !== 'VID' || !(media.video || media.youtube)) continue;
+    const poster = media.r2Image || media.image;
+    if (!poster) throw new Error(`Video poster missing: ${doc.id}`);
+    const title = [...langTitle(doc, lang)].slice(0, 100).join('');
+    const description = [...clean(langDescription(doc, lang)).replace(/\s+/g, ' ')].slice(0, 2048).join('') || title;
+    entries.push(`  <url><loc>${esc(absoluteSitePath(`/${lang}/records/${doc.slug}/`))}</loc><video:video>
+    <video:thumbnail_loc>${esc(absoluteSitePath(poster))}</video:thumbnail_loc>
+    <video:title>${esc(title)}</video:title><video:description>${esc(description)}</video:description>
+    ${media.video ? `<video:content_loc>${esc(media.video)}</video:content_loc>` : `<video:player_loc>${esc(media.youtube)}</video:player_loc>`}
+    <video:publication_date>${esc(doc.videoMetadata.uploadDate)}</video:publication_date>
+  </video:video></url>`);
+  }
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n${entries.join('\n')}\n</urlset>\n`;
+}
+
 function build() {
   const interactiveTemplate = read('zh-Hant/index.html');
   const csv = parseCSV(read('assets/uap-data.csv'));
@@ -2233,6 +2279,10 @@ function build() {
     }
   }
 
+  // Preserve removed inbound URLs without recreating the old index interface.
+  for (const [legacyPath, destination] of Object.entries(legacyArchiveRoutes))
+    writeFile(`${legacyPath.slice(1)}index.html`, buildLegacyRedirect(legacyPath, destination));
+
   for (const lang of extraStaticDirs) {
     if (!fs.existsSync(path.join(root, lang, 'index.html'))) continue;
     urlsForSitemap.push(`/${lang}/`);
@@ -2246,7 +2296,8 @@ function build() {
   const sitemapLastmod = process.env.SITEMAP_LASTMOD || new Date().toISOString().slice(0, 10);
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${['/', ...urlsForSitemap].map(u => `  <url><loc>${siteUrl}${u}</loc><lastmod>${sitemapLastmod}</lastmod></url>`).join('\n')}\n</urlset>\n`;
   writeFile('sitemap.xml', sitemap);
-  writeFile('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`);
+  writeFile('video-sitemap.xml', buildVideoSitemap(docs));
+  writeFile('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\nSitemap: ${siteUrl}/video-sitemap.xml\n`);
   console.log(`Generated ${docs.length} records across ${generatedDirs.length} languages.`);
 }
 

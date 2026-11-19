@@ -206,3 +206,14 @@ h1 em{font-family:var(--mono);font-weight:500;letter-spacing:-.06em}
 @media(max-width:1000px){.showcase-frame{min-height:0}.showcase-stage{height:430px;padding:0 52px}.showcase-card{width:calc(100% - 4px)}}
 @media(max-width:1000px){.showcase-heading{margin:0 0 22px}.showcase-heading h2{font-size:30px}.showcase-topline{margin-bottom:10px!important;min-height:0!important}}
 @media(max-width:650px){.showcase-heading h2{font-size:30px}.showcase-stage{height:340px;padding:0 2px;touch-action:pan-y}.showcase-card{width:100%}.showcase-arrow{display:none}}
+
+/* On video records, the single watch player precedes the copy and advertising. */
+.static-watch-player .static-preview{margin-bottom:0;min-height:0}
+.static-video-record .static-record-grid{grid-template-columns:minmax(0,1.8fr) minmax(260px,.8fr)}
+.static-video-record .static-record-copy{max-width:none}
+@media(max-width:900px){.static-video-record .static-record-grid{grid-template-columns:1fr}}
+
+.static-video-record{padding-top:24px}
+.static-video-record .static-record-head{padding:18px 24px;margin-bottom:16px}
+.static-video-record .static-record-head h1{font-size:clamp(24px,3vw,38px);line-height:1.25;margin:10px 0 0}
+.static-video-record .static-record-head .system-line{margin:10px 0 0}
