@@ -1,0 +1,902 @@
+{
+  "postingTimeZone": "America/New_York",
+  "postingTimePrecision": "minute",
+  "timeZoneEvidence": "https://www.dvidshub.net/rss/unit/8597",
+  "rssItemsVerified": 5,
+  "records": {
+    "1006056": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006056/DOD_111688723.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T23:17:00-04:00",
+      "datePostedRaw": "05.07.2026 23:17",
+      "sourceUrl": "https://www.dvidshub.net/video/1006056"
+    },
+    "1006059": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006059/DOD_111688762.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T19:48:00-04:00",
+      "datePostedRaw": "05.07.2026 19:48",
+      "sourceUrl": "https://www.dvidshub.net/video/1006059"
+    },
+    "1006060": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006060/DOD_111688775.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T23:22:00-04:00",
+      "datePostedRaw": "05.07.2026 23:22",
+      "sourceUrl": "https://www.dvidshub.net/video/1006060"
+    },
+    "1006062": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006062/DOD_111688809.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T23:30:00-04:00",
+      "datePostedRaw": "05.07.2026 23:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1006062"
+    },
+    "1006063": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006063/DOD_111688816.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T23:31:00-04:00",
+      "datePostedRaw": "05.07.2026 23:31",
+      "sourceUrl": "https://www.dvidshub.net/video/1006063"
+    },
+    "1006067": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006067/DOD_111688825.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T23:31:00-04:00",
+      "datePostedRaw": "05.07.2026 23:31",
+      "sourceUrl": "https://www.dvidshub.net/video/1006067"
+    },
+    "1006073": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006073/DOD_111688954.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T23:32:00-04:00",
+      "datePostedRaw": "05.07.2026 23:32",
+      "sourceUrl": "https://www.dvidshub.net/video/1006073"
+    },
+    "1006074": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006074/DOD_111688964.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:47:00-04:00",
+      "datePostedRaw": "05.08.2026 07:47",
+      "sourceUrl": "https://www.dvidshub.net/video/1006074"
+    },
+    "1006076": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006076/DOD_111688970.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T23:35:00-04:00",
+      "datePostedRaw": "05.07.2026 23:35",
+      "sourceUrl": "https://www.dvidshub.net/video/1006076"
+    },
+    "1006078": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006078/DOD_111688997.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T23:28:00-04:00",
+      "datePostedRaw": "05.07.2026 23:28",
+      "sourceUrl": "https://www.dvidshub.net/video/1006078"
+    },
+    "1006079": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006079/DOD_111689005.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T23:35:00-04:00",
+      "datePostedRaw": "05.07.2026 23:35",
+      "sourceUrl": "https://www.dvidshub.net/video/1006079"
+    },
+    "1006080": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006080/DOD_111689011.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:48:00-04:00",
+      "datePostedRaw": "05.08.2026 07:48",
+      "sourceUrl": "https://www.dvidshub.net/video/1006080"
+    },
+    "1006082": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006082/DOD_111689022.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:48:00-04:00",
+      "datePostedRaw": "05.08.2026 07:48",
+      "sourceUrl": "https://www.dvidshub.net/video/1006082"
+    },
+    "1006083": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006083/DOD_111689030.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:48:00-04:00",
+      "datePostedRaw": "05.08.2026 07:48",
+      "sourceUrl": "https://www.dvidshub.net/video/1006083"
+    },
+    "1006087": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006087/DOD_111689044.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:49:00-04:00",
+      "datePostedRaw": "05.08.2026 07:49",
+      "sourceUrl": "https://www.dvidshub.net/video/1006087"
+    },
+    "1006088": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006088/DOD_111689051.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:49:00-04:00",
+      "datePostedRaw": "05.08.2026 07:49",
+      "sourceUrl": "https://www.dvidshub.net/video/1006088"
+    },
+    "1006089": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006089/DOD_111689057.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:47:00-04:00",
+      "datePostedRaw": "05.08.2026 07:47",
+      "sourceUrl": "https://www.dvidshub.net/video/1006089"
+    },
+    "1006093": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006093/DOD_111689082.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:49:00-04:00",
+      "datePostedRaw": "05.08.2026 07:49",
+      "sourceUrl": "https://www.dvidshub.net/video/1006093"
+    },
+    "1006094": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006094/DOD_111689083.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:49:00-04:00",
+      "datePostedRaw": "05.08.2026 07:49",
+      "sourceUrl": "https://www.dvidshub.net/video/1006094"
+    },
+    "1006097": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006097/DOD_111689090.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:49:00-04:00",
+      "datePostedRaw": "05.08.2026 07:49",
+      "sourceUrl": "https://www.dvidshub.net/video/1006097"
+    },
+    "1006104": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006104/DOD_111689115.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:49:00-04:00",
+      "datePostedRaw": "05.08.2026 07:49",
+      "sourceUrl": "https://www.dvidshub.net/video/1006104"
+    },
+    "1006105": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006105/DOD_111689123.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:50:00-04:00",
+      "datePostedRaw": "05.08.2026 07:50",
+      "sourceUrl": "https://www.dvidshub.net/video/1006105"
+    },
+    "1006106": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006106/DOD_111689133.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:50:00-04:00",
+      "datePostedRaw": "05.08.2026 07:50",
+      "sourceUrl": "https://www.dvidshub.net/video/1006106"
+    },
+    "1006107": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006107/DOD_111689142.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:50:00-04:00",
+      "datePostedRaw": "05.08.2026 07:50",
+      "sourceUrl": "https://www.dvidshub.net/video/1006107"
+    },
+    "1006110": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006110/DOD_111689167.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:50:00-04:00",
+      "datePostedRaw": "05.08.2026 07:50",
+      "sourceUrl": "https://www.dvidshub.net/video/1006110"
+    },
+    "1006111": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006111/DOD_111689168.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:50:00-04:00",
+      "datePostedRaw": "05.08.2026 07:50",
+      "sourceUrl": "https://www.dvidshub.net/video/1006111"
+    },
+    "1006119": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006119/DOD_111689232.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-07T23:23:00-04:00",
+      "datePostedRaw": "05.07.2026 23:23",
+      "sourceUrl": "https://www.dvidshub.net/video/1006119"
+    },
+    "1006159": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006159/DOD_111689759.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-08T07:50:00-04:00",
+      "datePostedRaw": "05.08.2026 07:50",
+      "sourceUrl": "https://www.dvidshub.net/video/1006159"
+    },
+    "1007706": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007706/DOD_111719709.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007706"
+    },
+    "1007707": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007707/DOD_111719715.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007707"
+    },
+    "1007708": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007708/DOD_111719718.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007708"
+    },
+    "1007709": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007709/DOD_111719723.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007709"
+    },
+    "1007711": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007711/DOD_111719726.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007711"
+    },
+    "1007712": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007712/DOD_111719730.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007712"
+    },
+    "1007713": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007713/DOD_111719732.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007713"
+    },
+    "1007715": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007715/DOD_111719736.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007715"
+    },
+    "1007716": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007716/DOD_111719739.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007716"
+    },
+    "1007718": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007718/DOD_111719741.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007718"
+    },
+    "1007719": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007719/DOD_111719746.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007719"
+    },
+    "1007720": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007720/DOD_111719752.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007720"
+    },
+    "1007721": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007721/DOD_111719795.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007721"
+    },
+    "1007722": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007722/DOD_111719799.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007722"
+    },
+    "1007723": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007723/DOD_111719800.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007723"
+    },
+    "1007725": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007725/DOD_111719804.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007725"
+    },
+    "1007726": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007726/DOD_111719807.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007726"
+    },
+    "1007727": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007727/DOD_111719809.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007727"
+    },
+    "1007728": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007728/DOD_111719813.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007728"
+    },
+    "1007734": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007734/DOD_111719823.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007734"
+    },
+    "1007735": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007735/DOD_111719828.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007735"
+    },
+    "1007737": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007737/DOD_111719833.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007737"
+    },
+    "1007738": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007738/DOD_111719835.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007738"
+    },
+    "1007739": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007739/DOD_111719847.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007739"
+    },
+    "1007740": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007740/DOD_111719850.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007740"
+    },
+    "1007741": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007741/DOD_111719852.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007741"
+    },
+    "1007777": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007777/DOD_111720692.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:31:00-04:00",
+      "datePostedRaw": "05.22.2026 07:31",
+      "sourceUrl": "https://www.dvidshub.net/video/1007777"
+    },
+    "1007778": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007778/DOD_111720693.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:31:00-04:00",
+      "datePostedRaw": "05.22.2026 07:31",
+      "sourceUrl": "https://www.dvidshub.net/video/1007778"
+    },
+    "1007779": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007779/DOD_111720696.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:31:00-04:00",
+      "datePostedRaw": "05.22.2026 07:31",
+      "sourceUrl": "https://www.dvidshub.net/video/1007779"
+    },
+    "1007780": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007780/DOD_111720698.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:31:00-04:00",
+      "datePostedRaw": "05.22.2026 07:31",
+      "sourceUrl": "https://www.dvidshub.net/video/1007780"
+    },
+    "1007781": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007781/DOD_111720700.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:31:00-04:00",
+      "datePostedRaw": "05.22.2026 07:31",
+      "sourceUrl": "https://www.dvidshub.net/video/1007781"
+    },
+    "1007783": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007783/DOD_111720720.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:31:00-04:00",
+      "datePostedRaw": "05.22.2026 07:31",
+      "sourceUrl": "https://www.dvidshub.net/video/1007783"
+    },
+    "1007784": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007784/DOD_111720731.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:31:00-04:00",
+      "datePostedRaw": "05.22.2026 07:31",
+      "sourceUrl": "https://www.dvidshub.net/video/1007784"
+    },
+    "1007788": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007788/DOD_111720752.0000004/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007788"
+    },
+    "1007790": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007790/DOD_111720765.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007790"
+    },
+    "1007791": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007791/DOD_111720775.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007791"
+    },
+    "1007795": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007795/DOD_111720809.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007795"
+    },
+    "1007796": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007796/DOD_111720822.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007796"
+    },
+    "1007797": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007797/DOD_111720827.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007797"
+    },
+    "1007799": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007799/DOD_111720830.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007799"
+    },
+    "1007800": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007800/DOD_111720843.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007800"
+    },
+    "1007803": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007803/DOD_111720856.0000006/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007803"
+    },
+    "1007804": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007804/DOD_111720857.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007804"
+    },
+    "1007805": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007805/DOD_111720858.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007805"
+    },
+    "1007807": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007807/DOD_111720861.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007807"
+    },
+    "1007808": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007808/DOD_111720883.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007808"
+    },
+    "1007809": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007809/DOD_111720884.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007809"
+    },
+    "1007810": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007810/DOD_111720886.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007810"
+    },
+    "1007812": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007812/DOD_111720890.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007812"
+    },
+    "1007816": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007816/DOD_111720899.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007816"
+    },
+    "1007870": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007870/DOD_111721693.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007870"
+    },
+    "1007872": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007872/DOD_111721698.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007872"
+    },
+    "1007874": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007874/DOD_111721711.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007874"
+    },
+    "1007876": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007876/DOD_111721737.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007876"
+    },
+    "1007877": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007877/DOD_111721747.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007877"
+    },
+    "1007878": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007878/DOD_111721755.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007878"
+    },
+    "1007879": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007879/DOD_111721758.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-05-22T07:30:00-04:00",
+      "datePostedRaw": "05.22.2026 07:30",
+      "sourceUrl": "https://www.dvidshub.net/video/1007879"
+    },
+    "1010263": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010263/DOD_111764142.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-06-12T07:00:00-04:00",
+      "datePostedRaw": "06.12.2026 07:00",
+      "sourceUrl": "https://www.dvidshub.net/video/1010263"
+    },
+    "1010264": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010264/DOD_111764148.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-06-12T07:00:00-04:00",
+      "datePostedRaw": "06.12.2026 07:00",
+      "sourceUrl": "https://www.dvidshub.net/video/1010264"
+    },
+    "1010267": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010267/DOD_111764159.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-06-12T07:00:00-04:00",
+      "datePostedRaw": "06.12.2026 07:00",
+      "sourceUrl": "https://www.dvidshub.net/video/1010267"
+    },
+    "1010269": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010269/DOD_111764177.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-06-12T07:00:00-04:00",
+      "datePostedRaw": "06.12.2026 07:00",
+      "sourceUrl": "https://www.dvidshub.net/video/1010269"
+    },
+    "1010272": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010272/DOD_111764189.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-06-12T07:00:00-04:00",
+      "datePostedRaw": "06.12.2026 07:00",
+      "sourceUrl": "https://www.dvidshub.net/video/1010272"
+    },
+    "1010276": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010276/DOD_111764213.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-06-12T07:00:00-04:00",
+      "datePostedRaw": "06.12.2026 07:00",
+      "sourceUrl": "https://www.dvidshub.net/video/1010276"
+    },
+    "1010319": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010319/DOD_111764796.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-06-12T07:00:00-04:00",
+      "datePostedRaw": "06.12.2026 07:00",
+      "sourceUrl": "https://www.dvidshub.net/video/1010319"
+    },
+    "1010336": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010336/DOD_111764902.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-06-11T08:37:00-04:00",
+      "datePostedRaw": "06.11.2026 08:37",
+      "sourceUrl": "https://www.dvidshub.net/video/1010336"
+    },
+    "1010337": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010337/DOD_111764959.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-06-11T08:36:00-04:00",
+      "datePostedRaw": "06.11.2026 08:36",
+      "sourceUrl": "https://www.dvidshub.net/video/1010337"
+    },
+    "1014096": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014096/DOD_111830004.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014096"
+    },
+    "1014097": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014097/DOD_111830007.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014097"
+    },
+    "1014098": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014098/DOD_111830012.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014098"
+    },
+    "1014099": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014099/DOD_111830015.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014099"
+    },
+    "1014100": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014100/DOD_111830020.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014100"
+    },
+    "1014101": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014101/DOD_111830027.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014101"
+    },
+    "1014102": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014102/DOD_111830028.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014102"
+    },
+    "1014103": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014103/DOD_111830030.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014103"
+    },
+    "1014104": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014104/DOD_111830034.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014104"
+    },
+    "1014105": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014105/DOD_111830041.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014105"
+    },
+    "1014106": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014106/DOD_111830058.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-09T11:55:00-04:00",
+      "datePostedRaw": "07.09.2026 11:55",
+      "sourceUrl": "https://www.dvidshub.net/video/1014106"
+    },
+    "1014107": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014107/DOD_111830063.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014107"
+    },
+    "1014108": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014108/DOD_111830065.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014108"
+    },
+    "1014110": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014110/DOD_111830069.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014110"
+    },
+    "1014112": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014112/DOD_111830075.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014112"
+    },
+    "1014114": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014114/DOD_111830080.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014114"
+    },
+    "1014116": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014116/DOD_111830085.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014116"
+    },
+    "1014117": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014117/DOD_111830092.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014117"
+    },
+    "1014119": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014119/DOD_111830133.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014119"
+    },
+    "1014121": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014121/DOD_111830143.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014121"
+    },
+    "1014123": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014123/DOD_111830147.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014123"
+    },
+    "1014124": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014124/DOD_111830151.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014124"
+    },
+    "1014128": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014128/DOD_111830201.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-07-10T07:15:00-04:00",
+      "datePostedRaw": "07.10.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1014128"
+    },
+    "1017788": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017788/DOD_111887376.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017788"
+    },
+    "1017790": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017790/DOD_111887380.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017790"
+    },
+    "1017791": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017791/DOD_111887384.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017791"
+    },
+    "1017792": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017792/DOD_111887390.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017792"
+    },
+    "1017793": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017793/DOD_111887401.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017793"
+    },
+    "1017795": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017795/DOD_111887407.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017795"
+    },
+    "1017796": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017796/DOD_111887413.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017796"
+    },
+    "1017797": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017797/DOD_111887419.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017797"
+    },
+    "1017798": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017798/DOD_111887421.0000000/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017798"
+    },
+    "1017799": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017799/DOD_111887426.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017799"
+    },
+    "1017800": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017800/DOD_111887427.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017800"
+    },
+    "1017801": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017801/DOD_111887430.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017801"
+    },
+    "1017802": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017802/DOD_111887439.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017802"
+    },
+    "1017803": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017803/DOD_111887446.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017803"
+    },
+    "1017805": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017805/DOD_111887456.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017805"
+    },
+    "1017806": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2608/1017806/DOD_111887460.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-08-07T07:15:00-04:00",
+      "datePostedRaw": "08.07.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1017806"
+    },
+    "1023396": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023396/DOD_111985772.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023396"
+    },
+    "1023397": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023397/DOD_111985782.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023397"
+    },
+    "1023398": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023398/DOD_111985790.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023398"
+    },
+    "1023400": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023400/DOD_111985798.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023400"
+    },
+    "1023402": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023402/DOD_111985807.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023402"
+    },
+    "1023403": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023403/DOD_111985818.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023403"
+    },
+    "1023404": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023404/DOD_111985820.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023404"
+    },
+    "1023405": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023405/DOD_111985821.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023405"
+    },
+    "1023406": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023406/DOD_111985822.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023406"
+    },
+    "1023407": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023407/DOD_111985823.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023407"
+    },
+    "1023408": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023408/DOD_111985832.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023408"
+    },
+    "1023409": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023409/DOD_111985834.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023409"
+    },
+    "1023410": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023410/DOD_111985835.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023410"
+    },
+    "1023412": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023412/DOD_111985844.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023412"
+    },
+    "1023414": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023414/DOD_111985850.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023414"
+    },
+    "1023416": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023416/DOD_111985855.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-09-18T07:15:00-04:00",
+      "datePostedRaw": "09.18.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1023416"
+    }
+  }
+}
