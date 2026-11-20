@@ -27,7 +27,7 @@ for row in rows:
               'years': year.group() if year else 'undated', 'types': row['Type']}
     for kind, raw in fields.items():
         values[kind][slug(raw)] = raw.replace('\u00a0', ' ').strip()
-values['locations']['westen-united-states'] = 'Western United States'
+values['locations']['westen-united-states'] = 'Westen United States'
 values['locations']['western-united-states'] = 'Western United States'
 removed = subprocess.check_output(['git', 'diff', '--name-only', '--diff-filter=D', REMOVAL + '^', REMOVAL], cwd=ROOT, text=True)
 paths = {'/' + path[:-10] for path in removed.splitlines() if path.endswith('/index.html')}
@@ -40,8 +40,6 @@ for path in sorted(paths):
     params = {}
     if kind in values and len(segments) > 2:
         raw = values[kind][segments[2]]
-        if kind == 'locations':
-            raw = raw.replace('Westen United States', 'Western United States')
         params[{'agencies': 'agency', 'locations': 'location', 'years': 'year', 'types': 'type'}[kind]] = raw
     elif kind == 'release':
         params['release'] = segments[2]

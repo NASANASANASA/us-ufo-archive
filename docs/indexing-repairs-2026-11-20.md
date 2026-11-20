@@ -11,3 +11,9 @@ The canonical sitemap contains 5,325 URLs. The new `video-sitemap.xml` contains 
 Validation passed: all 343 reported routes, all 1,430 redirect targets, all 5,258 detail-page schemas, all 1,474 video sitemap entries, archive filters, release 6/7 checks, localized official dates, timeline formatting, internal links, bundle naming, and whitespace checks. Chrome visual checks covered a restored exact-year filter and the primary FBI-UAP-PR003 player.
 
 References: [Google redirects](https://developers.google.com/search/docs/crawling-indexing/301-redirects), [video structured data](https://developers.google.com/search/docs/appearance/structured-data/video), [video indexing guidance](https://developers.google.com/search/docs/appearance/video).
+
+## Deployment and Search Console confirmation
+
+Published November 20. A live HTTP check of every one of the 343 reported URLs passed. Live sitemap, video sitemap, filter script and the representative FBI video page matched the local artifacts byte for byte. Chrome confirmed that the old `/en/years/2023/` URL redirects to the archive and displays 48 matching records. Historical location redirects preserve the exact source spelling, including the distinct `Westen United States` filter.
+
+Both sitemaps were submitted on November 20 and Search Console displayed success, with 5,325 discovered main-sitemap pages and 1,474 discovered video pages/videos. Both the 404 issue and missing `thumbnailUrl` issue displayed validation started with a November 20 start date. This confirms submission and initial acceptance, not completion of Google's subsequent validation or indexing.

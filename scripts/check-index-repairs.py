@@ -33,7 +33,7 @@ for path, destination in routes.items():
     assert SITE + path not in sitemap, ('redirect in sitemap', path)
     params = parse_qs(target.query)
     if 'location' in params:
-        assert any(r['Incident Location'].replace('\u00a0', ' ').strip().replace('Westen United States', 'Western United States') == params['location'][0] for r in rows), path
+        assert any(r['Incident Location'].replace('\u00a0', ' ').strip() == params['location'][0] for r in rows), path
     if 'agency' in params:
         assert any(r['Agency'].replace('\u00a0', ' ').strip() == params['agency'][0] for r in rows), path
     if 'type' in params:
