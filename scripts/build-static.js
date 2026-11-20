@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const recordFormat = require('../assets/record-format.js');
+const sitemapDates = require('./sitemap-dates.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
@@ -8,17 +9,9 @@ const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
 const assetVersion = '20261119-index-repair1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
-const adsenseScript = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2222469808721720"
-     crossorigin="anonymous"></script>`;
+const servicesScript = prefix => `<script src="${prefix}assets/site-services.js?v=20261120-preview1"></script>`;
 const adsenseClient = 'ca-pub-2222469808721720';
 const adsenseSlot = '8548356239';
-const analyticsScript = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZND85JXQ6M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-ZND85JXQ6M');
-</script>`;
 const generatedDirs = ['en', 'es', 'pt', 'fr', 'de', 'ru', 'ar', 'ja', 'ko', 'zh-Hans', 'zh-Hant'];
 const extraStaticDirs = [];
 const langPathPattern = new RegExp(`^/(${generatedDirs.join('|')})(/|$)`);
@@ -1628,8 +1621,7 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${prefix}assets/style.css?v=${assetVersion}">
-  ${analyticsScript}
-  ${adsenseScript}
+  ${servicesScript(prefix)}
 ${schemaHtml}
 </head>
 <body class="static-page">
@@ -1952,6 +1944,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script type="application\/ld\+json">[\s\S]*?<\/script>\s*/g, '\n')
     .replace(/\s*<script async src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-2222469808721720"[\s\S]*?<\/script>\s*/g, '\n')
     .replace(/\s*<script async src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-ZND85JXQ6M"><\/script>\s*<script>[\s\S]*?gtag\('config', 'G-ZND85JXQ6M'\);[\s\S]*?<\/script>\s*/g, '\n')
+    .replace(/\s*<script src="[^"\n]*assets\/site-services\.js[^"\n]*"><\/script>\s*/g, '\n')
     .replace(/<html[^>]*>/, `<html lang="${text[lang].lang}">`)
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(homeSeoTitle(lang))}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc((seoText[lang] || seoText.en).homeDescription)}">`)
@@ -1975,7 +1968,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script src="\.\.\/assets\/archive-filters\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/record-format\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/release-06-07-media.js?v=${assetVersion}"></script>$1<script src="../assets/archive-filters.js?v=${assetVersion}"></script>$1<script src="../assets/record-format.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
-    .replace('</head>', `  ${analyticsScript}\n  ${adsenseScript}\n</head>`)
+    .replace('</head>', `  ${servicesScript('../')}\n</head>`)
     .replace(/(<a href="#releases" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
     .replace(/(<a href="#releases" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
     .replace(/(<a class="source-link" href="https:\/\/www\.war\.gov\/UFO\/" target="_blank" rel="noopener" data-i18n="nav_source">[\s\S]*?<\/a>)/, `$1\n      <button class="view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>`)
@@ -2241,6 +2234,16 @@ function buildVideoSitemap(docs) {
 }
 
 function build() {
+  const stateFile = 'assets/sitemap-state.json';
+  const previousState = fs.existsSync(path.join(root, stateFile)) ? JSON.parse(read(stateFile)) : {};
+  // Bootstrap from the published sitemap and existing pages before regeneration.
+  if (!Object.keys(previousState).length && fs.existsSync(path.join(root, 'sitemap.xml'))) {
+    for (const match of read('sitemap.xml').matchAll(/<url><loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod><\/url>/g)) {
+      const pathname = new URL(match[1]).pathname;
+      const file = path.join(root, pathname.slice(1), 'index.html');
+      if (fs.existsSync(file)) previousState[pathname] = {hash: sitemapDates.fingerprint(fs.readFileSync(file, 'utf8')), lastmod: match[2]};
+    }
+  }
   const interactiveTemplate = read('zh-Hant/index.html');
   const csv = parseCSV(read('assets/uap-data.csv'));
   const translationFiles = {
@@ -2293,8 +2296,12 @@ function build() {
     }
   }
 
-  const sitemapLastmod = process.env.SITEMAP_LASTMOD || new Date().toISOString().slice(0, 10);
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${['/', ...urlsForSitemap].map(u => `  <url><loc>${siteUrl}${u}</loc><lastmod>${sitemapLastmod}</lastmod></url>`).join('\n')}\n</urlset>\n`;
+  const changedDate = process.env.SITEMAP_LASTMOD || new Date().toISOString().slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(changedDate) || Number.isNaN(Date.parse(changedDate))) throw new Error('Invalid sitemap modification date');
+  const sitemapState = Object.fromEntries(['/', ...urlsForSitemap].map(u => [u,
+    sitemapDates.nextEntry(read(`${u.slice(1)}index.html`), previousState[u], changedDate)]));
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${Object.entries(sitemapState).map(([u, entry]) => `  <url><loc>${siteUrl}${u}</loc><lastmod>${entry.lastmod}</lastmod></url>`).join('\n')}\n</urlset>\n`;
+  writeFile(stateFile, JSON.stringify(sitemapState, null, 2) + '\n');
   writeFile('sitemap.xml', sitemap);
   writeFile('video-sitemap.xml', buildVideoSitemap(docs));
   writeFile('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\nSitemap: ${siteUrl}/video-sitemap.xml\n`);
