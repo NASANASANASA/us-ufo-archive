@@ -5,7 +5,7 @@ rows=list(csv.DictReader((ROOT/'assets/uap-data.csv').open(encoding='utf-8-sig')
 dates=json.loads((ROOT/'assets/record-detail-dates.json').read_text())['records']
 videos=dict(re.findall(r'"(\d+)"\s*:\s*"([^"]+)"',(ROOT/'assets/dvids-map.js').read_text()))
 videos.update(json.loads((ROOT/'assets/official-video-downloads.json').read_text()))
-langs=['en','es','pt','fr','de','ru','ar','ja','ko','zh-Hans','zh-Hant']
+langs=['en','es','pt','fr','de','ru','ar','nl','ja','ko','zh-Hans','zh-Hant']
 def absolute(url):
  url=url.strip()
  return 'https://www.war.gov/'+url.lstrip('/') if url.startswith(('/', 'Portals/')) else url
@@ -25,7 +25,7 @@ for row in rows:
   checked+=1
 # The reference revision contains the display media before this download-only change.
 reference='430c2c601350a93da51a5929bdf230ca5a9c02a4'
-proc=subprocess.Popen(['git','archive',reference,*langs],cwd=ROOT,stdout=subprocess.PIPE)
+proc=subprocess.Popen(['git','archive',reference,*[lang for lang in langs if lang!='nl']],cwd=ROOT,stdout=subprocess.PIPE)
 preserved=0
 corrected=0
 with tarfile.open(fileobj=proc.stdout,mode='r|') as archive:
@@ -40,7 +40,8 @@ with tarfile.open(fileobj=proc.stdout,mode='r|') as archive:
    corrected+=1
   preserved+=1
 assert proc.wait()==0
-assert checked==preserved==5258
+assert checked==len(rows)*len(langs)
+assert preserved==len(rows)*(len(langs)-1)
 print(f'PASS: {checked} official download links; {preserved-corrected} display media sets preserved, {corrected} cross-release preview mismatches corrected.')
 if '--live' in sys.argv:
  inventory=json.loads(pathlib.Path('/tmp/uap-r2-inventory-20261121.json').read_text());bykey={x['key']:x for x in inventory}

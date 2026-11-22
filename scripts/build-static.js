@@ -8,7 +8,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20261122-dutch1';
+const assetVersion = '20261122-dutch2';
 const dutch = require('../assets/locale-nl.json');
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const servicesScript = prefix => `<script src="${prefix}assets/site-services.js?v=20261120-preview1"></script>`;
@@ -1979,6 +1979,10 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script src="[^"\n]*assets\/site-services\.js[^"\n]*"><\/script>\s*/g, '\n')
     .replace(/aria-label="抽象雷达资料可视化"/g, lang === 'nl' ? 'aria-label="Abstracte radarvisualisatie"' : 'aria-label="抽象雷达资料可视化"')
     .replace(/aria-label="档案分页"/g, lang === 'nl' ? 'aria-label="Archiefpaginering"' : 'aria-label="档案分页"')
+    .replace(/<summary>语言 \/ Language<\/summary>/g, lang === 'nl' ? '<summary>Taal</summary>' : '<summary>语言 / Language</summary>')
+    .replace(/(<p id="showcase-summary">)[\s\S]*?(<\/p>)/, (all, open, close) => lang === 'nl' ? open + 'Uitgelichte archiefstukken laden…' + close : all)
+    .replace(/aria-label="([^"]*)"/g, (all, value) => lang === 'nl' ? `aria-label="${esc(({'打开菜单':'Menu openen','关闭':'Sluiten','UAP release showcase':'Uitgelichte UAP-archiefstukken','Release showcase tabs':'Publicaties','Previous release item':'Vorig archiefstuk','Next release item':'Volgend archiefstuk','Showcase navigation':'Navigatie door uitgelichte archiefstukken','Advertisement':'Advertentie','Site policies':'Websitebeleid'})[value] || value)}"` : all)
+    .replace(/<input\b[^>]*data-i18n-placeholder="([^"]+)"[^>]*>/g, (all, key) => lang === 'nl' && dutch.ui[key] ? all.replace(/placeholder="[^"]*"/, `placeholder="${esc(dutch.ui[key])}"`) : all)
     .replace(/<html[^>]*>/, `<html lang="${text[lang].lang}">`)
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(homeSeoTitle(lang))}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc((seoText[lang] || seoText.en).homeDescription)}">`)
@@ -2280,6 +2284,7 @@ function build() {
       if (fs.existsSync(file)) previousState[pathname] = {hash: sitemapDates.fingerprint(fs.readFileSync(file, 'utf8')), lastmod: match[2]};
     }
   }
+  writeFile('assets/db-data.js', read('assets/db-data.js').replace(/const UAP_DATA_VERSION = '[^']+';/, `const UAP_DATA_VERSION = '${assetVersion}';`));
   writeFile('assets/locale-nl.js', `/* Generated Dutch interface translations from locale-nl.json. */\nconst UAP_NL_AGENCIES = ${JSON.stringify(dutch.build.agencies)};\nObject.entries(${JSON.stringify(dutch.ui)}).forEach(([key, value]) => { if (!UI_TEXT[key]) UI_TEXT[key] = {}; UI_TEXT[key].nl = value; });\n`);
   const interactiveTemplate = read('zh-Hant/index.html');
   const csv = parseCSV(read('assets/uap-data.csv'));

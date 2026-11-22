@@ -44,6 +44,11 @@ for i,(row,tr) in enumerate(zip(rows,translations)):
   assert target.exists(),(file,link)
   checked_links+=1
  assert 'undefined' not in source and 'ZXQ' not in source
+# All Dutch pages must be localized before JavaScript or external fonts load.
+for file in (ROOT/'nl').rglob('*.html'):
+ source=file.read_text()
+ assert not re.search(r'(?:aria-label|placeholder)="[^"]*[\u4e00-\u9fff]',source),(file,'untranslated attribute')
+ assert '语言 / Language' not in source and '載入重點' not in source,(file,'untranslated loading text')
 home=(ROOT/'nl/index.html').read_text()
 assert '<html lang="nl">' in home and 'Nederlandstalig archief' in home
 assert 'locale-nl.js' in home

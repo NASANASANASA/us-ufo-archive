@@ -17,12 +17,42 @@ import urllib.parse
 import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-TARGETS = {'zh-cn': 'zh-CN', 'zh-tw': 'zh-TW', 'ja': 'ja', 'es': 'es',
+TARGETS = {'zh-cn': 'zh-CN', 'zh-tw': 'zh-TW', 'nl': 'nl', 'ja': 'ja', 'es': 'es',
            'pt': 'pt', 'ru': 'ru', 'fr': 'fr', 'de': 'de', 'ko': 'ko', 'ar': 'ar'}
 FIELDS = {'titleZh': 'Title', 'descZh': 'Description Blurb',
           'locZh': 'Incident Location', 'altZh': 'Image Alt Text'}
 CACHE = {}
 CACHE_LOCK = threading.Lock()
+
+
+
+def protect_dutch_literals(text):
+    """Keep source identifiers, timecodes and measurements out of unit conversion."""
+    protected = {}
+    units = {'miles per hour': 'mijl per uur', 'nautical miles': 'zeemijl',
+             'nautical mile': 'zeemijl', 'square miles': 'vierkante mijl',
+             'mph': 'mijl per uur', 'miles': 'mijl', 'mile': 'mijl',
+             'feet': 'voet', 'foot': 'voet', 'yards': 'yard', 'yard': 'yard',
+             'knots': 'knopen', 'knot': 'knoop', 'pounds': 'pond', 'pound': 'pond', 'inches': 'inch'}
+
+    def save(value):
+        token = f'ZXQ{len(protected)}QXZ'
+        protected[token] = value
+        return token
+
+    text = re.sub(r'\b(?:miles per hour|nautical miles?|square miles|mph|miles?|feet|foot|yards?|knots?|pounds?|inches)\b',
+                  lambda m: save(units[m[0].lower()]), text, flags=re.I)
+    text = re.sub(r'https?://[^\s<>]+|\b(?:DOW|NASA|CIA|FBI|DOE|DOS|ODNI|NSA|NARA)-[A-Z0-9-]+|'
+                  r'\b\d{1,2}:\d{2}(?::\d{2})?(?:\s*[-–—]\s*\d{1,2}:\d{2}(?::\d{2})?)?|'
+                  r'\b\d+(?:[.,]\d+)?\b', lambda m: save(m[0]), text)
+
+    def restore(translated):
+        for token, original in protected.items():
+            if len(re.findall(re.escape(token), translated, flags=re.I)) != 1:
+                raise ValueError('Translation changed or omitted a protected source literal')
+        return re.sub(r'ZXQ\d+QXZ', lambda m: protected[m[0].upper()], translated, flags=re.I)
+
+    return text, restore
 
 
 def translate(value, target):
@@ -41,15 +71,16 @@ def translate(value, target):
             if cached is not None:
                 translated.append(cached)
                 continue
+            request_text, restore = protect_dutch_literals(chunk) if target == 'nl' else (chunk, lambda v: v)
             query = urllib.parse.urlencode({'client': 'dict-chrome-ex', 'sl': 'en', 'tl': target,
-                                            'dt': 't', 'q': chunk})
+                                            'dt': 't', 'q': request_text})
             for attempt in range(6):
                 try:
                     req = urllib.request.Request('https://translate.googleapis.com/translate_a/single?' + query,
                                                  headers={'User-Agent': 'Mozilla/5.0'})
                     with urllib.request.urlopen(req, timeout=60) as response:
                         result = json.load(response)
-                    value = ''.join(part[0] or '' for part in result[0])
+                    value = restore(''.join(part[0] or '' for part in result[0]))
                     translated.append(value)
                     with CACHE_LOCK:
                         CACHE[cache_key] = value

@@ -44,7 +44,7 @@
       "browsePdfs": "PDF-records",
       "browseImages": "Beeldopnamen",
       "mediaDetails": "Mediadetails",
-      "mediaDetailsIntro": "Deze pagina indexeert het recordtype, bronbureau, releasebatch, incidentdatum, incidentlocatie, officiële bron en beschikbare openbare media voor zoeken en raadplegen.",
+      "mediaDetailsIntro": "Deze pagina bevat het bestandstype, de publicerende instantie, de publicatie, de incidentdatum, de incidentlocatie, de officiële bron en de beschikbare openbare media voor onderzoek en raadpleging.",
       "homeDescription": "Doorzoek het UAP-archief naar 478 openbare UFO/UAP-records van de Amerikaanse overheid, inclusief UAP-releaserecords, video's, afbeeldingen, pdf-brondocumenten, metadata van incidenten, agentschappen, locaties, gerelateerde records en officiële bronlinks."
     },
     "legal": {
@@ -54,7 +54,7 @@
         "body": [
           [
             "Overzicht",
-            "Deze site is een onofficiële openbare spiegel- en onderzoeksindex voor UAP-gerelateerde documenten die via openbare Amerikaanse overheidskanalen wordt vrijgegeven. We hebben geen gebruikersaccounts nodig en we vragen bezoekers niet om persoonlijke informatie in te voeren om door het archief te bladeren."
+            "Dit is een onofficiële openbare spiegel en onderzoeksindex voor UAP-gerelateerde archiefstukken die via openbare kanalen van de Amerikaanse overheid zijn vrijgegeven. U hebt geen account nodig en hoeft geen persoonlijke gegevens in te voeren om het archief te bekijken."
           ],
           [
             "Advertenties en cookies",
@@ -66,7 +66,7 @@
           ],
           [
             "Externe koppelingen",
-            "Archiefrecords linken naar originele bronnen van de Amerikaanse overheid en andere mediahosts. Deze externe websites vallen onder hun eigen privacybeleid en worden niet beheerd door deze site."
+            "Archiefstukken bevatten links naar oorspronkelijke bronnen van de Amerikaanse overheid en andere mediahosts. Die externe websites hebben hun eigen privacybeleid en worden niet door deze website beheerd."
           ],
           [
             "Contact",
@@ -76,15 +76,15 @@
       },
       "about": {
         "title": "Over dit archief",
-        "description": "Over de onofficiële meertalige UAP Public Archive-spiegel voor UFO/UAP-records van de Amerikaanse overheid.",
+        "description": "Over de onofficiële meertalige spiegel van UFO/UAP-archiefstukken van de Amerikaanse overheid.",
         "body": [
           [
             "Doel",
-            "Deze site organiseert openbare UFO/UAP-records van de Amerikaanse overheid in doorzoekbare, meertalige archiefpagina's voor onderzoek, referentie en bronverificatie."
+            "Deze website organiseert openbare UFO/UAP-archiefstukken van de Amerikaanse overheid in doorzoekbare, meertalige archiefpagina's voor onderzoek, raadpleging en broncontrole."
           ],
           [
             "Bronbasis",
-            "Titels, beschrijvingen, metadata, bestanden, afbeeldingen en video's van platen zijn gebaseerd op openbare overheidspublicaties. Bij elk record wordt een link naar de originele officiële bron bewaard, indien beschikbaar."
+            "Titels, beschrijvingen, metadata, bestanden, afbeeldingen en video's zijn gebaseerd op openbare overheidspublicaties. Waar beschikbaar bevat elk archiefstuk een link naar de oorspronkelijke officiële bron."
           ],
           [
             "Onofficiële status",
@@ -98,20 +98,20 @@
         "body": [
           [
             "Contactmethode",
-            "Voor correcties, verbroken links, privacyvragen of bronproblemen kunt u een openbaar probleem openen in de projectrepository."
+            "Meld correcties, verbroken links, privacyvragen of problemen met bronnen via een openbaar GitHub-issue in de projectrepository."
           ],
           [
-            "Opslagplaats",
+            "Projectrepository",
             "GitHub: https://github.com/NASANASANASA/us-ufo-archive"
           ],
           [
             "Wat op te nemen",
-            "Vermeld de pagina-URL, recordtitel, originele bron-URL, indien relevant, en een beknopte uitleg van het probleem."
+            "Vermeld de pagina-URL, de titel van het archiefstuk, indien relevant de oorspronkelijke bron-URL, en een korte uitleg van het probleem."
           ]
         ]
       },
       "disclaimer": {
-        "title": "Vrijwaring",
+        "title": "Disclaimer",
         "description": "Disclaimer voor de onofficiële UAP Public Archive-spiegel.",
         "body": [
           [

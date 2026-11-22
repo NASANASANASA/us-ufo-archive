@@ -8,11 +8,11 @@
   <meta name="description" content="Doorzoek het UAP-archief naar 478 openbare UFO/UAP-records van de Amerikaanse overheid, inclusief UAP-releaserecords, video&#39;s, afbeeldingen, pdf-brondocumenten, metadata van incidenten, agentschappen, locaties, gerelateerde records en officiële bronlinks.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css?v=20261122-dutch1">
+  <link rel="stylesheet" href="../assets/style.css?v=20261122-dutch2">
   <script src="../assets/site-services.js?v=20261120-preview1"></script>
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20261122-dutch1">
-  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20261122-dutch1">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20261122-dutch1">
+  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20261122-dutch2">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20261122-dutch2">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20261122-dutch2">
   <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#05090c">
   <link rel="canonical" href="https://uap-archives.org/nl/">
@@ -48,7 +48,7 @@
       <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="nav_source">Officieel UFO-archief ↗</a>
       <button class="view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>
       <details class="lang-menu">
-        <summary>语言 / Language</summary>
+        <summary>Taal</summary>
         <div>
           <a data-dir="en" data-lang="en" href="../en/">English</a>
           <a data-dir="es" data-lang="es" href="../es/">Español</a>
@@ -65,7 +65,7 @@
         </div>
       </details>
     </nav>
-    <button class="menu-button" aria-label="打开菜单" onclick="toggleMobile()">☰</button>
+    <button class="menu-button" aria-label="Menu openen" onclick="toggleMobile()">☰</button>
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
@@ -74,7 +74,7 @@
     <a href="./about/" onclick="closeMobile()" data-i18n="nav_about">Over</a>
     <button class="view-mode-toggle mobile-view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>
     <details class="lang-menu mobile-lang-menu" open>
-      <summary>语言 / Language</summary>
+      <summary>Taal</summary>
       <div>
         <a data-dir="en" data-lang="en" href="../en/">English</a>
         <a data-dir="es" data-lang="es" href="../es/">Español</a>
@@ -120,23 +120,23 @@
         <div class="radar-meta bottom"><span>AZ 284.2°</span><span>RANGE 12.8 NM</span><span>ALT UNKNOWN</span></div>
       </div>
     </section>
-    <section class="release-showcase" id="release-showcase" aria-label="UAP release showcase">
+    <section class="release-showcase" id="release-showcase" aria-label="Uitgelichte UAP-archiefstukken">
       <div class="showcase-heading"><p class="system-line"><span></span> RELEASE SHOWCASE</p><h2 id="showcase-title">Uitgelichte archiefstukken bekijken</h2></div>
       <div class="showcase-frame">
         <div class="showcase-side">
-        <div class="showcase-tabs" id="showcase-tabs" role="tablist" aria-label="Release showcase tabs"></div>
+        <div class="showcase-tabs" id="showcase-tabs" role="tablist" aria-label="Publicaties"></div>
       </div>
       <div class="showcase-main">
         <div class="showcase-topline">
-          <p id="showcase-summary">載入重點公開檔案...</p>
+          <p id="showcase-summary">Uitgelichte archiefstukken laden…</p>
           <span id="showcase-date">[08 07 26]</span>
         </div>
         <div class="showcase-stage" id="showcase-stage">
-          <button class="showcase-arrow showcase-prev" type="button" aria-label="Previous release item" onclick="uapShowcaseStep(-1)">&lt;</button>
+          <button class="showcase-arrow showcase-prev" type="button" aria-label="Vorig archiefstuk" onclick="uapShowcaseStep(-1)">&lt;</button>
           <div class="showcase-track" id="showcase-track"></div>
-          <button class="showcase-arrow showcase-next" type="button" aria-label="Next release item" onclick="uapShowcaseStep(1)">&gt;</button>
+          <button class="showcase-arrow showcase-next" type="button" aria-label="Volgend archiefstuk" onclick="uapShowcaseStep(1)">&gt;</button>
         </div>
-        <div class="showcase-dots" id="showcase-dots" aria-label="Showcase navigation"></div>
+        <div class="showcase-dots" id="showcase-dots" aria-label="Navigatie door uitgelichte archiefstukken"></div>
       </div>
       </div>
     </section>
@@ -152,7 +152,7 @@
       <div class="db-controls">
         <label class="search-box">
           <span>⌕</span>
-          <input id="db-search" type="search" placeholder="搜索档案名称、机构或中文摘要..." data-i18n-placeholder="search_placeholder">
+          <input id="db-search" type="search" placeholder="Zoek op titel, instantie of officiële beschrijving..." data-i18n-placeholder="search_placeholder">
           <kbd>⌘ K</kbd>
         </label>
         <select id="db-agency"><option value="all" data-i18n="opt_all_agency">Alle instanties</option></select>
@@ -185,7 +185,7 @@
           </div>
         </div>
       </section>
-<section class="uap-ad-slot uap-ad-slot-archive" aria-label="Advertisement">
+<section class="uap-ad-slot uap-ad-slot-archive" aria-label="Advertentie">
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-2222469808721720"
@@ -219,7 +219,7 @@
       <a href="./about/">Over dit archief</a>
       <a href="./privacy/">Privacybeleid</a>
       <a href="./contact/">Contact</a>
-      <a href="./disclaimer/">Vrijwaring</a>
+      <a href="./disclaimer/">Disclaimer</a>
       <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener">SOURCE ↗</a>
     </nav>
   </footer>
@@ -227,7 +227,7 @@
     <article class="db-modal">
       <header class="db-modal-head">
         <div><h3 id="db-modal-title"></h3></div>
-        <button class="db-modal-close" onclick="closeDocModal()" aria-label="关闭">×</button>
+        <button class="db-modal-close" onclick="closeDocModal()" aria-label="Sluiten">×</button>
       </header>
       <div class="db-modal-body">
         <div class="modal-copy">
@@ -242,17 +242,17 @@
     </article>
   </div>
 
-  <script src="../assets/db-data.js?v=20261122-dutch1"></script>
-  <script src="../assets/dvids-map.js?v=20261122-dutch1"></script>
-  <script src="../assets/i18n-ui.js?v=20261122-dutch1"></script>
-  <script src="../assets/locale-nl.js?v=20261122-dutch1"></script>
-  <script src="../assets/release-04-r2-documents.js?v=20261122-dutch1"></script>
-  <script src="../assets/release-r2-media.js?v=20261122-dutch1"></script>
-  <script src="../assets/release-06-07-media.js?v=20261122-dutch1"></script>
-  <script src="../assets/archive-filters.js?v=20261122-dutch1"></script>
-  <script src="../assets/official-video-downloads.js?v=20261122-dutch1"></script>
-  <script src="../assets/official-download.js?v=20261122-dutch1"></script>
-  <script src="../assets/record-format.js?v=20261122-dutch1"></script>
-  <script src="../assets/site.js?v=20261122-dutch1"></script>
+  <script src="../assets/db-data.js?v=20261122-dutch2"></script>
+  <script src="../assets/dvids-map.js?v=20261122-dutch2"></script>
+  <script src="../assets/i18n-ui.js?v=20261122-dutch2"></script>
+  <script src="../assets/locale-nl.js?v=20261122-dutch2"></script>
+  <script src="../assets/release-04-r2-documents.js?v=20261122-dutch2"></script>
+  <script src="../assets/release-r2-media.js?v=20261122-dutch2"></script>
+  <script src="../assets/release-06-07-media.js?v=20261122-dutch2"></script>
+  <script src="../assets/archive-filters.js?v=20261122-dutch2"></script>
+  <script src="../assets/official-video-downloads.js?v=20261122-dutch2"></script>
+  <script src="../assets/official-download.js?v=20261122-dutch2"></script>
+  <script src="../assets/record-format.js?v=20261122-dutch2"></script>
+  <script src="../assets/site.js?v=20261122-dutch2"></script>
 </body>
 </html>
