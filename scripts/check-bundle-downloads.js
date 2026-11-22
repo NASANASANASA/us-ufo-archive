@@ -37,7 +37,7 @@ const vm = require('node:vm');
   let handled = false;
   handlers.fetch({request: new Request('https://uap-archives.org/en/'), respondWith: () => {handled = true;}});
   assert(!handled);
-  for (const lang of ['en', 'zh-Hans', 'zh-Hant', 'ja', 'ko', 'es', 'pt', 'ru', 'fr', 'de', 'ar']) {
+  for (const lang of ['en', 'zh-Hans', 'zh-Hant', 'nl', 'ja', 'ko', 'es', 'pt', 'ru', 'fr', 'de', 'ar']) {
     const html = fs.readFileSync(`${lang}/downloads/index.html`, 'utf8');
     const links = [...html.matchAll(/<a class="download-bundle" href="([^"]+)" data-bundle="([^"]+)"/g)];
     assert.deepEqual(links.map(m => m[2]), names);
@@ -47,5 +47,5 @@ const vm = require('node:vm');
   const helper = fs.readFileSync('assets/bundle-download.js', 'utf8');
   assert(!helper.includes('preventDefault'));
   assert(!helper.includes('fetch('));
-  console.log('PASS: all 13 bundle links across 11 languages use official sources; legacy URLs redirect safely without proxying or requiring CORS.');
+  console.log('PASS: all 13 bundle links across 12 languages use official sources; legacy URLs redirect safely without proxying or requiring CORS.');
 })().catch(error => {console.error(error); process.exitCode = 1;});

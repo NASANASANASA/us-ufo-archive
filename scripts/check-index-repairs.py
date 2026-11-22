@@ -14,14 +14,14 @@ from urllib.request import urlopen
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = 'https://uap-archives.org'
-LANGS = ['en', 'es', 'pt', 'fr', 'de', 'ru', 'ar', 'ja', 'ko', 'zh-Hans', 'zh-Hant']
+LANGS = ['en', 'es', 'pt', 'fr', 'de', 'ru', 'ar', 'nl', 'ja', 'ko', 'zh-Hans', 'zh-Hant']
 rows = list(csv.DictReader((ROOT / 'assets/uap-data.csv').open(encoding='utf-8-sig')))
 routes = json.loads((ROOT / 'assets/legacy-archive-routes.json').read_text())
 reported = json.loads((ROOT / 'docs/search-console-404-2026-11-19.json').read_text())
 assert len(reported) == 343
 assert all(urlsplit(url).path in routes for url in reported)
 sitemap = {x.text for x in ET.parse(ROOT / 'sitemap.xml').iter() if x.tag.endswith('}loc')}
-assert len(sitemap) == 5325
+assert len(sitemap) == 1 + (len(rows) + 6) * len(LANGS)
 for path, destination in routes.items():
     source = (ROOT / path.strip('/') / 'index.html').read_text()
     refresh = html.unescape(re.search(r'<meta http-equiv="refresh" content="([^"]+)"', source)[1])

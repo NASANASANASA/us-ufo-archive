@@ -9,7 +9,7 @@ for row in csv.DictReader((ROOT/'assets/uap-data.csv').open(encoding='utf-8-sig'
  release=release_dates[row['Release Date']]
  title=row['Title'].replace('\u00a0',' ').strip()
  slug=re.sub('[^a-z0-9]+','-',title.lower().replace('&',' and ')).strip('-')
- for lang in ['en','es','pt','fr','de','ru','ar','ja','ko','zh-Hans','zh-Hant']:
+ for lang in ['en','es','pt','fr','de','ru','ar','nl','ja','ko','zh-Hans','zh-Hant']:
   source=(ROOT/lang/'records'/slug/'index.html').read_text()
   preview=re.search(r'<div class="static-preview[^>]*>(.*?)</div>',source,re.S)[1]
   urls=[html.unescape(u) for u in re.findall(r'(?:src|poster)="([^"]+)"',preview)]

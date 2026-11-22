@@ -67,7 +67,7 @@
   }
 
   const locales = {en: 'en-US', 'zh-Hans': 'zh-CN', 'zh-Hant': 'zh-TW', cn: 'zh-CN', tw: 'zh-TW',
-    ja: 'ja-JP', ko: 'ko-KR', es: 'es-ES', pt: 'pt-BR', ru: 'ru-RU', fr: 'fr-FR', de: 'de-DE', ar: 'ar-EG'};
+    nl: 'nl-NL', ja: 'ja-JP', ko: 'ko-KR', es: 'es-ES', pt: 'pt-BR', ru: 'ru-RU', fr: 'fr-FR', de: 'de-DE', ar: 'ar-EG'};
   const months = 'January February March April May June July August September October November December'.split(' ');
   const monthNumber = name => months.findIndex(month => month.toLowerCase() === name.toLowerCase()) + 1;
   const formatters = new Map();
@@ -130,16 +130,16 @@
     const render = entry => {
       if (entry.kind === 'date') return dateText(entry);
       if (entry.kind === 'unknown') return 'N/A';
-      if (entry.kind === 'undated') return ({en: 'Undated', 'zh-Hans': '日期不详', 'zh-Hant': '日期不詳',
+      if (entry.kind === 'undated') return ({nl: 'Ongedateerd', en: 'Undated', 'zh-Hans': '日期不详', 'zh-Hant': '日期不詳',
         ja: '日付不明', ko: '날짜 미상', es: 'Sin fecha', pt: 'Sem data', ru: 'Без даты', fr: 'Sans date', de: 'Undatiert', ar: 'غير مؤرخ'})[lang] || 'Undated';
       if (entry.kind === 'range' || entry.kind === 'list') return entry.values.map(render).join(entry.kind === 'list'
         ? (['zh-Hans', 'zh-Hant', 'ja'].includes(lang) ? '、' : ', ')
         : ({'zh-Hans': '至', 'zh-Hant': '至', ja: '～', ko: ' ~ '})[lang] || ' – ');
       const year = number(entry.year);
-      if (entry.kind === 'decade') return ({en: `${year}s`, 'zh-Hans': `${year}年代`, 'zh-Hant': `${year}年代`,
+      if (entry.kind === 'decade') return ({nl: `jaren ${year}`, en: `${year}s`, 'zh-Hans': `${year}年代`, 'zh-Hant': `${year}年代`,
         ja: `${year}年代`, ko: `${year}년대`, es: `década de ${year}`, pt: `década de ${year}`,
         ru: `${year}-е годы`, fr: `années ${year}`, de: `${year}er Jahre`, ar: `عقد ${year}`})[lang] || `${year}s`;
-      if (entry.kind === 'late') return ({en: `Late ${year}`, 'zh-Hans': `${year}年末`, 'zh-Hant': `${year}年末`,
+      if (entry.kind === 'late') return ({nl: `eind ${year}`, en: `Late ${year}`, 'zh-Hans': `${year}年末`, 'zh-Hant': `${year}年末`,
         ja: `${year}年末`, ko: `${year}년 말`, es: `finales de ${year}`, pt: `final de ${year}`,
         ru: `конец ${year} года`, fr: `fin ${year}`, de: `Ende ${year}`, ar: `أواخر ${year}`})[lang] || `Late ${year}`;
     };
