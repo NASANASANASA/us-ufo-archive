@@ -1,6 +1,6 @@
 /* 从美国政府 PURSUE 官方 CSV 提取的本地镜像，避免官网 CDN 拒绝跨域请求。 */
 const UAP_ASSET_BASE = new URL('.', document.currentScript.src).href;
-const UAP_DATA_VERSION = '20261119-index-repair1';
+const UAP_DATA_VERSION = '20261121-official-download1';
 const UAP_LOCAL_CSV = `${UAP_ASSET_BASE}uap-data.csv?v=${UAP_DATA_VERSION}`;
 const UAP_MEDIA_BASE = "https://media.uap-archives.org/";
 const UAP_MEDIA_VERSION = "20260715-r2fix1";

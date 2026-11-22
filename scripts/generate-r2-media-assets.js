@@ -147,7 +147,7 @@ function mapObject(manifestRows) {
 }
 
 const js = [
-  `window.UAP_R2_DOCUMENTS=Object.assign(window.UAP_R2_DOCUMENTS||{},${JSON.stringify(mapObject(docRows), null, 2)});`,
+  `window.UAP_R2_DOCUMENTS=Object.assign(window.UAP_R2_DOCUMENTS||{},${JSON.stringify(mapObject(docRows.filter(row => row.type !== 'PDF')), null, 2)});`,
   `window.UAP_R2_MEDIA=${JSON.stringify(mapObject(mediaRows), null, 2)};`
 ].join('\n');
 fs.writeFileSync(path.join(root, 'assets/release-r2-media.js'), js + '\n');

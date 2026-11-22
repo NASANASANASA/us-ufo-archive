@@ -2,12 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const recordFormat = require('../assets/record-format.js');
 const sitemapDates = require('./sitemap-dates.js');
+const officialDownload = require('../assets/official-download.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20261119-index-repair1';
+const assetVersion = '20261121-official-download1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const servicesScript = prefix => `<script src="${prefix}assets/site-services.js?v=20261120-preview1"></script>`;
 const adsenseClient = 'ca-pub-2222469808721720';
@@ -55,7 +56,7 @@ const r2Url = r2Key => `${mediaBase}${r2Key}?v=${encodeURIComponent(mediaVersion
 const r2Documents = Object.fromEntries([
   ...readR2Manifest('assets/release-04-r2-document-manifest.tsv'),
   ...readR2Manifest('assets/release-05-r2-document-manifest.tsv')
-].map(row => [assetCode(row.title), {type: row.type, url: r2Url(row.r2Key)}]));
+].filter(row => row.type !== 'PDF').map(row => [assetCode(row.title), {type: row.type, url: r2Url(row.r2Key)}]));
 const r2Media = Object.fromEntries([
   ...readR2Manifest('assets/release-04-r2-manifest.tsv'),
   ...readR2Manifest('assets/release-05-r2-media-manifest.tsv')
@@ -70,6 +71,7 @@ const dvidsMp4 = (() => {
     return {};
   }
 })();
+const officialDownloadVideos = {...dvidsMp4, ...JSON.parse(read('assets/official-video-downloads.json'))};
 const relativePath = (value, depth) => /^https?:\/\//i.test(clean(value)) ? clean(value) : `${'../'.repeat(depth)}${clean(value)}`;
 
 const releaseDownloadBundles = [
@@ -130,13 +132,13 @@ const releaseDownloadBundles = [
 ];
 
 function bundleFilename(bundle, type) { return `release_${bundle.release}_${type}.zip`; }
-const documentBundleMirrors = JSON.parse(read('assets/release-document-bundles.json'));
+const documentBundleSources = JSON.parse(read('assets/release-document-bundles.json'));
 for (const bundle of releaseDownloadBundles) {
-  const mirror = documentBundleMirrors[bundle.release];
-  if (!mirror || mirror.filename !== bundleFilename(bundle, 'documents') || !mirror.multipartMd5Verified)
-    throw new Error(`Verified document bundle missing: ${bundle.release}`);
+  const source = documentBundleSources[bundle.release];
+  if (!source || source.officialSourceUrl !== bundle.documentsUrl || source.downloadSource !== 'official')
+    throw new Error(`Official document bundle source missing: ${bundle.release}`);
 }
-function documentBundleUrl(bundle) { return documentBundleMirrors[bundle.release].url; }
+function documentBundleUrl(bundle) { return bundle.documentsUrl; }
 
 function noVideosLabel(lang) {
   return ({en: 'No videos in this release', es: 'Esta publicación no incluye videos', pt: 'Este lote não inclui vídeos', fr: 'Cette publication ne contient aucune vidéo', de: 'Diese Veröffentlichung enthält keine Videos', ru: 'В этом выпуске нет видео', ar: 'لا توجد مقاطع فيديو في هذا الإصدار', ja: 'この公開分に動画はありません', ko: '이번 공개에는 동영상이 없습니다', 'zh-Hans': '本批次无视频', 'zh-Hant': '本批次無影片'})[lang];
@@ -1651,6 +1653,8 @@ ${schemaHtml}
   <script src="${prefix}assets/release-04-r2-documents.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/release-r2-media.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/release-06-07-media.js?v=${assetVersion}"></script>
+  <script src="${prefix}assets/official-video-downloads.js?v=${assetVersion}"></script>
+  <script src="${prefix}assets/official-download.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/record-format.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/site.js?v=${assetVersion}"></script>
 </body>
@@ -1858,7 +1862,7 @@ function buildDownloadsPage(lang) {
       </div>
     </section>
   </main>
-  <script src="../../assets/bundle-download.js?v=20261117-uniform-bundles2"></script>`;
+  <script src="../../assets/bundle-download.js?v=20261121-official-source1"></script>`;
   return pageShell({
     lang,
     title: `${copy.title} · ${text[lang].home}`,
@@ -1966,8 +1970,9 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script src="\.\.\/assets\/release-r2-media\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/release-06-07-media\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/archive-filters\.js\?v=[^"]+"><\/script>/g, '')
+    .replace(/\s*<script src="\.\.\/assets\/official-(?:video-downloads|download)[^"]*"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/record-format\.js\?v=[^"]+"><\/script>/g, '')
-    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/release-06-07-media.js?v=${assetVersion}"></script>$1<script src="../assets/archive-filters.js?v=${assetVersion}"></script>$1<script src="../assets/record-format.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
+    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/release-06-07-media.js?v=${assetVersion}"></script>$1<script src="../assets/archive-filters.js?v=${assetVersion}"></script>$1<script src="../assets/official-video-downloads.js?v=${assetVersion}"></script>$1<script src="../assets/official-download.js?v=${assetVersion}"></script>$1<script src="../assets/record-format.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
     .replace('</head>', `  ${servicesScript('../')}\n</head>`)
     .replace(/(<a href="#releases" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
     .replace(/(<a href="#releases" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
@@ -2079,11 +2084,7 @@ function relatedRecords(doc, docs) {
 }
 
 function currentRecordDownloadUrl(doc, media) {
-  const type = clean(doc.type).toUpperCase();
-  if (type === 'VID' || type === 'AUD') return media.video || '';
-  if (type === 'PDF') return doc.r2DocumentUrl || doc.documentUrl || '';
-  if (type === 'IMG') return doc.r2DocumentUrl || media.r2Image || media.localImage || media.image || '';
-  return doc.r2DocumentUrl || doc.documentUrl || media.video || media.r2Image || media.localImage || media.image || '';
+  return officialDownload.select(doc, recordDates, officialDownloadVideos);
 }
 
 function currentRecordDownloadName(doc, url) {
@@ -2111,7 +2112,7 @@ function staticMediaPreview(doc, lang, title, docs) {
   const officialUrl = staticOfficialRecordPage(doc);
   const downloadUrl = currentRecordDownloadUrl(doc, {image, r2Image, localImage, video});
   const downloadName = downloadUrl ? currentRecordDownloadName(doc, downloadUrl) : '';
-  const downloadCurrent = downloadUrl ? `<a class="static-media-button" href="${esc(downloadUrl)}" download="${esc(downloadName)}" data-download-url="${esc(downloadUrl)}" data-download-filename="${esc(downloadName)}" rel="noopener">${esc(text[lang].downloadCurrent)}</a>` : '';
+  const downloadCurrent = downloadUrl ? `<a class="static-media-button" href="${esc(downloadUrl)}" download="${esc(downloadName)}" target="_blank" data-download-source="official" data-download-url="${esc(downloadUrl)}" data-download-filename="${esc(downloadName)}" rel="noopener">${esc(text[lang].downloadCurrent)}</a>` : '';
   const openOfficial = `<a class="static-media-button" href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(text[lang].source)} ↗</a>`;
   const relatedLinks = relatedRecords(doc, docs)
     .map(related => `<a class="static-related-link" href="../${esc(related.slug)}/"><span>.${esc(related.type)}</span>${esc(langTitle(related, lang))}</a>`)
@@ -2310,3 +2311,5 @@ function build() {
 
 build();
 writeFile('assets/release-bundles.js', `/* Generated from the release download links. */\nself.UAP_BUNDLES = ${JSON.stringify(Object.fromEntries(releaseDownloadBundles.flatMap(bundle => [[bundleFilename(bundle, 'documents'), documentBundleUrl(bundle)], ...(bundle.videosUrl ? [[bundleFilename(bundle, 'videos'), bundle.videosUrl]] : [])])), null, 2)};\n`);
+
+writeFile('assets/official-video-downloads.js', `/* Official download sources; playback mirrors are configured separately. */\nwindow.UAP_OFFICIAL_VIDEO_DOWNLOADS = ${JSON.stringify(JSON.parse(read('assets/official-video-downloads.json')), null, 2)};\n`);
