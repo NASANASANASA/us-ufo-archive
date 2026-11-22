@@ -6,9 +6,7 @@ const officialDownload = require('../assets/official-download.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
-const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
-const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20261122-dutch2';
+const assetVersion = '20261122-static-media1';
 const dutch = require('../assets/locale-nl.json');
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const servicesScript = prefix => `<script src="${prefix}assets/site-services.js?v=20261120-preview1"></script>`;
@@ -29,41 +27,7 @@ const key = value => clean(value).toLowerCase().replace(/[^a-z0-9]/g, '');
 const esc = value => clean(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const slug = value => clean(value).toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'unspecified';
 const assetCode = value => clean(value).split(',')[0].toUpperCase().replace(/[^A-Z0-9]/g, '');
-const mirroredAsset = value => {
-  const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)$/i);
-  return m ? `assets/mirror/release-04/${m[1]}` : clean(value);
-};
-const r2Asset = value => {
-  const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)$/i);
-  return m ? `${mediaBase}release-04/${m[1]}?v=${encodeURIComponent(mediaVersion)}` : clean(value);
-};
-const r2VideoAsset = value => {
-  const m = clean(value).match(/\/071026\/Slideshow\/([^/?#]+)\.jpg$/i);
-  return m ? `${mediaBase}release-04/videos/${m[1]}.mp4?v=${encodeURIComponent(mediaVersion)}` : '';
-};
-function readR2Manifest(file) {
-  try {
-    return read(file).trim().split(/\r?\n/).slice(1)
-      .map(line => {
-        const [type, title, r2Key] = line.split('\t');
-        return {type, title, r2Key};
-      })
-      .filter(row => row.title && row.r2Key);
-  } catch (error) {
-    return [];
-  }
-}
-const r2Url = r2Key => `${mediaBase}${r2Key}?v=${encodeURIComponent(mediaVersion)}`;
-const r2Documents = Object.fromEntries([
-  ...readR2Manifest('assets/release-04-r2-document-manifest.tsv'),
-  ...readR2Manifest('assets/release-05-r2-document-manifest.tsv')
-].filter(row => row.type !== 'PDF').map(row => [assetCode(row.title), {type: row.type, url: r2Url(row.r2Key)}]));
-const r2Media = Object.fromEntries([
-  ...readR2Manifest('assets/release-04-r2-manifest.tsv'),
-  ...readR2Manifest('assets/release-05-r2-media-manifest.tsv')
-].map(row => [assetCode(row.title), {type: row.type, url: r2Url(row.r2Key)}]));
-Object.assign(r2Media, Object.fromEntries(Object.entries(JSON.parse(read('assets/release-06-07-media.json')))
-  .map(([code, entry]) => [code, {...entry, url: `/assets/${entry.url}?v=${entry.sha256.slice(0, 12)}`}])));
+const staticPreviews = JSON.parse(read('assets/static-previews.json'));
 const dvidsMp4 = (() => {
   try {
     const source = read('assets/dvids-map.js');
@@ -631,18 +595,19 @@ function normalize(row, index, translations) {
     found.find(youtubeId) ||
     '';
   const youtubeUrl = youtubeEmbedUrl(youtubeRaw);
-  const derivedVideo = (officialType === 'VID' || officialType === 'AUD') && imageUrl ? r2VideoAsset(urls(imageUrl)[0]) : '';
+
   const dvidsVideo = dvidsId && dvidsMp4[dvidsId] ? dvidsMp4[dvidsId] : '';
-  const videoUrl = [
+  let videoUrl = [
     ...(dvidsVideo ? [dvidsVideo] : []),
     ...(videoRaw ? urls(videoRaw).map(absolute) : pick(/\.(mp4|webm|mov|m4v|ogg)$/i)),
-    ...(derivedVideo ? [derivedVideo] : [])
+
   ].filter(Boolean).join('|');
   const recordId = field(row, ['asset file name', 'title', 'assetFileName']);
   const recordRelease = field(row, ['release']) || releaseMap[releaseDate] || releaseDate;
-  const mediaInRelease = entry => entry && entry.url.match(/\/release-(\d{2})\//)?.[1] === recordRelease.match(/\d{2}/)?.[0] ? entry : null;
-  const r2Document = mediaInRelease(r2Documents[assetCode(recordId)]);
-  const r2Image = mediaInRelease(r2Media[assetCode(recordId)]);
+  const preview = staticPreviews[recordId];
+  if (officialType === 'VID' || officialType === 'AUD') videoUrl = officialDownload.select({id: recordId, type: officialType, dvidsId}, recordDates, officialDownloadVideos);
+  const r2Document = null;
+  const r2Image = preview?.preview ? {url: preview.preview, previewKind: preview.previewKind} : null;
   const ext = (doc.split('?')[0].match(/\.([a-z0-9]+)$/i)?.[1] || r2Document?.type || officialType || 'PDF').replace('.', '').toUpperCase();
   return {
     index,
@@ -1405,10 +1370,10 @@ function collectionSchema(lang, title, description, canonicalPath, docs = []) {
 
 function mediaUrls(doc) {
   const image = urls(doc.imageUrl)[0] || (doc.type === 'VID' ? doc.videoMetadata?.thumbnailUrl : '') || '';
-  const r2Image = doc.r2ImageUrl || (image ? r2Asset(image) : '');
+  const r2Image = doc.r2ImageUrl || '';
   const video = urls(doc.videoUrl || '')[0] || '';
   const youtube = doc.youtubeUrl || '';
-  const download = currentRecordDownloadUrl(doc, {image, r2Image, localImage: image ? mirroredAsset(image) : '', video});
+  const download = currentRecordDownloadUrl(doc, {image, r2Image, localImage: r2Image, video});
   return {image, r2Image, video, youtube, download};
 }
 
@@ -1674,9 +1639,6 @@ ${schemaHtml}
   </div>
   ${body}
   ${footerHtml(prefix, lang)}
-  <script src="${prefix}assets/release-04-r2-documents.js?v=${assetVersion}"></script>
-  <script src="${prefix}assets/release-r2-media.js?v=${assetVersion}"></script>
-  <script src="${prefix}assets/release-06-07-media.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/official-video-downloads.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/official-download.js?v=${assetVersion}"></script>
   <script src="${prefix}assets/record-format.js?v=${assetVersion}"></script>
@@ -2005,10 +1967,11 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script src="\.\.\/assets\/release-04-r2-documents\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/release-r2-media\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/release-06-07-media\.js\?v=[^"]+"><\/script>/g, '')
+    .replace(/\s*<script src="\.\.\/assets\/static-previews\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/archive-filters\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/official-(?:video-downloads|download)[^"]*"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/record-format\.js\?v=[^"]+"><\/script>/g, '')
-    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/release-04-r2-documents.js?v=${assetVersion}"></script>$1<script src="../assets/release-r2-media.js?v=${assetVersion}"></script>$1<script src="../assets/release-06-07-media.js?v=${assetVersion}"></script>$1<script src="../assets/archive-filters.js?v=${assetVersion}"></script>$1<script src="../assets/official-video-downloads.js?v=${assetVersion}"></script>$1<script src="../assets/official-download.js?v=${assetVersion}"></script>$1<script src="../assets/record-format.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
+    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/static-previews.js?v=${assetVersion}"></script>$1<script src="../assets/archive-filters.js?v=${assetVersion}"></script>$1<script src="../assets/official-video-downloads.js?v=${assetVersion}"></script>$1<script src="../assets/official-download.js?v=${assetVersion}"></script>$1<script src="../assets/record-format.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
     .replace('</head>', `  ${servicesScript('../')}\n</head>`)
     .replace(/(<a href="#releases" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
     .replace(/(<a href="#releases" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
@@ -2135,8 +2098,8 @@ function coverPreviewLabel(lang) { return ({nl: "De officiële miniatuur is niet
 
 function staticMediaPreview(doc, lang, title, docs) {
   const image = urls(doc.imageUrl)[0] || (doc.type === 'VID' ? doc.videoMetadata?.thumbnailUrl : '') || '';
-  const r2Image = doc.r2ImageUrl || (image ? r2Asset(image) : '');
-  const localImage = image ? mirroredAsset(image) : '';
+  const r2Image = doc.r2ImageUrl || '';
+  const localImage = r2Image;
   const video = urls(doc.videoUrl || '')[0] || '';
   const youtube = doc.youtubeUrl || '';
   const blocked = {
@@ -2164,9 +2127,9 @@ function staticMediaPreview(doc, lang, title, docs) {
   if (youtube) {
     preview = `<iframe class="youtube-embed" src="${esc(youtube)}" title="${esc(title)}" loading="${doc.type === 'VID' ? 'eager' : 'lazy'}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
   } else if (video) {
-    preview = `<video class="static-video-preview" controls playsinline preload="metadata"${r2Image ? ` poster="${esc(r2Image)}"` : ''}><source src="${esc(video)}"></video>`;
-  } else if (image) {
-    const fallbackSrcs = [relativePath(localImage, 3), image].filter(Boolean).join('|');
+    preview = `<video class="static-video-preview" controls playsinline preload="none"${r2Image ? ` poster="${esc(r2Image)}"` : ''}><source src="${esc(video)}" type="video/mp4"></video>`;
+  } else if (r2Image) {
+    const fallbackSrcs = '';
     preview = `<img src="${esc(r2Image)}" data-fallback-srcs="${esc(fallbackSrcs)}" alt="${esc((doc.previewKind === 'pdf-cover' ? title : doc.i18n?.[lang]?.altZh || title))}" onerror="const q=(this.dataset.fallbackSrcs||'').split('|').filter(Boolean);if(q.length){this.src=q.shift();this.dataset.fallbackSrcs=q.join('|')}else{this.parentNode.classList.add('broken')}">${fallback}`;
   } else {
     preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
@@ -2284,6 +2247,7 @@ function build() {
       if (fs.existsSync(file)) previousState[pathname] = {hash: sitemapDates.fingerprint(fs.readFileSync(file, 'utf8')), lastmod: match[2]};
     }
   }
+  writeFile('assets/static-previews.js', `/* Local preview images; provenance and SHA-256 are recorded in static-previews.json. */\nwindow.UAP_STATIC_PREVIEWS = ${JSON.stringify(staticPreviews)};\n`);
   writeFile('assets/db-data.js', read('assets/db-data.js').replace(/const UAP_DATA_VERSION = '[^']+';/, `const UAP_DATA_VERSION = '${assetVersion}';`));
   writeFile('assets/locale-nl.js', `/* Generated Dutch interface translations from locale-nl.json. */\nconst UAP_NL_AGENCIES = ${JSON.stringify(dutch.build.agencies)};\nObject.entries(${JSON.stringify(dutch.ui)}).forEach(([key, value]) => { if (!UI_TEXT[key]) UI_TEXT[key] = {}; UI_TEXT[key].nl = value; });\n`);
   const interactiveTemplate = read('zh-Hant/index.html');

@@ -85,7 +85,7 @@ for lang, translation in LANGS.items():
         source = path.read_text()
         assert f'https://uap-archives.org/{lang}/records/{slug(row["Title"])}/' in sitemap
         assert '/assets/mirror/release-' in source
-        assert 'release-06-07-media.js' in source
+        assert 'static-previews.js' in home and 'media.uap-archives.org' not in source
         if row['Title'].startswith('DOW-UAP-D174,'):
             assert 'href="../dow-uap-d110-aawsap-statement-of-objectives-july-2008/"' in source
         if row['Title'].startswith('DOW-UAP-PR159,'):

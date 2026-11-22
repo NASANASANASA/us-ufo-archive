@@ -18,10 +18,9 @@ for row in csv.DictReader((ROOT/'assets/uap-data.csv').open(encoding='utf-8-sig'
    if 'media.uap-archives.org' in url or url.startswith('/assets/'):
     assert match and match[1]==release,(title,lang,release,url)
   image_urls=[html.unescape(u) for pair in re.findall(r'<img[^>]+src="([^"]+)"|<video[^>]+poster="([^"]+)"',preview) for u in pair if u]
-  if release in ['01','02','03']:
-   for url in image_urls:
-    assert urllib.parse.urlsplit(url).hostname in ['www.war.gov','d1ldvf68ux039x.cloudfront.net'],(title,lang,url)
-    if lang=='en':summary[release][urllib.parse.urlsplit(url).hostname]+=1
+  for url in image_urls:
+   assert url.startswith('/assets/mirror/'),(title,lang,url)
+   if lang=='en':summary[release]['website static assets']+=1
   count+=1
-print('PASS:',count,'record previews scoped to the correct release; all available Release 01–03 images/posters use official sources.')
+print('PASS:',count,'record previews scoped to the correct release; all available images/posters use website static assets.')
 for release,counts in sorted(summary.items()):print(release,dict(counts))

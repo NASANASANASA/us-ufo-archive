@@ -117,6 +117,8 @@ Release 06 contains 75 records (September 18, 2026); Release 07 contains
 28 PDF records (October 23, 2026), with no videos. Import details and
 maintenance commands are documented in [Release 06/07 notes](docs/release-06-07.md).
 
+Preview images and video posters are served as website static assets. Video/audio playback, individual downloads, and release ZIP downloads use official government sources. The UAP website no longer requires R2 storage. Preview provenance and SHA-256 hashes are recorded in `assets/static-previews.json`.
+
 Each record keeps the original source link when available. This project does not claim government affiliation, endorsement, or analytical authority over the records.
 
 ---
