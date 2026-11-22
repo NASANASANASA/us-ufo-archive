@@ -45,7 +45,7 @@
       "browseImages": "Obrazy",
       "mediaDetails": "Informacje o multimediach",
       "mediaDetailsIntro": "Ta strona porządkuje typ pliku, instytucję publikującą, numer publikacji, datę i miejsce zdarzenia, oficjalne źródło oraz dostępne publiczne multimedia.",
-      "homeDescription": "Przeszukuj 478 publicznych materiałów UFO/UAP rządu USA z siedmiu oficjalnych publikacji: filmy, obrazy, dokumenty PDF, instytucje, daty, miejsca, powiązane materiały i oficjalne źródła."
+      "homeDescription": "Przeszukuj 521 publicznych materiałów UFO/UAP rządu USA z ośmiu oficjalnych publikacji: filmy, obrazy, dokumenty PDF, instytucje, daty, miejsca, powiązane materiały i oficjalne źródła."
     },
     "legal": {
       "privacy": {
@@ -182,7 +182,7 @@
     "notice_text_html": "<strong>To nie jest oficjalna strona rządu USA.</strong> Teksty, pliki i multimedia pochodzą z publicznych źródeł rządowych. Strona zawiera tłumaczenia oraz indeks.<br>Każdy materiał zachowuje odnośnik do oryginalnego źródła. W razie rozbieżności rozstrzygający jest oficjalny tekst angielski.",
     "notice_verify": "Sprawdź źródło ↗",
     "section_title": "Archiwum",
-    "section_subtitle": "Zawiera publikacje 01–07 z bazy PURSUE rządu USA · ostatnia uwzględniona publikacja: 23 października 2026",
+    "section_subtitle": "Zawiera publikacje 01–08 z bazy PURSUE rządu USA · ostatnia uwzględniona publikacja: 20 listopada 2026",
     "tab_all": "Wszystkie materiały",
     "tab_r1": "Publikacja 01",
     "tab_r2": "Publikacja 02",
@@ -192,7 +192,7 @@
     "banner_r1_title": "Publikacja 01 udostępniona publicznie",
     "banner_r2_title": "Publikacja 02 udostępniona publicznie",
     "banner_r3_title": "Publikacja 03 udostępniona publicznie",
-    "banner_all_date": "Zawiera siedem publicznych publikacji",
+    "banner_all_date": "Zawiera osiem publicznych publikacji",
     "banner_r1_date": "Data publikacji: 8 maja 2026",
     "banner_r2_date": "Data publikacji: 22 maja 2026",
     "banner_r3_date": "Data publikacji: 12 czerwca 2026",
@@ -280,6 +280,7 @@
     "banner_r5_date": "Data publikacji: 7 sierpnia 2026",
     "download_r5_docs": "> Pobierz dokumenty z publikacji 05 [130 MB]",
     "download_r5_videos": "> Pobierz filmy z publikacji 05 [513MB]",
-    "preview_cover_note": "Oficjalna miniatura jest niedostępna; ten podgląd pokazuje pierwszą stronę oryginalnego pliku PDF."
+    "preview_cover_note": "Oficjalna miniatura jest niedostępna; ten podgląd pokazuje pierwszą stronę oryginalnego pliku PDF.",
+    "release_08": "Publikacja 08"
   }
 }

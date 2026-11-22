@@ -45,7 +45,7 @@
       "browseImages": "Beeldopnamen",
       "mediaDetails": "Mediadetails",
       "mediaDetailsIntro": "Deze pagina bevat het bestandstype, de publicerende instantie, de publicatie, de incidentdatum, de incidentlocatie, de officiële bron en de beschikbare openbare media voor onderzoek en raadpleging.",
-      "homeDescription": "Doorzoek het UAP-archief naar 478 openbare UFO/UAP-records van de Amerikaanse overheid, inclusief UAP-releaserecords, video's, afbeeldingen, pdf-brondocumenten, metadata van incidenten, agentschappen, locaties, gerelateerde records en officiële bronlinks."
+      "homeDescription": "Doorzoek 521 openbare UFO/UAP-archiefstukken van de Amerikaanse overheid uit acht officiële publicaties, met video’s, afbeeldingen, PDF’s, instanties, datums, locaties, gerelateerde archiefstukken en officiële bronnen."
     },
     "legal": {
       "privacy": {
@@ -179,7 +179,7 @@
     "notice_text_html": "<strong>Dit is geen officiële website van de Amerikaanse overheid.</strong> Tekst, bestanden en media zijn afkomstig uit openbare publicaties van de Amerikaanse overheid; deze site biedt indexering en taaltoegang.<br>Elke record behoudt zijn originele bronlink. Als er enige discrepantie bestaat, prevaleert de Engelse officiële bron.",
     "notice_verify": "Bron controleren ↗",
     "section_title": "Archief",
-    "section_subtitle": "Gesynchroniseerd met de PURSUE-database van de Amerikaanse overheid · nieuwste publicatie: 23 oktober 2026",
+    "section_subtitle": "Opgenomen publicaties: 01–08 · nieuwste opgenomen publicatie: 20 november 2026",
     "tab_all": "Alle gegevens",
     "tab_r1": "Publicatie 01",
     "tab_r2": "Publicatie 02",
@@ -189,7 +189,7 @@
     "banner_r1_title": "Publicatie 01 vrijgegeven voor openbaarmaking",
     "banner_r2_title": "Publicatie 02 vrijgegeven voor openbaarmaking",
     "banner_r3_title": "Publicatie 03 vrijgegeven voor openbaarmaking",
-    "banner_all_date": "Bevat zeven openbare publicaties",
+    "banner_all_date": "Bevat acht openbare publicaties",
     "banner_r1_date": "Releasedatum: 8 mei 2026",
     "banner_r2_date": "Releasedatum: 22 mei 2026",
     "banner_r3_date": "Releasedatum: 12 juni 2026",
@@ -277,6 +277,7 @@
     "banner_r5_date": "Releasedatum: 7 augustus 2026",
     "download_r5_docs": "> Download Publicatie 05-documenten [130MB]",
     "download_r5_videos": "> Download Publicatie 05-video's [513MB]",
-    "preview_cover_note": "De officiële miniatuur is niet beschikbaar; dit voorbeeld toont de eerste pagina van de originele PDF."
+    "preview_cover_note": "De officiële miniatuur is niet beschikbaar; dit voorbeeld toont de eerste pagina van de originele PDF.",
+    "release_08": "Publicatie 08"
   }
 }

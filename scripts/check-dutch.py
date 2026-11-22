@@ -3,7 +3,7 @@ import collections,csv,html,json,pathlib,re,urllib.parse,xml.etree.ElementTree a
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 rows=list(csv.DictReader((ROOT/'assets/uap-data.csv').open(encoding='utf-8-sig')))
 translations=json.loads((ROOT/'assets/i18n-nl.json').read_text())
-assert len(translations)==len(rows)==478
+assert len(translations)==len(rows)==521
 sitemap=ET.parse(ROOT/'sitemap.xml');ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
 urls={x.text for x in sitemap.findall('.//s:loc',ns)}
 root_home=(ROOT/'index.html').read_text()
@@ -57,6 +57,6 @@ for file in ROOT.glob('*/index.html'):
  for menu in re.findall(r'<details class="lang-menu[^>]*>[\s\S]*?</details>',file.read_text()):
   order=re.findall(r'data-dir="([^"]+)"',menu)
   assert order.count('nl')==1 and order.index('nl')+1==order.index('pl') and order.index('pl')+1==order.index('ja'),(file,'menu')
-assert len([u for u in urls if '/nl/' in u])==484
+assert len([u for u in urls if '/nl/' in u])==527
 subprocess.run(['node','-e',"const f=require('./assets/record-format.js');for(const [s,t] of [['4/1/2009','1 april 2009'],['2025','2025'],['March 2010','maart 2010'],['Undated','Ongedateerd']])if(f.formatDate(s,'nl')!==t)throw Error(s+': '+f.formatDate(s,'nl'));"],cwd=ROOT,check=True)
-print(f'PASS: 478 Dutch records, 484 Dutch canonical pages, language ordering, dates, unchanged media/downloads, {checked_links} local references.')
+print(f'PASS: 521 Dutch records, 527 Dutch canonical pages, language ordering, dates, unchanged media/downloads, {checked_links} local references.')

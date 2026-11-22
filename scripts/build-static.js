@@ -6,7 +6,7 @@ const officialDownload = require('../assets/official-download.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
-const assetVersion = '20261122-download-note1';
+const assetVersion = '20261122-release08';
 const dutch = require('../assets/locale-nl.json');
 const polish = require('../assets/locale-pl.json');
 const extraLocales = {nl: dutch, pl: polish};
@@ -28,7 +28,7 @@ const clean = value => String(value || '').replace(/\u00a0/g, ' ').trim();
 const key = value => clean(value).toLowerCase().replace(/[^a-z0-9]/g, '');
 const esc = value => clean(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const slug = value => clean(value).toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'unspecified';
-const assetCode = value => clean(value).split(',')[0].toUpperCase().replace(/[^A-Z0-9]/g, '');
+const assetCode = value => (clean(value).match(/^[A-Z]+-UAP-(?:D|PR|VM)?\d+[A-Z]?/i)?.[0] || clean(value).split(',')[0]).toUpperCase().replace(/[^A-Z0-9]/g, '');
 const staticPreviews = JSON.parse(read('assets/static-previews.json'));
 const dvidsMp4 = (() => {
   try {
@@ -95,6 +95,14 @@ const releaseDownloadBundles = [
     date: '2026-10-23',
     documentsUrl: 'https://www.war.gov/medialink/ufo/release-07/documents_release_07_oct_23_2026.zip',
     documentsSize: '325MB'
+  },
+  {
+    release: '08',
+    date: '2026-11-20',
+    documentsUrl: 'https://www.war.gov/medialink/ufo/release_08_documents.zip',
+    documentsSize: '296MB',
+    videosUrl: 'https://d34w7g4gy10iej.cloudfront.net/release_08/videos_112026_uap.zip',
+    videosSize: '29MB'
   }
 ];
 
@@ -297,7 +305,7 @@ const seoText = {
     browseImages: 'Image records',
     mediaDetails: 'Media details',
     mediaDetailsIntro: 'This page indexes the record type, source agency, release batch, incident date, incident location, official source, and available public media for search and reference.',
-    homeDescription: 'Search the UAP archive for 478 public U.S. government UFO/UAP records, including UAP release records, videos, images, PDF source documents, incident metadata, agencies, locations, related records, and official source links.'
+    homeDescription: 'Search the UAP archive for 521 public U.S. government UFO/UAP records, including UAP release records, videos, images, PDF source documents, incident metadata, agencies, locations, related records, and official source links.'
   },
   es: {
     release04Title: 'Registros UAP de la publicación 04',
@@ -314,7 +322,7 @@ const seoText = {
     browseImages: 'Registros de imagen',
     mediaDetails: 'Detalles multimedia',
     mediaDetailsIntro: 'Esta página indexa el tipo de registro, agencia fuente, publicación, fecha, lugar, fuente oficial y medios públicos disponibles para búsqueda y referencia.',
-    homeDescription: 'Busca 478 registros públicos UFO/UAP del Gobierno de EE. UU., videos, imágenes y PDF de siete publicaciones oficiales, con agencias, fechas, lugares, registros relacionados y enlaces oficiales.'
+    homeDescription: 'Busca 521 registros públicos UFO/UAP del Gobierno de EE. UU., videos, imágenes y PDF de ocho publicaciones oficiales, con agencias, fechas, lugares, registros relacionados y enlaces oficiales.'
   },
   pt: {
     release04Title: 'Registros UAP da publicação 04',
@@ -331,7 +339,7 @@ const seoText = {
     browseImages: 'Registros de imagem',
     mediaDetails: 'Detalhes da mídia',
     mediaDetailsIntro: 'Esta página indexa tipo de registro, agência, lote, data, local, fonte oficial e mídia pública disponível para pesquisa e referência.',
-    homeDescription: 'Pesquise 478 registros públicos UFO/UAP do governo dos EUA, vídeos, imagens e PDFs de sete publicações oficiais, com agências, datas, locais, registros relacionados e links oficiais.'
+    homeDescription: 'Pesquise 521 registros públicos UFO/UAP do governo dos EUA, vídeos, imagens e PDFs de oito publicações oficiais, com agências, datas, locais, registros relacionados e links oficiais.'
   },
   fr: {
     release04Title: 'Archives UAP de la publication 04',
@@ -348,7 +356,7 @@ const seoText = {
     browseImages: 'Archives image',
     mediaDetails: 'Détails du média',
     mediaDetailsIntro: 'Cette page indexe le type, l’agence, la publication, la date, le lieu, la source officielle et les médias publics disponibles.',
-    homeDescription: 'Recherchez 478 archives publiques UFO/UAP du gouvernement des États-Unis, vidéos, images et PDF issus de sept publications officielles, avec agences, dates, lieux, archives liées et sources officielles.'
+    homeDescription: 'Recherchez 521 archives publiques UFO/UAP du gouvernement des États-Unis, vidéos, images et PDF issus de huit publications officielles, avec agences, dates, lieux, archives liées et sources officielles.'
   },
   de: {
     release04Title: 'UAP-Unterlagen Veröffentlichung 04',
@@ -365,7 +373,7 @@ const seoText = {
     browseImages: 'Bildunterlagen',
     mediaDetails: 'Mediendetails',
     mediaDetailsIntro: 'Diese Seite indexiert Typ, Behörde, Veröffentlichung, Datum, Ort, offizielle Quelle und verfügbare öffentliche Medien.',
-    homeDescription: 'Durchsuchen Sie 478 öffentliche UFO/UAP-Unterlagen der US-Regierung mit Videos, Bildern und PDFs aus sieben offiziellen Veröffentlichungen, inklusive Behörden, Daten, Orte, verwandter Einträge und Quellenlinks.'
+    homeDescription: 'Durchsuchen Sie 521 öffentliche UFO/UAP-Unterlagen der US-Regierung mit Videos, Bildern und PDFs aus acht offiziellen Veröffentlichungen, inklusive Behörden, Daten, Orte, verwandter Einträge und Quellenlinks.'
   },
   ru: {
     release04Title: 'Материалы UAP выпуска 04',
@@ -382,7 +390,7 @@ const seoText = {
     browseImages: 'Изображения',
     mediaDetails: 'Сведения о медиа',
     mediaDetailsIntro: 'Страница индексирует тип записи, ведомство, выпуск, дату, место, официальный источник и доступные публичные медиа.',
-    homeDescription: 'Поиск по 478 публичным материалам UFO/UAP правительства США: видео, изображения и PDF из семи официальных выпусков, ведомства, даты, места, связанные записи и официальные ссылки.'
+    homeDescription: 'Поиск по 521 публичным материалам UFO/UAP правительства США: видео, изображения и PDF из восьми официальных выпусков, ведомства, даты, места, связанные записи и официальные ссылки.'
   },
   ar: {
     release04Title: 'سجلات UAP الإصدار 04',
@@ -399,7 +407,7 @@ const seoText = {
     browseImages: 'سجلات الصور',
     mediaDetails: 'تفاصيل الوسائط',
     mediaDetailsIntro: 'تفهرس هذه الصفحة نوع السجل والجهة والإصدار والتاريخ والموقع والمصدر الرسمي والوسائط العامة المتاحة.',
-    homeDescription: 'ابحث في 478 سجلا عاما عن UFO/UAP من الحكومة الأمريكية، تشمل فيديوهات وصورا وملفات PDF من سبعة إصدارات رسمية، مع الجهات والتواريخ والمواقع والسجلات المرتبطة وروابط المصادر الرسمية.'
+    homeDescription: 'ابحث في 521 سجلا عاما عن UFO/UAP من الحكومة الأمريكية، تشمل فيديوهات وصورا وملفات PDF من ثمانية إصدارات رسمية، مع الجهات والتواريخ والمواقع والسجلات المرتبطة وروابط المصادر الرسمية.'
   },
   ja: {
     release04Title: '第4回公開UAP記録',
@@ -416,7 +424,7 @@ const seoText = {
     browseImages: '画像記録',
     mediaDetails: 'メディア詳細',
     mediaDetailsIntro: 'このページは記録種別、機関、公開回、事件日、場所、公式ソース、利用可能な公開メディアを検索と参照のために整理しています。',
-    homeDescription: '米国政府が公開した478件のUFO/UAP記録、動画、画像、PDF資料を7回の公式公開、機関、日付、場所、関連記録、公式ソースリンクから検索できます。'
+    homeDescription: '米国政府が公開した521件のUFO/UAP記録、動画、画像、PDF資料を8回の公式公開、機関、日付、場所、関連記録、公式ソースリンクから検索できます。'
   },
   ko: {
     release04Title: '4차 공개 UAP 기록',
@@ -433,7 +441,7 @@ const seoText = {
     browseImages: '이미지 기록',
     mediaDetails: '미디어 세부정보',
     mediaDetailsIntro: '이 페이지는 검색과 참조를 위해 기록 유형, 기관, 공개 회차, 날짜, 위치, 공식 출처, 사용 가능한 공개 미디어를 색인합니다.',
-    homeDescription: '미국 정부가 공개한 478개 UFO/UAP 기록, 영상, 이미지, PDF 문서를 일곱 차례 공식 공개, 기관, 날짜, 위치, 관련 기록, 공식 출처 링크별로 검색합니다.'
+    homeDescription: '미국 정부가 공개한 521개 UFO/UAP 기록, 영상, 이미지, PDF 문서를 여덟 차례 공식 공개, 기관, 날짜, 위치, 관련 기록, 공식 출처 링크별로 검색합니다.'
   },
   'zh-Hans': {
     release04Title: '第四批 UAP 公开档案',
@@ -450,7 +458,7 @@ const seoText = {
     browseImages: '图片档案',
     mediaDetails: '媒体信息',
     mediaDetailsIntro: '本页为搜索和查阅整理档案类型、发布机构、公开批次、事件日期、事件地点、官方来源以及可用的公开媒体。',
-    homeDescription: 'UAP 档案库是一个检索美国政府 UFO/UAP 公开档案的 UAP 网站，收录 478 条 UAP 档案，包括视频、图片、PDF 原始文件、公开批次、事件日期、地点、机构、相关记录和官方来源链接。'
+    homeDescription: 'UAP 档案库是一个检索美国政府 UFO/UAP 公开档案的 UAP 网站，收录 521 条 UAP 档案，包括视频、图片、PDF 原始文件、公开批次、事件日期、地点、机构、相关记录和官方来源链接。'
   },
   'zh-Hant': {
     release04Title: '第四批 UAP 公開檔案',
@@ -467,7 +475,7 @@ const seoText = {
     browseImages: '圖片檔案',
     mediaDetails: '媒體資訊',
     mediaDetailsIntro: '本頁為搜尋和查閱整理檔案類型、發布機構、公開批次、事件日期、事件地點、官方來源以及可用的公開媒體。',
-    homeDescription: 'UAP 檔案庫是一個檢索美國政府 UFO/UAP 公開檔案的 UAP 網站，收錄 478 筆 UAP 檔案，包括影片、圖片、PDF 原始文件、公開批次、事件日期、地點、機構、相關記錄和官方來源連結。'
+    homeDescription: 'UAP 檔案庫是一個檢索美國政府 UFO/UAP 公開檔案的 UAP 網站，收錄 521 筆 UAP 檔案，包括影片、圖片、PDF 原始文件、公開批次、事件日期、地點、機構、相關記錄和官方來源連結。'
   }
 };
 
@@ -575,7 +583,9 @@ function normalize(row, index, translations) {
     '9/18/2026': 'RELEASE 06',
     '09/18/2026': 'RELEASE 06',
     '10/23/26': 'RELEASE 07',
-    '10/23/2026': 'RELEASE 07'
+    '10/23/2026': 'RELEASE 07',
+    '11/20/2026': 'RELEASE 08',
+    '11/20/26': 'RELEASE 08'
   };
   const officialType = field(row, ['type']).trim().toUpperCase();
   const assetLink = absolute(field(row, ['pdf | image link', 'pdf image link']));
@@ -1862,7 +1872,7 @@ function buildDownloadsPage(lang) {
       </div>
     </section>
   </main>
-  <script src="../../assets/bundle-download.js?v=20261121-official-source1"></script>`;
+  <script src="../../assets/bundle-download.js?v=20261122-release08"></script>`;
   return pageShell({
     lang,
     title: `${copy.title} · ${text[lang].home}`,
@@ -1922,9 +1932,9 @@ function buildInteractiveHome(lang, template) {
   return template
     .replace(/\s*<a data-dir="(?:nl|pl)"[^>]*>[\s\S]*?<\/a>/g, '')
     .replace(/(<a data-dir="ja"[^>]*>)/g, '<a data-dir="nl" data-lang="nl" href="../nl/">Nederlands</a>\n          <a data-dir="pl" data-lang="pl" href="../pl/">Polski</a>\n          $1')
-    .replace(/2026\.08\.07/g, '2026.10.23')
-    .replace(/(<b id="hero-record-count">)[^<]*(<\/b>)/, (_, open, close) => `${open}478${close}`)
-    .replace(/(<span><b>)\d{2}(<\/b>)/, (_, open, close) => `${open}07${close}`)
+    .replace(/2026\.(?:08\.07|10\.23)/g, '2026.11.20')
+    .replace(/(<b id="hero-record-count">)[^<]*(<\/b>)/, (_, open, close) => `${open}521${close}`)
+    .replace(/(<span><b>)\d{2}(<\/b>)/, (_, open, close) => `${open}08${close}`)
     .replace(/<meta name="viewport" content="width=device-width, initial-scale=1.0">\s*(?:<script>try\{if\(localStorage\.getItem\('uap-view-mode'\)==='desktop'\)document\.querySelector\('meta\[name="viewport"\]'\)\.setAttribute\('content','width=1280, initial-scale=1\.0'\)\}catch\(e\)\{\}<\/script>\s*)?/, `<meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <script>try{if(localStorage.getItem('uap-view-mode')==='desktop')document.querySelector('meta[name="viewport"]').setAttribute('content','width=1280, initial-scale=1.0')}catch(e){}</script>\n  `)
     .replace(/\s*<button class="view-mode-toggle[^>]*data-view-mode-toggle[\s\S]*?<\/button>/g, '')
     .replace(/(<div class="showcase-dots"[^>]*><\/div>\s*<\/div>)\s*<\/div>\s*(?=<\/section>)/g, '$1\n    ')
@@ -1972,15 +1982,15 @@ function buildInteractiveHome(lang, template) {
     .replace(/assets\/(db-data|dvids-map|i18n-ui)\.js\?v=[^"]+/g, (_, name) => `assets/${name}.js?v=${assetVersion}`)
     .replace(/\s*<script src="[^"]*assets\/locale-(?:nl|pl)\.js[^"]*"><\/script>/g, '')
     .replace(/(<script src="[^"]*assets\/i18n-ui\.js[^"]*"><\/script>)/, `$1\n  <script src="../assets/locale-nl.js?v=${assetVersion}"></script>\n  <script src="../assets/locale-pl.js?v=${assetVersion}"></script>`)
-    .replace(/最近批次：2026\.(?:06\.12|07\.10)/g, '最近批次：2026.10.23')
-    .replace(/latest release: 2026\.(?:06\.12|07\.10)/g, 'latest release: 2026.10.23')
-    .replace(/最新公開: 2026\.(?:06\.12|07\.10)/g, '最新公開: 2026.10.23')
-    .replace(/última publicación: 2026\.(?:06\.12|07\.10)/g, 'última publicación: 2026.10.23')
-    .replace(/收录[三四]个公开批次/g, '收录七个公开批次')
-    .replace(/收錄[三四]個公開批次/g, '收錄七個公開批次')
-    .replace(/Includes (?:three|four) public releases/g, 'Includes seven public releases')
-    .replace(/[34]回分の公開資料を収録/g, '7回分の公開資料を収録')
-    .replace(/Incluye (?:tres|cuatro) publicaciones públicas/g, 'Incluye siete publicaciones públicas')
+    .replace(/最近批次：2026\.(?:06\.12|07\.10)/g, '最近批次：2026.11.20')
+    .replace(/latest release: 2026\.(?:06\.12|07\.10)/g, 'latest release: 2026.11.20')
+    .replace(/最新公開: 2026\.(?:06\.12|07\.10)/g, '最新公開: 2026.11.20')
+    .replace(/última publicación: 2026\.(?:06\.12|07\.10)/g, 'última publicación: 2026.11.20')
+    .replace(/收录[三四]个公开批次/g, '收录八个公开批次')
+    .replace(/收錄[三四]個公開批次/g, '收錄八個公開批次')
+    .replace(/Includes (?:three|four) public releases/g, 'Includes eight public releases')
+    .replace(/[34]回分の公開資料を収録/g, '8回分の公開資料を収録')
+    .replace(/Incluye (?:tres|cuatro) publicaciones públicas/g, 'Incluye ocho publicaciones públicas')
     .replace(/\s*<script src="\.\.\/assets\/release-04-r2-documents\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/release-r2-media\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/release-06-07-media\.js\?v=[^"]+"><\/script>/g, '')
@@ -2066,7 +2076,7 @@ function staticOfficialRecordPage(doc) {
     .replace(/\s+/g, '-')
     .replace(/[^A-Za-z0-9\-_]/g, '')
     .replace(/-+/g, '-');
-  return ['06', '07'].includes(n)
+  return ['06', '07', '08'].includes(n)
     ? `https://www.war.gov/UFO/?releaseDate=Release+${n}&release=${n}#${hash}`
     : `https://www.war.gov/UFO/release/${n}/?releaseDate=Release+${n}#${hash}`;
 }

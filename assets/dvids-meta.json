@@ -754,5 +754,23 @@
   "category": "B-Roll",
   "duration": 102,
   "country": "COLORADO, US"
+ },
+ "1030270": {
+  "date": "2020-01-01T05:00:00Z",
+  "category": "B-Roll",
+  "duration": 20,
+  "country": "Undisclosed Location"
+ },
+ "1030274": {
+  "date": "2026-01-01T05:00:00Z",
+  "category": "B-Roll",
+  "duration": 54,
+  "country": "Undisclosed Location"
+ },
+ "1030277": {
+  "date": "2026-11-18T05:00:00Z",
+  "category": "B-Roll",
+  "duration": 13,
+  "country": "Undisclosed Location"
  }
 }

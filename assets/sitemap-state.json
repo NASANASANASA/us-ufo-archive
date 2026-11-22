@@ -1,10 +1,10 @@
 {
   "/": {
-    "hash": "630054989c381c47244109e37bc3d41f3440c33d0ba61fffe7eeff43cd1dc45b",
+    "hash": "0ef90de3c25d41d8d04ce95a42cfe666727c304251de03a93bc9fd6e4758a298",
     "lastmod": "2026-11-22"
   },
   "/en/": {
-    "hash": "faf48434c6b9904ea407fd7e904240cd880b588e7d3285544991c7f6abbb06fd",
+    "hash": "98b1975253fc5062dd5a6d7d6e7013c88df978a4bdd94151364f5b9e51d6c9de",
     "lastmod": "2026-11-22"
   },
   "/en/privacy/": {
@@ -24,7 +24,7 @@
     "lastmod": "2026-11-22"
   },
   "/en/downloads/": {
-    "hash": "19b955577ecacfe7855c0213095c96a71f0808b425aa1b25ae15df766fa57b5f",
+    "hash": "2b897d87f88c7f4d8bebfcbc60af3ebe97ee56a9acf1e7ddc7e27bf3138603bf",
     "lastmod": "2026-11-22"
   },
   "/en/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -1939,8 +1939,180 @@
     "hash": "a0fe3e66dad31305581f3423a41947fa998a84beae4f6300c9d13bc16f5c031c",
     "lastmod": "2026-11-22"
   },
+  "/en/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "7965769607db892d255bb0ea72e0c4e341cc498405796a93c68bd2e4960b7b3b",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "04fcd30a5138dc2ecbb9ca58db5d10d9c101537c9b74e925b25287669af961d8",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "524784fc93be197d865fed49ffb669436163bedd06bfe124acce9817fae9e3f4",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "bffbbaf3e8a12c5aca9f06d97cbe3edca603677c629c0a1fe412b9ec39e352b3",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "17c0bd36e80d689691ecd273fb6fe239cadecec1c9e1f4b40e54bb7b869d19f5",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "2490074b799d4279d51bad7dc470211da79925e61fba5ba7c5ad5898e0ffe2be",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "38184e13f101760458794490d2fc7a5edc11708f3d480a44e17c21f892de4b03",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "2630f7ea1bee694f076973991a62afd1e6b52860bd4eb70094308c9fad6b1da1",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "a37424e8ef1d44f75d1e095bf600fec5e032cb97e19013d64d7c243a20c6514f",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "3b2f065f924c10ca044ea6ddeab45900c90d80f4eb646291430d2a972e60c428",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "d3f7a472d3d23793f7a81610867f27812f9015dfd49bee4d89e2416c9cf510cb",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "0de936fba239edb44f1956321af31a02f148e823c6f636bcef791efefe910baf",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "6f79f76d30829c611bded478f64ce490ba8b23958c6356146d36d024953fe62f",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "5ca544306689b69803dbac2099c3721ebad01622a8ceb61995d7d1511b1105d0",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "2de8c1656e53bdfc7834fb91304e8ae4c48df5eb59c112e153e4d5f22f5f6c21",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "272ea3e4e30589329aa06ce1c880b2961cf068c2b824e4c7b49a0a9f38df27d8",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "6a4933321b86906ee7641db204c0ee144a8f89a836305e37b6c5d2ae6c3b3c6a",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "7b4834faf881df15adde74c9e0ca64e49025b9442bd69a9369a548293f964433",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "6cae4bcf05d212a01be314314b99dcf6a68bb1ac91f579c46e2910a612087c63",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "ec6c495515cb42210b6f3f1aaac503b00c142a499e6504583525300052bf90cf",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "fc0b34a8683ccb7933450ac68c34a4861c459f047a4892bd61c360f4f460496f",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "0d094e8257899d7197684cb1832d2136868744dc82a2865faeb3686273362111",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "5640d0e6358f59970d3a0c6ccd7b8e36feb7246d70bef457e16144f4015f0c44",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "478ec09c636eb74a88c284fb32782ee6dace2dfafe2cff6fc5f34f035ef76d1e",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "eba25ca1532fe5484420c0a946f2ddbae5591e64fcf36cf93f390b153e354ad9",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "a5ce6bd74fea794af7a8468540c8b459120092bf9338891b69aa1b058ca6b125",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "f99eeb50592f65a82d1a06151e98dd57bb7f08727f6d6647cd48ef473ff5f386",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "971153165a54e114abc9871b726e92b45020a2173bdbb448050b51c774948318",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "84429fd64bf625a7275cd9e59417aeb28663ab8bf7ef2759750d6becc6e34472",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "e858889a3b5714fd36da0030896a9515ea14f5d4523f556857bc23518aebda83",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "3cf798d232d7e3ba45ed9947fa8363f1887b119c16ac15ab734269fc5b4aae87",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "0158a0755addc118d9a0360d79020c6dce072a92a81500ad33f922af06f61e48",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "3592100635b7c1299429dab506db62e20e740acc35207bc435d0499f8b78bb4c",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "3a6868e9a2e2d5d0cdbfb6b3bab3a1bf04913a064f25d8d726baf9d96aa07d24",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "bf582ba0121ba446dc296190ade78618797fb5e5dc5b23ee9c0330c58d9379ac",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "0684e226faa68368a55da48c77bb0c9c5e5cfd7a7914f3d6ae78cbd9ffd31d23",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "aab94af150a45a724c474128d9ed6dc811faf11b4dfea5fb88a62a95bd0b9fdf",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "e9b67717bbd367a3941cce8db3d83dccaac4dba6cda8ec2746ce9772d7d17e92",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "66abbb4ee747c371107ad49d62529496225565084ffe4418db0d13887392a45f",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "f715545be0b97740bf303859b4fa2543125ea2eb7fa4090ba6cc411e94bb9919",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "62d2c9a2589d569c8d8f575572a9f43103be5aa5856109ed8450868fead14186",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "67c8ec4872ed7e9fc72212048a1119cebf386e02d2ccac7b895547247e2a4f00",
+    "lastmod": "2026-11-22"
+  },
+  "/en/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "f9834b486cdb145a2d35726f6ae9ba28e7fbebed6ba6cca61399e5286b70c29c",
+    "lastmod": "2026-11-22"
+  },
   "/es/": {
-    "hash": "f2769e4167fbd08a64f95c661120d60fb0ee1b6668adcbaff36cd4dd889d8856",
+    "hash": "c035023d2c2eec0a078211da5df56d6ecfc5e780c2a705ee48217897d4b4d319",
     "lastmod": "2026-11-22"
   },
   "/es/privacy/": {
@@ -1960,7 +2132,7 @@
     "lastmod": "2026-11-22"
   },
   "/es/downloads/": {
-    "hash": "ca9574fe5108e8cf758865f4610a336c7932ff993b84a44e21c7d50c6c3d8ba8",
+    "hash": "16010c9bf6fd1a9163bd2f6ec8e4a00747fae800404ded9041ad77d274343db2",
     "lastmod": "2026-11-22"
   },
   "/es/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -3875,8 +4047,180 @@
     "hash": "c9a8d86fb8ddebfd43b730b528f637f24d536018f8d1eb9eee057882d90b6cc9",
     "lastmod": "2026-11-22"
   },
+  "/es/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "1280efcad6f94efe1d61e410dd0f0602c064d2b2659f22c2cd41d9558c1f2a69",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "e6e4436f8951908c3a340a275701ed9ecb6aa1a288ced3e652ddb94a510a1481",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "e7fbfc01bd325ed0a92d5b49ef7db454f02abdf4940384af9d4d785030e10076",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "37aeb2b3704508b85565e2983ce390f64a6f91c3b317273b12cf8b2da99e69cd",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "ce1bb736d63f67301ceeb8a8a0c49189247ef08648e0a6ffade08ff410a1ff7a",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "f6e467b36326a6a5bb90b7a33ce5a4ef97fc0372b44e8aa033c26ad78548a122",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "351bb01e4de915fdf533827381a82c7ceb5656ce71f4965c58d1008a0219a092",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "42103f2070cf79ba105e9a8de0bf49adf124525f13088d286343b5911d0896e1",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "44a300b8d389128c1eb899f39f1db12b32d962bb39e20b80a063f28d33c7a596",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "0c27fec9e94e4c7b1bb765005847da5f9f51f6d236d09e1ffa1b590637ab919e",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "083525562313b822cfb3c2ac5d2e40e2017422b5cfb59d8df4dfef50e4dc0cf5",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "64b039c15e61d2166afc6ec163c3ef10183d31aeba8bacbcdbb13624142e9475",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "985f61c3e815153f05daf452e15b24582f03aa951710ddbecc59c4b610178704",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "a1a7bcd7d09e7f7779deafb1132d3dbef00ec6d83a801d47ec9ffd8edba717f8",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "b10b52be3abc6319b80f33e42437b96f87d193e0212dbdc9880f764468c9b9bb",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "a0701d0aacc7d41be6efaaad2cc1f24ac0c758846cd03e6b0ebaa5d82a7964be",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "7f87fb97149f86cb95d66b17c6e5d74350248cced5c02391447c61da823b6d9e",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "c5dee4cecced35a33f8ffa7c671d6b5eb3bf50e5af62c2e790b3fe9bb4707d70",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "6656a50eed9525903cd768bbc3222adc6b5c61448b165e37ed80084462481ba2",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "a36a3fe3e99800bbb96bbf239a65ed64eded49f0bcd983ec1dc6698b4bd375d1",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "d82e15bd711ca2e5451a3c6a2af9faf0f51300bf31d877d052cd92276052786a",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "439e3a03efb2eee8f09fc703f0640d4afca851daeac32ebd434143bc711bd070",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "e915e9e9dfb1d15e57ead25a39448ce9cf7ceb0bc328617ca764300b3b63f199",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "e007808d038fea8fb1d768f7e4b170c860b873e310b2a2c51a94c96e10b5a43f",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "63e195580b87fdf349ac530f5ea69c493955bf6bde7c6948191e522cc201aab0",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "bc32b5b201804fa259a13f1f6b5b81240620a375e1dbf2ce1108ae85d73219a6",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "37094c135c8c9aa0fb3340dba735b489ba4ae0cda4d497ef6538aff49f13472c",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "6639ab92112322f94746827c4c528d2f19dcbdbfc509c5a0406d5a62ad198792",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "a882d0821a644394b32f8a1f9708dc3500a7ebc1189222a913cdc6f9648e6854",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "9c0efd1af4530e00d4181ba26578bb046d80796e3e74c665a4db0a0d1e6a5e06",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "f9e7cbd00e240049737ba5e524c587196ab332fefb2a8b7b947b0b1ec1a0e902",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "57b2486ae8461ec1302f0aeb77a241b164d8c14fb38a58fb09d20908ac0f569d",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "2eb17f930fa03b5b7b410dbf0b5cc221ff4c2b9d0ba53680b40aa4c18627ebbb",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "5612bb830b0b09784f481186b39f2d595a3fb65f0880cc0c353ba6f5efda7b7e",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "5a93192a054166379fd466d44144d176383af6ef2d5e7da01bd6a09fcbdc985d",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "8553c724c0ee9346d419a26b59ac8594919e1b05499fa495010ddedf8d2a48db",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "c0a39d6fe6c6502b66a9b6e3d923ac84d5518e3bc1d496d1525dcc213d259ddc",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "98652a357c7ffcbb32a66dd22b17f48c00f3832c9a34b6cf8400c551e5c51adb",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "92c38dcf8a73ccf54b6ad7786ff51f309110cf465c1cc3bd23cc197d53e691a3",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "6b3523f77f9872b3ce378ba98bb1e33e90e6d8380a7df8354f5c08f0c839ea1c",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "ea2408a7d8a58a8b0c6f203dfc19e923af2fcbd8de3cf35fad58714230779ff5",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "9444c02c1946603700a4bc30b1ccdad4b51f5da5fb669f0d37e446c42b4fb55d",
+    "lastmod": "2026-11-22"
+  },
+  "/es/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "6e5f14aeddc307827b2779e819a495f752b66a676cbf05806925ded800e94e03",
+    "lastmod": "2026-11-22"
+  },
   "/pt/": {
-    "hash": "9121d83a7c20141997b4b6467db8d73d97f8c3e3de3591b6af92bfe2d9acded6",
+    "hash": "660ab83e86e698716b73fca1db48c2100121f59401d68e7dd70aceed4d1c68d7",
     "lastmod": "2026-11-22"
   },
   "/pt/privacy/": {
@@ -3896,7 +4240,7 @@
     "lastmod": "2026-11-22"
   },
   "/pt/downloads/": {
-    "hash": "c3aa2a768460c69ba68082ca960cc31494665bb2d42d886db2ef0b06b8577b27",
+    "hash": "07ce40085571e445e7aa13ba6cb20c16864453ad9b502dc4de6f094dd0b1cd8b",
     "lastmod": "2026-11-22"
   },
   "/pt/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -5811,8 +6155,180 @@
     "hash": "e631de66d366c1667be70929064dd653f2ab33230cce7f1fda92f4eb4d8b8dc2",
     "lastmod": "2026-11-22"
   },
+  "/pt/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "48dbf3818893d83966d9b12939c3c30a6512c3adde252b9c0f5f62b4ccf45ed2",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "399872bd7c1ef64c40a66af35a3baf2118479f273aaec158aebe69eb68a535e9",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "47ebe0867c664bc8054915449c6432f4274ffa0c015c010c58f0fa1bdd4f38e4",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "9953e68ac6fab8532e1f83f35fc66880b6b85c73942dd4872d60702fd3bb6047",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "e1c2c64334af38942cbe24a2919c5ee2d6f387d5b528ff4fa557b5ec3ac5089f",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "f97e0beffa5dd9d4da9ee30a39ce80e87989ad34f1750156b8346b1a21c9999d",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "b04205e2ceb17ab6e203d3cb55cf8092dec987b90bca9bd7e9bf5b6a820aabbb",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "1f474c4dbc8c8d718bbe48d3a0ca20f2b4550fd77862945b1989dcb81debff6b",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "48186bfa2f01348a82fcf2a39732fdc0e39b671056be76bd538f18126b54d4ac",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "a3e50d3690a3ae00f438fa39063f1db6b8e303a2cbf6c652effd513dad0a84be",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "9fc7215d9ef9d2ad20892f8859d2973f993da3a0c88f92800e9cc33d31eefb64",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "ab1ee5a8c821aeb1c906bea932d8f136d8ce2aa0df81b815cf67aaea280705d3",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "c171c71b82432672a79c10bd3f7f651ee90550a22c0709089ca347490c08fbfa",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "354025627d5790f65f7376d3d2cfebc06ed2fbd569156f094116b2a046c6ba50",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "d508c42ab4ec12c2983c0877443e19d5bcb99265fab58b28709ac69603431489",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "82c475194ec56ec7aafaa31c3580f26fb018fc2d46cd9431f631f2415e1ee2ba",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "45b9972b5bb3b66ad26fed78a0d8010ff627bd25fba2d1c4056a0757c1ba68cd",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "479f904257abd329a3cd0fa1b079fffc2d016212f63d2c9242f51a8ba6e487aa",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "0880109eb769eeb9d7def2e6153424b54eed0af022156da5e68275f5b0fd0387",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "aec5ab0ede4a2882d0412fc67b3408c983f86c812aa60e9efb8b6d05ccec57e2",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "56690c0cd41ca62c8aa1a21949642f3f2a09304de1b4160db3e6c0ca22a6844c",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "ae50ab712dcc01cf5dcc796eb9c7ed2eb8b03662eb0f0f290f3afb92f2ecc96f",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "54247c97d463e1d90946530b4886f631e2b2863fcdb47803922c164c0e913ce2",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "8e093d352e6c2b56e06ef1a6991c80648457eba6207d696353fc627812db5aa3",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "99e4dac7bae354e08142cbf1e67044acfcc7bfa642f0a42e9033079247e8453c",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "f9fc9883813d00027e3420cd3cc6589844207cf781b39a6bab128a5cb2f4dcb5",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "3c8222bc867924da679ce68417ff8a04551111b523d5d0e4985e2732291f6a78",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "22870b15075c7433255f88ffdf548abb866f049f383d7e37be8393ddd78b6828",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "e67b73fcd4b568b8956730d3c95bc15ce1a3462d2368dce82d7f6c1c9faa7a74",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "206d654ff75a825765f0d84bf593b05ebe490f766963d2021b83284fc94b9348",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "f875689a149168cebd13f08dbf63ef48417c57b3d3570da715961f480e7c5db3",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "0c32f857261a921b25a4e8502a00ca8e3d62564391da0439cb676b7e3b26672c",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "34f254ce64cfe81aae167e911a20398ad14f9cde6380187aa71681fdb6464b05",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "59ce68bcbd21d03f9366edf5014973efa6d5165260c1981f18b53502bb24a8bf",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "f4e7ec974b3648bd104feaf68b73bf9be8aa76602707c4e2ce1380ee887584b8",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "a607989f878f39dfd9bcf04f882492b65abc803dedc016c3f9103b9bc3b77107",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "8faf050de45cb36acb44d54ee41b0fe9745b6597b3054bed30aa7e946df4dddb",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "aa33add12946e222ce30ad0484bca8955c1a1013a3e9d990f0728312d91662c7",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "a77ca8c57ca0534d30cf4d02f5beba438fe5829d0cff2a9cb870be486b5fd970",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "a1d5175948f1de34911ef5b2c373e30b69e578c5b61b5981517745ee86bc5ca3",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "f2316909fe6609178fb090e742a41a2e72f78d48332f42c16735b305726bbf94",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "871189d40a1b26e1de931dee3b67e90cac55fd2924dafab998b53b155a46a13d",
+    "lastmod": "2026-11-22"
+  },
+  "/pt/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "c24e6047f3110e73803e5405774d375ebeb559f0fd3333bce077284492c6b445",
+    "lastmod": "2026-11-22"
+  },
   "/fr/": {
-    "hash": "2a69db0de89052e015fa673ecbd9bb309ccfac462e2c174a1f8b8c0fa2fb26b6",
+    "hash": "e0588a68ad71a86ae3cec2f4e49ecbdbdcd6e3cd01360564c2ad309aa418cbca",
     "lastmod": "2026-11-22"
   },
   "/fr/privacy/": {
@@ -5832,7 +6348,7 @@
     "lastmod": "2026-11-22"
   },
   "/fr/downloads/": {
-    "hash": "010561e9cc4f57e26a9d14ed36e14a6fce392af5e84f0a25427c5b15a1d46b8c",
+    "hash": "b4495900b83a024598731f538adcd47f7799a56deba5b63ec0bd82bc1982e619",
     "lastmod": "2026-11-22"
   },
   "/fr/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -7747,8 +8263,180 @@
     "hash": "e5eb4b6d315006c6ee0f4e65e3c2a8f383e3f9b6590a58fb7183de9277d4afe4",
     "lastmod": "2026-11-22"
   },
+  "/fr/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "8c051e8fc01124440c29233a9e8c4195e2cfe1cba8372e2d2b0415698ad255dd",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "9d89d630c280b4a1fc189ffa887193b3061a10e6a19b73f3a5613e8535b4f919",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "ace9f3dd51cd5fbb7cb49e13602c0725c48fe88c14243b7177ba42e9a56be393",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "c3cd0f044c6508babbd720ecef3f88362f1f3737cfc2485f4772ad8e1138c6b5",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "dd55696b4be85cd00eb73f051bb402a32d3bd024ebe61e0082d9ad3d3c930b49",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "3b43e70ba70e01b74973440369be6ba64c0520828874ce2a61e6815f26f10a5e",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "e2afb6de962c66a94105a2156a69b03f71cb18784a0e74c1f864bfb438587744",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "853181b78e535c65d0edb906f3ae54ac078f7b925377470eb0fea21f91935690",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "c427250fcbeaeb7a220c1425deb97bc05d9f84c91b4caba82d3fca65d07aaedb",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "a9e67ccc3e5fb4478ffbf29da4f1c04db3509b0c728a140a3e546fbedaadc454",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "500c976823621fcaa77f4bb9d8fe4c64412d5ff03c3a67b209fcb88eaf6affac",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "38743443ba3cd1237088c0e344ed974fdb75d1a75edeade46a5179b61f06df14",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "9bd162dae4bafc5d93d7602e39477d4d2d964eea3de56da01f4a5fff9f1b01d4",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "e1c167a69c9fcd37c5bcbb1698062c6ab5d040ae714ec625db1fb03ce826ccbb",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "f55127f63a66d225e474d790f79808f4e9af5effa66b0a329360decfc1ee774a",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "b08f41047050fb059f8d767ec7aeccf00a59389b7a2f273245bb9443ea901896",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "d8802f5023525bda04edb072ab030b372c49df4f873ab1930f14289458a4ea76",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "bc1e7a31744d8243b5fea341969173355d3c37183d39f9953355ec1b36d232f4",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "a215649b184dbaf010b9c9ad0c5bb3c20f9461e3a5fbc6f5d8170168611f2c46",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "01bac7ad99675e6df1b0bb3a2b4d4e1fc4029cb05e42fdbbb6b518c1088385e1",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "b9ba11cd772a29ac2f0000e4c5e0bf58138b1e6129340181a9dc526060243bde",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "cccfc4bd38d82729003f0830bea116d91371d6d7950fc0450e18ac3854333b9b",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "8caf58c32ab44ed26b39160367e60d5b54b879cbb11ffc19fe4a7bd9c1644d43",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "7758d39197d84b75ad572b5a510ae95a01002b82e17bd526d309366e482ef5da",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "1493dbfd184c673a892f339ec643532a65f66975d4dcb975dc90c4d4b0d094e0",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "ad41134daeac3b7d1041136449da8ef558d3b35b95be2500bc0484216f50f1bc",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "dee2b2d85ddbe0b24bf4526141e66a8de0eee4f938d011c709026e0c81f4e4d9",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "ee6cddcba0ab626e5c4b3dec0fd5d64450defc0a9ed7bfeeff3ffd35c825bfb8",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "68f2445754fac7a30695753bbddf057391b7b42164ee20fd73062ace8206b5be",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "a80a10aa7d3343201cb96d8e419fd721cc50b8015d9c7e8915f0fff0987ecf8c",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "9c63beb0e90a1184b624932ff682d2dae4a615579fef5574b5ae58979bf6c89d",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "ecd30710aa559a0554a89b1d5d8926b0b71fef37db1ab1d954e421a014c05a6c",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "65f05b823fc221083c994a1c24db192bce0eab8029a68b67d3aed6a59167f4e6",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "77dd5dcb0a514549464529e83d3f7e80e6756c9b838ccf660d462e78b0777de9",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "77745e2bf1ebf768a0f2f119ef28f77396dc70f27a6e8829167d6fffb60e39ac",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "251c6476bcb92fe04435edb7b4c3a8716f2510e91b2162c10c785fbe5228ad43",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "a537d99fba66fc2e1235e7d0b79c5f344a97c764dd1e384cde5b1625d2aea205",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "ea38b943c4e76cde50d0aa36485904ffd5c4a587bb11fb29fde62e4427b82e3b",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "2ff9315457a5c4094d00aa3ce783a0bd7919ee8e74d3c265f1c6e189cb0e94e3",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "a268c615f72de08b124bd76ee8ab2c5e5dc3fe17810fbff29eb7c6907c38fb48",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "4c46c3ee91711bcf857ef4befcca9ab91059890eb58cbf2a8f6f084e0b62d913",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "e89a76391594cc942494d06abfe431f993a0bf9cb481de696fac76dcb8afc78b",
+    "lastmod": "2026-11-22"
+  },
+  "/fr/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "54311b23b5752126ff1b4abdeef981bb990d817f228996f7d6667d81cca68126",
+    "lastmod": "2026-11-22"
+  },
   "/de/": {
-    "hash": "06158340d5362664936ce29fd0388a2e6213cffba7ad678d4699e1aa5010cae0",
+    "hash": "d9425a2ca44c032ca8aec00dd22704d8cf765509187312e0f0ed3ce1a52173c2",
     "lastmod": "2026-11-22"
   },
   "/de/privacy/": {
@@ -7768,7 +8456,7 @@
     "lastmod": "2026-11-22"
   },
   "/de/downloads/": {
-    "hash": "e54690a55faeb16e6d858bf4bdaae00fce6e63d636b50aef92ffdf384a9bd71b",
+    "hash": "63354b55d6719eacc7f1b49e61dff7de0eb572a347b8ab43a21554d0c6283c80",
     "lastmod": "2026-11-22"
   },
   "/de/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -9683,8 +10371,180 @@
     "hash": "cea236b1d5e7b5a19da6dc31bfe83d1bceca1e1db63de70e434e001ce2d22137",
     "lastmod": "2026-11-22"
   },
+  "/de/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "421cd3009ef1cfec7c8018fb189616cae05ba7c83c506b0742611ea6343e4a2d",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "cb6ba34dda6e7b601987e3c392af226a44b1f862ec4a9845e04225c05bbfc424",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "659bf03ce42c91951ea1ac22779ca1b47efdcd60bbc9365745ae433b5193b3dc",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "fbaf54c7abe7dd633341dd9d8a26499ef398d65aef93cca0dbf6595bbb95b77a",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "5c25bddd4df51935ec090fa53857b95507b3b8d57a9604eeaf801eadf5511e52",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "83a73946aa8532cd0fabd985f0e7b918344de793b84094f6cb29534b4b724cb6",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "a87b794ed087c2a03da0fa92d5fcaa5ee116270d1bf5d869f9f8e1b86c1eccff",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "9c5d88bcf256a7815dce2a043862a62119584336d1a1b5badbafc1a7d63c4a83",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "974518b1166b1941225e8e4fee878056c62c1a9340d0b20feea42aeafbea8dc6",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "a9aa3650f1396d8be1d84a274b1ea165582206c0884ea3e20be2402e9783602c",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "352b0d1015dc19fa57626b6b91f17d32dd24cd267c129f42bc09db8551356b1d",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "50b4616725ae10cfaf55d5c23e327725f7ff0039f6e49d8c43524d4de9d5404b",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "804af671cddc408777aa1f75bd8240ab84a0fb7772fd1daf20b0e5f3d641f362",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "d8647fdc053e0894ae81a2a834627fad4aadca61df561eac2f9da77a4adcfcd0",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "8759f18772dcfcb09ea65e5dbfb86988ecc7cfbdeea0a064402cee5afe3ca4aa",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "84534c074be4abebacdbaf82df3df7e8b0f75b40e7b4fbe104cefee8d3119016",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "c7e1e0304fd524df988965cba6e40889961a7dbf5872347131a0bb381e3c3d09",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "d804011dfb2c1723f008750ff9fc4e621241f1641bfac17b57a336622a2e24f6",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "bb09cae2afae50bc7ab46271d9bc65f59ea4c730514f507e3c3b27e0806eb9e8",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "e988b79f35d1e38e408ad65b28f42b7d5c94139b5eadaf3ef1bc6b2440e8d828",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "24acb66206b963f330cedcf5bfb48c653e9a21beec505ec6d810c2bdacae6978",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "d876047ffcd78125e2400c2bda27c92019df96ed689f1dab7d6e7ad4d951da03",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "131db5e5217e541e923ee5ee9ae2aaab49f2fa03c9dcef199adb93c47371399d",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "d89d99b37f07e4b04606a08f52279624730154537dea5120c9197f80ad7f163f",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "00b6a29cb15b86b6acce9c2f0e645affcea9007caa250f8140692c8be86341c2",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "bf3c71bd7b24ac343b04bbef9d082a5f639e746b12121610c3e54b79f8324ac9",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "c8f713ee74c70e3d212d71514c0843682b39e10745f900defffabfad7b9a619f",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "4e1d987928ba020a900d7905051feb42d2a965e8bc2d42449dd09daa40ab83d8",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "b736a30c9a66204e12c4eb6a5e5db3effbe1539e364753ba4f01dde252a33660",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "42c6abfd3c14e743e09bfbeae5b9c1b1262244ccbc61837c361685a16bca4c56",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "dee1b7262ead55ef4b0141b6c14ad689f3848df614217898ad0c3ead27de0445",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "e9f90525a6661464ffdbb1a48c9e5295bbbbca195d716a20fcf3e1d336cb4a5b",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "2ebcdab377f5a9c052acff8113983bf8c0569a2dc67334523ce7573d7cbb02f1",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "13582449381762d2e71612dd94ba1b76141f407c979a1c0d5b4c03b38a8495ab",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "3c99c518d4a1a08ccbf9a391dff1cef70b923ec18e240e566bde5a45290a4433",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "db54331db5a0c5179a98d60b03629eac3c7f506a2622432e8550ada3ee99979e",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "3b705a1663e8fb17261eab275f908f0d1ebd7129e5053cd23dfef03d8b8c2ae1",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "cec314a69f14edff6f26524187c05ed10c7c23b7b9dcc42e7c5fae5cd16e9ee9",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "88c95ae38a56a8a204d96ec0003a038fb4eae01a5699122abcf4d8b8341f0ded",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "edd442a147087c3a2e7cf0ec12ed6d953b64767f960d8a1bb2a1ba6b5bca129a",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "a48fdf2695958c891386c3d9d25cc5c3b5e02216d1df92bccdf4637c1ab2cd0b",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "0445c1d1f562a9ffaaf8aa55fab0a0b8bb5af5cf191fe963d0a8d866a326bcdb",
+    "lastmod": "2026-11-22"
+  },
+  "/de/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "5b08e27270335220931722c63c74552f0a04b1b699e054b5e003ea50515eeeac",
+    "lastmod": "2026-11-22"
+  },
   "/ru/": {
-    "hash": "140c23aeda73a95e30b0a2e4b28e906568d716e04f40e6c66521a9cc933c6576",
+    "hash": "3db66d586a16fde8e0d194d3fce49272976c000d6bed3dd5d36e7c01cfae2baf",
     "lastmod": "2026-11-22"
   },
   "/ru/privacy/": {
@@ -9704,7 +10564,7 @@
     "lastmod": "2026-11-22"
   },
   "/ru/downloads/": {
-    "hash": "de09680f323c9078cb76acc28e27cae14d5c495005c0bb99fab2b6cfb6d22207",
+    "hash": "ef1f5bec3a8d9b8f8297718452dfa35a64a892ad8ae6ca06aa5911b7c8a33c29",
     "lastmod": "2026-11-22"
   },
   "/ru/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -11619,8 +12479,180 @@
     "hash": "f2fc97804d4bbe412acae6c8fe0a251dd424dd1de3ede92525dffe186885d7c1",
     "lastmod": "2026-11-22"
   },
+  "/ru/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "cffde10be7a07c9a69c3ef958474b6cafa8f1bd2bd92cf1560056725d499a770",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "5a32c2791145fbc0ffb36a37bff3d8ebb8438348b6b1f2931f89c83376f2ea44",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "008a85e4347f84834c4a67a7a00adcc53fb6ddbc9a051d17b4caa1c57be9b9cf",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "f043116243fd39f07213b9b53038e4fa4b0fc9b297375f483b88eed41c1c112d",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "d6c7ba20bfcb1a7a9a4edf3fe7de8780f5807e7551f728d67a7e5eee513d67c6",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "38ae9fc4f9e51705243d60a6589b0d7676776afd9d6dd6524f8fa9dd0dbde3e4",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "08d697cce5db4622ce7cfc90ed3bc709e297546a340eff33edfdd82b5b449e20",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "d7057296992d60e40f2db25a3be8e0317af2b570905d9f1d890559fda1d21480",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "24e6e92fceba50bb2a262e0dfc784de768211fbd40249cfce9910e441e9fdc41",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "49813aadcee5c081c9607b497136d5fc315b5030399bd613413a69388ed28beb",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "60ec9cc83bf3771e97838c5e9241f92114dd66a254389eb2b5e9cd0c3e1e3e0b",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "f7791d97377776776fe43740f0121f2931bcf021ad982ee61684263d8983ade0",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "5b2a805e5b9b047c74901e7c92ee6dd33e56f10c74230b10a42e72f45e379a8c",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "49bf42d8c23312892d649104a39bf0c4c06a183895c07ce9cd3b76523c1c30c1",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "d5399be4425e46a90290eec7746a19ed482b71f768e57946812bc776d62f86d2",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "cfb2a2fea3377e7a7dd50f950690d2c01875dad9ccec4ef1c786c0a5d4b7e43a",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "66f1bf1f80fd74385ba0bbeb735e24a3863dfadcabb04a5d1936bb16e8d3ad1c",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "9134e7bbf52eda3984e5d4fd0628d3d2c8362f890e19b77aa850a188cb40b6c2",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "208b4445ba4fdcc256d8dfba2bb4df212981d6e46338748dab7fe4acb606b60c",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "6d4e50ffe1e77b0baeb73b0c6483c4c9ae4b49087042957a634ffcaa1e0b311b",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "8a45e35a4667f678847fc8093cf984d22d65c1f07da29f48adcbcedc233b21d3",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "4c2d22bcdf8c4624f229fb42396bacf9e72b34ca25c32db602f151269993fcf8",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "0ff23799e99296cbce85a643314323ca9056cda29c869ab2da576b918ffedfc8",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "10e54e26d0cbc789565f0af52dac6d267b952ef87a9c35cd0a45cef11812959c",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "6ea2d581b8df93513dd15f20624f52705f27e34b79b3e2aeccf8b513bc8ac44d",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "6d82c56d4180564a7ffa4a8c155f09eb5ca3344cb27c0fdeb216cfada3a76f3b",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "663f5bcb2ca47d82936ab97012163d5869389822072b747c865cbddb25329007",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "ef2dbfe128a5e8230e91ab4e5fac321d704f1f37e820bd07d004d68d224b6b72",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "1090a74e9cb495775122a005f83d4e0bea149042189901d99d0474f2d2b94b46",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "ffe367a3733e2cf6d3bfd7359d734ec42e9379dfe321b79ab800d8ad0c0e80b3",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "6e674888f7660ebe415642f0d65e79af6088e6369283829ab4b9ad1c96c04c08",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "2bcae8afb2b7a546dab644cb71acbdadc8a4fa7fa1cd7c6b24760a749484b53e",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "4bf2d00432c2f0fc93db8a8df907873166f412c9fc6f7e6fb3c2eeb548acf12b",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "018240c72b316702e0997b995eb8c0a879355c8c544b10ad4858123d5f26722f",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "5bd6e9746e864f1864504a3b4946cabc4db92331058b882b5f8e9aab939a112d",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "80a237b5c10162c15966697a4b2cc63b2e16bbad720a667302359420633fb36d",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "68aa4999d6fb1d9b06bb6b9756a8957737e19cca79d1d58708fd35cef0a98a52",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "4612872c914c3821f6c8e3d8be7579ffe7bf0e66c8aad59eb5dbbf50a7b81296",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "ce01165218f293573af581c17eb12995733d8dbbd049b0dc6aa211340c2d893f",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "6a9fc9d95035239c5aef4d4b4366ca943be7c3c068c4bb3b8ff6970c8468494c",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "7b4943de465c42c1cd24683febf167355ec56386d4d64dfd3f2b07aea322a8f4",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "2ded682d67f6f0e55d70a260d38123b8748cbea8f54227dd4ce5a88b51806be2",
+    "lastmod": "2026-11-22"
+  },
+  "/ru/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "5e6f43a599c38c5f0cf377b6c6ffdb02344e2299081893f7faf51310ea91eeb0",
+    "lastmod": "2026-11-22"
+  },
   "/ar/": {
-    "hash": "94808e68c320030d8da32e3258ca12ae48a3ff6e85de740d1cf3d69d297f0190",
+    "hash": "1a5e81cfc5f31e20a0abb56aa63e99cd34b6d586a8a7a9ac40cfcd73fb20ebbf",
     "lastmod": "2026-11-22"
   },
   "/ar/privacy/": {
@@ -11640,7 +12672,7 @@
     "lastmod": "2026-11-22"
   },
   "/ar/downloads/": {
-    "hash": "bb33fc7d31ef7bdb7eedddd263b4ec2942719d44cce196801f2c994541232c09",
+    "hash": "a903c9d8d8a0a759cd7d7b4f15031ae921f2370519c0a2a7479cc0a79a586f43",
     "lastmod": "2026-11-22"
   },
   "/ar/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -13555,8 +14587,180 @@
     "hash": "41ab194644eeea1f86f3d9255249cdd73754e136dd50f93816903f1d8a766b18",
     "lastmod": "2026-11-22"
   },
+  "/ar/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "b739fe0faa20c3d39d038725f087992e0e11a5cee174fe2604929a45806c120c",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "8becc9bd1f580e8326fda249c8f323029ab1ff4066de337693c5ee10df00cf47",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "9e8b785063fe641c5e713477d3a4c0d5bd69a71080a4ef031202ce367e18f87c",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "9b89a73613ef40630428b6919cb97ffe8645dd352e50bb01cfa0ef458f8b8a73",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "06c3a70ae47947708fd1f458eb7a875f9e549d03968595b97698c8ca6adbd7fa",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "b9abf5e93469b6b78b869349cc1e558f1292e588d63be292c838545036f8a99a",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "1c303dcdb73d7e65cba2006a1723c1e43056dbf75e08903c758fd4db91ca86b1",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "5ef622fd33f35f5edb9607e1b3de62c0d6e5c7e9aae2855ff653b84fe062d2ba",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "da1e713d4e072fa7e70a0f80955f25eccc45ccb22b28fc92266f44e1c5cbc836",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "e42f4ce942e0653adc9ed7f9396978d1da2a3e3411bb87b9cad0394ad7d4c85e",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "2efb22a49e95e51d908e0d08e48dcf48cd0828e18c5a360e0d7c5f49e6e84b99",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "ed5958d6f3f5bfc57fe980860bb23a3a93017e06d1de593f99a8861723a02c9c",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "e2d7f398fe89835a86f74209d2178e52405cc54d3aacc1c00f22b7c85631c024",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "ef9dc0c742640dc9a918e20e2dca4aa8f921449083f01ac900d040ef95dacdef",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "d98d3b19399c50662d66fd65cda29f4206277a483557c07bb8850926316e0ea7",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "b9ba00f2b14f3d912e500c67799a54555d0e6cfe0faa172534f554e5bfda31e9",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "539959dbc196a86e5a01bd70fcba6f9e73b4c95db10b8b33a3627a5c9326d2c7",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "2235fada28665770d7c390bb0c2205dc648fb6c6f669cca058397d100eddccf8",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "ff97d64f72d104663d4d3f1cf069c06261196ace497ee1eb8fed9b3da762c469",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "f5058501de36a6eadea3c45999a6897f858b88821d731c2e5322d68887fc3b26",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "dc3f19d9d3848995aabbe3915c8f0613832ea045e7c9a6e960695a6227db9bd2",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "6e8bcf9d55a7976169fdc537e7e97877e32867036a0e2dacfbd71c4ff76260c9",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "290f4cd9e26e28ca51ab39166dec9ae3879c86dee4e780bd094c2218f211893e",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "516700de64253ca81922144848997984f0353f1094f4ca8555332e8bdcf1bb39",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "022046070ad99b4cd8ae85c349d584d090131cf46c01eccc37d478d6d85707ac",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "bfc29e5e03777e2620b4bad7d9fd371b5eab9d9d4b5e0782d43e3622bdaf4215",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "b802ed80ebd9ad68bf02071378249ce634227a16bbec68719dd7d9fe457707b0",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "8e27f07b8b5017f315bb246ade97830dd7bc368c09e0b3575d51e4a9050ac714",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "d1117b095427adae1c4c4f7550f7afc64f78fd944538b7cb8f34499d44e73302",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "4da705a590708ff0d8c9d8854b236d79d8805ae71278dd5027e4af3147ea24b5",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "ee58d25e06fb2e209274062bc81de74314641e3bc94bcdaf0e99db31206c3a34",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "d781b2d184c0b081bcbe5eaa6ab020d19e9bbb7f14167f77ede4cb9cf14d7c90",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "98d9e46548c67b58883691e847e6b83c738e3647308c04e0ec87e40200a092b7",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "98141b6b977ffd006b9c04a938614441203b6c655b23ab8d67b16f77841eeda4",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "4ef4a9bac1569b753e7825dac7f291eda921cffb44167aaae78deda382314d88",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "65a3deba42c2d046f961e56057924b90846d0650a0414374bad9a5629618ae9a",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "a7625d7d1bfe19c5bdb665dd873fe11bfa8a63c18a14cd66f99aba88f12f1e94",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "cfe2ecf9a411f88b914c0c32afb4d8daef07bc93c1c8ddff9ca8556c2b549a80",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "b53c46cef0303dd22b01db5b9be778970fac5409122e56734baaad7e5ac0f010",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "10326af27e9515f4badc1973ede16e5844d703962f30d4c649eb5df58c89ee13",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "61fcc21604ab49e9aa547f53a735f0ad09c08d0bc24470ac2c5ce45f4417bf27",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "182157f1ba69e1e98347a11da8ae4c6e6accc9eafff4546390e1c1798506a613",
+    "lastmod": "2026-11-22"
+  },
+  "/ar/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "69a0880883364d7cb6c183ce84539b45a69ecfc82bbebb0530ac116073e869be",
+    "lastmod": "2026-11-22"
+  },
   "/nl/": {
-    "hash": "062de02533da1cf798d1ab2df7dcd766979cdd9451433b70a01c59cf717159d8",
+    "hash": "02eedc3afdde5fe56df186852aaace57db0b1802629a22bcdba368bb3a1e8b07",
     "lastmod": "2026-11-22"
   },
   "/nl/privacy/": {
@@ -13576,7 +14780,7 @@
     "lastmod": "2026-11-22"
   },
   "/nl/downloads/": {
-    "hash": "dafa1e838c8c88170dcd12d963a55e9cd4d3233c62de64b25ec4cea7bdd68208",
+    "hash": "4b754053f0202627a19c3588a63ce8c17c56581d2e6dfb5474e531f36b15b529",
     "lastmod": "2026-11-22"
   },
   "/nl/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -15491,8 +16695,180 @@
     "hash": "bf22e0719e86df94297cdd450d8fdd75448ef2ec2ca64b97ed78d0b212fa955e",
     "lastmod": "2026-11-22"
   },
+  "/nl/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "0b65d518d6f7fd4e1b2a2e368eef052852b7db834be76c0ceda54b199be86021",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "8158e04d4d0ef209ac0a4569808b233a52b078a795d91ea850ad6cfcad21c346",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "c2553302d649f30070d70d999a949194cb30b39dc4203ca93ceafdaeb0a18506",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "c562b29057c605827d5fc7470694459d23f0488c91ca0c100498f07f8deadd6d",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "a7517a14591c16af33b38afeba8ddc0a282f2aaa4d24741d34318e208c32bac6",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "fb7724d25e2258dde3d20afd671877c658fc7d6a5ed54337114bd833102efc4c",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "194200d827aa39d71cb63bdd04370b767fa300e4031fc99354e454cb0881e930",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "f791e36b52b35bd64864251e24776c3e5aa9118abde39c3642eb9bd5513e55f0",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "1b606516e218301d77c55c0b0df550a9c26140df49d46e71477b989384132c05",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "ee1cdcb911d4335135a342bd2edfbc65f42ac441329cd4241c9c2f3dd13b07a3",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "ec8bdfe6fb0dc4fb40bb12b9907e341188f161857f884c242b205f96ac570bdf",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "9eae4f7745901bca994dcf3f74b778b511ce60d4fcf751a99ec991abac5f8755",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "0d6342ea6f11d5de45bc2efc3aecce2eb7605a6c2cd959f54c6167c2be5c2da1",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "5b2dd7eea70a0a8f76b4fe9120f3689ecb860e1fa0f17ea0bbc9f2c3ab1f7e9e",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "60a2ce45ea98ac1fa0750e2bf6dd930fecaa236f94946531888d676b740c2915",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "2ed670bf6898a30a8c22923b0127e1f3d36aac8a110771a3ae43dea5d003fe22",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "08965ede7b4066a4e1d4ed5932f092f48d6c70124f252a8a18cc1c595b36ae44",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "8ab21bc9cf40a1554cb71fa75dff50a5070f4f9e63d97ef756ac92a83e6c1dc6",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "3c17d19166e7301cab506adabb74a4d9c6947023a9a70369633449581dbe7950",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "fca4bd86751833aaf8a41c4fd17dce431cc543c0bedce58ac12040bf7122086d",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "d0f2ab3653e79dc168bb737deb084b9dfcbb00d00f9da589c3b03f7d0aeda999",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "8402eca4b87608b9f30abf93d93495d061ee198c832a9c75c0bd3a59065b8154",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "4f3ad54f563e16a2de4c46f430e4227549fe59787dac24084a4cb1066207d376",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "350b25d053f55340c2b2a059d9ac9b188997d2f27af37c72fbf9e51fed71defb",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "7291c4c610fa2e3ac18ce410c9e5a87c2dceb4f2b94e2d43d14232306479ebd3",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "682adaeba0eb205609d26dfeb81ed45b85022597e77d2b10c01e11b9c87ee285",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "19365f121c6f6d96a4ef402675c98bdb518dad4415cbbeb7ca296782f03fc61c",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "91710aef9aee0c2477ec76f25efd19c0f55da0a78956bd96f57fb4a1a32805aa",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "e8e400054fb09c507ade44ad58ad83a59c4de23c00a110355fc01e40dd0afb84",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "90574b93a955f0c2ec29486b5d372a93012d5b08a71d4d9cb16d7ad644cb9e0e",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "1ea37604f95aefdc126d5ab43c34fb3264f91c2a57a440f59f0c072ccae087e2",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "ae560ebd4394e1169f589c5661cdbe608f59e51263520fae823d928e95fca5ed",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "81f319924f8868aced7394c5f866d3f9ea915b9b5da59c56237ff3bd89ff5a61",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "433535fbe16623d9280d4a7d3b7558dc06a3606d44bcd14e33dc6f4a84c6863b",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "f169ec1e8fcc6c7ce10ac3a6e07969b58c7fa3dd403fc22e4c3fd138a5977783",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "215382b96ca0aebfda2aaad37c3b891199069a5e3fb1abe77e0a1e9181a4bd84",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "4566a5203c173b0f7cce164566bf33633e796bccab88b15cf967551aced1a4e8",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "2134117cc4e8e76f8db552f7de4cbb5b7f3ae9a0e465842ace2eeb3b9109a1e8",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "a002e19146ef587d82917361f9570700b70ddd361af2a71fb8d1207ae1f1a521",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "67542f5bc57201ed322425f09803ddef49d85cf4a108c44c48400594eabb2f33",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "6e5f67223804e9bd6540d3c7650242c10cbad2c011964a03bb69128b2f18e731",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "1e75ea57bdb0d0be8c930e68fc1e250ddb0e20e8a324c8a439cdc2cca9594c13",
+    "lastmod": "2026-11-22"
+  },
+  "/nl/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "1a1f8dbc3fa5da30c26498e4c2914237ca0e905a1290533b3012d57c703c9cbc",
+    "lastmod": "2026-11-22"
+  },
   "/pl/": {
-    "hash": "94f20e7ae7fa23ad314820eb40d83bb261d38b4699a0eda38246b4234be9f0e4",
+    "hash": "6d8a4d8535a549706e971645655fda1d8ff48de1529e6de86b4784c0e1cbcb0c",
     "lastmod": "2026-11-22"
   },
   "/pl/privacy/": {
@@ -15512,7 +16888,7 @@
     "lastmod": "2026-11-22"
   },
   "/pl/downloads/": {
-    "hash": "02079230285989413b03164e4ca037e728356956e7bbfce46a2bd011da75a0e2",
+    "hash": "43174960858a032b6e0c423ac9cf6d38003b22ea99147074bbc15182019c2889",
     "lastmod": "2026-11-22"
   },
   "/pl/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -17427,8 +18803,180 @@
     "hash": "512667fdc35d7dabb3c85ff03368da00f656e1e4c127ef014a9698b77c96a07c",
     "lastmod": "2026-11-22"
   },
+  "/pl/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "31b0099ea2310d9ca4cdb52444a778f29a4637cc45015743d43b66a5db2415f0",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "ed502369a7492e25b56ba32d56c8053e84481ed79ecbb76c71b82cb06a4c2323",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "411a2a785798dfa10e4f4a94d57198ab1f52b67852f5ec94f322219bb765a4bf",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "6d2bb0450f0801ac3beb0848d76002e94300c198055bf132e831051b9b4bd79e",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "9d4fbcddfaed9869c60a51b3268e7231daccd04ef4ea0943ef154cbf7b12affc",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "ff3190d5b3d1e6ee5e39dc44acaa64994bf24c916a08bdb89f9d4662f81d025b",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "18cc88c1c0dfdf2c24c552e3d9c97150fd380d659ada2f090c427dd690a718db",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "61f8d7ce7c16b6c9a740b89707726729b52f4e6ab7db600c57205607ffd50a38",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "c61becdd1fe953563053344fb37d92a072d5a53741bb35744b30aa041c0a536f",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "3d1dad288c6a039071884c4a09215f4b749598b18241efbcaa2dadb3e9a4f689",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "9703cfb87a7cd25e8a66eaad7e0db33c951916bcb3d0269e00967c747f29fd36",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "fabbbdce8cc8f7d4b320197524d02753b45b77cd70f4a7558a0ae0e68eb81f3b",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "cbcf9f0d8012a0eb654815605aa9e08a2777dfc102b87ab5f8d9a393b0856e17",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "fdc991ae17653af849a71d88b30187fa0eb71b9569bf4914de92259541c6aa53",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "fbd36a531eb9d61626ed4948761e93ba5dadf32cdeb0a25267e228218c32bf96",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "b1d3f8a2e7847b0de684db8e2b04366f7c20ac6645a4ee6270ffa50c94cbf1db",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "d40cd896ceb634901318d6672735637decacb93bbefe525902c97002bab99575",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "9eee408b47ca5dceff73c2d28bef91aebb97b1ef2f4e55b27c4e21506a62c0da",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "1a32344c5a8d424b260fa60c8a88f0471e38fc86b96f6806eeb23e42450cc3e9",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "92c360f188d328aebfd6965a2b2dd49f7af01f18d675259511cc11c53495ee16",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "4ba0a3dd4cb4f88d9244a6708a03161ff28cb8e3bb52f1a0c672ea15d223c171",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "4e79f66483d5397e76868166aaa795e696ebd7f0377bc75e6273fb9c3298351a",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "89dfc8fde831314ae6cd8fd4ef86fd7e025f2495a04148387bb2d0d9758387aa",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "5d846dd9415ca9c3a5de938e5d07714ed89b7cc2dc416b1787cbfb633d6f423a",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "0b169b0b2792490d59db86500e6137519eeb13fdc6ff970ddf5ace0b7f86a472",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "3cb880b3fb37f38e61fd04e20ca61d2488c5272c65d57b1858f2e5b311b5adb9",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "801879d17462663f04a21070dd91dfa4e12c7f261852d7fb2544257c5bfdb217",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "641da431299d54c6c5eccc58f12bf4e9deb03a6e3a7ce42d60df78e164c2fda0",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "eb5b4d955ddcb3dec04c90a412b15e6445c6e4b3657502f9994fe2d4928d7977",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "f4f6f5ff9b0025f3e16c8cf842e7da5393a81de57992b71a8e22a366400108a7",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "24f72ff3f60bdf5fc6535f3edd7984fdc5af975168a3269d6caf6910d253c1d3",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "57151fb95d3681436b71eb466ed6554b776872164c83e415e1b5d67d7bd75f1c",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "ae8789aef6b049d9098dc9c78e4018419f17562d883c7b62d999ea0831b26813",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "acfe8b6e9cb680e81e7287c70974dcf4e4952f2cb406cf9ba037768acd45aa4e",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "d2965d541b597670755eff9b1f2cb5fd1626c945329af2307948cbc55b499cb8",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "efaa24ad2a2aa96f1495f11952e6872f569b054847091655b08ccab2e4d67983",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "23e6caee253198b2a34746be3700475ca64ed08fd69d364ac7efbec4a6f8999c",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "c4ba7f2b1352f59d5dbab901c4a29837761e90457615ebfcb4ce8bf7c67dfd25",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "817a7f71803c57a9931acd9344098a14bf71b8e4ff884226cac5d31409416049",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "626c028a31aab72ad1e1fcb12f5d21d1c6752c0cc1e229291b8ed046ed3349dc",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "617e689a90f868dbfc681564e3cce286cde1a7ae4187c5aa07e3e7f6be477355",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "8f98156b561b2c3f5e3c85cee35863643e6b491c7a50906e00a1042a8ec06e51",
+    "lastmod": "2026-11-22"
+  },
+  "/pl/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "921f2d131c18ce8dce1ff009836efff455bd88092943edca99a75cf98a107444",
+    "lastmod": "2026-11-22"
+  },
   "/ja/": {
-    "hash": "68efc21717245ba3d0599fcf609bffd87a434524c4b981e4b47dbd4d10826039",
+    "hash": "09005170b7ca3c65c02501eca1bdf6c8bbfabf7a6dbc9654d5d1260f7e9809f3",
     "lastmod": "2026-11-22"
   },
   "/ja/privacy/": {
@@ -17448,7 +18996,7 @@
     "lastmod": "2026-11-22"
   },
   "/ja/downloads/": {
-    "hash": "c7c74b82a7428e9d1885d88b94103cb0a36ea3cadbb10fc6c1a0dad7e66741b8",
+    "hash": "d639b8aa8359bb1a5cfd80afa69940e01c95f131c3f3d1fee00c763726c92a04",
     "lastmod": "2026-11-22"
   },
   "/ja/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -19363,8 +20911,180 @@
     "hash": "1697e0707b77ce673c1f0c25ea08762f8f15efdb09cf75a701b7a5587cde1694",
     "lastmod": "2026-11-22"
   },
+  "/ja/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "104f5d685b7d9df4e89d228ac259e18ea8296260ce0a9b2377f56a83adbb0928",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "b0143700274d0dfc82304f2b17b4b7990bcf3f333b849023daf1c80b545f28bc",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "a5fc974c1892dfcb2daae53ac25aab1426bc4201e401dd4c0fb3f156a1ded8a6",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "7b8e0fea95358d73978bd4f13274d74701f262d5f17530d2734863e9427fa994",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "037b651f59d441d2e943b5ab1a54973cc554e0f5aef86c327aa7583ce08c0137",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "cd5c75f43c4390bcc06a30a0a6848dac459c8326142b1ed420b55f688e75a7f4",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "6b5458fe79cbe33dce7f498594caa7c379212d874a927eb6e26933a6f51018bd",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "09c9d1d95a2b7c83a06d60f2944378061fb10e6f706b6f8cc0dc5a880c56a95c",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "08bdcc01255202052e696139e7f110d2050508de4c36b331e9f0a88b8806f439",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "b3aab41fbee9a46244e50f704724da522fad67b15cbf7a0d6ce58b1ef9e47c3a",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "81fd04b9b42fcc866035b56f0088c61ed40d1b50547205781bc604527f93da87",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "11c6528c79e456f1bc7ca41896e950c75efd28e4764e133a4fb8477cbe23c793",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "ea864fa17de06fcd6e4746ad2815cdf427bd580e971b6fda875c07b648a3dfee",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "d42fbdd3f5a0ab58dbdc9c45974f6cac76004db463a3969c195638fc928cb17c",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "302d6cc0b2074935491042dcc79d298b5f7b34757a374b31c3aa23164bd65726",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "ad0b411ede8ec2cb11d0d122c47a2cebfc289bc7833c265c7180d5c444b5832d",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "b72ddcb0ef388b4e4f01a90794e2e456fb1f296c66edbe99099d9c15d22e094a",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "15a16db13a2725abed9b2a3b16f07d2c422e7f8c3e0aa2098fc5b3a7a7ea4ac2",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "17edf052045169502307f1ac7b1a27315af8a014ed71b6d5be62505ca26bba69",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "80112680e753ecb02b0da4dcb1fc3a5f64bc056907e84d2a2dd3745cd14e792b",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "97ac9ff0d0c9f37f95a527dd7d7f4daba3d129b51fdc6a0ea25f54916877398d",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "cb99457f75b2df22272a75345cf3edef78097c28b3d9b5dbc43f99aea4a46098",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "b745130ff2cdcd00356a9f66a243b0d9036ce2700066b42a807f6b4f3b7871c9",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "a6aef5527eb57a315170754ebbf8cd7650d9f1efd03d77635a2c3cc0deb3b0fd",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "28a4b2f38ee87527f3d6f9ef6b52fa5deaffee8749e7523730a229ed4f045b21",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "459cc09f42135ac162521c0382bbc62d2f3d59c0c6404c4bfa70caea3412f847",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "f195f06ed22050a388eaee277dd09ca069e3bd140ab2cac4f1d7e7474c835fd5",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "0800a136e77392a1137645958f58dee412532201b7b9ccc43a150011dd4de13a",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "af13a1d1a51f7e146b8a967df0603816a83f774fd3a43fa9e573b534fd3ba2ba",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "4b344cf20443057a2ff108e8e04d98ea2939dd9e03f674b37d9c965be45e25f2",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "0e422b575312f97bef28d5d4b7c4b0a8eda67fc724951536109cc1e8e7a9df8d",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "b292f2755490ef798895e394937dc2247f998160e0e755a940510b2e90576c14",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "7b8d9a8ebdfc7dcbd8142a7590aa8a85651d02dbd87d82ece5bff54b4199d067",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "c088d053dcef749f9920d84938169d758161630e94bb483730aa3d46892d2d89",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "10c1a158386514aae060b8be7334d8b2f7f850e503b439859671b316a259fb60",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "bb894d3ce7fd1f4461fb1eca1c81d3c5b5cdbb289695b3b794489ec4d92d9174",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "41182f49921845b46597297f1910bcbca00778ac14cd828e1c59f0bfd9839221",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "886e7d1c88e9e318a0c55a155330075d7c7c5d8d1c14474f43c0c2bc71b74111",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "af175a5ea07fde45b42be7b722da2ad9460d2728c6b99dba080899120a915abb",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "4eb6c3f3211cb586f03e08574eb4a4e3686e4d09a269c990f4ca621d9ee5474a",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "2f5d4b7b453fd8e3e2b5f4c53b655be6b352303cfda848d8b5a762978146c13b",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "3d12e91237f6d72b2ed06918a8317fa624a4321d0a4696ef2ecb82998e6889ee",
+    "lastmod": "2026-11-22"
+  },
+  "/ja/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "860b2030484bdaac308555417a9156112bdc6677a99a27ee70113ee7742c80dd",
+    "lastmod": "2026-11-22"
+  },
   "/ko/": {
-    "hash": "5132f3b9503e423b310855ff9c02058e9234af21e2c4496391fd74ac3db5a050",
+    "hash": "1776efffa909ac4f240d680efc38c2373d5e9b13e87b956eabd27b2563551da1",
     "lastmod": "2026-11-22"
   },
   "/ko/privacy/": {
@@ -19384,7 +21104,7 @@
     "lastmod": "2026-11-22"
   },
   "/ko/downloads/": {
-    "hash": "39be6d56148145d2e235d51b307e9457a94233a389ead8e0fc14c23d1b4d4ea2",
+    "hash": "0dd349b3fe1266b0f6941efb9eb359cc597576a1e70fbfc88b862e272c8dad39",
     "lastmod": "2026-11-22"
   },
   "/ko/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -21299,8 +23019,180 @@
     "hash": "a477fd16276b4cfcaa5798d92b59b507eab7a1d051f4613431c9ef578dca1812",
     "lastmod": "2026-11-22"
   },
+  "/ko/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "59e247c7e3eb71feb0c1787ecf804a5bc327849c73dfcfb7253e96f390b9a737",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "883c60007c04a6fb7a2cdcca611b1164d1961907d6cd30d04518bc92885b11d6",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "f4d3792061670ea8d3bacc2844e721b0c5e96dd7c18cfddad87355a25eef856d",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "fe1bcc720e8e26befd23cf11531a51a730c7b5d0d6934bbdea4614c6115f0410",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "b3bff9dd1622e6132dad48fc32c482a8b979cf561996dd300e78251ee1fe823f",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "59ee21576ff32883fc1d8f5205b9faf776e07c17a58ca53f5ad0beb949ce8683",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "a5d512ee025be078659d0c7a22d36306a36f6937b19d51824cd4dae871e646f1",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "6ad60cd2f8c5f7caad39262ceb024a6fe970ce3b758b82bd60bcf8b1d05caaf9",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "4220bc73d7dcefb0a1943b5a2c19a8eede145d6c798886212ca8e5ad8a999cb3",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "4034a5c7ec894bae2a532765a56ff9d78e33e50914041e22e06fe3e0f038e02d",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "50c5f62461915f3028881804af1ab44a5d1b130d35dc43b6c9a59aefdec54857",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "ace5b5d86f538462ce155786355a617fd559206eff3d01ede29d6605cc3b3fa0",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "e7801865707d9e42f00cfa54c780b7daaa0975c8f8d2e217aa4d2de93c3da947",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "5ae647c51bc438182194c920f2524ba2a13877787e22ad19b63126f5ac34fc4a",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "0cd7640363cdd00e3a7f96bf6407b5a1c73818b26ad8213b4ccc8a58a3cbf4e9",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "d73ae28b4a5977e98a80f485b7a51a38f2fd65990381d0126a357fa5b18f8aec",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "e9bbce14c6f3769d389fbd96c93e8ed0d2e35de4214f839cad67949ea923ef17",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "130c7a95ba4d08df90f3bf41c14e996bc4d0176aa2a785fde418f1add6aee989",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "c9af1db1ca3b4f2b166d742b03e0816f56de31a506b9966a1705dfae67f2c25f",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "fb35f345411f13c6a066a26ca520278280c7db27a471427905a519206d72f16d",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "869255548e7fbd274a2840c8feb4e20dadd95b4c634ef9b35918936053974dfc",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "6f842c0c5b5e1d811743d04eeb10102ea5ed34b8dcb34d970839f0d3611b126b",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "1204d2c15d3094117f2c75bb8cf54bca30b0b528585d88e6e81b97b9623abd74",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "47a6dacdc9b778f62b8129ab2ca2b531c24efa18bf3078b1cd0afdb7e5cbbd30",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "2726f75deb8d91caca3c23abd58aa93612ab7abd61f82ce73235cf787ef58d7a",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "9b74435ddb7c9dd611d95b384691f6e9828c29b96ca0fbf5370549e8db5bd0a3",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "8c7db3b3ae0ad9c0afc900731fe9c9af8b18970c4daafe322f2a2c0d5fc64514",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "8ad2e9b17893b922027d5024c331165842bb3e7bc310648b5ab67d43868c8b69",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "6045014cef2440ea8524349672678cb1dd6dfbffd466bb0297c2f07b5082faac",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "9c94dd244837a2405078feb45c676b18fe866bfc04ce7fe936af80cb9bf2b3a9",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "69b6fca79fbe7dc00bc29a89c596c3464706b50a983a758da0ce7ff4d104cee4",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "5fadbd6109837d5ffe9dcef96eb91d2c7651aa65d8d767efc1740965ab1e9a20",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "3ffb1e897363eb3952d25c8e2a88260b3df2f1e9d54dc39c3b92aa68c9208690",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "4c9a3bbff660372ae83e4ebaf48b11ee1166176b9146fb9db30f2041fed5c917",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "d7a566b66835c99ba38b7706ab00dddcefc84f204bffba61dcf5497b8d9b756c",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "e8f8a6bf836a5c819cc5ae698e1f307b66d3de40ee6c27ce51a85b1f6cf362c3",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "13399ea90e7a1f6d910bf8620c4aa976cfc9d29a33a95079de8f1ef1ab7faf98",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "015c8cf45bc7910d86179cd4a7d8c68c1f81668404b71f4f389e43251698814c",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "d9d6ecea763965b8f9d8751e8f367b97083de6556503c32a31a0d6b052b0c53b",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "5cea8045bac814e0068efd0bbd8f022b290f9b5ac6d9ba0eda4a1d91adeec5e2",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "85a855234d7a29df1849e23c287088b52c28e13018ddb41fa394a62763a376c0",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "72b80ec1063e02ebf6e8f601428cfca9fbbe700d18260ff93d62de35e187a3ab",
+    "lastmod": "2026-11-22"
+  },
+  "/ko/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "870321c08846b28341e01cd8cadebb43bfb872bae7d8ed8c78e627d514006bc4",
+    "lastmod": "2026-11-22"
+  },
   "/zh-Hans/": {
-    "hash": "6ad7491ebdd2d6420d0fb2f6ca04742fca0ff94ab0cf9699191acc7af31085e9",
+    "hash": "87aacac8dd096e08feca0526bbbf4373f75fdf64d63659fa9e1c9e41f04fa60e",
     "lastmod": "2026-11-22"
   },
   "/zh-Hans/privacy/": {
@@ -21320,7 +23212,7 @@
     "lastmod": "2026-11-22"
   },
   "/zh-Hans/downloads/": {
-    "hash": "33f973b0e9da2c29ecb94862a4724033928e01babb729c928094fa17b091b184",
+    "hash": "52784fb0231a29419b53fff3a48cb83b0a9f4511b3a7256bd4e70a400d09822f",
     "lastmod": "2026-11-22"
   },
   "/zh-Hans/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -23235,8 +25127,180 @@
     "hash": "54dbb777a0b4b91d043b27e156a4cd716b536c175fcf7ae057d741fbb43078f9",
     "lastmod": "2026-11-22"
   },
+  "/zh-Hans/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "89191476a646bb9cbafcc5944cee681a5e767d8617db983f6ed865c7f223e9a4",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "c391266dd84be999734a39a6d013345b8f3b63af254546eb366ce620672030ef",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "c3e181a62b2d90c5e49f390c736447301b4918d8e4d4d5b97e1acf4dd9a475fc",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "699ede594b5a547f989e3f0b188f73eb4bfc2e0947da8f765f5eeff362b42f7c",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "89d0c9ace154eab6f75ce7e80f623fb72589f932330731d69e54d2e12472a035",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "91979dced6d5964fa3a062d72aa645a1cc33cba5e7de540b1632cf553d58bac3",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "2fca5836b4d61ec82c7c41012fd07c8c622a5522b1721fe05f0e21961fa283d9",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "72c5c7137db557aac4bdd2978c0f76b3b77fdbb7e6ab1974303f8a10d8461c90",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "859c6a30a6cda6a39c14e5cec47eea2d59ed5ceb749eebbdfb575fab6b6d605d",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "a78838d243b16629e686c93eb45c93ec707779013df8df9ff70df64c20fd63f3",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "8b9945d2b65821343b956bc20b11120cdb49477556817bb5609bdd6906c3aeaf",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "acfed53bfc35144424d1ae564f46dc237aefbf14eaa684d36239f6b1c8cae8d1",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "0ab4906dc5e26454b926e14c9892f14bec48843a8b64deb90a948f2474aac5f0",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "b37b7f332770e1d10b1e96f6eb292a43809f5e7bbd3bb4de1afc2a8a0c1be8ce",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "39a1b67fdd516b302b71f9a1e1c22d7d2ca9c01b8765d1380754a02e955a362f",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "40c74343d9550ec9dd761200c610837aceaf20abe5e0c8ef13ce2f71a30153df",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "1de239ece3000f1fed1b3a1d51fd1e195633f4b5e60100543bda37d0b62c5bb7",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "efb433383515920938f7f9dc9152f7b58a715eb0c1ccedb8936f61b7503788f5",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "e585abcb6e0c381de0824eb3a5cea5a0c45b204d1e2282359d9f3f8af1931dba",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "070425d6ac43cea479efb954ff85064fc33df32a84736af686bdab3f3a5b647b",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "52a3a1d3a4a40b62c4c0deb0926bac95c4f7edd002f47edf895b79af2fd32808",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "42c2f9aae928e2e3f636816913cd7f4e415f74a40ef966f78a3b45ff3cbfa7d3",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "b1f3fb9a22c4efe79d78f9485ccda5cefb7f02a0d6ebc3602fd5d901609cf93b",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "89c2cea72c11bdfce7e163cb2960783adeb5f6273ed1cb726a4f95df6b5945f7",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "3aa414ee2b9a71e662632dd9a63ec995412ece5fea0e397e97cae60371cdb3b4",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "6f543e783c15676c80813a5996eb820166dacc21ab5f77b351da0adc7ed9d816",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "c45a791c3b056f1cf1671ab587cec5920b7d198291da0ab263804e0896d4dac9",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "aedb4fe2dbbcda6a69729bd3cbec68e9040fc286a3df67cca9c03fdb65585593",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "8d99fc1599ae86dc7131e45ca6506a2d7843326cc74c2bc829528b154bdb1ac6",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "82a5ed67c388110a3ad5bec8517fd2c2602d3333b39d58faed5c9039938749e3",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "73535cf68a6c5e867b1e253c633a572bf38130c491da6190b7a9c237c7ce2e29",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "c4db31bfe759befc510cbc5e5ee3501d42d6ac73bae2e7662fc480c591d84561",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "c10c37468375463979bbca5f407b1fb5013cfa31ebd2553677a107f8e697c386",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "7650d10c4517cffbaf42c9aedc780869306f8e1ecf117a6c6f856877d57d54bf",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "b6c5d5132a3d349ced16d5fa7db3b780d53d01b7b5411082e5bfc4f1c67b664b",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "3931c992aa460ab8b8fade44fe10abd747ff4a3ab4cc25d4df5b31a4f064e61d",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "ca15408e3328c789d75a4f73a2f03665dc70ffc65c3567586d8f5f136cf944fe",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "b07b321820798b2a8cc257090da79b1ab4969e63105eba19b97862461e5ae7ba",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "52d9d70160ce8a2e55f84b32ed2ecb66cfc7cc4f788b40f5747eccdb7cc47241",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "99aa1240efa2ad9a76baf4523b6aea32ca355438bdc0dc51d101e96f67c4e5cb",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "bceeab482dcb548c4f75c952bd859cc3340e45a612851a1d9460b38d04b963bd",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "07129978fd45a51dceee7ffe970c18883e87230ad6a4791648c6f415128cac53",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hans/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "cf95f11cc0a7c630b9267f8d0b15aa44198d6c3bbfd1477e6672cce0b0fc5d72",
+    "lastmod": "2026-11-22"
+  },
   "/zh-Hant/": {
-    "hash": "4240cbd81e0a2bcb51b59ed11deefcc2ea08a5b4ebe25f2b90f392942bebf024",
+    "hash": "e06d39d06a0564b8406be3732933deed4f442cfa5987013c0edb43a881852c32",
     "lastmod": "2026-11-22"
   },
   "/zh-Hant/privacy/": {
@@ -23256,7 +25320,7 @@
     "lastmod": "2026-11-22"
   },
   "/zh-Hant/downloads/": {
-    "hash": "22d09b9d2a365416304e73f3f523fb81d9c91da3d69175bb0a20d665868d2fb0",
+    "hash": "24bbbbf9e92fdc0bf44231f7d48036d95c03adfcb1781168f494adc61460f9ea",
     "lastmod": "2026-11-22"
   },
   "/zh-Hant/records/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturing/": {
@@ -25169,6 +27233,178 @@
   },
   "/zh-Hant/records/usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964/": {
     "hash": "01801db511d036158730ac6be9592a2e66ae217060816a7a4737f08a88b767ea",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/cia-uap-d027-office-of-scientific-intelligence-briefing-on-flying-saucers-1952/": {
+    "hash": "e398a37c768df1c36335246cb23f446741dad54cf2721a0c382f4dcf25ec7e46",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/cia-uap-d029-official-diary-entry-on-flying-saucers-1952/": {
+    "hash": "4e657ac1465aa7d48b33d044f5b7abb5dbeae0f65e7425a5b0cb683aea63acbc",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d165-unresolved-radar-detection-north-america-2023/": {
+    "hash": "dcff467c2e32469f82ac84ef95efcb5c731bed581fca6a6635e795a205cc049b",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d172-baass-ten-month-report-july-2009/": {
+    "hash": "a8791baaabf77bfad33972016efdf874eb24710d1c8b307c32d0b9760d1072c5",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d190-air-intelligence-information-report-massachusetts-1957/": {
+    "hash": "c177a418bc351152b7cc044f532a3572cb8a9c7efd2228da04eded6041b33543",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d197-air-intelligence-information-report-michigan-1957/": {
+    "hash": "e5ee35caafc2b2eb3f2ffc5ba908bd98cb9d431b0fb884707e63e538f1c21809",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/cia-uap-d024-approval-in-principle-research-concerned-with-ufos-1952/": {
+    "hash": "4ad2e5f0d52054c758fdd2012cc9abfc49dc0d69a098c933901f7bc9b608a98f",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/cia-uap-d025-proposal-to-consider-psychological-warfare-implications-of-ufo-related-issues-1952/": {
+    "hash": "eb969565d78e76c7b75681508aaef37b1993039e11603ad0e4e33dcf5116c4aa",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/cia-uap-d026-summary-assessment-of-flying-saucers-1952/": {
+    "hash": "c90d0c7a461b5853daafcc67b6d3c4d9095ce34a8e233766d78fc099db907adc",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/cia-uap-d028-assessment-of-national-security-issues-relating-to-flying-saucers-1952/": {
+    "hash": "44a52d280aec9e384ef8e45e4af65dee09c016daca4e65c1b170c5d27ec3d336",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d182-aawsap-statement-of-work-august-2008/": {
+    "hash": "c5b9fcf747ef2a4010e691e096d3451b8b234c89c3d09428dd31bc6bbf06a78a",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d183-correspondence-from-senator-harry-reid-june-2009/": {
+    "hash": "42ad2d23c4f1be8c7d6f5a58e2c9ac7e516a1bfcb8e471bb93df83b2e855299a",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d184-aawsap-talking-paper-for-senator-reid-engagement-may-2009/": {
+    "hash": "9195e05a46ca227e61274a888bb98d72853c6b5dceab94992777b6723fc223df",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d185-review-of-aawsap-special-access-program-request-november-2009/": {
+    "hash": "832d8446a254fc5f8beccfe9f6a0770988e9739d16069928ebb8fd10028b9440",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d186-dia-information-memorandum-on-aatip-aawsap-december-2010/": {
+    "hash": "b52417a799b171e24c2bcf9664cd738451c526f5b0e7d40b360e4b2ffba896fe",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d187-dia-talking-paper-for-senator-reid-engagement-january-2009/": {
+    "hash": "1d7b07bf7eb4237be498c0a1417c47a86b33b31d45d671948cbadbd6e1711763",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d188-review-of-aawsap-contract-deliverables-october-2009/": {
+    "hash": "4b12015e3da586edf39ba8829e4a067ab166b759b2f5bd360bf63d7124081f70",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d189-air-intelligence-information-report-virginia-1957/": {
+    "hash": "4f831cb7cc3b8fe39e22c3083e863a8682abbfe0b2c07728e2b5107fa359105b",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d191-air-intelligence-information-report-texas-1957/": {
+    "hash": "ebfce4453c6c0f92b4d810377f695d25ce28a0f375dd0afb23157b073be9e1fe",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d192-air-intelligence-information-report-nebraska-1957/": {
+    "hash": "a3abe5f4a7cc96893748ba4e3690aab3c900255aa2f57a9371bd7b51428f1eba",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d193-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "80f0d9372c07fb1f33ca3ee3fef98e3316d44f6d8aeb73fad2bf2b02d16d6d0d",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d194-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "fa75555ca62d876eba8d50ca22828a1776d3ab4c0250b4a22b0613c451f17a00",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d195-air-intelligence-information-report-new-mexico-1957/": {
+    "hash": "b1c2db23b4d20a27fe585718f925b55f360b6cbdf3a7265ef57da2157a40d809",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d196-air-intelligence-information-report-washington-1957/": {
+    "hash": "c1ffb346c9f68c3765ebcdbf0ffad3093355396179d527c89f538256f35b3b39",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d198-air-intelligence-information-report-japan-1957/": {
+    "hash": "084da2625a4f722483f498248bcbc3cf5a678abe7bad16eda69148eb2cfcd6ba",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d199-air-intelligence-information-report-iran-1957/": {
+    "hash": "ac463940ad45443b62b485b5c6874d1599242f854ba8477add8adcd996445bff",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d200-air-intelligence-information-report-peru-1957/": {
+    "hash": "2215cf767a95517ea736041edb02b42af581cb5856a461d1596d169eaf728edd",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d201-air-intelligence-information-report-iran-1957/": {
+    "hash": "1f4e3cb73a6dd1b5f4c5e8228238a895880d960bdbfe9d476f9be473435bea79",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d202-air-intelligence-information-report-peru-1957/": {
+    "hash": "05b72e2e73610d68e8a1d23faff8c71cd276838f9132ac295cbf0d19027cb08f",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d203-air-intelligence-information-report-california-1957/": {
+    "hash": "4a8a4b46c59b99160072d5d8649d4a64de055624d37a9e68f55be3a00a00917a",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d204-air-intelligence-information-report-virginia-1957/": {
+    "hash": "167d5936ff0afbc8dd9a5d5aa6f2bc6b76d3450ed6ab0caed2edf0844e036aef",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d205-air-intelligence-information-report-japan-1956/": {
+    "hash": "5e6abcfd2ee4b9ae2c67072faa1ce60ea87005ab9bb749dc410107b9291a5893",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d206-unresolved-uap-report-california-1953/": {
+    "hash": "f72552deed9194e23d886ca5c582b22f97a3231821af364964b7e81456dc39f9",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d207-unresolved-uap-report-california-1956/": {
+    "hash": "2e8fd6421d4b0719813f9fca489d7d18f1b6d1d7d2d6523e3e334bb1dff1ceee",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d208-unresolved-uap-report-california-1965/": {
+    "hash": "a0a1d3fc95c786c332433f51046f7eb7b227b0cc204e8bb56e358c54b20b479c",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d209-unresolved-uap-report-california-1955/": {
+    "hash": "5466c2395cb1077c0bda089eadd6b2cc0b30a3c568e30d01d416b419a2fcfa52",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d210-unresolved-uap-report-california-1957/": {
+    "hash": "250435f976d4dfcf260fff1c0512449db6a44ac07d1edb4a594c7058ffaca6aa",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d211-unresolved-uap-report-california-1956/": {
+    "hash": "217821dababe9704bc1864fa4a1a3b077b7c92dcd158063fc784abd5ed59e117",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d212-unresolved-uap-report-california-1966/": {
+    "hash": "4e7652170ef183d7e846586f6a8e534f0f1107ca9db8c9293bcb398f069287d4",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-d213-unresolved-uap-report-california-1949/": {
+    "hash": "6161da4373b34eb3de9ebb13588eb298531cd5a0f9b0c36bfab334f04d1e14d7",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/": {
+    "hash": "e2f894d414cdd9e36c47faf95fabb4789b297a2ed5120c5c4bd6b64fafe2b6b8",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/": {
+    "hash": "ca0933c564d5449ef15d0171e2d30545376d9802e546c0206bd99ab6df4d4ebe",
+    "lastmod": "2026-11-22"
+  },
+  "/zh-Hant/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/": {
+    "hash": "b2e2e2d56527b4dae677a4e79241c6f290010ca5a0bff838d0ac54fbcf27fe47",
     "lastmod": "2026-11-22"
   }
 }

@@ -897,6 +897,24 @@
       "uploadDate": "2026-09-18T07:15:00-04:00",
       "datePostedRaw": "09.18.2026 07:15",
       "sourceUrl": "https://www.dvidshub.net/video/1023416"
+    },
+    "1030270": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2611/1030270/DOD_112157906.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-11-20T07:15:00-05:00",
+      "datePostedRaw": "11.20.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1030270"
+    },
+    "1030274": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2611/1030274/DOD_112158011.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-11-20T07:15:00-05:00",
+      "datePostedRaw": "11.20.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1030274"
+    },
+    "1030277": {
+      "thumbnailUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2611/1030277/DOD_112158018.0000001/1000w_q95.jpg",
+      "uploadDate": "2026-11-20T07:15:00-05:00",
+      "datePostedRaw": "11.20.2026 07:15",
+      "sourceUrl": "https://www.dvidshub.net/video/1030277"
     }
   }
 }

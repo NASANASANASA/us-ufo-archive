@@ -1,5 +1,5 @@
 /* Legacy bundle URLs redirect to official downloads without proxying file bytes. */
-importScripts('./assets/release-bundles.js?v=20261121-official-source1');
+importScripts('./assets/release-bundles.js?v=20261122-release08');
 const downloadPath = new URL('downloads/bundles/', self.location).pathname;
 self.addEventListener('install', event => event.waitUntil(self.skipWaiting()));
 self.addEventListener('fetch', event => {

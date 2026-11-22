@@ -3168,6 +3168,275 @@
       "value": "1962-1964",
       "officialTitle": "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964",
       "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv"
+    },
+    "CIA-UAP-D027, Office of Scientific Intelligence Briefing on “Flying Saucers,” 1952": {
+      "kind": "incidentDate",
+      "value": "8/14/52",
+      "officialTitle": "CIA-UAP-D027, Office of Scientific Intelligence Briefing on “Flying Saucers,” 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "CIA-UAP-D029, Official Diary Entry on “Flying Saucers,” 1952": {
+      "kind": "incidentDate",
+      "value": "10/28/52",
+      "officialTitle": "CIA-UAP-D029, Official Diary Entry on “Flying Saucers,” 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D165, Unresolved Radar Detection, North America, 2023": {
+      "kind": "incidentDate",
+      "value": "7/15/05",
+      "officialTitle": "DOW-UAP-D165, Unresolved Radar Detection, North America, 2023",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D172, BAASS Ten-Month Report, July 2009": {
+      "kind": "incidentDate",
+      "value": "7/30/09",
+      "officialTitle": "DOW-UAP-D172, BAASS Ten-Month Report, July 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D190, Air Intelligence Information Report, Massachusetts, 1957": {
+      "kind": "incidentDate",
+      "value": "10/12/57",
+      "officialTitle": "DOW-UAP-D190, Air Intelligence Information Report, Massachusetts, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D197, Air Intelligence Information Report, Michigan, 1957": {
+      "kind": "incidentDate",
+      "value": "10/13/57",
+      "officialTitle": "DOW-UAP-D197, Air Intelligence Information Report, Michigan, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "CIA-UAP-D024, Approval in Principle, Research Concerned with UFOs, 1952": {
+      "kind": "incidentDate",
+      "value": "Late 1952",
+      "officialTitle": "CIA-UAP-D024, Approval in Principle, Research Concerned with UFOs, 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "CIA-UAP-D025, Proposal to Consider Psychological Warfare Implications of UFO-Related Issues, 1952": {
+      "kind": "incidentDate",
+      "value": "10/2/52",
+      "officialTitle": "CIA-UAP-D025, Proposal to Consider Psychological Warfare Implications of UFO-Related Issues, 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "CIA-UAP-D026, Summary Assessment of “Flying Saucers,” 1952": {
+      "kind": "incidentDate",
+      "value": "8/1/52",
+      "officialTitle": "CIA-UAP-D026, Summary Assessment of “Flying Saucers,” 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "CIA-UAP-D028, Assessment of National Security Issues Relating to “Flying Saucers,” 1952": {
+      "kind": "incidentDate",
+      "value": "10/13/52",
+      "officialTitle": "CIA-UAP-D028, Assessment of National Security Issues Relating to “Flying Saucers,” 1952",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D182, AAWSAP Statement of Work, August 2008": {
+      "kind": "incidentDate",
+      "value": "8/22/08",
+      "officialTitle": "DOW-UAP-D182, AAWSAP Statement of Work, August 2008",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D183-Correspondence from Senator Harry Reid, June 2009": {
+      "kind": "incidentDate",
+      "value": "6/24/09",
+      "officialTitle": "DOW-UAP-D183-Correspondence from Senator Harry Reid, June 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D184, AAWSAP Talking Paper for Senator Reid Engagement, May 2009": {
+      "kind": "incidentDate",
+      "value": "5/4/09",
+      "officialTitle": "DOW-UAP-D184, AAWSAP Talking Paper for Senator Reid Engagement, May 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D185, Review of AAWSAP Special Access Program Request, November 2009": {
+      "kind": "incidentDate",
+      "value": "11/13/09",
+      "officialTitle": "DOW-UAP-D185, Review of AAWSAP Special Access Program Request, November 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D186, DIA Information Memorandum on AATIP (AAWSAP), December 2010": {
+      "kind": "incidentDate",
+      "value": "12/10/26",
+      "officialTitle": "DOW-UAP-D186, DIA Information Memorandum on AATIP (AAWSAP), December 2010",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D187, DIA Talking Paper for Senator Reid Engagement, January 2009": {
+      "kind": "incidentDate",
+      "value": "1/2/09",
+      "officialTitle": "DOW-UAP-D187, DIA Talking Paper for Senator Reid Engagement, January 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D188, Review of AAWSAP Contract Deliverables October 2009": {
+      "kind": "incidentDate",
+      "value": "10/30/09",
+      "officialTitle": "DOW-UAP-D188, Review of AAWSAP Contract Deliverables October 2009",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D189, Air Intelligence Information Report, Virginia, 1957": {
+      "kind": "incidentDate",
+      "value": "10/13/57",
+      "officialTitle": "DOW-UAP-D189, Air Intelligence Information Report, Virginia, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D191, Air Intelligence Information Report, Texas, 1957": {
+      "kind": "incidentDate",
+      "value": "11/2/57",
+      "officialTitle": "DOW-UAP-D191, Air Intelligence Information Report, Texas, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D192, Air Intelligence Information Report, Nebraska, 1957": {
+      "kind": "incidentDate",
+      "value": "11/5/57",
+      "officialTitle": "DOW-UAP-D192, Air Intelligence Information Report, Nebraska, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D193, Air Intelligence Information Report, New Mexico, 1957": {
+      "kind": "incidentDate",
+      "value": "11/13/57",
+      "officialTitle": "DOW-UAP-D193, Air Intelligence Information Report, New Mexico, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D194, Air Intelligence Information Report, New Mexico, 1957": {
+      "kind": "incidentDate",
+      "value": "11/4/57",
+      "officialTitle": "DOW-UAP-D194, Air Intelligence Information Report, New Mexico, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D195, Air Intelligence Information Report, New Mexico, 1957": {
+      "kind": "incidentDate",
+      "value": "11/4/57",
+      "officialTitle": "DOW-UAP-D195, Air Intelligence Information Report, New Mexico, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D196, Air Intelligence Information Report, Washington, 1957": {
+      "kind": "incidentDate",
+      "value": "10/19/57",
+      "officialTitle": "DOW-UAP-D196, Air Intelligence Information Report, Washington, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D198, Air Intelligence Information Report, Japan, 1957": {
+      "kind": "incidentDate",
+      "value": "10/2/57",
+      "officialTitle": "DOW-UAP-D198, Air Intelligence Information Report, Japan, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D199, Air Intelligence Information Report, Iran, 1957": {
+      "kind": "incidentDate",
+      "value": "10/23/57",
+      "officialTitle": "DOW-UAP-D199, Air Intelligence Information Report, Iran, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D200, Air Intelligence Information Report, Peru, 1957": {
+      "kind": "incidentDate",
+      "value": "10/28/57",
+      "officialTitle": "DOW-UAP-D200, Air Intelligence Information Report, Peru, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D201, Air Intelligence Information Report, Iran, 1957": {
+      "kind": "incidentDate",
+      "value": "5/10/05",
+      "officialTitle": "DOW-UAP-D201, Air Intelligence Information Report, Iran, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D202, Air Intelligence Information Report, Peru, 1957": {
+      "kind": "incidentDate",
+      "value": "11/8/57",
+      "officialTitle": "DOW-UAP-D202, Air Intelligence Information Report, Peru, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D203, Air Intelligence Information Report, California, 1957": {
+      "kind": "incidentDate",
+      "value": "9/5/57",
+      "officialTitle": "DOW-UAP-D203, Air Intelligence Information Report, California, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D204, Air Intelligence Information Report, Virginia, 1957": {
+      "kind": "incidentDate",
+      "value": "11/6/57",
+      "officialTitle": "DOW-UAP-D204, Air Intelligence Information Report, Virginia, 1957",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D205, Air Intelligence Information Report, Japan, 1956": {
+      "kind": "incidentDate",
+      "value": "12/17/56",
+      "officialTitle": "DOW-UAP-D205, Air Intelligence Information Report, Japan, 1956",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D206, Unresolved UAP Report, California, 1953": {
+      "kind": "incidentDate",
+      "value": "12/16/53",
+      "officialTitle": "DOW-UAP-D206, Unresolved UAP Report, California, 1953",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D207, Unresolved UAP Report, California, 1956": {
+      "kind": "incidentDate",
+      "value": "8/22/56",
+      "officialTitle": "DOW-UAP-D207, Unresolved UAP Report, California, 1956",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D208, Unresolved UAP Report, California, 1965": {
+      "kind": "incidentDate",
+      "value": "8/8/65",
+      "officialTitle": "DOW-UAP-D208, Unresolved UAP Report, California, 1965",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D209, Unresolved UAP Report, California, 1955": {
+      "kind": "incidentDate",
+      "value": "3/15/55",
+      "officialTitle": "DOW-UAP-D209, Unresolved UAP Report, California, 1955 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D210, Unresolved UAP Report, California, 1957": {
+      "kind": "incidentDate",
+      "value": "12/1/57",
+      "officialTitle": "DOW-UAP-D210, Unresolved UAP Report, California, 1957 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D211, Unresolved UAP Report, California, 1956": {
+      "kind": "incidentDate",
+      "value": "8/21/56",
+      "officialTitle": "DOW-UAP-D211, Unresolved UAP Report, California, 1956 ",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D212, Unresolved UAP Report, California, 1966": {
+      "kind": "incidentDate",
+      "value": "11/30/66",
+      "officialTitle": "DOW-UAP-D212, Unresolved UAP Report, California, 1966",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-D213, Unresolved UAP Report, California, 1949": {
+      "kind": "incidentDate",
+      "value": "6/17/49",
+      "officialTitle": "DOW-UAP-D213, Unresolved UAP Report, California, 1949",
+      "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1"
+    },
+    "DOW-UAP-PR166, Unresolved UAP Report, Middle East, 2020": {
+      "kind": "dateTaken",
+      "value": "2020-01-01",
+      "officialTitle": "DOW-UAP-PR166, Unresolved UAP Report, Middle East, 2020",
+      "sourceUrl": "https://www.dvidshub.net/video/1030270",
+      "dvidsId": "1030270",
+      "sourceDateText": "01.01.2020"
+    },
+    "DOW-UAP-PR168, Unresolved UAP Report, Middle East, 2026": {
+      "kind": "dateTaken",
+      "value": "2026-01-01",
+      "officialTitle": "DOW-UAP-PR168, Unresolved UAP Report, Middle East, 2026",
+      "sourceUrl": "https://www.dvidshub.net/video/1030274",
+      "dvidsId": "1030274",
+      "sourceDateText": "01.01.2026"
+    },
+    "DOW-UAP-PR169, Unresolved UAP Report, Middle East, 2023": {
+      "kind": "dateTaken",
+      "value": "2026-11-18",
+      "officialTitle": "DOW-UAP-PR169, Unresolved UAP Report, Middle East, 2023",
+      "sourceUrl": "https://www.dvidshub.net/video/1030277",
+      "dvidsId": "1030277",
+      "sourceDateText": "11.18.2026"
     }
+  },
+  "release08Source": {
+    "url": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1",
+    "sha256": "bae7455d6b5dff3ab84beb22607bc119db27cfb45a2746cec3c39e8a7662b247",
+    "records": 43
   }
 }

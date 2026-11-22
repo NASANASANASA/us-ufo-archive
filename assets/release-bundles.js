@@ -12,5 +12,7 @@ self.UAP_BUNDLES = {
   "release_05_videos.zip": "https://d34w7g4gy10iej.cloudfront.net/release_05/uap_videos_080726.zip",
   "release_06_documents.zip": "https://www.war.gov/medialink/ufo/sept-18/release-06/documents_release_06_sept_18_2026.zip",
   "release_06_videos.zip": "https://d34w7g4gy10iej.cloudfront.net/release_06/pursue_vids_091826.zip",
-  "release_07_documents.zip": "https://www.war.gov/medialink/ufo/release-07/documents_release_07_oct_23_2026.zip"
+  "release_07_documents.zip": "https://www.war.gov/medialink/ufo/release-07/documents_release_07_oct_23_2026.zip",
+  "release_08_documents.zip": "https://www.war.gov/medialink/ufo/release_08_documents.zip",
+  "release_08_videos.zip": "https://d34w7g4gy10iej.cloudfront.net/release_08/videos_112026_uap.zip"
 };

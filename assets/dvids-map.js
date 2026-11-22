@@ -148,5 +148,8 @@ const DVIDS_MP4 = {
   "1014107": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830063/DOD_111830063.mp4",
   "1014110": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830069/DOD_111830069.mp4",
   "1014116": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830085/DOD_111830085.mp4",
-  "1014117": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830092/DOD_111830092.mp4"
+  "1014117": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830092/DOD_111830092.mp4",
+  "1030270": "https://d34w7g4gy10iej.cloudfront.net/video/2611/DOD_112157906/DOD_112157906.mp4",
+  "1030274": "https://d34w7g4gy10iej.cloudfront.net/video/2611/DOD_112158011/DOD_112158011.mp4",
+  "1030277": "https://d34w7g4gy10iej.cloudfront.net/video/2611/DOD_112158018/DOD_112158018.mp4"
 };

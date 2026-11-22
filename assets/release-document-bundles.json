@@ -82,5 +82,14 @@
     "officialSourceUrl": "https://www.war.gov/medialink/ufo/release-07/documents_release_07_oct_23_2026.zip",
     "downloadSource": "official",
     "formerMirrorKey": "bundles/release_07_documents.zip"
+  },
+  "08": {
+    "url": "https://www.war.gov/medialink/ufo/release_08_documents.zip",
+    "filename": "release_08_documents.zip",
+    "sourceFilename": "release_08_documents.zip",
+    "size": 310707775,
+    "sha256": "4351478a8a82362773783ae6d0644297e6da86f4f537e8e07181901590efeb1d",
+    "officialSourceUrl": "https://www.war.gov/medialink/ufo/release_08_documents.zip",
+    "downloadSource": "official"
   }
 }

@@ -2,7 +2,7 @@
 import csv,re,html,urllib.parse,collections
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
-release_dates={'5/8/26':'01','5/22/26':'02','6/12/26':'03','7/10/26':'04','8/7/26':'05','9/18/2026':'06','10/23/2026':'07'}
+release_dates={'5/8/26':'01','5/22/26':'02','6/12/26':'03','7/10/26':'04','8/7/26':'05','9/18/2026':'06','10/23/2026':'07','11/20/2026':'08'}
 summary=collections.defaultdict(collections.Counter)
 count=0
 for row in csv.DictReader((ROOT/'assets/uap-data.csv').open(encoding='utf-8-sig')):

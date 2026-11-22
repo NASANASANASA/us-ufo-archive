@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit detail dates and visible timeline line breaks across all 478 records."""
+"""Audit detail dates and visible timeline line breaks across all 521 records."""
 import argparse
 import csv
 import datetime
@@ -82,7 +82,7 @@ def main():
     official = list(csv.DictReader(args.official_csv.open(encoding='utf-8-sig')))
     by_title = {key(row['Title']): row for row in official}
     dates = json.loads((ROOT / 'assets/record-detail-dates.json').read_text())['records']
-    assert len(rows) == len(dates) == 478
+    assert len(rows) == len(dates) == 521
     displays = json.loads(subprocess.check_output([
         'node', '-e', "const f=require('./assets/record-format.js');let s='';process.stdin.on('data',x=>s+=x);process.stdin.on('end',()=>{const {values,langs}=JSON.parse(s);process.stdout.write(JSON.stringify(values.map(v=>langs.map(l=>f.formatDate(v,l)))))});"
     ], input=json.dumps({'values': [dates[key(row['Title'])]['value'] for row in rows], 'langs': list(LANGS)}), text=True, cwd=ROOT))
@@ -132,7 +132,7 @@ def main():
                     issues.append((title.split(',')[0], lang, 'timeline shares previous line', prefix[-60:]))
             checked += 1
     assert not issues, issues[:20]
-    print(f'PASS: {checked} detail pages; all 478 official dates preserved and localized; '
+    print(f'PASS: {checked} detail pages; all 521 official dates preserved and localized; '
           f'{timeline_entries} range entries start on separate lines; '
           f'all timeline labels match the source; {local_links} internal links resolve.')
 

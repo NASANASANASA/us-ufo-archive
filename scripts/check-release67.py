@@ -19,9 +19,9 @@ VERSION = re.search(r"const assetVersion = '([^']+)'", (ROOT / 'scripts/build-st
 LANGS = {'en': None, 'zh-Hans': 'zh-cn', 'zh-Hant': 'zh-tw', 'pl': 'pl', 'nl': 'nl', 'ja': 'ja',
          'es': 'es', 'pt': 'pt', 'ru': 'ru', 'fr': 'fr', 'de': 'de', 'ko': 'ko', 'ar': 'ar'}
 rows = list(csv.DictReader((ROOT / 'assets/uap-data.csv').open(encoding='utf-8-sig')))
-assert len(rows) == 478
-assert collections.Counter(r['Release Date'] for r in rows[375:]) == {'9/18/2026': 75, '10/23/2026': 28}
-assert collections.Counter(r['Type'] for r in rows[375:]) == {'PDF': 87, 'VID': 15, 'AUD': 1}
+assert len(rows) == 521
+assert collections.Counter(r['Release Date'] for r in rows[375:478]) == {'9/18/2026': 75, '10/23/2026': 28}
+assert collections.Counter(r['Type'] for r in rows[375:478]) == {'PDF': 87, 'VID': 15, 'AUD': 1}
 codes = [r['Title'].split(',')[0] for r in rows]
 assert len(codes[375:]) == len(set(codes[375:]))
 assert not set(codes[:375]) & set(codes[375:])
@@ -67,20 +67,20 @@ for lang, translation in LANGS.items():
             else:
                 assert current == previous, (lang, index, 'existing translation changed')
         assert len(entries) == len(rows), (lang, len(entries))
-        for index, entry in enumerate(entries[375:], 375):
+        for index, entry in enumerate(entries[375:478], 375):
             assert entry and entry['i'] == index, (lang, index)
             for source, target in [('Title', 'titleZh'), ('Description Blurb', 'descZh'),
                                    ('Incident Location', 'locZh'), ('Image Alt Text', 'altZh')]:
                 assert not rows[index][source].strip() or entry[target].strip(), (lang, index, target)
             assert codes[index] in entry['titleZh'], (lang, index, 'record identifier changed')
-    assert len(list((ROOT / lang / 'records').glob('*/index.html'))) == 478
+    assert len(list((ROOT / lang / 'records').glob('*/index.html'))) == 521
     home = (ROOT / lang / 'index.html').read_text()
     for asset in ('db-data', 'dvids-map', 'i18n-ui', 'site'):
         assert f'{asset}.js?v={VERSION}' in home, (lang, asset, 'stale cache version')
     downloads = (ROOT / lang / 'downloads/index.html').read_text()
-    assert downloads.count('class="release-download-card"') == 7
+    assert downloads.count('class="release-download-card"') == 8
     assert 'href=""' not in downloads and '[undefined]' not in downloads
-    for row in rows[375:]:
+    for row in rows[375:478]:
         path = ROOT / lang / 'records' / slug(row['Title']) / 'index.html'
         source = path.read_text()
         assert f'https://uap-archives.org/{lang}/records/{slug(row["Title"])}/' in sitemap
@@ -99,7 +99,7 @@ for lang, translation in LANGS.items():
             local = (ROOT / unquote(parsed.path).lstrip('/')) if parsed.path.startswith('/') else (path.parent / unquote(parsed.path))
             assert local.exists(), (path, link)
 
-for row in rows[375:]:
+for row in rows[375:478]:
     code = re.sub('[^A-Z0-9]', '', row['Title'].split(',')[0])
     preview = ROOT / 'assets' / media[code]['url']
     assert preview.read_bytes().startswith(b'\xff\xd8'), preview

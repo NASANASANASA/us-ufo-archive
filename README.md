@@ -71,6 +71,8 @@ The site provides multilingual archive and interface pages in:
 - Deutsch
 - Português
 - Русский
+- Nederlands
+- Polski
 - 日本語
 - 简体中文
 - 繁體中文
@@ -113,12 +115,14 @@ The archive is based on public U.S. government release material, especially the 
 
 https://www.war.gov/UFO/
 
-The local mirror includes Releases 01–07: 478 records in 13 languages.
+The local mirror includes Releases 01–08: 521 records in 13 languages.
 Release 06 contains 75 records (September 18, 2026); Release 07 contains
 28 PDF records (October 23, 2026), with no videos. Import details and
 maintenance commands are documented in [Release 06/07 notes](docs/release-06-07.md).
 
 Preview images and video posters are served as website static assets. Video/audio playback, individual downloads, and release ZIP downloads use official government sources. The UAP website no longer requires R2 storage. Preview provenance and SHA-256 hashes are recorded in `assets/static-previews.json`.
+
+Release 08 adds 43 records (40 PDFs and 3 videos), published November 20, 2026.
 
 Each record keeps the original source link when available. This project does not claim government affiliation, endorsement, or analytical authority over the records.
 

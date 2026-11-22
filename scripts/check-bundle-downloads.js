@@ -9,7 +9,7 @@ const vm = require('node:vm');
     importScripts: () => vm.runInContext(fs.readFileSync('assets/release-bundles.js', 'utf8'), context),
     fetch: () => assert.fail('Official downloads must not be proxied')});
   vm.runInContext(fs.readFileSync('bundle-download-worker.js', 'utf8'), context);
-  const names = Array.from({length: 7}, (_, i) => [`release_0${i + 1}_documents.zip`, ...(i < 6 ? [`release_0${i + 1}_videos.zip`] : [])]).flat();
+  const names = Array.from({length: 8}, (_, i) => [`release_0${i + 1}_documents.zip`, ...(i !== 6 ? [`release_0${i + 1}_videos.zip`] : [])]).flat();
   assert.deepEqual(Object.keys(self.UAP_BUNDLES), names);
   async function request(name, method = 'GET') {
     let response;
@@ -42,10 +42,10 @@ const vm = require('node:vm');
     const links = [...html.matchAll(/<a class="download-bundle" href="([^"]+)" data-bundle="([^"]+)"/g)];
     assert.deepEqual(links.map(m => m[2]), names);
     for (const link of links) assert.equal(link[1], self.UAP_BUNDLES[link[2]]);
-    assert(html.includes('bundle-download.js?v=20261121-official-source1'));
+    assert(html.includes('bundle-download.js?v=20261122-release08'));
   }
   const helper = fs.readFileSync('assets/bundle-download.js', 'utf8');
   assert(!helper.includes('preventDefault'));
   assert(!helper.includes('fetch('));
-  console.log('PASS: all 13 bundle links across 13 languages use official sources; legacy URLs redirect safely without proxying or requiring CORS.');
+  console.log('PASS: all 15 bundle links across 13 languages use official sources; legacy URLs redirect safely without proxying or requiring CORS.');
 })().catch(error => {console.error(error); process.exitCode = 1;});

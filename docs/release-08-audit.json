@@ -1,0 +1,332 @@
+{
+  "release": "08",
+  "published": "2026-11-20",
+  "officialCsv": {
+    "url": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1",
+    "sha256": "bae7455d6b5dff3ab84beb22607bc119db27cfb45a2746cec3c39e8a7662b247",
+    "records": 43
+  },
+  "recordCount": 43,
+  "pdfCount": 40,
+  "videoCount": 3,
+  "pdfFiles": [
+    {
+      "code": "CIA-UAP-D027",
+      "filename": "CIA-UAP-D027-Office_of_Scientific_Intelligence_Briefing_on_Flying_Saucers-1952.pdf",
+      "size": 3938105,
+      "sha256": "cc7b83c815f91f1a8e1710cff3b287b1c578a69665f56a0140ee755a9f48983a",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D027-Office_of_Scientific_Intelligence_Briefing_on_Flying_Saucers-1952.pdf"
+    },
+    {
+      "code": "CIA-UAP-D029",
+      "filename": "CIA-UAP-D029-Official_Diary_Entry_on_Flying_Saucers-1952.pdf",
+      "size": 699347,
+      "sha256": "c16239abc63bf145befc043e768e6b63231dfe73b944ee64a0f2de498ff80c0f",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D029-Official_Diary_Entry_on_Flying_Saucers-1952.pdf"
+    },
+    {
+      "code": "DOW-UAP-D165",
+      "filename": "DOW-UAP-D165-Unresolved_Radar_Detection_North_America-2023.pdf",
+      "size": 158839,
+      "sha256": "3ed1d55124c1bd0063ebd62c47ed29719636402247bcd97a4c066201239ee012",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D165-Unresolved_Radar_Detection_North_America-2023.pdf"
+    },
+    {
+      "code": "DOW-UAP-D172",
+      "filename": "DOW-UAP-D172-BAASS_Ten_Month_Report_July-2009.pdf",
+      "size": 65880859,
+      "sha256": "e77a2ce47520686fe2cacc55ce8fdf7820a7614a4eefe9cc0c75b19dff7f4472",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D172-BAASS_Ten_Month_Report_July-2009.pdf"
+    },
+    {
+      "code": "DOW-UAP-D190",
+      "filename": "DOW-UAP-D190-Air_Intelligence_Information_Report_Massachusetts-1957.pdf",
+      "size": 14179735,
+      "sha256": "28a26b391e981ad2ee347548b7fd7cc51eba5ba1a97faa0ff80e2b22f814febe",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D190-Air_Intelligence_Information_Report_Massachusetts-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D197",
+      "filename": "DOW-UAP-D197-Air_Intelligence_Information_Report_Michigan-1957.pdf",
+      "size": 6950894,
+      "sha256": "444c4feba08658822441ed484d0ea542fbd7a87db213eac3424596438d7d0023",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D197-Air_Intelligence_Information_Report_Michigan-1957.pdf"
+    },
+    {
+      "code": "CIA-UAP-D024",
+      "filename": "CIA-UAP-D024-Approval_in_Principle_Research_Concerned_with_UFOs-1952.pdf",
+      "size": 966983,
+      "sha256": "a7f6c2359afbb5c63a040e6e86915ec7a90c9aea878b148fcb22be36637c6d49",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D024-Approval_in_Principle_Research_Concerned_with_UFOs-1952.pdf"
+    },
+    {
+      "code": "CIA-UAP-D025",
+      "filename": "CIA-UAP-D025-Proposal_to_Consider_Psychological_Warfare_Implications_of_UFO_Related_Issues-1952.pdf",
+      "size": 10299797,
+      "sha256": "7c313718bcb8445fb17e84fbc79c5f8822cfea96b0cc15ccb07817b912462ca9",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D025-Proposal_to_Consider_Psychological_Warfare_Implications_of_UFO_Related_Issues-1952.pdf"
+    },
+    {
+      "code": "CIA-UAP-D026",
+      "filename": "CIA-UAP-D026-Summary_Assessment_of_Flying_Saucers-1952.pdf",
+      "size": 1077421,
+      "sha256": "595957b4d0be80043217d2e2e1836a799fde708da8ee569a22fc23779590fa8f",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D026-Summary_Assessment_of_Flying_Saucers-1952.pdf"
+    },
+    {
+      "code": "CIA-UAP-D028",
+      "filename": "CIA-UAP-D028-Assessment_of_National_Security_Issues_Relating_to_Flying_Saucers-1952.pdf",
+      "size": 1342134,
+      "sha256": "f17fd0343afa76340d11906f7bcfa92aa05a0bfb06b8da05ad4dee951be4c817",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D028-Assessment_of_National_Security_Issues_Relating_to_Flying_Saucers-1952.pdf"
+    },
+    {
+      "code": "DOW-UAP-D182",
+      "filename": "DOW-UAP-D182-AAWSAP_Statement_of_Work_August-2008.pdf",
+      "size": 808324,
+      "sha256": "fc84698755632a7b9f00784d765952f5b81a93acc0fc430287c2dff6d520ccb5",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D182-AAWSAP_Statement_of_Work_August-2008.pdf"
+    },
+    {
+      "code": "DOW-UAP-D183",
+      "filename": "DOW-UAP-D183-Correspondence_from_Senator_Harry_Reid_June_24-2009.pdf",
+      "size": 330014,
+      "sha256": "f7dce86c6a5256b0d84a3e4444bd174f487a2cb7e690bb7ca710041179bda915",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D183-Correspondence_from_Senator_Harry_Reid_June_24-2009.pdf"
+    },
+    {
+      "code": "DOW-UAP-D184",
+      "filename": "DOW-UAP-D184-AAWSAP_Talking_Paper_for_Senator_Reid_Engagement_May-2009.pdf",
+      "size": 97625,
+      "sha256": "00d35350e4f29b915f8279b0c4fcbef7a29147df67a52b8a4fc37a16fd53787f",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D184-AAWSAP_Talking_Paper_for_Senator_Reid_Engagement_May-2009.pdf"
+    },
+    {
+      "code": "DOW-UAP-D185",
+      "filename": "DOW-UAP-D185-Review_of_AAWSAP_Special_Access_Program_Request_November-2009.pdf",
+      "size": 237006,
+      "sha256": "eb7c8e63dba1faced3947a1b0500a5b9f9e7ab7c043c740ffd876896b19c967a",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D185-Review_of_AAWSAP_Special_Access_Program_Request_November-2009.pdf"
+    },
+    {
+      "code": "DOW-UAP-D186",
+      "filename": "DOW-UAP-D186-DIA_Information_Memorandum_on_AATIP_AAWSAP_December-2010.pdf",
+      "size": 94329,
+      "sha256": "7cad36cd5860f42d04e786d3960dfb593ea1b9e5c705163adcc2b2121c23ae2e",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D186-DIA_Information_Memorandum_on_AATIP_AAWSAP_December-2010.pdf"
+    },
+    {
+      "code": "DOW-UAP-D187",
+      "filename": "DOW-UAP-D187-DIA_Talking_Paper_for_Senator_Reid_Engagement_January-2009.pdf",
+      "size": 69214,
+      "sha256": "fa4ccf3c5f4845b727d61afbcc910711c1aa4f299d940e7bd846af935ffccf1e",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D187-DIA_Talking_Paper_for_Senator_Reid_Engagement_January-2009.pdf"
+    },
+    {
+      "code": "DOW-UAP-D188",
+      "filename": "DOW-UAP-D188-Review_of_AAWSAP_Contract_Deliverables_October-2009.pdf",
+      "size": 551489,
+      "sha256": "2ace705eb17fd8ba2c46020cc53b43ee2df16c14a8816e5a720002dae1e92320",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D188-Review_of_AAWSAP_Contract_Deliverables_October-2009.pdf"
+    },
+    {
+      "code": "DOW-UAP-D189",
+      "filename": "DOW-UAP-D189-Air_Intelligence_Information_Report_Virginia-1957.pdf",
+      "size": 7054539,
+      "sha256": "5e57da39e316e669a69472125dd7f88c27beed1cbf73c302783ce82b1473431e",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D189-Air_Intelligence_Information_Report_Virginia-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D191",
+      "filename": "DOW-UAP-D191-Air_Intelligence_Information_Report_Texas-1957.pdf",
+      "size": 41064706,
+      "sha256": "f68183478c9024c0c14b1042a927e17c362e9dd66d67fcf3189bc29e27773bfb",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D191-Air_Intelligence_Information_Report_Texas-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D192",
+      "filename": "DOW-UAP-D192-Air_Intelligence_Information_Report_Nebraska-1957.pdf",
+      "size": 19786967,
+      "sha256": "e51a571a8cde60179645face924b6e3467145fe042b76e095d64129579496961",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D192-Air_Intelligence_Information_Report_Nebraska-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D193",
+      "filename": "DOW-UAP-D193-Air_Intelligence_Information_Report_New_Mexico-1957.pdf",
+      "size": 14515063,
+      "sha256": "4a0bbbf4191db06f27ba87babe157dde21c67300ac239b639f81115303361fc3",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D193-Air_Intelligence_Information_Report_New_Mexico-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D194",
+      "filename": "DOW-UAP-D194-Air_Intelligence_Information_Report_New_Mexico-1957.pdf",
+      "size": 13017233,
+      "sha256": "293e533abd44248390fbd0c91ad8f15c5ad78016378682ffb05d37b7688b63e6",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D194-Air_Intelligence_Information_Report_New_Mexico-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D195",
+      "filename": "DOW-UAP-D195-Air_Intelligence_Information_Report_New_Mexico-1957.pdf",
+      "size": 12732691,
+      "sha256": "c624c30edbb0ea09976246e21b63b23b411009a57903ef2d3c2e33088a919674",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D195-Air_Intelligence_Information_Report_New_Mexico-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D196",
+      "filename": "DOW-UAP-D196-Air_Intelligence_Information_Report_Washington-1957.pdf",
+      "size": 10650939,
+      "sha256": "689fc36c5b9497ac7940a9253134e37c626847bdf5bf864210109b8d616c7d8d",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D196-Air_Intelligence_Information_Report_Washington-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D198",
+      "filename": "DOW-UAP-D198-Air_Intelligence_Information_Report_Japan-1957.pdf",
+      "size": 2023242,
+      "sha256": "aa08a3d2c6af81767d9a01ee4b278b347932739caf1611c2425c03fe5ded4300",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D198-Air_Intelligence_Information_Report_Japan-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D199",
+      "filename": "DOW-UAP-D199-Air_Intelligence_Information_Report_Iran-1957.pdf",
+      "size": 3856188,
+      "sha256": "9a71cca06d58214853d74a106b36bfefc412750219266bd0521771391543e4f1",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D199-Air_Intelligence_Information_Report_Iran-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D200",
+      "filename": "DOW-UAP-D200-Air_Intelligence_Information_Report_Peru-1957.pdf",
+      "size": 3863679,
+      "sha256": "621735603f8d9b1362eec40e10b52680b1eaf1f3320f76b75143b3c01fd78e46",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D200-Air_Intelligence_Information_Report_Peru-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D201",
+      "filename": "DOW-UAP-D201-Air_Intelligence_Information_Report_Iran-1957.pdf",
+      "size": 4077291,
+      "sha256": "d97b5fe67f8bc3b1c9eb15e295ebe89264bd0effdd2ec72dbc798db80e0da28c",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D201-Air_Intelligence_Information_Report_Iran-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D202",
+      "filename": "DOW-UAP-D202-Air_Intelligence_Information_Report_Peru-1957.pdf",
+      "size": 10677044,
+      "sha256": "79f08d66a981199c32f4f2595fd1c2d31925cb01f19b9fb43b8c54d873fce0ea",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D202-Air_Intelligence_Information_Report_Peru-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D203",
+      "filename": "DOW-UAP-D203-Air_Intelligence_Information_Report_California-1957.pdf",
+      "size": 15498782,
+      "sha256": "3a895b66d9edbb015de59ec5ed7e1e5b6a49e596b20b6ab2d22414b7b86d4b45",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D203-Air_Intelligence_Information_Report_California-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D204",
+      "filename": "DOW-UAP-D204-Air_Intelligence_Information_Report_Virginia-1957.pdf",
+      "size": 17988137,
+      "sha256": "ecbf02ef0e984c6f1d12621c261473d102f52d4aa8bf9bc08baf4bfeeb7e821e",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D204-Air_Intelligence_Information_Report_Virginia-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D205",
+      "filename": "DOW-UAP-D205_Air_Intelligence_Information_Report_Japan-1956.pdf",
+      "size": 6818785,
+      "sha256": "e6bd0d26ec339371945f751c272cf1a05a6cc3c6db47270290acd87330a8a12e",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D205_Air_Intelligence_Information_Report_Japan-1956.pdf"
+    },
+    {
+      "code": "DOW-UAP-D206",
+      "filename": "DOW-UAP-D206_Unresolved_UAP_Report_California-1953.pdf",
+      "size": 3401672,
+      "sha256": "b0957ab5c2df409e3370811ee5bbbcc8ccbb1595ec6e3291a3b3c2f48b0f1756",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D206_Unresolved_UAP_Report_California-1953.pdf"
+    },
+    {
+      "code": "DOW-UAP-D207",
+      "filename": "DOW-UAP-D207-Unresolved_UAP_Report_California-1956.pdf",
+      "size": 853871,
+      "sha256": "3cea20ac9d66cb0432220c74e65825781fbca6733d8950efb0425c26d8d8ffbf",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D207-Unresolved_UAP_Report_California-1956.pdf"
+    },
+    {
+      "code": "DOW-UAP-D208",
+      "filename": "DOW-UAP-D208-Unresolved_UAP_Report_California-1965.pdf",
+      "size": 1988609,
+      "sha256": "fe0bf7fdc0452d7779237fb7d8d5795e2e969cbb245bec113a3e8b59e282448c",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D208-Unresolved_UAP_Report_California-1965.pdf"
+    },
+    {
+      "code": "DOW-UAP-D209",
+      "filename": "DOW-UAP-D209_Unresolved_UAP_Report_California-1955.pdf",
+      "size": 674056,
+      "sha256": "01ef9cd3d51ada517008acc3d7103db801e601b7b3516f770bf75488ca032ec8",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D209_Unresolved_UAP_Report_California-1955.pdf"
+    },
+    {
+      "code": "DOW-UAP-D210",
+      "filename": "DOW-UAP-D210_Unresolved_UAP_Report_California-1957.pdf",
+      "size": 2516951,
+      "sha256": "e33a87a63b61b72cc688233a736cb482734ff1766e04774d83723aa9a4bf1234",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D210_Unresolved_UAP_Report_California-1957.pdf"
+    },
+    {
+      "code": "DOW-UAP-D211",
+      "filename": "DOW-UAP-D211_Unresolved_UAP_Report_California-1956.pdf",
+      "size": 438773,
+      "sha256": "c0a300d594792a2b2cd136255f29f77ca6bfefd20d5c9ee22befaea9de1d9a4d",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D211_Unresolved_UAP_Report_California-1956.pdf"
+    },
+    {
+      "code": "DOW-UAP-D212",
+      "filename": "DOW-UAP-D212-Unresolved_UAP_Report_California-1966.pdf",
+      "size": 7533687,
+      "sha256": "70c42e63e165f1c82f9a0ae19930c7ba261080ad39806cde56f21e030e751004",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D212-Unresolved_UAP_Report_California-1966.pdf"
+    },
+    {
+      "code": "DOW-UAP-D213",
+      "filename": "DOW-UAP-D213-Unresolved_UAP_Report_California-1949.pdf",
+      "size": 2800761,
+      "sha256": "c01f37b81070119cf91077888eff34b5f7c85ea717694422edb90a2306f8f76f",
+      "officialUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D213-Unresolved_UAP_Report_California-1949.pdf"
+    }
+  ],
+  "videoFiles": [
+    {
+      "record": "DOW-UAP-PR166",
+      "dvidsId": "1030270",
+      "dateTaken": "2020-01-01",
+      "filename": "DOD_112157906.mp4",
+      "officialUrl": "https://d34w7g4gy10iej.cloudfront.net/video/2611/DOD_112157906/DOD_112157906.mp4",
+      "size": 10014641,
+      "sha256": "4c1b065372a84803a900815bbd668816681d466c416d16f20c8f3126350109d7",
+      "rangeSupported": true,
+      "zipVideoStreamMatchesPlayback": true,
+      "videoStreamSha256": "b8b515877ac4de7a539e9abd2c311364f1461a2f47f769e0c3cff71f248f216a"
+    },
+    {
+      "record": "DOW-UAP-PR168",
+      "dvidsId": "1030274",
+      "dateTaken": "2026-01-01",
+      "filename": "DOD_112158011.mp4",
+      "officialUrl": "https://d34w7g4gy10iej.cloudfront.net/video/2611/DOD_112158011/DOD_112158011.mp4",
+      "size": 17124373,
+      "sha256": "ebee37b8182c997ecdcd315f65c59d4cd73fee258e319c0c3d68f7b905f75bb4",
+      "rangeSupported": true,
+      "zipVideoStreamMatchesPlayback": true,
+      "videoStreamSha256": "304b1398673185977694d44b036452fc3c841603d727a4d01146257819a509f3"
+    },
+    {
+      "record": "DOW-UAP-PR169",
+      "dvidsId": "1030277",
+      "dateTaken": "2026-11-18",
+      "filename": "DOD_112158018.mp4",
+      "officialUrl": "https://d34w7g4gy10iej.cloudfront.net/video/2611/DOD_112158018/DOD_112158018.mp4",
+      "size": 3325618,
+      "sha256": "2ffac708ec3c1263cf8fdd65f600fd9db8dbb7d5b5ab7010eddd83c1ad095bc0",
+      "rangeSupported": true,
+      "zipVideoStreamMatchesPlayback": true,
+      "videoStreamSha256": "4622067f79b844d2456749249e2620556edd19b8356a59eaeec3332953f60707"
+    }
+  ]
+}
