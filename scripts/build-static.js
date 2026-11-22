@@ -6,7 +6,7 @@ const officialDownload = require('../assets/official-download.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
-const assetVersion = '20261122-polish1';
+const assetVersion = '20261122-download-note1';
 const dutch = require('../assets/locale-nl.json');
 const polish = require('../assets/locale-pl.json');
 const extraLocales = {nl: dutch, pl: polish};
@@ -1856,9 +1856,8 @@ function buildDownloadsPage(lang) {
           <b>${esc(copy.release)} ${esc(bundle.release)}</b>
           <small>${esc(copy.date)}: ${esc(lang === 'pl' ? recordFormat.formatDate(bundle.date, lang) : bundle.date)}</small>
           <div class="release-downloads">
-            <a class="download-bundle" href="${esc(documentBundleUrl(bundle))}" data-bundle="${esc(bundleFilename(bundle, 'documents'))}" download="${esc(bundleFilename(bundle, 'documents'))}" title="${esc(bundleFilename(bundle, 'documents'))}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.documents)} [${esc(bundle.documentsSize)}]</a>
-            ${bundle.videosUrl ? `<a class="download-bundle" href="${esc(bundle.videosUrl)}" data-bundle="${esc(bundleFilename(bundle, 'videos'))}" download="${esc(bundleFilename(bundle, 'videos'))}" title="${esc(bundleFilename(bundle, 'videos'))}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.videos)} [${esc(bundle.videosSize)}]</a>` : `<span class="static-muted">${esc(noVideosLabel(lang))}</span>`}
-          </div>
+            <a class="download-bundle" href="${esc(documentBundleUrl(bundle))}" data-bundle="${esc(bundleFilename(bundle, 'documents'))}" download="${esc(bundleFilename(bundle, 'documents'))}" title="${esc(bundleFilename(bundle, 'documents'))}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.documents)} [${esc(bundle.documentsSize)}]</a>${bundle.videosUrl ? `\n            <a class="download-bundle" href="${esc(bundle.videosUrl)}" data-bundle="${esc(bundleFilename(bundle, 'videos'))}" download="${esc(bundleFilename(bundle, 'videos'))}" title="${esc(bundleFilename(bundle, 'videos'))}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.videos)} [${esc(bundle.videosSize)}]</a>` : ''}
+          </div>${!bundle.videosUrl ? `\n          <small class="release-no-videos">${esc(noVideosLabel(lang))}</small>` : ''}
         </article>`).join('\n        ')}
       </div>
     </section>
