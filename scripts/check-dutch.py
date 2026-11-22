@@ -6,6 +6,13 @@ translations=json.loads((ROOT/'assets/i18n-nl.json').read_text())
 assert len(translations)==len(rows)==478
 sitemap=ET.parse(ROOT/'sitemap.xml');ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
 urls={x.text for x in sitemap.findall('.//s:loc',ns)}
+root_home=(ROOT/'index.html').read_text()
+root_nav=re.search(r'<nav class="langs"[^>]*>(.*?)</nav>',root_home,re.S)[1]
+root_select=re.search(r'<select id="root-language-select"[^>]*>(.*?)</select>',root_home,re.S)[1]
+for part,pattern in [(root_nav,r'href="/([^/]+)/"'),(root_select,r'value="/([^/]+)/"')]:
+ order=re.findall(pattern,part)
+ assert len(order)==12 and order.count('nl')==1 and order.index('nl')+1==order.index('ja'), 'Root homepage language ordering'
+ assert 'Nederlands' in part
 checked_links=0
 for i,(row,tr) in enumerate(zip(rows,translations)):
  assert tr['i']==i
