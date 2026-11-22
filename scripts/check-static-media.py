@@ -3,7 +3,7 @@ import csv,hashlib,html,json,pathlib,re,urllib.parse,xml.etree.ElementTree as ET
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 manifest=json.loads((ROOT/'assets/static-previews.json').read_text())
 rows=list(csv.DictReader((ROOT/'assets/uap-data.csv').open(encoding='utf-8-sig')))
-langs=['en','es','pt','fr','de','ru','ar','nl','ja','ko','zh-Hans','zh-Hant']
+langs=['en','es','pt','fr','de','ru','ar','nl','pl','ja','ko','zh-Hans','zh-Hant']
 files={};pages=0;videos=0
 for row in rows:
  title=row['Title'].replace('\u00a0',' ').strip();entry=manifest[title]

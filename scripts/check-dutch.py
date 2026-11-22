@@ -11,7 +11,7 @@ root_nav=re.search(r'<nav class="langs"[^>]*>(.*?)</nav>',root_home,re.S)[1]
 root_select=re.search(r'<select id="root-language-select"[^>]*>(.*?)</select>',root_home,re.S)[1]
 for part,pattern in [(root_nav,r'href="/([^/]+)/"'),(root_select,r'value="/([^/]+)/"')]:
  order=re.findall(pattern,part)
- assert len(order)==12 and order.count('nl')==1 and order.index('nl')+1==order.index('ja'), 'Root homepage language ordering'
+ assert len(order)==13 and order.count('nl')==1 and order.index('nl')+1==order.index('pl') and order.index('pl')+1==order.index('ja'), 'Root homepage language ordering'
  assert 'Nederlands' in part
 checked_links=0
 for i,(row,tr) in enumerate(zip(rows,translations)):
@@ -36,7 +36,7 @@ for i,(row,tr) in enumerate(zip(rows,translations)):
   assert re.findall(pattern,source)==re.findall(pattern,reference),(i,'media')
  for menu in re.findall(r'<details class="lang-menu[^>]*>[\s\S]*?</details>',source):
   order=re.findall(r'data-dir="([^"]+)"',menu)
-  assert order.count('nl')==1 and order.index('nl')+1==order.index('ja'),(file,'menu')
+  assert order.count('nl')==1 and order.index('nl')+1==order.index('pl') and order.index('pl')+1==order.index('ja'),(file,'menu')
  for link in re.findall(r'(?:href|src)="([^"]+)"',source):
   u=urllib.parse.urlsplit(html.unescape(link))
   if u.scheme or u.netloc or not u.path:continue
@@ -53,10 +53,10 @@ home=(ROOT/'nl/index.html').read_text()
 assert '<html lang="nl">' in home and 'Nederlandstalig archief' in home
 assert 'locale-nl.js' in home
 for file in ROOT.glob('*/index.html'):
- if file.parent.name not in ['en','es','pt','fr','de','ru','ar','nl','ja','ko','zh-Hans','zh-Hant']:continue
+ if file.parent.name not in ['en','es','pt','fr','de','ru','ar','nl','pl','ja','ko','zh-Hans','zh-Hant']:continue
  for menu in re.findall(r'<details class="lang-menu[^>]*>[\s\S]*?</details>',file.read_text()):
   order=re.findall(r'data-dir="([^"]+)"',menu)
-  assert order.count('nl')==1 and order.index('nl')+1==order.index('ja'),(file,'menu')
+  assert order.count('nl')==1 and order.index('nl')+1==order.index('pl') and order.index('pl')+1==order.index('ja'),(file,'menu')
 assert len([u for u in urls if '/nl/' in u])==484
 subprocess.run(['node','-e',"const f=require('./assets/record-format.js');for(const [s,t] of [['4/1/2009','1 april 2009'],['2025','2025'],['March 2010','maart 2010'],['Undated','Ongedateerd']])if(f.formatDate(s,'nl')!==t)throw Error(s+': '+f.formatDate(s,'nl'));"],cwd=ROOT,check=True)
 print(f'PASS: 478 Dutch records, 484 Dutch canonical pages, language ordering, dates, unchanged media/downloads, {checked_links} local references.')

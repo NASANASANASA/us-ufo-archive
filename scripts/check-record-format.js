@@ -34,7 +34,7 @@ for (const [id, expected] of Object.entries(dates))
 assert.deepEqual(format.detailDate({id: 'No source', incidentDate: '2024'}, {}),
   {kind: 'incidentDate', value: '2024'});
 
-const dateExamples = {nl: '1 april 2009', en: 'April 1, 2009', 'zh-Hans': '2009年4月1日', 'zh-Hant': '2009年4月1日',
+const dateExamples = {pl: '1 kwietnia 2009', nl: '1 april 2009', en: 'April 1, 2009', 'zh-Hans': '2009年4月1日', 'zh-Hant': '2009年4月1日',
   ja: '2009年4月1日', ko: '2009년 4월 1일', es: '1 de abril de 2009', pt: '1 de abril de 2009',
   ru: '1 апреля 2009 г.', fr: '1 avril 2009', de: '1. April 2009', ar: '١ أبريل ٢٠٠٩'};
 for (const [lang, expected] of Object.entries(dateExamples)) {

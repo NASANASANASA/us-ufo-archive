@@ -12,6 +12,7 @@
   <a href="https://uap-archives.org/pt/">Português</a> |
   <a href="https://uap-archives.org/ru/">Русский</a> |
   <a href="https://uap-archives.org/nl/">Nederlands</a> |
+  <a href="https://uap-archives.org/pl/">Polski</a> |
   <a href="https://uap-archives.org/ja/">日本語</a> |
   <a href="https://uap-archives.org/zh-Hans/">简体中文</a> |
   <a href="https://uap-archives.org/zh-Hant/">繁體中文</a> |
@@ -112,7 +113,7 @@ The archive is based on public U.S. government release material, especially the 
 
 https://www.war.gov/UFO/
 
-The local mirror includes Releases 01–07: 478 records in 12 languages.
+The local mirror includes Releases 01–07: 478 records in 13 languages.
 Release 06 contains 75 records (September 18, 2026); Release 07 contains
 28 PDF records (October 23, 2026), with no videos. Import details and
 maintenance commands are documented in [Release 06/07 notes](docs/release-06-07.md).

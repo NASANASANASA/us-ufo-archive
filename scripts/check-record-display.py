@@ -12,7 +12,7 @@ from html.parser import HTMLParser
 from urllib.parse import unquote, urlsplit
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-LANGS = {'en': None, 'zh-Hans': 'zh-cn', 'zh-Hant': 'zh-tw', 'nl': 'nl', 'ja': 'ja',
+LANGS = {'en': None, 'zh-Hans': 'zh-cn', 'zh-Hant': 'zh-tw', 'pl': 'pl', 'nl': 'nl', 'ja': 'ja',
          'es': 'es', 'pt': 'pt', 'ru': 'ru', 'fr': 'fr', 'de': 'de', 'ko': 'ko', 'ar': 'ar'}
 RANGE = r'\d{1,2}:\d{2}(?::\d{2})?\s*[-–—]\s*\d{1,2}:\d{2}(?::\d{2})?'
 LABEL = re.compile(r'^\s*(\d{1,2}:\d{2}(?::\d{2})?(?:[ \t]*[-–—][ \t]*\d{1,2}:\d{2}(?::\d{2})?)?)(?=[ \t]*[:：]|[ \t]+[^\d]|$)', re.M)

@@ -14,7 +14,7 @@ from urllib.request import urlopen
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = 'https://uap-archives.org'
-LANGS = ['en', 'es', 'pt', 'fr', 'de', 'ru', 'ar', 'nl', 'ja', 'ko', 'zh-Hans', 'zh-Hant']
+LANGS = ['en', 'es', 'pt', 'fr', 'de', 'ru', 'ar', 'nl', 'pl', 'ja', 'ko', 'zh-Hans', 'zh-Hant']
 rows = list(csv.DictReader((ROOT / 'assets/uap-data.csv').open(encoding='utf-8-sig')))
 routes = json.loads((ROOT / 'assets/legacy-archive-routes.json').read_text())
 reported = json.loads((ROOT / 'docs/search-console-404-2026-11-19.json').read_text())

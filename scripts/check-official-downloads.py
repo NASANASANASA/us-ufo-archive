@@ -5,7 +5,7 @@ rows=list(csv.DictReader((ROOT/'assets/uap-data.csv').open(encoding='utf-8-sig')
 dates=json.loads((ROOT/'assets/record-detail-dates.json').read_text())['records']
 videos=dict(re.findall(r'"(\d+)"\s*:\s*"([^"]+)"',(ROOT/'assets/dvids-map.js').read_text()))
 videos.update(json.loads((ROOT/'assets/official-video-downloads.json').read_text()))
-langs=['en','es','pt','fr','de','ru','ar','nl','ja','ko','zh-Hans','zh-Hant']
+langs=['en','es','pt','fr','de','ru','ar','nl','pl','ja','ko','zh-Hans','zh-Hant']
 def absolute(url):
  url=url.strip()
  return 'https://www.war.gov/'+url.lstrip('/') if url.startswith(('/', 'Portals/')) else url

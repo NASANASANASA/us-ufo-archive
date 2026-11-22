@@ -17,7 +17,7 @@ import urllib.parse
 import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-TARGETS = {'zh-cn': 'zh-CN', 'zh-tw': 'zh-TW', 'nl': 'nl', 'ja': 'ja', 'es': 'es',
+TARGETS = {'zh-cn': 'zh-CN', 'zh-tw': 'zh-TW', 'pl': 'pl', 'nl': 'nl', 'ja': 'ja', 'es': 'es',
            'pt': 'pt', 'ru': 'ru', 'fr': 'fr', 'de': 'de', 'ko': 'ko', 'ar': 'ar'}
 FIELDS = {'titleZh': 'Title', 'descZh': 'Description Blurb',
           'locZh': 'Incident Location', 'altZh': 'Image Alt Text'}
@@ -26,7 +26,7 @@ CACHE_LOCK = threading.Lock()
 
 
 
-def protect_dutch_literals(text):
+def protect_translation_literals(text, target='nl'):
     """Keep source identifiers, timecodes and measurements out of unit conversion."""
     protected = {}
     units = {'miles per hour': 'mijl per uur', 'nautical miles': 'zeemijl',
@@ -34,6 +34,9 @@ def protect_dutch_literals(text):
              'mph': 'mijl per uur', 'miles': 'mijl', 'mile': 'mijl',
              'feet': 'voet', 'foot': 'voet', 'yards': 'yard', 'yard': 'yard',
              'knots': 'knopen', 'knot': 'knoop', 'pounds': 'pond', 'pound': 'pond', 'inches': 'inch'}
+
+    if target == 'pl':
+        units = {'miles per hour':'mil/h','nautical miles':'mil morskich','nautical mile':'mila morska','square miles':'mil kwadratowych','mph':'mil/h','miles':'mil','mile':'mila','feet':'stóp','foot':'stopa','yards':'jardów','yard':'jard','knots':'węzłów','knot':'węzeł','pounds':'funtów','pound':'funt','inches':'cali'}
 
     def save(value):
         token = f'ZXQ{len(protected)}QXZ'
@@ -44,7 +47,7 @@ def protect_dutch_literals(text):
                   lambda m: save(units[m[0].lower()]), text, flags=re.I)
     text = re.sub(r'https?://[^\s<>]+|\b(?:DOW|NASA|CIA|FBI|DOE|DOS|ODNI|NSA|NARA)-[A-Z0-9-]+|'
                   r'\b\d{1,2}:\d{2}(?::\d{2})?(?:\s*[-–—]\s*\d{1,2}:\d{2}(?::\d{2})?)?|'
-                  r'\b\d+(?:[.,]\d+)?\b', lambda m: save(m[0]), text)
+                  r'\b\d{4}Z\b|\b\d+(?:[.,]\d+)?\b', lambda m: save(m[0]), text)
 
     def restore(translated):
         for token, original in protected.items():
@@ -71,7 +74,7 @@ def translate(value, target):
             if cached is not None:
                 translated.append(cached)
                 continue
-            request_text, restore = protect_dutch_literals(chunk) if target == 'nl' else (chunk, lambda v: v)
+            request_text, restore = protect_translation_literals(chunk, target) if target in ('nl','pl') else (chunk, lambda v: v)
             query = urllib.parse.urlencode({'client': 'dict-chrome-ex', 'sl': 'en', 'tl': target,
                                             'dt': 't', 'q': request_text})
             for attempt in range(6):

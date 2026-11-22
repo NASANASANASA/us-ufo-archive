@@ -1,0 +1,285 @@
+{
+  "build": {
+    "text": {
+      "lang": "pl",
+      "name": "Polski",
+      "home": "Publiczne archiwum UAP",
+      "language": "Język",
+      "archive": "Archiwum",
+      "notice": "To nieoficjalna kopia publicznych materiałów i indeks badawczy. Oryginalne teksty oraz multimedia pochodzą z publicznych publikacji rządu USA.",
+      "summary": "Podsumowanie",
+      "official": "Tłumaczenie oficjalnego opisu",
+      "records": "materiałów",
+      "agency": "Instytucja",
+      "release": "Publikacja",
+      "date": "Data zdarzenia",
+      "location": "Miejsce zdarzenia",
+      "type": "Typ",
+      "source": "Otwórz oficjalne źródło",
+      "downloadCurrent": "Pobierz plik ↓",
+      "backToList": "Powrót do archiwum",
+      "all": "Wszystkie materiały",
+      "byAgency": "Materiały według instytucji",
+      "byYear": "Materiały według roku",
+      "byLocation": "Materiały według miejsca",
+      "byType": "Materiały według typu",
+      "indexes": "Indeksy",
+      "related": "Powiązane indeksy archiwalne",
+      "relatedMedia": "Powiązane materiały",
+      "generated": "Indeks wygenerowany na podstawie oficjalnych publicznych materiałów UAP rządu USA.",
+      "descriptionPrefix": "Oficjalny materiał UAP rządu USA",
+      "redactionNotice": "Niektóre fragmenty zostały zaczernione w celu ochrony tożsamości świadków, lokalizacji obiektów rządowych lub potencjalnie wrażliwych informacji o obiektach wojskowych niezwiązanych z UAP. W plikach opublikowanych na polecenie prezydenta Trumpa nie zaczerniono żadnych informacji dotyczących charakteru ani istnienia zdarzeń zgłoszonych jako UAP lub zjawiska pokrewne."
+    },
+    "seo": {
+      "release04Title": "Materiały UAP z publikacji 04",
+      "release04Intro": "Przeglądaj wszystkie 40 materiałów UAP z czwartej oficjalnej publikacji, w tym filmy, obrazy, dokumenty PDF, dane zdarzeń i oficjalne źródła.",
+      "videosTitle": "Filmy UAP",
+      "videosIntro": "Przeglądaj publiczne nagrania wideo UAP rządu USA z możliwością odtwarzania lokalnego, jeśli są dostępne, oficjalne opisy, powiązane zapisy i pliki źródłowe do pobrania.",
+      "pdfsTitle": "Dokumenty PDF UAP",
+      "pdfsIntro": "Przeglądaj publiczne dokumenty PDF UAP rządu USA, metadane, powiązane materiały i odnośniki do oficjalnych plików.",
+      "imagesTitle": "Obrazy UAP",
+      "imagesIntro": "Przeglądaj publiczne zapisy obrazów UAP rządu USA, nieruchome klatki, cyfrowe renderingi, pomocnicze metadane i oficjalne łącza archiwalne.",
+      "browseRelease04": "Materiały z publikacji 04",
+      "browseVideos": "Filmy UAP",
+      "browsePdfs": "Dokumenty PDF",
+      "browseImages": "Obrazy",
+      "mediaDetails": "Informacje o multimediach",
+      "mediaDetailsIntro": "Ta strona porządkuje typ pliku, instytucję publikującą, numer publikacji, datę i miejsce zdarzenia, oficjalne źródło oraz dostępne publiczne multimedia.",
+      "homeDescription": "Przeszukuj 478 publicznych materiałów UFO/UAP rządu USA z siedmiu oficjalnych publikacji: filmy, obrazy, dokumenty PDF, instytucje, daty, miejsca, powiązane materiały i oficjalne źródła."
+    },
+    "legal": {
+      "privacy": {
+        "title": "Polityka prywatności",
+        "description": "Polityka prywatności nieoficjalnego publicznego archiwum UAP.",
+        "body": [
+          [
+            "Przegląd",
+            "Ta strona jest nieoficjalną kopią i indeksem badawczym publicznych materiałów UAP rządu USA. Do przeglądania archiwum nie jest wymagane konto ani podawanie danych osobowych."
+          ],
+          [
+            "Reklamy i pliki cookie",
+            "Ta witryna może korzystać z Google AdSense lub innych usług reklamowych stron trzecich. Google i jej partnerzy mogą używać plików cookie lub podobnych technologii do wyświetlania reklam, pomiaru wydajności reklam, ograniczania powtarzających się reklam i personalizowania reklam, jeśli jest to dozwolone przez prawo. Odwiedzający mogą zarządzać personalizacją reklam za pomocą ustawień reklam Google i kontroli plików cookie w przeglądarce."
+          ],
+          [
+            "Analityka i dzienniki",
+            "Dostawcy usług hostingowych, sieci dostarczania treści, przeglądarki i usługi bezpieczeństwa mogą automatycznie przetwarzać standardowe informacje techniczne, takie jak adres IP, typ przeglądarki, informacje o urządzeniu, strony odsyłające, żądane adresy URL i znaczniki czasu. Informacje te są wykorzystywane do celów bezpieczeństwa, niezawodności, diagnostyki i analizy zagregowanego ruchu."
+          ],
+          [
+            "Linki zewnętrzne",
+            "Akta archiwalne zawierają linki do oryginalnych źródeł rządowych USA i innych mediów. Te zewnętrzne strony internetowe podlegają własnym politykom prywatności i nie są kontrolowane przez tę witrynę."
+          ],
+          [
+            "Kontakt",
+            "W przypadku pytań dotyczących prywatności, próśb o sprostowanie lub problemów związanych ze źródłem skorzystaj ze strony kontaktowej, do której link znajduje się w stopce."
+          ]
+        ]
+      },
+      "about": {
+        "title": "O archiwum",
+        "description": "O nieoficjalnej wielojęzycznej kopii publicznych materiałów UFO/UAP rządu USA.",
+        "body": [
+          [
+            "Cel",
+            "Strona porządkuje publiczne materiały UFO/UAP rządu USA w przeszukiwalne, wielojęzyczne archiwum do celów badawczych, informacyjnych i weryfikacji źródeł."
+          ],
+          [
+            "Źródła",
+            "Tytuły, opisy, metadane, pliki, obrazy i filmy pochodzą z publicznych publikacji rządowych. Każdy materiał zawiera odnośnik do oficjalnego źródła, o ile jest on dostępny."
+          ],
+          [
+            "Nieoficjalny charakter",
+            "Strona nie jest prowadzona przez rząd USA ani nie reprezentuje żadnej instytucji rządowej. W razie rozbieżności tłumaczenia lub formatowania rozstrzyga oficjalne źródło angielskie."
+          ]
+        ]
+      },
+      "contact": {
+        "title": "Kontakt",
+        "description": "Informacje kontaktowe w sprawie poprawek, problemów ze źródłami i pytań dotyczących prywatności.",
+        "body": [
+          [
+            "Zgłaszanie problemów",
+            "Poprawki, niedziałające odnośniki, pytania dotyczące prywatności i problemy ze źródłami można zgłaszać jako publiczne zgłoszenia (issues) w repozytorium projektu na GitHubie."
+          ],
+          [
+            "Repozytorium projektu",
+            "GitHub: https://github.com/NASANASANASA/us-ufo-archive"
+          ],
+          [
+            "Co uwzględnić",
+            "Podaj adres strony, tytuł materiału, w razie potrzeby adres oryginalnego źródła oraz krótki opis problemu."
+          ]
+        ]
+      },
+      "disclaimer": {
+        "title": "Zastrzeżenia",
+        "description": "Zastrzeżenia dotyczące nieoficjalnej kopii publicznego archiwum UAP.",
+        "body": [
+          [
+            "Brak przynależności do rządu",
+            "Niniejsza witryna nie jest oficjalną witryną rządu USA i nie jest powiązana, wspierana ani obsługiwana przez żadną agencję rządową USA."
+          ],
+          [
+            "Zastosowanie informacyjne",
+            "Archiwum ma charakter informacyjny, badawczy i referencyjny. Nie dokonuje ocen analitycznych, wniosków dochodzeniowych ani ustaleń faktycznych na temat charakteru jakiegokolwiek zgłoszonego zdarzenia UAP."
+          ],
+          [
+            "Priorytet źródła",
+            "Wszystkie materiały należy sprawdzać w oryginalnym oficjalnym źródle. W razie rozbieżności tekstu, tłumaczenia, formatowania lub metadanych rozstrzyga oficjalne źródło w języku angielskim."
+          ]
+        ]
+      }
+    },
+    "agencies": {
+      "Department of War": "Departament Wojny",
+      "Department of State": "Departament Stanu",
+      "Department of Energy": "Departament Energii",
+      "Central Intelligence Agency": "Centralna Agencja Wywiadowcza",
+      "Executive Office of the President": "Biuro Wykonawcze Prezydenta",
+      "Office of the Director of National Intelligence": "Biuro Dyrektora Wywiadu Narodowego",
+      "Intelligence Community Agency": "Instytucja wspólnoty wywiadowczej",
+      "U.S. Government": "Rząd USA",
+      "Local Law Enforcement": "Lokalne organy ścigania",
+      "CIA": "CIA",
+      "FBI": "FBI",
+      "NASA": "NASA"
+    },
+    "labels": {
+      "noVideosLabel": "Ta publikacja nie zawiera filmów",
+      "downloadsLabel": "Pobieranie",
+      "navAboutLabel": "O stronie",
+      "brandSubtitleLabel": "Kopia publicznych archiwów rządu USA",
+      "navSourceLabel": "Oficjalne archiwum UFO ↗",
+      "downloadsCopy": {
+        "title": "Pobieranie według publikacji",
+        "intro": "Pobierz oficjalne pełne pakiety publicznych materiałów UAP rządu USA.",
+        "documents": "dokumenty",
+        "videos": "filmy",
+        "release": "Publikacja",
+        "date": "Data publikacji"
+      },
+      "homeSeoTitle": "Publiczne archiwum UAP | Materiały UFO/UAP rządu USA",
+      "showcaseTitleLabel": "Przeglądaj wyróżnione materiały",
+      "dateTakenLabel": "Data wykonania"
+    }
+  },
+  "ui": {
+    "nav_archive": "Archiwum",
+    "nav_releases": "Publikacje",
+    "nav_about": "O stronie",
+    "nav_source": "Oficjalne archiwum UFO ↗",
+    "lang_label": "Język",
+    "lang_cn": "简体中文",
+    "lang_tw": "繁體中文",
+    "hero_systemline": "PUBLIC ACCESS TERMINAL / Archiwum w języku polskim",
+    "hero_title_html": "Rząd USA<br><em>UFO / UAP</em><br>Publiczne archiwum",
+    "hero_intro": "Przeszukuj publiczne pliki, multimedia i historyczne materiały rządu USA dotyczące niezidentyfikowanych zjawisk anomalnych (UAP). Strona udostępnia tłumaczenia oraz indeks z odnośnikami do oficjalnych źródeł.",
+    "hero_cta1_html": "Wejdź do archiwum <span>→</span>",
+    "hero_cta2": "Odwiedź oficjalne źródło ↗",
+    "hero_status1": "publicznych materiałów",
+    "hero_status2": "publikacji",
+    "hero_status3": "zakres dat",
+    "notice_tag": "O tej kopii archiwum",
+    "notice_text_html": "<strong>To nie jest oficjalna strona rządu USA.</strong> Teksty, pliki i multimedia pochodzą z publicznych źródeł rządowych. Strona zawiera tłumaczenia oraz indeks.<br>Każdy materiał zachowuje odnośnik do oryginalnego źródła. W razie rozbieżności rozstrzygający jest oficjalny tekst angielski.",
+    "notice_verify": "Sprawdź źródło ↗",
+    "section_title": "Archiwum",
+    "section_subtitle": "Zawiera publikacje 01–07 z bazy PURSUE rządu USA · ostatnia uwzględniona publikacja: 23 października 2026",
+    "tab_all": "Wszystkie materiały",
+    "tab_r1": "Publikacja 01",
+    "tab_r2": "Publikacja 02",
+    "tab_r3": "Publikacja 03",
+    "banner_all_title": "Przeszukuj wszystkie publiczne materiały",
+    "banner_all_link": "",
+    "banner_r1_title": "Publikacja 01 udostępniona publicznie",
+    "banner_r2_title": "Publikacja 02 udostępniona publicznie",
+    "banner_r3_title": "Publikacja 03 udostępniona publicznie",
+    "banner_all_date": "Zawiera siedem publicznych publikacji",
+    "banner_r1_date": "Data publikacji: 8 maja 2026",
+    "banner_r2_date": "Data publikacji: 22 maja 2026",
+    "banner_r3_date": "Data publikacji: 12 czerwca 2026",
+    "download_r1_docs": "> Pobierz dokumenty z publikacji 01 [1.2GB]",
+    "download_r1_videos": "> Pobierz filmy z publikacji 01 [1.3GB]",
+    "download_r2_docs": "> Pobierz dokumenty z publikacji 02 [70.1MB]",
+    "download_r2_videos": "> Pobierz filmy z publikacji 02 [5.6GB]",
+    "download_r3_docs": "> Pobierz dokumenty z publikacji 03 [826MB]",
+    "download_r3_videos": "> Pobierz filmy z publikacji 03 [4.6GB]",
+    "search_placeholder": "Szukaj według tytułu, instytucji lub oficjalnego opisu...",
+    "opt_all_agency": "Wszystkie instytucje",
+    "opt_all_release": "Wszystkie publikacje",
+    "opt_all_type": "Wszystkie typy",
+    "opt_pdf": ".PDF",
+    "opt_vid": ".VID",
+    "opt_img": ".IMG",
+    "opt_aud": ".AUD",
+    "th_id": "Tytuł materiału",
+    "th_agency": "Instytucja",
+    "th_release": "Publikacja",
+    "th_incidentdate": "Data zdarzenia",
+    "th_incidentlocation": "Miejsce zdarzenia",
+    "th_type": "Typ",
+    "table_head_hint": "Kliknij materiał, aby otworzyć stronę szczegółów i oryginalne źródło",
+    "table_loading": "Ładowanie materiałów...",
+    "footer_brand": "Publiczne archiwum UAP / Kopia",
+    "footer_disclaimer": "Nieoficjalny publiczny indeks · treści pochodzą od pierwotnych wydawców",
+    "modal_source_link": "Zobacz oficjalny materiał rządu USA ↗",
+    "t_unspecified": "Nie podano",
+    "t_loading_video": "Ładowanie oficjalnego filmu...",
+    "t_loading_audio": "Ładowanie oryginalnego nagrania audio rządu USA...",
+    "t_empty_results": "Brak pasujących materiałów",
+    "t_related_media": "Powiązane materiały",
+    "t_pdf_no_embed": "Przeglądarka nie może osadzić tego oficjalnego pliku",
+    "t_no_media": "Dla tego materiału nie ma multimediów, które można wyświetlić na stronie.",
+    "t_db_loading": "Ładowanie danych archiwum...",
+    "t_db_local_fail": "Nie udało się wczytać lokalnej kopii danych",
+    "t_db_fail": "Nie udało się wczytać danych archiwum.",
+    "t_goto_official_db": "Przejdź do bazy danych rządu USA PURSUE ↗",
+    "t_no_desc": "Oryginalna dokumentacja rządu USA nie zawierała opisu tekstowego.",
+    "t_no_video_src": "Adres URL oryginalnego filmu jest niedostępny; użyj oficjalnego przycisku pobierania poniżej.",
+    "t_records_unit": "materiałów",
+    "t_display_prefix": "Wyświetlanie",
+    "brand_title": "Publiczne archiwum UAP",
+    "brand_subtitle": "Kopia publicznych archiwów rządu USA",
+    "meta_asset_file_name": "Nazwa pliku",
+    "meta_release": "Publikacja",
+    "meta_agency": "Instytucja",
+    "meta_incident_date": "Data zdarzenia",
+    "meta_incident_location": "Miejsce zdarzenia",
+    "meta_document_type": "Typ dokumentu",
+    "meta_date_taken": "Data wykonania",
+    "meta_category": "Kategoria",
+    "meta_length": "Czas trwania",
+    "meta_location": "Lokalizacja",
+    "release_01": "Publikacja 01",
+    "release_02": "Publikacja 02",
+    "release_03": "Publikacja 03",
+    "redaction_notice": "Niektóre fragmenty zostały zaczernione w celu ochrony tożsamości świadków, lokalizacji obiektów rządowych lub potencjalnie wrażliwych informacji o obiektach wojskowych niezwiązanych z UAP. W plikach opublikowanych na polecenie prezydenta Trumpa nie zaczerniono żadnych informacji dotyczących charakteru ani istnienia zdarzeń zgłoszonych jako UAP lub zjawiska pokrewne.",
+    "release_06": "Publikacja 06",
+    "release_07": "Publikacja 07",
+    "tab_r4": "Publikacja 04",
+    "banner_r4_title": "Publikacja 04 udostępniona publicznie",
+    "banner_r4_date": "Data publikacji: 10 lipca 2026",
+    "download_r4_docs": "> Pobierz dokumenty z publikacji 04 [227 MB]",
+    "download_r4_videos": "> Pobierz filmy z publikacji 04 [1.4GB]",
+    "t_release_downloads": "Pobieranie według publikacji",
+    "release_04": "Publikacja 04",
+    "tab_r5": "Publikacja 05",
+    "release_05": "Publikacja 05",
+    "t_indexes": "Indeksy",
+    "t_records_short": "materiałów",
+    "t_by_agency": "Materiały według instytucji",
+    "t_by_year": "Materiały według roku",
+    "t_by_location": "Materiały według miejsca",
+    "t_by_type": "Materiały według typu",
+    "t_uap_videos": "Filmy UAP",
+    "t_pdf_records": "Dokumenty PDF",
+    "t_image_records": "Obrazy",
+    "filter_all_years": "Wszystkie dekady",
+    "filter_all_locations": "Wszystkie lokalizacje",
+    "filter_show_more": "Pokaż wszystkie lokalizacje",
+    "filter_show_less": "Zwiń lokalizacje",
+    "banner_r5_title": "Publikacja 05 udostępniona publicznie",
+    "banner_r5_date": "Data publikacji: 7 sierpnia 2026",
+    "download_r5_docs": "> Pobierz dokumenty z publikacji 05 [130 MB]",
+    "download_r5_videos": "> Pobierz filmy z publikacji 05 [513MB]",
+    "preview_cover_note": "Oficjalna miniatura jest niedostępna; ten podgląd pokazuje pierwszą stronę oryginalnego pliku PDF."
+  }
+}

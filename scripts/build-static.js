@@ -6,16 +6,18 @@ const officialDownload = require('../assets/official-download.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
-const assetVersion = '20261122-media-layout1';
+const assetVersion = '20261122-polish1';
 const dutch = require('../assets/locale-nl.json');
+const polish = require('../assets/locale-pl.json');
+const extraLocales = {nl: dutch, pl: polish};
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const servicesScript = prefix => `<script src="${prefix}assets/site-services.js?v=20261120-preview1"></script>`;
 const adsenseClient = 'ca-pub-2222469808721720';
 const adsenseSlot = '8548356239';
-const generatedDirs = ['en', 'es', 'pt', 'fr', 'de', 'ru', 'ar', 'nl', 'ja', 'ko', 'zh-Hans', 'zh-Hant'];
+const generatedDirs = ['en', 'es', 'pt', 'fr', 'de', 'ru', 'ar', 'nl', 'pl', 'ja', 'ko', 'zh-Hans', 'zh-Hant'];
 const extraStaticDirs = [];
 const langPathPattern = new RegExp(`^/(${generatedDirs.join('|')})(/|$)`);
-const langMenuCodes = {nl: 'nl', en: 'en', ja: 'ja', es: 'es', 'zh-Hans': 'cn', 'zh-Hant': 'tw', pt: 'pt', ru: 'ru', fr: 'fr', de: 'de', ko: 'ko', ar: 'ar'};
+const langMenuCodes = {pl: 'pl', nl: 'nl', en: 'en', ja: 'ja', es: 'es', 'zh-Hans': 'cn', 'zh-Hant': 'tw', pt: 'pt', ru: 'ru', fr: 'fr', de: 'de', ko: 'ko', ar: 'ar'};
 
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const recordDates = JSON.parse(read('assets/record-detail-dates.json')).records;
@@ -106,12 +108,12 @@ for (const bundle of releaseDownloadBundles) {
 function documentBundleUrl(bundle) { return bundle.documentsUrl; }
 
 function noVideosLabel(lang) {
-  if (lang === 'nl') return dutch.build.labels.noVideosLabel;
+  if (extraLocales[lang]) return extraLocales[lang].build.labels.noVideosLabel;
   return ({en: 'No videos in this release', es: 'Esta publicación no incluye videos', pt: 'Este lote não inclui vídeos', fr: 'Cette publication ne contient aucune vidéo', de: 'Diese Veröffentlichung enthält keine Videos', ru: 'В этом выпуске нет видео', ar: 'لا توجد مقاطع فيديو في هذا الإصدار', ja: 'この公開分に動画はありません', ko: '이번 공개에는 동영상이 없습니다', 'zh-Hans': '本批次无视频', 'zh-Hant': '本批次無影片'})[lang];
 }
 
 function downloadsLabel(lang) {
-  if (lang === 'nl') return dutch.build.labels.downloadsLabel;
+  if (extraLocales[lang]) return extraLocales[lang].build.labels.downloadsLabel;
   return ({
     en: 'Downloads',
     es: 'Descargas',
@@ -128,7 +130,7 @@ function downloadsLabel(lang) {
 }
 
 function navAboutLabel(lang) {
-  if (lang === 'nl') return dutch.build.labels.navAboutLabel;
+  if (extraLocales[lang]) return extraLocales[lang].build.labels.navAboutLabel;
   return ({
     en: 'About',
     es: 'Acerca del sitio',
@@ -145,7 +147,7 @@ function navAboutLabel(lang) {
 }
 
 function brandSubtitleLabel(lang) {
-  if (lang === 'nl') return dutch.build.labels.brandSubtitleLabel;
+  if (extraLocales[lang]) return extraLocales[lang].build.labels.brandSubtitleLabel;
   return ({
     en: 'U.S. government record mirror',
     es: 'Espejo de registros del Gobierno de EE. UU.',
@@ -162,7 +164,7 @@ function brandSubtitleLabel(lang) {
 }
 
 function navSourceLabel(lang) {
-  if (lang === 'nl') return dutch.build.labels.navSourceLabel;
+  if (extraLocales[lang]) return extraLocales[lang].build.labels.navSourceLabel;
   return ({
     en: 'Official UFO Archive ↗',
     es: 'Archivo UFO Oficial ↗',
@@ -179,7 +181,7 @@ function navSourceLabel(lang) {
 }
 
 function downloadsCopy(lang) {
-  if (lang === 'nl') return dutch.build.labels.downloadsCopy;
+  if (extraLocales[lang]) return extraLocales[lang].build.labels.downloadsCopy;
   return ({
     en: {
       title: 'Release Downloads',
@@ -1174,10 +1176,12 @@ const agencyNames = {
 
 for (const [lang, label] of Object.entries({"zh-Hans": "地方执法机构", "zh-Hant": "地方執法機關", "en": "Local Law Enforcement", "ja": "地方の法執行機関", "es": "Autoridades policiales locales", "pt": "Autoridades policiais locais", "ru": "Местные правоохранительные органы", "fr": "Services de police locaux", "de": "Örtliche Strafverfolgungsbehörden", "ko": "지역 법 집행 기관", "ar": "جهات إنفاذ القانون المحلية"})) agencyNames[lang]['Local Law Enforcement'] = label;
 
-text.nl = dutch.build.text;
-seoText.nl = dutch.build.seo;
-agencyNames.nl = dutch.build.agencies;
-for (const [slugName, page] of Object.entries(dutch.build.legal)) legalPages[slugName].nl = page;
+for (const [lang, locale] of Object.entries(extraLocales)) {
+  text[lang] = locale.build.text;
+  seoText[lang] = locale.build.seo;
+  agencyNames[lang] = locale.build.agencies;
+  for (const [slugName, page] of Object.entries(locale.build.legal)) legalPages[slugName][lang] = page;
+}
 
 function langTitle(doc, lang) {
   if (lang !== 'en') return doc.i18n?.[lang]?.titleZh || doc.id;
@@ -1204,6 +1208,7 @@ function releaseLabel(value, lang) {
   const n = clean(value).match(/(\d{2})$/)?.[1] || clean(value);
   if (lang === 'zh-Hans') return `第${Number(n)}批`;
   if (lang === 'zh-Hant') return `第${Number(n)}批`;
+  if (lang === 'pl') return `Publikacja ${n}`;
   if (lang === 'nl') return `Publicatie ${n}`;
   if (lang === 'ja') return `第${Number(n)}回公開`;
   if (lang === 'es') return `Publicación ${n}`;
@@ -1221,7 +1226,7 @@ function yearOf(doc) {
 }
 
 function homeSeoTitle(lang) {
-  if (lang === 'nl') return dutch.build.labels.homeSeoTitle;
+  if (extraLocales[lang]) return extraLocales[lang].build.labels.homeSeoTitle;
   if (lang === 'zh-Hans') return 'UAP 档案库｜美国政府 UFO/UAP 公开档案中文镜像';
   if (lang === 'zh-Hant') return 'UAP 檔案庫｜美國政府 UFO/UAP 公開檔案中文鏡像';
   if (lang === 'ja') return 'UAP公開アーカイブ｜米国政府 UFO/UAP 記録ミラー';
@@ -1243,6 +1248,7 @@ function metaDescription(doc, lang) {
   const agency = agencyLabel(doc.agency, lang);
   const date = recordFormat.formatDate(doc.detailDate?.value || doc.incidentDate || 'N/A', lang);
   const dateLabel = recordDateLabel(doc, lang);
+  if (lang === 'pl') return `Publiczny materiał UFO/UAP rządu USA: ${title}. Typ: ${type}. Instytucja: ${agency}. ${dateLabel}: ${date}. Miejsce: ${location}. Zawiera oficjalne źródło, podgląd multimediów i powiązane materiały.`;
   if (lang === 'nl') return `Openbaar UFO/UAP-archief van de Amerikaanse overheid: ${title}. Type: ${type}. Instantie: ${agency}. ${dateLabel}: ${date}. Locatie: ${location}. Met officiële bron, mediavoorbeeld en gerelateerde archiefstukken.`;
   if (lang === 'zh-Hans') return `美国政府 UFO/UAP 公开档案：${title}。类型：${type}。发布机构：${agency}。${dateLabel}：${date}。事件地点：${location}。页面保留官方来源链接、媒体预览和相关档案。`;
   if (lang === 'zh-Hant') return `美國政府 UFO/UAP 公開檔案：${title}。類型：${type}。發布機構：${agency}。${dateLabel}：${date}。事件地點：${location}。頁面保留官方來源連結、媒體預覽和相關檔案。`;
@@ -1264,6 +1270,7 @@ function structuredSummary(doc, lang) {
   const date = recordFormat.formatDate(doc.detailDate?.value || doc.incidentDate || 'N/A', lang);
   const dateLabel = recordDateLabel(doc, lang);
   const type = doc.type || 'PDF';
+  if (lang === 'pl') return `Materiał dotyczący UAP w formacie ${type}. Instytucja publikująca: ${agency}. ${release}. ${dateLabel}: ${date}. Miejsce zdarzenia: ${location}. Strona zawiera odnośnik do oficjalnego źródła, przetłumaczony opis i najważniejsze metadane.`;
   if (lang === 'nl') return `Dit archiefstuk is een UAP-gerelateerd bestand van het type ${type}, gepubliceerd door ${agency} in ${release}. ${dateLabel}: ${date}. Locatie: ${location}. Deze pagina bevat de officiële bronlink, de vertaalde beschrijving en de belangrijkste metadata.`;
   if (lang === 'ja') {
     return `この記録は、${agency}が${release}で公開した${type}形式のUAP関連資料です。${dateLabel}は${date}、事件場所は${location}として記録されています。ページには公式記録へのリンク、原文説明、主要メタデータを掲載しています。`;
@@ -1281,6 +1288,7 @@ function structuredSummary(doc, lang) {
 }
 
 function seoRecordTitle(doc, lang, title) {
+  if (lang === 'pl') return `${title} | Materiał ${clean(doc.type) || 'PDF'} UFO/UAP rządu USA`;
   if (lang === 'nl') return `${title} | ${clean(doc.type) || 'PDF'} UFO/UAP-archiefstuk van de Amerikaanse overheid`;
   const type = clean(doc.type) || 'PDF';
   if (lang === 'zh-Hans') return `${title} | 美国政府 ${type} UAP/UFO 档案`;
@@ -1481,6 +1489,11 @@ function organizationSchema(lang = 'en') {
 
 function homeFaqSchema(lang = 'en') {
   const entries = ({
+    pl: [
+      ['Czym jest Publiczne archiwum UAP?', 'To nieoficjalna wielojęzyczna kopia i indeks publicznych materiałów UFO/UAP rządu USA.'],
+      ['Jak wyszukiwać materiały UAP?', 'Użyj wyszukiwarki i filtrów według publikacji, instytucji, dekady, miejsca oraz typu pliku.'],
+      ['Czy to oficjalna strona?', 'Ta strona jest nieoficjalna. Materiały pochodzą z publicznych publikacji rządowych. Rozstrzygające jest oficjalne źródło w języku angielskim.']
+    ],
     nl: [
       ['Wat is het openbare UAP-archief?', 'Dit is een onofficiële meertalige spiegel en zoekindex van openbare UFO/UAP-archiefstukken van de Amerikaanse overheid.'],
       ['Hoe zoek ik UAP-archiefstukken?', 'Gebruik de zoekbalk en filters voor publicatie, instantie, decennium, locatie en bestandstype.'],
@@ -1687,6 +1700,7 @@ function releaseTopicMeta(lang, n, count) {
   if (n === '04') {
     return {title: s.release04Title, intro: s.release04Intro, nav: s.browseRelease04};
   }
+  if (lang === 'pl') return {title: `Materiały UAP z publikacji ${n}`, intro: `Przeglądaj wszystkie ${count} publiczne materiały UAP z oficjalnej publikacji ${n}, w tym filmy, obrazy, pliki PDF, dane zdarzeń i odnośniki do oficjalnych źródeł.`, nav: `Publikacja ${n}`};
   if (lang === 'nl') return {title: `UAP-archiefstukken van publicatie ${n}`, intro: `Bekijk alle ${count} openbare UAP-archiefstukken uit officiële publicatie ${n}, met video's, afbeeldingen, PDF's, incidentgegevens en officiële bronlinks.`, nav: `Publicatie ${n}`};
   const num = Number(n);
   const zhNum = {1: '一', 2: '二', 3: '三', 4: '四', 5: '五'}[num] || String(num);
@@ -1840,7 +1854,7 @@ function buildDownloadsPage(lang) {
       <div class="release-download-grid">
         ${releaseDownloadBundles.map(bundle => `<article class="release-download-card">
           <b>${esc(copy.release)} ${esc(bundle.release)}</b>
-          <small>${esc(copy.date)}: ${esc(bundle.date)}</small>
+          <small>${esc(copy.date)}: ${esc(lang === 'pl' ? recordFormat.formatDate(bundle.date, lang) : bundle.date)}</small>
           <div class="release-downloads">
             <a class="download-bundle" href="${esc(documentBundleUrl(bundle))}" data-bundle="${esc(bundleFilename(bundle, 'documents'))}" download="${esc(bundleFilename(bundle, 'documents'))}" title="${esc(bundleFilename(bundle, 'documents'))}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.documents)} [${esc(bundle.documentsSize)}]</a>
             ${bundle.videosUrl ? `<a class="download-bundle" href="${esc(bundle.videosUrl)}" data-bundle="${esc(bundleFilename(bundle, 'videos'))}" download="${esc(bundleFilename(bundle, 'videos'))}" title="${esc(bundleFilename(bundle, 'videos'))}" target="_blank" rel="noopener">&gt; ${esc(copy.release)} ${esc(bundle.release)} ${esc(copy.videos)} [${esc(bundle.videosSize)}]</a>` : `<span class="static-muted">${esc(noVideosLabel(lang))}</span>`}
@@ -1874,7 +1888,7 @@ function buildLegalPage(lang, slugName) {
     </section>
     <section class="static-panel legal-panel">
       ${page.body.map(([heading, paragraph]) => `<h2>${esc(heading)}</h2><p>${linkifyText(paragraph)}</p>`).join('\n      ')}
-      <p class="static-muted">${lang === 'nl' ? 'Laatst bijgewerkt: 16 juni 2026' : 'Last updated: June 16, 2026'}</p>
+      <p class="static-muted">${lang === 'pl' ? 'Ostatnia aktualizacja: 16 czerwca 2026' : lang === 'nl' ? 'Laatst bijgewerkt: 16 juni 2026' : 'Last updated: June 16, 2026'}</p>
     </section>
   </main>`;
   return pageShell({lang, title: `${page.title} · ${text[lang].home}`, description: page.description, canonicalPath: `/${lang}/${slugName}/`, body, depth: 2});
@@ -1885,7 +1899,7 @@ function linkifyText(value) {
 }
 
 function showcaseTitleLabel(lang) {
-  if (lang === 'nl') return dutch.build.labels.showcaseTitleLabel;
+  if (extraLocales[lang]) return extraLocales[lang].build.labels.showcaseTitleLabel;
   return ({
     en: 'Browse Featured Records',
     ja: '注目記録の閲覧',
@@ -1902,12 +1916,13 @@ function showcaseTitleLabel(lang) {
 }
 
 function buildInteractiveHome(lang, template) {
+  const locale = extraLocales[lang];
   const footer = footerHtml('../', lang)
     .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
     .replace(/href="\.\.\/"/g, 'href="../"');
   return template
-    .replace(/\s*<a data-dir="nl"[^>]*>[\s\S]*?<\/a>/g, '')
-    .replace(/(<a data-dir="ja"[^>]*>)/g, '<a data-dir="nl" data-lang="nl" href="../nl/">Nederlands</a>\n          $1')
+    .replace(/\s*<a data-dir="(?:nl|pl)"[^>]*>[\s\S]*?<\/a>/g, '')
+    .replace(/(<a data-dir="ja"[^>]*>)/g, '<a data-dir="nl" data-lang="nl" href="../nl/">Nederlands</a>\n          <a data-dir="pl" data-lang="pl" href="../pl/">Polski</a>\n          $1')
     .replace(/2026\.08\.07/g, '2026.10.23')
     .replace(/(<b id="hero-record-count">)[^<]*(<\/b>)/, (_, open, close) => `${open}478${close}`)
     .replace(/(<span><b>)\d{2}(<\/b>)/, (_, open, close) => `${open}07${close}`)
@@ -1939,12 +1954,15 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script async src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-2222469808721720"[\s\S]*?<\/script>\s*/g, '\n')
     .replace(/\s*<script async src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-ZND85JXQ6M"><\/script>\s*<script>[\s\S]*?gtag\('config', 'G-ZND85JXQ6M'\);[\s\S]*?<\/script>\s*/g, '\n')
     .replace(/\s*<script src="[^"\n]*assets\/site-services\.js[^"\n]*"><\/script>\s*/g, '\n')
+    .replace(/aria-label="([^"]*)"/g, (all, value) => lang === 'pl' ? `aria-label="${esc(({'抽象雷达资料可视化':'Abstrakcyjna wizualizacja radaru','档案分页':'Strony archiwum','打开菜单':'Otwórz menu','关闭':'Zamknij','UAP release showcase':'Wyróżnione materiały UAP','Release showcase tabs':'Publikacje','Previous release item':'Poprzedni materiał','Next release item':'Następny materiał','Showcase navigation':'Nawigacja wyróżnionych materiałów','Advertisement':'Reklama','Site policies':'Zasady strony'})[value] || value)}"` : all)
+    .replace(/<summary>语言 \/ Language<\/summary>/g, lang === 'pl' ? '<summary>Język</summary>' : '<summary>语言 / Language</summary>')
+    .replace(/(<p id="showcase-summary">)[\s\S]*?(<\/p>)/, (all, open, close) => lang === 'pl' ? open + 'Ładowanie wyróżnionych materiałów…' + close : all)
     .replace(/aria-label="抽象雷达资料可视化"/g, lang === 'nl' ? 'aria-label="Abstracte radarvisualisatie"' : 'aria-label="抽象雷达资料可视化"')
     .replace(/aria-label="档案分页"/g, lang === 'nl' ? 'aria-label="Archiefpaginering"' : 'aria-label="档案分页"')
     .replace(/<summary>语言 \/ Language<\/summary>/g, lang === 'nl' ? '<summary>Taal</summary>' : '<summary>语言 / Language</summary>')
     .replace(/(<p id="showcase-summary">)[\s\S]*?(<\/p>)/, (all, open, close) => lang === 'nl' ? open + 'Uitgelichte archiefstukken laden…' + close : all)
     .replace(/aria-label="([^"]*)"/g, (all, value) => lang === 'nl' ? `aria-label="${esc(({'打开菜单':'Menu openen','关闭':'Sluiten','UAP release showcase':'Uitgelichte UAP-archiefstukken','Release showcase tabs':'Publicaties','Previous release item':'Vorig archiefstuk','Next release item':'Volgend archiefstuk','Showcase navigation':'Navigatie door uitgelichte archiefstukken','Advertisement':'Advertentie','Site policies':'Websitebeleid'})[value] || value)}"` : all)
-    .replace(/<input\b[^>]*data-i18n-placeholder="([^"]+)"[^>]*>/g, (all, key) => lang === 'nl' && dutch.ui[key] ? all.replace(/placeholder="[^"]*"/, `placeholder="${esc(dutch.ui[key])}"`) : all)
+    .replace(/<input\b[^>]*data-i18n-placeholder="([^"]+)"[^>]*>/g, (all, key) => locale && locale.ui[key] ? all.replace(/placeholder="[^"]*"/, `placeholder="${esc(locale.ui[key])}"`) : all)
     .replace(/<html[^>]*>/, `<html lang="${text[lang].lang}">`)
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(homeSeoTitle(lang))}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc((seoText[lang] || seoText.en).homeDescription)}">`)
@@ -1953,8 +1971,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/assets\/style\.css\?v=[^"]+/g, `assets/style.css?v=${assetVersion}`)
     .replace(/assets\/site\.js\?v=[^"]+/g, `assets/site.js?v=${assetVersion}`)
     .replace(/assets\/(db-data|dvids-map|i18n-ui)\.js\?v=[^"]+/g, (_, name) => `assets/${name}.js?v=${assetVersion}`)
-    .replace(/\s*<script src="[^"]*assets\/locale-nl\.js[^"]*"><\/script>/g, '')
-    .replace(/(<script src="[^"]*assets\/i18n-ui\.js[^"]*"><\/script>)/, `$1\n  <script src="../assets/locale-nl.js?v=${assetVersion}"></script>`)
+    .replace(/\s*<script src="[^"]*assets\/locale-(?:nl|pl)\.js[^"]*"><\/script>/g, '')
+    .replace(/(<script src="[^"]*assets\/i18n-ui\.js[^"]*"><\/script>)/, `$1\n  <script src="../assets/locale-nl.js?v=${assetVersion}"></script>\n  <script src="../assets/locale-pl.js?v=${assetVersion}"></script>`)
     .replace(/最近批次：2026\.(?:06\.12|07\.10)/g, '最近批次：2026.10.23')
     .replace(/latest release: 2026\.(?:06\.12|07\.10)/g, 'latest release: 2026.10.23')
     .replace(/最新公開: 2026\.(?:06\.12|07\.10)/g, '最新公開: 2026.10.23')
@@ -1984,13 +2002,13 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\/"/g, 'href="../"')
     .replace(/<a class="brand" href="\.\.\/">/, '<a class="brand" href="./">')
     .replace(/<footer>[\s\S]*?<\/footer>/, footer)
-    .replace(/(<([a-z0-9]+)\b[^>]*data-i18n(?:-html)?="([^"]+)"[^>]*>)([\s\S]*?)(<\/\2>)/gi, (all, open, tag, key, value, close) => lang === 'nl' && dutch.ui[key] ? open + (open.includes('data-i18n-html=') ? dutch.ui[key] : esc(dutch.ui[key])) + close : all)
-    .replace(/(data-i18n-placeholder="([^"]+)"[^>]*placeholder=")[^"]*/g, (all, open, key) => lang === 'nl' && dutch.ui[key] ? open + esc(dutch.ui[key]) : all);
+    .replace(/(<([a-z0-9]+)\b[^>]*data-i18n(?:-html)?="([^"]+)"[^>]*>)([\s\S]*?)(<\/\2>)/gi, (all, open, tag, key, value, close) => locale && locale.ui[key] ? open + (open.includes('data-i18n-html=') ? locale.ui[key] : esc(locale.ui[key])) + close : all)
+    .replace(/(data-i18n-placeholder="([^"]+)"[^>]*placeholder=")[^"]*/g, (all, open, key) => locale && locale.ui[key] ? open + esc(locale.ui[key]) : all);
 }
 
 function recordDateLabel(doc, lang) { return doc.detailDate?.kind === 'dateTaken' ? dateTakenLabel(lang) : text[lang].date; }
 
-function dateTakenLabel(lang) { return ({nl: "Opnamedatum", "en": "Date taken", "es": "Fecha de captura", "pt": "Data da captura", "fr": "Date de prise de vue", "de": "Aufnahmedatum", "ru": "Дата съёмки", "ar": "تاريخ التسجيل", "ja": "撮影日", "ko": "촬영일", "zh-Hans": "拍摄日期", "zh-Hant": "拍攝日期"})[lang]; }
+function dateTakenLabel(lang) { return ({pl: "Data wykonania", nl: "Opnamedatum", "en": "Date taken", "es": "Fecha de captura", "pt": "Data da captura", "fr": "Date de prise de vue", "de": "Aufnahmedatum", "ru": "Дата съёмки", "ar": "تاريخ التسجيل", "ja": "撮影日", "ko": "촬영일", "zh-Hans": "拍摄日期", "zh-Hant": "拍攝日期"})[lang]; }
 
 function buildRecordPage(doc, lang, docs) {
   const l = text[lang];
@@ -2089,7 +2107,7 @@ function currentRecordDownloadName(doc, url) {
   return `${base}.${ext.toLowerCase()}`;
 }
 
-function coverPreviewLabel(lang) { return ({nl: "De officiële miniatuur is niet beschikbaar; dit voorbeeld toont de eerste pagina van de oorspronkelijke PDF.", "en": "The official thumbnail is unavailable; this preview shows the first page of the original PDF.", "zh-Hans": "官方缩略图暂不可用；当前预览为原始 PDF 的首页。", "zh-Hant": "官方縮圖暫不可用；目前預覽為原始 PDF 的首頁。", "ja": "公式サムネイルを取得できないため、元のPDFの最初のページを表示しています。", "es": "La miniatura oficial no está disponible; se muestra la primera página del PDF original.", "pt": "A miniatura oficial está indisponível; esta prévia mostra a primeira página do PDF original.", "ru": "Официальная миниатюра недоступна; показана первая страница исходного PDF.", "fr": "La miniature officielle est indisponible ; cet aperçu affiche la première page du PDF original.", "de": "Die offizielle Miniaturansicht ist nicht verfügbar; angezeigt wird die erste Seite der Original-PDF.", "ko": "공식 썸네일을 사용할 수 없어 원본 PDF의 첫 페이지를 표시합니다.", "ar": "الصورة المصغرة الرسمية غير متاحة؛ تعرض هذه المعاينة الصفحة الأولى من ملف PDF الأصلي."})[lang] || ""; }
+function coverPreviewLabel(lang) { return ({pl: "Oficjalna miniatura jest niedostępna; podgląd przedstawia pierwszą stronę oryginalnego pliku PDF.", nl: "De officiële miniatuur is niet beschikbaar; dit voorbeeld toont de eerste pagina van de oorspronkelijke PDF.", "en": "The official thumbnail is unavailable; this preview shows the first page of the original PDF.", "zh-Hans": "官方缩略图暂不可用；当前预览为原始 PDF 的首页。", "zh-Hant": "官方縮圖暫不可用；目前預覽為原始 PDF 的首頁。", "ja": "公式サムネイルを取得できないため、元のPDFの最初のページを表示しています。", "es": "La miniatura oficial no está disponible; se muestra la primera página del PDF original.", "pt": "A miniatura oficial está indisponível; esta prévia mostra a primeira página do PDF original.", "ru": "Официальная миниатюра недоступна; показана первая страница исходного PDF.", "fr": "La miniature officielle est indisponible ; cet aperçu affiche la première page du PDF original.", "de": "Die offizielle Miniaturansicht ist nicht verfügbar; angezeigt wird die erste Seite der Original-PDF.", "ko": "공식 썸네일을 사용할 수 없어 원본 PDF의 첫 페이지를 표시합니다.", "ar": "الصورة المصغرة الرسمية غير متاحة؛ تعرض هذه المعاينة الصفحة الأولى من ملف PDF الأصلي."})[lang] || ""; }
 
 function staticMediaPreview(doc, lang, title, docs) {
   const image = urls(doc.imageUrl)[0] || (doc.type === 'VID' ? doc.videoMetadata?.thumbnailUrl : '') || '';
@@ -2098,6 +2116,7 @@ function staticMediaPreview(doc, lang, title, docs) {
   const video = urls(doc.videoUrl || '')[0] || '';
   const youtube = doc.youtubeUrl || '';
   const blocked = {
+    pl: 'Oficjalne źródło blokuje podgląd na innych stronach. Otwórz oficjalne źródło lub pobierz ten plik.',
     nl: 'De officiële bron blokkeert externe voorbeelden. Open de officiële bron of download dit archiefstuk.',
     en: 'The official source blocks external previews. Open the official source or use the record download.',
     ja: '公式ソースが外部サイトでのプレビュー表示をブロックしています。公式ソースを開くか、この記録のファイルをダウンロードしてください。',
@@ -2163,7 +2182,7 @@ function descriptionHtml(value) {
 
 function isRedactionParagraph(value) {
   const text = clean(value).toLowerCase();
-  return text.startsWith('er zijn redacties') || text.startsWith('er zijn delen onleesbaar gemaakt') || text.startsWith('delen zijn onleesbaar gemaakt') || text.startsWith('redactions have been made') ||
+  return text.startsWith('niektóre fragmenty zostały zaczernione') || text.startsWith('wprowadzono zmiany w celu ochrony') || text.startsWith('er zijn redacties') || text.startsWith('er zijn delen onleesbaar gemaakt') || text.startsWith('delen zijn onleesbaar gemaakt') || text.startsWith('redactions have been made') ||
     text.startsWith('為了保護') ||
     text.startsWith('为了保护') ||
     text.startsWith('為保護') ||
@@ -2244,13 +2263,16 @@ function build() {
   }
   writeFile('assets/static-previews.js', `/* Local preview images; provenance and SHA-256 are recorded in static-previews.json. */\nwindow.UAP_STATIC_PREVIEWS = ${JSON.stringify(staticPreviews)};\n`);
   writeFile('assets/db-data.js', read('assets/db-data.js').replace(/const UAP_DATA_VERSION = '[^']+';/, `const UAP_DATA_VERSION = '${assetVersion}';`));
-  writeFile('assets/locale-nl.js', `/* Generated Dutch interface translations from locale-nl.json. */\nconst UAP_NL_AGENCIES = ${JSON.stringify(dutch.build.agencies)};\nObject.entries(${JSON.stringify(dutch.ui)}).forEach(([key, value]) => { if (!UI_TEXT[key]) UI_TEXT[key] = {}; UI_TEXT[key].nl = value; });\n`);
+  for (const [lang, locale] of Object.entries(extraLocales)) {
+    writeFile(`assets/locale-${lang}.js`, `/* Generated interface translations from locale-${lang}.json. */\nconst UAP_${lang.toUpperCase()}_AGENCIES = ${JSON.stringify(locale.build.agencies)};\nObject.entries(${JSON.stringify(locale.ui)}).forEach(([key, value]) => { if (!UI_TEXT[key]) UI_TEXT[key] = {}; UI_TEXT[key][${JSON.stringify(lang)}] = value; });\n`);
+  }
   const interactiveTemplate = read('zh-Hant/index.html');
   const csv = parseCSV(read('assets/uap-data.csv'));
   const translationFiles = {
     'zh-Hans': 'assets/i18n-zh-cn.json',
     'zh-Hant': 'assets/i18n-zh-tw.json',
     nl: 'assets/i18n-nl.json',
+    pl: 'assets/i18n-pl.json',
     ja: 'assets/i18n-ja.json',
     es: 'assets/i18n-es.json',
     pt: 'assets/i18n-pt.json',

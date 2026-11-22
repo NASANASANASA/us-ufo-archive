@@ -16,7 +16,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 # Last published Release 01–05 dataset, retained as a regression baseline.
 BASELINE = '8d830f48e34c741af245ce3985a471350448c992'
 VERSION = re.search(r"const assetVersion = '([^']+)'", (ROOT / 'scripts/build-static.js').read_text()).group(1)
-LANGS = {'en': None, 'zh-Hans': 'zh-cn', 'zh-Hant': 'zh-tw', 'nl': 'nl', 'ja': 'ja',
+LANGS = {'en': None, 'zh-Hans': 'zh-cn', 'zh-Hant': 'zh-tw', 'pl': 'pl', 'nl': 'nl', 'ja': 'ja',
          'es': 'es', 'pt': 'pt', 'ru': 'ru', 'fr': 'fr', 'de': 'de', 'ko': 'ko', 'ar': 'ar'}
 rows = list(csv.DictReader((ROOT / 'assets/uap-data.csv').open(encoding='utf-8-sig')))
 assert len(rows) == 478
@@ -56,7 +56,7 @@ for lang, translation in LANGS.items():
     if translation:
         file = f'assets/i18n-{translation}.json'
         entries = json.loads((ROOT / file).read_text())
-        original = [] if lang == 'nl' else json.loads(subprocess.check_output(['git', 'show', BASELINE + ':' + file], cwd=ROOT, text=True))
+        original = [] if lang in ('nl','pl') else json.loads(subprocess.check_output(['git', 'show', BASELINE + ':' + file], cwd=ROOT, text=True))
         for index, previous in enumerate(original):
             current = entries[index]
             repair = repairs.get((translation, index))
@@ -107,4 +107,4 @@ for row in rows[375:]:
         assert f'"{row["DVIDS Video ID"]}"' in video_map
         assert video_meta[row['DVIDS Video ID']]['duration'] > 0
 
-print('PASS: 103 new records, 12 languages, 103 previews, 16 media URLs, generated links and sitemap; legacy data preserved except logged description repairs.')
+print('PASS: 103 new records, 13 languages, 103 previews, 16 media URLs, generated links and sitemap; legacy data preserved except logged description repairs.')
