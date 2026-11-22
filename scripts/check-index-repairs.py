@@ -57,9 +57,9 @@ for row in rows:
         video = objects[0]
         assert video['thumbnailUrl'].count('https://') == 1 and urlsplit(video['thumbnailUrl']).netloc
         assert datetime.datetime.fromisoformat(video['uploadDate']).utcoffset() is not None
-        player = source.index('class="static-panel static-watch-player"')
-        assert player < source.index('class="static-panel static-record-copy"')
-        assert player < source.index('<ins '), 'advertising precedes primary video'
+        sidebar = re.search(r'<aside class="static-panel static-record-media">(.*?)</aside>', source, re.S)
+        assert sidebar and re.search(r'<(?:video|iframe)\b', sidebar[1]), 'player must be in the media sidebar'
+        assert 'static-watch-player' not in source and 'static-video-record' not in source
         assert len(re.findall(r'<(?:video class="static-video-preview"|iframe class="youtube-embed")', source)) == 1
         poster = re.search(r' poster="([^"]+)"', source)
         if poster:
@@ -78,7 +78,7 @@ for entry in entries:
     assert entry.find('v:video/v:publication_date', ns).text
 assert len(entries) == videos == sum(row['Type'] == 'VID' for row in rows) * len(LANGS)
 print(f'PASS: all 343 reported 404s covered by {len(routes)} redirects; filter targets valid; '
-      f'{videos} video pages and sitemap entries have primary players, official posters and valid timestamps; '
+      f'{videos} video pages and sitemap entries have sidebar players, local posters and valid timestamps; '
       f'{len(rows) * len(LANGS)} record schemas checked.')
 if '--live' in sys.argv:
     def check_live(url):

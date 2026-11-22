@@ -6,7 +6,7 @@ const officialDownload = require('../assets/official-download.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
-const assetVersion = '20261122-static-media1';
+const assetVersion = '20261122-media-layout1';
 const dutch = require('../assets/locale-nl.json');
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const servicesScript = prefix => `<script src="${prefix}assets/site-services.js?v=20261120-preview1"></script>`;
@@ -2008,22 +2008,17 @@ function buildRecordPage(doc, lang, docs) {
     lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription, lang, doc.redaction)}` : ''
   ].filter(Boolean).join('\n        ');
   const mediaPreview = staticMediaPreview(doc, lang, title, docs);
-  const watchPage = doc.type === 'VID' && !!(mediaUrls(doc).video || mediaUrls(doc).youtube);
-  const actionOffset = mediaPreview.indexOf('<div class="static-media-actions">');
-  const primaryPlayer = watchPage ? mediaPreview.slice(0, actionOffset) : '';
-  const sideMedia = watchPage ? mediaPreview.slice(actionOffset) : mediaPreview;
   const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
   const backHref = `../../../${lang}/#releases`;
   const backHandler = "try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){history.back();return false}}catch(e){}";
   const schema = recordSchemas(doc, lang, title, description, canonicalPath);
-  const body = `<main class="static-main static-record${watchPage ? ' static-video-record' : ''}">
+  const body = `<main class="static-main static-record">
     <section class="static-record-head">
       <a class="static-back-link" href="${esc(backHref)}" onclick="${backHandler}">← ${esc(l.backToList)}</a>
       <p class="system-line"><span></span> ASSET RECORD</p>
       <h1>${esc(title)}</h1>
-${watchPage ? '' : `<p>${esc(description)}</p>`}
+<p>${esc(description)}</p>
     </section>
-${watchPage ? `<section class="static-panel static-watch-player" aria-label="${esc(title)}">${primaryPlayer}</section>` : ''}
     ${manualAdSlot('record-after-head')}
     <section class="static-record-grid">
       <article class="static-panel static-record-copy">
@@ -2041,7 +2036,7 @@ ${watchPage ? `<section class="static-panel static-watch-player" aria-label="${e
         </dl>
       </article>
       <aside class="static-panel static-record-media">
-        ${sideMedia}
+        ${mediaPreview}
       </aside>
     </section>
   </main>`;
