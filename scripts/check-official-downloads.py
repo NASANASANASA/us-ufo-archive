@@ -27,16 +27,21 @@ for row in rows:
 reference='430c2c601350a93da51a5929bdf230ca5a9c02a4'
 proc=subprocess.Popen(['git','archive',reference,*langs],cwd=ROOT,stdout=subprocess.PIPE)
 preserved=0
+corrected=0
 with tarfile.open(fileobj=proc.stdout,mode='r|') as archive:
  for member in archive:
   if '/records/' not in member.name or not member.name.endswith('/index.html'):continue
   old=archive.extractfile(member).read().decode();new=(ROOT/member.name).read_text()
   media=lambda s:[re.sub(r'\?v=[^"\s>]+','?v=VERSION',tag) for tag in re.findall(r'<(?:video|source|iframe|img)\b[^>]*>',s)]
-  assert media(old)==media(new),('Display media changed',member.name)
+  if media(old)!=media(new):
+   assert member.name.endswith('/fbi-uap-d014-digital-rendering-narrative-statement-1-1-western-united-states-event-2023/index.html'),('Unexpected display media change',member.name)
+   assert 'release-04/thumbnails/FBI-UAP-D014_' not in new
+   assert '/061226/' in new
+   corrected+=1
   preserved+=1
 assert proc.wait()==0
 assert checked==preserved==5258
-print(f'PASS: {checked} official download links; all {preserved} sets of display images, players and media sources preserved.')
+print(f'PASS: {checked} official download links; {preserved-corrected} display media sets preserved, {corrected} cross-release preview mismatches corrected.')
 if '--live' in sys.argv:
  inventory=json.loads(pathlib.Path('/tmp/uap-r2-inventory-20261121.json').read_text());bykey={x['key']:x for x in inventory}
  extra=json.loads((ROOT/'assets/official-video-downloads.json').read_text())

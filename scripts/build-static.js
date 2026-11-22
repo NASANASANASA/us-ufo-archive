@@ -8,7 +8,7 @@ const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
 const mediaBase = (process.env.UAP_MEDIA_BASE || 'https://media.uap-archives.org/').replace(/\/?$/, '/');
 const mediaVersion = process.env.UAP_MEDIA_VERSION || '20260718-seo1';
-const assetVersion = '20261121-official-download1';
+const assetVersion = '20261122-media-scope1';
 const siteLogoUrl = `${siteUrl}/assets/icons/icon-512.png`;
 const servicesScript = prefix => `<script src="${prefix}assets/site-services.js?v=20261120-preview1"></script>`;
 const adsenseClient = 'ca-pub-2222469808721720';
@@ -632,15 +632,17 @@ function normalize(row, index, translations) {
     ...(derivedVideo ? [derivedVideo] : [])
   ].filter(Boolean).join('|');
   const recordId = field(row, ['asset file name', 'title', 'assetFileName']);
-  const r2Document = r2Documents[assetCode(recordId)] || null;
-  const r2Image = r2Media[assetCode(recordId)] || null;
+  const recordRelease = field(row, ['release']) || releaseMap[releaseDate] || releaseDate;
+  const mediaInRelease = entry => entry && entry.url.match(/\/release-(\d{2})\//)?.[1] === recordRelease.match(/\d{2}/)?.[0] ? entry : null;
+  const r2Document = mediaInRelease(r2Documents[assetCode(recordId)]);
+  const r2Image = mediaInRelease(r2Media[assetCode(recordId)]);
   const ext = (doc.split('?')[0].match(/\.([a-z0-9]+)$/i)?.[1] || r2Document?.type || officialType || 'PDF').replace('.', '').toUpperCase();
   return {
     index,
     id: recordId,
     slug: slug(recordId),
     agency: field(row, ['agency']) || 'U.S. Government',
-    release: field(row, ['release']) || releaseMap[releaseDate] || releaseDate,
+    release: recordRelease,
     releaseDate,
     incidentDate: field(row, ['incident date', 'incidentDate']) || 'N/A',
     detailDate: recordFormat.detailDate({id: recordId, incidentDate: field(row, ['incident date', 'incidentDate'])}, recordDates),
