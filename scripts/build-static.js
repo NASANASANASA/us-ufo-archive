@@ -2155,11 +2155,14 @@ function staticMediaPreview(doc, lang, title, docs) {
   const officialUrl = staticOfficialRecordPage(doc);
   const downloadUrl = currentRecordDownloadUrl(doc, {image, r2Image, localImage, video});
   const downloadName = downloadUrl ? currentRecordDownloadName(doc, downloadUrl) : '';
-  const hasTraditionalTranslation = lang === 'zh-Hant' && assetCode(doc.id) === 'DOWUAPD174';
-  const downloadLabel = hasTraditionalTranslation ? '下載官方英文原文（PDF）↓' : text[lang].downloadCurrent;
+  const translatedDocument = assetCode(doc.id) === 'DOWUAPD174' ? ({
+    'zh-Hant': {path: '/assets/translations/zh-Hant/DOW-UAP-D174_zh-Hant.pdf', filename: 'DOW-UAP-D174_猶他州牧場調查報告_繁體中文.pdf', label: '下載繁體中文譯本（PDF，13.4 MB）↓', original: '下載官方英文原文（PDF）↓', note: '非官方翻譯，內容請以英文原文為準。'},
+    'zh-Hans': {path: '/assets/translations/zh-Hans/DOW-UAP-D174_zh-Hans.pdf', filename: 'DOW-UAP-D174_犹他州牧场调查报告_简体中文.pdf', label: '下载简体中文译本（PDF，12.9 MB）↓', original: '下载官方英文原文（PDF）↓', note: '非官方翻译，内容请以英文原文为准。'}
+  })[lang] : null;
+  const downloadLabel = translatedDocument ? translatedDocument.original : text[lang].downloadCurrent;
   const downloadCurrent = downloadUrl ? `<a class="static-media-button" href="${esc(downloadUrl)}" download="${esc(downloadName)}" target="_blank" data-download-source="official" data-download-url="${esc(downloadUrl)}" data-download-filename="${esc(downloadName)}" rel="noopener">${esc(downloadLabel)}</a>` : '';
-  const downloadTranslation = hasTraditionalTranslation
-    ? `<a class="static-media-button" href="/assets/translations/zh-Hant/DOW-UAP-D174_zh-Hant.pdf" download="DOW-UAP-D174_猶他州牧場調查報告_繁體中文.pdf" data-translation-download="zh-Hant">下載繁體中文譯本（PDF，13.4 MB）↓</a><small class="static-muted">非官方翻譯，內容請以英文原文為準。</small>`
+  const downloadTranslation = translatedDocument
+    ? `<a class="static-media-button" href="${esc(translatedDocument.path)}" download="${esc(translatedDocument.filename)}" data-translation-download="${esc(lang)}">${esc(translatedDocument.label)}</a><small class="static-muted">${esc(translatedDocument.note)}</small>`
     : '';
   const openOfficial = `<a class="static-media-button" href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(text[lang].source)} ↗</a>`;
   const relatedLinks = relatedRecords(doc, docs)
