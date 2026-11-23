@@ -2137,11 +2137,14 @@ function staticMediaPreview(doc, lang, title, docs) {
   const officialUrl = staticOfficialRecordPage(doc);
   const downloadUrl = currentRecordDownloadUrl(doc, {image, r2Image, localImage, video});
   const downloadName = downloadUrl ? currentRecordDownloadName(doc, downloadUrl) : '';
-  const translatedDocument = assetCode(doc.id) === 'DOWUAPD174' ? ({
+  const translatedDocument = ({DOWUAPD174: {
     'es': {path: '/assets/translations/es/DOW-UAP-D174_es.pdf', filename: 'DOW-UAP-D174_Informe_del_rancho_de_Utah_es.pdf', label: 'Descargar traducción al español (PDF) ↓', original: 'Descargar original oficial en inglés (PDF) ↓', note: 'Traducción no oficial basada en la versión en chino tradicional. Prevalece el original en inglés.'},
     'zh-Hant': {path: '/assets/translations/zh-Hant/DOW-UAP-D174_zh-Hant.pdf', filename: 'DOW-UAP-D174_猶他州牧場調查報告_繁體中文.pdf', label: '下載繁體中文譯本（PDF）↓', original: '下載官方英文原文（PDF）↓', note: '非官方翻譯，內容請以英文原文為準。'},
     'zh-Hans': {path: '/assets/translations/zh-Hans/DOW-UAP-D174_zh-Hans.pdf', filename: 'DOW-UAP-D174_犹他州牧场调查报告_简体中文.pdf', label: '下载简体中文译本（PDF）↓', original: '下载官方英文原文（PDF）↓', note: '非官方翻译，内容请以英文原文为准。'}
-  })[lang] : null;
+  }, CIAUAPD027: {
+    'zh-Hant': {path: '/assets/translations/zh-Hant/CIA-UAP-D027_zh-Hant.pdf', filename: 'CIA-UAP-D027_1952年飛碟簡報_繁體中文.pdf', label: '下載繁體中文譯本（PDF）↓', original: '下載官方英文原文（PDF）↓', note: '非官方翻譯；英中逐頁對照。內容以英文原件為準。'},
+    'zh-Hans': {path: '/assets/translations/zh-Hans/CIA-UAP-D027_zh-Hans.pdf', filename: 'CIA-UAP-D027_1952年飞碟简报_简体中文.pdf', label: '下载简体中文译本（PDF）↓', original: '下载官方英文原文（PDF）↓', note: '非官方翻译；英中逐页对照。内容以英文原件为准。'}
+  }})[assetCode(doc.id)]?.[lang] || null;
   const downloadLabel = translatedDocument ? translatedDocument.original : text[lang].downloadCurrent;
   const downloadCurrent = downloadUrl ? `<a class="static-media-button" href="${esc(downloadUrl)}" download="${esc(downloadName)}" target="_blank" data-download-source="official" data-download-url="${esc(downloadUrl)}" data-download-filename="${esc(downloadName)}" rel="noopener">${esc(downloadLabel)}</a>` : '';
   const downloadTranslation = translatedDocument

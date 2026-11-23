@@ -1,0 +1,39 @@
+{
+  "record": "CIA-UAP-D027",
+  "sourceSha256": "cc7b83c815f91f1a8e1710cff3b287b1c578a69665f56a0140ee755a9f48983a",
+  "editions": {
+    "zh-Hans": {
+      "pages": 11,
+      "sha256": "a9e6e37de4a86e2a65768495057eb2a953e63e89fbf432bbaae861b059610cde",
+      "bytes": 3210574,
+      "pageAlignedTranslationsVerified": 11,
+      "originalImagesByteIdentical": 32,
+      "renderedPages": 11,
+      "draftPage": 8,
+      "bestCopyPage": 7,
+      "deletionPreservedOnPage": 9,
+      "pageOrderPreserved": true,
+      "allChineseTextVerified": true
+    },
+    "zh-Hant": {
+      "pages": 11,
+      "sha256": "2ec69339971059a82b7f82f2c14b7af37187003bb1a41491b33a56443d6092a9",
+      "bytes": 3279869,
+      "pageAlignedTranslationsVerified": 11,
+      "originalImagesByteIdentical": 32,
+      "renderedPages": 11,
+      "draftPage": 8,
+      "bestCopyPage": 7,
+      "deletionPreservedOnPage": 9,
+      "pageOrderPreserved": true,
+      "allChineseTextVerified": true
+    }
+  },
+  "verifiedSourceFeatures": {
+    "page7": "Best Copy Available leaf retained",
+    "page8": "NSC intelligence directive explicitly marked DRAFT; all four paragraphs translated",
+    "page9": "20% and 28% retained; crossed-out 10% sentence translated with strike-through",
+    "page11": "Redacted handoff retained; no missing continuation invented"
+  },
+  "visualReview": "Both editions rendered and all 22 pages reviewed; pages 8 and 9 inspected at full size."
+}
