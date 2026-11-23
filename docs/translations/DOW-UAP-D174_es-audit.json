@@ -1,0 +1,15 @@
+{
+  "sourceSha256": "7c72ac53d27c92435c191e210668d7ffd1b467631c24162107373eabacdbbb08",
+  "outputSha256": "c5492cf15f808aea3afe65596c5702bc60110a3134a3dc1d43e8735df21650a3",
+  "pages": 60,
+  "translatedRegionsChecked": 1193,
+  "originalImagesByteIdentical": 60,
+  "pageSizesPreserved": true,
+  "untranslatedChineseRegions": 0,
+  "sourceLanguage": "zh-Hant",
+  "targetLanguage": "es",
+  "nonOfficialTranslation": true,
+  "visualReview": "All 60 pages rendered and reviewed; dense question-and-answer and bird-description tables checked at cell level.",
+  "minimumBodyTextSizePt": 6.249,
+  "footerTextSizePt": 6.1
+}
