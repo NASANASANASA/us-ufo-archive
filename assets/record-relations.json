@@ -1,0 +1,4174 @@
+{
+ "sourceUrl": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv?release=8v1",
+ "sourceSha256": "bae7455d6b5dff3ab84beb22607bc119db27cfb45a2746cec3c39e8a7662b247",
+ "records": {
+  "CIA-UAP-017, Placement on High Alert Due to Perceived Aggressive Foreign Posturing": {
+   "title": "CIA-UAP-017, Placement on High Alert Due to Perceived Aggressive Foreign Posturing",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-017_Placement_on_High_Alert_Due_to_Perceived_Aggressive_Foreign_Posturing.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 53
+  },
+  "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949": {
+   "title": "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 121
+  },
+  "FBI-UAP-D002, FD-1057, Unresolved UAP Report, Colorado Springs, 2022": {
+   "title": "FBI-UAP-D002, FD-1057, Unresolved UAP Report, Colorado Springs, 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D002_FD-1057_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 416
+  },
+  "FBI-UAP-D003, Digital Rendering, Unresolved UAP Report, Colorado Springs, 2022": {
+   "title": "FBI-UAP-D003, Digital Rendering, Unresolved UAP Report, Colorado Springs, 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D003_Digital-Rendering_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D002",
+   "order": 417
+  },
+  "FBI-UAP-D009, FD-302-67, “Northeastern Orb Sighting,” 2026": {
+   "title": "FBI-UAP-D009, FD-302-67, “Northeastern Orb Sighting,” 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D009_FD-302-67_Northeastern-Orb-Sighting_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "FBI-UAP-PR004",
+   "pdfPairing": "FBI-UAP-D010",
+   "order": 423
+  },
+  "FBI-UAP-D010, FD-302-71, “Northeastern Orb Sighting,” 2026": {
+   "title": "FBI-UAP-D010, FD-302-71, “Northeastern Orb Sighting,” 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D010_FD-302-71_Northeastern-Orb-Sighting_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "FBI-UAP-PR004",
+   "pdfPairing": "FBI-UAP-D009",
+   "order": 424
+  },
+  "FBI-UAP-D011, D/FBI Correspondence Referral, 1949": {
+   "title": "FBI-UAP-D011, D/FBI Correspondence Referral, 1949",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 425
+  },
+  "FBI-UAP-PR003, “Orbs Over the Pond,” 2024": {
+   "title": "FBI-UAP-PR003, “Orbs Over the Pond,” 2024",
+   "documentUrl": "",
+   "videoUrl": "1010267",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 458
+  },
+  "FBI-UAP-PR004, “Northeastern Orb Sighting,” 2025": {
+   "title": "FBI-UAP-PR004, “Northeastern Orb Sighting,” 2025",
+   "documentUrl": "",
+   "videoUrl": "1010269",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D009 | FBI-UAP-D010",
+   "order": 459
+  },
+  "ICA-UAP-D001, Analysis: Colorado Springs UAP Incident, 2022": {
+   "title": "ICA-UAP-D001, Analysis: Colorado Springs UAP Incident, 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/ICA-UAP-D001_Analysis_Colorado-Springs-UAP-Incident.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 463
+  },
+  "18_100754_ General 1946-7_Vol_2": {
+   "title": "18_100754_ General 1946-7_Vol_2",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/18_100754_ general 1946-7_vol_2.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 6
+  },
+  "18_6369445_General_1948_Vol_1": {
+   "title": "18_6369445_General_1948_Vol_1",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/18_6369445_general_1948_vol_1.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 7
+  },
+  "255_413270_UFO's_and_Defense_What_Should_we_Prepare_For": {
+   "title": "255_413270_UFO's_and_Defense_What_Should_we_Prepare_For",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/255_413270_ufo's_and_defense_what_should_we_prepare_for.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 8
+  },
+  "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents": {
+   "title": "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 9
+  },
+  "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_1948-1955-TS_CONT_No.2_2-5300-2-5399": {
+   "title": "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_1948-1955-TS_CONT_No.2_2-5300-2-5399",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/341_110448_records_relating_to_the_collection_and_dissemination_of_intelligence_1948-1955-ts_cont_no.2_2-5300-2-5399.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 10
+  },
+  "341_110677_Numerical_File,_5-2500": {
+   "title": "341_110677_Numerical_File,_5-2500",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/341_110677_numerical_file_5-2500.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 11
+  },
+  "342_HS1-416511228_319.1 Flying Discs 1949": {
+   "title": "342_HS1-416511228_319.1 Flying Discs 1949",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/342_hs1-416511228_box186_319.1-flying-discs-1949.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 12
+  },
+  "38_143685_box_Incident_Summaries_101-172": {
+   "title": "38_143685_box_Incident_Summaries_101-172",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_101-172.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 13
+  },
+  "38_143685_box_Incident_Summaries_173-233": {
+   "title": "38_143685_box_Incident_Summaries_173-233",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 14
+  },
+  "38_143685_box7_Incident_Summaries_1-100": {
+   "title": "38_143685_box7_Incident_Summaries_1-100",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_1-100.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 15
+  },
+  "59_214434_SP 16 [7.18.1963]": {
+   "title": "59_214434_SP 16 [7.18.1963]",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/59_214434_sp_16_[7.18.1963].pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 16
+  },
+  "59_64634_711.5612[7-2852": {
+   "title": "59_64634_711.5612[7-2852",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/59_64634_711.5612[7-2852.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 17
+  },
+  "65_HS1-101634279_100-DE-18221_Serial_844": {
+   "title": "65_HS1-101634279_100-DE-18221_Serial_844",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-101634279_100-de-18221_serial_844.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 18
+  },
+  "65_HS1-101634279_100-DE-26505": {
+   "title": "65_HS1-101634279_100-DE-26505",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-101634279_100-de-26505.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 19
+  },
+  "65_HS1-834228961_62-HQ-83894_Section_001": {
+   "title": "65_HS1-834228961_62-HQ-83894_Section_001",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_1.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 20
+  },
+  "65_HS1-834228961_62-HQ-83894_Section_002": {
+   "title": "65_HS1-834228961_62-HQ-83894_Section_002",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_2.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 21
+  },
+  "65_HS1-834228961_62-HQ-83894_Section_003": {
+   "title": "65_HS1-834228961_62-HQ-83894_Section_003",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_3.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 22
+  },
+  "65_HS1-834228961_62-HQ-83894_Section_004": {
+   "title": "65_HS1-834228961_62-HQ-83894_Section_004",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_4.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 23
+  },
+  "65_HS1-834228961_62-HQ-83894_Section_005": {
+   "title": "65_HS1-834228961_62-HQ-83894_Section_005",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_5.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 24
+  },
+  "65_HS1-834228961_62-HQ-83894_Section_006": {
+   "title": "65_HS1-834228961_62-HQ-83894_Section_006",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_6.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 25
+  },
+  "65_HS1-834228961_62-HQ-83894_Section_007": {
+   "title": "65_HS1-834228961_62-HQ-83894_Section_007",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_7.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 26
+  },
+  "65_HS1-834228961_62-HQ-83894_Section_008": {
+   "title": "65_HS1-834228961_62-HQ-83894_Section_008",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_8.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 27
+  },
+  "65_HS1-834228961_62-HQ-83894_Section_009": {
+   "title": "65_HS1-834228961_62-HQ-83894_Section_009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_9.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 28
+  },
+  "65_HS1-834228961_62-HQ-83894_Section_010": {
+   "title": "65_HS1-834228961_62-HQ-83894_Section_010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_10.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 29
+  },
+  "65_HS1-834228961_62-HQ-83894_Serial_130": {
+   "title": "65_HS1-834228961_62-HQ-83894_Serial_130",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_130.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 30
+  },
+  "65_HS1-834228961_62-HQ-83894_Serial_153": {
+   "title": "65_HS1-834228961_62-HQ-83894_Serial_153",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_153.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 31
+  },
+  "65_HS1-834228961_62-HQ-83894_Serial_164": {
+   "title": "65_HS1-834228961_62-HQ-83894_Serial_164",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_164.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 32
+  },
+  "65_HS1-834228961_62-HQ-83894_Serial_220": {
+   "title": "65_HS1-834228961_62-HQ-83894_Serial_220",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_220.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 33
+  },
+  "65_HS1-834228961_62-HQ-83894_Serial_403": {
+   "title": "65_HS1-834228961_62-HQ-83894_Serial_403",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_403.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 34
+  },
+  "65_HS1-834228961_62-HQ-83894_Serial_438": {
+   "title": "65_HS1-834228961_62-HQ-83894_Serial_438",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_438.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 35
+  },
+  "65_HS1-834228961_62-HQ-83894_Serial_449": {
+   "title": "65_HS1-834228961_62-HQ-83894_Serial_449",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_449.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 36
+  },
+  "65_HS1-834228961_62-HQ-83894_SUB_A": {
+   "title": "65_HS1-834228961_62-HQ-83894_SUB_A",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_sub_a.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 37
+  },
+  "CIA-UAP-002, Scientific Advisory Panel on Unidentified Flying Objects, Report, 1952-1953": {
+   "title": "CIA-UAP-002, Scientific Advisory Panel on Unidentified Flying Objects, Report, 1952-1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 38
+  },
+  "CIA-UAP-003, The Central Intelligence Agency and Overhead Reconnaissance; The U-2 and OXCART Programs, 1954-1974": {
+   "title": "CIA-UAP-003, The Central Intelligence Agency and Overhead Reconnaissance; The U-2 and OXCART Programs, 1954-1974",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-003-THE_CENTRAL_INTELLIGENCE_AGENCY_AND_OVERHEAD_RECONNAISSANCE-THE_U-2_AND_OXCART_PROGRAMS_1954-1974.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 39
+  },
+  "CIA-UAP-004, CASE 17708 (CLOSED) and DR. Leon Davidson": {
+   "title": "CIA-UAP-004, CASE 17708 (CLOSED) and DR. Leon Davidson",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-004-CASE_17708_CLOSED_AND_DR_LEON_DAVIDSON.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 40
+  },
+  "CIA-UAP-005, German Scientist's Article on 'Flying Discs'": {
+   "title": "CIA-UAP-005, German Scientist's Article on 'Flying Discs'",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-005-GERMAN_SCIENTISTS_ ARTICLE_ON_FLYING_DISCS.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 41
+  },
+  "CIA-UAP-006, Sighting Of Unconventional Aircraft": {
+   "title": "CIA-UAP-006, Sighting Of Unconventional Aircraft",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-006_Sighting_of_Unconventional_Aircraft.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 42
+  },
+  "CIA-UAP-007, Current Status Of Unidentified Flying Objects (UFO) Project.": {
+   "title": "CIA-UAP-007, Current Status Of Unidentified Flying Objects (UFO) Project.",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 43
+  },
+  "CIA-UAP-008, Speculative Paper By N Kardashev and A Sakharov on Charged Mass in Space at Conference on Origins Of Life, Armenia, 6-8 September 1971/Low Scientific Level Of Other Soviet Papers": {
+   "title": "CIA-UAP-008, Speculative Paper By N Kardashev and A Sakharov on Charged Mass in Space at Conference on Origins Of Life, Armenia, 6-8 September 1971/Low Scientific Level Of Other Soviet Papers",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-008_SPECULATIVE_PAPER_BY_N_KARDASHEV_AND_A_SAKHAROV.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 44
+  },
+  "CIA-UAP-009, Unknown Flying Objects Observed Over Budapest": {
+   "title": "CIA-UAP-009, Unknown Flying Objects Observed Over Budapest",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-009-UNKNOWN-FLYING_OBJECTS_OBERVED_OVER_BUDAPEST.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 45
+  },
+  "CIA-UAP-010, Report on Conversations with Soviet Scientists on Subject of Unidentified Flying Objects in the USSR": {
+   "title": "CIA-UAP-010, Report on Conversations with Soviet Scientists on Subject of Unidentified Flying Objects in the USSR",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-010_REPORT_ON_CONVERSATIONS_WITH_SOVIET_SCIENTISTS_ON_SUBJECT_OF_UNIDENTIFIED_FLYING_OBJECTS_IS_THE_USSR.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 46
+  },
+  "CIA-UAP-011, The Sary Shagan Weapons Testing Range": {
+   "title": "CIA-UAP-011, The Sary Shagan Weapons Testing Range",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-011-The_Sary_Shagan_Weapons_Testing_Range.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 47
+  },
+  "CIA-UAP-012, Combating Fatigue In Crewmembers": {
+   "title": "CIA-UAP-012, Combating Fatigue In Crewmembers",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-012-Combatting_Fatigue_in_Crewmembers.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 48
+  },
+  "CIA-UAP-013, Report of Unusual Flying Object Sightings and Attendant Scientific Activity": {
+   "title": "CIA-UAP-013, Report of Unusual Flying Object Sightings and Attendant Scientific Activity",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-013-Report_of_Unusual_Flying_Object_Sightings_and_Attendant_Scientific_Activity.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 49
+  },
+  "CIA-UAP-014, British activity in the Field of \"Unidentified Flying Objects\"": {
+   "title": "CIA-UAP-014, British activity in the Field of \"Unidentified Flying Objects\"",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-014_British_Activity_in_the_Field_of_Unidentified_Flying_Objects.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 50
+  },
+  "CIA-UAP-015, Project Blue Book Special Report No. 14 (Analysis of Reports of Unidentified Aerial Objects)": {
+   "title": "CIA-UAP-015, Project Blue Book Special Report No. 14 (Analysis of Reports of Unidentified Aerial Objects)",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 51
+  },
+  "CIA-UAP-016, Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan": {
+   "title": "CIA-UAP-016, Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-016-Sightings_of_Unidentified_Flying_Ojbects_in_Ladakh_Nepal_Sikkim_and_Bhutan.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 52
+  },
+  "CIA-UAP-018, Report of Unusual Flying Object Sightings and Attendant Scientific Activity": {
+   "title": "CIA-UAP-018, Report of Unusual Flying Object Sightings and Attendant Scientific Activity",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-018_Report_of_Unusual_Flying_Object_Sightings_and_Attendant_Scientific_Activity.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 54
+  },
+  "CIA-UAP-019, Australian Dept of Defense Scientific and Intel Aspects of the UFO Problem": {
+   "title": "CIA-UAP-019, Australian Dept of Defense Scientific and Intel Aspects of the UFO Problem",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-019-Australian_Dept_of_Defense_Scientific_and_Intel_Aspects_of_the_UFO_Problem.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 55
+  },
+  "CIA-UAP-D001, Intelligence Information Report, USSR, 1973": {
+   "title": "CIA-UAP-D001, Intelligence Information Report, USSR, 1973",
+   "documentUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 56
+  },
+  "DOE-UAP-D001, Enhanced PANTEX Imagery": {
+   "title": "DOE-UAP-D001, Enhanced PANTEX Imagery",
+   "documentUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOE-UAP-D001_PANTEX_Image.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOE-UAP-D005",
+   "order": 65
+  },
+  "DOE-UAP-D002, James Tuck Correspondence, 1970s": {
+   "title": "DOE-UAP-D002, James Tuck Correspondence, 1970s",
+   "documentUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOE-UAP-D002_JamesTuck_Correspondence.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 66
+  },
+  "DOE-UAP-D003, Pajarito Astronomers Invitation, 1986": {
+   "title": "DOE-UAP-D003, Pajarito Astronomers Invitation, 1986",
+   "documentUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOE-UAP-D003_Pajarito_Astronomers.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 67
+  },
+  "DOW-UAP-D003, Mission Report, Arabian Gulf, 2020": {
+   "title": "DOW-UAP-D003, Mission Report, Arabian Gulf, 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d3-mission-report-arabian-gulf-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 72
+  },
+  "DOW-UAP-D004, Mission Report, Arabian Gulf, 2020": {
+   "title": "DOW-UAP-D004, Mission Report, Arabian Gulf, 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d4-mission-report-arabian-gulf-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 73
+  },
+  "DOW-UAP-D005, Mission Report, Arabian Gulf, 2020": {
+   "title": "DOW-UAP-D005, Mission Report, Arabian Gulf, 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d5-mission-report-arabian-gulf-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 74
+  },
+  "DOW-UAP-D006, Mission Report, Arabian Gulf, 2020": {
+   "title": "DOW-UAP-D006, Mission Report, Arabian Gulf, 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d6-mission-report-arabian-gulf-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 75
+  },
+  "DOW-UAP-D007, Mission Report, Arabian Gulf, 2020": {
+   "title": "DOW-UAP-D007, Mission Report, Arabian Gulf, 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d7-mission-report-arabian-gulf-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 76
+  },
+  "DOW-UAP-D008, Mission Report, Djibouti, 2025": {
+   "title": "DOW-UAP-D008, Mission Report, Djibouti, 2025",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d8-mission-report-djibouti-2025.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 77
+  },
+  "DOW-UAP-D010, Mission Report, Middle East, May 2022": {
+   "title": "DOW-UAP-D010, Mission Report, Middle East, May 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf",
+   "videoUrl": "1006056",
+   "videoPairing": "PR-019",
+   "pdfPairing": "",
+   "order": 78
+  },
+  "DOW-UAP-D012, Mission Report, Iraq, May 2022": {
+   "title": "DOW-UAP-D012, Mission Report, Iraq, May 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d12-mission-report-iraq-may-2022.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 79
+  },
+  "DOW-UAP-D014, Mission Report, Iraq, May 2022": {
+   "title": "DOW-UAP-D014, Mission Report, Iraq, May 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf",
+   "videoUrl": "1006059",
+   "videoPairing": "PR-021",
+   "pdfPairing": "",
+   "order": 80
+  },
+  "DOW-UAP-D016, Mission Report, Syria, July 2022": {
+   "title": "DOW-UAP-D016, Mission Report, Syria, July 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf",
+   "videoUrl": "1006060",
+   "videoPairing": "PR-022",
+   "pdfPairing": "",
+   "order": 81
+  },
+  "DOW-UAP-D017, UAP Reported at Sandia Base, 1948-1950": {
+   "title": "DOW-UAP-D017, UAP Reported at Sandia Base, 1948-1950",
+   "documentUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOW-UAP-D017_General_Correspondence_Of_Sandia.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 82
+  },
+  "DOW-UAP-D018, Mission Report, Iraq, December 2022": {
+   "title": "DOW-UAP-D018, Mission Report, Iraq, December 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf",
+   "videoUrl": "1006062",
+   "videoPairing": "PR-023",
+   "pdfPairing": "",
+   "order": 83
+  },
+  "DOW-UAP-D019, Mission Report, Syria, February 21, 2023": {
+   "title": "DOW-UAP-D019, Mission Report, Syria, February 21, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d19-mission-report-syria-february-21-2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 84
+  },
+  "DOW-UAP-D020, Mission Report, Iraq, 2023": {
+   "title": "DOW-UAP-D020, Mission Report, Iraq, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-iraq-2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 85
+  },
+  "DOW-UAP-D023, Mission Report, United Arab Emirates, October 2023": {
+   "title": "DOW-UAP-D023, Mission Report, United Arab Emirates, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
+   "videoUrl": "1006063",
+   "videoPairing": "PR-026 | PR-027",
+   "pdfPairing": "",
+   "order": 86
+  },
+  "DOW-UAP-D025, Mission Report, Greece, January 2024": {
+   "title": "DOW-UAP-D025, Mission Report, Greece, January 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d25-mission-report-greece-january-2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 87
+  },
+  "DOW-UAP-D027, Mission Report, United Arab Emirates, October 2023": {
+   "title": "DOW-UAP-D027, Mission Report, United Arab Emirates, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d27-mission-report-united-arab-emirates-october-2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 88
+  },
+  "DOW-UAP-D028, Mission Report, Iraq, September 2024": {
+   "title": "DOW-UAP-D028, Mission Report, Iraq, September 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d28-mission-report-east-china-sea-2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 89
+  },
+  "DOW-UAP-D032, Mission Report, Syria, October 2024": {
+   "title": "DOW-UAP-D032, Mission Report, Syria, October 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "videoUrl": "1006076",
+   "videoPairing": "PR-031 | PR-032 | PR-033",
+   "pdfPairing": "",
+   "order": 90
+  },
+  "DOW-UAP-D033, Mission Report, Greece, October 2023": {
+   "title": "DOW-UAP-D033, Mission Report, Greece, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf",
+   "videoUrl": "1006080",
+   "videoPairing": "PR-034",
+   "pdfPairing": "",
+   "order": 91
+  },
+  "DOW-UAP-D035, Mission Report, Greece, October 2023": {
+   "title": "DOW-UAP-D035, Mission Report, Greece, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf",
+   "videoUrl": "1006082",
+   "videoPairing": "PR-035",
+   "pdfPairing": "",
+   "order": 92
+  },
+  "DOW-UAP-D038, Range Fouler Debrief, Middle East, May 2020": {
+   "title": "DOW-UAP-D038, Range Fouler Debrief, Middle East, May 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf",
+   "videoUrl": "1006083",
+   "videoPairing": "PR-036",
+   "pdfPairing": "",
+   "order": 93
+  },
+  "DOW-UAP-D042, Range Fouler Debrief, Japan, 2023": {
+   "title": "DOW-UAP-D042, Range Fouler Debrief, Arabian Gulf, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/DOW-UAP-D042-Range-Fouler-Debrief-Arabian-Gulf-2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR039 | DOW-UAP-PR088 | DOW-UAP-PR089",
+   "pdfPairing": "",
+   "order": 94
+  },
+  "DOW-UAP-D044, Range Fouler Reporting Form, Gulf of Aden, October 2020": {
+   "title": "DOW-UAP-D044, Range Fouler Reporting Form, Gulf of Aden, October 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d44-range-fouler-arabian-sea-october-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR040",
+   "pdfPairing": "",
+   "order": 95
+  },
+  "DOW-UAP-D048, Department of the Air Force Report, 1996": {
+   "title": "DOW-UAP-D048, Department of the Air Force Report, 1996",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d48-report-september-1996.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 96
+  },
+  "DOW-UAP-D049, Launch Summary, Vandenberg AFB, 2000": {
+   "title": "DOW-UAP-D049, Launch Summary, Vandenberg AFB, 2000",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d49-launch-summary-february-2000.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 97
+  },
+  "DOW-UAP-D050, Email Correspondence, INDOPACOM, April 2025": {
+   "title": "DOW-UAP-D050, Email Correspondence, INDOPACOM, April 2025",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d50-email-correspondence-indopacom-april-2025.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 98
+  },
+  "DOW-UAP-D051, Email Correspondence, Pacific Time Zone, March 2023": {
+   "title": "DOW-UAP-D051, Email Correspondence, Pacific Time Zone, March 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d51-email-correspondence-pacific-time-zone-march-2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 99
+  },
+  "DOW-UAP-D052, Email Correspondence, NA, August 2024": {
+   "title": "DOW-UAP-D052, Email Correspondence, NA, August 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d52-email-correspondance-na-august-2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 100
+  },
+  "DOW-UAP-D054, Mission Report, Mediterranean Sea, NA": {
+   "title": "DOW-UAP-D054, Mission Report, Mediterranean Sea, NA",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d54-mission-report-mediterranean-sea-na.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 101
+  },
+  "DOW-UAP-D055, Mission Report, Syria, November 2016": {
+   "title": "DOW-UAP-D055, Mission Report, Syria, November 2016",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d55-mission-report-syria-november-2016.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 102
+  },
+  "DOW-UAP-D056, Range Fouler Debrief, Arabian Sea, August 2020": {
+   "title": "DOW-UAP-D056, Range Fouler Debrief, Arabian Sea, August 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d56-range-fouler-debrief-arabian-sea-august-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 103
+  },
+  "DOW-UAP-D057, Range Fouler Reporting Form, Gulf of Aden, September 2020": {
+   "title": "DOW-UAP-D057, Range Fouler Reporting Form, Gulf of Aden, September 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d57-mission-report-gulf-of-aden-september-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 104
+  },
+  "DOW-UAP-D058, Range Fouler Debrief, NA, October 2020": {
+   "title": "DOW-UAP-D058, Range Fouler Debrief, NA, October 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d58-range-fouler-debrief-na-october-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 105
+  },
+  "DOW-UAP-D060, Mission Report, Arabian Gulf, August 2020": {
+   "title": "DOW-UAP-D060, Mission Report, Arabian Gulf, August 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d60-mission-report-persian-gulf-august-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 106
+  },
+  "DOW-UAP-D061, Mission Report, Arabian Gulf, August 2020": {
+   "title": "DOW-UAP-D061, Mission Report, Arabian Gulf, August 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d61-mission-report-persian-gulf-august-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 107
+  },
+  "DOW-UAP-D062, Mission Report, Strait of Hormuz, September 2020": {
+   "title": "DOW-UAP-D062, Mission Report, Strait of Hormuz, September 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d62-mission-report-strait-of-hormuz-september-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 108
+  },
+  "DOW-UAP-D063, Mission Report, Strait of Hormuz, October 2020": {
+   "title": "DOW-UAP-D063, Mission Report, Strait of Hormuz, October 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d63-mission-report-strait-of-hormuz-october-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 109
+  },
+  "DOW-UAP-D064, Mission Report, Iran, November 2020": {
+   "title": "DOW-UAP-D064, Mission Report, Iran, November 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d64-mission-report-iran-november-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 110
+  },
+  "DOW-UAP-D065, Mission Report, Arabian Gulf, July 2020": {
+   "title": "DOW-UAP-D065, Mission Report, Arabian Gulf, July 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d65-mission-report-persian-gulf-july-2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 111
+  },
+  "DOW-UAP-D074, Mission Report, Syria, November 2023": {
+   "title": "DOW-UAP-D074, Mission Report, Syria, November 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d74-mission-report-syria-november-2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 112
+  },
+  "DOW-UAP-D075, Mission Report, Gulf of Aden, July 2024": {
+   "title": "DOW-UAP-D075, Mission Report, Gulf of Aden, July 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d75-mission-report-gulf-of-aden-july-2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 113
+  },
+  "DOW-UAP-D077, AARO Unresolved Case Analysis Update: Western United States Event": {
+   "title": "DOW-UAP-D077, AARO Unresolved Case Analysis Update: Western United States Event",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D077_Unresolved-Case-Analysis-Update_Western-United-States-Event.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "Western US Event",
+   "order": 114
+  },
+  "DOW-UAP-D078, Notional Map: Western United States Event": {
+   "title": "DOW-UAP-D078, Notional Map: Western United States Event",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "Western US Event",
+   "order": 115
+  },
+  "DOW-UAP-D079, Narrative Statement 1, Western United States Event, 2023": {
+   "title": "DOW-UAP-D079, Narrative Statement 1, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D079_Narrative-1_Western-US-Event.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D014 | FBI-UAP-D015 | FBI-UAP-D021 | Western US Event",
+   "order": 116
+  },
+  "DOW-UAP-D080, Narrative Statement 2, Western United States Event, 2023": {
+   "title": "DOW-UAP-D080, Narrative Statement 2, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D080_Narrative-2_Western-US-Event.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D016 | FBI-UAP-D017 | FBI-UAP-D018 | FBI-UAP-D019 | FBI-UAP-D020 | FBI-UAP-D022 | FBI-UAP-D023 | Western US Event",
+   "order": 117
+  },
+  "DOW-UAP-D081, Narrative Statement 3, Western United States Event, 2023": {
+   "title": "DOW-UAP-D081, Narrative Statement 3, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D081_Narrative-3_Western-US-Event.pdf",
+   "videoUrl": "",
+   "videoPairing": "FBI-UAP-PR005 | FBI-UAP-PR006",
+   "pdfPairing": "Western US Event",
+   "order": 118
+  },
+  "DOW-UAP-D082, Narrative Statement 4, Western United States Event, 2023": {
+   "title": "DOW-UAP-D082, Narrative Statement 4, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D082_Narrative-4_Western-US-Event.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "Western US Event",
+   "order": 119
+  },
+  "DOW-UAP-D083, Narrative Statement 5, Western United States Event, 2023": {
+   "title": "DOW-UAP-D083, Narrative Statement 5, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D083_Narrative-5_Western-US-Event.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "Western US Event",
+   "order": 120
+  },
+  "DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953": {
+   "title": "DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 122
+  },
+  "DOW-UAP-D086, USNavy-Report-of-Flying-Discs_1948": {
+   "title": "DOW-UAP-D086, USNavy-Report-of-Flying-Discs_1948",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D086_USNavy-Report-of-Flying-Discs_1948.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 123
+  },
+  "DOW-UAP-D087, U.S. Air Force Analysis of Flying Objects in the United States, 1-100": {
+   "title": "DOW-UAP-D087, U.S. Air Force Analysis of Flying Objects in the United States, 1-100",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D087_US-AirForce_Analysis-of-Flying-Objects-in-the-US_1-100.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 124
+  },
+  "DOW-UAP-D088, U.S. Air Force Analysis of Flying Objects in the United States, 101-172": {
+   "title": "DOW-UAP-D088, U.S. Air Force Analysis of Flying Objects in the United States, 101-172",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 125
+  },
+  "DOW-UAP-PR019, Unresolved UAP Report, Middle East, May 2022": {
+   "title": "DOW-UAP-PR019, Unresolved UAP Report, Middle East, May 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf",
+   "videoUrl": "1006056",
+   "videoPairing": "",
+   "pdfPairing": "DoW-UAP-D010",
+   "order": 247
+  },
+  "DOW-UAP-PR020, Unresolved UAP Report, Kuwait, May 2022": {
+   "title": "DOW-UAP-PR020, Unresolved UAP Report, Kuwait, May 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-pr20.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DoW-UAP-D012",
+   "order": 248
+  },
+  "DOW-UAP-PR021, Unresolved UAP Report, Iraq, May 2022": {
+   "title": "DOW-UAP-PR021, Unresolved UAP Report, Iraq, May 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf",
+   "videoUrl": "1006059",
+   "videoPairing": "",
+   "pdfPairing": "DoW-UAP-D014",
+   "order": 249
+  },
+  "DOW-UAP-PR022, Unresolved UAP Report, Syria, July 2022": {
+   "title": "DOW-UAP-PR022, Unresolved UAP Report, Syria, July 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf",
+   "videoUrl": "1006060",
+   "videoPairing": "",
+   "pdfPairing": "DoW-UAP-D016",
+   "order": 250
+  },
+  "DOW-UAP-PR023, Unresolved UAP Report, Iraq, December 2022": {
+   "title": "DOW-UAP-PR023, Unresolved UAP Report, Iraq, December 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf",
+   "videoUrl": "1006062",
+   "videoPairing": "",
+   "pdfPairing": "DoW-UAP-D018",
+   "order": 251
+  },
+  "DOW-UAP-PR026, Unresolved UAP Report, United Arab Emirates, October 2023": {
+   "title": "DOW-UAP-PR026, Unresolved UAP Report, United Arab Emirates, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
+   "videoUrl": "1006063",
+   "videoPairing": "PR-027",
+   "pdfPairing": "DoW-UAP-D023",
+   "order": 253
+  },
+  "DOW-UAP-PR027, Unresolved UAP Report, United Arab Emirates, October 2023": {
+   "title": "DOW-UAP-PR027, Unresolved UAP Report, United Arab Emirates, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
+   "videoUrl": "1006067",
+   "videoPairing": "PR-026",
+   "pdfPairing": "DoW-UAP-D023",
+   "order": 254
+  },
+  "DOW-UAP-PR028, Unresolved UAP Report, Greece, January 2024": {
+   "title": "DOW-UAP-PR028, Unresolved UAP Report, Greece, January 2024",
+   "documentUrl": "",
+   "videoUrl": "1006073",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 255
+  },
+  "DOW-UAP-PR029, Unresolved UAP Report, United Arab Emirates, June 2024": {
+   "title": "DOW-UAP-PR029, Unresolved UAP Report, United Arab Emirates, June 2024",
+   "documentUrl": "",
+   "videoUrl": "1006074",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 256
+  },
+  "DOW-UAP-PR031, Unresolved UAP Report, Syria, October 2024": {
+   "title": "DOW-UAP-PR031, Unresolved UAP Report, Syria, October 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "videoUrl": "1006076",
+   "videoPairing": "PR-032 | PR-033",
+   "pdfPairing": "DoW-UAP-D032",
+   "order": 258
+  },
+  "DOW-UAP-PR032, Unresolved UAP Report, Syria, October 2024": {
+   "title": "DOW-UAP-PR032, Unresolved UAP Report, Syria, October 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "videoUrl": "1006078",
+   "videoPairing": "PR-031 | PR-033",
+   "pdfPairing": "DoW-UAP-D032",
+   "order": 259
+  },
+  "DOW-UAP-PR033, Unresolved UAP Report, Syria, October 2024": {
+   "title": "DOW-UAP-PR033, Unresolved UAP Report, Syria, October 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "videoUrl": "1006079",
+   "videoPairing": "PR-031 | PR-032",
+   "pdfPairing": "DoW-UAP-D032",
+   "order": 260
+  },
+  "DOW-UAP-PR034, Unresolved UAP Report, Greece, October 2023": {
+   "title": "DOW-UAP-PR034, Unresolved UAP Report, Greece, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf",
+   "videoUrl": "1006080",
+   "videoPairing": "",
+   "pdfPairing": "DoW-UAP-D033",
+   "order": 261
+  },
+  "DOW-UAP-PR035, Unresolved UAP Report, Greece, October 2023": {
+   "title": "DOW-UAP-PR035, Unresolved UAP Report, Greece, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf",
+   "videoUrl": "1006082",
+   "videoPairing": "",
+   "pdfPairing": "DoW-UAP-D035",
+   "order": 262
+  },
+  "DOW-UAP-PR036, Unresolved UAP Report, Middle East, May 2020": {
+   "title": "DOW-UAP-PR036, Unresolved UAP Report, Middle East, May 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf",
+   "videoUrl": "1006083",
+   "videoPairing": "",
+   "pdfPairing": "DoW-UAP-D038",
+   "order": 263
+  },
+  "DOW-UAP-PR037, Unresolved UAP Report, Middle East, 2020": {
+   "title": "DOW-UAP-PR037, Unresolved UAP Report, Middle East, 2020",
+   "documentUrl": "",
+   "videoUrl": "1006087",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 264
+  },
+  "DOW-UAP-PR038, Unresolved UAP Report, Middle East, 2013": {
+   "title": "DOW-UAP-PR038, Unresolved UAP Report, Middle East, 2013",
+   "documentUrl": "",
+   "videoUrl": "1006088",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 265
+  },
+  "DOW-UAP-PR039, Unresolved UAP Report, Middle East, 2020": {
+   "title": "DOW-UAP-PR039, Unresolved UAP Report, Middle East, 2020",
+   "documentUrl": "",
+   "videoUrl": "1006089",
+   "videoPairing": "DOW-UAP-PR088 | DOW-UAP-PR089",
+   "pdfPairing": "DOW-UAP-D042",
+   "order": 266
+  },
+  "DOW-UAP-PR040, Unresolved UAP Report, Middle East, 2020": {
+   "title": "DOW-UAP-PR040, Unresolved UAP Report, Middle East, 2020",
+   "documentUrl": "",
+   "videoUrl": "1006093",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D044",
+   "order": 267
+  },
+  "DOW-UAP-PR041, Unresolved UAP Report, Middle East, 2020": {
+   "title": "DOW-UAP-PR041, Unresolved UAP Report, Middle East, 2020",
+   "documentUrl": "",
+   "videoUrl": "1006094",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 268
+  },
+  "DOW-UAP-PR042, Unresolved UAP Report, Middle East, 2020": {
+   "title": "DOW-UAP-PR042, Unresolved UAP Report, Middle East, 2020",
+   "documentUrl": "",
+   "videoUrl": "1006097",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 269
+  },
+  "DOW-UAP-PR043, Unresolved UAP Report, Africa, 2025": {
+   "title": "DOW-UAP-PR043, Unresolved UAP Report, Africa, 2025",
+   "documentUrl": "",
+   "videoUrl": "1006159",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 270
+  },
+  "DOW-UAP-PR044, Unresolved UAP Report, Middle East, 2020": {
+   "title": "DOW-UAP-PR044, Unresolved UAP Report, Middle East, 2020",
+   "documentUrl": "",
+   "videoUrl": "1006104",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 271
+  },
+  "DOW-UAP-PR045, Unresolved UAP Report, Middle East, 2020": {
+   "title": "DOW-UAP-PR045, Unresolved UAP Report, Middle East, 2020",
+   "documentUrl": "",
+   "videoUrl": "1006105",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 272
+  },
+  "DOW-UAP-PR046, Unresolved UAP Report, INDOPACOM, 2024": {
+   "title": "DOW-UAP-PR046, Unresolved UAP Report, INDOPACOM, 2024",
+   "documentUrl": "",
+   "videoUrl": "1006106",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 273
+  },
+  "DOW-UAP-PR047, Unresolved UAP Report, INDOPACOM, 2023": {
+   "title": "DOW-UAP-PR047, Unresolved UAP Report, INDOPACOM, 2023",
+   "documentUrl": "",
+   "videoUrl": "1006107",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 274
+  },
+  "DOW-UAP-PR048, Unresolved UAP Report, INDOPACOM, 2024": {
+   "title": "DOW-UAP-PR048, Unresolved UAP Report, INDOPACOM, 2024",
+   "documentUrl": "",
+   "videoUrl": "1006110",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 275
+  },
+  "DOW-UAP-PR049, Unresolved UAP Report, Department of the Army, 2026": {
+   "title": "DOW-UAP-PR049, Unresolved UAP Report, Department of the Army, 2026",
+   "documentUrl": "",
+   "videoUrl": "1006111",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 276
+  },
+  "DOW-UAP-PR050, \"4 UAP Formation Iran 26 Aug 2022 over water [CALLSIGN]\"": {
+   "title": "DOW-UAP-PR050, \"4 UAP Formation Iran 26 Aug 2022 over water [CALLSIGN]\"",
+   "documentUrl": "",
+   "videoUrl": "1007706",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 277
+  },
+  "DOW-UAP-PR051, \"Syrian UAP instant acceleration\"": {
+   "title": "DOW-UAP-PR051, \"Syrian UAP instant acceleration\"",
+   "documentUrl": "",
+   "videoUrl": "1007707",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 278
+  },
+  "DOW-UAP-PR052, \"UAP USO Formation [CALLSIGN] (Mission)\"": {
+   "title": "DOW-UAP-PR052, \"UAP USO Formation [CALLSIGN] (Mission)\"",
+   "documentUrl": "",
+   "videoUrl": "1007708",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 279
+  },
+  "DOW-UAP-PR053, \"Cigar Shaped or Fast Spherical UAP clip 15 OCT 22\"": {
+   "title": "DOW-UAP-PR053, \"Cigar Shaped or Fast Spherical UAP clip 15 OCT 22\"",
+   "documentUrl": "",
+   "videoUrl": "1007709",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 280
+  },
+  "DOW-UAP-PR054, \"Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022\"": {
+   "title": "DOW-UAP-PR054, \"Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022\"",
+   "documentUrl": "",
+   "videoUrl": "1007711",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 281
+  },
+  "DOW-UAP-PR055, \"Spherical UAP over AFG in and out of clouds 23 Nov 2020\"": {
+   "title": "DOW-UAP-PR055, \"Spherical UAP over AFG in and out of clouds 23 Nov 2020\"",
+   "documentUrl": "",
+   "videoUrl": "1007713",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 282
+  },
+  "DOW-UAP-PR056, \"Spherical UAP pulsing over water [CALLSIGN]\"": {
+   "title": "DOW-UAP-PR056, \"Spherical UAP pulsing over water [CALLSIGN]\"",
+   "documentUrl": "",
+   "videoUrl": "1007718",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 283
+  },
+  "DOW-UAP-PR057a, \"Spherical UAP in clouds\"": {
+   "title": "DOW-UAP-PR057a, \"Spherical UAP in clouds\"",
+   "documentUrl": "",
+   "videoUrl": "1007720",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 284
+  },
+  "DOW-UAP-PR057b, \"[Platform] Observes UAP in East China Sea 05 JAN 2023 INDOPACOM\"": {
+   "title": "DOW-UAP-PR057b, \"[Platform] Observes UAP in East China Sea 05 JAN 2023 INDOPACOM\"",
+   "documentUrl": "",
+   "videoUrl": "1007720",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 285
+  },
+  "DOW-UAP-PR058, \"[CALLSIGN] (Mission) UAP\"": {
+   "title": "DOW-UAP-PR058, \"[CALLSIGN] (Mission) UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007723",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 286
+  },
+  "DOW-UAP-PR059, \"NAG UAP 1 Jun 20\"": {
+   "title": "DOW-UAP-PR059, \"NAG UAP 1 Jun 20\"",
+   "documentUrl": "",
+   "videoUrl": "1007727",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 287
+  },
+  "DOW-UAP-PR060, \"Spherical UAP [CALLSIGN] 2021/04/12 obj 2\"": {
+   "title": "DOW-UAP-PR060, \"Spherical UAP [CALLSIGN] 2021/04/12 obj 2\"",
+   "documentUrl": "",
+   "videoUrl": "1007734",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 288
+  },
+  "DOW-UAP-PR061, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 0\"": {
+   "title": "DOW-UAP-PR061, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 0\"",
+   "documentUrl": "",
+   "videoUrl": "1007735",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 289
+  },
+  "DOW-UAP-PR062, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 1\"": {
+   "title": "DOW-UAP-PR062, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 1\"",
+   "documentUrl": "",
+   "videoUrl": "1007739",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 290
+  },
+  "DOW-UAP-PR063, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 2\"": {
+   "title": "DOW-UAP-PR063, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 2\"",
+   "documentUrl": "",
+   "videoUrl": "1007740",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 291
+  },
+  "DOW-UAP-PR064, \"AFSOC Kabul UAP Jul 2017\"": {
+   "title": "DOW-UAP-PR064, \"AFSOC Kabul UAP Jul 2017\"",
+   "documentUrl": "",
+   "videoUrl": "1007741",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 292
+  },
+  "DOW-UAP-PR065, \"USCG C-144 Tyndall UAP 2 TIC TAC IR hot 24 April 2024\"": {
+   "title": "DOW-UAP-PR065, \"USCG C-144 Tyndall UAP 2 TIC TAC IR hot 24 April 2024\"",
+   "documentUrl": "",
+   "videoUrl": "1007777",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 293
+  },
+  "DOW-UAP-PR066, \"USCG C-144 Tyndall UAP 1 TIC TAC IR hot 24 April 2024\"": {
+   "title": "DOW-UAP-PR066, \"USCG C-144 Tyndall UAP 1 TIC TAC IR hot 24 April 2024\"",
+   "documentUrl": "",
+   "videoUrl": "1007778",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 294
+  },
+  "DOW-UAP-PR067, \"Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water\"": {
+   "title": "DOW-UAP-PR067, \"Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water\"",
+   "documentUrl": "",
+   "videoUrl": "1007779",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 295
+  },
+  "DOW-UAP-PR068, \"IIR 1 666 S0151 23/Video Footage of Unidentified Aerial Phenomenon (UAP) captured by fifth generation aircraft on 20 Jan 23\"": {
+   "title": "DOW-UAP-PR068, \"IIR 1 666 S0151 23/Video Footage of Unidentified Aerial Phenomenon (UAP) captured by fifth generation aircraft on 20 Jan 23\"",
+   "documentUrl": "",
+   "videoUrl": "1007780",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 296
+  },
+  "DOW-UAP-PR069, \"F/A-18 FLIR UAP\"": {
+   "title": "DOW-UAP-PR069, \"F/A-18 FLIR UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007781",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 297
+  },
+  "DOW-UAP-PR070, \"IIR 1 655 S0301 23/Eglin AFB Aircrew Observed Unidentified Aerial Phenomena (UAP) on 13 Feb 23\"": {
+   "title": "DOW-UAP-PR070, \"IIR 1 655 S0301 23/Eglin AFB Aircrew Observed Unidentified Aerial Phenomena (UAP) on 13 Feb 23\"",
+   "documentUrl": "",
+   "videoUrl": "1007783",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 298
+  },
+  "DOW-UAP-PR071, \"USAF ANG F-16C (callsign [CALLSIGN]) Shoots Down UAP over Lake Huron with [Weapon System], 12 Feb 2023\"": {
+   "title": "DOW-UAP-PR071, \"USAF ANG F-16C (callsign [CALLSIGN]) Shoots Down UAP over Lake Huron with [Weapon System], 12 Feb 2023\"",
+   "documentUrl": "",
+   "videoUrl": "1007784",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 299
+  },
+  "DOW-UAP-PR072, \"ADMINISTRATIVE REVISION: IIR 1777 J0032 22 Kazakhstan - UAP in the vicinity of Karaganda International Airport\"": {
+   "title": "DOW-UAP-PR072, \"ADMINISTRATIVE REVISION: IIR 1777 J0032 22 Kazakhstan - UAP in the vicinity of Karaganda International Airport\"",
+   "documentUrl": "",
+   "videoUrl": "1007788",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 300
+  },
+  "DOW-UAP-PR073, IIR 1 655 S0053 23/Several Unidentified Aerial Phenomenon Encountered In The Vicinity of Columbus OH\"": {
+   "title": "DOW-UAP-PR073, IIR 1 655 S0053 23/Several Unidentified Aerial Phenomenon Encountered In The Vicinity of Columbus OH\"",
+   "documentUrl": "",
+   "videoUrl": "1007790",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 301
+  },
+  "DOW-UAP-PR074, \"[CALLSIGN] (Mission)HD_20220613\"": {
+   "title": "DOW-UAP-PR074, \"[CALLSIGN] (Mission)HD_20220613\"",
+   "documentUrl": "",
+   "videoUrl": "1007791",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 302
+  },
+  "DOW-UAP-PR075, \"09JUN2021 [Platform] observed UAP in the ECS\"": {
+   "title": "DOW-UAP-PR075, \"09JUN2021 [Platform] observed UAP in the ECS\"",
+   "documentUrl": "",
+   "videoUrl": "1007795",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 303
+  },
+  "DOW-UAP-PR076, \"03 January 2021 [CALLSIGN] (Mission) observes UAP\"": {
+   "title": "DOW-UAP-PR076, \"03 January 2021 [CALLSIGN] (Mission) observes UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007804",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 304
+  },
+  "DOW-UAP-PR077, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 1 of 2\"": {
+   "title": "DOW-UAP-PR077, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 1 of 2\"",
+   "documentUrl": "",
+   "videoUrl": "1007809",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 305
+  },
+  "DOW-UAP-PR078, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 2 of 2\"": {
+   "title": "DOW-UAP-PR078, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 2 of 2\"",
+   "documentUrl": "",
+   "videoUrl": "1007812",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 306
+  },
+  "DOW-UAP-PR079, \"29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP's\"": {
+   "title": "DOW-UAP-PR079, \"29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP's\"",
+   "documentUrl": "",
+   "videoUrl": "1007816",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 307
+  },
+  "DOW-UAP-PR080, \"20 October 2020 [CALLSIGN] [CALLSIGN] Observes UAP\"": {
+   "title": "DOW-UAP-PR080, \"20 October 2020 [CALLSIGN] [CALLSIGN] Observes UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007803",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 308
+  },
+  "DOW-UAP-PR081, \"18 Oct 2020 [CALLSIGN] observes UAP\"": {
+   "title": "DOW-UAP-PR081, \"18 Oct 2020 [CALLSIGN] observes UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007805",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 309
+  },
+  "DOW-UAP-PR082, \"16 OCT 2020 [CALLSIGN] views UAP\"": {
+   "title": "DOW-UAP-PR082, \"16 OCT 2020 [CALLSIGN] views UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007807",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 310
+  },
+  "DOW-UAP-PR083, \"7 October 2020 [CALLSIGN] observes UAP\"": {
+   "title": "DOW-UAP-PR083, \"7 October 2020 [CALLSIGN] observes UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007808",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 311
+  },
+  "DOW-UAP-PR084, \"17 Sept 2020 [CALLSIGN] observes UAP\"": {
+   "title": "DOW-UAP-PR084, \"17 Sept 2020 [CALLSIGN] observes UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007810",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 312
+  },
+  "DOW-UAP-PR085, \"16 Sept 2020 [CALLSIGN] [CALLSIGN] observes UAP\"": {
+   "title": "DOW-UAP-PR085, \"16 Sept 2020 [CALLSIGN] [CALLSIGN] observes UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007796",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 313
+  },
+  "DOW-UAP-PR086, \"UAP from Dec 2019 (East Coast)\"": {
+   "title": "DOW-UAP-PR086, \"UAP from Dec 2019 (East Coast)\"",
+   "documentUrl": "",
+   "videoUrl": "1007797",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 314
+  },
+  "DOW-UAP-PR087, \"05 September 2020 [CALLSIGN] UAP\"": {
+   "title": "DOW-UAP-PR087, \"05 September 2020 [CALLSIGN] UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007799",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 315
+  },
+  "DOW-UAP-PR088, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP\"": {
+   "title": "DOW-UAP-PR088, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007800",
+   "videoPairing": "DOW-UAP-PR039 | DOW-UAP-PR089",
+   "pdfPairing": "DOW-UAP-D042",
+   "order": 316
+  },
+  "DOW-UAP-PR089, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP part2\"": {
+   "title": "DOW-UAP-PR089, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP part2\"",
+   "documentUrl": "",
+   "videoUrl": "1007712",
+   "videoPairing": "DOW-UAP-PR088 | DOW-UAP-PR039",
+   "pdfPairing": "DOW-UAP-D042",
+   "order": 317
+  },
+  "DOW-UAP-PR090, \"24 AUG 2020 [CALLSIGN] (Mission) Observes UAP\"": {
+   "title": "DOW-UAP-PR090, \"24 AUG 2020 [CALLSIGN] (Mission) Observes UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007719",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 318
+  },
+  "DOW-UAP-PR091, \"21 AUG [CALLSIGN] Observes UAP in Persian Gulf\"": {
+   "title": "DOW-UAP-PR091, \"21 AUG [CALLSIGN] Observes UAP in Persian Gulf\"",
+   "documentUrl": "",
+   "videoUrl": "1007716",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 319
+  },
+  "DOW-UAP-PR092, \"08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation\"": {
+   "title": "DOW-UAP-PR092, \"08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation\"",
+   "documentUrl": "",
+   "videoUrl": "1007715",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 320
+  },
+  "DOW-UAP-PR093, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"": {
+   "title": "DOW-UAP-PR093, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007721",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 321
+  },
+  "DOW-UAP-PR094, \"[CALLSIGN] (Mission) - HD 2020-02-13\"": {
+   "title": "DOW-UAP-PR094, \"[CALLSIGN] (Mission) - HD 2020-02-13\"",
+   "documentUrl": "",
+   "videoUrl": "1007722",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 322
+  },
+  "DOW-UAP-PR095, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"": {
+   "title": "DOW-UAP-PR095, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"",
+   "documentUrl": "",
+   "videoUrl": "1007725",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 323
+  },
+  "DOW-UAP-PR096, \"HH11 03 July 2018 UAPs\"": {
+   "title": "DOW-UAP-PR096, \"HH11 03 July 2018 UAPs\"",
+   "documentUrl": "",
+   "videoUrl": "1007726",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 324
+  },
+  "DOW-UAP-PR097, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 2135Z\"": {
+   "title": "DOW-UAP-PR097, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 2135Z\"",
+   "documentUrl": "",
+   "videoUrl": "1007728",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 325
+  },
+  "DOW-UAP-PR098, \"UFOs in formation over Persian Gulf?\"": {
+   "title": "DOW-UAP-PR098, \"UFOs in formation over Persian Gulf?\"",
+   "documentUrl": "",
+   "videoUrl": "1007737",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 326
+  },
+  "DOW-UAP-PR099, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 1715Z\"": {
+   "title": "DOW-UAP-PR099, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 1715Z\"",
+   "documentUrl": "",
+   "videoUrl": "1007738",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 327
+  },
+  "FBI Photo A001": {
+   "title": "FBI Photo A001",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a1.png",
+   "videoUrl": "1006111",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 379
+  },
+  "FBI Photo A002": {
+   "title": "FBI Photo A002",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a2.png",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 380
+  },
+  "FBI Photo A003": {
+   "title": "FBI Photo A003",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a3.png",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 381
+  },
+  "FBI Photo A004": {
+   "title": "FBI Photo A004",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a4.png",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 382
+  },
+  "FBI Photo A005": {
+   "title": "FBI Photo A005",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a5.png",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 383
+  },
+  "FBI Photo A006": {
+   "title": "FBI Photo A006",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a6.png",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 384
+  },
+  "FBI Photo A007": {
+   "title": "FBI Photo A007",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a7.png",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 385
+  },
+  "FBI Photo A008": {
+   "title": "FBI Photo A008",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-a8.png",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 386
+  },
+  "FBI Photo B001": {
+   "title": "FBI Photo B001",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b1.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 387
+  },
+  "FBI Photo B002": {
+   "title": "FBI Photo B002",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b2.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 388
+  },
+  "FBI Photo B003": {
+   "title": "FBI Photo B003",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b3.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 389
+  },
+  "FBI Photo B004": {
+   "title": "FBI Photo B004",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b4.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 390
+  },
+  "FBI Photo B005": {
+   "title": "FBI Photo B005",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b5.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 391
+  },
+  "FBI Photo B006": {
+   "title": "FBI Photo B006",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b6.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 392
+  },
+  "FBI Photo B007": {
+   "title": "FBI Photo B007",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b7.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 393
+  },
+  "FBI Photo B008": {
+   "title": "FBI Photo B008",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b8.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 394
+  },
+  "FBI Photo B009": {
+   "title": "FBI Photo B009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b9.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 395
+  },
+  "FBI Photo B010": {
+   "title": "FBI Photo B010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b10.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 396
+  },
+  "FBI Photo B011": {
+   "title": "FBI Photo B011",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b11.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 397
+  },
+  "FBI Photo B012": {
+   "title": "FBI Photo B012",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b12.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 398
+  },
+  "FBI Photo B013": {
+   "title": "FBI Photo B013",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b13.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 399
+  },
+  "FBI Photo B014": {
+   "title": "FBI Photo B014",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b14.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 400
+  },
+  "FBI Photo B015": {
+   "title": "FBI Photo B015",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b15.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 401
+  },
+  "FBI Photo B016": {
+   "title": "FBI Photo B016",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b16.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 402
+  },
+  "FBI Photo B017": {
+   "title": "FBI Photo B017",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b17.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 403
+  },
+  "FBI Photo B018": {
+   "title": "FBI Photo B018",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b18.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 404
+  },
+  "FBI Photo B019": {
+   "title": "FBI Photo B019",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b19.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 405
+  },
+  "FBI Photo B020": {
+   "title": "FBI Photo B020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b20.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 406
+  },
+  "FBI Photo B021": {
+   "title": "FBI Photo B021",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b21.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 407
+  },
+  "FBI Photo B022": {
+   "title": "FBI Photo B022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b22.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 408
+  },
+  "FBI Photo B023": {
+   "title": "FBI Photo B023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b23.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 409
+  },
+  "FBI Photo B024": {
+   "title": "FBI Photo B024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b24.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USPER Statement about UAP Sighting | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 410
+  },
+  "FBI September 2023 Sighting - Composite Sketch": {
+   "title": "FBI September 2023 Sighting - Composite Sketch",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/2024-04-30-composite-sketch.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 411
+  },
+  "FBI September 2023 Sighting - Serial 003": {
+   "title": "FBI September 2023 Sighting - Serial 003",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/serial 5 redacted_redacted.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 412
+  },
+  "FBI September 2023 Sighting - Serial 004": {
+   "title": "FBI September 2023 Sighting - Serial 004",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 413
+  },
+  "FBI September 2023 Sighting - Serial 005": {
+   "title": "FBI September 2023 Sighting - Serial 005",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 414
+  },
+  "FBI-UAP-D001, FD-302, Unresolved UAP Report, Colorado Springs, 2022": {
+   "title": "FBI-UAP-D001, FD-302, Unresolved UAP Report, Colorado Springs, 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 415
+  },
+  "FBI-UAP-D004, FD-1057-02, Northeastern United States, 2024": {
+   "title": "FBI-UAP-D004, FD-1057-02, Northeastern United States, 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D004_FD-1057-02_Northeastern-US_2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 418
+  },
+  "FBI-UAP-D005, FD-1057-04, Northeastern United States, 2024": {
+   "title": "FBI-UAP-D005, FD-1057-04, Northeastern United States, 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D005_FD-1057-04_Northeastern-US_2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 419
+  },
+  "FBI-UAP-D006, FD-1057-05, Northeastern United States, 2024": {
+   "title": "FBI-UAP-D006, FD-1057-05, Northeastern United States, 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D006_FD-1057-05_Northeastern-US_2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 420
+  },
+  "FBI-UAP-D007, FD-1057-06, Northeastern United States, 2024": {
+   "title": "FBI-UAP-D007, FD-1057-06, Northeastern United States, 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D007_FD-1057-06_Northeastern-US_2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 421
+  },
+  "FBI-UAP-D008, FD-1057-07, Northeastern United States, 2024": {
+   "title": "FBI-UAP-D008, FD-1057-07, Northeastern United States, 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 422
+  },
+  "FBI-UAP-D012, Newark Field Office, 1952-1967": {
+   "title": "FBI-UAP-D012, Newark Field Office, 1952-1967",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D012_Newark-Field-Office_1952-1967.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 426
+  },
+  "FBI-UAP-D013, Washington State ‘UFO’ Investigation, 1952-1960": {
+   "title": "FBI-UAP-D013, Washington State ‘UFO’ Investigation, 1952-1960",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D013_WA-UFO-Investigation_1952-1960.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 427
+  },
+  "FBI-UAP-D014, Digital Rendering, Narrative Statement 1-1, Western United States Event, 2023": {
+   "title": "FBI-UAP-D014, Digital Rendering, Narrative Statement 1-1, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D014_Digital-Rendering_Incident-1-1_Western-US-Event_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D079 | Western US Event",
+   "order": 429
+  },
+  "FBI-UAP-D015, Digital Rendering, Narrative Statement 1-2, Western United States Event, 2023": {
+   "title": "FBI-UAP-D015, Digital Rendering, Narrative Statement 1-2, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D015_Digital-Rendering_Incident-1-2_Western-US-Event_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D079 | Western US Event",
+   "order": 430
+  },
+  "FBI-UAP-D016, Digital Rendering, Narrative Statement 2-1, Western United States Event, 2023": {
+   "title": "FBI-UAP-D016, Digital Rendering, Narrative Statement 2-1, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D016_Digital-Rendering_Incident-2-1_Western-US-Event_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D080 | Western US Event",
+   "order": 431
+  },
+  "FBI-UAP-D017, Digital Rendering, Narrative Statement 2-2, Western United States Event, 2023": {
+   "title": "FBI-UAP-D017, Digital Rendering, Narrative Statement 2-2, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D017_Digital-Rendering_Incident-2-2_Western-US-Event_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D080 | Western US Event",
+   "order": 432
+  },
+  "FBI-UAP-D018, Digital Rendering, Narrative Statement 2-3, Western United States Event, 2023": {
+   "title": "FBI-UAP-D018, Digital Rendering, Narrative Statement 2-3, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D018_Digital-Rendering_Incident-2-3_Western-US-Event_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D080 | Western US Event",
+   "order": 433
+  },
+  "FBI-UAP-D019, Digital Rendering, Narrative Statement 2-4, Western United States Event, 2023": {
+   "title": "FBI-UAP-D019, Digital Rendering, Narrative Statement 2-4, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D019_Digital-Rendering_Incident-2-4_Western-US-Event_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D080 | Western US Event",
+   "order": 434
+  },
+  "FBI-UAP-D020, Digital Rendering, Narrative Statement 2-5, Western United States Event, 2023": {
+   "title": "FBI-UAP-D020, Digital Rendering, Narrative Statement 2-5, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D020_Digital-Rendering_Incident-2-5_Western-US-Event_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D080 | Western US Event",
+   "order": 435
+  },
+  "FBI-UAP-D021, Digital Rendering, Narrative Statement 1-3, Western United States Event, 2023": {
+   "title": "FBI-UAP-D021, Digital Rendering, Narrative Statement 1-3, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D021_Digital-Rendering_Incident-1-3_Western-US-Event_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D079 | Western US Event",
+   "order": 436
+  },
+  "FBI-UAP-D022, Digital Rendering, Narrative Statement 2-6, Western United States Event, 2026": {
+   "title": "FBI-UAP-D022, Digital Rendering, Narrative Statement 2-6, Western United States Event, 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D022_Digital-Rendering_Incident-2-6_Western-US-Event_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D080 | Western US Event",
+   "order": 437
+  },
+  "FBI-UAP-D023, Digital Rendering, Narrative Statement 2-7, Western United States Event, 2023": {
+   "title": "FBI-UAP-D023, Digital Rendering, Narrative Statement 2-7, Western United States Event, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D023_Digital-Rendering_Incident-2-7_Western-US-Event_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D080 | Western US Event",
+   "order": 438
+  },
+  "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021": {
+   "title": "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021",
+   "documentUrl": "",
+   "videoUrl": "1010263",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 456
+  },
+  "FBI-UAP-PR002, “Red Orb Rotation,” Northeastern United States, 2022": {
+   "title": "FBI-UAP-PR002, “Red Orb Rotation,” Northeastern United States, 2022",
+   "documentUrl": "",
+   "videoUrl": "1010264",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 457
+  },
+  "FBI-UAP-PR005, Digital Recreation, Narrative Statement 3-1, Western United States Event, 2023": {
+   "title": "FBI-UAP-PR005, Digital Recreation, Narrative Statement 3-1, Western United States Event, 2023",
+   "documentUrl": "",
+   "videoUrl": "1010272",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D081 | Western US Event",
+   "order": 460
+  },
+  "FBI-UAP-PR006, Digital Recreation, Narrative Statement 3-2, Western United States Event, 2023": {
+   "title": "FBI-UAP-PR006, Digital Recreation, Narrative Statement 3-2, Western United States Event, 2023",
+   "documentUrl": "",
+   "videoUrl": "1010276",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D081 | Western US Event",
+   "order": 461
+  },
+  "NASA-UAP-D001, Apollo 12 Transcript, 1969": {
+   "title": "NASA-UAP-D001, Apollo 12 Transcript, 1969",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d1-apollo-12-transcript-1969.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 472
+  },
+  "NASA-UAP-D002, Apollo 17 Transcript, 1972": {
+   "title": "NASA-UAP-D002, Apollo 17 Transcript, 1972",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d2-apollo-17-transcript-1972.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 473
+  },
+  "NASA-UAP-D003, Gemini 7 Transcript, 1965": {
+   "title": "NASA-UAP-D003, Gemini 7 Transcript, 1965",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/255_t_763_r1b_transcripts.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 474
+  },
+  "NASA-UAP-D003A, Gemini 7 Audio Excerpt, 1965": {
+   "title": "NASA-UAP-D003A, Gemini 7 Audio Excerpt, 1965",
+   "documentUrl": "",
+   "videoUrl": "1006119",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 475
+  },
+  "NASA-UAP-D004, Apollo 11 Technical Crew Debriefing, 1969": {
+   "title": "NASA-UAP-D004, Apollo 11 Technical Crew Debriefing, 1969",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d4-apollo-11-technical-crew-debriefing-1969.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 476
+  },
+  "NASA-UAP-D005, Apollo 17 Crew Debriefing for Science, 1973": {
+   "title": "NASA-UAP-D005, Apollo 17 Crew Debriefing for Science, 1973",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 477
+  },
+  "NASA-UAP-D006, Apollo 17 Technical Crew Debriefing, 1973": {
+   "title": "NASA-UAP-D006, Apollo 17 Technical Crew Debriefing, 1973",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d6-apollo-17-technical-crew-debriefing-1973.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 478
+  },
+  "NASA-UAP-D007, Skylab Technical Crew Debriefing 1973": {
+   "title": "NASA-UAP-D007, Skylab Technical Crew Debriefing 1973",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d7-skylab-technical-crew-debriefing-1973.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 479
+  },
+  "NASA-UAP-D008, Apollo 12 Medical Debriefing - Tape 12, 1969": {
+   "title": "NASA-UAP-D008, Apollo 12 Medical Debriefing - Tape 12, 1969",
+   "documentUrl": "",
+   "videoUrl": "1007870",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 480
+  },
+  "NASA-UAP-D009, Apollo 17 Audio Excerpt, December 7, 1972": {
+   "title": "NASA-UAP-D009, Apollo 17 Audio Excerpt, December 7, 1972",
+   "documentUrl": "",
+   "videoUrl": "1007872",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 481
+  },
+  "NASA-UAP-D010, Mercury Atlas 9 Audio Excerpt, May 15, 1963": {
+   "title": "NASA-UAP-D010, Mercury Atlas 9 Audio Excerpt, May 15, 1963",
+   "documentUrl": "",
+   "videoUrl": "1007874",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 482
+  },
+  "NASA-UAP-D011, Mercury Atlas 9 Audio Excerpt, May 15, 1963": {
+   "title": "NASA-UAP-D011, Mercury Atlas 9 Audio Excerpt, May 15, 1963",
+   "documentUrl": "",
+   "videoUrl": "1007876",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 483
+  },
+  "NASA-UAP-D012, Mercury Atlas 8 Audio Excerpt, October 3, 1962": {
+   "title": "NASA-UAP-D012, Mercury Atlas 8 Audio Excerpt, October 3, 1962",
+   "documentUrl": "",
+   "videoUrl": "1007877",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 484
+  },
+  "NASA-UAP-D013, Mercury Atlas 7, May 24, 1962": {
+   "title": "NASA-UAP-D013, Mercury Atlas 7, May 24, 1962",
+   "documentUrl": "",
+   "videoUrl": "1007879",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 485
+  },
+  "NASA-UAP-D014, Mercury-Redstone 4, July 21, 1961": {
+   "title": "NASA-UAP-D014, Mercury-Redstone 4, July 21, 1961",
+   "documentUrl": "",
+   "videoUrl": "1007878",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 486
+  },
+  "NASA-UAP-D015, Astronaut Scientific Debriefings, 1962-1963": {
+   "title": "NASA-UAP-D015, Astronaut Scientific Debriefings, 1962-1963",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D015_Astronaut-Scientific-Debriefings_1962-1963.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 487
+  },
+  "NASA-UAP-D016, Preliminary Gemini 4 Crew Debriefing, Part I, 1965": {
+   "title": "NASA-UAP-D016, Preliminary Gemini 4 Crew Debriefing, Part I, 1965",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D016_Preliminary-Gemini-4-Crew-Debriefing_Part1_1965.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 488
+  },
+  "NASA-UAP-D017, Preliminary Gemini 4 Crew Debriefing, Part II, 1965": {
+   "title": "NASA-UAP-D017, Preliminary Gemini 4 Crew Debriefing, Part II, 1965",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D017_Preliminary-Gemini-4-Crew-Debriefing_Part2_1965.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 489
+  },
+  "NASA-UAP-D018, Gemini 4 Experiment Debriefing, 1967": {
+   "title": "NASA-UAP-D018, Gemini 4 Experiment Debriefing, 1967",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D018_Gemini-4_Experiment-Debriefing_1967.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 490
+  },
+  "NASA-UAP-D019, Gemini 5 Technical Debriefing, Part I, 1965": {
+   "title": "NASA-UAP-D019, Gemini 5 Technical Debriefing, Part I, 1965",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D019_Gemini-5-Technical-Debriefing_Part1_1965.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 491
+  },
+  "NASA-UAP-D020, Gemini 5 Technical Debriefing, Part II, 1965": {
+   "title": "NASA-UAP-D020, Gemini 5 Technical Debriefing, Part II, 1965",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D020_Gemini-5-Technical-Debriefing_Part2_1965.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 492
+  },
+  "NASA-UAP-D021, Gemini 7 Technical Debriefing, 1965": {
+   "title": "NASA-UAP-D021, Gemini 7 Technical Debriefing, 1965",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D021_Gemini-7-Technical-Debriefing_1965.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 493
+  },
+  "NASA-UAP-D022, Gemini 9 Debriefing, 1966": {
+   "title": "NASA-UAP-D022, Gemini 9 Debriefing, 1966",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D022_Gemini-9-Debriefing_1966.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 494
+  },
+  "NASA-UAP-D023, Interview Excerpt with Astronaut Gordon Cooper, 1962": {
+   "title": "NASA-UAP-D023, Interview Excerpt with Astronaut Gordon Cooper, 1962",
+   "documentUrl": "",
+   "videoUrl": "1010337",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 495
+  },
+  "NASA-UAP-D024, “Apollo 16 Scientific Debriefing”": {
+   "title": "NASA-UAP-D024, “Apollo 16 Scientific Debriefing”",
+   "documentUrl": "",
+   "videoUrl": "1010319",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 496
+  },
+  "NASA-UAP-D025, “Apollo 16 Scientific Debriefing”": {
+   "title": "NASA-UAP-D025, “Apollo 16 Scientific Debriefing”",
+   "documentUrl": "",
+   "videoUrl": "1010336",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 497
+  },
+  "NASA-UAP-VM001, Apollo 12, 1969": {
+   "title": "NASA-UAP-VM001, Apollo 12, 1969",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm1-apollo-12-1969.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 505
+  },
+  "NASA-UAP-VM002, Apollo 12, 1969": {
+   "title": "NASA-UAP-VM002, Apollo 12, 1969",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm2-apollo-12-1969.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 506
+  },
+  "NASA-UAP-VM003, Apollo 12, 1969": {
+   "title": "NASA-UAP-VM003, Apollo 12, 1969",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm3-apollo-12-1969.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 507
+  },
+  "NASA-UAP-VM004, Apollo 12, 1969": {
+   "title": "NASA-UAP-VM004, Apollo 12, 1969",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm4-apollo-12-1969.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 508
+  },
+  "NASA-UAP-VM005, Apollo 12, 1969": {
+   "title": "NASA-UAP-VM005, Apollo 12, 1969",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm5-apollo-12-1969.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 509
+  },
+  "NASA-UAP-VM006, Apollo 17, 1972": {
+   "title": "NASA-UAP-VM006, Apollo 17, 1972",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm6-apollo-17-1972.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 510
+  },
+  "ODNI-UAP-D001, USPER Narrative, Senior USIC Official": {
+   "title": "ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "documentUrl": "https://www.war.gov/medialink/ufo/052226/release_02/documents/ODNI-UAP-D001_USPER_Narrative_Senior_USIC.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI Photo A001 | FBI Photo A002 | FBI Photo A003 | FBI Photo A004 | FBI Photo A005 | FBI Photo A006 | FBI Photo A007 | FBI Photo A008 | FBI Photo B001 | FBI Photo B002 | FBI Photo B003 | FBI Photo B004 | FBI Photo B005 | FBI Photo B006 | FBI Photo B007 | FBI Photo B008 | FBI Photo B009 | FBI Photo B010 | FBI Photo B011 | FBI Photo B012 | FBI Photo B013 | FBI Photo B014 | FBI Photo B015 | FBI Photo B016 | FBI Photo B017 | FBI Photo B018 | FBI Photo B019 | FBI Photo B020 | FBI Photo B021 | FBI Photo B022 | FBI Photo B023 | FBI Photo B024 | USPER Statement about UAP Sighting",
+   "order": 511
+  },
+  "State Department UAP Cable 001, Papua New Guinea, January 28, 1985": {
+   "title": "State Department UAP Cable 001, Papua New Guinea, January 28, 1985",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dos-uap-d1-cable-1-papua-new-guinea-january-1985.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "059UAP00009",
+   "order": 512
+  },
+  "State Department UAP Cable 002, Kazakhstan, January 31, 1994": {
+   "title": "State Department UAP Cable 002, Kazakhstan, January 31, 1994",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/dos-uap-d2-cable-2-kazakhstan-january-1994.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "059UAP000010",
+   "order": 513
+  },
+  "State Department UAP Cable 003, Tbilisi, Georgia, October 30, 2001": {
+   "title": "State Department UAP Cable 003, Tbilisi, Georgia, October 30, 2001",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/059uap00011.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "059UAP00011",
+   "order": 514
+  },
+  "State Department UAP Cable 004, Ashgabat, Turkmenistan, November 5, 2004": {
+   "title": "State Department UAP Cable 004, Ashgabat, Turkmenistan, November 5, 2004",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/059uap00012.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "059UAP00012",
+   "order": 515
+  },
+  "State Department UAP Cable 005, Mexico, September 16, 2003": {
+   "title": "State Department UAP Cable 005, Mexico, September 16, 2003",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/059uap00013.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "059UAP00013",
+   "order": 516
+  },
+  "USG-UAP-D001, Congressional, White House, UFO-related Constituent Correspondence, 1998": {
+   "title": "USG-UAP-D001, Congressional, White House, UFO-related Constituent Correspondence, 1998",
+   "documentUrl": "https://www.war.gov/medialink/ufo/061226/release_03/documents/USG-UAP-D001_Congress-WhiteHouse-UFO-Correspondence_1998.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 517
+  },
+  "USPER Statement about UAP Sighting": {
+   "title": "USPER Statement about UAP Sighting",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/usper-statement-redacted.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI Photo A001 | FBI Photo A002 | FBI Photo A003 | FBI Photo A004 | FBI Photo A005 | FBI Photo A006 | FBI Photo A007 | FBI Photo A008 | FBI Photo B001 | FBI Photo B002 | FBI Photo B003 | FBI Photo B004 | FBI Photo B005 | FBI Photo B006 | FBI Photo B007 | FBI Photo B008 | FBI Photo B009 | FBI Photo B010 | FBI Photo B011 | FBI Photo B012 | FBI Photo B013 | FBI Photo B014 | FBI Photo B015 | FBI Photo B016 | FBI Photo B017 | FBI Photo B018 | FBI Photo B019 | FBI Photo B020 | FBI Photo B021 | FBI Photo B022 | FBI Photo B023 | FBI Photo B024 | ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+   "order": 519
+  },
+  "Western US Event": {
+   "title": "Western US Event",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_1/western_us_event_slides_5.08.2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-D077 | DOW-UAP-D078 | DOW-UAP-D079 | DOW-UAP-D080 | DOW-UAP-D081 | DOW-UAP-D082 | DOW-UAP-D083 | FBI-UAP-D014 | FBI-UAP-D015 | FBI-UAP-D016 | FBI-UAP-D017 | FBI-UAP-D018 | FBI-UAP-D019 | FBI-UAP-D020 | FBI-UAP-D021 | FBI-UAP-D022 | FBI-UAP-D023 | FBI-UAP-PR005 | FBI-UAP-PR006",
+   "pdfPairing": "",
+   "order": 520
+  },
+  "DOE-UAP-D004, Los Alamos Conference on Aerial Phenomena, 1949": {
+   "title": "DOE-UAP-D004, Los Alamos Conference on Aerial Phenomena, 1949",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOE-UAP-D004_Los-Alamos-Conference-on-Aerial-Phenomena_1949.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 68
+  },
+  "DOW-UAP-D094, Analysis of Flying Object Incidents in the United States, 1949": {
+   "title": "DOW-UAP-D094, Analysis of Flying Object Incidents in the United States, 1949",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D094_Analysis-of-Flying-Object-Incidents-in-the-US_1949.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 131
+  },
+  "DOW-UAP-D097, Project Sign Progress Report, 1948": {
+   "title": "DOW-UAP-D097, Project Sign Progress Report, 1948",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D097_Project-Sign-Progress-Report_1948.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 134
+  },
+  "DOW-UAP-PR104, Unresolved UAP Report, Yellow Sea, 2025": {
+   "title": "DOW-UAP-PR104, Unresolved UAP Report, Yellow Sea, 2025",
+   "documentUrl": "",
+   "videoUrl": "1014101",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 332
+  },
+  "DOW-UAP-PR105, Unresolved UAP Report, East China Sea, 2025": {
+   "title": "DOW-UAP-PR105, Unresolved UAP Report, East China Sea, 2025",
+   "documentUrl": "",
+   "videoUrl": "1014103",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 333
+  },
+  "DOW-UAP-PR113, Unresolved UAP Report, Western United States, 1996": {
+   "title": "DOW-UAP-PR113, Unresolved UAP Report, Western United States, 1996",
+   "documentUrl": "",
+   "videoUrl": "1014119",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 341
+  },
+  "DOW-UAP-PR115, Unresolved UAP Report, Gulf of America, 2019": {
+   "title": "DOW-UAP-PR115, Unresolved UAP Report, Gulf of America, 2019",
+   "documentUrl": "",
+   "videoUrl": "1014123",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 343
+  },
+  "NASA-UAP-D030, STS-80 Unidentified Object Image 1, 1996": {
+   "title": "NASA-UAP-D030, STS-80 Unidentified Object Image 1, 1996",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/NASA-UAP-D030_STS-80-Unidentified-Object-Image1_1996.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "NASA-UAP-D031 | NASA-UAP-D032",
+   "order": 502
+  },
+  "NASA-UAP-D031, STS-80 Unidentified Object Image 2, 1996": {
+   "title": "NASA-UAP-D031, STS-80 Unidentified Object Image 2, 1996",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/NASA-UAP-D031_STS-80-Unidentified-Object-Image2_1996.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "NASA-UAP-D030 | NASA-UAP-D032",
+   "order": 503
+  },
+  "NASA-UAP-D032, STS-80 Unidentified Object Image 3, 1996": {
+   "title": "NASA-UAP-D032, STS-80 Unidentified Object Image 3, 1996",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/NASA-UAP-D032_STS-80-Unidentified-Object-Image3_1996.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "NASA-UAP-D029 | NASA-UAP-D031",
+   "order": 504
+  },
+  "DOE-UAP-D005, Pantex Unidentified Object Incident Report, 2015": {
+   "title": "DOE-UAP-D005, Pantex Unidentified Object Incident Report, 2015",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOE-UAP-D005_Pantex-Unidentified-Object-Incident-Report_2015.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOE-UAP-D001",
+   "order": 69
+  },
+  "DOW-UAP-D089, Range Fouler Debrief, Eastern United States, 2020": {
+   "title": "DOW-UAP-D089, Range Fouler Debrief, Eastern United States, 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D089_Range-Fouler-Debrief_Eastern-US_2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR106",
+   "pdfPairing": "",
+   "order": 126
+  },
+  "DOW-UAP-D090, Range Fouler Debrief, Eastern United States, 2019": {
+   "title": "DOW-UAP-D090, Range Fouler Debrief, Eastern United States, 2019",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D090_Range-Fouler-Debrief_Eastern-US_2019.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR112",
+   "pdfPairing": "",
+   "order": 127
+  },
+  "DOW-UAP-D091, Range Fouler Debrief, Atlantic Ocean, 2020": {
+   "title": "DOW-UAP-D091, Range Fouler Debrief, Atlantic Ocean, 2020",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D091_Range-Fouler-Debrief_Atlantic-Ocean_2020.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR116",
+   "pdfPairing": "",
+   "order": 128
+  },
+  "DOW-UAP-D092, Department of the Air Force Committee to Review Project Bluebook, 1966-1967": {
+   "title": "DOW-UAP-D092, Department of the Air Force Committee to Review Project Bluebook, 1966-1967",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D092_DAF-Committee-to-Review-Project-Bluebook_1966-1967.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 129
+  },
+  "DOW-UAP-D093, Analysis of Flying Object Incidents in the United States, 1948": {
+   "title": "DOW-UAP-D093, Analysis of Flying Object Incidents in the United States, 1948",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D093_Analysis-of-Flying-Object-Incidents-in-the-US_1948.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 130
+  },
+  "DOW-UAP-D095, Joint U.S.-Canadian Aviation Projects and UFO Sighting Reports, 1954-1955": {
+   "title": "DOW-UAP-D095, Joint U.S.-Canadian Aviation Projects and UFO Sighting Reports, 1954-1955",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D095_Joint-US-Canadian-Aviation-Projects-and-UFO-Sighting-Reports_1954-1955.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 132
+  },
+  "DOW-UAP-D096, Correspondence Relating to Project Blue Book, 1955": {
+   "title": "DOW-UAP-D096, Correspondence Relating to Project Blue Book, 1955",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D096_Correspondence-Relating-to-Project-Blue-Book_1955.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 133
+  },
+  "DOW-UAP-PR024, Unresolved UAP Report, Middle East, 2023": {
+   "title": "DOW-UAP-PR024, Unresolved UAP Report, Middle East, 2023",
+   "documentUrl": "",
+   "videoUrl": "1014100",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 252
+  },
+  "DOW-UAP-PR030, Unresolved UAP Report, Middle East, 2023": {
+   "title": "DOW-UAP-PR030, Unresolved UAP Report, Middle East, 2023",
+   "documentUrl": "",
+   "videoUrl": "1014102",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 257
+  },
+  "DOW-UAP-PR100, Unresolved UAP Report, Yellow Sea, 2023": {
+   "title": "DOW-UAP-PR100, Unresolved UAP Report, Yellow Sea, 2023",
+   "documentUrl": "",
+   "videoUrl": "1014096",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 328
+  },
+  "DOW-UAP-PR101, Unresolved UAP Report, South China Sea, 2024": {
+   "title": "DOW-UAP-PR101, Unresolved UAP Report, South China Sea, 2024",
+   "documentUrl": "",
+   "videoUrl": "1014097",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 329
+  },
+  "DOW-UAP-PR102, Unresolved UAP Report, East China Sea, 2024": {
+   "title": "DOW-UAP-PR102, Unresolved UAP Report, East China Sea, 2024",
+   "documentUrl": "",
+   "videoUrl": "1014098",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 330
+  },
+  "DOW-UAP-PR103, Unresolved UAP Report, East China Sea, 2024": {
+   "title": "DOW-UAP-PR103, Unresolved UAP Report, East China Sea, 2024",
+   "documentUrl": "",
+   "videoUrl": "1014099",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 331
+  },
+  "DOW-UAP-PR106, Unresolved UAP Report, Eastern United States, 2020": {
+   "title": "DOW-UAP-PR106, Unresolved UAP Report, Eastern United States, 2020",
+   "documentUrl": "",
+   "videoUrl": "1014104",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D089",
+   "order": 334
+  },
+  "DOW-UAP-PR107, Unresolved UAP Report, Eastern United States, 2020": {
+   "title": "DOW-UAP-PR107, Unresolved UAP Report, Eastern United States, 2020",
+   "documentUrl": "",
+   "videoUrl": "1014105",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 335
+  },
+  "DOW-UAP-PR108, Unresolved UAP Report, Western United States, 2020": {
+   "title": "DOW-UAP-PR108, Unresolved UAP Report, Western United States, 2020",
+   "documentUrl": "",
+   "videoUrl": "1014106",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 336
+  },
+  "DOW-UAP-PR109, Unresolved UAP Report, Eastern United States, 2015": {
+   "title": "DOW-UAP-PR109, Unresolved UAP Report, Eastern United States, 2015",
+   "documentUrl": "",
+   "videoUrl": "1014108",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 337
+  },
+  "DOW-UAP-PR110, Unresolved UAP Report, Eastern United States, 2020": {
+   "title": "DOW-UAP-PR110, Unresolved UAP Report, Eastern United States, 2020",
+   "documentUrl": "",
+   "videoUrl": "1014112",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 338
+  },
+  "DOW-UAP-PR111, Unresolved UAP Report, Eastern United States, 2020": {
+   "title": "DOW-UAP-PR111, Unresolved UAP Report, Eastern United States, 2020",
+   "documentUrl": "",
+   "videoUrl": "1014114",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 339
+  },
+  "DOW-UAP-PR112, Unresolved UAP Report, Eastern United States, 2019": {
+   "title": "DOW-UAP-PR112, Unresolved UAP Report, Eastern United States, 2019",
+   "documentUrl": "",
+   "videoUrl": "1014128",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D090",
+   "order": 340
+  },
+  "DOW-UAP-PR114, Unresolved UAP Report, Atlantic Ocean, 2016": {
+   "title": "DOW-UAP-PR114, Unresolved UAP Report, Atlantic Ocean, 2016",
+   "documentUrl": "",
+   "videoUrl": "1014121",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 342
+  },
+  "DOW-UAP-PR116, Unresolved UAP Report, Atlantic Ocean, 2020": {
+   "title": "DOW-UAP-PR116, Unresolved UAP Report, Atlantic Ocean, 2020",
+   "documentUrl": "",
+   "videoUrl": "1014124",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D091",
+   "order": 344
+  },
+  "FBI-UAP-D014, Correspondence Relating to UFO Sightings, 1967, 1974": {
+   "title": "FBI-UAP-D014, Correspondence Relating to UFO Sightings, 1967, 1974",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 428
+  },
+  "CIA-UAP-D020, Memorandum on Unconventional Aircraft Sightings, 1955": {
+   "title": "CIA-UAP-D020, Memorandum on Unconventional Aircraft Sightings, 1955",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D020_Memorandum-on-Unconventional-Aircraft-Sightings_1955.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "CIA-UAP-D021",
+   "order": 57
+  },
+  "CIA-UAP-D021, Analysis of Unconventional Aircraft Sightings, 1955": {
+   "title": "CIA-UAP-D021, Analysis of Unconventional Aircraft Sightings, 1955",
+   "documentUrl": "https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D021_Analysis-of-Unconventional-Aircraft-Sightings_1955.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "CIA-UAP-D020",
+   "order": 58
+  },
+  "NASA-UAP-D026, Apollo 14 Debriefing, 1971": {
+   "title": "NASA-UAP-D026, Apollo 14 Debriefing, 1971",
+   "documentUrl": "",
+   "videoUrl": "1014107",
+   "videoPairing": "NASA-UAP-D027",
+   "pdfPairing": "",
+   "order": 498
+  },
+  "NASA-UAP-D027, Apollo 14 Debriefing (Continued), 1971": {
+   "title": "NASA-UAP-D027, Apollo 14 Debriefing (Continued), 1971",
+   "documentUrl": "",
+   "videoUrl": "1014110",
+   "videoPairing": "NASA-UAP-D026",
+   "pdfPairing": "",
+   "order": 499
+  },
+  "NASA-UAP-D028, Apollo 17 Crew Medical Debriefing, 1972": {
+   "title": "NASA-UAP-D028, Apollo 17 Crew Medical Debriefing, 1972",
+   "documentUrl": "",
+   "videoUrl": "1014116",
+   "videoPairing": "NASA-UAP-D029",
+   "pdfPairing": "",
+   "order": 500
+  },
+  "NASA-UAP-D029, Apollo 17 Crew Medical Debriefing (Continued), 1972": {
+   "title": "NASA-UAP-D029, Apollo 17 Crew Medical Debriefing (Continued), 1972",
+   "documentUrl": "",
+   "videoUrl": "1014117",
+   "videoPairing": "NASA-UAP-D028",
+   "pdfPairing": "",
+   "order": 501
+  },
+  "DOW-UAP-D098, Film Analysis of Unidentified Objects, 1953": {
+   "title": "DOW-UAP-D098, Film Analysis of Unidentified Objects, 1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D098_Film-Analysis-of-Unidentified-Objects_1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR159",
+   "pdfPairing": "DOW-UAP-D103 | DOW-UAP-D104 | DOW-UAP-D105",
+   "order": 135
+  },
+  "FBI-UAP-D025, Digital Rendering, “Airborne Triangle,” 2002": {
+   "title": "FBI-UAP-D025, Digital Rendering, “Airborne Triangle,” 2002",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D025_Digital-Rendering_Airborne-Triangle_2002.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-024",
+   "order": 440
+  },
+  "FBI-UAP-D027, Digital Rendering, “Dark Translucent Triangle,” 2023": {
+   "title": "FBI-UAP-D027, Digital Rendering, “Dark Translucent Triangle,” 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D027_Digital-Rendering_Dark-Translucent-Triangle_2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-026",
+   "order": 442
+  },
+  "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011": {
+   "title": "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D029_Digital-Rendering_Dark-Triangle-with-Lights_2011.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D028",
+   "order": 444
+  },
+  "FBI-UAP-D031, Digital Rendering, “Large Triangle with Red Lights,” 2023": {
+   "title": "FBI-UAP-D031, Digital Rendering, “Large Triangle with Red Lights,” 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D031_Digital-Rendering_Large-Triangle-with-Red-Lights_2023.jpg",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D030",
+   "order": 446
+  },
+  "FBI-UAP-D038, Digital Rendering 1, “Multiple Red Lights,” 2026": {
+   "title": "FBI-UAP-D038, Digital Rendering 1, “Multiple Red Lights,” 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D038_Digital-Rendering-1_Multiple-Red-Lights_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D037 | FBI-UAP-D039",
+   "order": 450
+  },
+  "FBI-UAP-D039, Digital Rendering 2, “Multiple Red Lights,” 2026": {
+   "title": "FBI-UAP-D039, Digital Rendering 2, “Multiple Red Lights,” 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D039_Digital-Rendering-2_Multiple-Red-Lights_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D037 | FBI-UAP-D038",
+   "order": 451
+  },
+  "FBI-UAP-D041, Digital Rendering 1, “Multiple Red Lights,” 2026": {
+   "title": "FBI-UAP-D041, Digital Rendering 1, “Multiple Red Lights,” 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D041_Digital-Rendering-1_Multiple-Red-Lights_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D040 | FBI-UAP-D042",
+   "order": 453
+  },
+  "FBI-UAP-D042, Digital Rendering 2, “Multiple Red Lights,” 2026": {
+   "title": "FBI-UAP-D042, Digital Rendering 2, “Multiple Red Lights,” 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D042_Digital-Rendering-2_Multiple-Red-Lights_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D040 | FBI-UAP-D041",
+   "order": 454
+  },
+  "CIA-UAP-D022, Unidentified Flying Object Reported near Puerto Rico, 1965": {
+   "title": "CIA-UAP-D022, Unidentified Flying Object Reported near Puerto Rico, 1965",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D022_Unidentified-Flying-Object-Reported-near-Puerto-Rico_1965.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "CIA-UAP-D023",
+   "order": 59
+  },
+  "CIA-UAP-D023, Briefing Notes for Mr. Walter Elder": {
+   "title": "CIA-UAP-D023, Briefing Notes for Mr. Walter Elder",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D023_Briefing-Notes-for-Mr-Walter-Elder.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "CIA-UAP-D022",
+   "order": 60
+  },
+  "DOS-UAP-D001, Diplomatic Cable, Brazil, November 14, 1963": {
+   "title": "DOS-UAP-D001, Diplomatic Cable, Brazil, November 14, 1963",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D001_Diplomatic-Cable_Brazil_November-14-1963.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "EOP-UAP-D001 | DOS-UAP-D002",
+   "order": 70
+  },
+  "DOS-UAP-D002, Diplomatic Cable, Brazil, November 20, 1963": {
+   "title": "DOS-UAP-D002, Diplomatic Cable, Brazil, November 20, 1963",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D002_Diplomatic-Cable_Brazil_November-20-1963.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "EOP-UAP-D001 | DOS-UAP-D001",
+   "order": 71
+  },
+  "DOW-UAP-D099, Intelligence Review of “Ghost Rocket” Incidents, 1947": {
+   "title": "DOW-UAP-D099, Intelligence Review of “Ghost Rocket” Incidents, 1947",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 136
+  },
+  "DOW-UAP-D100, Air Materiel Command Report on Unidentified Flying Objects, 1947-1948": {
+   "title": "DOW-UAP-D100, Air Materiel Command Report on Unidentified Flying Objects, 1947-1948",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D100_Air-Materiel-Command-Report-on-UFOs_1947-1948.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 137
+  },
+  "DOW-UAP-D101, Intelligence Information Report, Unresolved UAP Report, Gulf of Oman, 2021": {
+   "title": "DOW-UAP-D101, Intelligence Information Report, Unresolved UAP Report, Gulf of Oman, 2021",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR117 | DOW-UAP-PR118 | DOW-UAP-PR119 | DOW-UAP-PR120 | DOW-UAP-PR121 | DOW-UAP-PR122",
+   "pdfPairing": "",
+   "order": 138
+  },
+  "EOP-UAP-D001, NASC Inquiry into Bahia, Brazil Incident, November 13, 1963": {
+   "title": "EOP-UAP-D001, NASC Inquiry into Bahia, Brazil Incident, November 13, 1963",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOS-UAP-D001 | DOS-UAP-D002",
+   "order": 377
+  },
+  "FBI-UAP-D024, FD-302, “Airborne Lights and Triangle,” 2002, 2023-2024": {
+   "title": "FBI-UAP-D024, FD-302, “Airborne Lights and Triangle,” 2002, 2023-2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D024_FD-302_Airborne-Lights-and-Triangle_2002_2023-2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D025",
+   "order": 439
+  },
+  "FBI-UAP-D026, FD-302, “Dark Translucent Triangle,” 2023": {
+   "title": "FBI-UAP-D026, FD-302, “Dark Translucent Triangle,” 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D026_FD-302_Dark-Translucent-Triangle_2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-027",
+   "order": 441
+  },
+  "FBI-UAP-D028, FD-302, “Dark Triangle with Lights,” 2011": {
+   "title": "FBI-UAP-D028, FD-302, “Dark Triangle with Lights,” 2011",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D028_FD-302_Dark-Triangle-with-Lights_2011.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D029",
+   "order": 443
+  },
+  "FBI-UAP-D030, FD-302, “Large Triangle with Red Lights,” 2023": {
+   "title": "FBI-UAP-D030, FD-302, “Large Triangle with Red Lights,” 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D030_FD-302_Large-Triangle-with-Red-Lights_2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D031",
+   "order": 445
+  },
+  "FBI-UAP-D032, FD-302, “Slow-moving Objects,” 2026": {
+   "title": "FBI-UAP-D032, FD-302, “Slow-moving Objects,” 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D032_FD-302_Slow-moving-Objects_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "FBI-UAP-PR007",
+   "pdfPairing": "",
+   "order": 447
+  },
+  "FBI-UAP-D033, FD-302, “Thermally Elevated Aerial Object,” 2026": {
+   "title": "FBI-UAP-D033, FD-302, “Thermally Elevated Aerial Object,” 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D033_FD-302_Thermally-Elevated-Aerial-Object_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 448
+  },
+  "FBI-UAP-D037, FD-302, “Multiple Red Lights,” 2026": {
+   "title": "FBI-UAP-D037, FD-302, “Multiple Red Lights,” 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D037_FD-302_Multiple-Red-Lights_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D038 | FBI-UAP-D039",
+   "order": 449
+  },
+  "FBI-UAP-D040, FD-302, “Multiple Red Lights,” 2026": {
+   "title": "FBI-UAP-D040, FD-302, “Multiple Red Lights,” 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D040_FD-302_Multiple-Red-Lights_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D041 | FBI-UAP-D042",
+   "order": 452
+  },
+  "DOW-UAP-PR117, Unresolved UAP Report, Gulf of Oman, 2021": {
+   "title": "DOW-UAP-PR117, Unresolved UAP Report, Gulf of Oman, 2021",
+   "documentUrl": "",
+   "videoUrl": "1017793",
+   "videoPairing": "DOW-UAP-PR118 | DOW-UAP-PR119 | DOW-UAP-PR120 | DOW-UAP-PR121 | DOW-UAP-PR122",
+   "pdfPairing": "DOW-UAP-PR-101",
+   "order": 345
+  },
+  "DOW-UAP-PR118, Unresolved UAP Report, Gulf of Oman, 2021": {
+   "title": "DOW-UAP-PR118, Unresolved UAP Report, Gulf of Oman, 2021",
+   "documentUrl": "",
+   "videoUrl": "1017795",
+   "videoPairing": "DOW-UAP-PR117 | DOW-UAP-PR119 | DOW-UAP-PR120 | DOW-UAP-PR121 | DOW-UAP-PR122",
+   "pdfPairing": "DOW-UAP-PR-101",
+   "order": 346
+  },
+  "DOW-UAP-PR119, Unresolved UAP Report, Gulf of Oman, 2021": {
+   "title": "DOW-UAP-PR119, Unresolved UAP Report, Gulf of Oman, 2021",
+   "documentUrl": "",
+   "videoUrl": "1017798",
+   "videoPairing": "DOW-UAP-PR117 | DOW-UAP-PR118 | DOW-UAP-PR120 | DOW-UAP-PR121 | DOW-UAP-PR122",
+   "pdfPairing": "DOW-UAP-PR-101",
+   "order": 347
+  },
+  "DOW-UAP-PR120, Unresolved UAP Report, Gulf of Oman, 2021": {
+   "title": "DOW-UAP-PR120, Unresolved UAP Report, Gulf of Oman, 2021",
+   "documentUrl": "",
+   "videoUrl": "1017800",
+   "videoPairing": "DOW-UAP-PR117 | DOW-UAP-PR118 | DOW-UAP-PR119 | DOW-UAP-PR121 | DOW-UAP-PR122",
+   "pdfPairing": "DOW-UAP-PR-101",
+   "order": 348
+  },
+  "DOW-UAP-PR121, Unresolved UAP Report, Gulf of Oman, 2021": {
+   "title": "DOW-UAP-PR121, Unresolved UAP Report, Gulf of Oman, 2021",
+   "documentUrl": "",
+   "videoUrl": "1017802",
+   "videoPairing": "DOW-UAP-PR117 | DOW-UAP-PR118 | DOW-UAP-PR119 | DOW-UAP-PR120 | DOW-UAP-PR122",
+   "pdfPairing": "DOW-UAP-PR-101",
+   "order": 349
+  },
+  "DOW-UAP-PR122, Unresolved UAP Report, Gulf of Oman, 2021": {
+   "title": "DOW-UAP-PR122, Unresolved UAP Report, Gulf of Oman, 2021",
+   "documentUrl": "",
+   "videoUrl": "1017803",
+   "videoPairing": "DOW-UAP-PR117 | DOW-UAP-PR118 | DOW-UAP-PR119 | DOW-UAP-PR120 | DOW-UAP-PR121",
+   "pdfPairing": "DOW-UAP-PR-101",
+   "order": 350
+  },
+  "DOW-UAP-PR123, Unresolved UAP Report, Pacific Ocean, 2019": {
+   "title": "DOW-UAP-PR123, Unresolved UAP Report, Pacific Ocean, 2019",
+   "documentUrl": "",
+   "videoUrl": "1017805",
+   "videoPairing": "DOW-UAP-PR124 | DOW-UAP-PR125 | DOW-UAP-PR126 | DOW-UAP-PR127",
+   "pdfPairing": "",
+   "order": 351
+  },
+  "DOW-UAP-PR124, Unresolved UAP Report, Pacific Ocean, 2019": {
+   "title": "DOW-UAP-PR124, Unresolved UAP Report, Pacific Ocean, 2019",
+   "documentUrl": "",
+   "videoUrl": "1017806",
+   "videoPairing": "DOW-UAP-PR123 | DOW-UAP-PR125 | DOW-UAP-PR126 | DOW-UAP-PR127",
+   "pdfPairing": "",
+   "order": 352
+  },
+  "DOW-UAP-PR125, Unresolved UAP Report, Pacific Ocean, 2019": {
+   "title": "DOW-UAP-PR125, Unresolved UAP Report, Pacific Ocean, 2019",
+   "documentUrl": "",
+   "videoUrl": "1017788",
+   "videoPairing": "DOW-UAP-PR123 | DOW-UAP-PR124 | DOW-UAP-PR126 | DOW-UAP-PR127",
+   "pdfPairing": "",
+   "order": 353
+  },
+  "DOW-UAP-PR126, Unresolved UAP Report, Pacific Ocean, 2019": {
+   "title": "DOW-UAP-PR126, Unresolved UAP Report, Pacific Ocean, 2019",
+   "documentUrl": "",
+   "videoUrl": "1017790",
+   "videoPairing": "DOW-UAP-PR123 | DOW-UAP-PR124 | DOW-UAP-PR125 | DOW-UAP-PR127",
+   "pdfPairing": "",
+   "order": 354
+  },
+  "DOW-UAP-PR127, Unresolved UAP Report, Pacific Ocean, 2019": {
+   "title": "DOW-UAP-PR127, Unresolved UAP Report, Pacific Ocean, 2019",
+   "documentUrl": "",
+   "videoUrl": "1017791",
+   "videoPairing": "DOW-UAP-PR123 | DOW-UAP-PR124 | DOW-UAP-PR125 | DOW-UAP-PR126",
+   "pdfPairing": "",
+   "order": 355
+  },
+  "DOW-UAP-PR134, Unresolved UAP Report, Middle East, 2025": {
+   "title": "DOW-UAP-PR134, Unresolved UAP Report, Middle East, 2025",
+   "documentUrl": "",
+   "videoUrl": "1017792",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 359
+  },
+  "DOW-UAP-PR136, Unresolved UAP Report, Middle East, 2023": {
+   "title": "DOW-UAP-PR136, Unresolved UAP Report, Middle East, 2023",
+   "documentUrl": "",
+   "videoUrl": "1017796",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 361
+  },
+  "DOW-UAP-PR142, Unresolved UAP Report, Middle East, 2025": {
+   "title": "DOW-UAP-PR142, Unresolved UAP Report, Middle East, 2025",
+   "documentUrl": "",
+   "videoUrl": "1017797",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 364
+  },
+  "DOW-UAP-PR149, Unresolved UAP Report, Middle East, 2023": {
+   "title": "DOW-UAP-PR149, Unresolved UAP Report, Middle East, 2023",
+   "documentUrl": "",
+   "videoUrl": "1017799",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 368
+  },
+  "FBI-UAP-PR007, “Slow-moving Objects,” 2026": {
+   "title": "FBI-UAP-PR007, “Slow-moving Objects,” 2026",
+   "documentUrl": "",
+   "videoUrl": "1017801",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D032",
+   "order": 462
+  },
+  "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957": {
+   "title": "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D155-Air_Intelligence_Information_Report_Saudi_Arabia-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 192
+  },
+  "DOW-UAP-D174, Utah Ranch Investigation Report, April 2010": {
+   "title": "DOW-UAP-D174, Utah Ranch Investigation Report, April 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D174-Utah_Ranch_Investigation_Report_April_2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 209
+  },
+  "DOW-UAP-D176, Triangular UAP AARO Memorandum for Record, 2026": {
+   "title": "DOW-UAP-D176, Triangular UAP AARO Memorandum for Record, 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D176-Triangular_UAP_AARO_MFR_2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "FBI-UAP-D043",
+   "order": 211
+  },
+  "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955": {
+   "title": "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D177_Unresolved_UAP_Report_Catalina_Island-1955.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 212
+  },
+  "DOW-UAP-D178, Unresolved UAP Report, Catalina Island, 1953": {
+   "title": "DOW-UAP-D178, Unresolved UAP Report, Catalina Island, 1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D178_Unresolved_UAP_Report_Catalina_Island-1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 213
+  },
+  "DOW-UAP-D179, Air Intelligence Information Report, Catalina Island, 1952": {
+   "title": "DOW-UAP-D179, Air Intelligence Information Report, Catalina Island, 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D179_Unresolved_UAP_Report_Catalina_Island-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 214
+  },
+  "DOW-UAP-D181, Unresolved UAP Report, Catalina Island, 1949": {
+   "title": "DOW-UAP-D181, Unresolved UAP Report, Catalina Island, 1949",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D181_Unresolved_UAP_Report_Catalina_Island-1949.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 216
+  },
+  "FBI-UAP-D043, FD-302, Unidentified Aerial Object Observation Report, 2026": {
+   "title": "FBI-UAP-D043, FD-302, Unidentified Aerial Object Observation Report, 2026",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/FBI-UAP-D043-FD_302_Unidentified_Aerial_Object_Observation_Report-2026.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D176",
+   "order": 455
+  },
+  "DOW-UAP-D102, Project Blue Book File on Tremonton Film, Utah, 1952": {
+   "title": "DOW-UAP-D102, Project Blue Book File on Tremonton Film, Utah, 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D102_Project-Blue-Book-File-on-Tremonton-Film-Utah-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR159",
+   "pdfPairing": "DOW-UAP-D098 | DOW-UAP-D103 | DOW-UAP-D104 | DOW-UAP-D105",
+   "order": 139
+  },
+  "DOW-UAP-D103, Project Blue Book Photo File Relating to Tremonton Film, Utah, 1952": {
+   "title": "DOW-UAP-D103, Project Blue Book Photo File Relating to Tremonton Film, Utah, 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D103_Project-Blue-Book-Photo-File-Relating-to-Tremonton-Film-Utah-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR159",
+   "pdfPairing": "DOW-UAP-D098 | DOW-UAP-D102 |  DOW-UAP-D104 | DOW-UAP-D105",
+   "order": 140
+  },
+  "DOW-UAP-D104, Final Personnel Record for Newhouse, Delbert C., U.S. Navy, 1957": {
+   "title": "DOW-UAP-D104, Final Personnel Record for Newhouse, Delbert C., U.S. Navy, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D104_Final-Personnel-Record-for-Newhouse-Delbert-C-US-Navy-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR159",
+   "pdfPairing": "DOW-UAP-D098 | DOW-UAP-D102 | DOW-UAP-D103 | DOW-UAP-D105",
+   "order": 141
+  },
+  "DOW-UAP-D105, U.S. Air Force Flying Discs File, 1952": {
+   "title": "DOW-UAP-D105, U.S. Air Force Flying Discs File, 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D105_US-Air-Force-Flying-Discs-File-September-December-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR159",
+   "pdfPairing": "DOW-UAP-D098 | DOW-UAP-D102 | DOW-UAP-D103 | DOW-UAP-D104",
+   "order": 142
+  },
+  "DOW-UAP-D106, Mission Report, Iraq, 2022": {
+   "title": "DOW-UAP-D106, Mission Report, Iraq, 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D106_Mission-Report-Iraq-2022.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR130 | DOW-UAP-PR131",
+   "pdfPairing": "",
+   "order": 143
+  },
+  "DOW-UAP-D107, Mission Report, Middle East, 2025": {
+   "title": "DOW-UAP-D107, Mission Report, Middle East, 2025",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D107_Mission-Report-Middle-East-2025.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR133",
+   "pdfPairing": "",
+   "order": 144
+  },
+  "DOW-UAP-D108, Mission Report, Middle East, 2025": {
+   "title": "DOW-UAP-D108, Mission Report, Middle East, 2025",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D108_Mission-Report-Middle-East-2025.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR135",
+   "pdfPairing": "",
+   "order": 145
+  },
+  "DOW-UAP-D109, Mission Report, Middle East, 2022": {
+   "title": "DOW-UAP-D109, Mission Report, Middle East, 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D109_Mission-Report-Middle-East-2022.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR140 | DOW-UAP-PR141",
+   "pdfPairing": "",
+   "order": 146
+  },
+  "DOW-UAP-D110, AAWSAP Statement of Objectives, July 2008": {
+   "title": "DOW-UAP-D110, AAWSAP Statement of Objectives, July 2008",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D110_AAWSAP-Statement-of-Objectives-July-18-2008.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 147
+  },
+  "DOW-UAP-D111, AAWSAP Solicitation and Original Order, September 2008": {
+   "title": "DOW-UAP-D111, AAWSAP Solicitation and Original Order, September 2008",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D111_AAWSAP-Solicitation-and-Original-Order-September-22-2008.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 148
+  },
+  "DOW-UAP-D112, AAWSAP Contract Modification P00001, September 2009": {
+   "title": "DOW-UAP-D112, AAWSAP Contract Modification P00001, September 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D112_AAWSAP-Contract-Modification-P00001-September-2-2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 149
+  },
+  "DOW-UAP-D113, AAWSAP Contract Modification P00002, February 2010": {
+   "title": "DOW-UAP-D113, AAWSAP Contract Modification P00002, February 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D113_AAWSAP-Contract-Modification-P00002-February-2-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 150
+  },
+  "DOW-UAP-D114, AAWSAP Contract Modification P00003, May 2010": {
+   "title": "DOW-UAP-D114, AAWSAP Contract Modification P00003, May 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D114_AAWSAP-Contract-Modification-P00003-May-18- 2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 151
+  },
+  "DOW-UAP-D115, AAWSAP Contract Modification P00004, May 2010": {
+   "title": "DOW-UAP-D115, AAWSAP Contract Modification P00004, May 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D115_AAWSAP-Contract-Modification-P00004-May-18-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 152
+  },
+  "DOW-UAP-D116, AAWSAP Contract Modification P00005, September 2010": {
+   "title": "DOW-UAP-D116, AAWSAP Contract Modification P00005, September 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D116_AAWSAP-Contract-Modification-P00005-September-28-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 153
+  },
+  "DOW-UAP-D117, AAWSAP DIRD, Metallic Glasses for Aerospace Applications, December 2009": {
+   "title": "DOW-UAP-D117, AAWSAP DIRD, Metallic Glasses for Aerospace Applications, December 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D117_AAWSAP-DIRD-Metallic-Glasses-for-Aerospace-Applications-December-14-2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 154
+  },
+  "DOW-UAP-D118, AAWSAP DIRD, Aerospace Applications of Programmable Matter, December 2009": {
+   "title": "DOW-UAP-D118, AAWSAP DIRD, Aerospace Applications of Programmable Matter, December 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D118_AAWSAP-DIRD-Aerospace-Applications-of-Programmable-Matter-December-14-2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 155
+  },
+  "DOW-UAP-D119, AAWSAP DIRD, Biomaterials, January 2010": {
+   "title": "DOW-UAP-D119, AAWSAP DIRD, Biomaterials, January 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D119_AAWSAP-DIRD-Biomaterials-January-7-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 156
+  },
+  "DOW-UAP-D120, AAWSAP DIRD, Materials for Advanced Aerospace Platforms, January 2010": {
+   "title": "DOW-UAP-D120, AAWSAP DIRD, Materials for Advanced Aerospace Platforms, January 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D120_AAWSAP-DIRD-Materials-for-Advanced-Aerospace-Platforms-January-12-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 157
+  },
+  "DOW-UAP-D121, AAWSAP DIRD, Pulsed High-Power Microwave Source Technology, January 2010": {
+   "title": "DOW-UAP-D121, AAWSAP DIRD, Pulsed High-Power Microwave Source Technology, January 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D121_AAWSAP-DIRD-Pulsed-High-Power-Microwave-Source-Technology-January-28-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 158
+  },
+  "DOW-UAP-D122, AAWSAP DIRD, Invisibility Cloaking Theory and Experiments, March 2010": {
+   "title": "DOW-UAP-D122, AAWSAP DIRD, Invisibility Cloaking Theory and Experiments, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D122_AAWSAP-DIRD-Invisibility-Cloaking-Theory-and-Experiments-March-2-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 159
+  },
+  "DOW-UAP-D123, AAWSAP DIRD, Positron Aerospace Propulsion, March 2010": {
+   "title": "DOW-UAP-D123, AAWSAP DIRD, Positron Aerospace Propulsion, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D123_AAWSAP-DIRD-Positron-Aerospace-Propulsion-March-2-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 160
+  },
+  "DOW-UAP-D124, AAWSAP DIRD, Space Access: Where We’ve Been and Where We Could Go, March 2010": {
+   "title": "DOW-UAP-D124, AAWSAP DIRD, Space Access: Where We’ve Been and Where We Could Go, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D124_AAWSAP-DIRD-Space Access-Where-Weve-Been-and-Where-We-Could-Go-March-8-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 161
+  },
+  "DOW-UAP-D125, AAWSAP DIRD, Inertial Electrostatic Confinement Fusion, March 2010": {
+   "title": "DOW-UAP-D125, AAWSAP DIRD, Inertial Electrostatic Confinement Fusion, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D125_AAWSA-DIRD-Inertial-Electrostatic-Confinement-Fusion-March-10-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 162
+  },
+  "DOW-UAP-D126, AAWSAP DIRD, Advanced Nuclear Propulsion for Manned Deep Space Missions, March 2010": {
+   "title": "DOW-UAP-D126, AAWSAP DIRD, Advanced Nuclear Propulsion for Manned Deep Space Missions, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D126_AAWSAP-DIRD-Advanced-Nuclear-Propulsion-for-Manned-Deep-Space-Missions-March-11-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 163
+  },
+  "DOW-UAP-D127, AAWSAP DIRD, An Introduction to the Statistical Drake Equation, March 2010": {
+   "title": "DOW-UAP-D127, AAWSAP DIRD, An Introduction to the Statistical Drake Equation, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D127_AAWSAP-DIRD-An-Introduction-to-the-Statistical-Drake-Equation-March-11-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 164
+  },
+  "DOW-UAP-D128, AAWSAP DIRD, Anomalous Acute and Subacute Field Effects on Human Biological Tissues, March 2010": {
+   "title": "DOW-UAP-D128, AAWSAP DIRD, Anomalous Acute and Subacute Field Effects on Human Biological Tissues, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D128_AAWSAP-DIRD-Anomalous-Acute-and-Subacute-Field-Effects-on-Human-Biological-Tissues-March-11-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 165
+  },
+  "DOW-UAP-D129, AAWSAP DIRD, Metallic Spintronics, March 2010": {
+   "title": "DOW-UAP-D129, AAWSAP DIRD, Metallic Spintronics, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D129_AAWSAP-DIRD-Metallic-Spintronics-March-23-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 166
+  },
+  "DOW-UAP-D130, AAWSAP DIRD, Technological Approaches to Controlling External Devices, March 2010": {
+   "title": "DOW-UAP-D130, AAWSAP DIRD, Technological Approaches to Controlling External Devices, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D130_AAWSAP-DIRD-Technological-Approaches-to-Controlling-External-Devices-March-23-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 167
+  },
+  "DOW-UAP-D131, AAWSAP DIRD, The Role of Superconductors in Gravity Research, March 2010": {
+   "title": "DOW-UAP-D131, AAWSAP DIRD, The Role of Superconductors in Gravity Research, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D131_AAWSAP-DIRD-The-Role-of-Superconductors-in-Gravity-Research-March-23-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 168
+  },
+  "DOW-UAP-D132, AAWSAP DIRD, Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering, March 2010": {
+   "title": "DOW-UAP-D132, AAWSAP DIRD, Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D132_AAWSAP-DIRD-Advanced-Space-Propulsion-Based-on-Vacuum-Spacetime Metric-Engineering-March-29-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 169
+  },
+  "DOW-UAP-D133, AAWSAP DIRD, The Space Communication Implications of Quantum Entanglement and Nonlocality, March 2010": {
+   "title": "DOW-UAP-D133, AAWSAP DIRD, The Space Communication Implications of Quantum Entanglement and Nonlocality, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D133_AAWSAP-DIRD-The-Space-Communication-Implications-of-Quantum-Entanglement-and-Nonlocality-March-30-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 170
+  },
+  "DOW-UAP-D134, AAWSAP DIRD, Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise, March 2010": {
+   "title": "DOW-UAP-D134, AAWSAP DIRD, Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D134_AAWSAP-DIRD-Maverick-Inventor-Versus-Corporate-Inventor-Where-Will-the-Next-Major-Innovations-Arise-March-30-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 171
+  },
+  "DOW-UAP-D135, AAWSAP DIRD, Antigravity for Aerospace Applications, March 2010": {
+   "title": "DOW-UAP-D135, AAWSAP DIRD, Antigravity for Aerospace Applications, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D135_ AAWSAP-DIRD-Antigravity-for-Aerospace-Applications-March-30-2010-V2.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 172
+  },
+  "DOW-UAP-D136, AAWSAP DIRD, Biosensors and BioMEMS: A Survey of the Present Field, March 2010": {
+   "title": "DOW-UAP-D136, AAWSAP DIRD, Biosensors and BioMEMS: A Survey of the Present Field, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D136_AAWSAP-DIRD-Biosensors-and-BioMEMS-A-Survey-of-the-Present-Field-March-31-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 173
+  },
+  "DOW-UAP-D137, AAWSAP DIRD, State of the Art and Evolution of High-Energy Lasers, March 2010": {
+   "title": "DOW-UAP-D137, AAWSAP DIRD, State of the Art and Evolution of High-Energy Lasers, March 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D137_AAWSAP-DIRD-State-of-the-Art-and-Evolution-of-High-Energy-Lasers-March-31-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 174
+  },
+  "DOW-UAP-D138, AAWSAP DIRD, Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions, April 2010": {
+   "title": "DOW-UAP-D138, AAWSAP DIRD, Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions, April 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D138_AAWSAP-DIRD-Warp-Drive-Dark-Energy-and-the-Manipulation-of-Extra-Dimensions-April-2-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 175
+  },
+  "DOW-UAP-D139, AAWSAP DIRD, Traversable Wormholes, Stargates, and Negative Energy, April 2010": {
+   "title": "DOW-UAP-D139, AAWSAP DIRD, Traversable Wormholes, Stargates, and Negative Energy, April 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D139_AAWSAP-DIRD-Traversable-Wormholes-Stargates-and-Negative-Energy-April-6-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 176
+  },
+  "DOW-UAP-D140, AAWSAP DIRD, High-Frequency Gravitational Wave Communications, April 2010": {
+   "title": "DOW-UAP-D140, AAWSAP DIRD, High-Frequency Gravitational Wave Communications, April 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D140_AAWSAP-DIRD-High-Frequency-Gravitational-Wave-Communications-April-6-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 177
+  },
+  "DOW-UAP-D141, AAWSAP DIRD, Metamaterials for Aerospace Applications, April 2010": {
+   "title": "DOW-UAP-D141, AAWSAP DIRD, Metamaterials for Aerospace Applications, April 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D141_AAWSAP-DIRD-Metamaterials-for-Aerospace-Applications-April-6-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 178
+  },
+  "DOW-UAP-D142, AAWSAP DIRD, Concepts for Extracting Energy from the Quantum Vacuum, April 2010": {
+   "title": "DOW-UAP-D142, AAWSAP DIRD, Concepts for Extracting Energy from the Quantum Vacuum, April 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D142_AAWSAP-DIRD-Concepts-for-Extracting-Energy-from-the-Quantum-Vacuum-April-6-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 179
+  },
+  "DOW-UAP-D143, AAWSAP DIRD, Laser Lightcraft Nanosatellites, November 2010": {
+   "title": "DOW-UAP-D143, AAWSAP DIRD, Laser Lightcraft Nanosatellites, November 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D143_AAWSAP-DIRD-Laser-Lightcraft-Nanosatellites-November-1-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 180
+  },
+  "DOW-UAP-D144, AAWSAP DIRD, Cockpits in the Era of Breakthrough Flight, November 2010": {
+   "title": "DOW-UAP-D144, AAWSAP DIRD, Cockpits in the Era of Breakthrough Flight, November 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D144_AAWSAP-DIRD-Cockpits-in-the-Era-of-Breakthrough-Flight-November-1-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 181
+  },
+  "DOW-UAP-D145, AAWSAP DIRD, Aneutronic Fusion Propulsion I, November 2010": {
+   "title": "DOW-UAP-D145, AAWSAP DIRD, Aneutronic Fusion Propulsion I, November 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D145_AAWSAP-DIRD-Aneutronic-Fusion-Propulsion-I-November-1-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 182
+  },
+  "DOW-UAP-D146, AAWSAP DIRD, Aneutronic Fusion Propulsion II, November 2010": {
+   "title": "DOW-UAP-D146, AAWSAP DIRD, Aneutronic Fusion Propulsion II, November 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D146_AAWSAP-DIRD-Aneutronic-Fusion-Propulsion-II-November-1-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 183
+  },
+  "DOW-UAP-D147, AAWSAP DIRD, Ultracapacitors as Energy and Power Storage Devices, November 2010": {
+   "title": "DOW-UAP-D147, AAWSAP DIRD, Ultracapacitors as Energy and Power Storage Devices, November 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D147_AAWSAP-DIRD-Ultracapacitors-as-Energy-and-Power-Storage-Devices-November-1-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 184
+  },
+  "DOW-UAP-D148, AAWSAP DIRD, Detection and High-Resolution Tracking of Vehicles at Hypersonic Velocities, November 2010": {
+   "title": "DOW-UAP-D148, AAWSAP DIRD, Detection and High-Resolution Tracking of Vehicles at Hypersonic Velocities, November 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D148_AAWSAP-DIRD-Detection-and-High-Resolution-Tracking-of-Vehicles-at-Hypersonic-Velocities-November-20-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 185
+  },
+  "DOW-UAP-D149, AAWSAP DIRD, MHD Air Breathing Propulsion and Power for Aerospace Applications, November 2010": {
+   "title": "DOW-UAP-D149, AAWSAP DIRD, MHD Air Breathing Propulsion and Power for Aerospace Applications, November 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D149_AAWSAP-DIRD-MHD-Air-Breathing-Propulsion-and-Power-for-Aerospace-Applications-November-21-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 186
+  },
+  "DOW-UAP-D150, AAWSAP DIRD, Quantum Computing and Utilizing Organic Molecules in Automation Technology, December 2010": {
+   "title": "DOW-UAP-D150, AAWSAP DIRD, Quantum Computing and Utilizing Organic Molecules in Automation Technology, December 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D150_AAWSAP-DIRD-Quantum-Computing-and-Utilizing-Organic-Molecules-in-Automation-Technology-December-10-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 187
+  },
+  "DOW-UAP-D151, AAWSAP DIRD, Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft, December 2010": {
+   "title": "DOW-UAP-D151, AAWSAP DIRD, Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft, December 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D151_AAWSAP-DIRD-Cognitive-Limits-on-Simultaneous-Control-of-Multiple-Unmanned-Spacecraft-December-15-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 188
+  },
+  "DOW-UAP-D152, AAWSAP DIRD, Negative Mass Propulsion, January 2011": {
+   "title": "DOW-UAP-D152, AAWSAP DIRD, Negative Mass Propulsion, January 2011",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D152_AAWSAP-DIRD-Negative-Mass-Propulsion-January-3-2011.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 189
+  },
+  "DOW-UAP-D153, AAWSAP DIRD, Quantum Tomography of Negative Energy States in the Vacuum, January 2011": {
+   "title": "DOW-UAP-D153, AAWSAP DIRD, Quantum Tomography of Negative Energy States in the Vacuum, January 2011",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D153_AAWSAP-DIRD-Quantum-Tomography-of-Negative-Energy-States-in-the-Vacuum-January-11-2011.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 190
+  },
+  "DOW-UAP-D154, Transcript of a Presentation by Captain Edward J. Ruppelt, 1952": {
+   "title": "DOW-UAP-D154, Transcript of a Presentation by Captain Edward J. Ruppelt, 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D154_Transcript-of-a-Presentation-by-Captain-Edward-J-Ruppelt-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "DOW-UAP-PR160",
+   "pdfPairing": "",
+   "order": 191
+  },
+  "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956": {
+   "title": "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D156-Air_Intelligence_Information_Report_Guam-1956.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 193
+  },
+  "DOW-UAP-D157, Air Intelligence Information Report, Italy, 1952": {
+   "title": "DOW-UAP-D157, Air Intelligence Information Report, Italy, 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D157-Air-Intelligence_Information-Report-Italy-1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 194
+  },
+  "DOW-UAP-D158, Flying Object Report, Canada, 1953": {
+   "title": "DOW-UAP-D158, Flying Object Report, Canada, 1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D158-Flying_Object_Report_Canada-1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 195
+  },
+  "DOW-UAP-D159, Air Intelligence Information Report, Germany, 1953": {
+   "title": "DOW-UAP-D159, Air Intelligence Information Report, Germany, 1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D159-Air_Intelligence_Information_Report_Germany-1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 196
+  },
+  "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953": {
+   "title": "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D160-Air_Intelligence_Information_Report_Morocco-1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 197
+  },
+  "DOW-UAP-D161, Air Intelligence Information Report, Alaska, 1953": {
+   "title": "DOW-UAP-D161, Air Intelligence Information Report, Alaska, 1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D161-Air_Intelligence_Information_Report_Alaska-1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 198
+  },
+  "DOW-UAP-D162, Air Intelligence Information Report, Alaska, 1953": {
+   "title": "DOW-UAP-D162, Air Intelligence Information Report, Alaska, 1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D162-Air_Intelligence_Information_Report_Alaska-1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 199
+  },
+  "DOW-UAP-D163, Air Intelligence Information Report, Sweden, 1953": {
+   "title": "DOW-UAP-D163, Air Intelligence Information Report, Sweden, 1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D163-Air_Intelligence_Information_Report_Sweden-1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 200
+  },
+  "DOW-UAP-D164, Flying Object Report, Indiana, 1953": {
+   "title": "DOW-UAP-D164, Flying Object Report, Indiana, 1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D164-Flying_Object_Report_Indiana-1954.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 201
+  },
+  "DOW-UAP-D166, MUFON Reports Prepared for BAASS, November 2008": {
+   "title": "DOW-UAP-D166, MUFON Reports Prepared for BAASS, November 2008",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D166-MUFON-Reports_Prepared_for_BAASS-November_2008.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 202
+  },
+  "DOW-UAP-D167, Project Capella, December 2008": {
+   "title": "DOW-UAP-D167, Project Capella, December 2008",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D167-Project_Capella-December-2008.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 203
+  },
+  "DOW-UAP-D168, BAASS Project Management Plan, December 2008": {
+   "title": "DOW-UAP-D168, BAASS Project Management Plan, December 2008",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D168-BAASS_Project_Management_Plan-December_2008.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 204
+  },
+  "DOW-UAP-D169, BAASS Monthly Report, March 2009": {
+   "title": "DOW-UAP-D169, BAASS Monthly Report, March 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D169-BAASS_Monthly_Report-March_2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 205
+  },
+  "DOW-UAP-D170, BAASS Monthly Report, April 2009": {
+   "title": "DOW-UAP-D170, BAASS Monthly Report, April 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 206
+  },
+  "DOW-UAP-D171, BAASS Monthly Report, June 2009": {
+   "title": "DOW-UAP-D171, BAASS Monthly Report, June 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D171-BAASS_Monthly_Report_June_2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 207
+  },
+  "DOW-UAP-D173, BAASS Monthly Report, November 2009": {
+   "title": "DOW-UAP-D173, BAASS Monthly Report, November 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D173-BAASS_Monthly_Report_November_2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 208
+  },
+  "DOW-UAP-D175, BAASS Self-Assessment of UAP Analysis Capabilities, November 2010": {
+   "title": "DOW-UAP-D175, BAASS Self-Assessment of UAP Analysis Capabilities, November 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 210
+  },
+  "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954": {
+   "title": "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D180_Final-Personnel-Record-for-McCoy-Howard-M-US-Air-Force-1954.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 215
+  },
+  "DOW-UAP-PR130, Unresolved UAP Report, Iraq, 2022": {
+   "title": "DOW-UAP-PR130, Unresolved UAP Report, Iraq, 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-PR130_Unresolved-UAP-Report-Iraq-2022.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D106",
+   "order": 356
+  },
+  "DOW-UAP-PR131, Unresolved UAP Report, Iraq, 2022": {
+   "title": "DOW-UAP-PR131, Unresolved UAP Report, Iraq, 2022",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-PR131_Unresolved-UAP-Report-Iraq-2022.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D106",
+   "order": 357
+  },
+  "DOW-UAP-PR133, Unresolved UAP Report, Middle East, 2025": {
+   "title": "DOW-UAP-PR133, Unresolved UAP Report, Middle East, 2025",
+   "documentUrl": "",
+   "videoUrl": "1023396",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D107",
+   "order": 358
+  },
+  "DOW-UAP-PR135, Unresolved UAP Report, Middle East, 2025": {
+   "title": "DOW-UAP-PR135, Unresolved UAP Report, Middle East, 2025",
+   "documentUrl": "",
+   "videoUrl": "1023397",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D108",
+   "order": 360
+  },
+  "DOW-UAP-PR140, Unresolved UAP Report, Middle East, 2022": {
+   "title": "DOW-UAP-PR140, Unresolved UAP Report, Middle East, 2022",
+   "documentUrl": "",
+   "videoUrl": "1023398",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D109",
+   "order": 362
+  },
+  "DOW-UAP-PR141, Unresolved UAP Report, Middle East, 2022": {
+   "title": "DOW-UAP-PR141, Unresolved UAP Report, Middle East, 2022",
+   "documentUrl": "",
+   "videoUrl": "1023400",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D109",
+   "order": 363
+  },
+  "DOW-UAP-PR143, Unresolved UAP Report, Yellow Sea, 2023": {
+   "title": "DOW-UAP-PR143, Unresolved UAP Report, Yellow Sea, 2023",
+   "documentUrl": "",
+   "videoUrl": "1023403",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 365
+  },
+  "DOW-UAP-PR144, Unresolved UAP Report, Yellow Sea, 2023": {
+   "title": "DOW-UAP-PR144, Unresolved UAP Report, Yellow Sea, 2023",
+   "documentUrl": "",
+   "videoUrl": "1023404",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 366
+  },
+  "DOW-UAP-PR148, Unresolved UAP Report, East China Sea, 2023": {
+   "title": "DOW-UAP-PR148, Unresolved UAP Report, East China Sea, 2023",
+   "documentUrl": "",
+   "videoUrl": "1023405",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 367
+  },
+  "DOW-UAP-PR150, Unresolved UAP Report, Yellow Sea, 2023": {
+   "title": "DOW-UAP-PR150, Unresolved UAP Report, Yellow Sea, 2023",
+   "documentUrl": "",
+   "videoUrl": "1023406",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 369
+  },
+  "DOW-UAP-PR151, Unresolved UAP Report, Yellow Sea, 2023": {
+   "title": "DOW-UAP-PR151, Unresolved UAP Report, Yellow Sea, 2023",
+   "documentUrl": "",
+   "videoUrl": "1023408",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 370
+  },
+  "DOW-UAP-PR152, Unresolved UAP Report, Yellow Sea, 2023": {
+   "title": "DOW-UAP-PR152, Unresolved UAP Report, Yellow Sea, 2023",
+   "documentUrl": "",
+   "videoUrl": "1023410",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 371
+  },
+  "DOW-UAP-PR159, Historical Film of Reported UFOs, Utah, 1952": {
+   "title": "DOW-UAP-PR159, Historical Film of Reported UFOs, Utah, 1952",
+   "documentUrl": "",
+   "videoUrl": "1023402",
+   "videoPairing": "",
+   "pdfPairing": "DOW-UAP-D098 | DOW-UAP-D102 | DOW-UAP-D103 | DOW-UAP-D104 | DOW-UAP-D105",
+   "order": 372
+  },
+  "DOW-UAP-PR160, Presentation by Captain Edward J. Ruppelt, 1952": {
+   "title": "DOW-UAP-PR160, Presentation by Captain Edward J. Ruppelt, 1952",
+   "documentUrl": "",
+   "videoUrl": "1023407",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 373
+  },
+  "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963": {
+   "title": "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/EOP-UAP-D002-Memo_on_Interagency_Coordination_for_the_Recovery_of_Foreign_Materiel-May_1963.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "USG-UAP-D002",
+   "order": 378
+  },
+  "LLE-UAP-D001, Transcript of an Unresolved UAP Report, Colorado, October 2023": {
+   "title": "LLE-UAP-D001, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/LLE-UAP-D001_Transcript-of-an-Unresolved-UAP-Report-Colorado-October-2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "LLE-UAP-PR001",
+   "pdfPairing": "",
+   "order": 464
+  },
+  "LLE-UAP-D002, Transcript of an Unresolved UAP Report, Colorado, October 2023": {
+   "title": "LLE-UAP-D002, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/LLE-UAP-D002_Transcript-of-an-Unresolved-UAP-Report-Colorado-October-2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "LLE-UAP-PR002",
+   "pdfPairing": "",
+   "order": 465
+  },
+  "LLE-UAP-D003, Transcript of an Unresolved UAP Report, Colorado, October 2023": {
+   "title": "LLE-UAP-D003, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/LLE-UAP-D003_Transcript-of-an-Unresolved-UAP-Report-Colorado-October-2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "LLE-UAP-PR003",
+   "pdfPairing": "",
+   "order": 466
+  },
+  "LLE-UAP-D004, Transcript of an Unresolved UAP Report, Colorado, January 2024": {
+   "title": "LLE-UAP-D004, Transcript of an Unresolved UAP Report, Colorado, January 2024",
+   "documentUrl": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/LLE-UAP-D004_Transcript-of-an-Unresolved-UAP-Report-Colorado-January-2024.pdf",
+   "videoUrl": "",
+   "videoPairing": "LLE-UAP-PR004",
+   "pdfPairing": "",
+   "order": 467
+  },
+  "LLE-UAP-PR001, Unresolved UAP Report, Colorado, 2023": {
+   "title": "LLE-UAP-PR001, Unresolved UAP Report, Colorado, 2023",
+   "documentUrl": "",
+   "videoUrl": "1023409",
+   "videoPairing": "",
+   "pdfPairing": "LLE-UAP-D001",
+   "order": 468
+  },
+  "LLE-UAP-PR002, Unresolved UAP Report, Colorado, October 2023": {
+   "title": "LLE-UAP-PR002, Unresolved UAP Report, Colorado, October 2023",
+   "documentUrl": "",
+   "videoUrl": "1023412",
+   "videoPairing": "",
+   "pdfPairing": "LLE-UAP-D002",
+   "order": 469
+  },
+  "LLE-UAP-PR003, Unresolved UAP Report, Colorado, October 2023": {
+   "title": "LLE-UAP-PR003, Unresolved UAP Report, Colorado, October 2023",
+   "documentUrl": "",
+   "videoUrl": "1023414",
+   "videoPairing": "",
+   "pdfPairing": "LLE-UAP-D003",
+   "order": 470
+  },
+  "LLE-UAP-PR004, Unresolved UAP Report, Colorado, January 2024": {
+   "title": "LLE-UAP-PR004, Unresolved UAP Report, Colorado, January 2024",
+   "documentUrl": "",
+   "videoUrl": "1023416",
+   "videoPairing": "",
+   "pdfPairing": "LLE-UAP-D004",
+   "order": 471
+  },
+  "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964": {
+   "title": "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964",
+   "documentUrl": "https://www.war.gov/medialink/ufo/release-07/documents/USG-UAP-D002-Interagency_Correspondence_Concerning_Space_Fragments-1962_1964.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "EOP-UAP-D002",
+   "order": 518
+  },
+  "CIA-UAP-D027, Office of Scientific Intelligence Briefing on “Flying Saucers,” 1952": {
+   "title": "CIA-UAP-D027, Office of Scientific Intelligence Briefing on “Flying Saucers,” 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D027-Office_of_Scientific_Intelligence_Briefing_on_Flying_Saucers-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 0
+  },
+  "CIA-UAP-D029, Official Diary Entry on “Flying Saucers,” 1952": {
+   "title": "CIA-UAP-D029, Official Diary Entry on “Flying Saucers,” 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D029-Official_Diary_Entry_on_Flying_Saucers-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 1
+  },
+  "DOW-UAP-D165, Unresolved Radar Detection, North America, 2023": {
+   "title": "DOW-UAP-D165, Unresolved Radar Detection, North America, 2023",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D165-Unresolved_Radar_Detection_North_America-2023.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 2
+  },
+  "DOW-UAP-D172, BAASS Ten-Month Report, July 2009": {
+   "title": "DOW-UAP-D172, BAASS Ten-Month Report, July 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D172-BAASS_Ten_Month_Report_July-2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 3
+  },
+  "DOW-UAP-D190, Air Intelligence Information Report, Massachusetts, 1957": {
+   "title": "DOW-UAP-D190, Air Intelligence Information Report, Massachusetts, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D190-Air_Intelligence_Information_Report_Massachusetts-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 4
+  },
+  "DOW-UAP-D197, Air Intelligence Information Report, Michigan, 1957": {
+   "title": "DOW-UAP-D197, Air Intelligence Information Report, Michigan, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D197-Air_Intelligence_Information_Report_Michigan-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 5
+  },
+  "CIA-UAP-D024, Approval in Principle, Research Concerned with UFOs, 1952": {
+   "title": "CIA-UAP-D024, Approval in Principle, Research Concerned with UFOs, 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D024-Approval_in_Principle_Research_Concerned_with_UFOs-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 61
+  },
+  "CIA-UAP-D025, Proposal to Consider Psychological Warfare Implications of UFO-Related Issues, 1952": {
+   "title": "CIA-UAP-D025, Proposal to Consider Psychological Warfare Implications of UFO-Related Issues, 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D025-Proposal_to_Consider_Psychological_Warfare_Implications_of_UFO_Related_Issues-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 62
+  },
+  "CIA-UAP-D026, Summary Assessment of “Flying Saucers,” 1952": {
+   "title": "CIA-UAP-D026, Summary Assessment of “Flying Saucers,” 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D026-Summary_Assessment_of_Flying_Saucers-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 63
+  },
+  "CIA-UAP-D028, Assessment of National Security Issues Relating to “Flying Saucers,” 1952": {
+   "title": "CIA-UAP-D028, Assessment of National Security Issues Relating to “Flying Saucers,” 1952",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/CIA-UAP-D028-Assessment_of_National_Security_Issues_Relating_to_Flying_Saucers-1952.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 64
+  },
+  "DOW-UAP-D182, AAWSAP Statement of Work, August 2008": {
+   "title": "DOW-UAP-D182, AAWSAP Statement of Work, August 2008",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D182-AAWSAP_Statement_of_Work_August-2008.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 217
+  },
+  "DOW-UAP-D183-Correspondence from Senator Harry Reid, June 2009": {
+   "title": "DOW-UAP-D183-Correspondence from Senator Harry Reid, June 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D183-Correspondence_from_Senator_Harry_Reid_June_24-2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 218
+  },
+  "DOW-UAP-D184, AAWSAP Talking Paper for Senator Reid Engagement, May 2009": {
+   "title": "DOW-UAP-D184, AAWSAP Talking Paper for Senator Reid Engagement, May 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D184-AAWSAP_Talking_Paper_for_Senator_Reid_Engagement_May-2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 219
+  },
+  "DOW-UAP-D185, Review of AAWSAP Special Access Program Request, November 2009": {
+   "title": "DOW-UAP-D185, Review of AAWSAP Special Access Program Request, November 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D185-Review_of_AAWSAP_Special_Access_Program_Request_November-2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 220
+  },
+  "DOW-UAP-D186, DIA Information Memorandum on AATIP (AAWSAP), December 2010": {
+   "title": "DOW-UAP-D186, DIA Information Memorandum on AATIP (AAWSAP), December 2010",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D186-DIA_Information_Memorandum_on_AATIP_AAWSAP_December-2010.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 221
+  },
+  "DOW-UAP-D187, DIA Talking Paper for Senator Reid Engagement, January 2009": {
+   "title": "DOW-UAP-D187, DIA Talking Paper for Senator Reid Engagement, January 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D187-DIA_Talking_Paper_for_Senator_Reid_Engagement_January-2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 222
+  },
+  "DOW-UAP-D188, Review of AAWSAP Contract Deliverables October 2009": {
+   "title": "DOW-UAP-D188, Review of AAWSAP Contract Deliverables October 2009",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D188-Review_of_AAWSAP_Contract_Deliverables_October-2009.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "TAG:AAWSAP",
+   "order": 223
+  },
+  "DOW-UAP-D189, Air Intelligence Information Report, Virginia, 1957": {
+   "title": "DOW-UAP-D189, Air Intelligence Information Report, Virginia, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D189-Air_Intelligence_Information_Report_Virginia-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 224
+  },
+  "DOW-UAP-D191, Air Intelligence Information Report, Texas, 1957": {
+   "title": "DOW-UAP-D191, Air Intelligence Information Report, Texas, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D191-Air_Intelligence_Information_Report_Texas-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 225
+  },
+  "DOW-UAP-D192, Air Intelligence Information Report, Nebraska, 1957": {
+   "title": "DOW-UAP-D192, Air Intelligence Information Report, Nebraska, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D192-Air_Intelligence_Information_Report_Nebraska-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 226
+  },
+  "DOW-UAP-D193, Air Intelligence Information Report, New Mexico, 1957": {
+   "title": "DOW-UAP-D193, Air Intelligence Information Report, New Mexico, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D193-Air_Intelligence_Information_Report_New_Mexico-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 227
+  },
+  "DOW-UAP-D194, Air Intelligence Information Report, New Mexico, 1957": {
+   "title": "DOW-UAP-D194, Air Intelligence Information Report, New Mexico, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D194-Air_Intelligence_Information_Report_New_Mexico-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 228
+  },
+  "DOW-UAP-D195, Air Intelligence Information Report, New Mexico, 1957": {
+   "title": "DOW-UAP-D195, Air Intelligence Information Report, New Mexico, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D195-Air_Intelligence_Information_Report_New_Mexico-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 229
+  },
+  "DOW-UAP-D196, Air Intelligence Information Report, Washington, 1957": {
+   "title": "DOW-UAP-D196, Air Intelligence Information Report, Washington, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D196-Air_Intelligence_Information_Report_Washington-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 230
+  },
+  "DOW-UAP-D198, Air Intelligence Information Report, Japan, 1957": {
+   "title": "DOW-UAP-D198, Air Intelligence Information Report, Japan, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D198-Air_Intelligence_Information_Report_Japan-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 231
+  },
+  "DOW-UAP-D199, Air Intelligence Information Report, Iran, 1957": {
+   "title": "DOW-UAP-D199, Air Intelligence Information Report, Iran, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D199-Air_Intelligence_Information_Report_Iran-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 232
+  },
+  "DOW-UAP-D200, Air Intelligence Information Report, Peru, 1957": {
+   "title": "DOW-UAP-D200, Air Intelligence Information Report, Peru, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D200-Air_Intelligence_Information_Report_Peru-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 233
+  },
+  "DOW-UAP-D201, Air Intelligence Information Report, Iran, 1957": {
+   "title": "DOW-UAP-D201, Air Intelligence Information Report, Iran, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D201-Air_Intelligence_Information_Report_Iran-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 234
+  },
+  "DOW-UAP-D202, Air Intelligence Information Report, Peru, 1957": {
+   "title": "DOW-UAP-D202, Air Intelligence Information Report, Peru, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D202-Air_Intelligence_Information_Report_Peru-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 235
+  },
+  "DOW-UAP-D203, Air Intelligence Information Report, California, 1957": {
+   "title": "DOW-UAP-D203, Air Intelligence Information Report, California, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D203-Air_Intelligence_Information_Report_California-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 236
+  },
+  "DOW-UAP-D204, Air Intelligence Information Report, Virginia, 1957": {
+   "title": "DOW-UAP-D204, Air Intelligence Information Report, Virginia, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D204-Air_Intelligence_Information_Report_Virginia-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 237
+  },
+  "DOW-UAP-D205, Air Intelligence Information Report, Japan, 1956": {
+   "title": "DOW-UAP-D205, Air Intelligence Information Report, Japan, 1956",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D205_Air_Intelligence_Information_Report_Japan-1956.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 238
+  },
+  "DOW-UAP-D206, Unresolved UAP Report, California, 1953": {
+   "title": "DOW-UAP-D206, Unresolved UAP Report, California, 1953",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D206_Unresolved_UAP_Report_California-1953.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 239
+  },
+  "DOW-UAP-D207, Unresolved UAP Report, California, 1956": {
+   "title": "DOW-UAP-D207, Unresolved UAP Report, California, 1956",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D207-Unresolved_UAP_Report_California-1956.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 240
+  },
+  "DOW-UAP-D208, Unresolved UAP Report, California, 1965": {
+   "title": "DOW-UAP-D208, Unresolved UAP Report, California, 1965",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D208-Unresolved_UAP_Report_California-1965.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 241
+  },
+  "DOW-UAP-D209, Unresolved UAP Report, California, 1955": {
+   "title": "DOW-UAP-D209, Unresolved UAP Report, California, 1955",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D209_Unresolved_UAP_Report_California-1955.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 242
+  },
+  "DOW-UAP-D210, Unresolved UAP Report, California, 1957": {
+   "title": "DOW-UAP-D210, Unresolved UAP Report, California, 1957",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D210_Unresolved_UAP_Report_California-1957.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 243
+  },
+  "DOW-UAP-D211, Unresolved UAP Report, California, 1956": {
+   "title": "DOW-UAP-D211, Unresolved UAP Report, California, 1956",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D211_Unresolved_UAP_Report_California-1956.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 244
+  },
+  "DOW-UAP-D212, Unresolved UAP Report, California, 1966": {
+   "title": "DOW-UAP-D212, Unresolved UAP Report, California, 1966",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D212-Unresolved_UAP_Report_California-1966.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 245
+  },
+  "DOW-UAP-D213, Unresolved UAP Report, California, 1949": {
+   "title": "DOW-UAP-D213, Unresolved UAP Report, California, 1949",
+   "documentUrl": "https://www.war.gov/medialink/ufo/docs-112026-release-08/DOW-UAP-D213-Unresolved_UAP_Report_California-1949.pdf",
+   "videoUrl": "",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 246
+  },
+  "DOW-UAP-PR166, Unresolved UAP Report, Middle East, 2020": {
+   "title": "DOW-UAP-PR166, Unresolved UAP Report, Middle East, 2020",
+   "documentUrl": "",
+   "videoUrl": "1030270",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 374
+  },
+  "DOW-UAP-PR168, Unresolved UAP Report, Middle East, 2026": {
+   "title": "DOW-UAP-PR168, Unresolved UAP Report, Middle East, 2026",
+   "documentUrl": "",
+   "videoUrl": "1030274",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 375
+  },
+  "DOW-UAP-PR169, Unresolved UAP Report, Middle East, 2023": {
+   "title": "DOW-UAP-PR169, Unresolved UAP Report, Middle East, 2023",
+   "documentUrl": "",
+   "videoUrl": "1030277",
+   "videoPairing": "",
+   "pdfPairing": "",
+   "order": 376
+  }
+ }
+}

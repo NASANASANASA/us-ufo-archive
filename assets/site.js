@@ -22,7 +22,7 @@ document.addEventListener('click',e=>{const link=e.target.closest('a[data-downlo
   if(validLangs.includes(requestedLang))localStorage.setItem('uap-lang',lang);
   if(pathLang)localStorage.setItem('uap-dir',pathLang);
   let I18N_PL=[],I18N_NL=[],I18N_CN=[],I18N_TW=[],I18N_JA=[],I18N_ES=[],I18N_PT=[],I18N_RU=[],I18N_FR=[],I18N_DE=[],I18N_KO=[],I18N_AR=[];
-  let DVIDS_META={},RECORD_DATES={};
+  let DVIDS_META={},RECORD_DATES={},RECORD_RELATIONS={};
   const pageSize=20;
   const archiveReturnKey='uapArchiveReturnState';
   const search=document.getElementById('db-search'),agency=document.getElementById('db-agency'),release=document.getElementById('db-release'),type=document.getElementById('db-type');
@@ -126,7 +126,7 @@ document.addEventListener('click',e=>{const link=e.target.closest('a[data-downlo
   function redactionTemplate(p){return isRedactionParagraph(p)?t('redaction_notice'):p}
   function descHtml(p){return UAP_RECORD_FORMAT.descriptionHtml(p)}
   function paragraphsHtml(text,redactionFlag=false,officialDescription=text){const ps=UAP_RECORD_FORMAT.normalizeDescription(text,officialDescription).split(/\n{2,}/).map(p=>p.trim()).filter(Boolean);if(redactionFlag&&!ps.some(isRedactionParagraph))ps.push(t('redaction_notice'));return(ps.length?ps:[t('t_no_desc')]).map(p=>`<p${isRedactionParagraph(p)?' class="record-redaction-text"':''}>${descHtml(redactionTemplate(p))}</p>`).join('')}
-  function related(d){const codes=[...urls(d.videoPairing),...urls(d.pdfPairing)].map(assetCode).filter(Boolean),seen=new Set(),out=[],add=x=>{if(x&&x!==d&&!seen.has(x.id)){seen.add(x.id);out.push(x)}};const tags=(d.pdfPairing.match(/TAG:[A-Za-z0-9_-]+/g)||[]);tags.forEach(tag=>UAP_DOCS.filter(x=>urls(x.pdfPairing).includes(tag)).forEach(add));codes.forEach(c=>UAP_DOCS.forEach(x=>{const xc=assetCode(x.id);if(xc===c||xc.endsWith(c)||c.endsWith(xc))add(x)}));return out.slice(0,6)}
+  function related(d){return UAP_RECORD_RELATIONS.related(d,UAP_DOCS,RECORD_RELATIONS)}
   function officialRecordPage(d){const n=d.release.match(/(\d{2})$/)?.[1]||'03',hash=clean(d.id).replace(/\s+/g,'-').replace(/[^A-Za-z0-9\-_]/g,'').replace(/-+/g,'-');return ['06','07','08'].includes(n)?`https://www.war.gov/UFO/?releaseDate=Release+${n}&release=${n}#${hash}`:`https://www.war.gov/UFO/release/${n}/?releaseDate=Release+${n}#${hash}`}
   function currentDownloadUrl(d){return UAP_OFFICIAL_DOWNLOAD.select(d,RECORD_DATES,typeof DVIDS_MP4==='undefined'?{}:DVIDS_MP4)}
   function currentDownloadName(d,url){const base=clean(d.id).split(',')[0].replace(/[^A-Za-z0-9_-]/g,'-')||'uap-record',ext=clean(url).split('?')[0].match(/\.([a-z0-9]+)$/i)?.[1]||clean(d.type).toLowerCase()||'file';return`${base}.${ext.toLowerCase()}`}
@@ -228,9 +228,10 @@ document.addEventListener('click',e=>{const link=e.target.closest('a[data-downlo
     lang==='pl'?fetch(`${UAP_ASSET_BASE}i18n-pl.json?v=${UAP_DATA_VERSION}`).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}):Promise.resolve([]),
     lang==='nl'?fetch(`${UAP_ASSET_BASE}i18n-nl.json?v=${UAP_DATA_VERSION}`).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}):Promise.resolve([]),
     fetch(`${UAP_ASSET_BASE}record-detail-dates.json?v=${UAP_DATA_VERSION}`).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}),
-    fetch(`${UAP_ASSET_BASE}dvids-meta.json?v=${UAP_DATA_VERSION}`).then(r=>r.ok?r.json():{}).catch(()=>({}))
-  ]).then(([csvText,cn,tw,ja,es,pt,ru,fr,de,ko,ar,pl,nl,recordDates,dvidsMeta])=>{
-    I18N_PL=pl;I18N_NL=nl;I18N_CN=cn;I18N_TW=tw;I18N_JA=ja;I18N_ES=es;I18N_PT=pt;I18N_RU=ru;I18N_FR=fr;I18N_DE=de;I18N_KO=ko;I18N_AR=ar;DVIDS_META=dvidsMeta;RECORD_DATES=recordDates.records;
+    fetch(`${UAP_ASSET_BASE}dvids-meta.json?v=${UAP_DATA_VERSION}`).then(r=>r.ok?r.json():{}).catch(()=>({})),
+    fetch(`${UAP_ASSET_BASE}record-relations.json?v=${UAP_DATA_VERSION}`).then(r=>{if(!r.ok)throw Error(r.status);return r.json()})
+  ]).then(([csvText,cn,tw,ja,es,pt,ru,fr,de,ko,ar,pl,nl,recordDates,dvidsMeta,recordRelations])=>{
+    I18N_PL=pl;I18N_NL=nl;I18N_CN=cn;I18N_TW=tw;I18N_JA=ja;I18N_ES=es;I18N_PT=pt;I18N_RU=ru;I18N_FR=fr;I18N_DE=de;I18N_KO=ko;I18N_AR=ar;DVIDS_META=dvidsMeta;RECORD_DATES=recordDates.records;RECORD_RELATIONS=recordRelations;
     UAP_DOCS=parseCSV(csvText).map((r,idx)=>normalize(r,idx)).filter(d=>d.id);
     populate();applyUIText();
     const urlFilters=UAP_ARCHIVE_FILTERS.parse(location.search,UAP_DOCS);

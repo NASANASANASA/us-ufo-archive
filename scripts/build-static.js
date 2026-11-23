@@ -3,10 +3,11 @@ const path = require('path');
 const recordFormat = require('../assets/record-format.js');
 const sitemapDates = require('./sitemap-dates.js');
 const officialDownload = require('../assets/official-download.js');
+const recordRelations = require('../assets/record-relations.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
-const assetVersion = '20261123-showcase-curated1';
+const assetVersion = '20261123-related-official1';
 const dutch = require('../assets/locale-nl.json');
 const polish = require('../assets/locale-pl.json');
 const extraLocales = {nl: dutch, pl: polish};
@@ -22,6 +23,7 @@ const langMenuCodes = {pl: 'pl', nl: 'nl', en: 'en', ja: 'ja', es: 'es', 'zh-Han
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const interfaceText = require('node:vm').runInNewContext(read('assets/i18n-ui.js') + '\nUI_TEXT');
 const recordDates = JSON.parse(read('assets/record-detail-dates.json')).records;
+const officialRelations = JSON.parse(read('assets/record-relations.json'));
 const videoSourceMetadata = JSON.parse(read('assets/video-source-metadata.json')).records;
 const videoDurations = JSON.parse(read('assets/dvids-meta.json'));
 const legacyArchiveRoutes = JSON.parse(read('assets/legacy-archive-routes.json'));
@@ -2011,7 +2013,8 @@ function buildInteractiveHome(lang, template) {
     .replace(/\s*<script src="\.\.\/assets\/archive-filters\.js\?v=[^"]+"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/official-(?:video-downloads|download)[^"]*"><\/script>/g, '')
     .replace(/\s*<script src="\.\.\/assets\/record-format\.js\?v=[^"]+"><\/script>/g, '')
-    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/static-previews.js?v=${assetVersion}"></script>$1<script src="../assets/archive-filters.js?v=${assetVersion}"></script>$1<script src="../assets/official-video-downloads.js?v=${assetVersion}"></script>$1<script src="../assets/official-download.js?v=${assetVersion}"></script>$1<script src="../assets/record-format.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
+    .replace(/\s*<script src="[^"]*assets\/record-relations\.js[^"]*"><\/script>\s*/g, '\n')
+    .replace(/(\s*)<script src="\.\.\/assets\/site\.js/g, `$1<script src="../assets/static-previews.js?v=${assetVersion}"></script>$1<script src="../assets/archive-filters.js?v=${assetVersion}"></script>$1<script src="../assets/official-video-downloads.js?v=${assetVersion}"></script>$1<script src="../assets/official-download.js?v=${assetVersion}"></script>$1<script src="../assets/record-format.js?v=${assetVersion}"></script>$1<script src="../assets/record-relations.js?v=${assetVersion}"></script>$1<script src="../assets/site.js`)
     .replace('</head>', `  ${servicesScript('../')}\n</head>`)
     .replace(/(<a href="#releases" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n      <a href="./downloads/">${esc(downloadsLabel(lang))}</a>`)
     .replace(/(<a href="#releases" onclick="closeMobile\(\)" data-i18n="nav_archive">[\s\S]*?<\/a>)/, `$1\n    <a href="./downloads/" onclick="closeMobile()">${esc(downloadsLabel(lang))}</a>`)
@@ -2100,28 +2103,7 @@ function staticOfficialRecordPage(doc) {
 }
 
 function relatedRecords(doc, docs) {
-  const explicitCodes = [
-    ...urls(doc.videoPairing || ''),
-    ...urls(doc.pdfPairing || '')
-  ].map(assetCode).filter(Boolean);
-  const seen = new Set();
-  const out = [];
-  const add = candidate => {
-    if (!candidate || candidate === doc || seen.has(candidate.slug)) return;
-    seen.add(candidate.slug);
-    out.push(candidate);
-  };
-
-  const tags = (doc.pdfPairing.match(/TAG:[A-Za-z0-9_-]+/g) || []);
-  for (const tag of tags) docs.filter(candidate => urls(candidate.pdfPairing).includes(tag)).forEach(add);
-  for (const code of explicitCodes) {
-    for (const candidate of docs) {
-      const candidateCode = assetCode(candidate.id);
-      if (candidateCode === code || candidateCode.endsWith(code) || code.endsWith(candidateCode)) add(candidate);
-    }
-  }
-
-  return out.slice(0, 6);
+  return recordRelations.related(doc, docs, officialRelations);
 }
 
 function currentRecordDownloadUrl(doc, media) {
