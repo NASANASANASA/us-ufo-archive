@@ -140,9 +140,66 @@ document.addEventListener('click',e=>{const link=e.target.closest('a[data-downlo
   const showcaseDateCode=v=>{const m=clean(v).match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);return m?`${m[1].padStart(2,'0')} ${m[2].padStart(2,'0')} ${m[3].slice(-2)}`:formatDate(v)};
   function showcaseCandidates(d){return mediaCandidates(urls(d.imageUrl)[0]||d.r2ImageUrl||'',d)}
   function showcaseImageMarkup(d){const candidates=showcaseCandidates(d),src=candidates[0]||'',fallbacks=candidates.slice(1).join('|'),onerror="const q=(this.dataset.fallbackSrcs||'').split('|').filter(Boolean);if(q.length){this.src=q.shift();this.dataset.fallbackSrcs=q.join('|')}else{const p=this.closest('.showcase-card');if(p)p.classList.add('broken')};";return`<img src="${esc(src)}" alt="${esc(trAlt(d))}" loading="lazy" data-fallback-srcs="${esc(fallbacks)}" onerror="${esc(onerror)}"><span><b>${esc(trRelease(d.release))}</b>${esc(trTitle(d))}</span>`}
-  const curatedShowcaseCodes={'RELEASE 01':['NASAUAPVM006','NASAUAPVM005','NASAUAPVM002','FBIPHOTOA006','FBIPHOTOB022'],'RELEASE 02':['DOEUAPD001','ODNIUAPD001','DOWUAPD017','CIAUAPD001','DOEUAPD002'],'RELEASE 04':['DOWUAPPR104','DOWUAPPR105','DOWUAPPR113','DOWUAPPR115','NASAUAPD030'],'RELEASE 06':['DOWUAPD102','DOWUAPPR159','DOWUAPD110','LLEUAPPR001']};
-  const preferredShowcaseCodes={'RELEASE 01':'NASAUAPVM006','RELEASE 02':'DOWUAPPR050','RELEASE 03':'FBIUAPD003','RELEASE 04':'DOWUAPPR104','RELEASE 05':'FBIUAPD031','RELEASE 06':'DOWUAPPR135','RELEASE 07':'DOWUAPD174','RELEASE 08':'DOWUAPD165'};
-  function showcaseItems(){const officialReleases=new Set(['RELEASE 03','RELEASE 05','RELEASE 07','RELEASE 08']),seen=new Set(),items=[],add=d=>{const code=assetCode(d&&d.id);if(d&&code&&!seen.has(code)&&showcaseCandidates(d)[0]){seen.add(code);items.push(d)}};releaseValues().sort((a,b)=>Number((b.match(/(\d{2})$/)||[])[1]||0)-Number((a.match(/(\d{2})$/)||[])[1]||0)).forEach(rel=>{const docs=UAP_DOCS.filter(d=>d.release===rel);add(docs.find(d=>assetCode(d.id)===preferredShowcaseCodes[rel]));if(officialReleases.has(rel)){docs.filter(d=>d.featured).forEach(add);return}(curatedShowcaseCodes[rel]||[]).map(code=>docs.find(d=>assetCode(d.id)===code)).forEach(add);if(!items.some(d=>d.release===rel))docs.find(d=>showcaseCandidates(d)[0])&&add(docs.find(d=>showcaseCandidates(d)[0]))});return items}
+  // Site selections are ordered with the chosen default first, independently of official Featured flags.
+  const curatedShowcaseCodes={
+    "RELEASE 01": [
+      "NASAUAPVM006",
+      "DOWUAPPR038",
+      "FBISEPTEMBER2023SIGHTINGCOMPOSITESKETCH",
+      "WESTERNUSEVENT",
+      "NASAUAPD003"
+    ],
+    "RELEASE 02": [
+      "DOWUAPPR050",
+      "ODNIUAPD001",
+      "DOWUAPD017",
+      "DOWUAPPR067",
+      "DOEUAPD001"
+    ],
+    "RELEASE 03": [
+      "FBIUAPD003",
+      "FBIUAPPR003",
+      "FBIUAPPR004",
+      "DOWUAPD077",
+      "DOWUAPD084"
+    ],
+    "RELEASE 04": [
+      "DOWUAPPR104",
+      "NASAUAPD030",
+      "DOEUAPD004",
+      "DOWUAPD097",
+      "DOWUAPPR113"
+    ],
+    "RELEASE 05": [
+      "FBIUAPD031",
+      "DOWUAPPR117",
+      "DOWUAPD098",
+      "EOPUAPD001",
+      "DOWUAPPR123"
+    ],
+    "RELEASE 06": [
+      "DOWUAPPR135",
+      "DOWUAPD102",
+      "DOWUAPD110",
+      "DOWUAPD154",
+      "DOWUAPD138"
+    ],
+    "RELEASE 07": [
+      "DOWUAPD174",
+      "DOWUAPD176",
+      "USGUAPD002",
+      "DOWUAPD175",
+      "DOWUAPD167"
+    ],
+    "RELEASE 08": [
+      "DOWUAPD165",
+      "DOWUAPD172",
+      "DOWUAPD183",
+      "DOWUAPD206",
+      "DOWUAPPR168"
+    ]
+  };
+  function showcaseItems(){const seen=new Set(),items=[],add=d=>{const code=assetCode(d&&d.id);if(d&&code&&!seen.has(code)&&showcaseCandidates(d)[0]){seen.add(code);items.push(d)}};releaseValues().sort((a,b)=>Number((b.match(/(\d{2})$/)||[])[1]||0)-Number((a.match(/(\d{2})$/)||[])[1]||0)).forEach(rel=>{const docs=UAP_DOCS.filter(d=>d.release===rel),codes=curatedShowcaseCodes[rel],selected=codes?codes.map(code=>docs.find(d=>assetCode(d.id)===code)):docs.filter(d=>d.featured).slice(0,5);selected.forEach(add);if(!items.some(d=>d.release===rel))add(docs.find(d=>showcaseCandidates(d)[0]))});return items}
   function initShowcase(){const root=document.getElementById('release-showcase'),track=document.getElementById('showcase-track'),dots=document.getElementById('showcase-dots'),summary=document.getElementById('showcase-summary'),date=document.getElementById('showcase-date'),tabs=document.getElementById('showcase-tabs'),stage=document.querySelector('.showcase-stage'),title=document.getElementById('showcase-title');if(!root||!track)return;const items=showcaseItems(),releases=[...new Set(items.map(d=>d.release))];if(!items.length){root.remove();return}if(title)title.textContent=showcaseIntro();const setIndex=i=>{showcaseIndex=(i+items.length)%items.length;renderShowcase()},releaseIndex=rel=>Math.max(0,items.findIndex(d=>d.release===rel));window.uapShowcaseStep=delta=>setIndex(showcaseIndex+delta);window.uapShowcaseGo=i=>setIndex(i);window.uapShowcaseRelease=rel=>setIndex(releaseIndex(rel));if(stage){let sx=0,sy=0,swiping=false;stage.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse')return;sx=e.clientX;sy=e.clientY;swiping=true},{passive:true});stage.addEventListener('pointerup',e=>{if(!swiping)return;const dx=e.clientX-sx,dy=e.clientY-sy;swiping=false;if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.4)setIndex(showcaseIndex+(dx<0?1:-1))},{passive:true});stage.addEventListener('pointercancel',()=>{swiping=false},{passive:true})}function renderTabs(active){if(!tabs)return;tabs.innerHTML=releases.map(rel=>`<button class="${rel===active.release?'active':''}" type="button" role="tab" aria-selected="${rel===active.release?'true':'false'}" onclick="uapShowcaseRelease('${esc(rel)}')"><b>${esc(clean(rel).toUpperCase())}</b><span>${esc(trRelease(rel))}</span></button>`).join('')}function renderShowcase(){const active=items[showcaseIndex];renderTabs(active);if(summary)summary.innerHTML=`<a href="${esc(recordPageUrl(active))}">${esc(trTitle(active))}</a>`;if(date)date.textContent=`[${showcaseDateCode(active.releaseDate)}]`;track.innerHTML=[-2,-1,0,1,2].map(offset=>{const i=(showcaseIndex+offset+items.length)%items.length,d=items[i],cls=`showcase-card pos-${offset}${offset===0?' active':''}`;return offset===0?`<a class="${cls}" href="${esc(recordPageUrl(d))}">${showcaseImageMarkup(d)}</a>`:`<button class="${cls}" type="button" onclick="uapShowcaseGo(${i})">${showcaseImageMarkup(d)}</button>`}).join('');if(dots)dots.innerHTML=items.map((_,i)=>`<button type="button" class="${i===showcaseIndex?'active':''}" onclick="uapShowcaseGo(${i})" aria-label="Showcase item ${i+1}"></button>`).join('')}renderShowcase()}
   function renderModalAd(root){}
   function media(d){const paired=related(d);return `<div class="media-stack">${primaryMedia(d)}${paired.length?`<div class="paired-media"><b>${t('t_related_media')}</b><div class="paired-media-list">${paired.map(x=>`<button onclick="openDocModal(${UAP_DOCS.indexOf(x)})"><span>${esc(x.type)}</span>${esc(trTitle(x))}</button>`).join('')}</div></div>`:''}</div>`}
