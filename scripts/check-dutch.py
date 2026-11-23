@@ -19,7 +19,7 @@ for i,(row,tr) in enumerate(zip(rows,translations)):
  for field,source in [('titleZh','Title'),('descZh','Description Blurb'),('locZh','Incident Location'),('altZh','Image Alt Text')]:
   assert not row[source].strip() or tr[field].strip(),(i,field)
   if field in ('titleZh','descZh'):
-   numbers=lambda text:collections.Counter(re.findall(r'\b\d+(?:[.,]\d+)?\b',text))
+   numbers=lambda text:collections.Counter(re.findall(r'\b\d+(?:[.,]\d+)?\b',re.sub(r'(?<=\d),(?=\d{3}(?:\D|$))','',text)))
    assert not numbers(row[source])-numbers(tr[field]),(i,field,'changed numbers')
   if field=='descZh':
    timecode=r'\b\d{1,2}:\d{2}(?::\d{2})?(?:\s*[-–—]\s*\d{1,2}:\d{2}(?::\d{2})?)?'

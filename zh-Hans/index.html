@@ -8,11 +8,11 @@
   <meta name="description" content="UAP 档案库是一个检索美国政府 UFO/UAP 公开档案的 UAP 网站，收录 521 条 UAP 档案，包括视频、图片、PDF 原始文件、公开批次、事件日期、地点、机构、相关记录和官方来源链接。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css?v=20261122-release08">
+  <link rel="stylesheet" href="../assets/style.css?v=20261122-release08-review1">
   <script src="../assets/site-services.js?v=20261120-preview1"></script>
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20261122-release08">
-  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20261122-release08">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20261122-release08">
+  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20261122-release08-review1">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20261122-release08-review1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20261122-release08-review1">
   <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#05090c">
   <link rel="canonical" href="https://uap-archives.org/zh-Hans/">
@@ -46,10 +46,10 @@
       <a href="#releases" data-i18n="nav_archive">档案库</a>
       <a href="./downloads/">下载</a>
       <a href="./about/" data-i18n="nav_about">关于本站</a>
-      <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="nav_source">美国官网 ↗</a>
+      <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="nav_source">官方UFO档案 ↗</a>
       <button class="view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>
       <details class="lang-menu">
-        <summary>语言 / Language</summary>
+        <summary>语言</summary>
         <div>
           <a data-dir="en" data-lang="en" href="../en/">English</a>
           <a data-dir="es" data-lang="es" href="../es/">Español</a>
@@ -76,7 +76,7 @@
     <a href="./about/" onclick="closeMobile()" data-i18n="nav_about">关于本站</a>
     <button class="view-mode-toggle mobile-view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>
     <details class="lang-menu mobile-lang-menu" open>
-      <summary>语言 / Language</summary>
+      <summary>语言</summary>
       <div>
         <a data-dir="en" data-lang="en" href="../en/">English</a>
         <a data-dir="es" data-lang="es" href="../es/">Español</a>
@@ -98,7 +98,7 @@
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="system-line"><span></span><span data-i18n="hero_systemline"> PUBLIC ACCESS TERMINAL / 中文镜像</span></p>
+        <p class="system-line"><span></span><span data-i18n="hero_systemline">PUBLIC ACCESS TERMINAL / 中文镜像</span></p>
         <h1 data-i18n-html="hero_title_html">美国政府<br><em>UFO / UAP</em><br>公开档案库</h1>
         <p class="hero-intro" data-i18n="hero_intro">检索美国政府公开发布的不明异常现象文件、影像与历史记录。本站只提供中文翻译与索引，所有原始内容均引用自美国政府官方网站。</p>
         <div class="hero-actions">
@@ -131,8 +131,8 @@
       </div>
       <div class="showcase-main">
         <div class="showcase-topline">
-          <p id="showcase-summary">載入重點公開檔案...</p>
-          <span id="showcase-date">[08 07 26]</span>
+          <p id="showcase-summary">正在加载重点档案…</p>
+          <span id="showcase-date">[11 20 26]</span>
         </div>
         <div class="showcase-stage" id="showcase-stage">
           <button class="showcase-arrow showcase-prev" type="button" aria-label="Previous release item" onclick="uapShowcaseStep(-1)">&lt;</button>
@@ -149,7 +149,7 @@
           <p class="system-line"><span></span> RELEASE DATABASE</p>
           <h2 data-i18n="section_title">档案库</h2>
         </div>
-        <p data-i18n="section_subtitle">直接同步美国政府 PURSUE 数据库 · 最近批次：2026.11.20</p>
+        <p data-i18n="section_subtitle">收录美国政府 PURSUE 第1–8批档案 · 最新收录：2026年11月20日</p>
       </div>
 
       <div class="db-controls">
@@ -159,8 +159,8 @@
           <kbd>⌘ K</kbd>
         </label>
         <select id="db-agency"><option value="all" data-i18n="opt_all_agency">全部机构</option></select>
-        <select id="db-release"><option value="all" data-i18n="opt_all_release">全部批次</option><option value="RELEASE 01" data-i18n="release_01">第一批</option><option value="RELEASE 02" data-i18n="release_02">第二批</option><option value="RELEASE 03" data-i18n="release_03">第三批</option><option value="RELEASE 04" data-i18n="release_04">第四批</option></select>
-        <select id="db-type"><option value="all" data-i18n="opt_all_type">全部类型</option><option value="PDF" data-i18n="opt_pdf">PDF 文件</option><option value="VID" data-i18n="opt_vid">视频影像</option><option value="IMG" data-i18n="opt_img">图片影像</option><option value="AUD" data-i18n="opt_aud">音频档案</option></select>
+        <select id="db-release"><option value="all" data-i18n="opt_all_release">全部批次</option><option value="RELEASE 01" data-i18n="release_01">第一批</option><option value="RELEASE 02" data-i18n="release_02">第二批</option><option value="RELEASE 03" data-i18n="release_03">第三批</option><option value="RELEASE 04" data-i18n="release_04">第四批</option><option value="RELEASE 05" data-i18n="release_05">第五批</option><option value="RELEASE 06" data-i18n="release_06">第六批</option><option value="RELEASE 07" data-i18n="release_07">第七批</option><option value="RELEASE 08" data-i18n="release_08">第八批</option></select>
+        <select id="db-type"><option value="all" data-i18n="opt_all_type">全部类型</option><option value="PDF" data-i18n="opt_pdf">.PDF</option><option value="VID" data-i18n="opt_vid">.VID</option><option value="IMG" data-i18n="opt_img">.IMG</option><option value="AUD" data-i18n="opt_aud">.AUD</option></select>
       </div>
 
       <section class="interactive-index-panel" aria-labelledby="interactive-index-title">
@@ -245,16 +245,16 @@
     </article>
   </div>
 
-  <script src="../assets/db-data.js?v=20261122-release08"></script>
-  <script src="../assets/dvids-map.js?v=20261122-release08"></script>
-  <script src="../assets/i18n-ui.js?v=20261122-release08"></script>
-  <script src="../assets/locale-nl.js?v=20261122-release08"></script>
-  <script src="../assets/locale-pl.js?v=20261122-release08"></script>
-  <script src="../assets/static-previews.js?v=20261122-release08"></script>
-  <script src="../assets/archive-filters.js?v=20261122-release08"></script>
-  <script src="../assets/official-video-downloads.js?v=20261122-release08"></script>
-  <script src="../assets/official-download.js?v=20261122-release08"></script>
-  <script src="../assets/record-format.js?v=20261122-release08"></script>
-  <script src="../assets/site.js?v=20261122-release08"></script>
+  <script src="../assets/db-data.js?v=20261122-release08-review1"></script>
+  <script src="../assets/dvids-map.js?v=20261122-release08-review1"></script>
+  <script src="../assets/i18n-ui.js?v=20261122-release08-review1"></script>
+  <script src="../assets/locale-nl.js?v=20261122-release08-review1"></script>
+  <script src="../assets/locale-pl.js?v=20261122-release08-review1"></script>
+  <script src="../assets/static-previews.js?v=20261122-release08-review1"></script>
+  <script src="../assets/archive-filters.js?v=20261122-release08-review1"></script>
+  <script src="../assets/official-video-downloads.js?v=20261122-release08-review1"></script>
+  <script src="../assets/official-download.js?v=20261122-release08-review1"></script>
+  <script src="../assets/record-format.js?v=20261122-release08-review1"></script>
+  <script src="../assets/site.js?v=20261122-release08-review1"></script>
 </body>
 </html>

@@ -8,11 +8,11 @@
   <meta name="description" content="米国政府が公開した521件のUFO/UAP記録、動画、画像、PDF資料を8回の公式公開、機関、日付、場所、関連記録、公式ソースリンクから検索できます。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css?v=20261122-release08">
+  <link rel="stylesheet" href="../assets/style.css?v=20261122-release08-review1">
   <script src="../assets/site-services.js?v=20261120-preview1"></script>
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20261122-release08">
-  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20261122-release08">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20261122-release08">
+  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20261122-release08-review1">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20261122-release08-review1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20261122-release08-review1">
   <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#05090c">
   <link rel="canonical" href="https://uap-archives.org/ja/">
@@ -40,16 +40,16 @@
   <header class="site-header">
     <a class="brand" href="./">
       <span class="brand-mark"><i></i><i></i><i></i></span>
-      <span><b data-i18n="brand_title">UAP 公开档案</b><small data-i18n="brand_subtitle">美国政府档案中文镜像</small></span>
+      <span><b data-i18n="brand_title">UAP公開アーカイブ</b><small data-i18n="brand_subtitle">米国政府記録ミラー</small></span>
     </a>
     <nav>
-      <a href="#releases" data-i18n="nav_archive">档案库</a>
+      <a href="#releases" data-i18n="nav_archive">アーカイブ</a>
       <a href="./downloads/">ダウンロード</a>
       <a href="./about/" data-i18n="nav_about">このサイトについて</a>
-      <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="nav_source">美国官网 ↗</a>
+      <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="nav_source">公式UFO記録 ↗</a>
       <button class="view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>
       <details class="lang-menu">
-        <summary>语言 / Language</summary>
+        <summary>言語</summary>
         <div>
           <a data-dir="en" data-lang="en" href="../en/">English</a>
           <a data-dir="es" data-lang="es" href="../es/">Español</a>
@@ -62,21 +62,21 @@
           <a data-dir="pl" data-lang="pl" href="../pl/">Polski</a>
           <a data-dir="ja" data-lang="ja" href="../ja/">日本語</a>
           <a data-dir="ko" data-lang="ko" href="../ko/">한국어</a>
-          <a data-dir="zh-Hans" data-lang="cn" href="../zh-Hans/" data-i18n="lang_cn">简体中文</a>
-          <a data-dir="zh-Hant" data-lang="tw" href="../zh-Hant/" data-i18n="lang_tw">繁體中文</a>
+          <a data-dir="zh-Hans" data-lang="cn" href="../zh-Hans/" data-i18n="lang_cn">簡体中文</a>
+          <a data-dir="zh-Hant" data-lang="tw" href="../zh-Hant/" data-i18n="lang_tw">繁体中文</a>
         </div>
       </details>
     </nav>
-    <button class="menu-button" aria-label="打开菜单" onclick="toggleMobile()">☰</button>
+    <button class="menu-button" aria-label="メニューを開く" onclick="toggleMobile()">☰</button>
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#releases" onclick="closeMobile()" data-i18n="nav_archive">档案库</a>
+    <a href="#releases" onclick="closeMobile()" data-i18n="nav_archive">アーカイブ</a>
     <a href="./downloads/" onclick="closeMobile()">ダウンロード</a>
     <a href="./about/" onclick="closeMobile()" data-i18n="nav_about">このサイトについて</a>
     <button class="view-mode-toggle mobile-view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>
     <details class="lang-menu mobile-lang-menu" open>
-      <summary>语言 / Language</summary>
+      <summary>言語</summary>
       <div>
         <a data-dir="en" data-lang="en" href="../en/">English</a>
         <a data-dir="es" data-lang="es" href="../es/">Español</a>
@@ -89,8 +89,8 @@
           <a data-dir="pl" data-lang="pl" href="../pl/">Polski</a>
           <a data-dir="ja" data-lang="ja" href="../ja/">日本語</a>
         <a data-dir="ko" data-lang="ko" href="../ko/">한국어</a>
-        <a data-dir="zh-Hans" data-lang="cn" href="../zh-Hans/" data-i18n="lang_cn">简体中文</a>
-        <a data-dir="zh-Hant" data-lang="tw" href="../zh-Hant/" data-i18n="lang_tw">繁體中文</a>
+        <a data-dir="zh-Hans" data-lang="cn" href="../zh-Hans/" data-i18n="lang_cn">簡体中文</a>
+        <a data-dir="zh-Hant" data-lang="tw" href="../zh-Hant/" data-i18n="lang_tw">繁体中文</a>
       </div>
     </details>
   </div>
@@ -98,21 +98,21 @@
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="system-line"><span></span><span data-i18n="hero_systemline"> PUBLIC ACCESS TERMINAL / 中文镜像</span></p>
-        <h1 data-i18n-html="hero_title_html">美国政府<br><em>UFO / UAP</em><br>公开档案库</h1>
-        <p class="hero-intro" data-i18n="hero_intro">检索美国政府公开发布的不明异常现象文件、影像与历史记录。本站只提供中文翻译与索引，所有原始内容均引用自美国政府官方网站。</p>
+        <p class="system-line"><span></span><span data-i18n="hero_systemline">PUBLIC ACCESS TERMINAL / 日本語インデックス</span></p>
+        <h1 data-i18n-html="hero_title_html">米国政府<br><em>UFO / UAP</em><br>公開アーカイブ</h1>
+        <p class="hero-intro" data-i18n="hero_intro">米国政府が公開した未確認異常現象に関するファイル、映像、歴史記録を検索できます。公式説明は政府公開資料の原文に基づいています。</p>
         <div class="hero-actions">
-          <a class="button primary" href="#releases" data-i18n-html="hero_cta1_html">进入档案库 <span>→</span></a>
-          <a class="button" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="hero_cta2">访问原始来源 ↗</a>
+          <a class="button primary" href="#releases" data-i18n-html="hero_cta1_html">アーカイブへ <span>→</span></a>
+          <a class="button" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="hero_cta2">公式ソースを見る ↗</a>
         </div>
         <div class="hero-status">
-          <span><b id="hero-record-count">521</b> <span data-i18n="hero_status1">官方档案</span></span>
-          <span><b>08</b> <span data-i18n="hero_status2">公布批次</span></span>
-          <span><b id="hero-date-range">—</b> <span data-i18n="hero_status3">记录跨度</span></span>
+          <span><b id="hero-record-count">521</b> <span data-i18n="hero_status1">公式記録</span></span>
+          <span><b>08</b> <span data-i18n="hero_status2">公開回</span></span>
+          <span><b id="hero-date-range">—</b> <span data-i18n="hero_status3">記録期間</span></span>
         </div>
       </div>
 
-      <div class="radar-shell" aria-label="抽象雷达资料可视化">
+      <div class="radar-shell" aria-label="抽象的なレーダー表示">
         <div class="radar-meta top"><span>TRACKING / UAP-01</span><span>36°17' N 115°48' W</span></div>
         <div class="radar">
           <div class="radar-ring r1"></div><div class="radar-ring r2"></div><div class="radar-ring r3"></div>
@@ -131,8 +131,8 @@
       </div>
       <div class="showcase-main">
         <div class="showcase-topline">
-          <p id="showcase-summary">載入重點公開檔案...</p>
-          <span id="showcase-date">[08 07 26]</span>
+          <p id="showcase-summary">注目記録を読み込み中…</p>
+          <span id="showcase-date">[11 20 26]</span>
         </div>
         <div class="showcase-stage" id="showcase-stage">
           <button class="showcase-arrow showcase-prev" type="button" aria-label="Previous release item" onclick="uapShowcaseStep(-1)">&lt;</button>
@@ -149,41 +149,41 @@
           <p class="system-line"><span></span> RELEASE DATABASE</p>
           <h2 data-i18n="section_title">アーカイブ</h2>
         </div>
-        <p data-i18n="section_subtitle">直接同步美国政府 PURSUE 数据库 · 最近批次：2026.11.20</p>
+        <p data-i18n="section_subtitle">米国政府PURSUE第1〜8回公開資料を収録 · 最新収録：2026年11月20日</p>
       </div>
 
       <div class="db-controls">
         <label class="search-box">
           <span>⌕</span>
-          <input id="db-search" type="search" placeholder="搜索档案名称、机构或中文摘要..." data-i18n-placeholder="search_placeholder">
+          <input id="db-search" type="search" placeholder="記録名、機関、公式説明を検索..." data-i18n-placeholder="search_placeholder">
           <kbd>⌘ K</kbd>
         </label>
-        <select id="db-agency"><option value="all" data-i18n="opt_all_agency">全部机构</option></select>
-        <select id="db-release"><option value="all" data-i18n="opt_all_release">全部批次</option><option value="RELEASE 01" data-i18n="release_01">第一批</option><option value="RELEASE 02" data-i18n="release_02">第二批</option><option value="RELEASE 03" data-i18n="release_03">第三批</option><option value="RELEASE 04" data-i18n="release_04">第四批</option></select>
-        <select id="db-type"><option value="all" data-i18n="opt_all_type">全部类型</option><option value="PDF" data-i18n="opt_pdf">PDF 文件</option><option value="VID" data-i18n="opt_vid">视频影像</option><option value="IMG" data-i18n="opt_img">图片影像</option><option value="AUD" data-i18n="opt_aud">音频档案</option></select>
+        <select id="db-agency"><option value="all" data-i18n="opt_all_agency">すべての機関</option></select>
+        <select id="db-release"><option value="all" data-i18n="opt_all_release">すべての公開回</option><option value="RELEASE 01" data-i18n="release_01">公開 01</option><option value="RELEASE 02" data-i18n="release_02">公開 02</option><option value="RELEASE 03" data-i18n="release_03">公開 03</option><option value="RELEASE 04" data-i18n="release_04">公開 04</option><option value="RELEASE 05" data-i18n="release_05">公開 05</option><option value="RELEASE 06" data-i18n="release_06">公開 06</option><option value="RELEASE 07" data-i18n="release_07">公開 07</option><option value="RELEASE 08" data-i18n="release_08">第8回公開</option></select>
+        <select id="db-type"><option value="all" data-i18n="opt_all_type">すべての種類</option><option value="PDF" data-i18n="opt_pdf">.PDF</option><option value="VID" data-i18n="opt_vid">.VID</option><option value="IMG" data-i18n="opt_img">.IMG</option><option value="AUD" data-i18n="opt_aud">.AUD</option></select>
       </div>
 
       <section class="interactive-index-panel" aria-labelledby="interactive-index-title">
         <h3 id="interactive-index-title" data-i18n="t_indexes">索引</h3>
         <div class="interactive-filter-matrix" id="interactive-filter-matrix">
           <div class="interactive-filter-row" data-filter-row="release">
-            <button class="interactive-filter-all active" type="button" data-filter-group="release" data-filter-value="all" onclick="dbSetFilter('release','all')" data-i18n="opt_all_release">全部批次</button>
+            <button class="interactive-filter-all active" type="button" data-filter-group="release" data-filter-value="all" onclick="dbSetFilter('release','all')" data-i18n="opt_all_release">すべての公開回</button>
             <div class="interactive-filter-options" id="filter-options-release"></div>
           </div>
           <div class="interactive-filter-row" data-filter-row="agency">
-            <button class="interactive-filter-all active" type="button" data-filter-group="agency" data-filter-value="all" onclick="dbSetFilter('agency','all')" data-i18n="opt_all_agency">全部机构</button>
+            <button class="interactive-filter-all active" type="button" data-filter-group="agency" data-filter-value="all" onclick="dbSetFilter('agency','all')" data-i18n="opt_all_agency">すべての機関</button>
             <div class="interactive-filter-options" id="filter-options-agency"></div>
           </div>
           <div class="interactive-filter-row" data-filter-row="year">
-            <button class="interactive-filter-all active" type="button" data-filter-group="year" data-filter-value="all" onclick="dbSetFilter('year','all')" data-i18n="filter_all_years">全部年代</button>
+            <button class="interactive-filter-all active" type="button" data-filter-group="year" data-filter-value="all" onclick="dbSetFilter('year','all')" data-i18n="filter_all_years">すべての年代</button>
             <div class="interactive-filter-options" id="filter-options-year"></div>
           </div>
           <div class="interactive-filter-row" data-filter-row="location">
-            <button class="interactive-filter-all active" type="button" data-filter-group="location" data-filter-value="all" onclick="dbSetFilter('location','all')" data-i18n="filter_all_locations">全部地点</button>
+            <button class="interactive-filter-all active" type="button" data-filter-group="location" data-filter-value="all" onclick="dbSetFilter('location','all')" data-i18n="filter_all_locations">すべての場所</button>
             <div class="interactive-filter-options" id="filter-options-location"></div>
           </div>
           <div class="interactive-filter-row" data-filter-row="type">
-            <button class="interactive-filter-all active" type="button" data-filter-group="type" data-filter-value="all" onclick="dbSetFilter('type','all')" data-i18n="opt_all_type">全部类型</button>
+            <button class="interactive-filter-all active" type="button" data-filter-group="type" data-filter-value="all" onclick="dbSetFilter('type','all')" data-i18n="opt_all_type">すべての種類</button>
             <div class="interactive-filter-options" id="filter-options-type"></div>
           </div>
         </div>
@@ -199,20 +199,20 @@
       </section>
 
       <div class="db-table-wrap">
-        <div class="db-table-head"><span id="db-count" data-i18n="table_loading">档案加载中...</span><span data-i18n="table_head_hint">点击记录打开详情页与原始来源</span></div>
+        <div class="db-table-head"><span id="db-count" data-i18n="table_loading">記録を読み込み中...</span><span data-i18n="table_head_hint">記録をクリックして詳細ページと出典を開く</span></div>
         <table class="db-table">
           <thead><tr>
-            <th onclick="dbSort('id')"><span data-i18n="th_id">档案名称</span> ↕</th>
-            <th onclick="dbSort('agency')"><span data-i18n="th_agency">发布机构</span> ↕</th>
-            <th onclick="dbSort('release')"><span data-i18n="th_release">公布批次</span> ↕</th>
-            <th onclick="dbSort('incidentDate')"><span data-i18n="th_incidentdate">事件日期</span> ↕</th>
-            <th onclick="dbSort('incidentLocation')"><span data-i18n="th_incidentlocation">事件地点</span> ↕</th>
-            <th onclick="dbSort('type')"><span data-i18n="th_type">类型</span> ↕</th>
+            <th onclick="dbSort('id')"><span data-i18n="th_id">記録名</span> ↕</th>
+            <th onclick="dbSort('agency')"><span data-i18n="th_agency">公開機関</span> ↕</th>
+            <th onclick="dbSort('release')"><span data-i18n="th_release">公開回</span> ↕</th>
+            <th onclick="dbSort('incidentDate')"><span data-i18n="th_incidentdate">事件日</span> ↕</th>
+            <th onclick="dbSort('incidentLocation')"><span data-i18n="th_incidentlocation">事件場所</span> ↕</th>
+            <th onclick="dbSort('type')"><span data-i18n="th_type">種類</span> ↕</th>
           </tr></thead>
           <tbody id="db-tbody"></tbody>
         </table>
       </div>
-      <nav class="db-pagination" id="db-pagination" aria-label="档案分页"></nav>
+      <nav class="db-pagination" id="db-pagination" aria-label="アーカイブのページ切替"></nav>
     </section>
   </main>
 
@@ -230,31 +230,31 @@
     <article class="db-modal">
       <header class="db-modal-head">
         <div><h3 id="db-modal-title"></h3></div>
-        <button class="db-modal-close" onclick="closeDocModal()" aria-label="关闭">×</button>
+        <button class="db-modal-close" onclick="closeDocModal()" aria-label="閉じる">×</button>
       </header>
       <div class="db-modal-body">
         <div class="modal-copy">
           <div id="db-modal-desc"></div>
-          <p class="redaction-notice" id="db-redaction-notice" data-i18n="redaction_notice">为保护目击者身份、政府设施位置，或与不明异常现象（UAP）无关的军事场所敏感信息，本文件已作涂黑处理。根据特朗普总统关于任何被报告为UAP或相关现象的事件之性质或存在信息的指令所发布的文件，均未作任何涂黑处理。</p>
+          <p class="redaction-notice" id="db-redaction-notice" data-i18n="redaction_notice">目撃者の身元、政府施設の位置、またはUAPと無関係な軍事施設に関する機微情報を保護するため、黒塗り処理が行われています。UAPまたは関連現象として報告された遭遇の性質や存在に関する情報について、トランプ大統領の指令に基づき公開されたファイルには黒塗り処理は行われていません。</p>
           <a class="download-asset" id="db-download-asset" href="#" target="_blank" rel="noopener">&gt; DOWNLOAD FILE</a>
           <div class="db-modal-meta" id="db-modal-meta"></div>
-          <a class="db-modal-source" id="db-modal-source" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="modal_source_link">查看美国官网档案 ↗</a>
+          <a class="db-modal-source" id="db-modal-source" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="modal_source_link">米国公式記録を見る ↗</a>
         </div>
         <div class="asset-preview" id="asset-preview"></div>
       </div>
     </article>
   </div>
 
-  <script src="../assets/db-data.js?v=20261122-release08"></script>
-  <script src="../assets/dvids-map.js?v=20261122-release08"></script>
-  <script src="../assets/i18n-ui.js?v=20261122-release08"></script>
-  <script src="../assets/locale-nl.js?v=20261122-release08"></script>
-  <script src="../assets/locale-pl.js?v=20261122-release08"></script>
-  <script src="../assets/static-previews.js?v=20261122-release08"></script>
-  <script src="../assets/archive-filters.js?v=20261122-release08"></script>
-  <script src="../assets/official-video-downloads.js?v=20261122-release08"></script>
-  <script src="../assets/official-download.js?v=20261122-release08"></script>
-  <script src="../assets/record-format.js?v=20261122-release08"></script>
-  <script src="../assets/site.js?v=20261122-release08"></script>
+  <script src="../assets/db-data.js?v=20261122-release08-review1"></script>
+  <script src="../assets/dvids-map.js?v=20261122-release08-review1"></script>
+  <script src="../assets/i18n-ui.js?v=20261122-release08-review1"></script>
+  <script src="../assets/locale-nl.js?v=20261122-release08-review1"></script>
+  <script src="../assets/locale-pl.js?v=20261122-release08-review1"></script>
+  <script src="../assets/static-previews.js?v=20261122-release08-review1"></script>
+  <script src="../assets/archive-filters.js?v=20261122-release08-review1"></script>
+  <script src="../assets/official-video-downloads.js?v=20261122-release08-review1"></script>
+  <script src="../assets/official-download.js?v=20261122-release08-review1"></script>
+  <script src="../assets/record-format.js?v=20261122-release08-review1"></script>
+  <script src="../assets/site.js?v=20261122-release08-review1"></script>
 </body>
 </html>

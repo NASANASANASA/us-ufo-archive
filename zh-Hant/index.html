@@ -8,11 +8,11 @@
   <meta name="description" content="UAP 檔案庫是一個檢索美國政府 UFO/UAP 公開檔案的 UAP 網站，收錄 521 筆 UAP 檔案，包括影片、圖片、PDF 原始文件、公開批次、事件日期、地點、機構、相關記錄和官方來源連結。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css?v=20261122-release08">
+  <link rel="stylesheet" href="../assets/style.css?v=20261122-release08-review1">
   <script src="../assets/site-services.js?v=20261120-preview1"></script>
-  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20261122-release08">
-  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20261122-release08">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20261122-release08">
+  <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png?v=20261122-release08-review1">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/icon-192.png?v=20261122-release08-review1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png?v=20261122-release08-review1">
   <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#05090c">
   <link rel="canonical" href="https://uap-archives.org/zh-Hant/">
@@ -40,16 +40,16 @@
   <header class="site-header">
     <a class="brand" href="./">
       <span class="brand-mark"><i></i><i></i><i></i></span>
-      <span><b data-i18n="brand_title">UAP 公开档案</b><small data-i18n="brand_subtitle">美国政府档案中文镜像</small></span>
+      <span><b data-i18n="brand_title">UAP 公開檔案</b><small data-i18n="brand_subtitle">美國政府檔案中文鏡像</small></span>
     </a>
     <nav>
-      <a href="#releases" data-i18n="nav_archive">档案库</a>
+      <a href="#releases" data-i18n="nav_archive">檔案庫</a>
       <a href="./downloads/">下載</a>
       <a href="./about/" data-i18n="nav_about">關於本站</a>
-      <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="nav_source">美国官网 ↗</a>
+      <a class="source-link" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="nav_source">官方UFO檔案 ↗</a>
       <button class="view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>
       <details class="lang-menu">
-        <summary>语言 / Language</summary>
+        <summary>語言</summary>
         <div>
           <a data-dir="en" data-lang="en" href="../en/">English</a>
           <a data-dir="es" data-lang="es" href="../es/">Español</a>
@@ -62,21 +62,21 @@
           <a data-dir="pl" data-lang="pl" href="../pl/">Polski</a>
           <a data-dir="ja" data-lang="ja" href="../ja/">日本語</a>
           <a data-dir="ko" data-lang="ko" href="../ko/">한국어</a>
-          <a data-dir="zh-Hans" data-lang="cn" href="../zh-Hans/" data-i18n="lang_cn">简体中文</a>
+          <a data-dir="zh-Hans" data-lang="cn" href="../zh-Hans/" data-i18n="lang_cn">簡體中文</a>
           <a data-dir="zh-Hant" data-lang="tw" href="../zh-Hant/" data-i18n="lang_tw">繁體中文</a>
         </div>
       </details>
     </nav>
-    <button class="menu-button" aria-label="打开菜单" onclick="toggleMobile()">☰</button>
+    <button class="menu-button" aria-label="開啟選單" onclick="toggleMobile()">☰</button>
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#releases" onclick="closeMobile()" data-i18n="nav_archive">档案库</a>
+    <a href="#releases" onclick="closeMobile()" data-i18n="nav_archive">檔案庫</a>
     <a href="./downloads/" onclick="closeMobile()">下載</a>
     <a href="./about/" onclick="closeMobile()" data-i18n="nav_about">關於本站</a>
     <button class="view-mode-toggle mobile-view-mode-toggle" type="button" data-view-mode-toggle onclick="uapToggleViewMode(event)">PC</button>
     <details class="lang-menu mobile-lang-menu" open>
-      <summary>语言 / Language</summary>
+      <summary>語言</summary>
       <div>
         <a data-dir="en" data-lang="en" href="../en/">English</a>
         <a data-dir="es" data-lang="es" href="../es/">Español</a>
@@ -89,7 +89,7 @@
           <a data-dir="pl" data-lang="pl" href="../pl/">Polski</a>
           <a data-dir="ja" data-lang="ja" href="../ja/">日本語</a>
         <a data-dir="ko" data-lang="ko" href="../ko/">한국어</a>
-        <a data-dir="zh-Hans" data-lang="cn" href="../zh-Hans/" data-i18n="lang_cn">简体中文</a>
+        <a data-dir="zh-Hans" data-lang="cn" href="../zh-Hans/" data-i18n="lang_cn">簡體中文</a>
         <a data-dir="zh-Hant" data-lang="tw" href="../zh-Hant/" data-i18n="lang_tw">繁體中文</a>
       </div>
     </details>
@@ -98,21 +98,21 @@
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="system-line"><span></span><span data-i18n="hero_systemline"> PUBLIC ACCESS TERMINAL / 中文镜像</span></p>
-        <h1 data-i18n-html="hero_title_html">美国政府<br><em>UFO / UAP</em><br>公开档案库</h1>
-        <p class="hero-intro" data-i18n="hero_intro">检索美国政府公开发布的不明异常现象文件、影像与历史记录。本站只提供中文翻译与索引，所有原始内容均引用自美国政府官方网站。</p>
+        <p class="system-line"><span></span><span data-i18n="hero_systemline">PUBLIC ACCESS TERMINAL / 中文鏡像</span></p>
+        <h1 data-i18n-html="hero_title_html">美國政府<br><em>UFO / UAP</em><br>公開檔案庫</h1>
+        <p class="hero-intro" data-i18n="hero_intro">檢索美國政府公開發布的不明異常現象檔案、影像與歷史記錄。本站只提供中文翻譯與索引，所有原始內容均引用自美國政府官方網站。</p>
         <div class="hero-actions">
-          <a class="button primary" href="#releases" data-i18n-html="hero_cta1_html">进入档案库 <span>→</span></a>
-          <a class="button" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="hero_cta2">访问原始来源 ↗</a>
+          <a class="button primary" href="#releases" data-i18n-html="hero_cta1_html">進入檔案庫 <span>→</span></a>
+          <a class="button" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="hero_cta2">訪問原始來源 ↗</a>
         </div>
         <div class="hero-status">
-          <span><b id="hero-record-count">521</b> <span data-i18n="hero_status1">官方档案</span></span>
-          <span><b>08</b> <span data-i18n="hero_status2">公布批次</span></span>
-          <span><b id="hero-date-range">—</b> <span data-i18n="hero_status3">记录跨度</span></span>
+          <span><b id="hero-record-count">521</b> <span data-i18n="hero_status1">官方檔案</span></span>
+          <span><b>08</b> <span data-i18n="hero_status2">公佈批次</span></span>
+          <span><b id="hero-date-range">—</b> <span data-i18n="hero_status3">記錄跨度</span></span>
         </div>
       </div>
 
-      <div class="radar-shell" aria-label="抽象雷达资料可视化">
+      <div class="radar-shell" aria-label="抽象雷達資料視覺化">
         <div class="radar-meta top"><span>TRACKING / UAP-01</span><span>36°17' N 115°48' W</span></div>
         <div class="radar">
           <div class="radar-ring r1"></div><div class="radar-ring r2"></div><div class="radar-ring r3"></div>
@@ -131,8 +131,8 @@
       </div>
       <div class="showcase-main">
         <div class="showcase-topline">
-          <p id="showcase-summary">載入重點公開檔案...</p>
-          <span id="showcase-date">[08 07 26]</span>
+          <p id="showcase-summary">正在載入重點檔案…</p>
+          <span id="showcase-date">[11 20 26]</span>
         </div>
         <div class="showcase-stage" id="showcase-stage">
           <button class="showcase-arrow showcase-prev" type="button" aria-label="Previous release item" onclick="uapShowcaseStep(-1)">&lt;</button>
@@ -149,18 +149,18 @@
           <p class="system-line"><span></span> RELEASE DATABASE</p>
           <h2 data-i18n="section_title">檔案庫</h2>
         </div>
-        <p data-i18n="section_subtitle">直接同步美国政府 PURSUE 数据库 · 最近批次：2026.11.20</p>
+        <p data-i18n="section_subtitle">收錄美國政府 PURSUE 第1–8批檔案 · 最新收錄：2026年11月20日</p>
       </div>
 
       <div class="db-controls">
         <label class="search-box">
           <span>⌕</span>
-          <input id="db-search" type="search" placeholder="搜索档案名称、机构或中文摘要..." data-i18n-placeholder="search_placeholder">
+          <input id="db-search" type="search" placeholder="搜尋檔案名稱、機構或中文摘要..." data-i18n-placeholder="search_placeholder">
           <kbd>⌘ K</kbd>
         </label>
-        <select id="db-agency"><option value="all" data-i18n="opt_all_agency">全部机构</option></select>
-        <select id="db-release"><option value="all" data-i18n="opt_all_release">全部批次</option><option value="RELEASE 01" data-i18n="release_01">第一批</option><option value="RELEASE 02" data-i18n="release_02">第二批</option><option value="RELEASE 03" data-i18n="release_03">第三批</option><option value="RELEASE 04" data-i18n="release_04">第四批</option></select>
-        <select id="db-type"><option value="all" data-i18n="opt_all_type">全部类型</option><option value="PDF" data-i18n="opt_pdf">PDF 文件</option><option value="VID" data-i18n="opt_vid">视频影像</option><option value="IMG" data-i18n="opt_img">图片影像</option><option value="AUD" data-i18n="opt_aud">音频档案</option></select>
+        <select id="db-agency"><option value="all" data-i18n="opt_all_agency">全部機構</option></select>
+        <select id="db-release"><option value="all" data-i18n="opt_all_release">全部批次</option><option value="RELEASE 01" data-i18n="release_01">第一批</option><option value="RELEASE 02" data-i18n="release_02">第二批</option><option value="RELEASE 03" data-i18n="release_03">第三批</option><option value="RELEASE 04" data-i18n="release_04">第四批</option><option value="RELEASE 05" data-i18n="release_05">第五批</option><option value="RELEASE 06" data-i18n="release_06">第六批</option><option value="RELEASE 07" data-i18n="release_07">第七批</option><option value="RELEASE 08" data-i18n="release_08">第八批</option></select>
+        <select id="db-type"><option value="all" data-i18n="opt_all_type">全部型別</option><option value="PDF" data-i18n="opt_pdf">.PDF</option><option value="VID" data-i18n="opt_vid">.VID</option><option value="IMG" data-i18n="opt_img">.IMG</option><option value="AUD" data-i18n="opt_aud">.AUD</option></select>
       </div>
 
       <section class="interactive-index-panel" aria-labelledby="interactive-index-title">
@@ -171,7 +171,7 @@
             <div class="interactive-filter-options" id="filter-options-release"></div>
           </div>
           <div class="interactive-filter-row" data-filter-row="agency">
-            <button class="interactive-filter-all active" type="button" data-filter-group="agency" data-filter-value="all" onclick="dbSetFilter('agency','all')" data-i18n="opt_all_agency">全部机构</button>
+            <button class="interactive-filter-all active" type="button" data-filter-group="agency" data-filter-value="all" onclick="dbSetFilter('agency','all')" data-i18n="opt_all_agency">全部機構</button>
             <div class="interactive-filter-options" id="filter-options-agency"></div>
           </div>
           <div class="interactive-filter-row" data-filter-row="year">
@@ -179,11 +179,11 @@
             <div class="interactive-filter-options" id="filter-options-year"></div>
           </div>
           <div class="interactive-filter-row" data-filter-row="location">
-            <button class="interactive-filter-all active" type="button" data-filter-group="location" data-filter-value="all" onclick="dbSetFilter('location','all')" data-i18n="filter_all_locations">全部地点</button>
+            <button class="interactive-filter-all active" type="button" data-filter-group="location" data-filter-value="all" onclick="dbSetFilter('location','all')" data-i18n="filter_all_locations">全部地點</button>
             <div class="interactive-filter-options" id="filter-options-location"></div>
           </div>
           <div class="interactive-filter-row" data-filter-row="type">
-            <button class="interactive-filter-all active" type="button" data-filter-group="type" data-filter-value="all" onclick="dbSetFilter('type','all')" data-i18n="opt_all_type">全部类型</button>
+            <button class="interactive-filter-all active" type="button" data-filter-group="type" data-filter-value="all" onclick="dbSetFilter('type','all')" data-i18n="opt_all_type">全部型別</button>
             <div class="interactive-filter-options" id="filter-options-type"></div>
           </div>
         </div>
@@ -199,20 +199,20 @@
       </section>
 
       <div class="db-table-wrap">
-        <div class="db-table-head"><span id="db-count" data-i18n="table_loading">档案加载中...</span><span data-i18n="table_head_hint">点击记录打开详情页与原始来源</span></div>
+        <div class="db-table-head"><span id="db-count" data-i18n="table_loading">檔案載入中...</span><span data-i18n="table_head_hint">點選記錄開啟詳情頁與原始來源</span></div>
         <table class="db-table">
           <thead><tr>
-            <th onclick="dbSort('id')"><span data-i18n="th_id">档案名称</span> ↕</th>
-            <th onclick="dbSort('agency')"><span data-i18n="th_agency">发布机构</span> ↕</th>
-            <th onclick="dbSort('release')"><span data-i18n="th_release">公布批次</span> ↕</th>
+            <th onclick="dbSort('id')"><span data-i18n="th_id">檔案名稱</span> ↕</th>
+            <th onclick="dbSort('agency')"><span data-i18n="th_agency">釋出機構</span> ↕</th>
+            <th onclick="dbSort('release')"><span data-i18n="th_release">公佈批次</span> ↕</th>
             <th onclick="dbSort('incidentDate')"><span data-i18n="th_incidentdate">事件日期</span> ↕</th>
-            <th onclick="dbSort('incidentLocation')"><span data-i18n="th_incidentlocation">事件地点</span> ↕</th>
-            <th onclick="dbSort('type')"><span data-i18n="th_type">类型</span> ↕</th>
+            <th onclick="dbSort('incidentLocation')"><span data-i18n="th_incidentlocation">事件地點</span> ↕</th>
+            <th onclick="dbSort('type')"><span data-i18n="th_type">型別</span> ↕</th>
           </tr></thead>
           <tbody id="db-tbody"></tbody>
         </table>
       </div>
-      <nav class="db-pagination" id="db-pagination" aria-label="档案分页"></nav>
+      <nav class="db-pagination" id="db-pagination" aria-label="檔案分頁"></nav>
     </section>
   </main>
 
@@ -230,31 +230,31 @@
     <article class="db-modal">
       <header class="db-modal-head">
         <div><h3 id="db-modal-title"></h3></div>
-        <button class="db-modal-close" onclick="closeDocModal()" aria-label="关闭">×</button>
+        <button class="db-modal-close" onclick="closeDocModal()" aria-label="關閉">×</button>
       </header>
       <div class="db-modal-body">
         <div class="modal-copy">
           <div id="db-modal-desc"></div>
-          <p class="redaction-notice" id="db-redaction-notice" data-i18n="redaction_notice">为保护目击者身份、政府设施位置，或与不明异常现象（UAP）无关的军事场所敏感信息，本文件已作涂黑处理。根据特朗普总统关于任何被报告为UAP或相关现象的事件之性质或存在信息的指令所发布的文件，均未作任何涂黑处理。</p>
+          <p class="redaction-notice" id="db-redaction-notice" data-i18n="redaction_notice">為保護目擊者身分、政府設施位置，或與不明異常現象（UAP）無關的軍事場所敏感資訊，本檔案已作塗黑處理。依據川普總統關於任何被報告為UAP或相關現象之事件性質或存在資訊之指令所發布的檔案，均未作任何塗黑處理。</p>
           <a class="download-asset" id="db-download-asset" href="#" target="_blank" rel="noopener">&gt; DOWNLOAD FILE</a>
           <div class="db-modal-meta" id="db-modal-meta"></div>
-          <a class="db-modal-source" id="db-modal-source" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="modal_source_link">查看美国官网档案 ↗</a>
+          <a class="db-modal-source" id="db-modal-source" href="https://www.war.gov/UFO/" target="_blank" rel="noopener" data-i18n="modal_source_link">檢視美國官網檔案 ↗</a>
         </div>
         <div class="asset-preview" id="asset-preview"></div>
       </div>
     </article>
   </div>
 
-  <script src="../assets/db-data.js?v=20261122-release08"></script>
-  <script src="../assets/dvids-map.js?v=20261122-release08"></script>
-  <script src="../assets/i18n-ui.js?v=20261122-release08"></script>
-  <script src="../assets/locale-nl.js?v=20261122-release08"></script>
-  <script src="../assets/locale-pl.js?v=20261122-release08"></script>
-  <script src="../assets/static-previews.js?v=20261122-release08"></script>
-  <script src="../assets/archive-filters.js?v=20261122-release08"></script>
-  <script src="../assets/official-video-downloads.js?v=20261122-release08"></script>
-  <script src="../assets/official-download.js?v=20261122-release08"></script>
-  <script src="../assets/record-format.js?v=20261122-release08"></script>
-  <script src="../assets/site.js?v=20261122-release08"></script>
+  <script src="../assets/db-data.js?v=20261122-release08-review1"></script>
+  <script src="../assets/dvids-map.js?v=20261122-release08-review1"></script>
+  <script src="../assets/i18n-ui.js?v=20261122-release08-review1"></script>
+  <script src="../assets/locale-nl.js?v=20261122-release08-review1"></script>
+  <script src="../assets/locale-pl.js?v=20261122-release08-review1"></script>
+  <script src="../assets/static-previews.js?v=20261122-release08-review1"></script>
+  <script src="../assets/archive-filters.js?v=20261122-release08-review1"></script>
+  <script src="../assets/official-video-downloads.js?v=20261122-release08-review1"></script>
+  <script src="../assets/official-download.js?v=20261122-release08-review1"></script>
+  <script src="../assets/record-format.js?v=20261122-release08-review1"></script>
+  <script src="../assets/site.js?v=20261122-release08-review1"></script>
 </body>
 </html>

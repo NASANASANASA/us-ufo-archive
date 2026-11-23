@@ -6,7 +6,7 @@ const officialDownload = require('../assets/official-download.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
-const assetVersion = '20261122-release08';
+const assetVersion = '20261122-release08-review1';
 const dutch = require('../assets/locale-nl.json');
 const polish = require('../assets/locale-pl.json');
 const extraLocales = {nl: dutch, pl: polish};
@@ -20,6 +20,7 @@ const langPathPattern = new RegExp(`^/(${generatedDirs.join('|')})(/|$)`);
 const langMenuCodes = {pl: 'pl', nl: 'nl', en: 'en', ja: 'ja', es: 'es', 'zh-Hans': 'cn', 'zh-Hant': 'tw', pt: 'pt', ru: 'ru', fr: 'fr', de: 'de', ko: 'ko', ar: 'ar'};
 
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
+const interfaceText = require('node:vm').runInNewContext(read('assets/i18n-ui.js') + '\nUI_TEXT');
 const recordDates = JSON.parse(read('assets/record-detail-dates.json')).records;
 const videoSourceMetadata = JSON.parse(read('assets/video-source-metadata.json')).records;
 const videoDurations = JSON.parse(read('assets/dvids-meta.json'));
@@ -1926,6 +1927,12 @@ function showcaseTitleLabel(lang) {
 
 function buildInteractiveHome(lang, template) {
   const locale = extraLocales[lang];
+  const ui = {...Object.fromEntries(Object.entries(interfaceText).map(([key, values]) => [key, values[langMenuCodes[lang]] || values.en])), ...(locale?.ui || {})};
+  const accessibility = {en:['Open menu','Close','Abstract radar visualization','Archive pagination'],es:['Abrir menú','Cerrar','Visualización abstracta del radar','Paginación del archivo'],pt:['Abrir menu','Fechar','Visualização abstrata do radar','Páginas do arquivo'],fr:['Ouvrir le menu','Fermer','Visualisation abstraite du radar','Pagination des archives'],de:['Menü öffnen','Schließen','Abstrakte Radardarstellung','Archivseitennavigation'],ru:['Открыть меню','Закрыть','Абстрактная визуализация радара','Навигация по страницам архива'],ar:['افتح القائمة','إغلاق','عرض تجريدي للرادار','صفحات الأرشيف'],nl:['Menu openen','Sluiten','Abstracte radarvisualisatie','Archiefpaginering'],pl:['Otwórz menu','Zamknij','Abstrakcyjna wizualizacja radaru','Strony archiwum'],ja:['メニューを開く','閉じる','抽象的なレーダー表示','アーカイブのページ切替'],ko:['메뉴 열기','닫기','추상 레이더 시각화','기록 페이지 탐색'],'zh-Hans':['打开菜单','关闭','抽象雷达资料可视化','档案分页'],'zh-Hant':['開啟選單','關閉','抽象雷達資料視覺化','檔案分頁']};
+  const sourceAccessibility = [['打开菜单','開啟選單'],['关闭','關閉'],['抽象雷达资料可视化','抽象雷達資料視覺化'],['档案分页','檔案分頁']];
+  const latestBundle = releaseDownloadBundles.at(-1);
+  const latestDateCode = latestBundle.date.slice(5).replace('-', ' ') + ' ' + latestBundle.date.slice(2, 4);
+  const loadingLabel = ({en:'Loading featured records…',es:'Cargando archivos destacados…',pt:'Carregando registros em destaque…',fr:'Chargement des archives à la une…',de:'Ausgewählte Akten werden geladen…',ru:'Загрузка избранных материалов…',ar:'جارٍ تحميل السجلات المميزة…',nl:'Uitgelichte archiefstukken laden…',pl:'Ładowanie wyróżnionych materiałów…',ja:'注目記録を読み込み中…',ko:'주요 기록을 불러오는 중…','zh-Hans':'正在加载重点档案…','zh-Hant':'正在載入重點檔案…'})[lang];
   const footer = footerHtml('../', lang)
     .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
     .replace(/href="\.\.\/"/g, 'href="../"');
@@ -1971,7 +1978,7 @@ function buildInteractiveHome(lang, template) {
     .replace(/<summary>语言 \/ Language<\/summary>/g, lang === 'nl' ? '<summary>Taal</summary>' : '<summary>语言 / Language</summary>')
     .replace(/(<p id="showcase-summary">)[\s\S]*?(<\/p>)/, (all, open, close) => lang === 'nl' ? open + 'Uitgelichte archiefstukken laden…' + close : all)
     .replace(/aria-label="([^"]*)"/g, (all, value) => lang === 'nl' ? `aria-label="${esc(({'打开菜单':'Menu openen','关闭':'Sluiten','UAP release showcase':'Uitgelichte UAP-archiefstukken','Release showcase tabs':'Publicaties','Previous release item':'Vorig archiefstuk','Next release item':'Volgend archiefstuk','Showcase navigation':'Navigatie door uitgelichte archiefstukken','Advertisement':'Advertentie','Site policies':'Websitebeleid'})[value] || value)}"` : all)
-    .replace(/<input\b[^>]*data-i18n-placeholder="([^"]+)"[^>]*>/g, (all, key) => locale && locale.ui[key] ? all.replace(/placeholder="[^"]*"/, `placeholder="${esc(locale.ui[key])}"`) : all)
+    .replace(/<input\b[^>]*data-i18n-placeholder="([^"]+)"[^>]*>/g, (all, key) => ui[key] ? all.replace(/placeholder="[^"]*"/, `placeholder="${esc(ui[key])}"`) : all)
     .replace(/<html[^>]*>/, `<html lang="${text[lang].lang}">`)
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(homeSeoTitle(lang))}</title>`)
     .replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc((seoText[lang] || seoText.en).homeDescription)}">`)
@@ -2011,8 +2018,13 @@ function buildInteractiveHome(lang, template) {
     .replace(/href="\.\/"/g, 'href="../"')
     .replace(/<a class="brand" href="\.\.\/">/, '<a class="brand" href="./">')
     .replace(/<footer>[\s\S]*?<\/footer>/, footer)
-    .replace(/(<([a-z0-9]+)\b[^>]*data-i18n(?:-html)?="([^"]+)"[^>]*>)([\s\S]*?)(<\/\2>)/gi, (all, open, tag, key, value, close) => locale && locale.ui[key] ? open + (open.includes('data-i18n-html=') ? locale.ui[key] : esc(locale.ui[key])) + close : all)
-    .replace(/(data-i18n-placeholder="([^"]+)"[^>]*placeholder=")[^"]*/g, (all, open, key) => locale && locale.ui[key] ? open + esc(locale.ui[key]) : all);
+    .replace(/(<([a-z0-9]+)\b[^>]*data-i18n(?:-html)?="([^"]+)"[^>]*>)([\s\S]*?)(<\/\2>)/gi, (all, open, tag, key, value, close) => ui[key] ? open + (open.includes('data-i18n-html=') ? ui[key] : esc(ui[key])) + close : all)
+    .replace(/(data-i18n-placeholder="([^"]+)"[^>]*placeholder=")[^"]*/g, (all, open, key) => ui[key] ? open + esc(ui[key]) : all)
+    .replace(/(<p id="showcase-summary">)[\s\S]*?(<\/p>)/, (_, open, close) => open + esc(loadingLabel) + close)
+    .replace(/(<span id="showcase-date">)[^<]*(<\/span>)/, (_, open, close) => open + '[' + latestDateCode + ']' + close)
+    .replace(/(<details\b[^>]*class="[^"]*\blang-menu\b[^"]*"[^>]*>\s*<summary>)[\s\S]*?(<\/summary>)/g, (_, open, close) => open + esc(ui.lang_label || text[lang].language) + close)
+    .replace(/aria-label="([^"]*)"/g, (all, value) => { const index = sourceAccessibility.findIndex(labels => labels.includes(value)); return index < 0 ? all : `aria-label="${esc(accessibility[lang][index])}"`; })
+    .replace(/(<select id="db-release">)[\s\S]*?(<\/select>)/, (_, open, close) => open + `<option value="all" data-i18n="opt_all_release">${esc(ui.opt_all_release)}</option>` + releaseDownloadBundles.map(bundle => `<option value="RELEASE ${bundle.release}" data-i18n="release_${bundle.release}">${esc(ui['release_' + bundle.release])}</option>`).join('') + close);
 }
 
 function recordDateLabel(doc, lang) { return doc.detailDate?.kind === 'dateTaken' ? dateTakenLabel(lang) : text[lang].date; }

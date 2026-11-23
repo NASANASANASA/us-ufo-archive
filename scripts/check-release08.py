@@ -31,6 +31,9 @@ for lang,tr in langs.items():
   if entries:
    assert entries[i] and entries[i]['i']==i
    assert ident in entries[i]['titleZh'],(lang,ident,'translated identifier')
+   # Operational codes and program names must not become translated planets or different programs.
+   codes=r'(?<![A-Za-z0-9])(?:DOW-UAP-[A-Z0-9]+|F-\d+[A-Z]?|DC-\d+|\d{4}Z|PLUTO|AAWSAP|AAWAP|AATIP|AAITP|BAASS)(?![A-Za-z0-9])'
+   assert not collections.Counter(re.findall(codes,row['Description Blurb']))-collections.Counter(re.findall(codes,entries[i]['descZh'])),(lang,ident,'source code changed')
    assert all(entries[i][k].strip() or not row[source].strip() for k,source in [('titleZh','Title'),('descZh','Description Blurb'),('locZh','Incident Location'),('altZh','Image Alt Text')])
   entry=manifest[title];assert entry['release']=='08'
   assert entry['preview'] in page
@@ -53,11 +56,25 @@ for lang,tr in langs.items():
    target=(ROOT/u.path.lstrip('/') if u.path.startswith('/') else path.parent/u.path).resolve()
    assert target.exists(),(lang,ident,value)
   checked+=1
+ home=(ROOT/lang/'index.html').read_text()
+ assert '[11 20 26]' in home and '[08 07 26]' not in home,(lang,'stale showcase date')
+ assert re.findall(r'<option value="RELEASE (\d{2})"',home)==[f'{n:02}' for n in range(1,9)],(lang,'initial release options')
+ assert '语言 / Language' not in home,(lang,'untranslated language menu')
+ if lang not in ['zh-Hans','zh-Hant','ja','ko']:
+  assert not re.search(r'(?:aria-label|placeholder)="[^"]*[\u4e00-\u9fff]',home),(lang,'untranslated control')
  downloads=(ROOT/lang/'downloads/index.html').read_text()
  assert downloads.count('class="release-download-card"')==8
  assert 'release_08_documents.zip' in downloads and 'release_08_videos.zip' in downloads
  # The seventh release's note remains after its document download, in every language.
  cards=downloads.split('class="release-download-card"')[1:]
  assert cards[6].index('release_07_documents.zip')<cards[6].index('release-no-videos')
+ko=json.loads((ROOT/'assets/i18n-ko.json').read_text())
+assert ko[495]['locZh']==ko[508]['locZh']=='버지니아주'
+for language,unexplained,money in [('zh-cn','仍无法解释','12百万美元'),('zh-tw','仍無法解釋','12百萬美元')]:
+ entries=json.loads((ROOT/f'assets/i18n-{language}.json').read_text())
+ assert '20%' in entries[487]['descZh'] and unexplained in entries[487]['descZh']
+ assert money in entries[492]['descZh']
+for language in ['es','pt','fr','de','ru','ar','nl','pl','ja','ko','zh-cn','zh-tw']:
+ assert 'BIGOT' in json.loads((ROOT/f'assets/i18n-{language}.json').read_text())[489]['descZh']
 assert '521' in (ROOT/'index.html').read_text()
 print(f'PASS: 43 Release 08 records, 43 verified local previews, {checked} localized pages, eight download cards; Releases 01–07 data and translations unchanged.')
