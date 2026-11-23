@@ -7,7 +7,7 @@ const recordRelations = require('../assets/record-relations.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
-const assetVersion = '20261123-related-official1';
+const assetVersion = '20261123-record-panels1';
 const dutch = require('../assets/locale-nl.json');
 const polish = require('../assets/locale-pl.json');
 const extraLocales = {nl: dutch, pl: polish};
@@ -2051,9 +2051,9 @@ function buildRecordPage(doc, lang, docs) {
   const languageDescription = langDescription(doc, lang);
   const descriptionBlocks = [
     lang !== 'en' && languageDescription
-      ? `<h2>${esc(l.official)}</h2>${paragraphs(languageDescription, lang, doc.redaction, officialDescription)}`
+      ? `<h2 id="record-description-title">${esc(l.official)}</h2><div class="static-record-description" tabindex="0" role="region" aria-labelledby="record-description-title">${paragraphs(languageDescription, lang, doc.redaction, officialDescription)}</div>`
       : '',
-    lang === 'en' && officialDescription ? `<h2>${esc(l.official)}</h2>${paragraphs(officialDescription, lang, doc.redaction)}` : ''
+    lang === 'en' && officialDescription ? `<h2 id="record-description-title">${esc(l.official)}</h2><div class="static-record-description" tabindex="0" role="region" aria-labelledby="record-description-title">${paragraphs(officialDescription, lang, doc.redaction)}</div>` : ''
   ].filter(Boolean).join('\n        ');
   const mediaPreview = staticMediaPreview(doc, lang, title, docs);
   const virinMeta = doc.virin ? `\n          <dt>VIRIN</dt><dd>${esc(doc.virin)}</dd>` : '';
@@ -2148,10 +2148,10 @@ function staticMediaPreview(doc, lang, title, docs) {
     : '';
   const openOfficial = `<a class="static-media-button" href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(text[lang].source)} ↗</a>`;
   const relatedLinks = relatedRecords(doc, docs)
-    .map(related => `<a class="static-related-link" href="../${esc(related.slug)}/"><span>.${esc(related.type)}</span>${esc(langTitle(related, lang))}</a>`)
+    .map(related => `<a class="static-related-link" href="../${esc(related.slug)}/"><span class="related-release">[${esc(releaseLabel(related.release, lang))}]</span> ${esc(langTitle(related, lang))} <span class="related-type">[.${esc(related.type)}]</span></a>`)
     .join('\n            ');
-  const relatedBlock = relatedLinks ? `<div class="static-related-records">
-            <b>${esc(text[lang].relatedMedia)}</b>
+  const relatedBlock = relatedLinks ? `<div class="static-related-records" tabindex="0" role="region" aria-labelledby="record-related-title">
+            <b id="record-related-title">${esc(text[lang].relatedMedia)}</b>
             ${relatedLinks}
           </div>` : '';
   let preview = '';
