@@ -2155,7 +2155,12 @@ function staticMediaPreview(doc, lang, title, docs) {
   const officialUrl = staticOfficialRecordPage(doc);
   const downloadUrl = currentRecordDownloadUrl(doc, {image, r2Image, localImage, video});
   const downloadName = downloadUrl ? currentRecordDownloadName(doc, downloadUrl) : '';
-  const downloadCurrent = downloadUrl ? `<a class="static-media-button" href="${esc(downloadUrl)}" download="${esc(downloadName)}" target="_blank" data-download-source="official" data-download-url="${esc(downloadUrl)}" data-download-filename="${esc(downloadName)}" rel="noopener">${esc(text[lang].downloadCurrent)}</a>` : '';
+  const hasTraditionalTranslation = lang === 'zh-Hant' && assetCode(doc.id) === 'DOWUAPD174';
+  const downloadLabel = hasTraditionalTranslation ? '下載官方英文原文（PDF）↓' : text[lang].downloadCurrent;
+  const downloadCurrent = downloadUrl ? `<a class="static-media-button" href="${esc(downloadUrl)}" download="${esc(downloadName)}" target="_blank" data-download-source="official" data-download-url="${esc(downloadUrl)}" data-download-filename="${esc(downloadName)}" rel="noopener">${esc(downloadLabel)}</a>` : '';
+  const downloadTranslation = hasTraditionalTranslation
+    ? `<a class="static-media-button" href="/assets/translations/zh-Hant/DOW-UAP-D174_zh-Hant.pdf" download="DOW-UAP-D174_猶他州牧場調查報告_繁體中文.pdf" data-translation-download="zh-Hant">下載繁體中文譯本（PDF，13.4 MB）↓</a><small class="static-muted">非官方翻譯，內容請以英文原文為準。</small>`
+    : '';
   const openOfficial = `<a class="static-media-button" href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(text[lang].source)} ↗</a>`;
   const relatedLinks = relatedRecords(doc, docs)
     .map(related => `<a class="static-related-link" href="../${esc(related.slug)}/"><span>.${esc(related.type)}</span>${esc(langTitle(related, lang))}</a>`)
@@ -2176,7 +2181,7 @@ function staticMediaPreview(doc, lang, title, docs) {
     preview = `<div class="real-file"><b>.${esc(doc.type)}</b><span>${esc(title)}</span><small>${esc(blocked)}</small></div>`;
   }
   const coverNote = doc.previewKind === 'pdf-cover' ? `<small class="static-muted">${esc(coverPreviewLabel(lang))}</small>` : '';
-  const actions = [coverNote, downloadCurrent, openOfficial].filter(Boolean).join('\n          ');
+  const actions = [coverNote, downloadCurrent, downloadTranslation, openOfficial].filter(Boolean).join('\n          ');
   return `<div class="static-preview static-preview-${esc(doc.type.toLowerCase())}">
           ${preview}
         </div>
