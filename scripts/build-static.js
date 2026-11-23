@@ -1926,6 +1926,12 @@ function showcaseTitleLabel(lang) {
 }
 
 function buildInteractiveHome(lang, template) {
+  const filterRowPattern = /<div class="interactive-filter-row" data-filter-row="(release|type|agency|year|location)">[\s\S]*?<div class="interactive-filter-options"[^>]*><\/div>\s*<\/div>/g;
+  const filterRows = new Map([...template.matchAll(filterRowPattern)].map(match => [match[1], match[0]]));
+  const filterOrder = ['release', 'type', 'agency', 'year', 'location'];
+  if (filterRows.size !== filterOrder.length) throw new Error('Homepage filter rows are incomplete');
+  let filterIndex = 0;
+  template = template.replace(filterRowPattern, () => filterRows.get(filterOrder[filterIndex++]));
   const locale = extraLocales[lang];
   const ui = {...Object.fromEntries(Object.entries(interfaceText).map(([key, values]) => [key, values[langMenuCodes[lang]] || values.en])), ...(locale?.ui || {})};
   const accessibility = {en:['Open menu','Close','Abstract radar visualization','Archive pagination'],es:['Abrir menú','Cerrar','Visualización abstracta del radar','Paginación del archivo'],pt:['Abrir menu','Fechar','Visualização abstrata do radar','Páginas do arquivo'],fr:['Ouvrir le menu','Fermer','Visualisation abstraite du radar','Pagination des archives'],de:['Menü öffnen','Schließen','Abstrakte Radardarstellung','Archivseitennavigation'],ru:['Открыть меню','Закрыть','Абстрактная визуализация радара','Навигация по страницам архива'],ar:['افتح القائمة','إغلاق','عرض تجريدي للرادار','صفحات الأرشيف'],nl:['Menu openen','Sluiten','Abstracte radarvisualisatie','Archiefpaginering'],pl:['Otwórz menu','Zamknij','Abstrakcyjna wizualizacja radaru','Strony archiwum'],ja:['メニューを開く','閉じる','抽象的なレーダー表示','アーカイブのページ切替'],ko:['메뉴 열기','닫기','추상 레이더 시각화','기록 페이지 탐색'],'zh-Hans':['打开菜单','关闭','抽象雷达资料可视化','档案分页'],'zh-Hant':['開啟選單','關閉','抽象雷達資料視覺化','檔案分頁']};
