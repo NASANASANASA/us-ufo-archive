@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://uap-archives.org/</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://uap-archives.org/en/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/en/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/en/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/en/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/en/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/en/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -528,7 +529,8 @@
   <url><loc>https://uap-archives.org/en/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/en/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/en/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/es/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/es/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/es/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/es/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/es/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/es/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -1055,7 +1057,8 @@
   <url><loc>https://uap-archives.org/es/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/es/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/es/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/pt/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/pt/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/pt/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/pt/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/pt/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/pt/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -1582,7 +1585,8 @@
   <url><loc>https://uap-archives.org/pt/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/pt/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/pt/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/fr/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/fr/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/fr/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/fr/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/fr/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/fr/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -2109,7 +2113,8 @@
   <url><loc>https://uap-archives.org/fr/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/fr/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/fr/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/de/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/de/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/de/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/de/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/de/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/de/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -2636,7 +2641,8 @@
   <url><loc>https://uap-archives.org/de/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/de/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/de/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/ru/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/ru/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/ru/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/ru/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/ru/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/ru/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -3163,7 +3169,8 @@
   <url><loc>https://uap-archives.org/ru/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/ru/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/ru/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/ar/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/ar/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/ar/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/ar/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/ar/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/ar/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -3690,7 +3697,8 @@
   <url><loc>https://uap-archives.org/ar/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/ar/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/ar/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/nl/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/nl/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/nl/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/nl/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/nl/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/nl/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -4217,7 +4225,8 @@
   <url><loc>https://uap-archives.org/nl/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/nl/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/nl/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/pl/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/pl/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/pl/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/pl/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/pl/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/pl/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -4744,7 +4753,8 @@
   <url><loc>https://uap-archives.org/pl/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/pl/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/pl/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/ja/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/ja/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/ja/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/ja/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/ja/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/ja/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -5271,7 +5281,8 @@
   <url><loc>https://uap-archives.org/ja/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/ja/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/ja/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/ko/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/ko/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/ko/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/ko/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/ko/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/ko/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -5798,7 +5809,8 @@
   <url><loc>https://uap-archives.org/ko/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/ko/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/ko/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/zh-Hans/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/zh-Hans/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/zh-Hans/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/zh-Hans/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/zh-Hans/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/zh-Hans/contact/</loc><lastmod>2026-11-22</lastmod></url>
@@ -6325,7 +6337,8 @@
   <url><loc>https://uap-archives.org/zh-Hans/records/dow-uap-pr166-unresolved-uap-report-middle-east-2020/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/zh-Hans/records/dow-uap-pr168-unresolved-uap-report-middle-east-2026/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://uap-archives.org/zh-Hans/records/dow-uap-pr169-unresolved-uap-report-middle-east-2023/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://uap-archives.org/zh-Hant/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://uap-archives.org/zh-Hant/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://uap-archives.org/zh-Hant/archive-text/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://uap-archives.org/zh-Hant/privacy/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/zh-Hant/about/</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://uap-archives.org/zh-Hant/contact/</loc><lastmod>2026-11-22</lastmod></url>

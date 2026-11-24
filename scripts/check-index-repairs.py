@@ -21,7 +21,8 @@ reported = json.loads((ROOT / 'docs/search-console-404-2026-11-19.json').read_te
 assert len(reported) == 343
 assert all(urlsplit(url).path in routes for url in reported)
 sitemap = {x.text for x in ET.parse(ROOT / 'sitemap.xml').iter() if x.tag.endswith('}loc')}
-assert len(sitemap) == 1 + (len(rows) + 6) * len(LANGS)
+assert len(sitemap) == 1 + (len(rows) + 7) * len(LANGS)
+assert all(SITE + f'/{lang}/archive-text/' in sitemap for lang in LANGS)
 for path, destination in routes.items():
     source = (ROOT / path.strip('/') / 'index.html').read_text()
     refresh = html.unescape(re.search(r'<meta http-equiv="refresh" content="([^"]+)"', source)[1])

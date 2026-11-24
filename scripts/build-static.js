@@ -7,7 +7,7 @@ const recordRelations = require('../assets/record-relations.js');
 
 const root = path.resolve(__dirname, '..');
 const siteUrl = (process.env.SITE_URL || 'https://uap-archives.org').replace(/\/$/, '');
-const assetVersion = '20261123-record-panels1';
+const assetVersion = '20261124-network1';
 const dutch = require('../assets/locale-nl.json');
 const polish = require('../assets/locale-pl.json');
 const extraLocales = {nl: dutch, pl: polish};
@@ -1635,8 +1635,6 @@ function pageShell({lang, title, description, canonicalPath, body, depth = 0, sc
   ${alternates}
   <link rel="alternate" hreflang="x-default" href="${siteUrl}${canonicalPath.replace(langPathPattern, '/en/')}">
   ${iconLinks(prefix)}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${prefix}assets/style.css?v=${assetVersion}">
   ${servicesScript(prefix)}
 ${schemaHtml}
@@ -1927,7 +1925,17 @@ function showcaseTitleLabel(lang) {
   })[lang] || 'Browse Featured Records';
 }
 
-function buildInteractiveHome(lang, template) {
+function archiveFallbackLabel(lang) {
+  return ({en:'If the list loads slowly, browse all records in the text directory',es:'Si la lista tarda en cargar, consulta el archivo en texto',pt:'Se a lista demorar, consulte o arquivo em texto',fr:'Si la liste tarde à charger, consultez les archives en texte',de:'Bei langsamer Anzeige das Textarchiv öffnen',ru:'Если список загружается медленно, откройте текстовый архив',ar:'إذا تأخر تحميل القائمة، افتح الأرشيف النصي',nl:'Open het tekstarchief als de lijst langzaam laadt',pl:'Jeśli lista ładuje się wolno, otwórz archiwum tekstowe',ja:'一覧の読み込みが遅い場合は、テキスト版の資料一覧をご利用ください',ko:'목록 로딩이 느리면 텍스트 자료 목록을 이용하세요','zh-Hans':'加载较慢时，可直接查看全部档案（文字目录）','zh-Hant':'載入較慢時，可直接查看全部檔案（文字目錄）'})[lang];
+}
+
+function buildTextArchive(docs, lang) {
+  const ordered = [...docs].sort((a, b) => b.release.localeCompare(a.release));
+  return pageShell({lang, title:`${text[lang].all} · ${text[lang].home}`, description:(seoText[lang] || seoText.en).homeDescription, canonicalPath:`/${lang}/archive-text/`, depth:2,
+    body:`<main class="static-main"><section class="static-panel text-archive"><h1>${esc(text[lang].all)}</h1><div class="static-list">${ordered.map(doc => `<a class="static-row" href="../records/${doc.slug}/"><strong>${esc(langTitle(doc, lang))}</strong></a>`).join('\n')}</div></section></main>`});
+}
+
+function buildInteractiveHome(lang, template, docs) {
   const filterRowPattern = /<div class="interactive-filter-row" data-filter-row="(release|type|agency|year|location)">[\s\S]*?<div class="interactive-filter-options"[^>]*><\/div>\s*<\/div>/g;
   const filterRows = new Map([...template.matchAll(filterRowPattern)].map(match => [match[1], match[0]]));
   const filterOrder = ['release', 'type', 'agency', 'year', 'location'];
@@ -1944,7 +1952,12 @@ function buildInteractiveHome(lang, template) {
   const footer = footerHtml('../', lang)
     .replace(new RegExp(`href="../${lang}/`, 'g'), `href="./`)
     .replace(/href="\.\.\/"/g, 'href="../"');
+  const fallbackRows = [...docs].sort((a, b) => b.release.localeCompare(a.release)).slice(0, 20).map(doc => `<tr class="record-link-row" data-static-fallback="true" data-record-id="${esc(doc.id)}" data-record-url="./records/${doc.slug}/"><td class="fname" colspan="6"><a class="db-record-link" href="./records/${doc.slug}/">${esc(langTitle(doc, lang))}</a></td></tr>`).join('\n');
   return template
+    .replace(/\s*<link\b[^>]*(?:fonts\.googleapis\.com|fonts\.gstatic\.com)[^>]*>/g, '')
+    .replace(/(<tbody id="db-tbody">)[\s\S]*?(<\/tbody>)/, (_, open, close) => open + fallbackRows + close)
+    .replace(/\s*<p\b[^>]*id="archive-load-fallback"[^>]*>[\s\S]*?<\/p>/g, '')
+    .replace('<div class="db-table-wrap">', `<p class="archive-load-fallback" id="archive-load-fallback"><a href="./archive-text/">${esc(archiveFallbackLabel(lang))}</a></p>\n      <div class="db-table-wrap">`)
     .replace(/\s*<a data-dir="(?:nl|pl)"[^>]*>[\s\S]*?<\/a>/g, '')
     .replace(/(<a data-dir="ja"[^>]*>)/g, '<a data-dir="nl" data-lang="nl" href="../nl/">Nederlands</a>\n          <a data-dir="pl" data-lang="pl" href="../pl/">Polski</a>\n          $1')
     .replace(/2026\.(?:08\.07|10\.23)/g, '2026.11.20')
@@ -2313,8 +2326,10 @@ function build() {
   for (const dir of generatedDirs) fs.rmSync(path.join(root, dir), {recursive: true, force: true});
 
   for (const lang of generatedDirs) {
-    writeFile(`${lang}/index.html`, buildInteractiveHome(lang, interactiveTemplate));
+    writeFile(`${lang}/index.html`, buildInteractiveHome(lang, interactiveTemplate, docs));
     urlsForSitemap.push(`/${lang}/`);
+    writeFile(`${lang}/archive-text/index.html`, buildTextArchive(docs, lang));
+    urlsForSitemap.push(`/${lang}/archive-text/`);
     for (const slugName of Object.keys(legalPages)) {
       writeFile(`${lang}/${slugName}/index.html`, buildLegalPage(lang, slugName));
       urlsForSitemap.push(`/${lang}/${slugName}/`);

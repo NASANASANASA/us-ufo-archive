@@ -57,6 +57,6 @@ for file in ROOT.glob('*/index.html'):
  for menu in re.findall(r'<details class="lang-menu[^>]*>[\s\S]*?</details>',file.read_text()):
   order=re.findall(r'data-dir="([^"]+)"',menu)
   assert order.count('pl')==1 and order.index('pl')+1==order.index('ja'),(file,'menu')
-assert len([u for u in urls if '/pl/' in u])==527
+assert len([u for u in urls if '/pl/' in u])==528
 subprocess.run(['node','-e',"const f=require('./assets/record-format.js');for(const [s,t] of [['4/1/2009','1 kwietnia 2009'],['2025','2025'],['March 2010','marzec 2010'],['Undated','Bez daty']])if(f.formatDate(s,'pl')!==t)throw Error(s+': '+f.formatDate(s,'pl'));"],cwd=ROOT,check=True)
-print(f'PASS: 521 Polish records, 527 Polish canonical pages, language ordering, dates, unchanged media/downloads, {checked_links} local references.')
+print(f'PASS: 521 Polish records, 528 Polish canonical pages, language ordering, dates, unchanged media/downloads, {checked_links} local references.')
